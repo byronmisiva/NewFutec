@@ -1,0 +1,56 @@
+/*
+ * Project: FH Mega Menu
+ * Author: Filiz ÖZER
+ * Author URI: http://codecanyon.net/user/designingmedia
+ * Description: A Bootstrap 3 Mega Drop Down Menu
+ * License: GPL
+ */
+body {
+	padding-bottom: 40px;
+	color: #666;
+}
+pre { 
+	margin: 0; 
+	padding: 10px 20px !important;
+}
+footer {
+  padding: 60px 0;
+}
+.plugin-title { 
+	color: #444444;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding: 0 20px 12px 0;
+}
+.container { 
+	width: auto; 
+	max-width: 1170px;
+}
+.jumbotron.intro {
+	margin-top: 0;
+}
+.jumbotron {
+	padding:20px 0;
+	margin-bottom:0
+}
+.jumbotron .navbar {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.grid-demo {
+  padding: 10px 30px;
+}
+.grid-demo [class*="col-"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+.grid-demo [class*="col-"]:hover {
+	background:#5f5f5f;
+	color:#ffffff;
+}
