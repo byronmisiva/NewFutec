@@ -9,10 +9,7 @@ body {
 	padding-bottom: 40px;
 	color: #666;
 }
-.container {
-    width: auto;
-    max-width: 990px;
-}
+
 pre { 
 	margin: 0; 
 	padding: 10px 20px !important;
@@ -55,3 +52,21 @@ footer {
 	background:#5f5f5f;
 	color:#ffffff;
 }
+
+
+.page-header {
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+
+}
+.top1 {
+    background-color: #152f4a;
+}
+.header1 {
+    background-image: url("../img/header-back.png");
+}
+.margen0 {
+    padding: 0;
+}
+

@@ -1,505 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Bootstrap 3, from LayoutIt!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <title>Bootstrap 3, from LayoutIt!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
-	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+    <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+    <!--script src="js/less-1.3.3.min.js"></script-->
+    <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fhmm.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Lightbox stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.lightbox.min.css"/>
+    <!-- Input slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css"/>
 
 
-	 <link href="css/fhmm.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	 
-	  
-	<!-- Lightbox stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox.min.css" />
-	<!-- Input slider -->
-	<link rel="stylesheet" type="text/css" href="css/slider.css" />
- 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
 
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-  <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.png">
 
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="img/favicon.png">
-  
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/bootstrap-hover-dropdown.js"></script>
-	<script type="text/javascript" src="js/fitdivs.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-hover-dropdown.js"></script>
+    <script type="text/javascript" src="assets/js/fitdivs.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.lightbox.min.js"></script>
 
- 
- 
-	 
-	 
-	<!-- Input Slider for DEMO -->
-	<script src="js/slider.min.js"></script>
-	 
-	<!--[if lt IE 10]>
-	<script type="text/javascript">
-	$(document).ready(function() {
-	  $('.hidden-menu').css('display','none');
-	});
-	</script>
-	<![endif]-->
+
+    <!-- Input Slider for DEMO -->
+    <script src="assets/js/slider.min.js"></script>
+
+    <!--[if lt IE 10]>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.hidden-menu').css('display', 'none');
+        });
+    </script>
+    <![endif]-->
 </head>
 
 <body>
-    <div class="container">
-    <div class="row clearfix">
-        <div class="col-md-3 column">
-            <img alt="230x95" src="http://dummyimage.com/230x95/ccc/0011ff">
-        </div>
-        <div class="col-md-9 column">
-            <img alt="735x95" src="http://dummyimage.com/735x95/ccc/0011ff">
-        </div>
+<div class="container">
+<div class="row clearfix">
+    <div class="col-md-3 column">
+        <img alt="230x95" src="http://dummyimage.com/230x95/ccc/0011ff">
     </div>
-    <div class="row clearfix">
-                     
-            <nav class="navbar navbar-blue fhmm" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" data-toggle="collapse" data-target="#bluemenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><i class="fa fa-home"></i></a>
-                </div><!-- end navbar-header -->
-        
-            <div id="bluemenu" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://designingmedia.com/html/fh-mega-menu/contact.html">Home</a></li> 
-                    <!-- Mega Menu -->
-                    <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu (Full) <b class="caret"></b></a>
-                        <ul class="dropdown-menu fullwidth">
-                            <li class="fhmm-content">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <h3 class="title">Add Vdeo Widget</h3>
-                                         
-                                    </div><!-- end col-4 -->
-                                    <div class="col-sm-4">
-                                        <h3 class="title">Add Media Elements</h3>
-                                        <ul class="media-list">
-                                            <li class="media"><a href="#" class="pull-right"><img src="FH%20-%20Mega%20Menu%20for%20Bootstrap%203.0_files/01_menu.jpg" alt="" class="img-thumbnail media-object" width="70"></a>
-                                                <div class="media-body">
-                                                    <p>Lorem Ipsum beschikbaar heeft te lijden gehad van wijzigingen in een of andere vorm, door ingevoegde</p>
-                                                </div>
-                                            </li>
-                                            <li class="media"><a href="#" class="pull-right"><img src="FH%20-%20Mega%20Menu%20for%20Bootstrap%203.0_files/02_menu.jpg" alt="" class="img-thumbnail media-object" width="70"></a>
-                                                <div class="media-body">
-                                                    <p>Er zijn vele variaties van passages maar van in een of andere vorm, door ingevoegde humor of willekeu seloofwaardig ogen.</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div><!-- end col-4 -->
-                                    <div class="col-sm-4">
-                                        
- Edition
-                                    </div><!-- end col-4 -->
-                                </div><!-- end row -->
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h3 class="title">Text Widget</h3>
-                                        <p>Lorem Ipsum is simply dummy text
- of the printing and typesetting industry. Lorem Ipsum has been the 
-industry's standard dummy text ever since the 1500s, when an unknown 
-printer took a galley of type and scrambled it to make a type specimen 
-book. It has survived not only five..</p>
-                                    </div><!-- end col-6 -->
-                                    <div class="col-sm-3">
-                                        <h3 class="title">Text Widget</h3>
-                                        <p>Er zijn vele variaties van passages maar van wijzigingen of andere vorm, door ingevoegde humor of willekeu seloofwaardig ogen.</p>
-                                    </div><!-- end col-3 -->
-                                    <div class="col-sm-3">
-                                        <h3 class="title">Text Widget</h3>
-                                        <p>Er zijn vele variaties van passages maar van wijzigingen of andere vorm, door ingevoegde humor of willekeu seloofwaardig ogen.</p>
-                                    </div><!-- end col-3 -->                
-                                </div><!-- end row -->
-                            </li><!-- fhmm-content -->
-                        </ul><!-- dropdown-menu -->
-                    </li><!-- mega menu -->
-                    <!-- list elements -->
-                    <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu (Desc) <b class="caret"></b></a>
-                        <ul class="dropdown-menu fullwidth">
-                            <li class="fhmm-content withdesc">
-                                <div class="row">
-                                    <div class="col-sm-2">
-                                        <h3 class="title">Support</h3>
-                                        <ul>
-                                            <li><a data-description="A Short Description" href="#">Contact Form</a></li>
-                                            <li><a data-description="A Short Description" href="#">Knowledgebase</a></li>
-                                            <li><a data-description="A Short Description" href="#">Friendly Questions</a></li>
-                                            <li><a data-description="A Short Description" href="#">Support Forum</a></li>
-                                            <li><a data-description="A Short Description" href="#">Changelogs</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <h3 class="title">Marketplace</h3>
-                                        <ul>
-                                            <li><a data-description="A Short Description" href="#">ThemeForest</a></li>
-                                            <li><a data-description="A Short Description" href="#">CodeCanyon</a></li>
-                                            <li><a data-description="A Short Description" href="#">GraphicRiver</a></li>
-                                            <li><a data-description="A Short Description" href="#">VideoHive</a></li>
-                                            <li><a data-description="A Short Description" href="#">ActiveDen</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <h3 class="title">Tuts+ Sites</h3>
-                                        <ul>
-                                            <li><a data-description="A Short Description" href="#">PSD Tuts+</a></li>
-                                            <li><a data-description="A Short Description" href="#">Code Tuts+</a></li>
-                                            <li><a data-description="A Short Description" href="#">Vector Tuts+</a></li>
-                                            <li><a data-description="A Short Description" href="#">App Tuts+</a></li>
-                                            <li><a data-description="A Short Description" href="#">WP Tuts+</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <h3 class="title">Envato Sites</h3>
-                                        <ul>
-                                            <li><a data-description="A Short Description" href="#">Marketplaces</a></li>
-                                            <li><a data-description="A Short Description" href="#">Microlancer</a></li>
-                                            <li><a data-description="A Short Description" href="#">Creattica</a></li>
-                                            <li><a data-description="A Short Description" href="#">AppStorm</a></li>
-                                            <li><a data-description="A Short Description" href="#">Tutsplus</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <h3 class="title">Engage</h3>
-                                        <ul>
-                                            <li><a data-description="A Short Description" href="#">We Build Envato</a></li>
-                                            <li><a data-description="A Short Description" href="#">Flickr Stream</a></li>
-                                            <li><a data-description="A Short Description" href="#">Youtube</a></li>
-                                            <li><a data-description="A Short Description" href="#">Inside Envato</a></li>
-                                            <li><a data-description="A Short Description" href="#">Vimeo Stream</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <h3 class="title">Social</h3>
-                                        <ul>
-                                            <li><a data-description="A Short Description" href="#">Google Plus</a></li>
-                                            <li><a data-description="A Short Description" href="#">Facebook</a></li>
-                                            <li><a data-description="A Short Description" href="#">Twitter</a></li>
-                                            <li><a data-description="A Short Description" href="#">Linkedin</a></li>
-                                            <li><a data-description="A Short Description" href="#">Pinterest</a></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- end row -->
-                            </li><!-- end grid demo -->
-                        </ul><!-- end drop down menu -->
-                    </li><!-- end list elements -->
-                    <!-- list elements -->
-                    <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu (Half) <b class="caret"></b></a>
-                        <ul class="dropdown-menu half">
-                            <li class="fhmm-content withoutdesc">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-laptop"></i> Laptop icon</a></li>
-                                            <li><a href="#"><i class="fa fa-desktop"></i> Desktop icon</a></li>
-                                            <li><a href="#"><i class="fa fa-android"></i> Android icon</a></li>
-                                            <li><a href="#"><i class="fa fa-apple"></i> Apple icon</a></li>
-                                            <li><a href="#"><i class="fa fa-windows"></i> Windows icon</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-leaf"></i> Leaf icon</a></li>
-                                            <li><a href="#"><i class="fa fa-heart-o"></i> Heart icon</a></li>
-                                            <li><a href="#"><i class="fa fa-gear"></i> Gear icon</a></li>
-                                            <li><a href="#"><i class="fa fa-camera-retro"></i> Camera icon</a></li>
-                                            <li><a href="#"><i class="fa fa-bars"></i> Bars icon</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-beer"></i> Beer icon</a></li>
-                                            <li><a href="#"><i class="fa fa-code"></i> Code icon</a></li>
-                                            <li><a href="#"><i class="fa fa-envelope-o"></i> Envelope icon</a></li>
-                                            <li><a href="#"><i class="fa fa-flag-o"></i> Flag icon</a></li>
-                                            <li><a href="#"><i class="fa fa-key"></i> Key icon</a></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- end row -->
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>Font Awesome gives you scalable 
-vector icons that can instantly be customized — size, color, drop 
-shadow, and anything that can be done with the power of CSS.</p>
-                                        <p>Font Awesome font licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a> Code licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a> Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
-                                    </div>
-                                </div><!-- end row -->
-                            </li><!-- end grid demo -->
-                        </ul><!-- end drop down menu -->
-                    </li><!-- end list elements -->
-                    <!-- standard drop down -->
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Flyout <b class="caret"></b></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">ThemeForest</a></li>
-                            <li><a href="#">GraphicRiver</a></li>
-                            <li><a href="#">PhotoDune</a></li>
-                            <li class="dropdown-submenu">
-                                <a href="#">Envato Sites</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu"><a href="#">Tuts+</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">PSD Tuts</a></li>
-                                            <li><a href="#">CODE Tuts</a></li>
-                                        </ul>
-                                    </li><!-- end dropdown-submenu -->
-                                    <li><a href="#">We are Envato</a></li>
-                                    <li><a href="#">Support Center</a></li>
-                                </ul><!-- end dropdown-menu -->
-                            </li><!-- end dropdown-submenu -->
-                            <li><a href="#">Creattica</a></li>
-                            <li><a href="#">Microlancer</a></li>
-                            <li><a href="#">ActiveDen</a></li>
-                        </ul><!-- end dropdown-menu -->
-                    </li><!-- end standard drop down -->
-                    <!-- grid view -->
-                    <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="grid-demo">
-                                <div class="row">
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                    <div class="col-sm-10">.col-sm-10</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-3">.col-sm-3</div>
-                                    <div class="col-sm-9">.col-sm-9</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4">.col-sm-4</div>
-                                    <div class="col-sm-8">.col-sm-8</div>
-                                </div> 
-                                <div class="row">
-                                    <div class="col-sm-5">.col-sm-5</div>
-                                    <div class="col-sm-7">.col-sm-7</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">.col-sm-6</div>
-                                    <div class="col-sm-6">.col-sm-6</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4">.col-sm-4</div>
-                                    <div class="col-sm-4">.col-sm-4</div>
-                                    <div class="col-sm-4">.col-sm-4</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-3">.col-sm-3</div>
-                                    <div class="col-sm-3">.col-sm-3</div>
-                                    <div class="col-sm-3">.col-sm-3</div>
-                                    <div class="col-sm-3">.col-sm-3</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                    <div class="col-sm-2">.col-sm-2</div>
-                                </div>  
-                            </li><!-- grid demo -->
-                        </ul><!-- end dropdown-menu -->
-                    </li><!-- end dropdown fhmm-fw -->
-                </ul><!-- end nav navbar-nav -->
-                
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contact Form<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <form id="contact3" action="#" name="contactform" method="post">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <input name="name" id="name3" class="form-control" placeholder="Name" type="text"> 
-                                        <input name="email" id="email3" class="form-control" placeholder="Email" type="text"> 
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <input name="phone" id="phone3" class="form-control" placeholder="Phone" type="text">
-                                        <input name="subject" id="subject3" class="form-control" placeholder="Subject" type="text"> 
-                                    </div>
-                                    <div class="clearfix"></div>                   
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <textarea class="form-control" name="comments" id="comments3" rows="6" placeholder="Your Message ..."></textarea>
-                                    </div>   
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="pull-right">
-                                            <input value="SEND" id="submit3" class="btn btn-primary small" type="submit">
-                                        </div>  
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                </ul><!-- end nav navbar-nav navbar-right -->
-            </div><!-- end #navbar-collapse-1 -->
-            
-            </nav><!-- end navbar navbar-default fhmm -->
-
-
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-8 column">
-            <div class="carousel slide" id="carousel-841118">
-                <ol class="carousel-indicators">
-                    <li data-slide-to="0" data-target="#carousel-841118">
-                    </li>
-                    <li data-slide-to="1" data-target="#carousel-841118">
-                    </li>
-                    <li data-slide-to="2" data-target="#carousel-841118">
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active left">
-                        <img alt="" src="http://lorempixel.com/1600/500/sports/1">
-                        <div class="carousel-caption">
-                            <h4>
-                                First Thumbnail label
-                            </h4>
-                            <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item next left">
-                        <img alt="" src="http://lorempixel.com/1600/500/sports/2">
-                        <div class="carousel-caption">
-                            <h4>
-                                Second Thumbnail label
-                            </h4>
-                            <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img alt="" src="http://lorempixel.com/1600/500/sports/3">
-                        <div class="carousel-caption">
-                            <h4>
-                                Third Thumbnail label
-                            </h4>
-                            <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                            </p>
-                        </div>
-                    </div>
-                </div> <a class="left carousel-control" href="#carousel-841118" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-841118" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <div class="col-md-4 column">
-            <img alt="140x140" src="http://lorempixel.com/140/140/">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <img alt="140x140" src="http://lorempixel.com/140/140/">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-8 column">
-            <div class="row clearfix">
-                <div class="col-md-6 column">
-                    <img alt="140x140" src="http://lorempixel.com/140/140/">
-                    <h3>
-                        h3. Lorem ipsum dolor sit amet.
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-                    </p>
-                </div>
-                <div class="col-md-6 column">
-                    <img alt="140x140" src="http://lorempixel.com/140/140/">
-                    <h3>
-                        h3. Lorem ipsum dolor sit amet.
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 column">
-            <h3>
-                social / search.
-            </h3>
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-4 column">
-        </div>
-        <div class="col-md-4 column">
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                    Consectetur adipiscing elit
-                </li>
-                <li>
-                    Integer molestie lorem at massa
-                </li>
-                <li>
-                    Facilisis in pretium nisl aliquet
-                </li>
-                <li>
-                    Nulla volutpat aliquam velit
-                </li>
-                <li>
-                    Faucibus porta lacus fringilla vel
-                </li>
-                <li>
-                    Aenean sit amet erat nunc
-                </li>
-                <li>
-                    Eget porttitor lorem
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-4 column">
-        </div>
-    </div>
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <h3>
-                h3. Lorem ipsum dolor sit amet.
-            </h3>
-        </div>
+    <div class="col-md-9 column">
+        <img alt="735x95" src="http://dummyimage.com/735x95/ccc/0011ff">
     </div>
 </div>
+<div class="row clearfix">
 
-    <script>
-		$(document).ready(function(){
-		// Target your .container, .wrapper, .post, etc.
-			
-			$(document).on('click', '.fhmm .dropdown-menu', function(e) {
-			  e.stopPropagation()
-			})
+<nav class="navbar navbar-blue fhmm" role="navigation">
+<div class="navbar-header">
+    <button type="button" data-toggle="collapse" data-target="#bluemenu" class="navbar-toggle">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+    </button>
+    <a href="#" class="navbar-brand"><i class="fa fa-home"></i></a>
+</div>
+<!-- end navbar-header -->
 
-			
-			// Menu drop down effect
-			$('.dropdown-toggle').dropdownHover().dropdown();
+<div id="bluemenu" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="http://designingmedia.com/html/fh-mega-menu/contact.html">Home</a></li>
+<!-- Mega Menu -->
+<li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu (Full) <b
+        class="caret"></b></a>
+    <ul class="dropdown-menu fullwidth">
+        <li class="fhmm-content">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 class="title">Add Vdeo Widget</h3>
 
-			$(".fhmm").fitVids();
-		});
-	</script>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-sm-4">
+                    <h3 class="title">Add Media Elements</h3>
+                    <ul class="media-list">
+                        <li class="media"><a href="#" class="pull-right"><img
+                                src="FH%20-%20Mega%20Menu%20for%20Bootstrap%203.0_files/01_menu.jpg" alt=""
+                                class="img-thumbnail media-object" width="70"></a>
+
+                            <div class="media-body">
+                                <p>Lorem Ipsum beschikbaar heeft te lijden gehad van wijzigingen in een of andere vorm,
+                                    door ingevoegde</p>
+                            </div>
+                        </li>
+                        <li class="media"><a href="#" class="pull-right"><img
+                                src="FH%20-%20Mega%20Menu%20for%20Bootstrap%203.0_files/02_menu.jpg" alt=""
+                                class="img-thumbnail media-object" width="70"></a>
+
+                            <div class="media-body">
+                                <p>Er zijn vele variaties van passages maar van in een of andere vorm, door ingevoegde
+                                    humor of willekeu seloofwaardig ogen.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-sm-4">
+
+                    Edition
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="title">Text Widget</h3>
+
+                    <p>Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five..</p>
+                </div>
+                <!-- end col-6 -->
+                <div class="col-sm-3">
+                    <h3 class="title">Text Widget</h3>
+
+                    <p>Er zijn vele variaties van passages maar van wijzigingen of andere vorm, door ingevoegde humor of
+                        willekeu seloofwaardig ogen.</p>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-sm-3">
+                    <h3 class="title">Text Widget</h3>
+
+                    <p>Er zijn vele variaties van passages maar van wijzigingen of andere vorm, door ingevoegde humor of
+                        willekeu seloofwaardig ogen.</p>
+                </div>
+                <!-- end col-3 -->
+            </div>
+            <!-- end row -->
+        </li>
+        <!-- fhmm-content -->
+    </ul>
+    <!-- dropdown-menu -->
+</li>
+<!-- mega menu -->
+<!-- list elements -->
+<li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu (Desc) <b
+        class="caret"></b></a>
+    <ul class="dropdown-menu fullwidth">
+        <li class="fhmm-content withdesc">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h3 class="title">Support</h3>
+                    <ul>
+                        <li><a data-description="A Short Description" href="#">Contact Form</a></li>
+                        <li><a data-description="A Short Description" href="#">Knowledgebase</a></li>
+                        <li><a data-description="A Short Description" href="#">Friendly Questions</a></li>
+                        <li><a data-description="A Short Description" href="#">Support Forum</a></li>
+                        <li><a data-description="A Short Description" href="#">Changelogs</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="title">Marketplace</h3>
+                    <ul>
+                        <li><a data-description="A Short Description" href="#">ThemeForest</a></li>
+                        <li><a data-description="A Short Description" href="#">CodeCanyon</a></li>
+                        <li><a data-description="A Short Description" href="#">GraphicRiver</a></li>
+                        <li><a data-description="A Short Description" href="#">VideoHive</a></li>
+                        <li><a data-description="A Short Description" href="#">ActiveDen</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="title">Tuts+ Sites</h3>
+                    <ul>
+                        <li><a data-description="A Short Description" href="#">PSD Tuts+</a></li>
+                        <li><a data-description="A Short Description" href="#">Code Tuts+</a></li>
+                        <li><a data-description="A Short Description" href="#">Vector Tuts+</a></li>
+                        <li><a data-description="A Short Description" href="#">App Tuts+</a></li>
+                        <li><a data-description="A Short Description" href="#">WP Tuts+</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="title">Envato Sites</h3>
+                    <ul>
+                        <li><a data-description="A Short Description" href="#">Marketplaces</a></li>
+                        <li><a data-description="A Short Description" href="#">Microlancer</a></li>
+                        <li><a data-description="A Short Description" href="#">Creattica</a></li>
+                        <li><a data-description="A Short Description" href="#">AppStorm</a></li>
+                        <li><a data-description="A Short Description" href="#">Tutsplus</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="title">Engage</h3>
+                    <ul>
+                        <li><a data-description="A Short Description" href="#">We Build Envato</a></li>
+                        <li><a data-description="A Short Description" href="#">Flickr Stream</a></li>
+                        <li><a data-description="A Short Description" href="#">Youtube</a></li>
+                        <li><a data-description="A Short Description" href="#">Inside Envato</a></li>
+                        <li><a data-description="A Short Description" href="#">Vimeo Stream</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h3 class="title">Social</h3>
+                    <ul>
+                        <li><a data-description="A Short Description" href="#">Google Plus</a></li>
+                        <li><a data-description="A Short Description" href="#">Facebook</a></li>
+                        <li><a data-description="A Short Description" href="#">Twitter</a></li>
+                        <li><a data-description="A Short Description" href="#">Linkedin</a></li>
+                        <li><a data-description="A Short Description" href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end row -->
+        </li>
+        <!-- end grid demo -->
+    </ul>
+    <!-- end drop down menu -->
+</li>
+<!-- end list elements -->
+<!-- list elements -->
+<li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Mega Menu (Half) <b
+        class="caret"></b></a>
+    <ul class="dropdown-menu half">
+        <li class="fhmm-content withoutdesc">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-laptop"></i> Laptop icon</a></li>
+                        <li><a href="#"><i class="fa fa-desktop"></i> Desktop icon</a></li>
+                        <li><a href="#"><i class="fa fa-android"></i> Android icon</a></li>
+                        <li><a href="#"><i class="fa fa-apple"></i> Apple icon</a></li>
+                        <li><a href="#"><i class="fa fa-windows"></i> Windows icon</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-leaf"></i> Leaf icon</a></li>
+                        <li><a href="#"><i class="fa fa-heart-o"></i> Heart icon</a></li>
+                        <li><a href="#"><i class="fa fa-gear"></i> Gear icon</a></li>
+                        <li><a href="#"><i class="fa fa-camera-retro"></i> Camera icon</a></li>
+                        <li><a href="#"><i class="fa fa-bars"></i> Bars icon</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-beer"></i> Beer icon</a></li>
+                        <li><a href="#"><i class="fa fa-code"></i> Code icon</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i> Envelope icon</a></li>
+                        <li><a href="#"><i class="fa fa-flag-o"></i> Flag icon</a></li>
+                        <li><a href="#"><i class="fa fa-key"></i> Key icon</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end row -->
+            <hr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Font Awesome gives you scalable
+                        vector icons that can instantly be customized — size, color, drop
+                        shadow, and anything that can be done with the power of CSS.</p>
+
+                    <p>Font Awesome font licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a> Code
+                        licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>
+                        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+                    </p>
+                </div>
+            </div>
+            <!-- end row -->
+        </li>
+        <!-- end grid demo -->
+    </ul>
+    <!-- end drop down menu -->
+</li>
+<!-- end list elements -->
+<!-- standard drop down -->
+<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Flyout <b class="caret"></b></a>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">ThemeForest</a></li>
+        <li><a href="#">GraphicRiver</a></li>
+        <li><a href="#">PhotoDune</a></li>
+        <li class="dropdown-submenu">
+            <a href="#">Envato Sites</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a href="#">Tuts+</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">PSD Tuts</a></li>
+                        <li><a href="#">CODE Tuts</a></li>
+                    </ul>
+                </li>
+                <!-- end dropdown-submenu -->
+                <li><a href="#">We are Envato</a></li>
+                <li><a href="#">Support Center</a></li>
+            </ul>
+            <!-- end dropdown-menu -->
+        </li>
+        <!-- end dropdown-submenu -->
+        <li><a href="#">Creattica</a></li>
+        <li><a href="#">Microlancer</a></li>
+        <li><a href="#">ActiveDen</a></li>
+    </ul>
+    <!-- end dropdown-menu -->
+</li>
+<!-- end standard drop down -->
+<!-- grid view -->
+<li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Grid <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li class="grid-demo">
+            <div class="row">
+                <div class="col-sm-2">.col-sm-2</div>
+                <div class="col-sm-10">.col-sm-10</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">.col-sm-3</div>
+                <div class="col-sm-9">.col-sm-9</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-8">.col-sm-8</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">.col-sm-5</div>
+                <div class="col-sm-7">.col-sm-7</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">.col-sm-6</div>
+                <div class="col-sm-6">.col-sm-6</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">.col-sm-3</div>
+                <div class="col-sm-3">.col-sm-3</div>
+                <div class="col-sm-3">.col-sm-3</div>
+                <div class="col-sm-3">.col-sm-3</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">.col-sm-2</div>
+                <div class="col-sm-2">.col-sm-2</div>
+                <div class="col-sm-2">.col-sm-2</div>
+                <div class="col-sm-2">.col-sm-2</div>
+                <div class="col-sm-2">.col-sm-2</div>
+                <div class="col-sm-2">.col-sm-2</div>
+            </div>
+        </li>
+        <!-- grid demo -->
+    </ul>
+    <!-- end dropdown-menu -->
+</li>
+<!-- end dropdown fhmm-fw -->
+</ul>
+<!-- end nav navbar-nav -->
+
+<ul class="nav navbar-nav navbar-right">
+    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contact Form<b
+            class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <form id="contact3" action="#" name="contactform" method="post">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input name="name" id="name3" class="form-control" placeholder="Name" type="text">
+                        <input name="email" id="email3" class="form-control" placeholder="Email" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input name="phone" id="phone3" class="form-control" placeholder="Phone" type="text">
+                        <input name="subject" id="subject3" class="form-control" placeholder="Subject" type="text">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <textarea class="form-control" name="comments" id="comments3" rows="6"
+                                  placeholder="Your Message ..."></textarea>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="pull-right">
+                            <input value="SEND" id="submit3" class="btn btn-primary small" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </li>
+</ul>
+<!-- end nav navbar-nav navbar-right -->
+</div>
+<!-- end #navbar-collapse-1 -->
+
+</nav>
+<!-- end navbar navbar-default fhmm -->
+
+
+</div>
+<div class="row clearfix">
+    <div class="col-md-8 column">
+        <div class="carousel slide" id="carousel-841118">
+            <ol class="carousel-indicators">
+                <li data-slide-to="0" data-target="#carousel-841118">
+                </li>
+                <li data-slide-to="1" data-target="#carousel-841118">
+                </li>
+                <li data-slide-to="2" data-target="#carousel-841118">
+                </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active left">
+                    <img alt="" src="http://lorempixel.com/1600/500/sports/1">
+
+                    <div class="carousel-caption">
+                        <h4>
+                            First Thumbnail label
+                        </h4>
+
+                        <p>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="item next left">
+                    <img alt="" src="http://lorempixel.com/1600/500/sports/2">
+
+                    <div class="carousel-caption">
+                        <h4>
+                            Second Thumbnail label
+                        </h4>
+
+                        <p>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="" src="http://lorempixel.com/1600/500/sports/3">
+
+                    <div class="carousel-caption">
+                        <h4>
+                            Third Thumbnail label
+                        </h4>
+
+                        <p>
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-841118" data-slide="prev"><span
+                    class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
+                                                                            href="#carousel-841118"
+                                                                            data-slide="next"><span
+                class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+    </div>
+    <div class="col-md-4 column">
+        <img alt="140x140" src="http://lorempixel.com/140/140/">
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <img alt="140x140" src="http://lorempixel.com/140/140/">
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-md-8 column">
+        <div class="row clearfix">
+            <div class="col-md-6 column">
+                <img alt="140x140" src="http://lorempixel.com/140/140/">
+
+                <h3>
+                    h3. Lorem ipsum dolor sit amet.
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien
+                    sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed
+                    vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere
+                    diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
+                    imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna,
+                    vulputate nec bibendum nec, posuere nec lacus.
+                    <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et
+                        feugiat ipsum consequat eu.
+                    </small>
+                </p>
+            </div>
+            <div class="col-md-6 column">
+                <img alt="140x140" src="http://lorempixel.com/140/140/">
+
+                <h3>
+                    h3. Lorem ipsum dolor sit amet.
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien
+                    sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed
+                    vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere
+                    diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
+                    imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna,
+                    vulputate nec bibendum nec, posuere nec lacus.
+                    <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et
+                        feugiat ipsum consequat eu.
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 column">
+        <h3>
+            social / search.
+        </h3>
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-md-4 column">
+    </div>
+    <div class="col-md-4 column">
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet
+            </li>
+            <li>
+                Consectetur adipiscing elit
+            </li>
+            <li>
+                Integer molestie lorem at massa
+            </li>
+            <li>
+                Facilisis in pretium nisl aliquet
+            </li>
+            <li>
+                Nulla volutpat aliquam velit
+            </li>
+            <li>
+                Faucibus porta lacus fringilla vel
+            </li>
+            <li>
+                Aenean sit amet erat nunc
+            </li>
+            <li>
+                Eget porttitor lorem
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4 column">
+    </div>
+</div>
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <h3>
+            h3. Lorem ipsum dolor sit amet.
+        </h3>
+    </div>
+</div>
+</div>
+
 <script>
-  // Initiate Lightbox
-  $(function() {
-    $('.image-item > a').lightbox(); 
-  });
+    $(document).ready(function () {
+        // Target your .container, .wrapper, .post, etc.
+
+        $(document).on('click', '.fhmm .dropdown-menu', function (e) {
+            e.stopPropagation()
+        })
+
+
+        // Menu drop down effect
+        $('.dropdown-toggle').dropdownHover().dropdown();
+
+        $(".fhmm").fitVids();
+    });
+</script>
+<script>
+    // Initiate Lightbox
+    $(function () {
+        $('.image-item > a').lightbox();
+    });
 </script>
 
 </body>
