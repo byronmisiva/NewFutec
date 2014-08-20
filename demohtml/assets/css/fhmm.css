@@ -7,7 +7,13 @@
  */
 .fhmm .dropdown a,
 .fhmm .dropdown-menu  a {
-	color:#656565;
+	color: #ffffff;
+}
+
+.fhmm .dropdown a:hover,
+.fhmm .dropdown-menu  a:hover {
+    color: #fff;
+    background-color:  transparent;
 }
 .fhmm .dropdown-menu > li > a {
 	padding:6px 15px;
@@ -70,9 +76,9 @@
 }
 .fhmm .dropdown-menu .withoutdesc ul li:hover,
 .fhmm .dropdown-menu .withoutdesc ul li:focus{
-	color:#262626;
+    color: #dddddd;
 	text-decoration:none;
-	background-color:#f5f5f5 !important
+	background-color: transparent !important
 }
 .fhmm .dropdown-menu .withoutdesc li:last-child {
 	border-bottom:0 solid #fff;
@@ -131,9 +137,9 @@
 	border-radius:6px 0 6px 6px;
 }
 .fhmm p {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 13px;
-	color:#656565;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+	color: #ffffff;
 }
 .fhmm .nav,
 .fhmm .collapse,
@@ -167,9 +173,8 @@
 	font-size:13px;
 	font-weight:bold;
 	margin-top:15px;
-	text-transform:uppercase;
-	border-bottom:1px solid #efefef;
-	padding-bottom:10px;
+    padding-bottom:10px;
+    color: #ffffff;
 }
 .fhmm ul {
 	list-style:none;

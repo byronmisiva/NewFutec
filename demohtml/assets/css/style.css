@@ -6,8 +6,7 @@
  * License: GPL
  */
 body {
-	padding-bottom: 40px;
-	color: #666;
+	color: #aaa;
 }
 
 pre { 
@@ -60,9 +59,11 @@ footer {
     padding-bottom: 0;
 
 }
-.top1 {
+.top1, .bottom1 {
+    background-image: url("../img/menu-back.png");
     background-color: #152f4a;
 }
+
 .header1 {
     background-image: url("../img/header-back.png");
 }
@@ -70,3 +71,49 @@ footer {
     padding: 0;
 }
 
+.navbar {
+    margin-bottom: 0;
+    min-height: 35px;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 0px;
+    padding-top: 8px;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.menutype {
+    font-size: 12px;
+    font-family: "Oxygen";
+    font-style: normal;
+}
+
+.fhmm .dropdown-menu {
+    background-color: #142c45;
+    background-image: url("../img/menu-back.png");
+    border: none;
+    font-size: 12px;
+}
+
+.nav > li > a {
+     padding-right: 3px;
+ }
+
+.separador10 {
+    margin-top: 10px;
+}
+.separador10bot {
+    margin-bottom: 10px;
+}
+
+.separador20 {
+    margin-top: 20px;
+}
+
+.noticia {
+    min-height: 300px;
+}
