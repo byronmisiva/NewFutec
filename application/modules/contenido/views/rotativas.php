@@ -3,8 +3,8 @@
         <?php
         foreach ($query as &$dataimagen) {
             ?>
-            <li data-thumb="<?php echo $dataimagen->thumbh80; ?>">
-                <img src="<?php echo $dataimagen->thumb500; ?>"/>
+            <li data-thumb="http://www.futbolecuador.com/<?php echo $dataimagen->thumbh80; ?>">
+                <img src="http://www.futbolecuador.com/<?php echo $dataimagen->thumb500; ?>"/>
 
                 <div class="content-text-rotativas">
                     <div class="text-rotativas">
