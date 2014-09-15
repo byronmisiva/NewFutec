@@ -1,0 +1,1 @@
+<img alt="300x250" src="assets/dummys/publi_300-250.jpg">

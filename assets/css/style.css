@@ -1,0 +1,220 @@
+/*
+ * Project: FH Mega Menu
+ * Author: Filiz ÖZER
+ * Author URI: http://codecanyon.net/user/designingmedia
+ * Description: A Bootstrap 3 Mega Drop Down Menu
+ * License: GPL
+ */
+body {
+    color: #aaa;
+}
+
+pre {
+    margin: 0;
+    padding: 10px 20px !important;
+}
+
+footer {
+    padding: 60px 0;
+}
+
+.plugin-title {
+    color: #444444;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: normal;
+    padding: 0 20px 12px 0;
+}
+
+.jumbotron.intro {
+    margin-top: 0;
+}
+
+.jumbotron {
+    padding: 20px 0;
+    margin-bottom: 0
+}
+
+.jumbotron .navbar {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.grid-demo {
+    padding: 10px 30px;
+}
+
+.grid-demo [class*="col-"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.grid-demo [class*="col-"]:hover {
+    background: #5f5f5f;
+    color: #ffffff;
+}
+
+.page-header {
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+
+}
+
+.top1, .bottom1 {
+    background-image: url("../img/menu-back.png");
+    background-color: #152f4a;
+}
+
+.header1 {
+    background-image: url("../img/header-back.png");
+}
+
+.margen0 {
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    min-height: 34px;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 0px;
+    padding-top: 6px;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+
+    border-bottom: 2px solid #ffffff;
+}
+
+.menutype {
+    font-size: 12px;
+    font-family: "Oxygen";
+    font-style: normal;
+}
+
+.fhmm .dropdown-menu {
+    background-color: transparent;
+    background-image: url("../img/menu-back.png");
+    border: none;
+    font-size: 12px;
+}
+
+.nav > li > a {
+    padding-bottom: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.separador10 {
+    margin-top: 10px;
+}
+
+.separador10bot {
+    margin-bottom: 10px;
+}
+
+.separador20 {
+    margin-top: 20px;
+}
+
+.noticia {
+    min-height: 300px;
+}
+
+.separador-dotted {
+    border-right: 1px dotted #ccc;
+
+}
+
+.img-thumbnail {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.media-body h4 {
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 0;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.link-menu {
+    color: #cf7200 !important;
+}
+
+/*opciones menu*/
+.menu-name { margin: 5px 0 0; padding-left: 10px; float: left; }
+.menu-points {margin: 5px 0 0;}
+
+
+.text-rotativas {
+    width: 90%;
+    background-color: transparent;
+    background-image: url("../img/title-rotativas.png");
+    padding: 15px 10px;
+}
+
+.text-rotativas h2 {
+    font-size: 18px;
+    font-family: "Oxygen";
+    margin: 0;
+    padding: 0;
+}
+.text-rotativas h3 {
+    font-size: 14px;
+    font-family: "Oxygen";
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content-text-rotativas {
+    width: inherit;
+
+    color: #fff;
+    float: left;
+    position: fixed;
+    top: 190px;
+}
+
+
+.flex-viewport {width:87.5% !important;float:left;}
+.flex-control-thumbs {width:12% !important;float:right;margin:0 !important;}
+.flex-control-thumbs li {width:auto !important;}
+
+.flexslider {
+    background: transparent;
+}
+
+#carousel li {margin-right: 5px;}
+#carousel img {display: block; opacity: .5; cursor: pointer;}
+#carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+
+/* Media Queries
+***********************/
+@media screen and (max-width: 960px) {
+    #container {padding: 35px;}
+}
+@media screen and (max-width: 768px) {
+    #container {padding: 20px 30px;}
+    #main {margin-left: 0;}
+}
+
+.flex-control-thumbs img {
+    width: 73%;
+}

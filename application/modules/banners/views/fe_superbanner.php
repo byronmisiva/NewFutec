@@ -1,0 +1,1 @@
+<img alt="728x90" src="http://dummyimage.com/728x90/aaa/ffffff">
