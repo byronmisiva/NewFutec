@@ -10,10 +10,10 @@
                     <div class="text-rotativas">
                         <h2><?php echo $dataimagen->title; ?></h2>
 
-                        <h3><?php echo $dataimagen->subtitle; ?></h3>
+                        <h3><?php echo $dataimagen->subtitle; ?> <?php echo $dataimagen->id; ?></h3>
                     </div>
                 </div>
-                <?php echo $dataimagen->id; ?>
+
             </li>
         <?php } ?>
     </ul>

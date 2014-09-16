@@ -188,17 +188,22 @@ footer {
     color: #fff;
     float: left;
     position: fixed;
-    top: 190px;
+    top: 255px;
 }
 
 
-.flex-viewport {width:87.5% !important;float:left;}
-.flex-control-thumbs {width:12% !important;float:right;margin:0 !important;}
-.flex-control-thumbs li {width:auto !important;}
+.flex-viewport {width: 90.5% !important;float:left;}
+.flex-control-thumbs {width: 9% !important;float:right;margin:0 !important;}
+.flex-control-thumbs li {width:auto !important;
+    float: right;
+}
 
 .flexslider {
     background: transparent;
 }
+
+.flex-direction-nav .flex-next { right: 30px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 70px; }
 
 #carousel li {margin-right: 5px;}
 #carousel img {display: block; opacity: .5; cursor: pointer;}
@@ -216,5 +221,5 @@ footer {
 }
 
 .flex-control-thumbs img {
-    width: 73%;
+    width: 58px;
 }

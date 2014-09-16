@@ -51,11 +51,10 @@ function  centradoMenu () {
 //ajuste rotativas
 $(function(){
     setTimeout(function(){
-        alto = $('.flex-viewport').height();
+        alto = $('.flex-control-thumbs').height();
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-        console.log (ancho);
-   //     $ ('.slides li').height(ancho * 0.61566);
+         $ ('.slides li').height(alto);
     },600)
 
 });
@@ -64,8 +63,8 @@ $( window ).resize(function() {
     alto = $('.flex-viewport').height();
     $('.flexslider').height(alto);
     ancho = $('.clone').first().width();
-    console.log (ancho);
- //   $ ('.slides li').height(ancho * 0.61566);
+
+    $ ('.slides li').height(ancho * 0.61566);
 });
 
 // rotativas
@@ -73,8 +72,10 @@ $(window).load(function(){
     $('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
+        slideshow: false,
         start: function(slider){
             $('body').removeClass('loading');
+            $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)' )
         }
     });
 });
