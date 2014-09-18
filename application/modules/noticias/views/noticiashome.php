@@ -1,8 +1,8 @@
 <div class="col-md-6 separador10  noticia">
-    <img src="assets/dummys/noticia.jpg">
+    <?php echo $noticias[0] ?>
 </div>
 <div class="col-md-6 separador10  noticia">
-    <img src="assets/dummys/noticia.jpg">
+    <?php echo $noticias[0] ?>
 </div>
 <div class="col-md-6 separador10  noticia">
     <img src="assets/dummys/noticia.jpg">

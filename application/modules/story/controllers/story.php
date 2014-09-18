@@ -15,4 +15,6 @@ class Story extends MY_Controller
         $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE);;
         return $this->load->view('top1', $data, TRUE);
     }
+
+
 }

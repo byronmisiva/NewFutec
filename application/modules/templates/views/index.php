@@ -50,7 +50,7 @@ $this->load->view('header');
 
     <div class="row">
         <div class="col-md-8 margen0">
-            <div class="row margen0">
+            <div class="row margen0 content">
                 <?php
                 echo $content;
                 ?>

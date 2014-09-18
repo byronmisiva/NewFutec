@@ -6,8 +6,9 @@
  * License: GPL
  */
 body {
-    color: #aaa;
-}
+    color: #666;
+    font-size: 11px;
+ }
 
 pre {
     margin: 0;
@@ -222,4 +223,37 @@ footer {
 
 .flex-control-thumbs img {
     width: 58px;
+}
+
+/* Noticias***********************/
+
+.text-news-date {
+    font-style: italic;
+    margin: 2px 0px;
+}
+
+.text-news-sub {
+    font-style: italic;
+    font-size: 11px;
+}
+.text-news-zone {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.content h2, .content .h2 {
+    font-family: "Oxygen";
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.content-gris {
+    background-color: #f1f1f1;
+    color: #555555;
+    margin-top: 5px;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
