@@ -12,6 +12,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticiasHome($data = FALSE)
     {
+        setlocale(LC_ALL,"es_ES");
         $this->load->module('banners');
         $banners = array();
         $banners[] = $this->banners->FE_Bigboxnews1();

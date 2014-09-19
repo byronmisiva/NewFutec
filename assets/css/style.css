@@ -257,3 +257,11 @@ footer {
     padding-bottom: 6px;
     padding-top: 6px;
 }
+
+.noticia img {
+    width: 100%;
+}
+.noticia-img {
+    max-height: 160px;
+    overflow: hidden;
+}

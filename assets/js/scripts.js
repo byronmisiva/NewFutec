@@ -55,7 +55,7 @@ $(function(){
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
          $ ('.slides li').height(alto);
-    },600)
+    },2000)
 
 });
 
