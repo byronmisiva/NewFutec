@@ -34,48 +34,62 @@ jQuery(document).ready(function () {
     });
 
     //centrado menu
-    centradoMenu ();
-    $(window).resize(function() {
+    centradoMenu();
+    $(window).resize(function () {
         centradoMenu();
     });
 });
 
-function  centradoMenu () {
+function centradoMenu() {
     ancho = $("body").width();
     anchocuerpo = $(".header1 .container").width() + 18;
-    posleft = (ancho - anchocuerpo)/2;
-    $(".fhmm .dropdown.fhmm-fw .dropdown-menu").attr('style', 'left: -' + posleft +'px; width: ' + ancho +'px');
+    posleft = (ancho - anchocuerpo) / 2;
+    $(".fhmm .dropdown.fhmm-fw .dropdown-menu").attr('style', 'left: -' + posleft + 'px; width: ' + ancho + 'px');
     $(".fhmm-content").attr('style', 'margin-left: auto; margin-right: auto;').width(anchocuerpo);
 }
 
 //ajuste rotativas
-$(function(){
-    setTimeout(function(){
+$(function () {
+    setTimeout(function () {
         alto = $('.flex-control-thumbs').height();
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-         $ ('.slides li').height(alto);
-    },2000)
+        $('.slides li').height(alto);
+        altoshome();
+    }, 2000)
 
 });
 
-$( window ).resize(function() {
+$(window).resize(function () {
     alto = $('.flex-viewport').height();
     $('.flexslider').height(alto);
     ancho = $('.clone').first().width();
 
-    $ ('.slides li').height(ancho * 0.61566);
+    $('.slides li').height(ancho * 0.61566);
 });
 
 // rotativas
-$(window).load(function(){
+$(window).load(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
         slideshow: false,
-        start: function(slider){
+        start: function (slider) {
             $('body').removeClass('loading');
-            $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)' )
+            $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
         }
     });
 });
+
+//escala noticias home
+function altoshome() {
+    for (i = 1; i <= 1; i++) {
+        alto1 = $(".noticia:nth-child(" + i + ")").height();
+        alto2 = $(".noticia:nth-child(" + (i + 1) + ")").height();
+        if (alto1 > alto2) {
+            $(".noticia:nth-child(" + (i + 1) + ")").height(alto1);
+        } else {
+            $(".noticia:nth-child(" + i + ")").height(alto2);
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <div class="noticia-img">
 <img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive">
 </div>
-<div class="row clearfix">
+<div class="row clearfix news-detail">
     <div class="col-md-12 column text-news-date">
         <?php setlocale(LC_ALL,"es_ES");echo date("F d, Y", strtotime($story->created));   ?>
     </div>
