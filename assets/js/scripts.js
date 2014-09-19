@@ -83,7 +83,7 @@ $(window).load(function () {
 
 //escala noticias home
 function altoshome() {
-    for (i = 1; i <= 1; i++) {
+    for (i = 1; i <= 12; i++) {
         alto1 = $(".noticia:nth-child(" + i + ")").height();
         alto2 = $(".noticia:nth-child(" + (i + 1) + ")").height();
         if (alto1 > alto2) {
