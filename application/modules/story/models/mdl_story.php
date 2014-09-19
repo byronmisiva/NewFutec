@@ -17,11 +17,17 @@ class Mdl_story extends MY_Model{
 		parent::__construct();		
 	}
 
-    function story_by_tags($tag, $limit){
-        return $this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as datem, i.thumbh50, i.thumbh80
-								 From stories as s, stories_tags as st, tags as t,images as i
-								 Where lower("'.$tag.'")=lower(t.name) AND t.id=st.tag_id AND st.story_id=s.id AND s.image_id=i.id AND  s.position!=10
-								 Order by s.created desc '.$limit);
+    function storys_by_tags($tag="", $limit= "20"){
+        if ( $tag != "" ) $tag = 'lower("'.$tag.'")=lower(t.name) AND ';
+        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.created, s.reads, i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
+        $this->db->from('stories  s', FALSE);
+        $this->db->join('images i', 's.image_id = i.id', FALSE);
+        $this->db->where('s.invisible', 0, FALSE);
+        $this->db->where('s.position !=', 10);
+        $this->db->order_by('s.created','desc', FALSE);
+        $this->db->limit($limit);
+        $aux = $this->db->get()->result();
+        return $aux;
     }
 
     function get_banner($max = 5, $exclude = ''){

@@ -18,13 +18,20 @@ class Noticias extends MY_Controller
         $banners[] = $this->banners->FE_Bigboxnews2();
         $banners[] = $this->banners->FE_Bigboxnews3();
         $banners[] = $this->banners->FE_Bigboxnews4();
-
         $noticias = array();
-
-        $noticias[] = $this->viewNoticia($data);
-
+        $storys=$this->mdl_story->storys_by_tags();
+        foreach ($storys as $story){
+            $dataStory['story'] = $story;
+            $noticias[] = $this->viewNoticia($dataStory);
+        }
+        //intercalo entre las noticias los banners.
+        array_splice($noticias, 5, 0, $banners[0]);
+        array_splice($noticias, 12 , 0, $banners[1]);
+        array_splice($noticias, 17, 0, $banners[2]);
+        array_splice($noticias, 25, 0, $banners[3]);
         $data['noticias'] = $noticias;
-        $data['banners'] = $banners;
+
+
         return $this->load->view('noticiashome', $data, TRUE);
     }
 

@@ -1,25 +1,24 @@
-<img src="assets/dummys/noticia-imagen.jpg" class="img-responsive">
+<img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive">
 
 <div class="row clearfix">
     <div class="col-md-12 column text-news-date">
-        Julio, 20 2014
+        <?php echo $story->created ?>
     </div>
     <div class="col-md-12 column ">
-        <h2>Árbitros y horarios para los ecuatorianos</h2>
+        <h2><?php echo $story->title ?></h2>
     </div>
     <div class="col-md-12 column text-news-sub">
-        CONMEBOL definió itinerario de Copa Sudamericana para la próxima semana
+        <?php echo $story->subtitle ?>
     </div>
     <div class="col-md-12 column ">
-        No fue el debut que esperaba, pero Ayrton Preciado finalmente tuvo su anhelado estreno con el Leixoes SC en
-        la Liga da Honra,
+        <?php echo $story->lead ?>
     </div>
     <div class="col-md-12 column content-gris">
         <div class="col-md-4 column margen0">
-            73 Lecturas
+           Lecturas <?php echo $story->reads ?>
         </div>
         <div class="col-md-8 column margen0 text-right text-news-zone">
-            Zona Fe
+            <?php echo $story->category ?>
         </div>
     </div>
 </div>
