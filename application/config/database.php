@@ -7,12 +7,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = "127.0.0.1";
-$db['default']['username'] = "root";
-$db['default']['password'] = "";
+$db['default']['hostname'] = "69.64.67.206";
+$db['default']['username'] = "futec";
+$db['default']['password'] = "feadmin06";
 $db['default']['database'] = "fe2008";
 
-//$db['default']['database'] = "fifaworldcup";
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;
