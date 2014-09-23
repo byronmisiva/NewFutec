@@ -1,0 +1,17 @@
+*/application/config/development
+*/application/config/config.php
+*/application/config/database.php
+*/application/logs/log-*.php
+*/application/logs/!index.html
+*/application/cache/*
+*/application/cache/!index.html
+*/application/cache/!.htaccess
+
+*/config/development
+*/config/config.php
+*/config/database.php
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+*/cache/!.htaccess
