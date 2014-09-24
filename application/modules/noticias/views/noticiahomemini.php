@@ -11,15 +11,16 @@
     <div class="col-md-12 column text-news-sub">
         <?php echo $story->subtitle ?>
     </div>
-    <div class="col-md-12 column ">
-        <?php echo $story->lead ?>
+    <div class="col-md-12 column mini-new-conten">
+        <?php echo strip_tags($story->lead); ?>
     </div>
-    <div class="col-md-12 column content-gris">
-        <div class="col-md-4 column margen0">
-           Lecturas <?php echo $story->reads ?>
-        </div>
-        <div class="col-md-8 column margen0 text-right text-news-zone">
-            <?php echo $story->category ?>
-        </div>
+
+</div>
+<div class="col-md-12 column content-gris ">
+    <div class="col-md-4 column margen0">
+        Lecturas <?php echo $story->reads ?>
+    </div>
+    <div class="col-md-8 column margen0 text-right text-news-zone">
+        <?php echo $story->category ?>
     </div>
 </div>
