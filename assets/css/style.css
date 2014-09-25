@@ -265,3 +265,18 @@ footer {
     max-height: 160px;
     overflow: hidden;
 }
+
+.news-detail {
+
+}
+
+.mini-new-conten{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.lineseparador {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+
+}
