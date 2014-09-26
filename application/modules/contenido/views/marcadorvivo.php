@@ -7,8 +7,9 @@
                 <div class="item <?php echo $active; $active = ""; ?>">
                     <div class="row text-white">
                         <div class="col-md-12 text-center h5">
-                            <img src=""
+                            <img src="<?php echo $score->hthumb;?>">
                             <?php echo $score->hsname . " ". $score->result . " ". $score->asname ;?>
+                            <img src="<?php echo $score->athumb;?>">
                         </div>
                         <div class="col-md-5 col-md-offset-1 h6 text-blue1">
                             <p><?php echo $score->championship;?></p>
