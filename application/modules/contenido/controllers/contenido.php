@@ -57,13 +57,20 @@ class Contenido extends MY_Controller
             array_pop($dataRotativas['query']);
             array_push($dataRotativas['query'], $sponsor);
         }
-        //fin poner en caso de existir la ZONEFE
-
+        //fin poner en caso de existir la ZONE FE
 
         $dataRotativas['check']=0;
         $data['rotativas'] = $this->load->view('rotativas', $dataRotativas, TRUE);
+        //cargamos partidos
+        $this->load->module('scoreboards');
+        //$datamarcador['title'] = "Partidos de Hoy";
+        $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
+        if ($datamarcador['scores'] == false) {
+            $datamarcador['scores'] = $this->match_calendary->last_matches();
+            //$data['title'] = "Ultima Fecha";
+        }
+        $data['marcadorvivo'] = $this->load->view('marcadorvivo', $datamarcador, TRUE);
 
-        $data['marcadorvivo'] = $this->load->view('marcadorvivo', $data, TRUE);;
         return $this->load->view('header2', $data, TRUE);
         //todo se queda
     }
