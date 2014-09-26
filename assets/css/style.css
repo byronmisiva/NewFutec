@@ -344,3 +344,7 @@ footer {
     background-image: url("../img/fondo_titulos.jpg");
 
 }
+
+.panel-body {
+    padding: 0;
+}
