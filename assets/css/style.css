@@ -115,7 +115,7 @@ footer {
     font-size: 12px;
 }
 
-.nav > li > a {
+.nav > li.fhmm-fw > a {
     padding-bottom: 4px;
     padding-left: 9px;
     padding-right: 9px;
@@ -347,4 +347,22 @@ footer {
 
 .panel-body {
     padding: 0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #c1c2c5;
+
+    color: #75828e;
+    cursor: default;
+
+}
+
+.nav-tabs > li {
+    background-color: #d2d3d5;
+
+}
+.nav-tabs > li > a {
+
+    font-size: 13px;
+
 }

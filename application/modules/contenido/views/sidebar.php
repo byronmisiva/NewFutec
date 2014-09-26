@@ -2,7 +2,6 @@
     <img src="assets/dummys/redes-buscar.jpg">
 </div>
 <div class="col-md-12 separador10  margen0r">
-    <img src="assets/dummys/proxima-fecha.png">
 
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -52,6 +51,9 @@
         </div>
 
     </div>
+
+    <img src="assets/dummys/proxima-fecha.png">
+
 </div>
 <div class="col-md-12 separador10">
     <img src="assets/dummys/publi_300-250.jpg">
