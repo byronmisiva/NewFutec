@@ -324,3 +324,23 @@ footer {
     margin-top: -20px;
     width: 30px;
 }
+
+/*paneles laterales*/
+
+.panel-group .panel {
+    border-radius: 0;
+
+}
+.panel-default {
+    border-color: transparent;
+}
+
+.panel-title  {
+    font-size: 15px;
+}
+
+.panel-default > .panel-heading {
+
+    background-image: url("../img/fondo_titulos.jpg");
+
+}
