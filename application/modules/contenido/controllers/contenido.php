@@ -66,7 +66,7 @@ class Contenido extends MY_Controller
         //$datamarcador['title'] = "Partidos de Hoy";
         $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
         if ($datamarcador['scores'] == false) {
-            $datamarcador['scores'] = $this->match_calendary->last_matches();
+            $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             //$data['title'] = "Ultima Fecha";
         }
         $data['marcadorvivo'] = $this->load->view('marcadorvivo', $datamarcador, TRUE);

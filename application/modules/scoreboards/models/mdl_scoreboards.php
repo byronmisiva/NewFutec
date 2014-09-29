@@ -21,6 +21,7 @@ class Mdl_scoreboards extends MY_Model
         parent::__construct();
     }
 
+
     function today_matches($live='live'){   //Todo partido q se juega hoy
 
         $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour',false);
@@ -39,6 +40,47 @@ class Mdl_scoreboards extends MY_Model
 
         return $partidos;
     }
+
+    /*
+     * ULTIMOS PARTIDOS DE UNA FECHA DE UN CAMPEONATO */
+
+    function last_matches($champ=0){
+
+        $this->db->select('schedules.*,championships.name');
+        $this->db->from('schedules');
+        $this->db->join('championships','schedules.round_id=championships.active_round');
+        if($champ>0)
+            $this->db->where('championships.id',$champ);
+        $this->db->order_by('schedules.round_id','asc');
+        $this->db->order_by('schedules.position','asc');
+        $schedules=$this->db->get();
+
+        //Saco las ultimas fechas jugadas de el/los campeonatos
+        $aux=0;
+        $fechas=array();
+        foreach($schedules->result() as $schedule){
+            if($schedule->round_id != $aux){
+                $fechas[]=$schedule->id;
+                $aux=$schedule->round_id;
+            }
+        }
+
+        //Saco todos los partidos en vivo de las fechas
+        $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour',false);
+        $this->db->where('live','1');
+        $this->db->where_in('state',array('0','8'));
+        $this->db->where_in('schedule_id',$fechas);
+        $this->db->order_by('date_match','desc');
+        $matches=$this->db->get('matches');
+
+        if($matches->num_rows()>0)
+            $partidos=$this->data_matches($matches);
+        else
+            $partidos=false;
+
+        return $partidos;
+    }
+
 
     /* Extraigo los datos básicos del partido */
 
