@@ -117,6 +117,16 @@ class Contenido extends MY_Controller
 
     public function sidebar($data = FALSE)
     {
+
+        $listCampeonatos = $this->mdl_scoreboards->active_schedules (false, false);
+        $campeonatos = array();
+        foreach ($listCampeonatos as $listcampeonato) {
+            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_week($listcampeonato->champ);
+            $listcampeonato->shortname = strtolower ($this->_clearStringGion ($listcampeonato->name));
+
+            $campeonatos[] = $listcampeonato ;
+        }
+        $data['campeonatos'] = $campeonatos;
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda
     }

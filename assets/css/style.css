@@ -351,10 +351,17 @@ footer {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     background-color: #c1c2c5;
-
-    color: #75828e;
+    color: #555a60;
     cursor: default;
+    border: 1px solid #c1c2c5;
 
+    outline: none;
+}
+.nav > li > a {
+    display: block;
+    padding: 4px 15px;
+    position: relative;
+    color: #555a60;
 }
 
 .nav-tabs > li {
