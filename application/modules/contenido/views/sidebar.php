@@ -17,7 +17,7 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div class="tab-pane active" id="proximafecha">
+                <div class="tab-pane active panel-no-border" id="proximafecha">
                     <div class="well well-sm">
                         <!--contenido colapsable-->
                         <div class="panel-group" id="accordion">
@@ -26,7 +26,7 @@
                             foreach ($campeonatos as $campeonato) {
                                 ?>
 
-                                <div class="panel panel-default">
+                                <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $campeonato->shortname; ?>">
