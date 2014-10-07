@@ -328,12 +328,11 @@ footer {
 /*paneles laterales*/
 
 .panel-group .panel {
-    border-radius: 0;
+    /*border-radius: 0;*/
 
 }
 .panel-default {
-    border-color: transparent;
-}
+box-shadow: none}
 
 .panel-title  {
     font-size: 15px;
@@ -345,8 +344,14 @@ footer {
 
 }
 
-.panel-body {
-    padding: 0;
+.panel-body-clear-margin {
+    padding-left: 0;
+    padding-right: 0 ;
+}
+
+.panel-default {
+
+    background-color: #ffffff;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {

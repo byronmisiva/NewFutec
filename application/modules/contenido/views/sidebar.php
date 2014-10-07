@@ -4,7 +4,7 @@
 <div class="col-md-12 separador10  margen0r">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
-        <div class="panel-body">
+        <div class="panel-body panel-body-clear-margin">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active">
@@ -36,16 +36,17 @@
                                     </div>
                                     <div id="<?php echo $campeonato->shortname; ?>" class="panel-collapse collapse <?php echo $active;
                                     $active = ""; ?>">
-                                        <div class="panel-body">
+                                        <div class="panel-body panel-body-clear-margin">
                                             <?php
                                             foreach ($campeonato->partidos as $partido) {
+                                                $resultado = explode("-", $partido->result);
                                                 ?>
                                                 <div class="panel panel-default">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><img
+                                                        <li class="list-group-item"><?php if (count($resultado) >=2) echo $resultado[0];?><img
                                                                 src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"><?php echo $partido->hname; ?>
                                                         </li>
-                                                        <li class="list-group-item"><img
+                                                        <li class="list-group-item"><?php if (count($resultado) >=2)  echo $resultado[1];?><img
                                                                 src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"><?php echo $partido->aname; ?>
                                                         </li>
                                                     </ul>
@@ -60,12 +61,7 @@
                             <?php
                             }
                             ?>
-
-
-
-
                         </div>
-
                     </div>
                 </div>
                 <div class="tab-pane" id="resultados">
@@ -81,7 +77,7 @@
                                     </h4>
                                 </div>
                                 <div id="collapseOne2" class="panel-collapse collapse in">
-                                    <div class="panel-body">
+                                    <div class="panel-body panel-body-clear-margin">
                                         contenido 1
                                     </div>
                                 </div>
@@ -95,7 +91,7 @@
                                     </h4>
                                 </div>
                                 <div id="collapseTwo2" class="panel-collapse collapse">
-                                    <div class="panel-body">
+                                    <div class="panel-body panel-body-clear-margin">
                                         Cocntenido 2
                                     </div>
                                 </div>
