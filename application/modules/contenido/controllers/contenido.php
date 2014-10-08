@@ -140,8 +140,10 @@ class Contenido extends MY_Controller
         }
         $data['campeonatosResultados'] = $campeonatosResultados;
         //Resultados fecha ultima
+        $this->load->module('scoreboards');
 
-
+        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative(SERIE_A);
+        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard(SERIE_A);
 
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda

@@ -27,6 +27,49 @@ class Mdl_teams_position extends MY_Model{
         return $this->make_table($matches,$teams,$last_schedule);
     }
 
+    function get_active_round($id){
+        $this->db->select('active_round as round');
+        $this->db->from('championships');
+        $this->db->where('id',$id);
+        $data=current($this->db->get($this->name)->result());
+        if($data->round==0){
+            $this->db->select('id as round');
+            $this->db->from('championships');
+            $this->db->where('championship_id',$id);
+            $this->db->order_by('priority','desc');
+            $data=current($this->db->get('rounds')->result());
+        }
+        if(isset($data->round))
+            return $data->round;
+        else
+            return false;
+    }
+
+    //desde grupos
+    function get_by_round($round){
+        $this->db->select("g.*,r.name as rname");
+        $this->db->from('groups g');
+        $this->db->join('rounds r', 'g.round_id = r.id');
+        $this->db->where('g.round_id',$round);
+        $this->db->order_by("g.name",'asc');
+        return $this->db->get()->result();
+    }
+
+    //desde secciones
+    function get_teams(){
+        $this->db->select('id,team_id');
+        $this->db->from('sections');
+        $this->db->where('team_id >',0);
+        $aux=$this->db->get($this->name);
+
+        $res=array();
+        foreach($aux->result() as $row){
+            $res[$row->team_id]=$row->id;
+        }
+
+        return $res;
+    }
+
     function get_teams_total($championship){
         $this->db->select('t.id,t.name,s.id as section, t.short_name');
         $this->db->from('championships as c, championships_teams as ct, teams as t');
@@ -68,6 +111,320 @@ class Mdl_teams_position extends MY_Model{
 
         return $aux;
     }
+
+
+    function get_table($group )
+    {
+
+
+        $query=$this->db->query('Select t.*, if( s.id IS NULL , 0, s.id ) AS sid
+                                 From (Select DISTINCT(t.id), t.name
+                                         From groups as g, matches as m, matches_teams as mt, teams as t
+                                         Where g.id='.$group.' AND g.id=m.group_id AND m.id=mt.match_id AND m.special=0 AND (mt.team_id_home=t.id or mt.team_id_away=t.id) ) as t
+                                  Left Join sections as s ON t.id=s.team_id');
+
+        $query2=$this->db->query('Select m.result, mt.team_id_home, mt.team_id_away, s.position
+    							  From groups as g, matches as m, matches_teams as mt, schedules as s
+    							  Where g.id='.$group.' AND g.id=m.group_id AND m.id=mt.match_id AND state!=0 AND m.special=0 AND m.schedule_id=s.id
+    							  Order by s.position asc');
+
+        $teams='';
+
+        foreach($query->result() as $row):
+            $teams[$row->id]['id']=$row->id;
+            $teams[$row->id]['name']=$row->name;
+            $teams[$row->id]['section']=$row->sid;
+            $teams[$row->id]['points']=0;
+            $teams[$row->id]['pj']=0;
+            $teams[$row->id]['pg']=0;
+            $teams[$row->id]['pe']=0;
+            $teams[$row->id]['pp']=0;
+            $teams[$row->id]['gf']=0;
+            $teams[$row->id]['gc']=0;
+            $teams[$row->id]['gd']=0;
+            $teams[$row->id]['change']=1;
+            $teams[$row->id]['updown']=0;
+            $teams2[$row->id]['id']=$row->id;
+            $teams2[$row->id]['points']=0;
+            $teams2[$row->id]['gf']=0;
+            $teams2[$row->id]['gc']=0;
+            $teams2[$row->id]['gd']=0;
+        endforeach;
+
+        $last=$query2->row();
+        if($last!=FALSE){
+            $i=$last->position;
+            $t=$this->special($group,$teams,$teams2,$i);
+            $teams=$t;
+            $teams2=$t;
+
+        }
+
+        foreach($query2->result() as $row):
+            if($i!=$row->position){
+                $i='';
+            }
+            if($row->result=="")
+                $row->result="0 - 0";
+            $result=explode('-',trim($row->result));
+
+            $h=trim($result[0]);
+            $a=trim($result[1]);
+
+            if($h>$a){
+                $teams[$row->team_id_home]['points']+=3;
+                $teams[$row->team_id_home]['gf']+=$h;
+                $teams[$row->team_id_home]['gc']+=$a;
+                $teams[$row->team_id_home]['pg']+=1;
+
+                $teams[$row->team_id_away]['gf']+=$a;
+                $teams[$row->team_id_away]['gc']+=$h;
+                $teams[$row->team_id_away]['pp']+=1;
+
+                if($i==''){
+                    $teams2[$row->team_id_home]['points']+=3;
+                    $teams2[$row->team_id_home]['gf']+=$h;
+                    $teams2[$row->team_id_home]['gc']+=$a;
+
+                    $teams2[$row->team_id_away]['gf']+=$a;
+                    $teams2[$row->team_id_away]['gc']+=$h;
+                }
+
+            }
+            else{
+                if($h==$a){
+                    $teams[$row->team_id_home]['points']+=1;
+                    $teams[$row->team_id_home]['gf']+=$h;
+                    $teams[$row->team_id_home]['gc']+=$a;
+                    $teams[$row->team_id_home]['pe']+=1;
+
+                    $teams[$row->team_id_away]['points']+=1;
+                    $teams[$row->team_id_away]['gf']+=$a;
+                    $teams[$row->team_id_away]['gc']+=$h;
+                    $teams[$row->team_id_away]['pe']+=1;
+
+                    if($i==''){
+                        $teams2[$row->team_id_home]['points']+=1;
+                        $teams2[$row->team_id_home]['gf']+=$h;
+                        $teams2[$row->team_id_home]['gc']+=$a;
+
+                        $teams2[$row->team_id_away]['points']+=1;
+                        $teams2[$row->team_id_away]['gf']+=$a;
+                        $teams2[$row->team_id_away]['gc']+=$h;
+                    }
+                }
+                else{
+                    $teams[$row->team_id_away]['points']+=3;
+                    $teams[$row->team_id_away]['gf']+=$a;
+                    $teams[$row->team_id_away]['gc']+=$h;
+                    $teams[$row->team_id_away]['pg']+=1;
+
+                    $teams[$row->team_id_home]['gf']+=$h;
+                    $teams[$row->team_id_home]['gc']+=$a;
+                    $teams[$row->team_id_home]['pp']+=1;
+
+                    if($i==''){
+                        $teams2[$row->team_id_away]['points']+=3;
+                        $teams2[$row->team_id_away]['gf']+=$a;
+                        $teams2[$row->team_id_away]['gc']+=$h;
+
+                        $teams2[$row->team_id_home]['gf']+=$h;
+                        $teams2[$row->team_id_home]['gc']+=$a;
+                    }
+                }
+            }
+
+            $teams[$row->team_id_home]['pj']+=1;
+            $teams[$row->team_id_away]['pj']+=1;
+
+            $teams[$row->team_id_home]['gd']=$teams[$row->team_id_home]['gd']+$h-$a;
+            $teams[$row->team_id_away]['gd']=$teams[$row->team_id_away]['gd']+$a-$h;
+            if($i==''){
+                $teams2[$row->team_id_home]['gd']=$teams2[$row->team_id_home]['gd']+$h-$a;
+                $teams2[$row->team_id_away]['gd']=$teams2[$row->team_id_away]['gd']+$a-$h;
+            }
+
+        endforeach;
+
+        $bonus=$this->get_bonus($group);
+
+        if($bonus!=false){
+            if($bonus->num_rows()>0){
+                foreach($bonus->result() as $row):
+                    if(isset($teams[$row->team_id]))
+                        $teams[$row->team_id]['points']+=$row->bonus;
+                endforeach;
+            }
+        }
+        if(is_array($teams)){
+            foreach ($teams as $key=>$arr):
+                $pun[$key] = $arr['points'];
+                $g1[$key] = $arr['gd'];
+                $g2[$key] = $arr['gf'];
+                $g3[$key] = $arr['gc'];
+            endforeach;
+            array_multisort($pun,SORT_DESC,$g1,SORT_DESC,$g2,SORT_DESC,$g3,SORT_ASC,$teams);
+
+            foreach ($teams2 as $key2=>$arr2):
+                $pun2[$key2] = $arr2['points'];
+                $g21[$key2] = $arr2['gd'];
+                $g22[$key2] = $arr2['gf'];
+                $g23[$key2] = $arr2['gc'];
+            endforeach;
+            array_multisort($pun2,SORT_DESC,$g21,SORT_DESC,$g22,SORT_DESC,$g23,SORT_ASC,$teams2);
+
+            $i=1;
+            foreach($teams as $t):
+                $j=1;
+
+                foreach($teams2 as $t2):
+                    if($t['id']==$t2['id']){
+                        if($i>$j){
+                            $teams[$i-1]['change']=2;
+                            $teams[$i-1]['updown']=abs($i-$j);
+                        }
+                        if($i<$j){
+                            $teams[$i-1]['change']=0;
+                            $teams[$i-1]['updown']=abs($i-$j);
+                        }
+                    }
+                    $j+=1;
+                endforeach;
+
+                $i+=1;
+            endforeach;
+        }
+        return $teams;
+    }
+
+    function get_bonus($group){
+        $row=$this->db->query('Select c.active_round as ar, r.id
+    						   From championships as c, rounds as r, groups as g
+    						   Where g.id='.$group.' and g.round_id= r.id and r.championship_id = c.id ')->result();
+
+        $query=false;
+
+        if($row[0]->ar==$row[0]->id){
+            $query=$this->db->query('Select ct.team_id, ct.bonus
+    								 From championships_teams as ct
+    								 where ct.round_id='.$row[0]->ar);
+        }
+        return $query;
+    }
+
+    function special($group,$tabla,$tabla2,$i){
+        $row=$this->db->query('Select g.round_id
+    						   From groups as g
+    						   Where g.id='.$group)->row();
+
+        $row=$this->db->query('Select m.result, mt.team_id_home as th, mt.team_id_away as ta, s.position
+    						   From groups as g, matches as m, matches_teams as mt, schedules as s
+    						   Where g.round_id='.$row->round_id.' and g.id=m.group_id and m.special=1 and m.id=mt.match_id and m.schedule_id=s.id and m.state!=0');
+
+        foreach($row->result() as $r):
+            $result=explode('-',trim($r->result));
+            $h=trim($result[0]);
+            $a=trim($result[1]);
+            if($h>$a){
+                if(isset($tabla[$r->th])){
+                    $tabla[$r->th]['points']+=3;
+                    $tabla[$r->th]['gf']+=$h;
+                    $tabla[$r->th]['gc']+=$a;
+                    $tabla[$r->th]['pg']+=1;
+                    $tabla[$r->th]['pj']+=1;
+                    $tabla[$r->th]['gd']=$tabla[$r->th]['gd']+$h-$a;
+
+                    if($i!=$r->position){
+                        $tabla2[$r->th]['points']+=3;
+                        $tabla2[$r->th]['gf']+=$h;
+                        $tabla2[$r->th]['gc']+=$a;
+                        $tabla2[$r->th]['gd']=$tabla2[$r->th]['gd']+$h-$a;
+                    }
+                }
+                if(isset($tabla[$r->ta])){
+                    $tabla[$r->ta]['gf']+=$a;
+                    $tabla[$r->ta]['gc']+=$h;
+                    $tabla[$r->ta]['pp']+=1;
+                    $tabla[$r->ta]['pj']+=1;
+                    $tabla[$r->ta]['gd']=$tabla[$r->ta]['gd']+$a-$h;
+
+                    if($i!=$r->position){
+                        $tabla2[$r->ta]['gf']+=$a;
+                        $tabla2[$r->ta]['gc']+=$h;
+                        $tabla2[$r->ta]['gd']=$tabla2[$r->ta]['gd']+$a-$h;
+                    }
+                }
+            }
+
+            if($h==$a){
+                if(isset($tabla[$r->th])){
+                    $tabla[$r->th]['points']+=1;
+                    $tabla[$r->th]['gf']+=$h;
+                    $tabla[$r->th]['gc']+=$a;
+                    $tabla[$r->th]['pe']+=1;
+                    $tabla[$r->th]['pj']+=1;
+                    $tabla[$r->th]['gd']=$tabla[$r->th]['gd']+$h-$a;
+
+                    if($i!=$r->position){
+                        $tabla2[$r->th]['points']+=1;
+                        $tabla2[$r->th]['gf']+=$h;
+                        $tabla2[$r->th]['gc']+=$a;
+                        $tabla2[$r->th]['gd']=$tabla2[$r->th]['gd']+$h-$a;
+                    }
+                }
+                if(isset($tabla[$r->ta])){
+                    $tabla[$r->ta]['points']+=1;
+                    $tabla[$r->ta]['gf']+=$a;
+                    $tabla[$r->ta]['gc']+=$h;
+                    $tabla[$r->ta]['pe']+=1;
+                    $tabla[$r->ta]['pj']+=1;
+                    $tabla[$r->ta]['gd']=$tabla[$r->ta]['gd']+$a-$h;
+                    if($i!=$r->position){
+                        $tabla2[$r->ta]['points']+=1;
+                        $tabla2[$r->ta]['gf']+=$a;
+                        $tabla2[$r->ta]['gc']+=$h;
+                        $tabla2[$r->ta]['gd']=$tabla2[$r->ta]['gd']+$a-$h;
+                    }
+                }
+
+            }
+            if($h<$a){
+                if(isset($tabla[$r->ta])){
+                    $tabla[$r->ta]['points']+=3;
+                    $tabla[$r->ta]['gf']+=$a;
+                    $tabla[$r->ta]['gc']+=$h;
+                    $tabla[$r->ta]['pg']+=1;
+                    $tabla[$r->ta]['pj']+=1;
+                    $tabla[$r->ta]['gd']=$tabla[$r->ta]['gd']+$a-$h;
+
+                    if($i!=$r->position){
+                        $tabla2[$r->ta]['points']+=3;
+                        $tabla2[$r->ta]['gf']+=$a;
+                        $tabla2[$r->ta]['gc']+=$h;
+                        $tabla2[$r->ta]['gd']=$tabla2[$r->ta]['gd']+$a-$h;
+                    }
+                }
+                if(isset($tabla[$r->th])){
+                    $tabla[$r->th]['gf']+=$h;
+                    $tabla[$r->th]['gc']+=$a;
+                    $tabla[$r->th]['pp']+=1;
+                    $tabla[$r->th]['pj']+=1;
+                    $tabla[$r->th]['gd']=$tabla[$r->th]['gd']+$h-$a;
+                    if($i!=$r->position){
+                        $tabla2[$r->th]['gf']+=$h;
+                        $tabla2[$r->th]['gc']+=$a;
+                        $tabla2[$r->th]['gd']=$tabla2[$r->th]['gd']+$h-$a;
+                    }
+                }
+            }
+
+        endforeach;
+
+        //var_dump($tabla);
+
+        return $tabla;
+    }
+
 
     function make_table($matches,$teams,$last_schedule){
 

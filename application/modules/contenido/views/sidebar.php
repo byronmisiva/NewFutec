@@ -120,6 +120,35 @@
 <div class="col-md-12 separador10">
     <img src="assets/dummys/publi_300-250.jpg">
 </div>
+<!--Tabla de posiciones-->
+
 <div class="col-md-12 separador10">
+    Tabla de posiciones
+
+    <div id="collapseTwo" class="panel-collapse collapse in">
+        <div class="panel-body panel-body-clear-margin">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active">
+                    <a href="#posiciones" role="tab"
+                       data-toggle="tab">Posiciones</a></li>
+                <li class="">
+                    <a href="#acumulada" role="tab"
+                       data-toggle="tab">Acumulada</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active panel-no-border" id="posiciones">
+                    <? echo $scroreBoardSingle; ?>
+                </div>
+                <div class="tab-pane" id="acumulada">
+                    <? echo $scroreBoardAcumulative; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <img src="assets/dummys/tablaposiciones.jpg">
 </div>
+<!--Fin Tabla de posiciones-->
