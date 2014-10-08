@@ -18,19 +18,13 @@ class Site extends MY_Controller
 
     public function home()
     {
-
         // para la final se comentan la llamada a las secciones.
-
         //$this->output->cache(30);
-
-
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
         $this->load->module('banners');
-
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
-
         $this->load->library('user_agent');
 
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');

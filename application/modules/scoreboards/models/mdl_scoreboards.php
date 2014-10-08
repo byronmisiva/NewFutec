@@ -138,16 +138,22 @@ class Mdl_scoreboards extends MY_Model
     function list_mwatch_week($championship)
     {
         $this->output->cache(CACHE_MOVIL);
-
         $partidos = $this->matches_last_next($championship, TRUE);
         return $partidos;
+    }
 
+    //listado de partidos de la semana
+    function list_mwatch_results($championship)
+    {
+        $this->output->cache(CACHE_MOVIL);
+        $partidos = $this->matches_last_next($championship, FALSE);
+        return $partidos;
     }
 
     function matches_last_next($championship, $next)
     {
 
-        $active_schedules = $this->active_schedules ($championship, $next);
+        $active_schedules = $this->active_schedules($championship, $next);
 
         $champs = array();
         $sch_ids = "";
@@ -167,7 +173,7 @@ class Mdl_scoreboards extends MY_Model
         $i = 0;
         foreach ($matches as $match) {
             //validar el logo
-            //hw/www.futbolecuador.com/imagenes/teams/mini_shields/default.jpg
+
             if ($match->hshield == '') $match->hshield = "imagenes/teams/mini_shields/default.jpg";
             if ($match->ashield == '') $match->ashield = "imagenes/teams/mini_shields/default.jpg";
             $data[$i] = $match;
@@ -184,7 +190,8 @@ class Mdl_scoreboards extends MY_Model
 
     }
 
-    public function active_schedules ($championship, $next){
+    public function active_schedules($championship, $next)
+    {
 
         // Partidos q se jugaron en la fecha anterior o la siguiente fecha
         //$this->load->helper('string');
