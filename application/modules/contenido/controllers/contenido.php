@@ -130,9 +130,9 @@ class Contenido extends MY_Controller
         //Fin Proxima Fecha
 
         //Resultados fecha ultima
-        $listCampeonatos2 = $this->mdl_scoreboards->active_schedules (false, false);
-        $campeonatos2 = array();
-        foreach ($listCampeonatos2 as $listcampeonato) {
+        $listCampeonatosResultados = $this->mdl_scoreboards->active_schedules (false, false);
+        $campeonatosResultados = array();
+        foreach ($listCampeonatosResultados as $listcampeonato) {
             $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_results($listcampeonato->champ  );
             $listcampeonato->shortname = strtolower ($this->_clearStringGion ($listcampeonato->name));
 
@@ -140,6 +140,7 @@ class Contenido extends MY_Controller
         }
         $data['campeonatosResultados'] = $campeonatosResultados;
         //Resultados fecha ultima
+
 
 
         return $this->load->view('sidebar', $data, TRUE);

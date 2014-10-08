@@ -31,4 +31,43 @@ class Scoreboards extends MY_Controller
         $this->load->view($this->folder_views.'/list_results', $data);
     }
 
+    // Tabla de posiciones
+    function leaderboard($champ){
+        $this->output->cache(CACHE_MOVIL);
+        $this->load->model('group');
+        $this->load->model('teams_position');
+        $this->load->model('section');
+        $data['change']=array(	base_url().'imagenes/icons/flecha_arriba.png',
+            base_url().'imagenes/icons/igual.png',
+            base_url().'imagenes/icons/flecha_abajo.png');
+        $round=$this->model->get_active_round($champ);
+        if($round!=false){
+            $active_group = current($this->group->get_by_round($round));
+            $data['teams']=$this->section->get_teams($champ);
+            $data['tabla']=$this->teams_position->get_table( $active_group->id );
+            return  $this->load->view($this->folder_views.'/leaderboard', $data, true);
+        } else {
+            return false;
+        }
+    }
+    //Fin Tabla de posiciones
+
+    // Tabla de posiciones  acumulada
+    function leaderboard_cumulative($champ){
+        $this->output->cache(CACHE_MOVIL);
+
+        $this->load->model('teams_position');
+
+        $data['change']=array(	base_url().'imagenes/icons/flecha_arriba.png',
+            base_url().'imagenes/icons/igual.png',
+            base_url().'imagenes/icons/flecha_abajo.png');
+
+        $data['tabla']=$this->teams_position->get_table_by_champ($champ);
+        $data['groups']=0;
+
+        return $this->load->view($this->folder_views.'/leaderboard', $data, true);
+    }
+    //Fin Tabla de posiciones acumulada
+
+
 }

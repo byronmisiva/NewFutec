@@ -20,7 +20,7 @@
                 <div class="tab-pane active panel-no-border" id="proximafecha">
                     <div class="well well-sm">
                         <!--contenido colapsable-->
-                        <div class="panel-group" id="accordion">
+                        <div class="panel-group" id="accordion1">
                             <?php
                             $active = "in";
                             foreach ($campeonatos as $campeonato) {
@@ -29,12 +29,12 @@
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $campeonato->shortname; ?>">
+                                            <a data-toggle="collapse" data-parent="#accordion1" href="#<?php echo $campeonato->shortname; ?>1">
                                                 <?php echo $campeonato->name; ?>
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="<?php echo $campeonato->shortname; ?>" class="panel-collapse collapse <?php echo $active;
+                                    <div id="<?php echo $campeonato->shortname; ?>1" class="panel-collapse collapse <?php echo $active;
                                     $active = ""; ?>">
                                         <div class="panel-body panel-body-clear-margin">
                                             <?php
@@ -64,10 +64,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="tab-pane" id="resultados">
                     <div class="well well-sm">
                         <!--contenido colapsable-->
-                        <div class="panel-group" id="accordion">
+                        <div class="panel-group" id="accordion2">
                             <?php
                             $active = "in";
                             foreach ($campeonatosResultados as $campeonato) {
@@ -76,7 +77,7 @@
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $campeonato->shortname; ?>">
+                                            <a data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $campeonato->shortname; ?>">
                                                 <?php echo $campeonato->name; ?>
                                             </a>
                                         </h4>
@@ -114,10 +115,8 @@
             </div>
         </div>
     </div>
-
-    <img src="assets/dummys/proxima-fecha.png">
-
 </div>
+
 <div class="col-md-12 separador10">
     <img src="assets/dummys/publi_300-250.jpg">
 </div>
