@@ -57,7 +57,6 @@ class Scoreboards extends MY_Controller
         $this->output->cache(CACHE_MOVIL);
 
         $this->load->model('teams_position');
-
         $data['change']=array(	base_url().'imagenes/icons/flecha_arriba.png',
             base_url().'imagenes/icons/igual.png',
             base_url().'imagenes/icons/flecha_abajo.png');
