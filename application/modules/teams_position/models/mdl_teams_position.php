@@ -13,6 +13,8 @@ class Mdl_teams_position extends MY_Model{
 	public $order_by;	
 	public $form_values = array();
 
+    var $name;
+
 	public function __construct(){
 		parent::__construct();		
 	}
