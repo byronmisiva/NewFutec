@@ -123,9 +123,13 @@
 <!--Tabla de posiciones-->
 
 <div class="col-md-12 separador10">
-    Tabla de posiciones
+    <div class="panel-heading backcuadros" >
+        <h4 class="panel-title">
+            Tabla de posiciones
+        </h4>
+    </div>
 
-    <div id="collapseTwo" class="panel-collapse collapse in">
+    <div id="collapseTwo" class="panel-collapse collapse in tablaposiciones">
         <div class="panel-body panel-body-clear-margin">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -148,7 +152,8 @@
             </div>
         </div>
     </div>
-
-    <img src="assets/dummys/tablaposiciones.jpg">
+    <div class="col-md-12 text-right fondoazul">
+        Más detalles >
+    </div>
 </div>
 <!--Fin Tabla de posiciones-->

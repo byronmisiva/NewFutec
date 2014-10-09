@@ -290,8 +290,17 @@ footer {
 .carousel-control.right, .carousel-control.left{
     background: none;
 }
-.marcadorenvivofondo {
+.marcadorenvivofondo  {
     background-image: url("../img/fondo_marcador_en_vivo.png");
+}
+ .fondoazul {
+    background-image: url("../img/fondo_marcador_en_vivo.png");
+     color:#ffffff;
+     font-size: 11px;
+     padding-bottom: 2px;
+     padding-top: 3px;
+ }
+.marcadorenvivofondo {
     background-repeat: no-repeat;
     padding-bottom: 7px;
 }
@@ -338,11 +347,13 @@ box-shadow: none}
     font-size: 15px;
 }
 
-.panel-default > .panel-heading {
+.panel-default > .panel-heading, .backcuadros {
 
     background-image: url("../img/fondo_titulos.jpg");
 
 }
+
+
 
 .panel-no-border {
     border: none;
@@ -358,6 +369,7 @@ box-shadow: none}
 .panel-body-clear-margin {
     padding-left: 0;
     padding-right: 0 ;
+    padding-top: 0 ;
 }
 
 .panel-default {
@@ -365,27 +377,54 @@ box-shadow: none}
     background-color: #ffffff;
 }
 
+.panel-heading {
+     padding: 8px 15px;
+}
+
+.tablaposiciones .nav > li > a, .tablaposiciones .nav > li > a:hover {
+
+    padding: 3px 38px;
+
+}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #c1c2c5;
-    color: #555a60;
+    background-color: #c1c2c6;
+    color: #6988a5;
     cursor: default;
-    border: 1px solid #c1c2c5;
+    border: 1px solid #c1c2c6;
 
     outline: none;
 }
-.nav > li > a {
+.nav > li > a, .nav > li > a:hover {
     display: block;
     padding: 4px 15px;
     position: relative;
-    color: #555a60;
+    color: #6988a5;
 }
 
 .nav-tabs > li {
     background-color: #d2d3d5;
-
+    color: #6988a5;
 }
 .nav-tabs > li > a {
-
     font-size: 13px;
+}
+.azul {
+    color:#6988a5
+}
+.font12 {
+    font-size: 12px;
+}
 
+.tablemargin4 {
+    padding: 4px  ;
+}
+
+.tablemargin4> thead > tr > th, .tablemargin4> tbody > tr > th, .tablemargin4> tfoot > tr > th, .tablemargin4> thead > tr > td, .tablemargin4> tbody > tr > td, .tablemargin4> tfoot > tr > td {
+
+    padding: 4px;
+
+}
+
+.tablaposiciones .panel-body {
+    padding-bottom: 0;
 }
