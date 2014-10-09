@@ -428,3 +428,7 @@ box-shadow: none}
 .tablaposiciones .panel-body {
     padding-bottom: 0;
 }
+
+#proximafecha .well, #resultado .well {
+    border: medium none;
+}

@@ -157,3 +157,20 @@
     </div>
 </div>
 <!--Fin Tabla de posiciones-->
+
+
+<!--Goleadores-->
+
+<div class="col-md-12 separador10">
+    <div class="panel-heading backcuadros" >
+        <h4 class="panel-title">
+            Goleadores
+        </h4>
+    </div>
+    <? echo $scroreBoardSingle; ?>
+
+    <div class="col-md-12 text-right fondoazul">
+        Más detalles >
+    </div>
+</div>
+<!--Fin Tabla de posiciones-->
