@@ -65,7 +65,7 @@
         <!-- end list elements -->
         <!-- Mega Menu -->
         <li class="dropdown fhmm-fw">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Futbol Nacional<b
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Fútbol Nacional<b
                     class="caret"></b></a>
             <ul class="dropdown-menu fullwidth">
                 <li class="fhmm-content">
@@ -149,13 +149,13 @@
         <!-- mega menu -->
         <!-- Mega Menu -->
         <li class="dropdown fhmm-fw">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Futbol Internacional</a>
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Fútbol Internacional</a>
             <!-- dropdown-menu -->
         </li>
         <!-- mega menu -->
         <!-- Mega Menu -->
         <li class="dropdown fhmm-fw">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Nuestros embajadores</a>
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Nuestros Embajadores</a>
         </li>
         <!-- Mega Menu -->
         <li class="dropdown fhmm-fw">

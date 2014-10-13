@@ -43,7 +43,7 @@
                             <div class="menu-name">Nuestros Embajadores</div>
                         </a></li>
                     <li class="clearfix"><a href="#">
-                            <div class="menu-name">Futbol internacional</div>
+                            <div class="menu-name">Fútbol internacional</div>
                         </a></li>
                     <li class="clearfix"><a href="#">
                             <div class="menu-name">Eliminatioras 2018o</div>
