@@ -104,7 +104,8 @@ footer {
 
 .navbar-nav > li > a {
     padding-bottom: 0px;
-    padding-top: 7px;
+    padding-top: 8px;
+    line-height: 18px;
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
