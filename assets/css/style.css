@@ -128,7 +128,7 @@ footer {
 }
 
 .nav > li.fhmm-fw > a {
-    padding-bottom: 4px;
+    padding-bottom: 3px;
     padding-left: 9px;
     padding-right: 9px;
 }
@@ -187,17 +187,19 @@ footer {
 }
 
 .text-rotativas h2 {
-    font-size: 18px;
-    font-family: "Oxygen";
+    font-size: 20px;
+    font-family: "Helvetica Neue";
     margin: 0;
     padding: 0;
+    font-weight: 300;
 }
 .text-rotativas h3 {
     font-size: 14px;
-    font-family: "Oxygen";
-    font-weight: normal;
+    font-family: "Helvetica Neue";
+    font-weight: 200;
     margin: 0;
     padding: 0;
+    letter-spacing: 0.5px;
 }
 
 
