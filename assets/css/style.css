@@ -1,10 +1,19 @@
 /*
- * Project: FH Mega Menu
- * Author: Filiz ÖZER
- * Author URI: http://codecanyon.net/user/designingmedia
- * Description: A Bootstrap 3 Mega Drop Down Menu
- * License: GPL
+ * Project: Futbol Ecuador 2015
+ * Author: Byron Herrera
+ * Author URI: http://misiva.com.ec
+ * Description: A Bootstrap ad
+ * License: copyrigth
  */
+
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     color: #666;
     font-size: 11px;
@@ -68,8 +77,10 @@ footer {
 }
 
 .top1, .bottom1 {
+     background-color: #152f4a;
+}
+.bottom1 {
     background-image: url("../img/menu-back.png");
-    background-color: #152f4a;
 }
 
 .header1 {
@@ -93,7 +104,7 @@ footer {
 
 .navbar-nav > li > a {
     padding-bottom: 0px;
-    padding-top: 6px;
+    padding-top: 7px;
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
@@ -104,7 +115,7 @@ footer {
 
 .menutype {
     font-size: 12px;
-    font-family: "Oxygen";
+    font-family: helvetica neue;
     font-style: normal;
 }
 
@@ -394,7 +405,7 @@ box-shadow: none}
 
     outline: none;
 }
-.nav > li > a, .nav > li > a:hover {
+.lateral .nav > li > a, .lateral .nav > li > a:hover {
     display: block;
     padding: 4px 15px;
     position: relative;

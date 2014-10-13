@@ -1,7 +1,7 @@
 <div class="col-md-12 separador10">
     <img src="assets/dummys/redes-buscar.jpg">
 </div>
-<div class="col-md-12 separador10  margen0r">
+<div class="col-md-12 separador10  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
         <div class="panel-body panel-body-clear-margin">
