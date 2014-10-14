@@ -1,4 +1,4 @@
-<div class="flexslider" style="height: 369px; overflow: hidden">
+<div class="flexslider" style="height: 348px; overflow: hidden">
     <ul class="slides">
         <?php
         foreach ($query as &$dataimagen) {

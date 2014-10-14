@@ -56,7 +56,23 @@ $(function () {
         ancho = $('.clone').first().width();
         $('.slides li').height(alto);
         altoshome();
+    }, 1000);
+
+    setTimeout(function () {
+        alto = $('.flex-control-thumbs').height();
+          $('.flexslider').height(alto);
+        ancho = $('.clone').first().width();
+          $('.slides li').height(alto);
+        altoshome();
     }, 2000)
+
+    setTimeout(function () {
+        alto = $('.flex-control-thumbs').height();
+          $('.flexslider').height(alto);
+        ancho = $('.clone').first().width();
+          $('.slides li').height(alto);
+        altoshome();
+    }, 3000)
 
 });
 

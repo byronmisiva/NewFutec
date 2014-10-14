@@ -8,11 +8,12 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active">
-                    <a href="#proximafecha" role="tab"
-                       data-toggle="tab">Próxima fecha</a></li>
-                <li class="">
                     <a href="#resultados" role="tab"
                        data-toggle="tab">Resultados</a></li>
+                <li class="">
+                    <a href="#proximafecha" role="tab"
+                       data-toggle="tab">Próxima fecha</a></li>
+
             </ul>
 
             <!-- Tab panes -->
@@ -29,13 +30,15 @@
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion1" href="#<?php echo $campeonato->shortname; ?>1">
+                                            <a data-toggle="collapse" data-parent="#accordion1"
+                                               href="#<?php echo $campeonato->shortname; ?>1">
                                                 <?php echo $campeonato->name; ?>
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="<?php echo $campeonato->shortname; ?>1" class="panel-collapse collapse <?php echo $active;
-                                    $active = ""; ?>">
+                                    <div id="<?php echo $campeonato->shortname; ?>1"
+                                         class="panel-collapse collapse <?php echo $active;
+                                         $active = ""; ?>">
                                         <div class="panel-body panel-body-clear-margin">
                                             <?php
                                             foreach ($campeonato->partidos as $partido) {
@@ -43,10 +46,12 @@
                                                 ?>
                                                 <div class="panel panel-default">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><?php if (count($resultado) >=2) echo $resultado[0];?><img
+                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[0]; ?>
+                                                            <img
                                                                 src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"><?php echo $partido->hname; ?>
                                                         </li>
-                                                        <li class="list-group-item"><?php if (count($resultado) >=2)  echo $resultado[1];?><img
+                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[1]; ?>
+                                                            <img
                                                                 src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"><?php echo $partido->aname; ?>
                                                         </li>
                                                     </ul>
@@ -77,13 +82,15 @@
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion2" href="#<?php echo $campeonato->shortname; ?>">
+                                            <a data-toggle="collapse" data-parent="#accordion2"
+                                               href="#<?php echo $campeonato->shortname; ?>">
                                                 <?php echo $campeonato->name; ?>
                                             </a>
                                         </h4>
                                     </div>
-                                    <div id="<?php echo $campeonato->shortname; ?>" class="panel-collapse collapse <?php echo $active;
-                                    $active = ""; ?>">
+                                    <div id="<?php echo $campeonato->shortname; ?>"
+                                         class="panel-collapse collapse <?php echo $active;
+                                         $active = ""; ?>">
                                         <div class="panel-body panel-body-clear-margin">
                                             <?php
                                             foreach ($campeonato->partidos as $partido) {
@@ -91,10 +98,12 @@
                                                 ?>
                                                 <div class="panel panel-default">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><?php if (count($resultado) >=2) echo $resultado[0];?><img
+                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[0]; ?>
+                                                            <img
                                                                 src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"><?php echo $partido->hname; ?>
                                                         </li>
-                                                        <li class="list-group-item"><?php if (count($resultado) >=2)  echo $resultado[1];?><img
+                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[1]; ?>
+                                                            <img
                                                                 src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"><?php echo $partido->aname; ?>
                                                         </li>
                                                     </ul>
@@ -123,7 +132,7 @@
 <!--Tabla de posiciones-->
 
 <div class="col-md-12 separador10">
-    <div class="panel-heading backcuadros" >
+    <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             Tabla de posiciones
         </h4>
@@ -162,7 +171,7 @@
 <!--Goleadores-->
 
 <div class="col-md-12 separador10">
-    <div class="panel-heading backcuadros" >
+    <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             Goleadores
         </h4>
