@@ -1,25 +1,15 @@
 <div class="table-responsive">
     <table class="table table-striped font12  tablemargin4">
-        <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th class="azul text-center">Pts</th>
-            <th class="azul">GD</th>
-        </tr>
-        </thead>
         <tbody>
-        <?php if (is_array($tabla)) {
-            foreach ($tabla as $key => $row) {
-                $sign = ($row['gd'] > 0) ? '+' : '';
+        <?php if (is_array($jugadores)) {
+            foreach ($jugadores as $key => $jugador) {
+
                 ?>
                 <tr>
                     <td ><?php echo $key + 1 ?></td>
-                    <td><?php echo $row['name'] ?></td>
-                    <td><?php echo $row['points'] ?></td>
-                    <td><?php echo $sign . $row['gd'] ?></td>
+                    <td><?php echo $jugador->last_name . " " . $jugador->first_name ?></td>
+                    <td class="text-center"><?php echo $jugador->goals ?> Goles</td>
                 </tr>
-
             <?php
             }
         } ?>

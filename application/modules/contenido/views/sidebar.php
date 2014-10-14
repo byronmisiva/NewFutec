@@ -215,7 +215,7 @@
             Goleadores
         </h4>
     </div>
-    <? echo $scroreBoardSingle; ?>
+    <? echo $strikes; ?>
 
     <div class="col-md-12 text-right fondoazul">
         Más detalles >
