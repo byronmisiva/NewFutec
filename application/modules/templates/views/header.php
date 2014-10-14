@@ -101,36 +101,36 @@
         var baseUrl = "<?php echo base_url(); ?>";
     </script>
 
-    <script type='text/javascript'>
-        var googletag = googletag || {};
-        googletag.cmd = googletag.cmd || [];
-        (function() {
-            var gads = document.createElement('script');
-            gads.async = true;
-            gads.type = 'text/javascript';
-            var useSSL = 'https:' == document.location.protocol;
-            gads.src = (useSSL ? 'https:' : 'http:') +
-            '//www.googletagservices.com/tag/js/gpt.js';
-            var node = document.getElementsByTagName('script')[0];
-            node.parentNode.insertBefore(gads, node);
-        })();
-    </script>
 
-    <script type='text/javascript'>
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/1022247/FE_NEW_HALF', [230, 90], 'div-gpt-ad-1413310306463-0').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1413310306463-1').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413310306463-2').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413310306463-3').addService(googletag.pubads());
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
-    </script>
 
 </head>
 
 <body>
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
 
+<script type='text/javascript'>
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/1022247/FE_NEW_HALF', [230, 90], 'div-gpt-ad-1413310306463-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1413310306463-1').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413310306463-2').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413310306463-3').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+</script>
 <!-- Google Tag Manager -->
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-ND3RBS"
