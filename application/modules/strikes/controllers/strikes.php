@@ -31,7 +31,7 @@ class Strikes extends MY_Controller
     }
     //Fin Tabla de posiciones
 
-    public function mod_Goleadores($block)
+    public function goleadores($block)
     {
 
         $this->CI->load->model('goals_position');

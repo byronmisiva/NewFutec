@@ -1,4 +1,4 @@
-<div class="col-md-12 separador10">
+<div class="col-md-12 separador10 pull-right">
     <img src="assets/dummys/redes-buscar.jpg">
 </div>
 <div class="col-md-12 separador10  margen0r lateral">
