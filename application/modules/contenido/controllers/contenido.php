@@ -139,6 +139,7 @@ class Contenido extends MY_Controller
             $campeonatosResultados[] = $listcampeonato ;
         }
         $data['campeonatosResultados'] = $campeonatosResultados;
+
         //Resultados fecha ultima
         $this->load->module('scoreboards');
 
