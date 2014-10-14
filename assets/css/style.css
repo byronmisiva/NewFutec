@@ -6,10 +6,9 @@
  * License: copyrigth
  */
 
-
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +16,7 @@
 body {
     color: #666;
     font-size: 11px;
- }
+}
 
 pre {
     margin: 0;
@@ -77,8 +76,9 @@ footer {
 }
 
 .top1, .bottom1 {
-     background-color: #152f4a;
+    background-color: #152f4a;
 }
+
 .bottom1 {
     background-image: url("../img/menu-back.png");
 }
@@ -90,9 +90,11 @@ footer {
 .margen0 {
     padding: 0;
 }
+
 .margen0r {
     padding-right: 0;
 }
+
 .margen0l {
     padding-left: 0;
 }
@@ -175,9 +177,15 @@ footer {
 }
 
 /*opciones menu*/
-.menu-name { margin: 5px 0 0; padding-left: 10px; float: left; }
-.menu-points {margin: 5px 0 0;}
+.menu-name {
+    margin: 5px 0 0;
+    padding-left: 10px;
+    float: left;
+}
 
+.menu-points {
+    margin: 5px 0 0;
+}
 
 .text-rotativas {
     width: 90%;
@@ -193,6 +201,7 @@ footer {
     padding: 0;
     font-weight: 300;
 }
+
 .text-rotativas h3 {
     font-size: 14px;
     font-family: "Helvetica Neue";
@@ -201,7 +210,6 @@ footer {
     padding: 0;
     letter-spacing: 0.5px;
 }
-
 
 .content-text-rotativas {
     width: inherit;
@@ -212,10 +220,19 @@ footer {
     top: 255px;
 }
 
+.flex-viewport {
+    width: 90.5% !important;
+    float: left;
+}
 
-.flex-viewport {width: 90.5% !important;float:left;}
-.flex-control-thumbs {width: 9% !important;float:right;margin:0 !important;}
-.flex-control-thumbs li {width:auto !important;
+.flex-control-thumbs {
+    width: 9% !important;
+    float: right;
+    margin: 0 !important;
+}
+
+.flex-control-thumbs li {
+    width: auto !important;
     float: right;
 }
 
@@ -223,22 +240,50 @@ footer {
     background: transparent;
 }
 
-.flex-direction-nav .flex-next { right: 30px; }
-.flexslider:hover .flex-next { opacity: 0.7; right: 70px; }
+.flex-direction-nav .flex-next {
+    right: 30px;
+}
 
-#carousel li {margin-right: 5px;}
-#carousel img {display: block; opacity: .5; cursor: pointer;}
-#carousel img:hover {opacity: 1;}
-#carousel .flex-active-slide img {opacity: 1; cursor: default;}
+.flexslider:hover .flex-next {
+    opacity: 0.7;
+    right: 70px;
+}
+
+#carousel li {
+    margin-right: 5px;
+}
+
+#carousel img {
+    display: block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+#carousel img:hover {
+    opacity: 1;
+}
+
+#carousel .flex-active-slide img {
+    opacity: 1;
+    cursor: default;
+}
 
 /* Media Queries
 ***********************/
 @media screen and (max-width: 960px) {
-    #container {padding: 35px;}
+    #container {
+        padding: 35px;
+    }
 }
+
 @media screen and (max-width: 768px) {
-    #container {padding: 20px 30px;}
-    #main {margin-left: 0;}
+    #container {
+        padding: 20px 30px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
 }
 
 .flex-control-thumbs img {
@@ -256,6 +301,7 @@ footer {
     font-style: italic;
     font-size: 11px;
 }
+
 .text-news-zone {
     font-style: italic;
     font-weight: bold;
@@ -281,6 +327,7 @@ footer {
 .noticia img {
     width: 100%;
 }
+
 .noticia-img {
     max-height: 160px;
     overflow: hidden;
@@ -290,7 +337,7 @@ footer {
 
 }
 
-.mini-new-conten{
+.mini-new-conten {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -301,19 +348,22 @@ footer {
 
 }
 
-.carousel-control.right, .carousel-control.left{
+.carousel-control.right, .carousel-control.left {
     background: none;
 }
-.marcadorenvivofondo  {
+
+.marcadorenvivofondo {
     background-image: url("../img/fondo_marcador_en_vivo.png");
 }
- .fondoazul {
+
+.fondoazul {
     background-image: url("../img/fondo_marcador_en_vivo.png");
-     color:#ffffff;
-     font-size: 11px;
-     padding-bottom: 2px;
-     padding-top: 3px;
- }
+    color: #ffffff;
+    font-size: 11px;
+    padding-bottom: 2px;
+    padding-top: 3px;
+}
+
 .marcadorenvivofondo {
     background-repeat: no-repeat;
     padding-bottom: 7px;
@@ -322,16 +372,17 @@ footer {
 .text-white {
     color: #fff;
 }
+
 .text-blue1 {
     color: #abacb1;
 }
-
 
 .h5 {
     font-size: 13px;
     margin-top: 7px;
     margin-bottom: 0px;
 }
+
 .h6 {
     font-size: 9px;
 }
@@ -356,32 +407,31 @@ footer {
 }
 
 .panel-default {
-box-shadow: none}
+    box-shadow: none
+}
 
-.panel-title  {
+.panel-title {
     font-size: 15px;
 }
 
 .panel-default > .panel-heading, .backcuadros {
-
     background-image: url("../img/fondo_titulos.jpg");
-
 }
-
 
 .panel-no-border {
     border: none;
 }
 
 .well-sm {
-    padding:0;
+    padding: 0;
 }
+
 .lateral .well {
     background-color: #ffffff;
 }
 
 .lateral .panel-body-clear-margin {
-    padding: 0 ;
+    padding: 0;
 }
 
 .panel-default {
@@ -390,14 +440,15 @@ box-shadow: none}
 }
 
 .panel-heading {
-     padding: 8px 15px;
+    padding: 8px 15px;
 }
 
 .tablaposiciones .nav > li > a, .tablaposiciones .nav > li > a:hover {
 
-    padding: 3px 38px;
+    padding: 3px 31px;
 
 }
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     background-color: #c1c2c6;
     color: #6988a5;
@@ -406,6 +457,7 @@ box-shadow: none}
 
     outline: none;
 }
+
 .lateral .nav > li > a, .lateral .nav > li > a:hover {
     display: block;
     padding: 4px 15px;
@@ -417,21 +469,24 @@ box-shadow: none}
     background-color: #d2d3d5;
     color: #6988a5;
 }
+
 .nav-tabs > li > a {
     font-size: 13px;
 }
+
 .azul {
-    color:#6988a5
+    color: #6988a5
 }
+
 .font12 {
     font-size: 12px;
 }
 
 .tablemargin4 {
-    padding: 4px  ;
+    padding: 4px;
 }
 
-.tablemargin4> thead > tr > th, .tablemargin4> tbody > tr > th, .tablemargin4> tfoot > tr > th, .tablemargin4> thead > tr > td, .tablemargin4> tbody > tr > td, .tablemargin4> tfoot > tr > td {
+.tablemargin4 > thead > tr > th, .tablemargin4 > tbody > tr > th, .tablemargin4 > tfoot > tr > th, .tablemargin4 > thead > tr > td, .tablemargin4 > tbody > tr > td, .tablemargin4 > tfoot > tr > td {
 
     padding: 4px;
 
