@@ -149,7 +149,7 @@ class Contenido extends MY_Controller
 
         //Resultados goleadores
         $this->load->module('strikes');
-        $data['scroreBoardAcumulative'] = $this->strikes->goleadores(SERIE_A);
+    //    $data['scroreBoardAcumulative'] = $this->strikes->goleadores(SERIE_A);
 
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda
