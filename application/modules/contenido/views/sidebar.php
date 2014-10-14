@@ -50,7 +50,7 @@
                                                             <div class="col-md-1 text-center">
                                                                 <?php if (count($resultado) >= 2) echo $resultado[0]; ?>
                                                             </div>
-                                                            <div class="col-md-2 text-right">
+                                                            <div class="col-md-2 text-right ">
                                                                 <img
                                                                     src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>">
                                                             </div>

@@ -369,7 +369,6 @@ box-shadow: none}
 }
 
 
-
 .panel-no-border {
     border: none;
 }
@@ -377,14 +376,12 @@ box-shadow: none}
 .well-sm {
     padding:0;
 }
-.well {
+.lateral .well {
     background-color: #ffffff;
 }
 
-.panel-body-clear-margin {
-    padding-left: 0;
-    padding-right: 0 ;
-    padding-top: 0 ;
+.lateral .panel-body-clear-margin {
+    padding: 0 ;
 }
 
 .panel-default {
@@ -460,4 +457,8 @@ ul.headernavtabs {
 
 .lateral {
     font-size: 13px;
+}
+
+.lateral .well {
+    border: 1px solid #fff;
 }
