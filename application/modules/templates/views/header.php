@@ -122,15 +122,16 @@
 </script>
 
 <script type='text/javascript'>
-    googletag.cmd.push(function() {
-        googletag.defineSlot('/1022247/FE_NEW_HALF', [230, 90], 'div-gpt-ad-1413310306463-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1413310306463-1').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413310306463-2').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413310306463-3').addService(googletag.pubads());
+    googletag.cmd.push(function () {
+        googletag.defineSlot('/1022247/FE_NEW_HALF', [230, 90], 'div-gpt-ad-1413318555463-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1413318555463-1').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413318555463-2').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413318555463-3').addService(googletag.pubads());
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
 </script>
+
 <!-- Google Tag Manager -->
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-ND3RBS"
