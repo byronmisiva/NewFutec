@@ -351,9 +351,10 @@ footer {
 /*paneles laterales*/
 
 .panel-group .panel {
-    /*border-radius: 0;*/
-
+    border-radius: 0;
+    margin-top: 2px;
 }
+
 .panel-default {
 box-shadow: none}
 
@@ -412,7 +413,7 @@ box-shadow: none}
     display: block;
     padding: 4px 15px;
     position: relative;
-    color: #6988a5;
+    color: #4b596d;
 }
 
 .nav-tabs > li {
@@ -443,6 +444,20 @@ box-shadow: none}
     padding-bottom: 0;
 }
 
+.list-group-item {
+    background-color: #f1f1f1;
+    height: 25px;
+    padding: 3px;
+}
+
 #proximafecha .well, #resultado .well {
     border: medium none;
+}
+
+ul.headernavtabs {
+    margin-bottom: 1px;
+}
+
+.lateral {
+    font-size: 13px;
 }

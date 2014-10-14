@@ -6,7 +6,7 @@
     <div id="collapseTwo" class="panel-collapse collapse in">
         <div class="panel-body panel-body-clear-margin">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
+            <ul class="nav nav-tabs headernavtabs" role="tablist">
                 <li class="active">
                     <a href="#resultados" role="tab"
                        data-toggle="tab">Resultados</a></li>
@@ -18,59 +18,7 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div class="tab-pane active panel-no-border" id="proximafecha">
-                    <div class="well well-sm">
-                        <!--contenido colapsable-->
-                        <div class="panel-group" id="accordion1">
-                            <?php
-                            $active = "in";
-                            foreach ($campeonatos as $campeonato) {
-                                ?>
-
-                                <div class="panel panel-default panel-no-border">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion1"
-                                               href="#<?php echo $campeonato->shortname; ?>1">
-                                                <?php echo $campeonato->name; ?>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="<?php echo $campeonato->shortname; ?>1"
-                                         class="panel-collapse collapse <?php echo $active;
-                                         $active = ""; ?>">
-                                        <div class="panel-body panel-body-clear-margin">
-                                            <?php
-                                            foreach ($campeonato->partidos as $partido) {
-                                                $resultado = explode("-", $partido->result);
-                                                ?>
-                                                <div class="panel panel-default">
-                                                    <ul class="list-group">
-                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[0]; ?>
-                                                            <img
-                                                                src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"><?php echo $partido->hname; ?>
-                                                        </li>
-                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[1]; ?>
-                                                            <img
-                                                                src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"><?php echo $partido->aname; ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            <?php
-                                            }
-                                            ?>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane" id="resultados">
+                <div class="tab-pane active panel-no-border" id="resultados">
                     <div class="well well-sm">
                         <!--contenido colapsable-->
                         <div class="panel-group" id="accordion2">
@@ -98,13 +46,30 @@
                                                 ?>
                                                 <div class="panel panel-default">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[0]; ?>
-                                                            <img
-                                                                src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"><?php echo $partido->hname; ?>
+                                                        <li class="list-group-item">
+                                                            <div class="col-md-1 text-center">
+                                                                <?php if (count($resultado) >= 2) echo $resultado[0]; ?>
+                                                            </div>
+                                                            <div class="col-md-2 text-right">
+                                                                <img
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>">
+                                                            </div>
+                                                            <div class="col-md-9  ">
+                                                                <?php echo $partido->hname; ?>
+                                                            </div>
+
                                                         </li>
-                                                        <li class="list-group-item"><?php if (count($resultado) >= 2) echo $resultado[1]; ?>
-                                                            <img
-                                                                src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"><?php echo $partido->aname; ?>
+                                                        <li class="list-group-item">
+                                                            <div class="col-md-1  text-center">
+                                                                <?php if (count($resultado) >= 2) echo $resultado[1]; ?>
+                                                            </div>
+                                                            <div class="col-md-2  text-right">
+                                                                <img
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>">
+                                                            </div>
+                                                            <div class="col-md-9  ">
+                                                                <?php echo $partido->aname; ?>
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -121,6 +86,80 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane  panel-no-border" id="proximafecha">
+                    <div class="well well-sm">
+                        <!--contenido colapsable-->
+                        <div class="panel-group" id="accordion1">
+                            <?php
+                            $active = "in";
+                            foreach ($campeonatos as $campeonato) {
+                                ?>
+
+                                <div class="panel panel-default panel-no-border">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion1"
+                                               href="#<?php echo $campeonato->shortname; ?>1">
+                                                <?php echo $campeonato->name; ?>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="<?php echo $campeonato->shortname; ?>1"
+                                         class="panel-collapse collapse <?php echo $active;
+                                         $active = ""; ?>">
+                                        <div class="panel-body panel-body-clear-margin">
+                                            <?php
+                                            foreach ($campeonato->partidos as $partido) {
+                                                $resultado = explode("-", $partido->result);
+                                                ?>
+                                                <div class="panel panel-default">
+                                                    <ul class="list-group">
+
+
+                                                        <li class="list-group-item">
+                                                            <div class="col-md-1 text-center">
+
+                                                            </div>
+                                                            <div class="col-md-2 text-right">
+                                                                <img
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>">
+                                                            </div>
+                                                            <div class="col-md-9  ">
+                                                                <?php echo $partido->hname; ?>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="col-md-1  text-center">
+
+                                                            </div>
+                                                            <div class="col-md-2  text-right">
+                                                                <img
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>">
+                                                            </div>
+                                                            <div class="col-md-9  ">
+                                                                <?php echo $partido->aname; ?>
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            <?php
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
