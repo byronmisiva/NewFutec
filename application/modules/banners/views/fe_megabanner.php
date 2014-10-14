@@ -1,9 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: bherrera
- * Date: 03/09/14
- * Time: 15:07
- */
-?>
+<!-- FE_NEW -->
+<div id='div-gpt-ad-1413297523890-0'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1413297523890-0'); });
+    </script>
+</div>
 <img src="assets/dummys/publi_950-50.png">
