@@ -116,15 +116,9 @@
         })();
     </script>
 
-
     <script type='text/javascript'>
-        googletag.cmd.push(function () {
-            googletag.defineSlot('/1022247/300X250_MOVISTAR_MUNDIAL', [300, 250], 'div-gpt-ad-1402940790495-0').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/650x90_MOVISTAR_MUDIAL2', [650, 90], 'div-gpt-ad-1402940357233-0').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/650X90_MOVISTAR_MUNDIAL', [650, 90], 'div-gpt-ad-1402940357233-1').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/320X50_MOVISTAR_MUNDIAL_BOTTOM', [320, 50], 'div-gpt-ad-1401400694784-0').addService(googletag.pubads());
-            googletag.defineSlot('/1022247/320x50_MOVISTAR_MUNDIAL_TOP', [320, 50], 'div-gpt-ad-1401400694784-1').addService(googletag.pubads());
-
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/1022247/FE_NEW', [[230, 90], [300, 250], [728, 90], [980, 50]], 'div-gpt-ad-1413297523890-0').addService(googletag.pubads());
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
