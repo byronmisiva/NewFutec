@@ -4,4 +4,3 @@
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1413297523890-0'); });
     </script>
 </div>
-<img src="assets/dummys/publi_950-50.png">
