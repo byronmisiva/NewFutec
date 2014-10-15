@@ -1,5 +1,5 @@
 <div class="col-md-3 separador10">
-    <div class="" style="float: left; width: 60px;height: 24px">
+    <span class="social-pos">
 
         <script>!function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -13,18 +13,20 @@
         <a href="https://twitter.com/futbolecuador" class="twitter-follow-button" data-show-count="false"
            data-lang="es"
            data-show-screen-name="false">Seguir a @futbolecuador</a>
-    </div>
+    </span>
+</div>
+<div class="col-md-3 separador10">
 
-    <div class="" style="float: left; width: 60px;height: 24px">
+    <span class="social-pos">
 
         <iframe
             src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&amp;width=60&amp;height=35&amp;colorscheme=light&amp;layout=button&amp;show_faces=false&amp;appId=1396413573964675"
             scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:35px;"
             allowTransparency="true"></iframe>
 
-    </div>
+    </span>
 </div>
-<div class="col-md-9 separador10 pull-right">
+<div class="col-md-6 separador10 pull-right margen0">
     <img src="assets/dummys/redes-buscar.jpg">
 </div>
 

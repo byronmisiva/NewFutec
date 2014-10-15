@@ -525,3 +525,5 @@ ul.headernavtabs {
 .flex-direction-nav {
     display: none;
 }
+
+.social-pos {float: left; width: 60px;height: 24px; padding-top: 4px;}
