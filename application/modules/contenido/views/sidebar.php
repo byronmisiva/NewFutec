@@ -27,7 +27,8 @@
     </span>
 </div>
 <div class="col-md-6 separador10 pull-right margen0">
-    <img src="assets/dummys/redes-buscar.jpg">
+
+    <input class="search" type="text" name="firstname">
 </div>
 
 

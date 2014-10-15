@@ -527,3 +527,15 @@ ul.headernavtabs {
 }
 
 .social-pos {float: left; width: 60px;height: 24px; padding-top: 4px;}
+
+input.search[type=text]
+{
+    height: 28px;
+    padding-left: 25px;
+    text-decoration: none;
+    background-image: url('../dummys/redes-buscar.jpg');
+    background-repeat: no-repeat;
+    width: 154px;
+    border: 0;
+    font-size: 12px;
+}
