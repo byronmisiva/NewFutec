@@ -64,6 +64,7 @@ class Contenido extends MY_Controller
         $data['rotativas'] = $this->load->view('rotativas', $dataRotativas, TRUE);
         //cargamos partidos
         $this->load->module('scoreboards');
+
         //$datamarcador['title'] = "Partidos de Hoy";
         $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
         if ($datamarcador['scores'] == false) {

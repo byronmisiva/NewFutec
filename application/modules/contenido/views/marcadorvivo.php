@@ -18,7 +18,11 @@
                         </div>
                         <div class="col-md-5 h6  text-blue1">
                             <p> <?php setlocale(LC_ALL,"es_ES");echo date("F d H\hi", strtotime($scores[0]->date_match));?></p>
-                            <p><?php echo $active;?><?php echo $score->state;?><?php echo $score->minute_match;?></p>
+                            <p><?php echo $active;?>
+                                <?php
+                                $states=array(0=>'No Iniciado',1=>'Primer Tiempo',2=>'Fin del Primer Tiempo',3=>'Segundo Tiempo',4=>'Fin del Segundo Tiempo',
+                                    5=>'Primer Extra',6=>'Segundo Extra',7=>'Penales',8=>'Final del Partido');
+                                echo $states[$score->state];?></p>
                         </div>
                     </div>
                 </div>
