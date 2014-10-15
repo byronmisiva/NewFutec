@@ -32,7 +32,7 @@
 </div>
 
 
-<div class="col-md-12 separador10  margen0r lateral">
+<div class="col-md-12 separador20  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
         <div class="panel-body panel-body-clear-margin">
@@ -196,12 +196,12 @@
     </div>
 </div>
 
-<div class="col-md-12 separador10">
+<div class="col-md-12 separador20">
     <img src="assets/dummys/publi_300-250.jpg">
 </div>
 <!--Tabla de posiciones-->
 
-<div class="col-md-12 separador10">
+<div class="col-md-12 separador20 margen0r">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             Tabla de posiciones
@@ -209,7 +209,7 @@
     </div>
 
     <div id="collapseTwo" class="panel-collapse collapse in tablaposiciones">
-        <div class="panel-body panel-body-clear-margin">
+        <div class="panel-body panel-body-clear-margin margen0">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active">
@@ -232,7 +232,7 @@
         </div>
     </div>
     <div class="col-md-12 text-right fondoazul">
-        Más detalles >
+        Ver tabla completa
     </div>
 </div>
 <!--Fin Tabla de posiciones-->
@@ -240,7 +240,7 @@
 
 <!--Goleadores-->
 
-<div class="col-md-12 separador10">
+<div class="col-md-12 separador20 margen0r">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             Goleadores
@@ -249,7 +249,7 @@
     <? echo $strikes; ?>
 
     <div class="col-md-12 text-right fondoazul">
-        Más detalles >
+        Ver tabla completa
     </div>
 </div>
 <!--Fin Tabla de posiciones-->

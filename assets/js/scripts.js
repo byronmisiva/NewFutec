@@ -95,6 +95,20 @@ $(window).load(function () {
             $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
         }
     });
+
+
+    $('#accordion1').on('shown.bs.collapse', function () {
+        var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
+        var sectionID = openAnchor.attr('href');
+       // console.log(sectionID);
+    })
+
+    $('#accordion2').on('shown.bs.collapse', function () {
+        var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
+        var sectionID = openAnchor.attr('href');
+        $(sectionID+"1").collapse('toggle');
+    })
+
 });
 
 //escala noticias home
