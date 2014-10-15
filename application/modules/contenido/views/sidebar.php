@@ -28,7 +28,7 @@
 </div>
 <div class="col-md-6 separador10 pull-right margen0">
 
-    <input class="search" type="text" name="firstname">
+    <input class="search" type="text" name="firstname" placeholder="Buscar...">
 </div>
 
 

@@ -6,9 +6,15 @@
  * License: copyrigth
  */
 
+
+
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    src:url('../fonts/HelveticaNeue.eot');
+    src:url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeue.woff') format('woff'),
+    url('../fonts/HelveticaNeue.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -122,7 +128,7 @@ footer {
 
 .menutype {
     font-size: 12px;
-    font-family: helvetica neue;
+    font-family: "HelveticaNeue", Arial;
     font-style: normal;
 }
 
@@ -200,7 +206,7 @@ footer {
 
 .text-rotativas h2 {
     font-size: 20px;
-    font-family: "Helvetica Neue";
+    font-family: "HelveticaNeue";
     margin: 0;
     padding: 0;
     font-weight: 300;
@@ -208,7 +214,7 @@ footer {
 
 .text-rotativas h3 {
     font-size: 14px;
-    font-family: "Helvetica Neue";
+    font-family: "HelveticaNeue";
     font-weight: 200;
     margin: 0;
     padding: 0;
