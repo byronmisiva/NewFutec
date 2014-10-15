@@ -521,3 +521,7 @@ ul.headernavtabs {
 .lateral .well {
     border: 1px solid #fff;
 }
+
+.flex-direction-nav {
+    display: none;
+}
