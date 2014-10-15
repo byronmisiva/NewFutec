@@ -56,7 +56,7 @@ $this->load->view('header');
                 ?>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 sidebar">
             <?php
             echo $sidebar;
             ?>

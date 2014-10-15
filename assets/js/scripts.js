@@ -113,14 +113,20 @@ $(window).load(function () {
 
 //escala noticias home
 function altoshome() {
-    for (i = 1; i <= 12; i=i+2) {
-        alto1 = $(".noticia:nth-child(" + i + ")").height();
-        alto2 = $(".noticia:nth-child(" + (i + 1) + ")").height();
-        if (alto1 > alto2) {
-            $(".noticia:nth-child(" + (i + 1) + ")").height(alto1);
-        } else {
-            $(".noticia:nth-child(" + i + ")").height(alto2);
-        }
+    $('.noticia-content').each(function(){
+        $(this).each(function(){
+            noticias = $(this).children("div.noticia");
+            noticia1 =  $(noticias).children("div.news-detail");
+            alto1 = $(noticia1[0]).height();
+            alto2 = $(noticia1[1]).height();
 
-    }
+            if (alto1 > alto2) {
+                $(noticia1[1]).height(alto1);
+            } else {
+                $(noticia1[0]).height(alto2);
+            }
+
+        });
+    });
+
 }

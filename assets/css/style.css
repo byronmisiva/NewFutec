@@ -556,3 +556,5 @@ input.search[type=text]
     border: 0;
     font-size: 12px;
 }
+
+.sidebar .table, .sidebar .well, .sidebar .panel-group {margin-bottom: 0;}
