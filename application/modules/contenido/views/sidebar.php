@@ -1,17 +1,32 @@
-<div class="col-md-12 separador10 pull-right">
+<div class="col-md-3 separador10">
+    <div class="" style="float: left; width: 60px;height: 24px">
+
+        <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
+        <a href="https://twitter.com/futbolecuador" class="twitter-follow-button" data-show-count="false"
+           data-lang="es"
+           data-show-screen-name="false">Seguir a @futbolecuador</a>
+    </div>
+
+    <div class="" style="float: left; width: 60px;height: 24px">
+
+        <iframe
+            src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&amp;width=60&amp;height=35&amp;colorscheme=light&amp;layout=button&amp;show_faces=false&amp;appId=1396413573964675"
+            scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:35px;"
+            allowTransparency="true"></iframe>
+
+    </div>
+</div>
+<div class="col-md-9 separador10 pull-right">
     <img src="assets/dummys/redes-buscar.jpg">
 </div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=1396413573964675&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-<a href="https://twitter.com/futbolecuador" class="twitter-follow-button" data-show-count="false" data-lang="es" data-show-screen-name="false">Seguir a @futbolecuador</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
 <div class="col-md-12 separador10  margen0r lateral">
