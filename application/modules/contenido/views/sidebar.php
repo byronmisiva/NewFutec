@@ -1,6 +1,19 @@
 <div class="col-md-12 separador10 pull-right">
     <img src="assets/dummys/redes-buscar.jpg">
 </div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=1396413573964675&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<a href="https://twitter.com/futbolecuador" class="twitter-follow-button" data-show-count="false" data-lang="es" data-show-screen-name="false">Seguir a @futbolecuador</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
 <div class="col-md-12 separador10  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
