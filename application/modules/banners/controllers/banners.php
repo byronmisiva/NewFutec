@@ -50,6 +50,36 @@ class Banners extends MY_Controller
         return $this->load->view('fe_bigboxnews6', $data, TRUE);
     }
 
+    //banner sidebar
+
+    public function FE_BigboxSidebar1($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar1', $data, TRUE);
+    }
+
+    public function FE_BigboxSidebar2($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar2', $data, TRUE);
+    }
+    public function FE_BigboxSidebar3($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar3', $data, TRUE);
+    }
+    public function FE_BigboxSidebar4($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar4', $data, TRUE);
+    }
+    public function FE_BigboxSidebar5($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar5', $data, TRUE);
+    }
+    public function FE_BigboxSidebar6($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar6', $data, TRUE);
+    }
+
+    //fin banners sidebar
+
     public function FE_overlaybanner($data = FALSE)
     {
         return $this->load->view('fe_overlaybanner', $data, TRUE);

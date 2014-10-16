@@ -507,6 +507,10 @@ footer {
     padding: 4px;
 }
 
+.tablemargin4 tbody{
+    border: 1px solid #ddd;
+}
+
 .tablemargin4 > thead > tr > th, .tablemargin4 > tbody > tr > th, .tablemargin4 > tfoot > tr > th, .tablemargin4 > thead > tr > td, .tablemargin4 > tbody > tr > td, .tablemargin4 > tfoot > tr > td {
 
     padding: 4px;

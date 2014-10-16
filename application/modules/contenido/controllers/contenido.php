@@ -120,6 +120,17 @@ class Contenido extends MY_Controller
 
     public function sidebar($data = FALSE)
     {
+
+        //carga Banners
+        $this->load->module('banners');
+        $bannersSidebar = array();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
+        $data['bannersSidebar'] = $bannersSidebar;
+        //fin carga banners
+
         //Proxima Fecha
         $listCampeonatos = $this->mdl_scoreboards->active_schedules(false, false);
         $campeonatos = array();

@@ -1,1 +1,6 @@
-<img alt="300x250" src="assets/dummys/publi_300-250.jpg">
+<!-- FE_NEW_RECTANGLE_4 -->
+<div id='div-gpt-ad-1413414586192-7' style='width:300px; height:250px;'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1413414586192-7'); });
+    </script>
+</div>

@@ -1,3 +1,4 @@
+<!-- social y buscar -->
 <div class="col-md-3 separador10">
     <span class="social-pos">
 
@@ -31,7 +32,7 @@
     <input class="search" type="text" name="firstname" placeholder="Buscar...">
 </div>
 
-
+<!-- social y buscar -->
 <div class="col-md-12 separador20  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
@@ -195,9 +196,9 @@
         </div>
     </div>
 </div>
-
+<!--banner lateral 1 -->
 <div class="col-md-12 separador20">
-    <img src="assets/dummys/publi_300-250.jpg">
+     <? echo $bannersSidebar[0]; ?>
 </div>
 <!--Tabla de posiciones-->
 
@@ -237,6 +238,10 @@
 </div>
 <!--Fin Tabla de posiciones-->
 
+<!--banner lateral 2 -->
+<div class="col-md-12 separador20">
+    <? echo $bannersSidebar[1]; ?>
+</div>
 
 <!--Goleadores-->
 
@@ -253,3 +258,14 @@
     </div>
 </div>
 <!--Fin Tabla de posiciones-->
+
+<!--banner lateral 3 -->
+<div class="col-md-12 separador20">
+    <? echo $bannersSidebar[2]; ?>
+</div>
+
+
+<!--banner lateral 4 -->
+<div class="col-md-12 separador20">
+    <? echo $bannersSidebar[3]; ?>
+</div>
