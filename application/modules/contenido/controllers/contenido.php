@@ -118,6 +118,19 @@ class Contenido extends MY_Controller
         // todo validar si se queda
     }
 
+    public function view_la_entrevista($data = FALSE)
+    {
+        return $this->load->view('laentrevista', $data, TRUE);
+
+    }
+
+    public function view_fuera_de_juego($data = FALSE)
+    {
+        return $this->load->view('fueradejuego', $data, TRUE);
+
+    }
+
+
     public function sidebar($data = FALSE)
     {
 
@@ -163,6 +176,23 @@ class Contenido extends MY_Controller
         //Resultados goleadores
         $this->load->module('strikes');
         $data['strikes'] = $this->strikes->goleadores(SERIE_A);
+
+        //La entrevista
+        $data['laentrevista'] = $this->view_la_entrevista();
+
+        //La entrevista
+        $data['fueradejuego'] = $this->view_fuera_de_juego();
+
+        //Lo más leido
+        $this->load->module('noticias');
+        $data['loMasLeido'] = $this->noticias->viewmininewssidebar ("Lo más leído", 1);
+
+        //La voz de las tribunas
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", 2);
+
+        //Zona Fe
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", 3);
+
 
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda

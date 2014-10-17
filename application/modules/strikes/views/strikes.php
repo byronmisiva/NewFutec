@@ -1,3 +1,9 @@
+<div class="panel-heading backcuadros">
+    <h4 class="panel-title">
+        Goleadores
+    </h4>
+</div>
+
 <div class="table-responsive">
     <table class="table table-striped font12  tablemargin4">
         <tbody>
@@ -16,3 +22,8 @@
         </tbody>
     </table>
 </div>
+<div class="col-md-12 text-right fondoazul separador10">
+    Ver tabla completa
+</div>
+
+

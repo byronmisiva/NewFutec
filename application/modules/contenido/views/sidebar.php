@@ -32,7 +32,7 @@
     <input class="search" type="text" name="firstname" placeholder="Buscar...">
 </div>
 
-<!-- social y buscar -->
+
 <div class="col-md-12 separador20  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
@@ -196,12 +196,14 @@
         </div>
     </div>
 </div>
-<!--banner lateral 1 -->
-<div class="col-md-12 separador20">
-     <? echo $bannersSidebar[0]; ?>
-</div>
-<!--Tabla de posiciones-->
 
+
+<!--la entrevista -->
+<div class="col-md-12 separador20">
+    <? echo $laentrevista; ?>
+</div>
+
+<!--Tabla de posiciones-->
 <div class="col-md-12 separador20 margen0r">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
@@ -236,36 +238,51 @@
         Ver tabla completa
     </div>
 </div>
-<!--Fin Tabla de posiciones-->
 
-<!--banner lateral 2 -->
 <div class="col-md-12 separador20">
-    <? echo $bannersSidebar[1]; ?>
+    <? echo $bannersSidebar[0]; ?>
 </div>
+
+
 
 <!--Goleadores-->
 
 <div class="col-md-12 separador20 margen0r">
-    <div class="panel-heading backcuadros">
-        <h4 class="panel-title">
-            Goleadores
-        </h4>
-    </div>
     <? echo $strikes; ?>
-
-    <div class="col-md-12 text-right fondoazul separador10">
-        Ver tabla completa
-    </div>
 </div>
-<!--Fin Tabla de posiciones-->
 
+<!--Fin Tabla de posicione
+<!--banner lateral 2 -->
+<div class="col-md-12 separador20">
+    <? echo $bannersSidebar[1]; ?>
+</div>
+<!--Lo más leido-->
+<div class="col-md-12 separador20">
+
+    <? echo  $loMasLeido; ?>
+</div>
+
+<!--fuera de juego -->
+<div class="col-md-12 separador20">
+    <? echo  $fueradejuego; ?>
+</div>
+<!--La voz de las tribunas-->
+<div class="col-md-12 separador20">
+    <? echo $laVozDeLasTribunas; ?>
+</div>
 <!--banner lateral 3 -->
 <div class="col-md-12 separador20">
     <? echo $bannersSidebar[2]; ?>
 </div>
-
+<!--Zona Fe-->
+<div class="col-md-12 separador20">
+    <? echo $zonaFe; ?>
+</div>
 
 <!--banner lateral 4 -->
 <div class="col-md-12 separador20">
     <? echo $bannersSidebar[3]; ?>
 </div>
+
+
+
