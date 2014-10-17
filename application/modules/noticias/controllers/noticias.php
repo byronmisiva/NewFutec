@@ -48,4 +48,6 @@ class Noticias extends MY_Controller
 
         return $this->load->view('mininewssidebar', $data, TRUE);
     }
+
+
 }

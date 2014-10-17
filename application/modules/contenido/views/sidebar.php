@@ -199,7 +199,7 @@
 
 
 <!--la entrevista -->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $laentrevista; ?>
 </div>
 
@@ -239,7 +239,7 @@
     </div>
 </div>
 
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[0]; ?>
 </div>
 
@@ -253,34 +253,34 @@
 
 <!--Fin Tabla de posicione
 <!--banner lateral 2 -->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[1]; ?>
 </div>
 <!--Lo más leido-->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
 
     <? echo  $loMasLeido; ?>
 </div>
 
 <!--fuera de juego -->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo  $fueradejuego; ?>
 </div>
 <!--La voz de las tribunas-->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $laVozDeLasTribunas; ?>
 </div>
 <!--banner lateral 3 -->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[2]; ?>
 </div>
 <!--Zona Fe-->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $zonaFe; ?>
 </div>
 
 <!--banner lateral 4 -->
-<div class="col-md-12 separador20">
+<div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[3]; ?>
 </div>
 
