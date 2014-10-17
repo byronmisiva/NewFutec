@@ -318,7 +318,7 @@ footer {
     font-weight: bold;
 }
 
-.content h2, .content .h2 {
+.content h2, .content .h2, .sidebar h2, .sidebar .h2  {
     font-family: "Oxygen";
     font-size: 15px;
     margin: 0;
