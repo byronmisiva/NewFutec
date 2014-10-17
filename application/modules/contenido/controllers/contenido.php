@@ -13,7 +13,6 @@ class Contenido extends MY_Controller
     public function cabecera($data = FALSE)
     {
         return $this->load->view('header', $data, TRUE);
-        //todo se queda
     }
 
     public function menu($data = FALSE)
@@ -24,21 +23,15 @@ class Contenido extends MY_Controller
 
         $this->load->module('teams_position');
         $this->load->module('team');
-
         $positions = $this->mdl_teams_position->get_table_by_champ(CHAMP_DEFAULT);
-
         /*  $teams=array();
           foreach($positions as $key=>$pos){
 
               $teams[$key]=current($this->mdl_team->get($pos['id'])->result());
               $teams[$key]->seccion=$pos['section'];
           }*/
-
         $data['teams'] = $positions;
-
-
         return $this->load->view('menu', $data, TRUE);
-        //todo se queda
     }
 
     public function header2($data = FALSE)
@@ -74,7 +67,7 @@ class Contenido extends MY_Controller
         $data['marcadorvivo'] = $this->load->view('marcadorvivo', $datamarcador, TRUE);
 
         return $this->load->view('header2', $data, TRUE);
-        //todo se queda
+
     }
 
     /* function verificaDispositivo(){
@@ -103,13 +96,13 @@ class Contenido extends MY_Controller
     public function footer($data = FALSE)
     {
         return $this->load->view('footer', $data, TRUE);
-        //todo se queda
+
     }
 
     public function bottom($data = FALSE)
     {
         return $this->load->view('bottom', $data, TRUE);
-        //todo se queda
+
     }
 
     public function view_twitter($data = FALSE)
@@ -184,14 +177,16 @@ class Contenido extends MY_Controller
         $data['fueradejuego'] = $this->view_fuera_de_juego();
 
         //Lo más leido
-        $this->load->module('noticias');
-        $data['loMasLeido'] = $this->noticias->viewmininewssidebar ("Lo más leído", LOMASLEIDO);
+
+        $this->load->module('story');
+        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO);
 
         //La voz de las tribunas
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS);
+        $this->load->module('noticias');
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS);
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE);
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS);
 
 
         return $this->load->view('sidebar', $data, TRUE);

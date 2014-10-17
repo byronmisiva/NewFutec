@@ -12,7 +12,7 @@ class Team extends MY_Controller
     /*public function cabecera($data = FALSE)
     {
         return $this->load->view('header2', $data, TRUE);
-        //todo se queda
+
     }*/
 
 

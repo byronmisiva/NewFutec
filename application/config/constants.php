@@ -67,9 +67,21 @@ define('CACHE_DEFAULT',4);	//minutos
 
 //blogs
 define('ZONAFE',63); //ZonaFe
-define('LOMASLEIDO',63); //ZonaFe
-define('LAVOZDELASTRIBUNAS',63); //ZonaFe
+define('ZONAFEPOS',1); //ZonaFe
 
+define('LAVOZDELASTRIBUNAS',''); //La voz de las tribunas
+define('LAVOZDELASTRIBUNASPOS',14); //La voz de las tribunas
+
+
+define('LOMASLEIDO',63); //ZonaFe
+define('LOMASLEIDOPOS',1); //ZonaFe
+
+define('NUMNEWSSIDE',5); //ZonaFe
+
+
+
+
+// la voz  - - -  get_by_position(4, '', 14);
 
 
 

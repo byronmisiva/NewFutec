@@ -12,7 +12,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticiasHome($data = FALSE)
     {
-        setlocale(LC_ALL,"es_ES");
+        setlocale(LC_ALL, "es_ES");
         $this->load->module('banners');
         $banners = array();
         $banners[] = $this->banners->FE_Bigboxnews1();
@@ -20,14 +20,14 @@ class Noticias extends MY_Controller
         $banners[] = $this->banners->FE_Bigboxnews3();
         $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
-        $storys=$this->mdl_story->storys_by_tags();
-        foreach ($storys as $story){
+        $storys = $this->mdl_story->storys_by_tags();
+        foreach ($storys as $story) {
             $dataStory['story'] = $story;
             $noticias[] = $this->viewNoticia($dataStory);
         }
         //intercalo entre las noticias los banners.
         array_splice($noticias, 5, 0, $banners[0]);
-        array_splice($noticias, 12 , 0, $banners[1]);
+        array_splice($noticias, 12, 0, $banners[1]);
         array_splice($noticias, 17, 0, $banners[2]);
         array_splice($noticias, 25, 0, $banners[3]);
         $data['noticias'] = $noticias;
@@ -36,21 +36,16 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewNoticia ($data = FALSE)
+    public function viewNoticia($data = FALSE)
     {
         return $this->load->view('noticiahomemini', $data, TRUE);
     }
 
-    public function viewmininewssidebar ($namesection, $idsection, $data = FALSE)
+    public function viewmininewssidebar($namesection, $idsection, $posSection,  $data = FALSE)
     {
-
         $data['namesection'] = $namesection;
         $data['idsection'] = $idsection;
-
-
-        $data['noticias']="xx";
-          $data['noticias']=$this->mdl_noticias->get_by_position(5, $idsection , 1);
-
+        $data['noticias'] = $this->mdl_noticias->get_by_position(NUMNEWSSIDE, $idsection, $posSection);
         return $this->load->view('mininewssidebar', $data, TRUE);
     }
 

@@ -16,5 +16,14 @@ class Story extends MY_Controller
         return $this->load->view('top1', $data, TRUE);
     }
 
+    public function viewget_plus($namesection, $idsection , $data = FALSE)
+    {
+        $data['namesection'] = $namesection;
+        $data['idsection'] = $idsection;
+        $data['noticias'] = $this->mdl_story->get_plus ();
+
+        return $this->load->view('mininewssidebar', $data, TRUE);
+    }
+
 
 }
