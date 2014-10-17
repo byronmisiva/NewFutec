@@ -23,7 +23,7 @@
     </table>
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
-    Ver tabla completa
+    Ver más
 </div>
 
 

@@ -65,6 +65,13 @@ define('CACHE_MOVIL',5);	//minutos
 define('CACHE_DEFAULT',4);	//minutos
 
 
+//blogs
+define('ZONAFE',63); //ZonaFe
+define('LOMASLEIDO',63); //ZonaFe
+define('LAVOZDELASTRIBUNAS',63); //ZonaFe
+
+
+
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

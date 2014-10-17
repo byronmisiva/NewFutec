@@ -43,8 +43,13 @@ class Noticias extends MY_Controller
 
     public function viewmininewssidebar ($namesection, $idsection, $data = FALSE)
     {
+
         $data['namesection'] = $namesection;
         $data['idsection'] = $idsection;
+
+
+        $data['noticias']="xx";
+          $data['noticias']=$this->mdl_noticias->get_by_position(5, $idsection , 1);
 
         return $this->load->view('mininewssidebar', $data, TRUE);
     }

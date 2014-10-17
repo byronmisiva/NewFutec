@@ -185,13 +185,13 @@ class Contenido extends MY_Controller
 
         //Lo más leido
         $this->load->module('noticias');
-        $data['loMasLeido'] = $this->noticias->viewmininewssidebar ("Lo más leído", 1);
+        $data['loMasLeido'] = $this->noticias->viewmininewssidebar ("Lo más leído", LOMASLEIDO);
 
         //La voz de las tribunas
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", 2);
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS);
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", 3);
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE);
 
 
         return $this->load->view('sidebar', $data, TRUE);
