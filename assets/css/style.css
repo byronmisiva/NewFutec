@@ -426,10 +426,16 @@ footer {
     font-size: 14px;
 }
 
-.panel-default > .panel-heading, .backcuadros {
+  .backcuadros {
     background-image: url("../img/fondo-subtitulos.png");
     border-radius: 0px;
     color: #fff;
+    font-family: oxygen;
+}
+
+.panel-default > .panel-heading  {
+    border-radius: 0px;
+    color: #6d6e71;
     font-family: oxygen;
 }
 
@@ -466,10 +472,16 @@ footer {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus    {
     background-color: #e1e1e1;
-    color: #000000;
+
     cursor: default;
     border: 1px solid #e1e1e1;
     outline: none;
+
+
+    background-image: url("../img/fondo-subtitulos.png");
+    border-radius: 0px;
+    color: #fff;
+    font-family: oxygen;
 }
 
 .nav-tabs > li > a {
@@ -485,7 +497,7 @@ footer {
     display: block;
     padding: 4px 15px;
     position: relative;
-    color: #4b596d;
+    color: #fff;
 }
 
 .nav-tabs > li {
@@ -562,3 +574,5 @@ input.search[type=text]
 }
 
 .sidebar .table, .sidebar .well, .sidebar .panel-group {margin-bottom: 0;}
+
+.clamped-2 {}
