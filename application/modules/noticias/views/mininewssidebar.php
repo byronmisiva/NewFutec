@@ -10,11 +10,22 @@
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
                 <div class="col-md-2 ">
-                    <img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" >
+                    <img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>">
                 </div>
                 <div class="col-md-10  ">
                     <h2><?php echo $noticia->title; ?></h2>
-                    <?php echo strip_tags($noticia->lead); ?><br/>
+                    <?php
+                    if (strlen(strip_tags($noticia->lead)) == 0) {
+                        $num = 100;
+                        $str = strip_tags($noticia->body);
+                        $str = substr($str, 0, $num);
+                        $bodyCortado = substr($str, 0, -(strlen($str) - strrpos($str, ' ')));
+
+                        echo $bodyCortado . "...";
+                    } else {
+                        ?>
+                        <?php echo strip_tags($noticia->lead);
+                    }?>
                 </div>
             </div>
         </div>
