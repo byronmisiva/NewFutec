@@ -4,6 +4,7 @@
         <tr>
             <th></th>
             <th></th>
+            <th class="azul text-center">PJ</th>
             <th class="azul text-center">Pts</th>
             <th class="azul">GD</th>
         </tr>
@@ -16,6 +17,7 @@
                 <tr>
                     <td ><?php echo $key + 1 ?></td>
                     <td><?php echo $row['name'] ?></td>
+                    <td><?php echo $row['pj'] ?></td>
                     <td><?php echo $row['points'] ?></td>
                     <td><?php echo $sign . $row['gd'] ?></td>
                 </tr>
