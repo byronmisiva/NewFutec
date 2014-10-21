@@ -81,18 +81,8 @@ $this->load->view('footer');
 ?>
 
 
-<!-- /container --><!-- /container --><!-- /container --><!-- /container -->
-<!-- /container --><!-- /container --><!-- /container --><!-- /container -->
-
 
 <div class="container">
-
-
-
-
-
-
-
 
 </div>
 <!-- /container -->
