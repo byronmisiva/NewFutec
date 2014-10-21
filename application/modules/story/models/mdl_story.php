@@ -20,7 +20,7 @@ class Mdl_story extends MY_Model
         parent::__construct();
     }
 
-    function storys_by_tags($tag = "", $limit = "20")
+    function storys_by_tags($tag = "", $limit = RESULT_PAGE)
     {
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
         $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
