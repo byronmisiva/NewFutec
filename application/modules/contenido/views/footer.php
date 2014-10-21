@@ -67,7 +67,11 @@
         </div>
 
         <div class="col-md-12 ">
-            <a href="#">Suscríbite a nuestro boletín de noticias</a>
+        <div class="row ">
+        <div class="col-md-12 ">
+             Suscríbite a nuestro boletín de noticias
+        </div>
+        </div>
         </div>
 
         <div class="col-md-12 ">
@@ -86,7 +90,7 @@
         <div class="col-md-12  azulfooter">
             <h3>Pauta con nosotros</h3>
         </div>
-        <div class="col-md-12  azulfooter">
+        <div class="col-md-12   ">
             <h3>Contacto</h3>
         </div>
         <div class="col-md-12 ">
