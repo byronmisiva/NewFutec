@@ -575,4 +575,8 @@ input.search[type=text]
 
 .sidebar .table, .sidebar .well, .sidebar .panel-group {margin-bottom: 0;}
 
-.clamped-2 {}
+.zoom06 {
+    zoom:0.60;
+    -moz-transform:scale(0.60);
+    -moz-transform-origin: 0 0;
+}

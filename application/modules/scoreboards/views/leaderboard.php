@@ -4,6 +4,7 @@
         <tr>
             <th></th>
             <th></th>
+            <th></th>
             <th class="azul text-center">PJ</th>
             <th class="azul text-center">Pts</th>
             <th class="azul">GD</th>
@@ -16,6 +17,8 @@
                 ?>
                 <tr>
                     <td ><?php echo $key + 1 ?></td>
+                    <td ><div class="equipos sprite-<?php echo strtolower ($this->contenido->_clearStringGion ($row['name'] )) ?>-icon zoom06 "></div></td>
+
                     <td><?php echo $row['name'] ?></td>
                     <td><?php echo $row['pj'] ?></td>
                     <td><?php echo $row['points'] ?></td>
