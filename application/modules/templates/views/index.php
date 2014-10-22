@@ -39,12 +39,12 @@ $this->load->view('header');
 <div class="container">
     <!-- Example row of columns -->
     <div class="row separador20">
-        <?php echo $header2;?>
+        <?php echo $header2; ?>
     </div>
 
     <div class="row separador10">
         <div class="col-md-12 margen0">
-            <?php echo $top2;?>
+            <?php echo $top2; ?>
         </div>
     </div>
 
@@ -61,10 +61,8 @@ $this->load->view('header');
             echo $sidebar;
             ?>
         </div>
-
     </div>
 </div>
-
 
 
 <!-- /container -->
@@ -79,11 +77,5 @@ $this->load->view('header');
 <?php
 $this->load->view('footer');
 ?>
-
-
-
-<div class="container">
-
-</div>
 <!-- /container -->
 
