@@ -31,7 +31,7 @@
 
 
 
-<!--[if lt IE 10]>
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('.hidden-menu').css('display', 'none');
@@ -53,7 +53,7 @@
     })();
 </script>
 
-<![endif]-->
+
 <script>
     $(document).ready(function () {
         // Target your .container, .wrapper, .post, etc.

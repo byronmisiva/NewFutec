@@ -22,8 +22,7 @@
 
         <iframe
             src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&amp;width=60&amp;height=35&amp;colorscheme=light&amp;layout=button&amp;show_faces=false&amp;appId=1396413573964675"
-            scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:35px;"
-            allowTransparency="true"></iframe>
+            scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:35px; border:0" <!--[if IE] allowTransparency="true" -->></iframe>
 
     </span>
 </div>
