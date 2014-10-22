@@ -16,7 +16,7 @@
 
                         };
                         echo $score->hsname . " " . $score->result . " " . $score->asname;?>
-                        <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>" <?php echo $score->asname; ?>>
+                        <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>" alt="<?php echo $score->asname; ?>">
                     </div>
                     <div class="col-md-5 col-md-offset-1 h6 text-blue1">
                         <p><?php echo $score->championship; ?></p>
