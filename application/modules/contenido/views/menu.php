@@ -1,5 +1,5 @@
 <div class="navbar-header">
-    <a href="#" class=""><img src="assets/img/logotipo.png" alt="" class=" media-object">
+    <a href="#" class=""><img src="assets/img/logotipo.png" alt="FutbolEcuador" class=" media-object">
     </a>
 </div>
 <!-- end navbar-header -->
@@ -166,15 +166,15 @@
                         <div class="col-sm-1  ">
                         </div>
                         <div class="col-sm-3  text-center separador-dotted">
-                            <img src="assets/img/copa-libertadores.png">
+                            <img src="assets/img/copa-libertadores.png" alt="Copa Libertadores">
                         </div>
                         <!-- end col-4 -->
                         <div class="col-sm-3 text-center separador-dotted">
-                            <img src="assets/img/copa-sudamericana.png">
+                            <img src="assets/img/copa-sudamericana.png" alt="Copa Sudamericana">
                         </div>
                         <!-- end col-4 -->
                         <div class="col-sm-3 text-center">
-                            <img src="assets/img/copa-america-2015.png">
+                            <img src="assets/img/copa-america-2015.png" alt="Copa America">
                         </div>
                         <!-- end col-4 -->
                     </div>

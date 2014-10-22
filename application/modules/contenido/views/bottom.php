@@ -4,8 +4,8 @@
     </div>
 
     <div class="col-md-6 text-right">
-        <img src="<?php echo base_url(); ?>assets/img/logo_SMG.png"/>
-        <img src="<?php echo base_url(); ?>assets/img/logo_misiva.png"/>
+        <img src="<?php echo base_url(); ?>assets/img/logo_SMG.png" alt="logoSMG"/>
+        <img src="<?php echo base_url(); ?>assets/img/logo_misiva.png" alt="logoMisiva"/>
 
     </div>
 </div>
