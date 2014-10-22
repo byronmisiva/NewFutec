@@ -4,7 +4,7 @@
         foreach ($query as &$dataimagen) {
             ?>
             <li data-thumb="http://www.futbolecuador.com/<?php echo $dataimagen->thumbh80; ?>">
-                <img src="http://www.futbolecuador.com/<?php echo $dataimagen->thumb500; ?>" alt="<?php echo $dataimagen->title; ?>"/>
+                <img src="http://www.futbolecuador.com/<?php echo $dataimagen->thumb500; ?>" alt="<?php echo str_replace('"', '', "$dataimagen->title"); ?>"/>
 
                 <div class="content-text-rotativas">
                     <div class="text-rotativas">

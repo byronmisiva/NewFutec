@@ -10,7 +10,7 @@
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
                 <div class="col-md-2 ">
-                    <img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" alt="<?php echo $noticia->title; ?>">
+                    <img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" alt="<?php echo str_replace('"', '', "$noticia->title"); ?>">
                 </div>
                 <div class="col-md-10  ">
                     <h2><?php echo $noticia->title; ?></h2>
