@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="es-ES" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <?php header('Content-type: text/html; charset=utf-8'); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
