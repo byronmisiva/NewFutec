@@ -75,7 +75,7 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <a href="#" class="pull-left">
-                                        <img src="assets/dummys/noticiaMenu.jpg" alt=""
+                                        <img src="assets/dummys/noticiaMenu.jpg" alt="Noticia Serie A"
                                              class="img-thumbnail media-object"
                                              width="61">
                                     </a>
@@ -98,7 +98,7 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <a href="#" class="pull-left">
-                                        <img src="assets/dummys/noticiaMenu.jpg" alt=""
+                                        <img src="assets/dummys/noticiaMenu.jpg" alt="Noticia Serie B"
                                              class="img-thumbnail media-object"
                                              width="61">
                                     </a>
@@ -122,7 +122,7 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <a href="#" class="pull-left">
-                                        <img src="assets/dummys/noticiaMenu.jpg" alt=""
+                                        <img src="assets/dummys/noticiaMenu.jpg" alt="Noticias Seleccion"
                                              class="img-thumbnail media-object"
                                              width="61">
                                     </a>
