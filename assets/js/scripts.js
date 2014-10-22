@@ -100,7 +100,7 @@ $(window).load(function () {
     $('#accordion1').on('shown.bs.collapse', function () {
         var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
         var sectionID = openAnchor.attr('href');
-       // console.log(sectionID);
+        console.log(sectionID);
     })
 
     $('#accordion2').on('shown.bs.collapse', function () {

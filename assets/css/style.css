@@ -574,6 +574,19 @@ input.search[type=text]
     font-size: 12px;
 }
 
+input.search2[type=text]
+{
+    height: 28px;
+    padding-left: 25px;
+    text-decoration: none;
+    color: #cccccc;
+    width: 154px;
+    border: 0;
+    font-size: 12px;
+    background-color: transparent;
+    border-bottom: 1px solid #666666;
+}
+
 .sidebar .table, .sidebar .well, .sidebar .panel-group {margin-bottom: 0;}
 
 .zoom06 {
@@ -623,5 +636,28 @@ input.search[type=text]
 
 .copyright-fe {
     padding-top: 8px;
+}
+
+a.newsButton {
+    background-color:transparent;
+    display:inline-block;
+    cursor:pointer;
+    color: #fa9b1e !important;
+    font-family:arial;
+    font-size:12px;
+    padding:16px 31px;
+    text-decoration:none;
+}
+a.newsButton:hover {
+    background-color:transparent;
+}
+.newsButton:active {
+    position:relative;
+    top:1px;
+}
+
+input.search2[type="text"] {
+    width: 100%;
+
 }
 
