@@ -1,5 +1,5 @@
 <div class="noticia-img">
-<img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive">
+<img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive" alt="<?php echo $story->title; ?>">
 </div>
 <div class="row clearfix news-detail">
     <div class="col-md-12 column text-news-date">

@@ -84,7 +84,7 @@
                                                             </div>
                                                             <div class="col-md-2 text-right ">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>" alt="<?php echo $partido->hname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->hname; ?>
@@ -97,7 +97,7 @@
                                                             </div>
                                                             <div class="col-md-2  text-right">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>" alt="<?php echo $partido->aname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->aname; ?>
@@ -155,7 +155,7 @@
                                                             </div>
                                                             <div class="col-md-2 text-right">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>" alt="<?php echo $partido->hname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->hname; ?>
@@ -168,7 +168,7 @@
                                                             </div>
                                                             <div class="col-md-2  text-right">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>" alt="<?php echo $partido->aname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->aname; ?>

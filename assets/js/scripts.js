@@ -96,7 +96,7 @@ $(window).load(function () {
         }
     });
 
-
+//ajustes resultados
     $('#accordion1').on('shown.bs.collapse', function () {
         var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
         var sectionID = openAnchor.attr('href');

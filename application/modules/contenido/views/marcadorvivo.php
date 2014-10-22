@@ -8,7 +8,7 @@
             $active = ""; ?>">
                 <div class="row text-white">
                     <div class="col-md-12 text-center h5">
-                        <img src="http://www.futbolecuador.com/<?php echo $score->hthumb; ?>">
+                        <img src="http://www.futbolecuador.com/<?php echo $score->hthumb; ?>" alt="<?php echo $score->hname; ?>">
                         <?php
                         if (strlen($score->result) == 0) {
                             $score->result = " - ";
@@ -16,7 +16,7 @@
 
                         };
                         echo $score->hsname . " " . $score->result . " " . $score->asname;?>
-                        <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>">
+                        <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>" <?php echo $score->asname; ?>>
                     </div>
                     <div class="col-md-5 col-md-offset-1 h6 text-blue1">
                         <p><?php echo $score->championship; ?></p>
