@@ -211,7 +211,7 @@
         </h4>
     </div>
 
-    <div id="collapseTwo" class="panel-collapse collapse in tablaposiciones">
+    <div id="collapseOne" class="panel-collapse collapse in tablaposiciones">
         <div class="panel-body panel-body-clear-margin margen0">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -251,7 +251,8 @@
     <? echo $strikes; ?>
 </div>
 
-<!--Fin Tabla de posicione
+<!--Fin Tabla de posicione -->
+
 <!--banner lateral 2 -->
 <div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[1]; ?>

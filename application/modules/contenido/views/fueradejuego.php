@@ -1,1 +1,1 @@
-<img src="imagenes/fuera-de-juego/mod-fuera-juego-portada.png">
+<img src="imagenes/fuera-de-juego/mod-fuera-juego-portada.png" alt="Fuera de juego">
