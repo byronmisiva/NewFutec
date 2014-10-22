@@ -1,1 +1,1 @@
-<img src="imagenes/la-entrevista/mod-la-entrevista-portada.png">
+<img src="imagenes/la-entrevista/mod-la-entrevista-portada.png" alt="Sección la Entrevista">
