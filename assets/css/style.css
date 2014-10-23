@@ -465,6 +465,7 @@ footer {
 
 .lateral .well {
     background-color: #ffffff;
+    border: 0px solid #fff;
 }
 
 .lateral .panel-body-clear-margin {
@@ -482,7 +483,7 @@ footer {
 
 .tablaposiciones .nav > li > a, .tablaposiciones .nav > li > a:hover {
 
-    padding: 3px 44px;
+    padding: 3px 3px;
 
 }
 
@@ -567,7 +568,7 @@ ul.headernavtabs {
 }
 
 .lateral .well {
-    border: 1px solid #fff;
+    border: 0px solid #fff;
 }
 
 .flex-direction-nav {

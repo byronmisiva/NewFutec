@@ -37,10 +37,10 @@
         <div class="panel-body panel-body-clear-margin">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs headernavtabs" role="tablist">
-                <li class="active half backcuadros">
+                <li class="active half  text-center backcuadros">
                     <a href="#resultados" role="tab"
                        data-toggle="tab"><h4 class="panel-title">Resultados</h4></a></li>
-                <li class=" half backcuadros">
+                <li class=" half  text-center backcuadros">
                     <a href="#proximafecha" role="tab"
                        data-toggle="tab"><h4 class="panel-title">Próxima fecha</h4></a></li>
             </ul>
@@ -133,7 +133,7 @@
 
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title">
+                                        <h4 class="panel-title acordion-close">
                                             <a data-toggle="collapse" data-parent="#accordion1"
                                                href="#<?php echo $campeonato->shortname; ?>1">
                                                 <?php echo $campeonato->name; ?>
@@ -220,10 +220,10 @@
         <div class="panel-body panel-body-clear-margin margen0">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li class="active">
+                <li class="active half  text-center">
                     <a href="#posiciones" role="tab"
                        data-toggle="tab">Posiciones</a></li>
-                <li class="">
+                <li class="half  text-center">
                     <a href="#acumulada" role="tab"
                        data-toggle="tab">Acumulada</a></li>
             </ul>
