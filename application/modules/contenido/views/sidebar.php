@@ -52,13 +52,17 @@
                         <!--contenido colapsable-->
                         <div class="panel-group" id="accordion2">
                             <?php
-                            $active = "in";
                             foreach ($campeonatosResultados as $campeonato) {
+                                if (CHAMP_DEFAULT ==  $campeonato->champ){
+                                    $active = "in";
+                                } else {
+                                    $active = "";
+                                }
                                 ?>
 
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title acordion-close">
+                                        <h4 class="panel-title acordion-close font12">
                                             <a data-toggle="collapse" data-parent="#accordion2"
                                                href="#<?php echo $campeonato->shortname; ?>">
                                                 <div class="row">
@@ -70,8 +74,7 @@
                                         </h4>
                                     </div>
                                     <div id="<?php echo $campeonato->shortname; ?>"
-                                         class="panel-collapse collapse <?php echo $active;
-                                         $active = ""; ?>">
+                                         class="panel-collapse collapse <?php echo $active;?>">
                                         <div class="panel-body panel-body-clear-margin">
                                             <?php
                                             foreach ($campeonato->partidos as $partido) {
@@ -127,13 +130,18 @@
                         <!--contenido colapsable-->
                         <div class="panel-group" id="accordion1">
                             <?php
-                            $active = "in";
+
                             foreach ($campeonatos as $campeonato) {
+                                if (CHAMP_DEFAULT ==  $campeonato->champ){
+                                    $active = "in";
+                                } else {
+                                    $active = "";
+                                }
                                 ?>
 
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title acordion-close">
+                                        <h4 class="panel-title acordion-close font12">
                                             <a data-toggle="collapse" data-parent="#accordion1"
                                                href="#<?php echo $campeonato->shortname; ?>1">
                                                 <?php echo $campeonato->name; ?>
@@ -141,8 +149,7 @@
                                         </h4>
                                     </div>
                                     <div id="<?php echo $campeonato->shortname; ?>1"
-                                         class="panel-collapse collapse <?php echo $active;
-                                         $active = ""; ?>">
+                                         class="panel-collapse collapse <?php echo $active; ?>">
                                         <div class="panel-body panel-body-clear-margin">
                                             <?php
                                             foreach ($campeonato->partidos as $partido) {

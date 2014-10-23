@@ -107,6 +107,7 @@ $(window).load(function () {
         var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
         var sectionID = openAnchor.attr('href');
         $(sectionID+"1").collapse('toggle');
+        console.log(sectionID);
     })
 
 });
