@@ -22,12 +22,11 @@
 
         <iframe
             src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&amp;width=60&amp;height=35&amp;colorscheme=light&amp;layout=button&amp;show_faces=false&amp;appId=1396413573964675"
-              style="border:none; overflow:hidden; width:60px; height:35px; border:0" ></iframe>
+            style="border:none; overflow:hidden; width:60px; height:35px; border:0"></iframe>
 
     </span>
 </div>
 <div class="col-md-6 separador10 pull-right margen0">
-
     <input class="search" type="text" name="firstname" placeholder="Buscar...">
 </div>
 
@@ -38,13 +37,12 @@
         <div class="panel-body panel-body-clear-margin">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs headernavtabs" role="tablist">
-                <li class="active">
+                <li class="active half backcuadros">
                     <a href="#resultados" role="tab"
-                       data-toggle="tab">Resultados</a></li>
-                <li class="">
+                       data-toggle="tab"><h4 class="panel-title">Resultados</h4></a></li>
+                <li class=" half backcuadros">
                     <a href="#proximafecha" role="tab"
-                       data-toggle="tab">Próxima fecha</a></li>
-
+                       data-toggle="tab"><h4 class="panel-title">Próxima fecha</h4></a></li>
             </ul>
 
             <!-- Tab panes -->
@@ -60,10 +58,14 @@
 
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title">
+                                        <h4 class="panel-title acordion-close">
                                             <a data-toggle="collapse" data-parent="#accordion2"
                                                href="#<?php echo $campeonato->shortname; ?>">
-                                                <?php echo $campeonato->name; ?>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <?php echo $campeonato->name; ?>
+                                                    </div>
+                                                </div>
                                             </a>
                                         </h4>
                                     </div>
@@ -83,7 +85,8 @@
                                                             </div>
                                                             <div class="col-md-2 text-right ">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>" alt="<?php echo $partido->hname; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"
+                                                                    alt="<?php echo $partido->hname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->hname; ?>
@@ -96,7 +99,8 @@
                                                             </div>
                                                             <div class="col-md-2  text-right">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>" alt="<?php echo $partido->aname; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"
+                                                                    alt="<?php echo $partido->aname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->aname; ?>
@@ -154,7 +158,8 @@
                                                             </div>
                                                             <div class="col-md-2 text-right">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>" alt="<?php echo $partido->hname; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"
+                                                                    alt="<?php echo $partido->hname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->hname; ?>
@@ -167,7 +172,8 @@
                                                             </div>
                                                             <div class="col-md-2  text-right">
                                                                 <img
-                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>" alt="<?php echo $partido->aname; ?>">
+                                                                    src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"
+                                                                    alt="<?php echo $partido->aname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
                                                                 <?php echo $partido->aname; ?>
@@ -243,7 +249,6 @@
 </div>
 
 
-
 <!--Goleadores-->
 
 <div class="col-md-12 separador20 margen0r">
@@ -259,12 +264,12 @@
 <!--Lo más leido-->
 <div class="col-md-12 separador20 margen0r">
 
-    <? echo  $loMasLeido; ?>
+    <? echo $loMasLeido; ?>
 </div>
 
 <!--fuera de juego -->
 <div class="col-md-12 separador20 margen0r">
-    <? echo  $fueradejuego; ?>
+    <? echo $fueradejuego; ?>
 </div>
 <!--La voz de las tribunas-->
 <div class="col-md-12 separador20 margen0r">

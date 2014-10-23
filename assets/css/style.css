@@ -426,6 +426,11 @@ footer {
 .panel-title {
     font-size: 14px;
 }
+.acordion-close {
+    background-image: url("../img/fondo-acordio-close.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
 
   .backcuadros {
     background-image: url("../img/fondo-subtitulos.png");
@@ -436,8 +441,18 @@ footer {
 
 .panel-default > .panel-heading  {
     border-radius: 0px;
-    color: #6d6e71;
+    color: #ffffff;
     font-family: oxygen;
+    background-image: url("../img/fondo-acordion.png");
+}
+
+.panel-default > .panel-heading a {
+    width: 100%;
+    height: 100%;
+
+}
+.panel-default > .panel-heading a:focus {
+    width:0px;height:0px;outline:0px;
 }
 
 .panel-no-border {
@@ -473,9 +488,8 @@ footer {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus    {
     background-color: #e1e1e1;
-
     cursor: default;
-    border: 1px solid #e1e1e1;
+    border: 0px solid #e1e1e1;
     outline: none;
 
 
@@ -487,8 +501,9 @@ footer {
 
 .nav-tabs > li > a {
     color: #000000;
-    background-color: #f1f1f1;
-    border: 1px solid #f1f1f1;
+    background-image: url("../img/fondo-subtitulos-white.png");
+    border: 0px solid #f1f1f1;
+    border-radius: 0;
     font-size: 12px;
     margin: 0;
 
@@ -496,9 +511,8 @@ footer {
 
 .lateral .nav > li > a, .lateral .nav > li > a:hover {
     display: block;
-    padding: 4px 15px;
+    padding: 6px 15px;
     position: relative;
-    color: #fff;
 }
 
 .nav-tabs > li {
@@ -660,4 +674,9 @@ input.search2[type="text"] {
     width: 100%;
 
 }
+
+.half {
+    width: 50%;
+}
+
 

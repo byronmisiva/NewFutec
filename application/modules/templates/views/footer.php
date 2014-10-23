@@ -7,7 +7,6 @@
     ga('send', 'pageview');
 </script>
 
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -22,15 +21,9 @@
 <!-- FlexSlider -->
 <script defer src="assets/js/jquery.flexslider.js"></script>
 
-
-
 <!-- Optional FlexSlider Additions -->
 <script src="assets/js/jquery.easing.js"></script>
 <script src="assets/js/jquery.mousewheel.js"></script>
-
-
-
-
 
 <script type="text/javascript">
     $(document).ready(function () {
