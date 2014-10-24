@@ -414,9 +414,14 @@ footer {
 
 /*paneles laterales*/
 
-.panel-group .panel {
+.panel-group .panel + .panel {
     border-radius: 0;
     margin-top: 2px;
+
+}
+
+.panel-group .panel {
+    margin-bottom: 5px;
 }
 
 .panel-default {
@@ -443,7 +448,7 @@ footer {
     border-radius: 0px;
     color: #ffffff;
     font-family: oxygen;
-    background-image: url("../img/fondo-acordion.png");
+    background-color: #133652;
 }
 
 .panel-default > .panel-heading a {
@@ -478,7 +483,7 @@ footer {
 }
 
 .panel-heading {
-    padding: 6px 15px;
+    padding: 4px 15px;
 }
 
 .tablaposiciones .nav > li > a, .tablaposiciones .nav > li > a:hover {
@@ -678,6 +683,11 @@ input.search2[type="text"] {
 
 .half {
     width: 50%;
+}
+
+.panel-group .panel-no-border {
+    border-radius: 0px;
+    margin-bottom: 2px;
 }
 
 
