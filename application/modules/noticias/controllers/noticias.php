@@ -20,7 +20,16 @@ class Noticias extends MY_Controller
         $banners[] = $this->banners->FE_Bigboxnews3();
         $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
-        $storys = $this->mdl_story->storys_by_tags();
+
+        $rotativasData = $this->mdl_story->get_banner(6, 44);
+
+        $listRotativas = array();
+        foreach ($rotativasData as $rotativaData) {
+            $listRotativas[] = $rotativaData->id;
+        }
+
+        $storys = $this->mdl_story->storys_by_tags ("",  RESULT_PAGE, $listRotativas);
+
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
             $noticias[] = $this->viewNoticia($dataStory);

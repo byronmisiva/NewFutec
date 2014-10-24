@@ -1,7 +1,7 @@
-<div class="flexslider" style="height: 348px; overflow: hidden">
-    <ul class="slides">
+<div class="flexslider preloader " style="height: 348px; overflow: hidden">
+    <ul class="slides ">
         <?php
-        foreach ($rotativas as &$rotativa) {
+        foreach ($rotativasData as &$rotativa) {
             ?>
             <li data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
                 <img src="http://www.futbolecuador.com/<?php echo $rotativa->thumb500; ?>" alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>"/>

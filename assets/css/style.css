@@ -34,6 +34,12 @@ footer {
     padding: 60px 0;
 }
 
+.preloader {
+    background-image: url("../img/preloader.gif") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
 .plugin-title {
     color: #444444;
     font-size: 18px;

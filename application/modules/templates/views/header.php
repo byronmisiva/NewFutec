@@ -45,8 +45,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
 
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css');?>" type="text/css" media="screen" />
-    <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->

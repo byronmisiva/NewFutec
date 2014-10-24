@@ -89,9 +89,9 @@ $(window).load(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
-        slideshow: false,
+        slideshow: true,
         start: function (slider) {
-            $('body').removeClass('loading');
+            $('.preloader').removeClass('preloader');
             $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
         }
     });

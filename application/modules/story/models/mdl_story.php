@@ -20,7 +20,7 @@ class Mdl_story extends MY_Model
         parent::__construct();
     }
 
-    function storys_by_tags($tag = "", $limit = RESULT_PAGE)
+    function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '')
     {
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
         $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
@@ -30,6 +30,10 @@ class Mdl_story extends MY_Model
         $this->db->where('s.position !=', 10);
         $this->db->order_by('s.created', 'desc', FALSE);
         $this->db->limit($limit);
+        //quitamos las noticias rotativas
+        $names = array('Frank', 'Todd', 'James');
+        //if ($exclude != "")
+            $this->db->where_not_in('s.id', $exclude);
         $aux = $this->db->get()->result();
         return $aux;
     }

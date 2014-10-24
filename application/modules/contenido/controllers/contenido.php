@@ -37,19 +37,19 @@ class Contenido extends MY_Controller
     public function header2($data = FALSE)
     {
         $this->load->module('story');
-        $dataRotativas['rotativas'] = $this->mdl_story->get_banner(6, 44);
+        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
         $excluded = array();
-        foreach ($dataRotativas['rotativas'] as $key => $row) {
+        foreach ($dataRotativas['rotativasData'] as $key => $row) {
             $excluded[] = $row->id;
-            $dataRotativas['rotativas'][$key]->sponsored = false;
+            $dataRotativas['rotativasData'][$key]->sponsored = false;
         }
         //ponemos en caso de existir la noticia ZONA FE
 
         //recupera  y cambia por la ultima noticia
         $sponsor = current($this->mdl_story->get_zonafe($excluded));
         if ($sponsor !== FALSE) {
-            array_pop($dataRotativas['rotativas']);
-            array_push($dataRotativas['rotativas'], $sponsor);
+            array_pop($dataRotativas['rotativasData']);
+            array_push($dataRotativas['rotativasData'], $sponsor);
         }
         //fin poner en caso de existir la ZONE FE
 
