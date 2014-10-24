@@ -10,3 +10,9 @@ foreach ($noticias as $noticia) {
     $indice++;
 }
 ?>
+<div class="col-md-12 text-right fondoazul separador10 masnoticias">
+    Más noticias
+</div>
+<div class="col-md-12  separador10">
+
+</div>

@@ -369,12 +369,13 @@ footer {
 }
 
 .fondoazul {
-    color: #636466;
+    color: #202020;
     font-size: 11px;
     padding-bottom: 2px;
     padding-top: 3px;
     background-color: #f1f1f1;
     font-family: oxygen;
+    background-image: url("../img/fondo-subtitulos-white.png");
 }
 
 .marcadorenvivofondo {

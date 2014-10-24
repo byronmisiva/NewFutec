@@ -60,17 +60,17 @@ $(function () {
 
     setTimeout(function () {
         alto = $('.flex-control-thumbs').height();
-          $('.flexslider').height(alto);
+        $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-          $('.slides li').height(alto);
+        $('.slides li').height(alto);
         altoshome();
     }, 2000)
 
     setTimeout(function () {
         alto = $('.flex-control-thumbs').height();
-          $('.flexslider').height(alto);
+        $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-          $('.slides li').height(alto);
+        $('.slides li').height(alto);
         altoshome();
     }, 3000)
 
@@ -97,31 +97,46 @@ $(window).load(function () {
     });
 
 //ajustes resultados
-    /*$('#accordion1').on('shown.bs.collapse', function () {
-        console.log("acordion 2");
-        $( "#accordion2 .in" ).removeClass( "in" );
-        var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
-        var sectionID = openAnchor.attr('href');
-        $(sectionID).collapse('toggle');
 
-    })*/
-//var retorno = true;
+    var bloqueAcordio = true;
+  /*  $('#accordion1').on('shown.bs.collapse', function () {
+        if (bloqueAcordio) {
+            bloqueAcordio = false;
+            $("#accordion2 .in").removeClass("in");
+            var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
+            var sectionID = openAnchor.attr('href');
+            var sectionID = sectionID.substring(0, sectionID.length - 1);
+            $(sectionID).collapse('toggle');
+            console.log (sectionID )
+            setInterval(function () {
+                bloqueAcordio = true;
+            }, 3000);
+        }
+
+    })
+*/
+
     $('#accordion2').on('shown.bs.collapse', function () {
-
-        console.log("acordion 1");
-        $( "#accordion1 .in" ).removeClass( "in" );
-        var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
-        var sectionID = openAnchor.attr('href');
-        $(sectionID+"1").collapse('toggle');
+        if (bloqueAcordio) {
+            bloqueAcordio = false;
+            $("#accordion1 .in").removeClass("in");
+            var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
+            var sectionID = openAnchor.attr('href') + "1";
+            $(sectionID ).collapse('toggle');
+            console.log (sectionID )
+            setInterval(function () {
+                bloqueAcordio = true;
+            }, 3000);
+        }
     })
 });
 
 //escala noticias home
 function altoshome() {
-    $('.noticia-content').each(function(){
-        $(this).each(function(){
+    $('.noticia-content').each(function () {
+        $(this).each(function () {
             noticias = $(this).children("div.noticia");
-            noticia1 =  $(noticias).children("div.news-detail");
+            noticia1 = $(noticias).children("div.news-detail");
             alto1 = $(noticia1[0]).height();
             alto2 = $(noticia1[1]).height();
 
