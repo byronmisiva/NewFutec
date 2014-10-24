@@ -149,7 +149,8 @@
                                         </h4>
                                     </div>
                                     <div id="<?php echo $campeonato->shortname; ?>1"
-                                         class="panel-collapse collapse <?php echo $active; ?>">
+                                         class="panel-collapse collapse <?php echo $active;
+                                           ?>">
                                         <div class="panel-body panel-body-clear-margin">
                                             <?php
                                             foreach ($campeonato->partidos as $partido) {

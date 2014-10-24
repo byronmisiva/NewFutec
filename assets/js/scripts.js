@@ -97,17 +97,23 @@ $(window).load(function () {
     });
 
 //ajustes resultados
-    $('#accordion1').on('shown.bs.collapse', function () {
+    /*$('#accordion1').on('shown.bs.collapse', function () {
+        console.log("acordion 2");
+        $( "#accordion2 .in" ).removeClass( "in" );
         var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
         var sectionID = openAnchor.attr('href');
-        console.log(sectionID);
-    })
+        $(sectionID).collapse('toggle');
 
+    })*/
+//var retorno = true;
     $('#accordion2').on('shown.bs.collapse', function () {
+
+        console.log("acordion 1");
+        $( "#accordion1 .in" ).removeClass( "in" );
         var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
         var sectionID = openAnchor.attr('href');
         $(sectionID+"1").collapse('toggle');
-        console.log(sectionID);
+
     })
 
 });
