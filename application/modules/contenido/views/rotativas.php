@@ -1,16 +1,16 @@
 <div class="flexslider" style="height: 348px; overflow: hidden">
     <ul class="slides">
         <?php
-        foreach ($query as &$dataimagen) {
+        foreach ($rotativas as &$rotativa) {
             ?>
-            <li data-thumb="http://www.futbolecuador.com/<?php echo $dataimagen->thumbh80; ?>">
-                <img src="http://www.futbolecuador.com/<?php echo $dataimagen->thumb500; ?>" alt="<?php echo str_replace('"', '', "$dataimagen->title"); ?>"/>
+            <li data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
+                <img src="http://www.futbolecuador.com/<?php echo $rotativa->thumb500; ?>" alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>"/>
 
                 <div class="content-text-rotativas">
                     <div class="text-rotativas">
-                        <h2><?php echo $dataimagen->title; ?></h2>
+                        <h2><?php echo $rotativa->title; ?></h2>
 
-                        <h3><?php echo $dataimagen->subtitle; ?> <?php echo $dataimagen->id; ?></h3>
+                        <h3><?php echo $rotativa->subtitle; ?> <?php //todo link a noticia ?></h3>
                     </div>
                 </div>
 
