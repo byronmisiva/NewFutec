@@ -31,8 +31,8 @@ class Mdl_story extends MY_Model
         $this->db->order_by('s.created', 'desc', FALSE);
         $this->db->limit($limit);
         //quitamos las noticias rotativas
-        $names = array('Frank', 'Todd', 'James');
-        //if ($exclude != "")
+
+        if ($exclude != "")
             $this->db->where_not_in('s.id', $exclude);
         $aux = $this->db->get()->result();
         return $aux;

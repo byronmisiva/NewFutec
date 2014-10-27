@@ -30,6 +30,12 @@ class Noticias extends MY_Controller
 
         $storys = $this->mdl_story->storys_by_tags ("",  RESULT_PAGE, $listRotativas);
 
+        $test = $this->mdl_story->storys_by_tags ("serie a",  1);
+        $test2= $this->mdl_story->storys_by_tags ("serie b",  1);
+        $test3 = $this->mdl_story->storys_by_tags ("seleccion",  1);
+
+
+
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
             $noticias[] = $this->viewNoticia($dataStory);
