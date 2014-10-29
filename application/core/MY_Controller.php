@@ -60,7 +60,7 @@ class MY_Controller extends MX_Controller{
                 "¿", "[", "^", "`", "]",
                 "+", "}", "{", "¨", "´",
                 ">", "< ", ";", ",", ":",
-                "."),
+                ".", "\""),
             '',
             $tempSting
         );
@@ -115,9 +115,7 @@ class MY_Controller extends MX_Controller{
         return $string;
     }
 
-
-
-    /*function get_where( $where, $single ){
+       /*function get_where( $where, $single ){
         $modelString = $this->model;
         $query = $this->mdl_perfectcontroller->get_where($id);
         return $query;

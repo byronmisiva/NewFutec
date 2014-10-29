@@ -1,5 +1,5 @@
 <div class="navbar-header">
-    <a href="#" class=""><img src="<?=base_url('assets/img/logotipo.png')?>" alt="FutbolEcuador" class=" media-object">
+    <a href="<?php echo base_url() ?>" class=""><img src="<?=base_url('assets/img/logotipo.png')?>" alt="FutbolEcuador" class=" media-object">
     </a>
 </div>
 <!-- end navbar-header -->

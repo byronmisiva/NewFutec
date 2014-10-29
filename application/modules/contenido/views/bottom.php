@@ -5,6 +5,6 @@
 
     <div class="col-md-6 text-right">
         <img src="<?php echo base_url(); ?>assets/img/logo_SMG.png" alt="logoSMG"/>
-        <a href="http://www.misiva.com.ec"><img src="<?php echo base_url(); ?>assets/img/logo_misiva.png" alt="logoMisiva"/></a>
+        <a href="http://www.misiva.com.ec" target="_blank" alt="Misiva Web Site"><img src="<?php echo base_url(); ?>assets/img/logo_misiva.png" alt="logoMisiva"  /></a>
     </div>
 </div>
