@@ -19,11 +19,12 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
 
 <!-- FlexSlider -->
-<script defer src="assets/js/jquery.flexslider.js"></script>
+<script defer src="<?php echo base_url('assets/js/jquery.flexslider.js') ?>"></script>
 
 <!-- Optional FlexSlider Additions -->
-<script src="assets/js/jquery.easing.js"></script>
-<script src="assets/js/jquery.mousewheel.js"></script>
+<script src="<?php echo base_url('assets/js/jquery.easing.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/jquery.mousewheel.js') ?>"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {

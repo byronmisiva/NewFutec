@@ -73,10 +73,12 @@ define('LAVOZDELASTRIBUNAS',''); //La voz de las tribunas
 define('LAVOZDELASTRIBUNASPOS',14); //La voz de las tribunas
 
 
-define('LOMASLEIDO',63); //ZonaFe
-define('LOMASLEIDOPOS',1); //ZonaFe
+define('LOMASLEIDO',63); //
+define('LOMASLEIDOPOS',1); //
 
-define('NUMNEWSSIDE',5); //ZonaFe
+define('NUMNEWSSIDE',5); //
+
+define('TOTALNEWSINOPEN',5); //
 
 
 

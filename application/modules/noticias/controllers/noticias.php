@@ -10,10 +10,11 @@ class Noticias extends MY_Controller
         parent::__construct();
     }
 
-    public function viewNoticiasHome($data = FALSE)
+    public function viewNoticiasHome($totalMiniNews = RESULT_PAGE, $data = FALSE)
     {
         setlocale(LC_ALL, "es_ES");
         $this->load->module('banners');
+        $this->load->module('story');
         $banners = array();
         $banners[] = $this->banners->FE_Bigboxnews1();
         $banners[] = $this->banners->FE_Bigboxnews2();
@@ -27,13 +28,12 @@ class Noticias extends MY_Controller
         foreach ($rotativasData as $rotativaData) {
             $listRotativas[] = $rotativaData->id;
         }
+        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas);
 
-        $storys = $this->mdl_story->storys_by_tags ("",  RESULT_PAGE, $listRotativas);
-
-        $test = $this->mdl_story->storys_by_tags ("serie a",  1);
-        $test2= $this->mdl_story->storys_by_tags ("serie b",  1);
-        $test3 = $this->mdl_story->storys_by_tags ("seleccion",  1);
-
+//      todo : quita
+//      $test = $this->mdl_story->storys_by_tags ("serie a",  1);
+//      $test2= $this->mdl_story->storys_by_tags ("serie b",  1);
+//      $test3 = $this->mdl_story->storys_by_tags ("seleccion",  1);
 
 
         foreach ($storys as $story) {
@@ -41,10 +41,15 @@ class Noticias extends MY_Controller
             $noticias[] = $this->viewNoticia($dataStory);
         }
         //intercalo entre las noticias los banners.
-        array_splice($noticias, 5, 0, $banners[0]);
-        array_splice($noticias, 12, 0, $banners[1]);
-        array_splice($noticias, 17, 0, $banners[2]);
-        array_splice($noticias, 25, 0, $banners[3]);
+        if ($totalMiniNews > 5) {
+            array_splice($noticias, 5, 0, $banners[0]);
+            array_splice($noticias, 12, 0, $banners[1]);
+            array_splice($noticias, 17, 0, $banners[2]);
+            array_splice($noticias, 25, 0, $banners[3]);
+        } else {
+            array_splice($noticias, 5, 0, $banners[0]);
+
+        }
         $data['noticias'] = $noticias;
 
 
@@ -56,7 +61,7 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiahomemini', $data, TRUE);
     }
 
-    public function viewmininewssidebar($namesection, $idsection, $posSection,  $data = FALSE)
+    public function viewmininewssidebar($namesection, $idsection, $posSection, $data = FALSE)
     {
         $data['namesection'] = $namesection;
         $data['idsection'] = $idsection;

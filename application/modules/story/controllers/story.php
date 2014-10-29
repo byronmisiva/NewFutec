@@ -25,5 +25,10 @@ class Story extends MY_Controller
         return $this->load->view('mininewssidebar', $data, TRUE);
     }
 
+    function get_complete($id){
+        $data['noticia'] = $this->mdl_story->get_story($id);
+        return $this->load->view('noticiaabierta', $data, TRUE);
+    }
+
 
 }

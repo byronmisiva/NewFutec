@@ -1,1 +1,1 @@
-<img src="imagenes/la-entrevista/mod-la-entrevista-portada.png" alt="Sección la Entrevista">
+<img src="<?=base_url('imagenes/la-entrevista/mod-la-entrevista-portada.png')?>" alt="Sección la Entrevista">

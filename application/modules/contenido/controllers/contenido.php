@@ -129,6 +129,7 @@ class Contenido extends MY_Controller
 
         //carga Banners
         $this->load->module('banners');
+        $this->load->module('scoreboards');
         $bannersSidebar = array();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();

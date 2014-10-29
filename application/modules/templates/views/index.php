@@ -38,16 +38,18 @@ $this->load->view('header');
 
 <div class="container">
     <!-- Example row of columns -->
-    <div class="row separador20">
-        <?php echo $header2; ?>
-    </div>
-
-    <div class="row separador10">
-        <div class="col-md-12 margen0">
-            <?php echo $top2; ?>
+    <?php if (isset($header2)) { ?>
+        <div class="row separador20">
+            <?php echo $header2; ?>
         </div>
-    </div>
-
+    <?php } ?>
+    <?php if (isset($top2)) { ?>
+        <div class="row separador10">
+            <div class="col-md-12 margen0">
+                <?php echo $top2; ?>
+            </div>
+        </div>
+    <?php } ?>
     <div class="row">
         <div class="col-md-8">
             <div class="row margen0 content">

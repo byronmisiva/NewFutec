@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" href="<?=base_url('img/apple-touch-icon-57-precomposed.png')?>">
 
 
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="<?=base_url('assets/img/favicon.ico')?>">
 
     <!--Facebook TAGS-->
     <meta property="og:title" content="<?php echo $pageTitle ?>"/>
@@ -64,7 +64,7 @@
     <![endif]-->
 
     <!-- Modernizr -->
-    <script src="assets/js/modernizr.js"></script>
+    <script src="<?php echo base_url('assets/js/modernizr.js') ?>"></script>
 
 
 <!-- Bootstrap core JavaScript

@@ -1,5 +1,5 @@
 <div class="navbar-header">
-    <a href="#" class=""><img src="assets/img/logotipo.png" alt="FutbolEcuador" class=" media-object">
+    <a href="#" class=""><img src="<?=base_url('assets/img/logotipo.png')?>" alt="FutbolEcuador" class=" media-object">
     </a>
 </div>
 <!-- end navbar-header -->
@@ -75,7 +75,7 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <a href="#" class="pull-left">
-                                        <img src="assets/dummys/noticiaMenu.jpg" alt="Noticia Serie A"
+                                        <img src="<?=base_url('assets/dummys/noticiaMenu.jpg')?>" alt="Noticia Serie A"
                                              class="img-thumbnail media-object"
                                              width="61">
                                     </a>
@@ -98,7 +98,7 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <a href="#" class="pull-left">
-                                        <img src="assets/dummys/noticiaMenu.jpg" alt="Noticia Serie B"
+                                        <img src="<?=base_url('assets/dummys/noticiaMenu.jpg')?>" alt="Noticia Serie B"
                                              class="img-thumbnail media-object"
                                              width="61">
                                     </a>
@@ -122,7 +122,7 @@
                             <ul class="media-list">
                                 <li class="media">
                                     <a href="#" class="pull-left">
-                                        <img src="assets/dummys/noticiaMenu.jpg" alt="Noticias Seleccion"
+                                        <img src="<?=base_url('assets/dummys/noticiaMenu.jpg')?>" alt="Noticias Seleccion"
                                              class="img-thumbnail media-object"
                                              width="61">
                                     </a>
@@ -166,15 +166,17 @@
                         <div class="col-sm-1  ">
                         </div>
                         <div class="col-sm-3  text-center separador-dotted">
-                            <img src="assets/img/copa-libertadores.png" alt="Copa Libertadores">
+
+
+                            <img src="<?=base_url('assets/img/copa-libertadores.png')?>" alt="Copa Libertadores">
                         </div>
                         <!-- end col-4 -->
                         <div class="col-sm-3 text-center separador-dotted">
-                            <img src="assets/img/copa-sudamericana.png" alt="Copa Sudamericana">
+                            <img src="<?=base_url('assets/img/copa-sudamericana.png')?>" alt="Copa Sudamericana">
                         </div>
                         <!-- end col-4 -->
                         <div class="col-sm-3 text-center">
-                            <img src="assets/img/copa-america-2015.png" alt="Copa America">
+                            <img src="<?=base_url('assets/img/copa-america-2015.png')?>" alt="Copa America">
                         </div>
                         <!-- end col-4 -->
                     </div>

@@ -20,8 +20,33 @@ class Mdl_story extends MY_Model
         parent::__construct();
     }
 
+    function get_story($id){
+        $this->db->select('s.*,i.thumb400,i.thumb300,i.thumb150,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name',FALSE);
+        $this->db->join('images i','s.image_id=i.id','LEFT');
+        //$this->db->where('s.image_id','i.id',FALSE);
+        $this->db->where('s.id',$id);
+        $aux=current($this->db->get('stories s')->result());
+
+        $this->db->select('t.*');
+        $this->db->from('stories_tags st,tags t');
+        $this->db->where('st.tag_id','t.id',FALSE);
+        $this->db->where('st.story_id',$id);
+        $this->db->order_by('t.name','asc');
+        $aux->tags=$this->db->get()->result();
+        if($this->session->userdata('role')>=3){
+            $stat=$this->story_stat->get_story_stat($aux->id);
+            $aux->rate=$stat->rate;
+            $aux->reads=$stat->reads;
+            $aux->sends=$stat->sends;
+            $aux->votes=$stat->votes;
+        }
+
+        return  $aux;
+    }
+
     function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '')
     {
+        $this->load->module('story');
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
         $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
         $this->db->from('stories  s', FALSE);
@@ -35,6 +60,7 @@ class Mdl_story extends MY_Model
         if ($exclude != "")
             $this->db->where_not_in('s.id', $exclude);
         $aux = $this->db->get()->result();
+
         return $aux;
     }
 

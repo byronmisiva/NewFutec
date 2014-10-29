@@ -1,6 +1,5 @@
 <?php
 
-
 class Site extends MY_Controller
 {
 
@@ -83,7 +82,7 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    public function noticia()
+    public function noticiass()
     {
         $idNoticia = $this->uri->segment(4);
 
@@ -141,9 +140,10 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    public function historias()
+    public function noticia()
     {
-        $this->output->cache(300);
+        $idNoticia = $this->uri->segment(4);
+       // $this->output->cache(300);
         $idHistoria = $this->uri->segment(4);
 
         if (!is_numeric ( $idHistoria )) {

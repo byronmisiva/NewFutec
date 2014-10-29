@@ -1,18 +1,19 @@
+<?php $link = base_url().'site/noticia/' . $this->contenido->_clearStringGion($story->title) . '/' . $story->id; ?>
 <div class="noticia-img">
-<img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive" alt="<?php echo str_replace('"', '', "$story->title"); ?>">
+<a href="<?php echo $link ?>"> <img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive" alt="<?php echo str_replace('"', '', "$story->title"); ?>"></a>
 </div>
 <div class="row clearfix news-detail">
     <div class="col-md-12 column text-news-date">
         <?php setlocale(LC_ALL,"es_ES");echo date("F d, Y", strtotime($story->created));   ?>
     </div>
     <div class="col-md-12 column ">
-        <h2><?php echo $story->title ?></h2>
+         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <div class="col-md-12 column text-news-sub">
-        <?php echo $story->subtitle ?>
+        <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
     </div>
     <div class="col-md-12 column mini-new-conten">
-        <?php echo strip_tags($story->lead); ?>
+        <a href="<?php echo $link ?>"> <?php echo strip_tags($story->lead); ?></a>
     </div>
 
 </div>
