@@ -1,4 +1,4 @@
-<?php $link = base_url() . 'site/noticia/' . $this->contenido->_clearStringGion($story->title) . '/' . $story->id; ?>
+<?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly ($story->title) . '/' . $story->id; ?>
 <div class="noticia-img">
     <a href="<?php echo $link ?>">
         <img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive"
