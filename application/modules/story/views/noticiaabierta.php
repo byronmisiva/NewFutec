@@ -11,7 +11,13 @@
        <h2><?php echo $noticia->subtitle; ?></h2>
     </div>
     <div class="col-md-12 column ">
-        Redes
+
+
+        <div class="fb-like" data-href="<?='http://www.futbolecuador.com/stories/publica/'.$noticia->id;?>" data-send="false" data-layout="box_count" data-width="90" data-show-faces="false" data-font="arial"></div>
+
+        <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://en.fut.ec/?l=<?=$noticia->id;?>" data-text="<?=$noticia->twitter;?>" data-count="vertical" data-via="futbolecuador" data-lang="es" data-counturl="http://www.futbolecuador.com/stories/publica/<?=$noticia->id;?>">Tweet</a>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
     </div>
     <div class="col-md-12 column ">
         <?php echo html_entity_decode($noticia->lead); ?>
