@@ -20,8 +20,8 @@
 
     </div>
     <div class="col-md-12 column ">
-        <?php echo html_entity_decode($noticia->lead); ?>
-        <?php echo html_entity_decode($noticia->body); ?>
+        <?php echo $noticia->lead; ?>
+        <?php echo html_entity_decode($noticia->body, ENT_HTML5, UTF-8); ?>
     </div>
 </div>
 
