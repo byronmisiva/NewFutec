@@ -334,8 +334,9 @@ footer {
     outline: none;
 }
 
-.content  h2 a, .content  .h2 a ,
-.content   a {
+.content  h2 a, .content  .h2 a ,.sidebar  h2 a, .sidebar  .h2 a ,
+.content   a,
+.sidebar a.sidebarlink {
     color: #444;
     text-decoration: none;
     outline: none;

@@ -6,6 +6,7 @@
 
 <div class="row">
     <?php foreach ($noticias as $noticia) {
+        $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly ($noticia->title) . '/' . $noticia->id;
         ?>
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
@@ -14,7 +15,7 @@
                 </div>
                 <div class="col-md-10  ">
                     <h2><?php echo $noticia->title; ?></h2>
-                    <?php echo strip_tags($noticia->lead); ?><br/>
+                    <?php echo '<a href="' . $link .  '" class="sidebarlink">' .strip_tags($noticia->lead) . "</a>"; ?>'
                 </div>
             </div>
         </div>
