@@ -16,12 +16,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=base_url('assets/img/apple-touch-icon-144-precomposed.png')?>"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=base_url('assets/img/apple-touch-icon-114-precomposed.png')?>"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="<?=base_url('assets/img/apple-touch-icon-72-precomposed.png')?>"/>
-    <link rel="apple-touch-icon-precomposed" href="<?=base_url('img/apple-touch-icon-57-precomposed.png')?>"/>
+    <link rel="apple-touch-icon-precomposed" href="<?=base_url('assets/img/apple-touch-icon-57-precomposed.png')?>"/>
 
-    <link rel="apple-touch-icon" sizes="144x144" href="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="<?=base_url('img/apple-touch-icon-114-precomposed.png')?>"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="<?=base_url('img/apple-touch-icon-72-precomposed.png')?>"/>
-    <link rel="apple-touch-icon" href="<?=base_url('img/apple-touch-icon-57-precomposed.png')?>"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="<?=base_url('assets/img/apple-touch-icon-144-precomposed.png')?>"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="<?=base_url('assets/img/apple-touch-icon-114-precomposed.png')?>"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="<?=base_url('assets/img/apple-touch-icon-72-precomposed.png')?>"/>
+    <link rel="apple-touch-icon" href="<?=base_url('assets/img/apple-touch-icon-57-precomposed.png')?>"/>
 
 
     <link rel="icon" href="<?=base_url('assets/img/favicon.ico')?>">
