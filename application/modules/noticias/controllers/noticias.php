@@ -41,13 +41,15 @@ class Noticias extends MY_Controller
             $noticias[] = $this->viewNoticia($dataStory);
         }
         //intercalo entre las noticias los banners.
-        if ($totalMiniNews > 5) {
+        if ($totalMiniNews > 10) {
             array_splice($noticias, 5, 0, $banners[0]);
             array_splice($noticias, 12, 0, $banners[1]);
             array_splice($noticias, 17, 0, $banners[2]);
             array_splice($noticias, 25, 0, $banners[3]);
         } else {
             array_splice($noticias, 5, 0, $banners[0]);
+            array_splice($noticias, 12, 0, $banners[1]);
+
 
         }
         $data['noticias'] = $noticias;
