@@ -360,6 +360,7 @@ footer {
     font-size: 12px !important;
     font-weight: normal !important;
     margin: 10px 0 !important;
+    font-style: italic;
 }
 
 sub {
@@ -723,4 +724,13 @@ input.search2[type="text"] {
 
 .fb-like {
     margin-bottom: 15px;
+}
+
+.noticiaabierta {
+    font-size: 12px;
+}
+
+ .block-title {
+    padding: 4px 15px;
+     margin: 5px 0;
 }
