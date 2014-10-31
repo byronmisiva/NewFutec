@@ -13,9 +13,9 @@
     <meta name="author" content=""/>
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=base_url('img/apple-touch-icon-114-precomposed.png')?>"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?=base_url('img/apple-touch-icon-72-precomposed.png')?>"/>
+    <link rel="apple-touch-icon-precomposed" size='144x144' href="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
+    <link rel="apple-touch-icon-precomposed" sizes='114x114' href="<?=base_url('img/apple-touch-icon-114-precomposed.png')?>"/>
+    <link rel="apple-touch-icon-precomposed" sizes='72x72' href="<?=base_url('img/apple-touch-icon-72-precomposed.png')?>"/>
     <link rel="apple-touch-icon-precomposed" href="<?=base_url('img/apple-touch-icon-57-precomposed.png')?>"/>
 
     <link rel="apple-touch-icon" sizes="144x144" href="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
@@ -27,11 +27,11 @@
     <link rel="icon" href="<?=base_url('assets/img/favicon.ico')?>">
 
     <!--Facebook TAGS-->
-    <meta property="og:title" content="<?php echo $pageTitle ?>"/>
-    <meta property="og:url" content="http://www.futbolecuador.com"/>
-    <meta property="og:site_name" content="Futbool Ecuador"/>
-    <meta property="og:type" content="site"/>
-    <meta property="og:image" content="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
+    <meta property='og:title' content="<?php echo $pageTitle ?>"/>
+    <meta property='og:url' content="http://www.futbolecuador.com"/>
+    <meta property='og:site_name' content="Futbool Ecuador"/>
+    <meta property='og:type' content="site"/>
+    <meta property='og:image' content="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
 
     <!--SEO TAGS-->
      <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
@@ -87,11 +87,11 @@
     }
     if ($isMobile){
         ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
     }else {
         ?>
-        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>
         <style>
             .container{
                 max-width: none !important;
