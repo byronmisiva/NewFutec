@@ -193,4 +193,74 @@ class Contenido extends MY_Controller
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda
     }
+
+    public function sidebarOpenNews($data = FALSE)
+    {
+
+        //carga Banners
+        $this->load->module('banners');
+        $this->load->module('scoreboards');
+        $bannersSidebar = array();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
+       // $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
+       // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
+        $data['bannersSidebar'] = $bannersSidebar;
+        //fin carga banners
+
+        //Proxima Fecha
+        /*$listCampeonatos = $this->mdl_scoreboards->active_schedules(false, false);
+        $campeonatos = array();
+        foreach ($listCampeonatos as $listcampeonato) {
+            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_week($listcampeonato->champ);
+            $listcampeonato->shortname = strtolower($this->_clearStringGion($listcampeonato->name));
+
+            $campeonatos[] = $listcampeonato;
+        }
+        $data['campeonatos'] = $campeonatos;*/
+        //Fin Proxima Fecha
+
+        //Resultados fecha ultima
+        /*$listCampeonatosResultados = $this->mdl_scoreboards->active_schedules(false, false);
+        $campeonatosResultados = array();
+        foreach ($listCampeonatosResultados as $listcampeonato) {
+            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_results($listcampeonato->champ);
+            $listcampeonato->shortname = strtolower($this->_clearStringGion($listcampeonato->name));
+
+            $campeonatosResultados[] = $listcampeonato;
+        }
+        $data['campeonatosResultados'] = $campeonatosResultados;*/
+
+        //Resultados tabla de posiciones
+        /*$this->load->module('scoreboards');
+
+        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative(SERIE_A);
+        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard(SERIE_A);*/
+
+        //Resultados goleadores
+        /*$this->load->module('strikes');
+        $data['strikes'] = $this->strikes->goleadores(SERIE_A);*/
+
+        //La entrevista
+     //   $data['laentrevista'] = $this->view_la_entrevista();
+
+        //La entrevista
+     //   $data['fueradejuego'] = $this->view_fuera_de_juego();
+
+        //Lo más leido
+
+        $this->load->module('story');
+        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO);
+
+        //La voz de las tribunas
+        $this->load->module('noticias');
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS);
+
+        //Zona Fe
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS);
+
+
+        return $this->load->view('sidebaropennews', $data, TRUE);
+
+    }
 }

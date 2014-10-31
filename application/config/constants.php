@@ -78,7 +78,7 @@ define('LOMASLEIDOPOS',1); //
 
 define('NUMNEWSSIDE',5); //
 
-define('TOTALNEWSINOPEN',5); //
+define('TOTALNEWSINOPENNEWS',5); //
 
 
 

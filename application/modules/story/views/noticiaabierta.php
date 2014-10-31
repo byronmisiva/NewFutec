@@ -6,7 +6,6 @@
                 <img class="img-responsive margen10b margen10r"
                      src="http://www.futbolecuador.com/<?php echo $noticia->thumb400; ?>"
                      alt="<?php echo $noticia->image_name; ?>">
-
             </div>
         </div>
         <?php setlocale(LC_ALL, "es_ES");
@@ -38,11 +37,6 @@
     </div>
 </div>
 
-<!--<div class="col-xs-12 col-md-12 backcuadros clearfix  ">
-    <h4 class="panel-title"> Otras Noticias </h4>
-</div>
-texto otras noticias-->
-
 <div class="col-xs-12 col-md-12 backcuadros block-title">
     <h4 class="panel-title">Comentarios </h4>
 </div>
@@ -51,4 +45,3 @@ texto otras noticias-->
     <div class="fb-comments" data-href="<?php echo $link ?>" data-width="100%" data-numposts="5"
          data-colorscheme="light"></div>
 </div>
-

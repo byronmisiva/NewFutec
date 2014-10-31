@@ -137,8 +137,8 @@ class Site extends MY_Controller
 
 
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(TOTALNEWSINOPEN);
-        $data['sidebar'] = $this->contenido->sidebar();
+        $data['content'] = $storia . $this->noticias->viewNoticiasHome(TOTALNEWSINOPENNEWS);
+        $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
