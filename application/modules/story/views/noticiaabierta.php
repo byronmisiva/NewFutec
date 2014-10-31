@@ -30,7 +30,7 @@
 
 <div class="col-md-12 column content-gris ">
     <div class="col-md-4 column margen0">
-        <?php echo $noticia->lecturas; ?> lecturas
+        Lecturas <?php echo $noticia->lecturas; ?>
     </div>
     <div class="col-md-8 column margen0 text-right text-news-zone">
         <?php echo $noticia->tags[0]->name; ?>
