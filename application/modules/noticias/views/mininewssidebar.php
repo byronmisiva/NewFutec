@@ -27,7 +27,7 @@
                         echo  '<a href="' . $link . '" class="sidebarlink">' .$bodyCortado . "..." . '</a>';
                     } else {
                         ?>
-                        <?php echo '<a href="' . $link .  '" class="sidebarlink">' .strip_tags($noticia->lead) . "</a>";
+                        <?php echo '<a href="' . $link .  '" class="sidebarlink">' .strip_tags($noticia->subtitle) . "</a>";
                     }?>
                 </div>
             </div>

@@ -37,11 +37,11 @@
     </div>
 </div>
 
-<div class="col-xs-12 col-md-12 backcuadros block-title">
+<div class="col-xs-12 col-md-12 backcuadros block-title separador20">
     <h4 class="panel-title">Comentarios </h4>
 </div>
 
-<div class="margen0 col-xs-12 col-md-12 center-block" data-href="<?php //echo $url?>">
+<div class="separador20 col-xs-12 col-md-12 center-block" data-href="<?php //echo $url?>">
     <div class="fb-comments" data-href="<?php echo $link ?>" data-width="100%" data-numposts="5"
          data-colorscheme="light"></div>
 </div>

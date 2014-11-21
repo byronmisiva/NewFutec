@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-md-10  ">
                     <h2><a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
-                    <?php echo '<a href="' . $link .  '" class="sidebarlink">' .strip_tags($noticia->lead) . "</a>"; ?>'
+                    <?php echo '<a href="' . $link .  '" class="sidebarlink">' .strip_tags($noticia->subtitle) . "</a>"; ?>'
                 </div>
             </div>
         </div>
