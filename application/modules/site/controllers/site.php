@@ -144,6 +144,11 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
+    public function zona_fe (){
+        $this->seccion(ZONAFE, ZONAFEPOS);
+    }
+
+
     public function seccion()
     {
         // para la final se comentan la llamada a las secciones.
@@ -199,6 +204,7 @@ class Site extends MY_Controller
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
         $storia = $this->story->get_complete($idNoticia);
+
         $aux = $this->mdl_story->get_story($idNoticia);
 //        $data['author'] = $this->user->get($data['stories']->author_id);
         $bodytag = str_replace('"', '', strip_tags($aux->title));
