@@ -74,7 +74,7 @@
                             <h3 class="title">Serie A</h3>
                             <ul class="media-list">
                                 <li class="media">
-                                    <a href="#" class="pull-left">
+                                    <a href="<?=base_url('site/zonafe')?>" class="pull-left">
                                         <img src="<?=base_url('assets/dummys/noticiaMenu.jpg')?>" alt="Noticia Serie A"
                                              class="img-thumbnail media-object"
                                              width="61">
@@ -190,7 +190,7 @@
         <!-- list elements -->
         <!-- Mega Menu -->
         <li class="dropdown fhmm-fw">
-            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Zona FE</a>
+            <a href="<?=base_url('site/zonafe')?>"  class="pull-left">Zona FE</a>
             <!-- dropdown-menu -->
         </li>
         <!-- mega menu -->

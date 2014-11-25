@@ -119,10 +119,11 @@ footer {
     line-height: 18px;
 }
 
+.nav .fhmm-fw > a:hover  ,
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: transparent;
-
     border-bottom: 2px solid #ffffff;
+    outline: none;
 }
 
 .menutype {

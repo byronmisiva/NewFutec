@@ -1,4 +1,16 @@
-<?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly ($story->title) . '/' . $story->id; ?>
+<?php if (isset($tipoLink)) {
+    if ($tipoLink =="secction"){
+        $link = base_url() . 'site/'. $urlsecction. '/' . $this->contenido->_urlFriendly ($story->title) . '/' . $story->id;
+    } else {
+
+    }
+
+
+} else {
+    $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly ($story->title) . '/' . $story->id;
+}
+?>
+
 <div class="noticia-img">
     <a href="<?php echo $link ?>">
         <img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive"

@@ -100,7 +100,7 @@ class Mdl_Noticias extends MY_Model
             $this->db->where('i.id', 's.image_id', FALSE);
         }
 
-        $this->db->select('s.*,i.thumbh120 as thumb1,i.thumbh80 as thumb2,i.thumbh50 as thumb3,s.created as time', FALSE);
+        $this->db->select('s.*,i.thumb300, i.thumbh120 as thumb1,i.thumbh80 as thumb2,i.thumbh50 as thumb3,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
         $this->db->where('s.invisible', '0');
 
         //Check if there are multiple positions
