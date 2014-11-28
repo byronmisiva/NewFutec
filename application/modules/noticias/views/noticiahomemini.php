@@ -1,13 +1,11 @@
 <?php if (isset($tipoLink)) {
-    if ($tipoLink =="secction"){
-        $link = base_url() . 'site/'. $urlsecction. '/' . $this->contenido->_urlFriendly ($story->title) . '/' . $story->id;
+    if ($tipoLink == "secction") {
+        $link = base_url() . 'site/' . $urlsecction . '/' . $this->contenido->_urlFriendly($story->title) . '/' . $story->id;
     } else {
 
     }
-
-
 } else {
-    $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly ($story->title) . '/' . $story->id;
+    $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($story->title) . '/' . $story->id;
 }
 ?>
 
@@ -27,12 +25,30 @@
     <div class="col-md-12 column ">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
-    <div class="col-md-12 column text-news-sub">
-        <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
-    </div>
-    <div class="col-md-12 column mini-new-conten">
-        <a href="<?php echo $link ?>"> <?php echo strip_tags($story->lead); ?></a>
-    </div>
+    <?php
+    if (strlen(strip_tags($story->lead)) == 0) {
+        $num = 200;
+        $str = strip_tags($story->body);
+        $str = substr($str, 0, $num);
+        $bodyCortado = substr($str, 0, -(strlen($str) - strrpos($str, ' ')));
+        echo '<a href="' . $link . '" class="sidebarlink">' . '</a>';
+        ?>
+        <div class="col-md-12 column mini-new-conten">
+            <a href="<?php echo $link ?>"> <?php echo $bodyCortado . "..." ?></a>
+        </div>
+    <?php
+
+    } else {
+        ?>
+        <div class="col-md-12 column text-news-sub">
+            <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
+        </div>
+        <div class="col-md-12 column mini-new-conten">
+            <a href="<?php echo $link ?>"> <?php echo strip_tags($story->lead); ?></a>
+        </div>
+    <?php
+    }?>
+
 
 </div>
 <div class="col-md-12 column content-gris ">

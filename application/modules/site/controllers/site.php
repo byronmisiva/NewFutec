@@ -88,10 +88,6 @@ class Site extends MY_Controller
         $idNoticia = $this->uri->segment(4);
         $storia = $this->story->get_complete($idNoticia);
         $aux = $this->mdl_story->get_story($idNoticia);
-
-//        $data['author'] = $this->user->get($data['stories']->author_id);
-
-// Produce: <body text='black'>
         $bodytag = str_replace('"', '', strip_tags($aux->title));
 
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
@@ -144,12 +140,35 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    public function zonafe (){
+    public function zonafe()
+    {
         $this->seccion(ZONAFE, ZONAFEPOS, "Zona Fe", "zonafe");
+    }
+    public function seriea()
+    {
+        $this->seccion(SECTION_SERIE_A, 1, "Serie A", "seriea");
+    }
+   public function serieb()
+    {
+        $this->seccion(SECTION_SERIE_B, 1, "Serie B", "serieb");
+    }
+  public function seleccion()
+    {
+        $this->seccion(SECTION_SELECCION, 1, "Selección", "seleccion");
+    }
+
+    public function lavoz()
+    {
+        $this->seccion(LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "La voz de las tribunas", "lavoz");
+    }
+
+    public function masleido()
+    {
+        $this->seccion(LOMASLEIDO, LOMASLEIDOPOS, "Lo más leido", "masleido", "masleido");
     }
 
 
-    public function seccion($seccion , $seccionpos, $nameSeccion, $urlSeccion  )
+    public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "")
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
@@ -190,38 +209,34 @@ class Site extends MY_Controller
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
-        //   $data['header2'] = $this->contenido->header2($dataHeader2);
-        //   $data['top2'] = $this->banners->FE_Megabanner();
+        if ($tipoSeccion == "masleido") {
+            $noticiasCuerpo = $this->noticias->viewseccion_plus ($nameSeccion, $seccion, $seccionpos, $urlSeccion);
 
-       //
-        $otrasNoticas = $this->noticias->viewSeccions ($nameSeccion, $seccion , $seccionpos, $urlSeccion);
-
-//       $otrasNoticas = $this->noticias->viewNoticiasHome(TOTALNEWSINOPENNEWS);
+           // $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+        } else {
+            $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+        }
 
         $storia = "";
+        $bodytag = $nameSeccion;
+
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
         if ($idNoticia) {
             $storia = $this->story->get_complete($idNoticia);
+            $aux = $this->mdl_story->get_story($idNoticia);
+            $bodytag = str_replace('"', '', strip_tags($aux->title));
         }
-
-
-//
-
-        //$aux = $this->mdl_story->get_story($idNoticia);
-//        $data['author'] = $this->user->get($data['stories']->author_id);
-//        $bodytag = str_replace('"', '', strip_tags($aux->title));
-        $bodytag = $nameSeccion;
 
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
 
-        $data['content'] = $storia . $otrasNoticas;
+        $data['content'] = $storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
-       /*   }*/
+        /*   }*/
         $this->templates->_index($data);
     }
 }

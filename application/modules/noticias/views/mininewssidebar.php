@@ -7,7 +7,8 @@
 <div class="row">
     <?php foreach ($noticias as $noticia) {
 
-    $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly ($noticia->title) . '/' . $noticia->id;
+    $linkShort = base_url() . 'site/'.$nameSectionUrl;
+    $link = $linkShort .'/' . $this->contenido->_urlFriendly ($noticia->title) . '/' . $noticia->id;
 
         ?>
         <div class="col-md-12 lineseparador separador10">
@@ -36,5 +37,6 @@
     <?php } ?>
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
-    Más noticias
+    <a href="<?php echo $linkShort;?>"?>Más noticias</a>
+
 </div>

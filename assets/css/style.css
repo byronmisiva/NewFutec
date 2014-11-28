@@ -433,6 +433,13 @@ sub {
     font-family: oxygen;
     background-image: url("../img/fondo-subtitulos-white.png");
 }
+.fondoazul a {
+    text-decoration: none;
+    color: #1f1f1f  ;
+
+}
+
+
 
 .marcadorenvivofondo {
     background-repeat: no-repeat;

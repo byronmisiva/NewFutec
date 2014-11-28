@@ -48,7 +48,7 @@ class Mdl_story extends MY_Model
     {
         $this->load->module('story');
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
-        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
+        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
@@ -137,18 +137,18 @@ class Mdl_story extends MY_Model
         $this->db->from('stories_stats ss');
         $this->db->where('ss.story_id', 's.id', FALSE);
         $this->db->order_by('ss.reads', 'desc');
-
-
+        $this->db->select('*, , (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
 
         $data = $this->db->get($this->table_name . ' s')->result();
-        $test = $this->db->last_query();
+
         foreach ($data as $key=>$nota) {
-                $this->db->select('i.thumbh120 as thumb1,i.thumbh80 as thumb2,i.thumbh50 as thumb3', FALSE);
+            $this->db->select('i.thumbh120 as thumb1,i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumb300 as thumb300', FALSE);
             $this->db->where('i.id', $nota->image_id);
             $imagenes = $this->db->get("images" . ' i')->result();
             $data[$key]->thumb1 = $imagenes[0]->thumb1;
             $data[$key]->thumb2 = $imagenes[0]->thumb2;
             $data[$key]->thumb3 = $imagenes[0]->thumb3;
+            $data[$key]->thumb300 = $imagenes[0]->thumb300;
         }
         return $data;
     }

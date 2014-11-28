@@ -180,14 +180,14 @@ class Contenido extends MY_Controller
         //Lo más leido
 
         $this->load->module('story');
-        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO);
+        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO, "masleido");
 
         //La voz de las tribunas
         $this->load->module('noticias');
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS);
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS);
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS, "zonafe");
 
 
         return $this->load->view('sidebar', $data, TRUE);
@@ -250,14 +250,14 @@ class Contenido extends MY_Controller
         //Lo más leido
 
         $this->load->module('story');
-        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO);
+        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO, "masleido");
 
         //La voz de las tribunas
         $this->load->module('noticias');
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS);
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS);
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS, "zonafe");
 
 
         return $this->load->view('sidebaropennews', $data, TRUE);
