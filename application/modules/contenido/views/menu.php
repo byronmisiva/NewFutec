@@ -29,7 +29,7 @@
                     <div class="col-sm-3 <?php echo $separador ?>">
                         <ul class="menu-option">
                             <li class="clearfix">
-                                <a href="<?= base_url('equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name']))) ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name']))) . "/" . $teams[$i * $desp]['section']?>">
 
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) ?>-icon  "></div>
@@ -40,7 +40,7 @@
                                     </div>
                                 </a></li>
                             <li class="clearfix">
-                                <a href="<?= base_url('equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name']))) ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name']))) . "/" . $teams[$i * $desp + 1]['section'] ?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo2 ?></div>
@@ -51,7 +51,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a href="<?= base_url('equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name']))) ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name']))) . "/" . $teams[$i * $desp + 2]['section']?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo3 ?></div>
@@ -87,54 +87,56 @@
                 <div class="col-sm-4 separador-dotted">
                     <a href="<?= base_url('site/seriea') ?>">
                         <h3 class="title">Serie A</h3>
-                        <ul class="media-list">
-                            <li class="media">
-                                <a href="<?= base_url('site/zonafe') ?>" class="pull-left">
-                                    <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
-                                         alt="Noticia Serie A"
-                                         class="img-thumbnail media-object"
-                                         width="61">
-                                </a>
+                    </a>
+                    <ul class="media-list">
+                        <li class="media">
+                            <a href="<?= base_url('site/seriea') ?>" class="pull-left">
+                                <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
+                                     alt="Noticia Serie A"
+                                     class="img-thumbnail media-object"
+                                     width="61">
+                            </a>
 
-                                <div class="media-body">
+                            <div class="media-body">
+                                <a href="<?= base_url('site/seriea') ?>" class="pull-left">
                                     <h4>Deportivo Aucas</h4>
 
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
                                         amet, consectetur, adipisci velit</p>
 
                                     <p class="pull-right link-menu">Ver noticia</p>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </a>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-4 separador-dotted">
                     <a href="<?= base_url('site/serieb') ?>">
                         <h3 class="title">Serie B</h3>
-                        <ul class="media-list">
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
-                                         alt="Noticia Serie B"
-                                         class="img-thumbnail media-object"
-                                         width="61">
-                                </a>
+                    </a>
+                    <ul class="media-list">
+                        <li class="media">
+                            <a href="<?= base_url('site/serieb') ?>" class="pull-left">
+                                <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
+                                     alt="Noticia Serie B"
+                                     class="img-thumbnail media-object"
+                                     width="61">
+                            </a>
 
-                                <div class="media-body">
+                            <div class="media-body">
+                                <a href="<?= base_url('site/serieb') ?>" class="pull-left">
                                     <h4>Deportivo Aucas</h4>
 
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
                                         amet, consectetur, adipisci velit</p>
-
                                     <p class="pull-right link-menu">Ver noticia</p>
+                                </a>
+                            </div>
+                        </li>
 
-                                </div>
-                            </li>
+                    </ul>
 
-                        </ul>
-                    </a>
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-4">
@@ -153,10 +155,8 @@
                             <div class="media-body">
                                 <a href="<?= base_url('site/seleccion') ?>" class="pull-left">
                                     <h4>Deportivo Aucas</h4>
-
                                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
                                         amet, consectetur, adipisci velit</p>
-
                                     <p class="pull-right link-menu">Ver noticia</p>
                                 </a>
                             </div>

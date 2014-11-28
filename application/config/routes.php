@@ -46,10 +46,6 @@ $route['zona-fe'] = "site/zonafe";
 $route['la-voz-de-las-tribunas'] = "site/lavoz";
 $route['lo-mas-leido'] = "site/masleido";
 
-//$route['equipo/emelec'] = "sections/publica/18/Emelec";
-$route['equipo/emelec'] = "site/zonafe";
-
-
 /*
 $route['contactos'] =  "sections/publica/67";
 $route['staff'] =  "sections/publica/68";

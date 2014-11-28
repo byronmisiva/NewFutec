@@ -72,7 +72,6 @@ define('ZONAFEPOS',1); //ZonaFe
 define('LAVOZDELASTRIBUNAS',''); //La voz de las tribunas
 define('LAVOZDELASTRIBUNASPOS',14); //La voz de las tribunas
 
-
 define('LOMASLEIDO',63); //
 define('LOMASLEIDOPOS',1); //
 
@@ -81,9 +80,6 @@ define('NUMNEWSSIDE',5); //
 define('TOTALNEWSINOPENNEWS',8); //
 
 
-
-
-// la voz  - - -  get_by_position(4, '', 14);
 
 
 
