@@ -10,6 +10,7 @@ class Noticias extends MY_Controller
         parent::__construct();
     }
 
+
     public function viewNoticiasHome($totalMiniNews = RESULT_PAGE, $data = FALSE)
     {
         setlocale(LC_ALL, "es_ES");

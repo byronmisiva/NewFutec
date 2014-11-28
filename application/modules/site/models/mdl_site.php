@@ -22,5 +22,4 @@ class Mdl_site extends MY_Model{
         $this->db->from( 'sections');
         return $this->db->get()->result();
     }
-
 }

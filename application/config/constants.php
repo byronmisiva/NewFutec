@@ -65,6 +65,7 @@ define('CACHE_MOVIL',5);	//minutos
 define('CACHE_DEFAULT',4);	//minutos
 
 
+
 //blogs
 define('ZONAFE',63); //ZonaFe
 define('ZONAFEPOS',1); //ZonaFe

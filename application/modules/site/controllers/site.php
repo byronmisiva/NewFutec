@@ -224,6 +224,7 @@ class Site extends MY_Controller
             $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, "equipo/" .$urlSeccion."/". $seccion);
 
 
+
         $storia = "";
         $bodytag = $nameSeccion;
 

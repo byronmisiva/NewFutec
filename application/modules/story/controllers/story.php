@@ -9,6 +9,7 @@ class Story extends MY_Controller
         parent::__construct();
     }
 
+
     public function top1($data = FALSE)
     {
         $data['FE_Halfbanner'] = $this->load->view('fe_halfbanner', $data, TRUE);

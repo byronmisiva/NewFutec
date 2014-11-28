@@ -116,6 +116,7 @@ class Mdl_Noticias extends MY_Model
             $this->db->limit($limit);
         $this->db->order_by('s.created', "desc");
 
+
         $aux = $this->db->get()->result();
 
         foreach ($aux as $key => $row) {

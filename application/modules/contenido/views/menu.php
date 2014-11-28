@@ -30,7 +30,6 @@
                         <ul class="menu-option">
                             <li class="clearfix">
                                 <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name']))) . "/" . $teams[$i * $desp]['section']?>">
-
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo1 ?></div>
