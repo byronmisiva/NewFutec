@@ -699,11 +699,11 @@ input.search2[type=text]
     padding-left: 20px;
     margin-bottom: 3px;
 }
-.footer-fe a, .footer-fe a:hover, .footer-fe a:visited  {
+.footer-fe .subtitulo, .footer-fe a, .footer-fe a:hover, .footer-fe a:visited  {
     color: #cccccc;
-    text-decoration: none;
     font-size: 13px;
     padding-left: 20px;
+    text-decoration: none;
 }
 
 .footer-fe .separa {

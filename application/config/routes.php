@@ -53,6 +53,15 @@ $route['copa-america'] = "site/copaamerica";
 
 $route['futbol-internacional'] = "site/futbolinternacional";
 
+$route['fe-magazine'] = "site/femagazine";
+$route['goleadores'] = "site/goleadores";
+$route['tabla-de-posiciones'] = "site/tabladeposiciones";
+$route['resultados'] = "site/resultados";
+$route['fuera-de-juego'] = "site/fueradejuego";
+
+$route['serie-a'] = "site/seriea";
+$route['serie-b'] = "site/serieb";
+$route['seleccion'] = "site/seleccion";
 
 /*
 $route['contactos'] =  "sections/publica/67";

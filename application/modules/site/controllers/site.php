@@ -179,14 +179,17 @@ class Site extends MY_Controller
     {
         $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores");
     }
+
     public function copaamerica()
     {
         $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América", "copaamerica", "copaamerica");
     }
+
     public function copasudamericana()
     {
         $this->seccion(ZONACOPASUDAMERICANA, ZONACOPASUDAMERICANAPOS, "Copa Sudamericana", "copasudamericana", "copasudamericana");
     }
+
     public function futbolinternacional()
     {
         $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Futbol Internacional", "futbolinternacional", "futbolinternacional");
@@ -194,8 +197,8 @@ class Site extends MY_Controller
 
     public function equipo()
     {
-        $idEquipo= $this->uri->segment(4);
-        $shortEquipo= $this->uri->segment(3);
+        $idEquipo = $this->uri->segment(4);
+        $shortEquipo = $this->uri->segment(3);
         $recuperaNombreEquipo = $this->mdl_site->getNameSection($idEquipo);
         $this->sectionEquipo($idEquipo, 1, $recuperaNombreEquipo[0]->name, $shortEquipo, "equipo");
     }
@@ -241,10 +244,7 @@ class Site extends MY_Controller
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
-
-
-            $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, "equipo/" .$urlSeccion."/". $seccion);
-
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
 
 
         $storia = "";
@@ -260,8 +260,8 @@ class Site extends MY_Controller
 
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
-
-        $data['content'] = $storia . $noticiasCuerpo;
+        $infoEquipo = "TODO info del Equipo";
+        $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
@@ -269,6 +269,7 @@ class Site extends MY_Controller
         /*   }*/
         $this->templates->_index($data);
     }
+
 
     public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "")
     {
@@ -334,6 +335,81 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
 
         $data['content'] = $storia . $noticiasCuerpo;
+        $data['sidebar'] = $this->contenido->sidebarOpenNews();
+
+        $data['footer'] = $this->contenido->footer();
+        $data['bottom'] = $this->contenido->bottom();
+        /*   }*/
+        $this->templates->_index($data);
+    }
+
+    public function femagazine () {
+        $this->singleConten ("Fe Magazine", "Contenido de muestra FEMAGAZINE");
+    }
+
+    public function goleadores () {
+        $this->singleConten ("Goleadores", "Contenido de muestra Goleadores");
+    }
+
+    public function tabladeposiciones () {
+        $this->singleConten ("Tabla de posiciones", "Contenido de muestra TABLA DE POSICIONES");
+    }
+
+    public function resultados () {
+
+        $this->singleConten ("Calendario", "Contenido de muestra RESULTADOS");
+    }
+
+    public function fueradejuego () {
+        $this->singleConten ("Fuera de Juego", "Contenido de muestra FUERA DE JUEGO");
+    }
+
+    public function singleConten ($nameSeccion, $contenSeccion )
+    {
+        // para la final se comentan la llamada a las secciones.
+        //$this->output->cache(30);
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $this->load->library('user_agent');
+        $this->load->module('story');
+
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $isMobile = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $isMobile = true;
+        }
+
+        /* if ($isMobile) {
+
+             $data['cabecera'] = $this->contenido->menum();
+             $data['content'] = $this->contenido->header_mobile();
+             //$data['content'] .= $this->partidos->partidosFechaMovil();
+             $data['content'] .= $this->partidos->partidosFinal();
+             $data['content'] .= $this->contenido->view_banner_contenidotop();
+             $data['content'] .= $this->contenido->view_noticia_home();
+             $data['content'] .= $this->contenido->view_banner_contenido();
+             $data['content'] .= $this->contenido->view_twitter();
+
+             $data['footer'] = '';
+             $data['sidebar'] = '';
+
+         } else {*/
+
+        $data['top1'] = $this->banners->top1();
+        $data['header1'] = $this->contenido->menu();
+
+        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+
+        $bodytag = $nameSeccion;
+
+        $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
+
+        // fin carga la informacion de la noticia
+        $data['content'] = $contenSeccion  ;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();

@@ -1,63 +1,62 @@
-<div class="row clearfix separador10 separador10bot footer-fe">
+<div class="row clearfix separador10 separador10bot footer-fe margen0">
     <div class="col-md-3">
         <div class="col-md-12  azulfooter">
             <h3>Secciones</h3>
         </div>
         <div class="col-md-12 separa">
-            <a href="#">Fútbol Nacional</a>
+             <div class="subtitulo"><strong>Fútbol Nacional</strong></div>
         </div>
 
         <div class="col-md-12 separa">
-            <a href="#">Serie A</a>
+            <a href="<?= base_url('serie-a') ?>">
+                Serie A
+            </a>
         </div>
 
         <div class="col-md-12 separa">
-            <a href="#">Serie B</a>
+            <a href="<?= base_url('serie-b') ?>">Serie B</a>
         </div>
         <div class="col-md-12 separa">
-            <a href="#">Selección</a>
-        </div>
-
-        <div class="col-md-12 separa">
-            <a href="#">Lo más leido</a>
+            <a href="<?= base_url('seleccion') ?>">Selección</a>
         </div>
 
         <div class="col-md-12 separa">
-            <a href="#">Lo más enviado</a>
+            <a href="<?= base_url('lo-mas-leido') ?>">Lo más leido</a>
+        </div>
+
+        <div class="col-md-12 separa">
+            <a href="<?= base_url('lo-mas-leido') ?>">Lo más enviado</a>
         </div>
         <div class="col-md-12 ">
-            <a href="#">Lo más buscado</a>
+            <a href="<?= base_url('lo-mas-leido') ?>">Lo más buscado</a>
         </div>
 
     </div>
     <div class="col-md-3">
         <div class="col-md-12 separa">
-            <a href="#">Posiciones</a>
+            <a href="<?= base_url('tabla-de-posiciones') ?>">Posiciones</a>
+        </div>
+
+
+        <div class="col-md-12 separa">
+            <a href="<?= base_url('calendario') ?>">Calendario</a>
+        </div>
+        <div class="col-md-12 separa">
+            <a href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a>
+        </div>
+        <div class="col-md-12 separa">
+            <a href="<?= base_url('futbol-internacional') ?>">Fútbol internacional</a>
         </div>
 
         <div class="col-md-12 separa">
-            <a href="#">Resultados</a>
+            <a href="<?= base_url('eliminatorias') ?>">Eliminatioras 2018</a>
         </div>
 
         <div class="col-md-12 separa">
-            <a href="#">Calendario</a>
-        </div>
-        <div class="col-md-12 separa">
-            <a href="#">Nuestros Embajadores</a>
-        </div>
-        <div class="col-md-12 separa">
-            <a href="#">Fútbol internacional</a>
-        </div>
-
-        <div class="col-md-12 separa">
-            <a href="#">Eliminatioras 2018</a>
-        </div>
-
-        <div class="col-md-12 separa">
-            <a href="#">Zona FE</a>
+            <a href="<?= base_url('zona-fe') ?>">Zona FE</a>
         </div>
         <div class="col-md-12 ">
-            <a href="#">Fuera de juego</a>
+            <a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a>
         </div>
     </div>
 

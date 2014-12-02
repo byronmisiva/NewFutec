@@ -131,7 +131,7 @@
                                    class="pull-left">
                                     <h4><?= $serieb[0]->title ?></h4>
 
-                                    <p><?= $seriea[0]->subtitle ?><</p>
+                                    <p><?= $seriea[0]->subtitle ?></p>
 
                                 </a>
                                 <a href="<?= base_url('site/serieb') ?>">
@@ -236,7 +236,7 @@
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FE Magazine</a>
+    <a href="<?= base_url('fe-magazine') ?>" class="pull-left">FE Magazine</a>
 </li>
 </ul>
 <!-- end nav navbar-nav -->

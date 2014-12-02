@@ -206,6 +206,10 @@
             </div>
         </div>
     </div>
+    <div class="col-md-12 text-right fondoazul separador10">
+        <a  href="<?= base_url('resultados') ?>">Ver más</a>
+
+    </div>
 </div>
 
 
@@ -246,7 +250,7 @@
         </div>
     </div>
     <div class="col-md-12 text-right fondoazul separador10">
-        Ver más
+        <a  href="<?= base_url('tabla-de-posiciones') ?>">Ver más</a>
     </div>
 </div>
 
