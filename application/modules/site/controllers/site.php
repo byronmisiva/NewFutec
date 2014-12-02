@@ -170,6 +170,28 @@ class Site extends MY_Controller
         $this->seccion(LOMASLEIDO, LOMASLEIDOPOS, "Lo más leido", "masleido", "masleido");
     }
 
+    public function nuestrosembajadores()
+    {
+        $this->seccion(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Nuestros embajadores", "nuestrosembajadores", "nuestrosembajadores");
+    }
+
+    public function copalibertadores()
+    {
+        $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores");
+    }
+    public function copaamerica()
+    {
+        $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América", "copaamerica", "copaamerica");
+    }
+    public function copasudamericana()
+    {
+        $this->seccion(ZONACOPASUDAMERICANA, ZONACOPASUDAMERICANAPOS, "Copa Sudamericana", "copasudamericana", "copasudamericana");
+    }
+    public function futbolinternacional()
+    {
+        $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Futbol Internacional", "futbolinternacional", "futbolinternacional");
+    }
+
     public function equipo()
     {
         $idEquipo= $this->uri->segment(4);

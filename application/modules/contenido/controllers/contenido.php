@@ -23,8 +23,14 @@ class Contenido extends MY_Controller
         //  $this->load->model('team');
 
         $this->load->module('teams_position');
-        $this->load->module('team');
         $positions = $this->mdl_teams_position->get_table_by_champ(CHAMP_DEFAULT);
+
+//
+
+        $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 1);
+        $data['serieb'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_B, 1);
+        $data['seleccion'] = $this->mdl_noticias->get_by_position(1, SECTION_SELECCION, 1);
+
         /*  $teams=array();
           foreach($positions as $key=>$pos){
 

@@ -29,7 +29,7 @@
                     <div class="col-sm-3 <?php echo $separador ?>">
                         <ul class="menu-option">
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name']))) . "/" . $teams[$i * $desp]['section']?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name']))) . "/" . $teams[$i * $desp]['section'] ?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo1 ?></div>
@@ -50,7 +50,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name']))) . "/" . $teams[$i * $desp + 2]['section']?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name']))) . "/" . $teams[$i * $desp + 2]['section'] ?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo3 ?></div>
@@ -89,21 +89,22 @@
                     </a>
                     <ul class="media-list">
                         <li class="media">
-                            <a href="<?= base_url('site/seriea') ?>" class="pull-left">
-                                <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
+                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->title) . '/' . $seriea[0]->id) ?>"
+                               class="pull-left">
+                                <img src="<?= 'http://www.futbolecuador.com/' . $seriea[0]->thumb3 ?>"
                                      alt="Noticia Serie A"
                                      class="img-thumbnail media-object"
                                      width="61">
                             </a>
 
                             <div class="media-body">
-                                <a href="<?= base_url('site/seriea') ?>" class="pull-left">
-                                    <h4>Deportivo Aucas</h4>
-
-                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                                        amet, consectetur, adipisci velit</p>
-
-                                    <p class="pull-right link-menu">Ver noticia</p>
+                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->title) . '/' . $seriea[0]->id) ?>"
+                                   class="pull-left">
+                                    <h4><?= $seriea[0]->title ?></h4>
+                                    <p><?= $seriea[0]->subtitle ?></p>
+                                </a>
+                                <a href="<?= base_url('site/seriea') ?>">
+                                    <p class="pull-right link-menu">Ver sección</p>
                                 </a>
                             </div>
                         </li>
@@ -116,20 +117,25 @@
                     </a>
                     <ul class="media-list">
                         <li class="media">
-                            <a href="<?= base_url('site/serieb') ?>" class="pull-left">
-                                <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
+                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($serieb[0]->title) . '/' . $serieb[0]->id) ?>"
+                               class="pull-left">
+
+                                <img src="<?= 'http://www.futbolecuador.com/' . $serieb[0]->thumb3 ?>"
                                      alt="Noticia Serie B"
                                      class="img-thumbnail media-object"
                                      width="61">
                             </a>
 
                             <div class="media-body">
-                                <a href="<?= base_url('site/serieb') ?>" class="pull-left">
-                                    <h4>Deportivo Aucas</h4>
+                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($serieb[0]->title) . '/' . $serieb[0]->id) ?>"
+                                   class="pull-left">
+                                    <h4><?= $serieb[0]->title ?></h4>
 
-                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                                        amet, consectetur, adipisci velit</p>
-                                    <p class="pull-right link-menu">Ver noticia</p>
+                                    <p><?= $seriea[0]->subtitle ?><</p>
+
+                                </a>
+                                <a href="<?= base_url('site/serieb') ?>">
+                                    <p class="pull-right link-menu">Ver sección</p>
                                 </a>
                             </div>
                         </li>
@@ -144,19 +150,23 @@
                     </a>
                     <ul class="media-list">
                         <li class="media">
-                            <a href="<?= base_url('site/seleccion') ?>" class="pull-left">
-                                <img src="<?= base_url('assets/dummys/noticiaMenu.jpg') ?>"
+                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seleccion[0]->title) . '/' . $seleccion[0]->id) ?>"
+                               class="pull-left">
+
+                                <img src="<?= 'http://www.futbolecuador.com/' . $seleccion[0]->thumb3 ?>"
                                      alt="Noticias Seleccion"
                                      class="img-thumbnail media-object"
                                      width="61">
                             </a>
 
                             <div class="media-body">
-                                <a href="<?= base_url('site/seleccion') ?>" class="pull-left">
-                                    <h4>Deportivo Aucas</h4>
-                                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                                        amet, consectetur, adipisci velit</p>
-                                    <p class="pull-right link-menu">Ver noticia</p>
+                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seleccion[0]->title) . '/' . $seleccion[0]->id) ?>"
+                                   class="pull-left">
+                                    <h4><?= $seleccion[0]->title ?></h4>
+                                    <p><?= $seleccion[0]->subtitle ?></p>
+                                </a>
+                                <a href="<?= base_url('site/seleccion') ?>">
+                                    <p class="pull-right link-menu">Ver sección</p>
                                 </a>
                             </div>
                         </li>
@@ -174,13 +184,13 @@
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Fútbol Internacional</a>
+    <a href="<?= base_url('futbol-internacional') ?>" class="pull-left">Fútbol Internacional</a>
     <!-- dropdown-menu -->
 </li>
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Nuestros Embajadores</a>
+    <a href="<?= base_url('nuestros-embajadores') ?>" class="pull-left">Nuestros Embajadores</a>
 </li>
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
@@ -191,17 +201,22 @@
                 <div class="col-sm-1  ">
                 </div>
                 <div class="col-sm-3  text-center separador-dotted">
+                    <a href="<?= base_url('copa-libertadores') ?>" class="pull-left">
+                        <img src="<?= base_url('assets/img/copa-libertadores.png') ?>" alt="Copa Libertadores">
+                    </a>
 
-
-                    <img src="<?= base_url('assets/img/copa-libertadores.png') ?>" alt="Copa Libertadores">
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-3 text-center separador-dotted">
-                    <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana">
+                    <a href="<?= base_url('copa-sudamericana') ?>" class="pull-left">
+                        <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana">
+                    </a>
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-3 text-center">
-                    <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America">
+                    <a href="<?= base_url('copa-america') ?>" class="pull-left">
+                        <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America">
+                    </a>
                 </div>
                 <!-- end col-4 -->
             </div>
