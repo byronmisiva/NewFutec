@@ -199,19 +199,22 @@ class Site extends MY_Controller
     {
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
-        $recuperaNombreEquipo = $this->mdl_site->getNameSection($idEquipo);
-        $this->sectionEquipo($idEquipo, 1, $recuperaNombreEquipo[0]->name, $shortEquipo, "equipo");
+        $infoEquipo = $this->mdl_site->getNameSection($idEquipo);
+
+        $this->sectionEquipo($idEquipo, 1, $this->mdl_site->getNameTeam($infoEquipo[0]->name), $shortEquipo, "equipo");
     }
 
 
-    public function sectionEquipo($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "")
+    public function sectionEquipo($seccion, $seccionpos, $infoEquipo, $urlSeccion, $tipoSeccion = "" )
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
+        $nameSeccion = $infoEquipo[0]->name;
 
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
+        $this->load->module('team');
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
@@ -260,7 +263,13 @@ class Site extends MY_Controller
 
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
-        $infoEquipo = "TODO info del Equipo";
+        $dataTeam =  [];
+        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($infoEquipo[0]->stadia_id);
+        $infoEquipo[0]->histories = $this->mdl_site->getHistories($infoEquipo[0]->id);
+        $dataTeam ['infoEquipo'] = $infoEquipo[0];
+
+        $infoEquipo = $this->team->getFicha($dataTeam);
+
         $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 

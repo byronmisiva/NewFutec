@@ -9,12 +9,8 @@ class Team extends MY_Controller
         parent::__construct();
     }
 
-    /*public function cabecera($data = FALSE)
+    public function getFicha($data = FALSE)
     {
-        return $this->load->view('header2', $data, TRUE);
-
-    }*/
-
-
-
+        return $this->load->view('ficha', $data, TRUE);
+    }
 }

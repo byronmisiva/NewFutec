@@ -22,4 +22,19 @@ class Mdl_site extends MY_Model{
         $this->db->from( 'sections');
         return $this->db->get()->result();
     }
+    function getNameTeam($name){
+        $this->db->where( 'name',$name);
+        $this->db->from( 'teams');
+        return $this->db->get()->result();
+    }
+function getNameStadia($id){
+        $this->db->where( 'id',$id);
+        $this->db->from( 'stadia');
+        return $this->db->get()->result();
+    }
+    function getHistories($id){
+        $this->db->where( 'team_id',$id);
+        $this->db->from( 'histories');
+        return $this->db->get()->result();
+    }
 }
