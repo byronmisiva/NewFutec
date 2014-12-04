@@ -30,7 +30,7 @@
             </tr>
             <tr>
                 <td><strong>Página web oficial</strong></td>
-                <td><a href="<?php echo $infoEquipo->site; ?>"><?php echo $infoEquipo->site; ?></a></td>
+                <td><a href="<?php echo $infoEquipo->site; ?>" target="_blank"><?php echo $infoEquipo->site; ?></a></td>
             </tr>
             <tr>
                 <td><strong>Palmarés</strong></td>
