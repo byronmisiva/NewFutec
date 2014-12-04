@@ -35,8 +35,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3682927" vertical-offset="1589" max-vertical-offset="3000">
-              <caret line="358" column="28" selection-start-line="358" selection-start-column="28" selection-end-line="358" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.33170733" vertical-offset="1709" max-vertical-offset="3015">
+              <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
               <folding>
                 <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
@@ -60,8 +60,8 @@
       <file leaf-file-name="mdl_site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/models/mdl_site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.25" vertical-offset="321" max-vertical-offset="825">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state vertical-scroll-proportion="-4.75" vertical-offset="321" max-vertical-offset="825">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -70,8 +70,8 @@
       <file leaf-file-name="team.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/team/controllers/team.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <file leaf-file-name="ficha.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="285" max-vertical-offset="1155">
-              <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+            <state vertical-scroll-proportion="-10.416667" vertical-offset="605" max-vertical-offset="1155">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -280,6 +280,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="team" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="team" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1337,7 +1385,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417709326320</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="&#10;ss">
+      <created>1417709434078</created>
+      <option name="number" value="00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1417709434079</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1436,19 +1490,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/modules/team/views/ficha.php</url>
-          <line>57</line>
-          <option name="timeStamp" value="148" />
+          <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <option name="timeStamp" value="149" />
+          <line>365</line>
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="155" />
+      <option name="time" value="156" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -1755,34 +1809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/team/controllers/team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/models/mdl_site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.25" vertical-offset="321" max-vertical-offset="825">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/sitebak.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6525">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="429" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="285" max-vertical-offset="1155">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1795,10 +1825,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/models/mdl_site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.75" vertical-offset="321" max-vertical-offset="825">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/team/controllers/team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.416667" vertical-offset="605" max-vertical-offset="1155">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3682927" vertical-offset="1589" max-vertical-offset="3000">
-          <caret line="358" column="28" selection-start-line="358" selection-start-column="28" selection-end-line="358" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.33170733" vertical-offset="1709" max-vertical-offset="3015">
+          <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
           <folding>
             <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />

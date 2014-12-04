@@ -356,18 +356,24 @@ class Site extends MY_Controller
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
-        $nameSeccion = "ss";
-/*        $infoEquipo = $this->mdl_site->getNameSection($seccion);
-        $nameSeccion = $infoEquipo[0]->name;
+        // Informacion de equipo
+        $this->load->module('team');
+
+        $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
+        $nameSeccion = $infoSeccionEquipo[0]->name;
+
+        $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
         $stadia_id = $infoEquipo[0]->stadia_id;
         $idEquipo = $infoEquipo[0]->id;
         $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
-        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);*/
+        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
+        $dataTeam =  [];
+        $dataTeam ['infoEquipo'] = $infoEquipo[0];
+        $infoEquipo = $this->team->getFicha($dataTeam);
 
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
-        $this->load->module('team');
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
@@ -417,12 +423,7 @@ class Site extends MY_Controller
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
 
-        $dataTeam =  [];
 
-        /*$dataTeam ['infoEquipo'] = $infoEquipo[0];*/
-
-        //$infoEquipo = $this->team->getFicha($dataTeam);
-        $infoEquipo = "xx";
 
         $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
