@@ -376,11 +376,11 @@ class Site extends MY_Controller
         $idEquipo = $infoEquipo[0]->id;
         $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
         $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
-        $dataTeam =  [];
+//        $dataTeam =  [];
 //        $dataTeam ['infoEquipo'] = $infoEquipo[0];
 //        $infoEquipo = $this->team->getFicha($dataTeam);
 
-         $infoEquipo = "xx";
+        $infoEquipo = "xx";
 
         $this->load->module('noticias');
         $this->load->module('templates');
