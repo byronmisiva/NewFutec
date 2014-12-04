@@ -29,7 +29,7 @@
                     <div class="col-sm-3 <?php echo $separador ?>">
                         <ul class="menu-option">
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name']))) . "/" . $teams[$i * $desp]['section'] ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) . "/" . $teams[$i * $desp]['section']) ?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo1 ?></div>
@@ -39,7 +39,7 @@
                                     </div>
                                 </a></li>
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name']))) . "/" . $teams[$i * $desp + 1]['section'] ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name'])) . "/" . $teams[$i * $desp + 1]['section']) ?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo2 ?></div>
@@ -50,7 +50,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name']))) . "/" . $teams[$i * $desp + 2]['section'] ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) . "/" . $teams[$i * $desp + 2]['section']) ?>">cc
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo3 ?></div>
