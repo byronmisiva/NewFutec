@@ -412,6 +412,7 @@ class Site extends MY_Controller
 
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
+
         $dataTeam =  [];
         $stadia_id = $infoEquipo[0]->stadia_id;
         $idEquipo = $infoEquipo[0]->id;
