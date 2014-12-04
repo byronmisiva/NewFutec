@@ -412,10 +412,12 @@ class Site extends MY_Controller
 
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
-        /*$dataTeam =  [];
-        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($infoEquipo[0]->stadia_id);
-        $infoEquipo[0]->histories = $this->mdl_site->getHistories($infoEquipo[0]->id);
-        $dataTeam ['infoEquipo'] = $infoEquipo[0];*/
+        $dataTeam =  [];
+        $stadia_id = $infoEquipo[0]->stadia_id;
+        $idEquipo = $infoEquipo[0]->id;
+        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
+        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
+        /*$dataTeam ['infoEquipo'] = $infoEquipo[0];*/
 
         //$infoEquipo = $this->team->getFicha($dataTeam);
         $infoEquipo = "hola mundo";
