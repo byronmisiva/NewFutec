@@ -354,10 +354,11 @@ class Site extends MY_Controller
 
     public function sectionEquipo($seccion, $seccionpos,  $urlSeccion )
     {
-        $infoEquipo = $this->mdl_site->getNameSection($seccion);
+//        $infoEquipo = $this->mdl_site->getNameSection($seccion);
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
-        $nameSeccion = $infoEquipo[0]->name;
+        $nameSeccion = "ccc";
+//        $nameSeccion = $infoEquipo[0]->name;
 
         $this->load->module('noticias');
         $this->load->module('templates');
