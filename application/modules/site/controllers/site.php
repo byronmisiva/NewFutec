@@ -348,8 +348,6 @@ class Site extends MY_Controller
     {
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
-
-
         $this->sectionEquipo($idEquipo, 1, $shortEquipo );
     }
 
@@ -423,7 +421,7 @@ class Site extends MY_Controller
         /*$dataTeam ['infoEquipo'] = $infoEquipo[0];*/
 
         //$infoEquipo = $this->team->getFicha($dataTeam);
-        $infoEquipo = $test;
+        $infoEquipo = "";
 
         $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
