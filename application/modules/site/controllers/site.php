@@ -378,10 +378,9 @@ class Site extends MY_Controller
         $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
         $dataTeam =  [];
         $dataTeam ['infoEquipo'] = $infoEquipo[0];
-        $infoEquipo = $this->team->getFicha($dataTeam);
+//        $infoEquipo = $this->team->getFicha($dataTeam);
 
-//        $infoEquipo = "xx";
-//        $nameSeccion = "ss";
+         $infoEquipo = "xx";
 
         $this->load->module('noticias');
         $this->load->module('templates');
