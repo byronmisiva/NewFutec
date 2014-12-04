@@ -362,7 +362,7 @@ class Site extends MY_Controller
         $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
         $nameSeccion = $infoSeccionEquipo[0]->name;
 //
-//        $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
+        $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
 //        $stadia_id = $infoEquipo[0]->stadia_id;
 //        $idEquipo = $infoEquipo[0]->id;
 //        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
