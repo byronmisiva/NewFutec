@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/models/mdl_site.php" afterPath="$PROJECT_DIR$/application/modules/site/models/mdl_site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -32,20 +32,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="6510">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="0.7916667" vertical-offset="516" max-vertical-offset="1020">
+              <caret line="374" column="1" selection-start-line="374" selection-start-column="1" selection-end-line="374" selection-end-column="1" />
+              <folding>
+                <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#equipo#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#femagazine#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#goleadores#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#tabladeposiciones#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#resultados#0;n#Site#0;n#!!top" expanded="false" />
+                <element signature="n#fueradejuego#0;n#Site#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdl_site.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mdl_site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/models/mdl_site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8214286" vertical-offset="321" max-vertical-offset="825">
+            <state vertical-scroll-proportion="-17.25" vertical-offset="321" max-vertical-offset="825">
               <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding />
             </state>
@@ -174,9 +196,9 @@
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/team/controllers/team.php" />
-        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
         <option value="$PROJECT_DIR$/application/modules/site/models/mdl_site.php" />
+        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       </list>
     </option>
   </component>
@@ -1142,7 +1164,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417644969135</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="&#10;message">
+      <created>1417648825857</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1417648825857</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1176,6 +1204,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868758" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32288036" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1186,7 +1215,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40301976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1244,11 +1272,21 @@
           <line>57</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
+          <line>147</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
+          <line>182</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="149" />
+      <option name="time" value="151" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -1269,7 +1307,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="6510">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#equipo#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#femagazine#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#goleadores#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#tabladeposiciones#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#resultados#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#fueradejuego#0;n#Site#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1566,14 +1626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="6510">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-35.625" vertical-offset="0" max-vertical-offset="1155">
@@ -1584,9 +1636,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/models/mdl_site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8214286" vertical-offset="321" max-vertical-offset="825">
+        <state vertical-scroll-proportion="-17.25" vertical-offset="321" max-vertical-offset="825">
           <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7916667" vertical-offset="516" max-vertical-offset="1020">
+          <caret line="374" column="1" selection-start-line="374" selection-start-column="1" selection-end-line="374" selection-end-column="1" />
+          <folding>
+            <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#equipo#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#femagazine#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#goleadores#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#tabladeposiciones#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#resultados#0;n#Site#0;n#!!top" expanded="false" />
+            <element signature="n#fueradejuego#0;n#Site#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
