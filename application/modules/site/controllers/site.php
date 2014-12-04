@@ -195,16 +195,6 @@ class Site extends MY_Controller
         $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Futbol Internacional", "futbolinternacional", "futbolinternacional");
     }
 
-    public function equipo()
-    {
-        $idEquipo = $this->uri->segment(4);
-        $shortEquipo = $this->uri->segment(3);
-        $infoEquipo = $this->mdl_site->getNameSection($idEquipo);
-
-        $this->sectionEquipo($idEquipo, 1, $this->mdl_site->getNameTeam($infoEquipo[0]->name), $shortEquipo, "equipo");
-    }
-
-
     public function sectionEquipo($seccion, $seccionpos, $infoEquipo, $urlSeccion, $tipoSeccion = "" )
     {
         // para la final se comentan la llamada a las secciones.
@@ -352,25 +342,5 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    public function femagazine () {
-        $this->singleConten ("Fe Magazine", "Contenido de muestra FEMAGAZINE");
-    }
-
-    public function goleadores () {
-        $this->singleConten ("Goleadores", "Contenido de muestra Goleadores");
-    }
-
-    public function tabladeposiciones () {
-        $this->singleConten ("Tabla de posiciones", "Contenido de muestra TABLA DE POSICIONES");
-    }
-
-    public function resultados () {
-
-        $this->singleConten ("Calendario", "Contenido de muestra RESULTADOS");
-    }
-
-    public function fueradejuego () {
-        $this->singleConten ("Fuera de Juego", "Contenido de muestra FUERA DE JUEGO");
-    }
 
 }

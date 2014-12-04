@@ -35,8 +35,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7916667" vertical-offset="516" max-vertical-offset="1020">
-              <caret line="374" column="1" selection-start-line="374" selection-start-column="1" selection-end-line="374" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.7916667" vertical-offset="336" max-vertical-offset="840">
+              <caret line="344" column="5" selection-start-line="344" selection-start-column="5" selection-end-line="344" selection-end-column="5" />
               <folding>
                 <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
@@ -51,14 +51,8 @@
                 <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#equipo#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#femagazine#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#goleadores#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#tabladeposiciones#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#resultados#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#fueradejuego#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -290,6 +284,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -310,11 +352,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/modules/site/controllers" />
       <recent name="$PROJECT_DIR$/application/modules/team/views" />
       <recent name="$PROJECT_DIR$/application/modules/site" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/00Pruebas/ruleta/css" />
-      <recent name="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation_files/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation_files/css" />
@@ -1170,7 +1212,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417648825857</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="&#10;message">
+      <created>1417703180387</created>
+      <option name="number" value="00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1417703180387</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1321,14 +1369,8 @@
             <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#equipo#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#femagazine#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#goleadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#tabladeposiciones#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#resultados#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#fueradejuego#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1644,8 +1686,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7916667" vertical-offset="516" max-vertical-offset="1020">
-          <caret line="374" column="1" selection-start-line="374" selection-start-column="1" selection-end-line="374" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.7916667" vertical-offset="336" max-vertical-offset="840">
+          <caret line="344" column="5" selection-start-line="344" selection-start-column="5" selection-end-line="344" selection-end-column="5" />
           <folding>
             <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
@@ -1660,14 +1702,8 @@
             <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#equipo#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#femagazine#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#goleadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#tabladeposiciones#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#resultados#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#fueradejuego#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
