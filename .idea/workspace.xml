@@ -35,24 +35,10 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7916667" vertical-offset="336" max-vertical-offset="840">
-              <caret line="344" column="5" selection-start-line="344" selection-start-column="5" selection-end-line="344" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="504">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
               <folding>
                 <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1218,7 +1204,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417703180387</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="&#10;message">
+      <created>1417703704609</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1417703704609</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1322,13 +1314,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>147</line>
           <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>182</line>
-          <option name="timeStamp" value="150" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1357,20 +1343,6 @@
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1686,24 +1658,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7916667" vertical-offset="336" max-vertical-offset="840">
-          <caret line="344" column="5" selection-start-line="344" selection-start-column="5" selection-end-line="344" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="504">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
           <folding>
             <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copaamerica#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#sectionEquipo#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
