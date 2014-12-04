@@ -358,10 +358,6 @@ class Site extends MY_Controller
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
         $nameSeccion = $infoEquipo[0]->name;
-        $stadia_id = $infoEquipo[0]->stadia_id;
-        $idEquipo = $infoEquipo[0]->id;
-        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
-        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
 
         $this->load->module('noticias');
         $this->load->module('templates');
@@ -421,7 +417,7 @@ class Site extends MY_Controller
         /*$dataTeam ['infoEquipo'] = $infoEquipo[0];*/
 
         //$infoEquipo = $this->team->getFicha($dataTeam);
-        $infoEquipo = "";
+        $infoEquipo = "xx";
 
         $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
