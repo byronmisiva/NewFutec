@@ -414,14 +414,15 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
 
         $dataTeam =  [];
-        $stadia_id = $infoEquipo[0]->stadia_id;
-        $idEquipo = $infoEquipo[0]->id;
+        $test = $separado_por_comas = implode(",", $infoEquipo[0]);
+        //$stadia_id = $infoEquipo[0]->stadia_id;
+        //$idEquipo = $infoEquipo[0]->id;
       //  $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
       //  $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
         /*$dataTeam ['infoEquipo'] = $infoEquipo[0];*/
 
         //$infoEquipo = $this->team->getFicha($dataTeam);
-        $infoEquipo = "hola mundo";
+        $infoEquipo = $test;
 
         $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
