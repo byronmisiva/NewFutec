@@ -268,28 +268,33 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    public function femagazine () {
-        $this->singleConten ("Fe Magazine", "Contenido de muestra FEMAGAZINE");
+    public function femagazine()
+    {
+        $this->singleConten("Fe Magazine", "Contenido de muestra FEMAGAZINE");
     }
 
-    public function goleadores () {
-        $this->singleConten ("Goleadores", "Contenido de muestra Goleadores");
+    public function goleadores()
+    {
+        $this->singleConten("Goleadores", "Contenido de muestra Goleadores");
     }
 
-    public function tabladeposiciones () {
-        $this->singleConten ("Tabla de posiciones", "Contenido de muestra TABLA DE POSICIONES");
+    public function tabladeposiciones()
+    {
+        $this->singleConten("Tabla de posiciones", "Contenido de muestra TABLA DE POSICIONES");
     }
 
-    public function resultados () {
+    public function resultados()
+    {
 
-        $this->singleConten ("Calendario", "Contenido de muestra RESULTADOS");
+        $this->singleConten("Calendario", "Contenido de muestra RESULTADOS");
     }
 
-    public function fueradejuego () {
-        $this->singleConten ("Fuera de Juego", "Contenido de muestra FUERA DE JUEGO");
+    public function fueradejuego()
+    {
+        $this->singleConten("Fuera de Juego", "Contenido de muestra FUERA DE JUEGO");
     }
 
-    public function singleConten ($nameSeccion, $contenSeccion )
+    public function singleConten($nameSeccion, $contenSeccion)
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
@@ -334,7 +339,7 @@ class Site extends MY_Controller
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
 
         // fin carga la informacion de la noticia
-        $data['content'] = $contenSeccion  ;
+        $data['content'] = $contenSeccion;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
@@ -348,11 +353,11 @@ class Site extends MY_Controller
     {
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
-        $this->section_equipo($idEquipo, 1, $shortEquipo );
+        $this->section_equipo($idEquipo, 1, $shortEquipo);
     }
 
 
-    public function section_equipo($seccion, $seccionpos,  $urlSeccion )
+    public function section_equipo($seccion, $seccionpos, $urlSeccion)
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
@@ -363,10 +368,14 @@ class Site extends MY_Controller
         $nameSeccion = $infoSeccionEquipo[0]->name;
 //
         $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
-        $stadia_id = $infoEquipo[0]->stadia_id;
+        if (isset($infoEquipo[0]->stadia_id))
+            $stadia_id = $infoEquipo[0]->stadia_id;
+        else
+            $stadia_id = "";
+
         $idEquipo = $infoEquipo[0]->id;
-//        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
-//        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
+        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
+        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
 //        $dataTeam =  [];
 //        $dataTeam ['infoEquipo'] = $infoEquipo[0];
 //        $infoEquipo = $this->team->getFicha($dataTeam);
@@ -427,8 +436,7 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
 
 
-
-        $data['content'] = $infoEquipo .$storia . $noticiasCuerpo;
+        $data['content'] = $infoEquipo . $storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
