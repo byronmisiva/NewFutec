@@ -35,8 +35,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37530267" vertical-offset="1675" max-vertical-offset="3060">
-              <caret line="364" column="0" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4479419" vertical-offset="1675" max-vertical-offset="3060">
+              <caret line="366" column="0" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
               <folding>
                 <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
@@ -1427,7 +1427,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417711890561</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="&#10;ss">
+      <created>1417711958727</created>
+      <option name="number" value="00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1417711958728</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1883,8 +1889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37530267" vertical-offset="1675" max-vertical-offset="3060">
-          <caret line="364" column="0" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4479419" vertical-offset="1675" max-vertical-offset="3060">
+          <caret line="366" column="0" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
           <folding>
             <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
