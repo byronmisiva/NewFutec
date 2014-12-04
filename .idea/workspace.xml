@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6130952" vertical-offset="2316" max-vertical-offset="2970">
-              <caret line="417" column="8" selection-start-line="417" selection-start-column="8" selection-end-line="417" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.5535714" vertical-offset="2316" max-vertical-offset="2970">
+              <caret line="415" column="8" selection-start-line="415" selection-start-column="8" selection-end-line="415" selection-end-column="8" />
               <folding>
                 <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
                 <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
@@ -1277,7 +1276,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417706624039</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="&#10;message">
+      <created>1417706659418</created>
+      <option name="number" value="00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1417706659418</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1736,8 +1741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6130952" vertical-offset="2316" max-vertical-offset="2970">
-          <caret line="417" column="8" selection-start-line="417" selection-start-column="8" selection-end-line="417" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.5535714" vertical-offset="2316" max-vertical-offset="2970">
+          <caret line="415" column="8" selection-start-line="415" selection-start-column="8" selection-end-line="415" selection-end-column="8" />
           <folding>
             <element signature="n#home#0;n#Site#0;n#!!top" expanded="false" />
             <element signature="n#noticia#0;n#Site#0;n#!!top" expanded="false" />
