@@ -357,21 +357,8 @@ class Site extends MY_Controller
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
         // Informacion de equipo
-        $this->load->module('team');
 
-        $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
-        $nameSeccion = $infoSeccionEquipo[0]->name;
-
-        $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
-        $stadia_id = $infoEquipo[0]->stadia_id;
-        $idEquipo = $infoEquipo[0]->id;
-        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
-        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
-        $dataTeam =  [];
-        $dataTeam ['infoEquipo'] = $infoEquipo[0];
-        $infoEquipo = $this->team->getFicha($dataTeam);
-
-        echo $infoEquipo;
+        echo "cc";
     }
 
 
