@@ -270,7 +270,9 @@ class Site extends MY_Controller
 
     public function femagazine()
     {
-        $this->singleConten("Fe Magazine", "Contenido de muestra FEMAGAZINE");
+        $this->load->module('contenido');
+        $femagazine = $this->contenido->femagazine();
+        $this->singleConten("Fe Magazine", $femagazine);
     }
 
     public function goleadores()

@@ -129,6 +129,11 @@ class Contenido extends MY_Controller
         return $this->load->view('fueradejuego', $data, TRUE);
 
     }
+    public function femagazine($data = FALSE)
+    {
+        return $this->load->view('femagazine', $data, TRUE);
+
+    }
 
 
     public function sidebar($data = FALSE)
