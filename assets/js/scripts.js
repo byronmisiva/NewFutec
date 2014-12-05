@@ -150,3 +150,41 @@ function altoshome() {
     });
 
 }
+
+// fuera de juego
+
+jQuery(function() {
+    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').liquidSlider({
+        includeTitle:false,
+        mobileNavigation:false,
+        slideEaseFunction: "easeInOutCubic",
+        preloader: true,
+        tabPosition: 'bottom',
+        dynamicTabsPosition: "bottom",
+
+        onload: function() {
+            this.alignNavigation();
+
+        }
+    });
+
+    jQuery(".otrasmodelos").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+
+    jQuery(".containerfueradejuego").hide();
+    jQuery(".galeria16content").show();
+
+    //menuchicas
+    jQuery(".galeria1, .galeria2,.galeria3,.galeria4,.galeria5,.galeria6,.galeria7,.galeria8,.galeria9,.galeria10,.galeria11,.galeria12,.galeria13,.galeria14,.galeria15,.galeria16").click(function() {
+        for (var i = 1; i<= 16; i++)
+            jQuery(".galeria" + i + "content").hide();
+
+
+        jQuery("." + jQuery(this).attr('class') + "content").show()
+        ;
+    })
+
+
+});

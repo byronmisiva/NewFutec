@@ -124,7 +124,12 @@ class Contenido extends MY_Controller
 
     }
 
-    public function view_fuera_de_juego($data = FALSE)
+    public function view_mod_fuera_de_juego($data = FALSE)
+    {
+        return $this->load->view('fueradejuegomod', $data, TRUE);
+
+    }
+         public function view_fuera_de_juego($data = FALSE)
     {
         return $this->load->view('fueradejuego', $data, TRUE);
 
@@ -187,7 +192,7 @@ class Contenido extends MY_Controller
         $data['laentrevista'] = $this->view_la_entrevista();
 
         //La entrevista
-        $data['fueradejuego'] = $this->view_fuera_de_juego();
+        $data['fueradejuego'] = $this->view_mod_fuera_de_juego();
 
         //Lo más leido
 
@@ -257,7 +262,7 @@ class Contenido extends MY_Controller
      //   $data['laentrevista'] = $this->view_la_entrevista();
 
         //La entrevista
-     //   $data['fueradejuego'] = $this->view_fuera_de_juego();
+     //   $data['fueradejuego'] = $this->view_mod_fuera_de_juego();
 
         //Lo más leido
 

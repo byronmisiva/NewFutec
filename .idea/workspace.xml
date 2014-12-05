@@ -4,9 +4,196 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/banner-chicas.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/left-fuera.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/logoAS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/logoGP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/portada-fuera-de-juego1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/portada-fuera-de-juego1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/portada-fuera-de-juego1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/portada-fuera-de-juego2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/portada-fuera-de-juego3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/right-fuera.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/seccion_chicas.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/titulo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuegomod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jcarousellite_1.0.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.liquid-slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.liquid-slider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.touchSwipe.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/sq.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" afterPath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/footer.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,8 +224,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.375" vertical-offset="2811" max-vertical-offset="5880">
-              <caret line="274" column="54" selection-start-line="274" selection-start-column="54" selection-end-line="274" selection-end-column="54" />
+            <state vertical-scroll-proportion="-6.26" vertical-offset="3182" max-vertical-offset="5910">
+              <caret line="303" column="61" selection-start-line="303" selection-start-column="61" selection-end-line="303" selection-end-column="61" />
               <folding>
                 <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
@@ -46,11 +233,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scoreboards.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php">
+      <file leaf-file-name="fueradejuego.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.75" vertical-offset="519" max-vertical-offset="1275">
-              <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+            <state vertical-scroll-proportion="-6.36" vertical-offset="5577" max-vertical-offset="5985">
+              <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.708333" vertical-offset="301" max-vertical-offset="1665">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liquid-slider.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.160891" vertical-offset="6016" max-vertical-offset="6420">
+              <caret line="289" column="35" selection-start-line="289" selection-start-column="35" selection-end-line="289" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.888889" vertical-offset="2178" max-vertical-offset="2925">
+              <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,55 +283,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leaderboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.4166665" vertical-offset="131" max-vertical-offset="570">
-              <caret line="19" column="91" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="contenido.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.04" vertical-offset="1513" max-vertical-offset="4245">
-              <caret line="131" column="30" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="30" />
+            <state vertical-scroll-proportion="-5.6" vertical-offset="1640" max-vertical-offset="4320">
+              <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35128805" vertical-offset="0" max-vertical-offset="427">
+            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.333333" vertical-offset="3500" max-vertical-offset="4635">
-              <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="254" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="240" max-vertical-offset="3750">
-              <caret line="31" column="100" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,10 +340,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/base/application/config/config.php" />
-        <option value="$PROJECT_DIR$/base/assets/css/brasil.css" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
-        <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation.html" />
         <option value="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation_files/demo-print.css" />
         <option value="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation_files/demo.css" />
@@ -184,7 +367,6 @@
         <option value="$PROJECT_DIR$/application/config/constants.php" />
         <option value="$PROJECT_DIR$/base/application/modules/contenido/views/historiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/mininewssidebar.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
@@ -200,10 +382,15 @@
         <option value="$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboarddetail.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboardFull.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
-        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/feamagazine.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
+        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
+        <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
+        <option value="$PROJECT_DIR$/application/modules/templates/views/footer.php" />
+        <option value="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
       </list>
     </option>
   </component>
@@ -214,7 +401,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="166" />
+    <option name="x" value="246" />
     <option name="y" value="22" />
     <option name="width" value="1374" />
     <option name="height" value="944" />
@@ -260,6 +447,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imagenes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imagenes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerias-fuera-de-juego" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -703,7 +954,7 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Unnamed" start_url="/newFutbolEcuador/site/NewFutec/tabla-de-posiciones">
+    <configuration default="false" name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Unnamed" start_url="/newFutbolEcuador/site/NewFutec/">
       <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
@@ -1751,7 +2002,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417795723855</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="incluye tabla de revista">
+      <created>1417797645573</created>
+      <option name="number" value="00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1417797645573</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1775,14 +2032,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="166" y="22" width="1374" height="944" extended-state="0" />
-    <editor active="true" />
+    <frame x="246" y="22" width="1374" height="944" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32752612" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40301976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40258217" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41079813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41079813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868758" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1791,7 +2048,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31606606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31606606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1846,7 +2103,8 @@
     <MESSAGE value="&#10;ss" />
     <MESSAGE value="zz&#10;" />
     <MESSAGE value="incluye tabla de posiciones full" />
-    <option name="LAST_COMMIT_MESSAGE" value="incluye tabla de posiciones full" />
+    <MESSAGE value="incluye tabla de revista" />
+    <option name="LAST_COMMIT_MESSAGE" value="incluye tabla de revista" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1881,46 +2139,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="450">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1204" max-vertical-offset="3750">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/views/mininewssidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="705">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="525">
-          <caret line="25" column="56" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4488286" vertical-offset="580" max-vertical-offset="2625">
@@ -1960,13 +2178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2565">
           <caret line="15" column="56" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="708" max-vertical-offset="1545">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -2059,14 +2270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24809161" vertical-offset="0" max-vertical-offset="1875">
           <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="0" column="150" selection-start-line="0" selection-start-column="150" selection-end-line="0" selection-end-column="150" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2215,14 +2418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.75" vertical-offset="519" max-vertical-offset="1275">
-          <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/leaderboarddetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.9166665" vertical-offset="188" max-vertical-offset="660">
@@ -2247,32 +2442,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.04" vertical-offset="1513" max-vertical-offset="4245">
-          <caret line="131" column="30" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.15456675" vertical-offset="519" max-vertical-offset="1275">
+          <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.375" vertical-offset="2811" max-vertical-offset="5880">
-          <caret line="274" column="54" selection-start-line="274" selection-start-column="54" selection-end-line="274" selection-end-column="54" />
+        <state vertical-scroll-proportion="-6.26" vertical-offset="3182" max-vertical-offset="5910">
+          <caret line="303" column="61" selection-start-line="303" selection-start-column="61" selection-end-line="303" selection-end-column="61" />
           <folding>
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4681648" vertical-offset="525" max-vertical-offset="1635">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="801">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/sq.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="801">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.888889" vertical-offset="2178" max-vertical-offset="2925">
+          <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6" vertical-offset="1640" max-vertical-offset="4320">
+          <caret line="128" column="49" selection-start-line="128" selection-start-column="49" selection-end-line="128" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35128805" vertical-offset="0" max-vertical-offset="427">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.36" vertical-offset="5577" max-vertical-offset="5985">
+          <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.708333" vertical-offset="301" max-vertical-offset="1665">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.160891" vertical-offset="6016" max-vertical-offset="6420">
+          <caret line="289" column="35" selection-start-line="289" selection-start-column="35" selection-end-line="289" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

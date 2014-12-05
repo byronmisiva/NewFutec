@@ -300,7 +300,9 @@ class Site extends MY_Controller
 
     public function fueradejuego()
     {
-        $this->singleConten("Fuera de Juego", "Contenido de muestra FUERA DE JUEGO");
+        $this->load->module('contenido');
+        $fueradejuego = $this->contenido->view_fuera_de_juego();
+        $this->singleConten("Fuera de Juego", $fueradejuego);
     }
 
     public function singleConten($nameSeccion, $contenSeccion)
