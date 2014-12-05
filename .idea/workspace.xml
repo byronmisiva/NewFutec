@@ -4,197 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/arrows.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/banner-chicas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/left-fuera.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/logoAS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/logoGP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/img/menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/portada-fuera-de-juego1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/portada-fuera-de-juego1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/portada-fuera-de-juego1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/portada-fuera-de-juego2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/portada-fuera-de-juego3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/right-fuera.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/seccion_chicas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/controls/titulo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuegomod.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jcarousellite_1.0.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.liquid-slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.liquid-slider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.touchSwipe.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/sq.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" afterPath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/footer.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -2008,7 +1823,13 @@
       <option name="project" value="LOCAL" />
       <updated>1417797645573</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="incluye tabla de revista">
+      <created>1417806347839</created>
+      <option name="number" value="00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1417806347839</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
