@@ -275,12 +275,19 @@ class Site extends MY_Controller
 
     public function goleadores()
     {
-        $this->singleConten("Goleadores", "Contenido de muestra Goleadores");
+        $this->load->module('strikes');
+        $goleadores = $this->strikes->goleadoresFull(SERIE_A);
+        $this->singleConten("Goleadores", $goleadores);
     }
 
     public function tabladeposiciones()
     {
-        $this->singleConten("Tabla de posiciones", "Contenido de muestra TABLA DE POSICIONES");
+
+
+        $this->load->module('scoreboards');
+
+        $tablapocisiones = $this->scoreboards->scoreboardFull(SERIE_A);
+        $this->singleConten("Tabla de posiciones", $tablapocisiones);
     }
 
     public function resultados()
@@ -362,23 +369,26 @@ class Site extends MY_Controller
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
         // Informacion de equipo
-        $this->load->module('team');
-//
         $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
         $nameSeccion = $infoSeccionEquipo[0]->name;
-//
-        $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
-        if (isset($infoEquipo[0]->stadia_id))
-            $stadia_id = $infoEquipo[0]->stadia_id;
-        else
-            $stadia_id = "";
 
-        $idEquipo = $infoEquipo[0]->id;
-        $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
-        $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
-        $dataTeam ['infoEquipo'] = $infoEquipo[0];
-        $infoEquipo = $this->team->getFicha($dataTeam);
+        if (!$this->uri->segment(6)) {
+            $this->load->module('team');
 
+            $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
+            if (isset($infoEquipo[0]->stadia_id))
+                $stadia_id = $infoEquipo[0]->stadia_id;
+            else
+                $stadia_id = "";
+            $idEquipo = $infoEquipo[0]->id;
+            $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
+            $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
+            $dataTeam ['infoEquipo'] = $infoEquipo[0];
+            $infoEquipo = $this->team->getFicha($dataTeam);
+            // fin informacion recupera
+        } else {
+            $infoEquipo = "";
+        }
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');

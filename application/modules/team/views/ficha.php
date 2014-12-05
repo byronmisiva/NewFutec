@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<div class="row noticia-content">'>
+<div class="row noticia-content">
     <div class="col-md-6 separador10     ">
         <table class="table table-striped font12  tablemargin4">
             <tbody>

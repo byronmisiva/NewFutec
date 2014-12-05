@@ -50,7 +50,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) . "/" . $teams[$i * $desp + 2]['section']) ?>">cc
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) . "/" . $teams[$i * $desp + 2]['section']) ?>">
                                     <div
                                         class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) ?>-icon  "></div>
                                     <div class="menu-name"><?php echo $nombreEquipo3 ?></div>

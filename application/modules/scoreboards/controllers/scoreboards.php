@@ -33,8 +33,17 @@ class Scoreboards extends MY_Controller
         $this->load->view($this->folder_views . '/list_results', $data);
     }
 
+    public function scoreboardFull($champ)
+    {
+        $this->load->module('contenido');
+        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative($champ, "leaderboarddetail");
+        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard($champ, "leaderboarddetail");
+
+        return $this->load->view('leaderboardFull', $data, true);
+    }
+
     // Tabla de posiciones
-    public function leaderboard($champ)
+    public function leaderboard($champ, $leaderboard = 'leaderboard')
     {
         $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
             base_url() . 'imagenes/icons/igual.png',
@@ -44,7 +53,7 @@ class Scoreboards extends MY_Controller
             $active_group = current($this->mdl_teams_position->get_by_round($round));
             $data['teams'] = $this->mdl_teams_position->get_teams($champ);
             $data['tabla'] = $this->mdl_teams_position->get_table($active_group->id);
-            return $this->load->view('leaderboard', $data, true);
+            return $this->load->view($leaderboard, $data, true);
         } else {
             return false;
         }
@@ -52,8 +61,9 @@ class Scoreboards extends MY_Controller
     //Fin Tabla de posiciones
 
     // Tabla de posiciones  acumulada
-    public function leaderboard_cumulative($champ)
+    public function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
     {
+        $this->load->module('teams_position');
         $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
             base_url() . 'imagenes/icons/igual.png',
             base_url() . 'imagenes/icons/flecha_abajo.png');
@@ -61,7 +71,7 @@ class Scoreboards extends MY_Controller
         $data['tabla'] = $this->mdl_teams_position->get_table_by_champ($champ);
         $data['groups'] = 0;
 
-        return $this->load->view('leaderboard', $data, true);
+        return $this->load->view($leaderboard, $data, true);
     }
     //Fin Tabla de posiciones acumulada
 

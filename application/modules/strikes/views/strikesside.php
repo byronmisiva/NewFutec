@@ -1,4 +1,4 @@
-<div class="panel-heading backcuadros separador20 margen0">
+<div class="panel-heading backcuadros">
     <h4 class="panel-title">
         Goleadores
     </h4>
@@ -22,3 +22,8 @@
         </tbody>
     </table>
 </div>
+<div class="col-md-12 text-right fondoazul separador10">
+    <a  href="<?= base_url('goleadores') ?>">Ver más</a>
+</div>
+
+

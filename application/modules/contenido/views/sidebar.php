@@ -265,7 +265,7 @@
     <? echo $strikes; ?>
 </div>
 
-<!--Fin Tabla de posicione -->
+<!--Fin Goleadores -->
 
 <!--banner lateral 2 -->
 <div class="col-md-12 separador20 margen0r">
