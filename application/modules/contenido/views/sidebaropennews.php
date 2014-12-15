@@ -38,11 +38,9 @@
     <? echo $loMasLeido; ?>
 </div>
 
-
-
-<!--La voz de las tribunas-->
+<!--Zona Fe-->
 <div class="col-md-12 separador20 margen0r">
-    <? echo $laVozDeLasTribunas; ?>
+    <? echo $zonaFe; ?>
 </div>
 
 <!--banner lateral 2 -->
@@ -50,7 +48,7 @@
     <? echo $bannersSidebar[1]; ?>
 </div>
 
-<!--Zona Fe-->
+<!--La voz de las tribunas-->
 <div class="col-md-12 separador20 margen0r">
-    <? echo $zonaFe; ?>
+    <? echo $laVozDeLasTribunas; ?>
 </div>

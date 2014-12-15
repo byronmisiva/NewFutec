@@ -281,19 +281,19 @@
 <div class="col-md-12 separador20 margen0r">
     <? echo $fueradejuego; ?>
 </div>
-<!--La voz de las tribunas-->
+<!--Zona Fe-->
 <div class="col-md-12 separador20 margen0r">
-    <? echo $laVozDeLasTribunas; ?>
+    <? echo $zonaFe; ?>
 </div>
 <!--banner lateral 3 -->
 <div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[2]; ?>
 </div>
-<!--Zona Fe-->
-<div class="col-md-12 separador20 margen0r">
-    <? echo $zonaFe; ?>
-</div>
 
+<!--La voz de las tribunas-->
+<div class="col-md-12 separador20 margen0r">
+    <? echo $laVozDeLasTribunas; ?>
+</div>
 <!--banner lateral 4 -->
 <div class="col-md-12 separador20 margen0r">
     <? echo $bannersSidebar[3]; ?>

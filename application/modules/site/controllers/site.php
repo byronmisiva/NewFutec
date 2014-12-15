@@ -294,7 +294,9 @@ class Site extends MY_Controller
 
     public function resultados()
     {
+        $this->load->module('scoreboards');
 
+        $tablapocisiones = $this->scoreboards->scoreboardFull(SERIE_A);
         $this->singleConten("Calendario", "Contenido de muestra RESULTADOS");
     }
 
@@ -388,7 +390,8 @@ class Site extends MY_Controller
             $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
-            $infoEquipo = $this->team->getFicha($dataTeam);
+            $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo ($idEquipo) ;
+            $infoEquipo = $this->team->getFichaEquipo($dataTeam);
             // fin informacion recupera
         } else {
             $infoEquipo = "";
@@ -428,11 +431,11 @@ class Site extends MY_Controller
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
+        $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
 
 
         $storia = "";
-        $bodytag = $nameSeccion;
+        $bodytag = $nameSeccion . "Noticias";
 
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(6);

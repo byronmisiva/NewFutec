@@ -1,3 +1,4 @@
+<!--ficha Equipo-->
 <div class="col-md-12 separador20 margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title"><?php echo $infoEquipo->name; ?></h4>
@@ -58,11 +59,17 @@
                 <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->shirt2; ?>">
             <?php } ?>
         </div>
-        <div class="col-md-12 separador10    ">
+        <div class="col-md-12 separador10">
             <?php if (isset($infoEquipo->team_pic)) { ?>
-                <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->team_pic; ?>">
+                <img  src="http://www.futbolecuador.com/<?php echo $infoEquipo->team_pic; ?>" class="img-responsive imagen-full" alt="Foto Equipo <?php echo $infoEquipo->name; ?>">
             <?php } ?>
         </div>
+    </div>
+</div>
+
+<div class="col-md-12 separador20 margen0">
+    <div class="panel-heading backcuadros">
+        <h4 class="panel-title">Jugadores  </h4>
     </div>
 </div>
 

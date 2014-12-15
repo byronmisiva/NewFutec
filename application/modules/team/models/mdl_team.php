@@ -22,4 +22,11 @@ class Mdl_team extends MY_Model{
         return $this->db->get($this->table_name);
     }
 
+    function getJugadoresEquipo($id){
+        $this->db->where( 'id',$id);
+        return $this->db->get($this->table_name);
+    }
+
+
+
 }

@@ -9,7 +9,7 @@ class Team extends MY_Controller
         parent::__construct();
     }
 
-    public function getFicha($data = FALSE)
+    public function getFichaEquipo($data = FALSE)
     {
         return $this->load->view('ficha', $data, TRUE);
     }
