@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" afterPath="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -33,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23413567" vertical-offset="4738" max-vertical-offset="5955">
-              <caret line="393" column="11" selection-start-line="393" selection-start-column="11" selection-end-line="393" selection-end-column="11" />
+            <state vertical-scroll-proportion="-4.4583335" vertical-offset="4738" max-vertical-offset="5955">
+              <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
               <folding>
                 <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
@@ -85,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11055" max-vertical-offset="11685">
-              <caret line="751" column="10" selection-start-line="751" selection-start-column="10" selection-end-line="751" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.46777546" vertical-offset="11055" max-vertical-offset="11715">
+              <caret line="752" column="0" selection-start-line="752" selection-start-column="0" selection-end-line="752" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,12 +153,12 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/sitebak.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/modules/team/controllers/team.php" />
         <option value="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -1911,7 +1910,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418763550726</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="incluye tabla de revista">
+      <created>1418764524879</created>
+      <option name="number" value="00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1418764524879</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2385,14 +2390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11055" max-vertical-offset="11685">
-          <caret line="751" column="10" selection-start-line="751" selection-start-column="10" selection-end-line="751" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.041667" vertical-offset="23" max-vertical-offset="480">
@@ -2419,11 +2416,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23413567" vertical-offset="4738" max-vertical-offset="5955">
-          <caret line="393" column="11" selection-start-line="393" selection-start-column="11" selection-end-line="393" selection-end-column="11" />
+        <state vertical-scroll-proportion="-4.4583335" vertical-offset="4738" max-vertical-offset="5955">
+          <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
           <folding>
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46777546" vertical-offset="11055" max-vertical-offset="11715">
+          <caret line="752" column="0" selection-start-line="752" selection-start-column="0" selection-end-line="752" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
