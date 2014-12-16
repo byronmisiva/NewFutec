@@ -749,11 +749,10 @@ input.search2[type="text"] {
     width: 50%;
 }
 
-
-
 .quarter {
     width: 25%;
 }
+
 .panel-group .panel-no-border {
     border-radius: 0px;
     margin-bottom: 2px;
@@ -770,6 +769,7 @@ input.search2[type="text"] {
  .block-title {
     padding: 4px 15px;
  }
+
 
 .imagen-full {
     width: 100%;

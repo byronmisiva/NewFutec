@@ -87,8 +87,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46777546" vertical-offset="11055" max-vertical-offset="11715">
-              <caret line="752" column="0" selection-start-line="752" selection-start-column="0" selection-end-line="752" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.93762994" vertical-offset="11144" max-vertical-offset="11715">
+              <caret line="773" column="0" selection-start-line="773" selection-start-column="0" selection-end-line="773" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1916,7 +1916,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418764524879</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="incluye tabla de revista">
+      <created>1418764752150</created>
+      <option name="number" value="00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1418764752150</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2426,8 +2432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46777546" vertical-offset="11055" max-vertical-offset="11715">
-          <caret line="752" column="0" selection-start-line="752" selection-start-column="0" selection-end-line="752" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.93762994" vertical-offset="11144" max-vertical-offset="11715">
+          <caret line="773" column="0" selection-start-line="773" selection-start-column="0" selection-end-line="773" selection-end-column="0" />
           <folding />
         </state>
       </provider>
