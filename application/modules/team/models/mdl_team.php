@@ -31,9 +31,8 @@ class Mdl_team extends MY_Model{
         $this->db->where( 'team_id',$id);
         $this->db->where( 'position',"Arquero");
 
-        $equipo['arqueros'] =   $this->db->get()->result();
 
 
-        return $equipo;
+        return "x";
     }
 }

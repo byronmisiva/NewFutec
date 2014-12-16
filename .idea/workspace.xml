@@ -67,8 +67,8 @@
       <file leaf-file-name="mdl_team.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7045952" vertical-offset="203" max-vertical-offset="660">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.73741794" vertical-offset="188" max-vertical-offset="645">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -1934,7 +1934,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418765403002</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="incluye tabla de revista">
+      <created>1418765483113</created>
+      <option name="number" value="00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1418765483114</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2436,8 +2442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7045952" vertical-offset="203" max-vertical-offset="660">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.73741794" vertical-offset="188" max-vertical-offset="645">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding />
         </state>
       </provider>
