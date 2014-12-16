@@ -22,5 +22,42 @@ class Mdl_team extends MY_Model{
         return $this->db->get($this->table_name);
     }
 
+    function getJugadoresEquipo($id){
+        $equipo= array();
 
+        $this->db->select('players.first_name, players.last_name, players.position ');
+        $this->db->from('players_teams');
+        $this->db->join('players', 'players_teams.player_id = players.id');
+        $this->db->where( 'team_id',$id);
+        $this->db->where( 'position',"Arquero");
+
+        $equipo['arqueros'] =   $this->db->get()->result();
+
+        $this->db->select('players.first_name, players.last_name, players.position ');
+        $this->db->from('players_teams');
+        $this->db->join('players', 'players_teams.player_id = players.id');
+        $this->db->where( 'team_id',$id);
+        $this->db->where( 'position',"Defensa");
+
+        $equipo['defensas'] =   $this->db->get()->result();
+
+        $this->db->select('players.first_name, players.last_name, players.position ');
+        $this->db->from('players_teams');
+        $this->db->join('players', 'players_teams.player_id = players.id');
+        $this->db->where( 'team_id',$id);
+        $this->db->where( 'position',"Volante");
+
+        $equipo['volantes'] =   $this->db->get()->result();
+
+        $this->db->select('players.first_name, players.last_name, players.position ');
+        $this->db->from('players_teams');
+        $this->db->join('players', 'players_teams.player_id = players.id');
+        $this->db->where( 'team_id',$id);
+        $this->db->where( 'position',"Delantero");
+
+        $equipo['delanteros'] =   $this->db->get()->result();
+
+
+        return $equipo;
+    }
 }
