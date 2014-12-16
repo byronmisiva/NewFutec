@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/team/views/ficha.php" afterPath="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" afterPath="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.416667" vertical-offset="4673" max-vertical-offset="5985">
-              <caret line="395" column="46" selection-start-line="395" selection-start-column="46" selection-end-line="395" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.73741794" vertical-offset="4538" max-vertical-offset="6000">
+              <caret line="395" column="12" selection-start-line="395" selection-start-column="12" selection-end-line="395" selection-end-column="12" />
               <folding>
                 <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
@@ -50,16 +50,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.3333335" vertical-offset="2623" max-vertical-offset="5670">
               <caret line="185" column="28" selection-start-line="185" selection-start-column="28" selection-end-line="185" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.791667" vertical-offset="548" max-vertical-offset="975">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,8 +68,8 @@
       <file leaf-file-name="mdl_team.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.791667" vertical-offset="593" max-vertical-offset="1020">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.291667" vertical-offset="563" max-vertical-offset="1020">
+              <caret line="62" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,46 +78,18 @@
       <file leaf-file-name="mdl_strikes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/strikes/models/mdl_strikes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6666665" vertical-offset="233" max-vertical-offset="660">
+            <state vertical-scroll-proportion="-5.9166665" vertical-offset="203" max-vertical-offset="660">
               <caret line="23" column="25" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdl_teams_position.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="570" max-vertical-offset="9075">
-              <caret line="56" column="42" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="42" />
-              <folding>
-                <marker date="1412813417000" expanded="true" signature="3668:4143" placeholder="Select t.*, ..id..." />
-                <marker date="1412813417000" expanded="true" signature="3755:4060" placeholder="Select DISTI..groups..." />
-                <marker date="1412813417000" expanded="true" signature="4182:4489" placeholder="Select m.res..groups..." />
-                <marker date="1412813417000" expanded="true" signature="10702:10883" placeholder="Select c.act..championships..." />
-                <marker date="1412813417000" expanded="true" signature="10997:11100" placeholder="Select ct.te..championships_teams..." />
-                <marker date="1412813417000" expanded="true" signature="11235:11307" placeholder="Select g.rou..groups..." />
-                <marker date="1412813417000" expanded="true" signature="11357:11655" placeholder="Select m.res..groups..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DB_active_rec.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/database/DB_active_rec.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="30750">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ficha.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ficha.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48156682" vertical-offset="1096" max-vertical-offset="1530">
-              <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+            <state vertical-scroll-proportion="-8.708333" vertical-offset="1096" max-vertical-offset="1530">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,11 +165,11 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/sitebak.php" />
         <option value="$PROJECT_DIR$/application/modules/team/controllers/team.php" />
-        <option value="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
+        <option value="$PROJECT_DIR$/application/modules/team/models/mdl_team.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-        <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
       </list>
     </option>
   </component>
@@ -1947,7 +1909,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418758580464</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="incluye tabla de revista">
+      <created>1418761514039</created>
+      <option name="number" value="00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1418761514039</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2373,9 +2341,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11055" max-vertical-offset="11685">
+          <caret line="751" column="8" selection-start-line="751" selection-start-column="1" selection-end-line="751" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.708333" vertical-offset="1096" max-vertical-offset="1530">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.656682" vertical-offset="570" max-vertical-offset="9075">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select t.*, ..id..." />
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select DISTI..groups..." />
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select m.res..groups..." />
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select c.act..championships..." />
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select ct.te..championships_teams..." />
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select g.rou..groups..." />
+            <marker date="1412813417000" expanded="true" signature="-1:-1" placeholder="Select m.res..groups..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/system/database/DB_active_rec.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="30750">
+        <state vertical-scroll-proportion="0.32718894" vertical-offset="1103" max-vertical-offset="30750">
           <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
@@ -2383,16 +2383,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/strikes/models/mdl_strikes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665" vertical-offset="233" max-vertical-offset="660">
+        <state vertical-scroll-proportion="-5.9166665" vertical-offset="203" max-vertical-offset="660">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.791667" vertical-offset="548" max-vertical-offset="975">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.291667" vertical-offset="563" max-vertical-offset="1020">
+          <caret line="62" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2405,35 +2405,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
+    <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.791667" vertical-offset="593" max-vertical-offset="1020">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.73741794" vertical-offset="518" max-vertical-offset="975">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11055" max-vertical-offset="11685">
-          <caret line="751" column="8" selection-start-line="751" selection-start-column="1" selection-end-line="751" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="570" max-vertical-offset="9075">
-          <caret line="56" column="42" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="42" />
-          <folding>
-            <marker date="1412813417000" expanded="true" signature="3668:4143" placeholder="Select t.*, ..id..." />
-            <marker date="1412813417000" expanded="true" signature="3755:4060" placeholder="Select DISTI..groups..." />
-            <marker date="1412813417000" expanded="true" signature="4182:4489" placeholder="Select m.res..groups..." />
-            <marker date="1412813417000" expanded="true" signature="10702:10883" placeholder="Select c.act..championships..." />
-            <marker date="1412813417000" expanded="true" signature="10997:11100" placeholder="Select ct.te..championships_teams..." />
-            <marker date="1412813417000" expanded="true" signature="11235:11307" placeholder="Select g.rou..groups..." />
-            <marker date="1412813417000" expanded="true" signature="11357:11655" placeholder="Select m.res..groups..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2447,19 +2423,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.416667" vertical-offset="4673" max-vertical-offset="5985">
-          <caret line="395" column="46" selection-start-line="395" selection-start-column="46" selection-end-line="395" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.73741794" vertical-offset="4538" max-vertical-offset="6000">
+          <caret line="395" column="12" selection-start-line="395" selection-start-column="12" selection-end-line="395" selection-end-column="12" />
           <folding>
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48156682" vertical-offset="1096" max-vertical-offset="1530">
-          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
