@@ -4,7 +4,31 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/barcelona-sporting-club.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/cd-universidad-catolica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/centro-deportivo-olmedo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-deportivo-espoli.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-deportivo-municipal-de-canar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-deportivo-river-plate-ecuador.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-deportivo-universidad-tecnica-de-cotopaxi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-social-y-deportivo-macara.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-sociedad-deportiva-aucas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-sport-emelec.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/club-tecnico-universitario.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/delfin-sporting-club.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/deportivo-azogues.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/deportivo-cuenca.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/deportivo-quevedo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/el-nacional.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/imbabura-sporting-club.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/independiente-del-valle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/ldu-loja.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/liga-de-quito.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/liga-deportiva-universitaria-de-portoviejo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/manta-fc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/mushuc-runa-sporting-club.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shield-big/sd-quito.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/team/views/ficha.php" afterPath="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,8 +60,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1356674" vertical-offset="4783" max-vertical-offset="5955">
-              <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.26695842" vertical-offset="4738" max-vertical-offset="5955">
+              <caret line="394" column="0" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
               <folding>
                 <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
@@ -78,8 +102,8 @@
       <file leaf-file-name="ficha.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.791667" vertical-offset="998" max-vertical-offset="2670">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.541667" vertical-offset="713" max-vertical-offset="2610">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,8 +112,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11174" max-vertical-offset="11715">
-              <caret line="773" column="0" selection-start-line="773" selection-start-column="0" selection-end-line="773" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="11028" max-vertical-offset="11715">
+              <caret line="753" column="0" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -170,7 +194,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="243" />
+    <option name="x" value="186" />
     <option name="y" value="23" />
     <option name="width" value="1450" />
     <option name="height" value="944" />
@@ -247,7 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="galerias-fuera-de-juego" />
+              <option name="myItemId" value="teams" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,6 +788,8 @@
       <recent name="$PROJECT_DIR$/application/modules/team/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imagenes/teams/shield-big" />
+      <recent name="$PROJECT_DIR$/imagenes/teams" />
       <recent name="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation_files/css" />
       <recent name="$PROJECT_DIR$/00Pruebas/Raphaël · Image Rotation_files" />
     </key>
@@ -1965,7 +1991,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418765718398</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="incluye tabla de revista">
+      <created>1418765837142</created>
+      <option name="number" value="00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1418765837142</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1989,8 +2021,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="23" width="1450" height="944" extended-state="0" />
-    <editor active="true" />
+    <frame x="186" y="23" width="1450" height="944" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2005,7 +2037,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2439,14 +2471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11174" max-vertical-offset="11715">
-          <caret line="773" column="0" selection-start-line="773" selection-start-column="0" selection-end-line="773" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/team/models/mdl_team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625" vertical-offset="360" max-vertical-offset="1020">
@@ -2455,18 +2479,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11028" max-vertical-offset="11715">
+          <caret line="753" column="0" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.791667" vertical-offset="998" max-vertical-offset="2670">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.541667" vertical-offset="713" max-vertical-offset="2610">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1356674" vertical-offset="4783" max-vertical-offset="5955">
-          <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.26695842" vertical-offset="4738" max-vertical-offset="5955">
+          <caret line="394" column="0" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
           <folding>
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>

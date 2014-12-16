@@ -46,12 +46,12 @@
     <div class="col-md-6 separador10     ">
         <div class="col-md-6 separador10    ">
             <?php if (isset($infoEquipo->shield)) { ?>
-                <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield; ?>">
+                <img class = "img-responsive imagen-full" src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield_big; ?>">
             <?php } ?>
         </div>
         <div class="col-md-6 separador10    ">
             <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0) ) { ?>
-                <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->shirt; ?>">
+                <img class = "img-responsive imagen-full"  src="http://www.futbolecuador.com/<?php echo $infoEquipo->shirt; ?>">
             <?php } ?>
         </div>
          <div class="col-md-12 separador10">
@@ -64,11 +64,7 @@
 
 <!--lsitado de jugadores -->
 <div class="col-md-12 separador20 margen0">
-    <div class="panel-heading backcuadros">
-        <h4 class="panel-title">
-            <h4 class="panel-title">Jugadores</h4>
-        </h4>
-    </div>
+
 
     <div id="collapseOne" class="panel-collapse collapse in tablaposiciones">
         <div class="panel-body panel-body-clear-margin margen0">
