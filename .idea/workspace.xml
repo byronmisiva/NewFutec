@@ -4,7 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39631337" vertical-offset="4688" max-vertical-offset="5985">
-              <caret line="394" column="12" selection-start-line="394" selection-start-column="12" selection-end-line="394" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.36175114" vertical-offset="4673" max-vertical-offset="5970">
+              <caret line="392" column="97" selection-start-line="392" selection-start-column="97" selection-end-line="392" selection-end-column="97" />
               <folding>
                 <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
               </folding>
@@ -1927,7 +1928,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418753468306</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="incluye tabla de revista">
+      <created>1418758519183</created>
+      <option name="number" value="00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1418758519183</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2435,8 +2442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39631337" vertical-offset="4688" max-vertical-offset="5985">
-          <caret line="394" column="12" selection-start-line="394" selection-start-column="12" selection-end-line="394" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.36175114" vertical-offset="4673" max-vertical-offset="5970">
+          <caret line="392" column="97" selection-start-line="392" selection-start-column="97" selection-end-line="392" selection-end-column="97" />
           <folding>
             <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
           </folding>
