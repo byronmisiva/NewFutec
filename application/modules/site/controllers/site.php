@@ -391,7 +391,7 @@ class Site extends MY_Controller
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo ($idEquipo) ;
-
+//aca el el
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
             // fin informacion recupera
         } else {
