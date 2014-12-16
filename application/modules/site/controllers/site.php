@@ -392,6 +392,7 @@ class Site extends MY_Controller
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo ($idEquipo) ;
 
+
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
             // fin informacion recupera
         } else {
