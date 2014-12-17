@@ -752,6 +752,15 @@ input.search2[type="text"] {
 .quarter {
     width: 25%;
 }
+h2.gigante {
+    font-size: 25px;
+}
+
+
+.cabeceragoleador {
+    height: 90px;
+    overflow: hidden;
+}
 
 .panel-group .panel-no-border {
     border-radius: 0px;
