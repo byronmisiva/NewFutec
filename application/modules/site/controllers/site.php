@@ -294,10 +294,10 @@ class Site extends MY_Controller
 
     public function resultados()
     {
-        $this->load->module('scoreboards');
+        $this->load->module('matches');
 
-        $tablapocisiones = $this->scoreboards->scoreboardFull(SERIE_A);
-        $this->singleConten("Calendario", "Contenido de muestra RESULTADOS");
+        $fechas = $this->matches->matches(SERIE_A);
+        $this->singleConten("Calendario", $fechas);
     }
 
     public function fueradejuego()
