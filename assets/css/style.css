@@ -752,7 +752,7 @@ input.search2[type="text"] {
 .quarter {
     width: 25%;
 }
-h2.gigante {
+h2.gigante, h2:hover.gigante {
     font-size: 25px;
 }
 
