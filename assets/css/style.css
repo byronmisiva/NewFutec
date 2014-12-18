@@ -755,19 +755,14 @@ input.search2[type="text"] {
 h2.gigante, h2:hover.gigante {
     font-size: 25px;
 }
-
-
-
 .cabeceragoleador {
     height: 90px;
     overflow: hidden;
 }
-
 .panel-group .panel-no-border {
     border-radius: 0px;
     margin-bottom: 2px;
 }
-
 .fb-like {
     margin-bottom: 15px;
 }

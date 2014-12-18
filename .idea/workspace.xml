@@ -111,8 +111,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6157205" vertical-offset="11028" max-vertical-offset="11865">
-              <caret line="754" column="20" selection-start-line="754" selection-start-column="20" selection-end-line="754" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.93449783" vertical-offset="11092" max-vertical-offset="11790">
+              <caret line="768" column="0" selection-start-line="768" selection-start-column="0" selection-end-line="768" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1812,7 +1812,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418917074553</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="incluye tabla de revista">
+      <created>1418917423882</created>
+      <option name="number" value="00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1418917423882</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2293,8 +2299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6157205" vertical-offset="11028" max-vertical-offset="11865">
-          <caret line="754" column="20" selection-start-line="754" selection-start-column="20" selection-end-line="754" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.93449783" vertical-offset="11092" max-vertical-offset="11790">
+          <caret line="768" column="0" selection-start-line="768" selection-start-column="0" selection-end-line="768" selection-end-column="0" />
           <folding />
         </state>
       </provider>
