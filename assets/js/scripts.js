@@ -1,6 +1,8 @@
 jQuery(document).ready(function () {
     //sidebar
 
+    //centrado menu
+
     $("a.panel-link").click(function(){
         link = $(".result-link").attr("href");
         var res = link.split("/");
@@ -47,8 +49,6 @@ jQuery(document).ready(function () {
             });
         }
     });
-
-    //centrado menu
     centradoMenu();
     $(window).resize(function () {
         centradoMenu();
