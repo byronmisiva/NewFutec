@@ -779,3 +779,7 @@ h2.gigante, h2:hover.gigante {
 .imagen-full {
     width: 100%;
 }
+
+.panel-group .panel-heading a {
+    color: #fff;
+}

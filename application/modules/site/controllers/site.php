@@ -296,8 +296,14 @@ class Site extends MY_Controller
     {
         $this->load->module('matches');
 
-        $fechas = $this->matches->matches(SERIE_A);
-        $this->singleConten("Calendario", $fechas);
+        $id = $this->uri->rsegment(3);
+        $id = SERIE_B;
+        $name=$this->matches->getChampionship ($id)->row();
+
+        $title=$name->name;
+        //$title = "Calendario - Campeonato Serie B 2014";
+        $fechas = $this->matches->matches($id, $title );
+        $this->singleConten($title, $fechas);
     }
 
     public function fueradejuego()

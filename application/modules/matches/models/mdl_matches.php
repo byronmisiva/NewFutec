@@ -21,6 +21,53 @@ class Mdl_matches extends MY_Model
         parent::__construct();
     }
 
+    function matches_all($championship){
+    // Todo el calendario
+        $query=$this->db->query('Select m.*, UNIX_TIMESTAMP(m.date_match) as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
+								 From matches as m, groups as g, rounds as r, championships as c, schedules as s, matches_teams as mt, stadia as st, teams as t, teams as t1
+								 Where mt.match_id=m.id AND mt.team_id_home=t.id AND mt.team_id_away=t1.id AND m.schedule_id IN (SELECT sch.id
+																	    														 FROM   (SELECT round_id, s.position as p
+																																									FROM schedules AS s, championships AS ch
+																																									WHERE s.round_id = ch.active_round AND ch.id='.$championship.'
+																																									ORDER BY p DESC) as s, schedules as sch
+																																 WHERE s.p=sch.position AND s.round_id=sch.round_id)
+									   AND m.group_id=g.id AND g.round_id=r.id AND r.championship_id=c.id AND c.active_round=r.id AND st.id=m.stadia_id AND m.schedule_id = s.id
+								 Order by cn asc, sp desc, dm asc, gn asc');
+        if($query->num_rows()==0)
+            return NULL;
+        $teams=array();
+        // separamos por fechas
+        $fechaSub = "";
+        foreach($query->result() as $row):
+                $teams[$row->sn][]=$row;
+        endforeach;
+        return $teams;
+    }
+
+    function get_pics_teams($id){
+        $query=$this->db->query('Select t.id,t.shield, t.shield2
+    					  		 From championships as c, teams  as t, championships_teams as ct, images as i
+    					  		 Where c.id='.$id.'
+    					  		   And c.id=ct.championship_id
+    					  		   And t.id=ct.team_id');
+
+        if($query->num_rows()==0)
+            return NULL;
+
+        $teams='';
+
+        foreach($query->result() as $row):
+            $teams['shield'][$row->id]=$row->shield;
+            $teams['shield2'][$row->id]=$row->shield2;
+        endforeach;
+
+        return $teams;
+    }
+
+
+
+    //todo las siguientes funciones no se si usan
+
 
     function today_matches($live = 'live')
     {   //Todo partido q se juega hoy
