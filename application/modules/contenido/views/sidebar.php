@@ -61,7 +61,7 @@
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title acordion-close font12">
-                                            <a data-toggle="collapse" data-parent="#accordion2"
+                                            <a data-toggle="collapse" data-parent="#accordion2" data-info="<?php echo $campeonato->champ; ?>" class="panel-link"
                                                href="#<?php echo $campeonato->shortname; ?>">
                                                 <div class="row">
                                                     <div class="col-md-12">
@@ -140,7 +140,7 @@
                                 <div class="panel panel-default panel-no-border">
                                     <div class="panel-heading">
                                         <h4 class="panel-title acordion-close font12">
-                                            <a data-toggle="collapse" data-parent="#accordion1"
+                                            <a data-toggle="collapse" data-parent="#accordion1" data-info="<?php echo $campeonato->champ; ?> class="panel-link"
                                                href="#<?php echo $campeonato->shortname; ?>1">
                                                 <?php echo $campeonato->name; ?>
                                             </a>
@@ -207,7 +207,7 @@
         </div>
     </div>
     <div class="col-md-12 text-right fondoazul separador10">
-        <a  href="<?= base_url('resultados') ?>">Ver más</a>
+        <a  class="result-link" href="<?= base_url('site/resultados/' . CHAMP_DEFAULT) ?>">Ver más</a>
 
     </div>
 </div>

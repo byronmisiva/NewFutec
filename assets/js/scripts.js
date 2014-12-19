@@ -1,4 +1,18 @@
 jQuery(document).ready(function () {
+    //sidebar
+
+    $("a.panel-link").click(function(){
+        link = $(".result-link").attr("href");
+        var res = link.split("/");
+        res = res[res.length-1];
+        link = link.replace(res, $(this).attr("data-info") );
+        $(".result-link").attr("href", link);
+
+    })
+
+    //
+
+
     var original = jQuery(".et_lb_module_content_inner").html();
     jQuery.each(jQuery(".cargo select option"), function (index, value) {
         mensaje = jQuery(value).html();
@@ -38,6 +52,9 @@ jQuery(document).ready(function () {
     $(window).resize(function () {
         centradoMenu();
     });
+
+
+
 });
 
 function centradoMenu() {

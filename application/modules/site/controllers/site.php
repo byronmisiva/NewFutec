@@ -296,8 +296,8 @@ class Site extends MY_Controller
     {
         $this->load->module('matches');
 
-        $id = $this->uri->rsegment(3);
-        $id = SERIE_B;
+        $id = $this->uri->segment(3);
+        //$id = SERIE_B;
         $name=$this->matches->getChampionship ($id)->row();
 
         $title=$name->name;

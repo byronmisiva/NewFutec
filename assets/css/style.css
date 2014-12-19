@@ -779,7 +779,31 @@ h2.gigante, h2:hover.gigante {
 .imagen-full {
     width: 100%;
 }
-
 .panel-group .panel-heading a {
     color: #fff;
+}
+
+
+.cabeceraequipo {
+    background-color: #fafafa;
+    padding: 2px 0;
+}
+
+.nombre-equipo {
+    font-size: 16px;
+    font-family: oxygen;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: bottom;
+
+}
+.resultado-equipo {
+    font-size: 28px;
+    line-height: 28px;
+    font-family: oxygen;
+    font-weight: bold;
+}
+
+.textos-equipo {
+    font-family: oxygen;
 }
