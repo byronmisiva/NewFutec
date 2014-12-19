@@ -90,7 +90,8 @@
                                                                     alt="<?php echo $partido->hname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
-                                                                <?php echo $partido->hname; ?>
+                                                                <?php echo $partido->hname; ?>-
+                                                                <?php echo $partido->id; ?>
                                                             </div>
 
                                                         </li>
@@ -168,7 +169,8 @@
                                                                     alt="<?php echo $partido->hname; ?>">
                                                             </div>
                                                             <div class="col-md-9  ">
-                                                                <?php echo $partido->hname; ?>
+                                                                <?php echo $partido->hname; ?> -
+                                                                <?php echo $partido->id; ?>
                                                             </div>
 
                                                         </li>

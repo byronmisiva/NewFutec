@@ -13,9 +13,6 @@ jQuery(document).ready(function () {
     })
 
 
-
-
-
     var original = jQuery(".et_lb_module_content_inner").html();
     jQuery.each(jQuery(".cargo select option"), function (index, value) {
         mensaje = jQuery(value).html();
