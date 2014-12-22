@@ -14,9 +14,7 @@ jQuery(document).ready(function () {
         link = link.replace(res1, $(this).attr("data-info") );
 
         res2 = res[res.length-1];
-
         link = link.replace(res2, $(this).attr("data-name") );
-
         $(".result-link").attr("href", link );
 
     })
@@ -73,32 +71,35 @@ function centradoMenu() {
 }
 
 //ajuste rotativas
-$(function () {
+
     setTimeout(function () {
+        alto = $('.flex-control-thumbs').height();
+        console.log ($('.flex-control-thumbs').height());
+        $('.flexslider').height(alto);
+        ancho = $('.clone').first().width();
+        $('.slides li').height(alto);
+        altoshome();
+    }, 3000);
+
+    setTimeout(function () {
+        console.log (alto);
         alto = $('.flex-control-thumbs').height();
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
         $('.slides li').height(alto);
         altoshome();
-    }, 1000);
+    }, 5000)
 
     setTimeout(function () {
         alto = $('.flex-control-thumbs').height();
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
         $('.slides li').height(alto);
+        console.log (alto)
         altoshome();
-    }, 2000)
+    }, 10000)
 
-    setTimeout(function () {
-        alto = $('.flex-control-thumbs').height();
-        $('.flexslider').height(alto);
-        ancho = $('.clone').first().width();
-        $('.slides li').height(alto);
-        altoshome();
-    }, 3000)
 
-});
 
 $(window).resize(function () {
     alto = $('.flex-viewport').height();
