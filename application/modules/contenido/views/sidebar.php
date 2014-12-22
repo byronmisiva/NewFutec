@@ -213,7 +213,7 @@
         </div>
     </div>
     <div class="col-md-12 text-right fondoazul separador10">
-        <a class="result-link" href="<?= base_url('site/resultados/' . CHAMP_DEFAULT. '/' . $name_champ_default) ?>">Ver más</a>
+        <a class="result-link" href="<?= base_url('site/resultados/' . CHAMP_DEFAULT. '/' . $name_champ_default) ?>">Calendario Completo</a>
 
     </div>
 </div>
