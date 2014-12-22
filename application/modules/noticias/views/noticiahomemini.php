@@ -11,7 +11,7 @@
 
 <div class="noticia-img">
     <a href="<?php echo $link ?>">
-        <img src="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>" class="img-responsive"
+        <img  data-original="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>"  class="img-responsive lazy"
              alt="<?php echo str_replace('"', '', "$story->title"); ?>">
     </a>
 </div>

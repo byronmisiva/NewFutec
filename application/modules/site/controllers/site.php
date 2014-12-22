@@ -306,6 +306,19 @@ class Site extends MY_Controller
         $this->singleConten($title, $fechas);
     }
 
+    public function partido()
+    {
+        $this->load->module('matches');
+        $id = $this->uri->segment(4);
+        $id = 49;
+        $match = $this->matches->getMatch ($id);
+        $name=$this->matches->getMath ($id)->row();
+        $title=$name->name;
+        $fechas = $this->matches->matches($id, $title );
+        $this->singleConten($title, $fechas);
+    }
+
+
     public function fueradejuego()
     {
         $this->load->module('contenido');

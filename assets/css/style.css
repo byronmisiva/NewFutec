@@ -807,3 +807,16 @@ h2.gigante, h2:hover.gigante {
 .textos-equipo {
     font-family: oxygen;
 }
+
+.sidebar .list-group, .sidebar .list-group-item {
+    border: 0 none #fff;
+}
+
+.sidebar .list-group-item {
+    border-top: 1px solid #dddddd;
+}
+
+.sidebar .list-group  {
+
+    margin-bottom: 0;
+}

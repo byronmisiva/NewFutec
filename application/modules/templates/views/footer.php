@@ -31,6 +31,8 @@
 <script src="<?=base_url()?>assets/js/jquery.liquid-slider.min.js"></script>
 <!-- Third, add the GalleryView Javascript and CSS files -->
 <script type="text/javascript" src="<?=base_url()?>assets/js/jcarousellite_1.0.1.js"></script>
+<script type="text/javascript" src="<?=base_url()?>assets/js/jquery.lazyload.min.js"></script>
+
 
 
 

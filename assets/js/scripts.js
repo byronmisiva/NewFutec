@@ -1,14 +1,23 @@
 jQuery(document).ready(function () {
     //sidebar
+    $(function() {
+        $("img.lazy").lazyload();
+    });
 
     //centrado menu
 
     $("a.panel-link").click(function(){
         link = $(".result-link").attr("href");
         var res = link.split("/");
-        res = res[res.length-1];
-        link = link.replace(res, $(this).attr("data-info") );
-        $(".result-link").attr("href", link);
+        //reemplazar el penultimo
+        res1 = res[res.length-2];
+        link = link.replace(res1, $(this).attr("data-info") );
+
+        res2 = res[res.length-1];
+
+        link = link.replace(res2, $(this).attr("data-name") );
+
+        $(".result-link").attr("href", link );
 
     })
 
