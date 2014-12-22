@@ -10,7 +10,7 @@
         <table class="table table-striped font12  tablemargin4">
             <tbody>
             <tr>
-                <td><strong>Nombre Oficial:</strong></td>
+                <td class="equipo1"><strong>Nombre Oficial:</strong></td>
                 <td><?php echo $infoEquipo->name; ?></td>
             </tr>
             <tr>
@@ -51,7 +51,7 @@
         </div>
         <div class="col-md-6 separador10    ">
             <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0) ) { ?>
-                <img class = "img-responsive imagen-full"  src="http://www.futbolecuador.com/<?php echo $infoEquipo->shirt; ?>">
+                <img class = "img-responsive imagen-full"  src="<?php echo base_url($infoEquipo->shirt); ?>">
             <?php } ?>
         </div>
          <div class="col-md-12 separador10">

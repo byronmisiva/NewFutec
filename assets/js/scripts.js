@@ -77,7 +77,11 @@ function centradoMenu() {
         console.log ($('.flex-control-thumbs').height());
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-        $('.slides li').height(alto);
+        $( ".slides li img" ).each(function( index ) {
+            if ($( this ).height() < alto ){
+                $( this ).height(alto)
+            };
+        });
         altoshome();
     }, 3000);
 
@@ -86,7 +90,11 @@ function centradoMenu() {
         alto = $('.flex-control-thumbs').height();
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-        $('.slides li').height(alto);
+        $( ".slides li img" ).each(function( index ) {
+            if ($( this ).height() < alto ){
+                $( this ).height(alto)
+            };
+        });
         altoshome();
     }, 5000)
 
@@ -94,8 +102,11 @@ function centradoMenu() {
         alto = $('.flex-control-thumbs').height();
         $('.flexslider').height(alto);
         ancho = $('.clone').first().width();
-        $('.slides li').height(alto);
-        console.log (alto)
+        $( ".slides li img" ).each(function( index ) {
+            if ($( this ).height() < alto ){
+                $( this ).height(alto)
+            };
+        });
         altoshome();
     }, 10000)
 
