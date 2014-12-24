@@ -1,4 +1,5 @@
 <?php
+
 class Mdl_Noticias extends MY_Model
 {
 
@@ -20,56 +21,58 @@ class Mdl_Noticias extends MY_Model
     {
         parent::__construct();
     }
+
     // from secction
-    function get($id){
-        $this->db->where('id',$id);
+    function get($id)
+    {
+        $this->db->where('id', $id);
         //$this->db->from('sections');
-        $aux=current($this->db->get($this->name)->result());
-        $aux->survey_id=$this->get_survey($id);
+        $aux = current($this->db->get($this->name)->result());
+        $aux->survey_id = $this->get_survey($id);
         //Extraigo el padre para ver si tiene datos que heredar
-        if(isset($aux->section_id)){
-            if(!is_null($aux->section_id)){
-                $parent=$this->get($aux->section_id);
+        if (isset($aux->section_id)) {
+            if (!is_null($aux->section_id)) {
+                $parent = $this->get($aux->section_id);
 
                 //Compruebo los datos heredados
-                if(is_null($aux->team_id))
-                    $aux->team_id=$parent->team_id;
-                if(is_null($aux->championship_id))
-                    $aux->championship_id=$parent->championship_id;
-                if(is_null($aux->category_id))
-                    $aux->category_id=$parent->category_id;
+                if (is_null($aux->team_id))
+                    $aux->team_id = $parent->team_id;
+                if (is_null($aux->championship_id))
+                    $aux->championship_id = $parent->championship_id;
+                if (is_null($aux->category_id))
+                    $aux->category_id = $parent->category_id;
 
-                if($aux->survey_id==false)
-                    $aux->survey_id=$parent->survey_id;
+                if ($aux->survey_id == false)
+                    $aux->survey_id = $parent->survey_id;
             }
         }
 
         return $aux;
     }
 
-    function get_tag_list($id){
-        $this->db->where('section_id',$id);
+    function get_tag_list($id)
+    {
+        $this->db->where('section_id', $id);
 
-        $data=$this->db->get('sections_tags')->result();
+        $data = $this->db->get('sections_tags')->result();
         return $data;
     }
 
 
-
-    function get_survey($section){
-        $this->db->where('section_id',$section);
-        $this->db->order_by('id','desc');
+    function get_survey($section)
+    {
+        $this->db->where('section_id', $section);
+        $this->db->order_by('id', 'desc');
         $this->db->limit(1);
 
-        $survey=current($this->db->get('sections_surveys')->result());
-        if($survey!=false)
+        $survey = current($this->db->get('sections_surveys')->result());
+        if ($survey != false)
             return $survey->survey_id;
         else
             return false;
     }
 
     //end from secction
-
 
 
     public function get_by_position($limit, $seccion = "", $position)

@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/0981729b971b309141fd9820a7ef0b89.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/232a0ca7685dab3e00f6df7c8d78a9c4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/3a0fb5c81a8ea64e2e2bf1553fdc9b3e.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/4f2e81c84c242653e1a400c921f57279.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/74981058224864289c3a5f073f416b08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/aucas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/c406a3d7d358e472de5b27e817a0062b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/d5b59205045537b758f4d0e248a3dab4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/e61919f1324df2b074febc2ab9e86eb7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/f003fdb526280220c1f34826957fde6e.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/mushuc_runa.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/teams/shirt/river.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/team/views/ficha.php" afterPath="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/controllers/story.php" afterPath="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" afterPath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -46,35 +34,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.041667" vertical-offset="3332" max-vertical-offset="6240">
-              <caret line="313" column="9" selection-start-line="313" selection-start-column="9" selection-end-line="313" selection-end-column="9" />
-              <folding>
-                <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.5755968" vertical-offset="4253" max-vertical-offset="7290">
+              <caret line="298" column="37" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
+      <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.75" vertical-offset="2175" max-vertical-offset="4725">
-              <caret line="215" column="136" selection-start-line="215" selection-start-column="136" selection-end-line="215" selection-end-column="136" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#span#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-35.42" vertical-offset="314" max-vertical-offset="2190">
+              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiahomemini.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
+      <file leaf-file-name="mdl_noticiasbasura.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasbasura.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="990">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.14" vertical-offset="1148" max-vertical-offset="2280">
+              <caret line="77" column="49" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mdl_noticias.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.2083335" vertical-offset="1051" max-vertical-offset="2265">
+              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -90,31 +84,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ficha.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ficha.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2610">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="330" max-vertical-offset="2610">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiashome.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php">
+      <file leaf-file-name="strikes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="495">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            <state vertical-scroll-proportion="-11.25" vertical-offset="60" max-vertical-offset="1110">
+              <caret line="22" column="101" selection-start-line="19" selection-start-column="28" selection-end-line="22" selection-end-column="101" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footer.php">
+      <file leaf-file-name="strikesside.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="1695">
-              <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
+            <state vertical-scroll-proportion="-5.5833335" vertical-offset="151" max-vertical-offset="675">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,16 +134,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1545">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -164,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/00Pruebas/prueba3.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/gestionempleo/modules/gestionempleo/administracion/server/crudOfertaempleo.php" />
         <option value="$PROJECT_DIR$/application/cache/2187e2682e2c45bdc2aca873f1169aa7" />
@@ -172,8 +155,6 @@
         <option value="$PROJECT_DIR$/gestionempleo/server/os-config.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
         <option value="$PROJECT_DIR$/application/config/constants.php" />
         <option value="$PROJECT_DIR$/base/application/modules/contenido/views/historiaabierta.php" />
@@ -182,7 +163,6 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/site/models/mdl_site.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/menu.php" />
-        <option value="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
         <option value="$PROJECT_DIR$/application/modules/strikes/controllers/strikes.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php" />
@@ -214,7 +194,11 @@
         <option value="$PROJECT_DIR$/application/modules/templates/views/footer.php" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasbasura.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
+        <option value="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
       </list>
     </option>
   </component>
@@ -348,11 +332,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/modules/noticias/models" />
+      <recent name="$PROJECT_DIR$/application/modules/story/controllers" />
       <recent name="$PROJECT_DIR$/application/modules" />
       <recent name="$PROJECT_DIR$/application/modules/contenido/views" />
       <recent name="$PROJECT_DIR$/application/modules/scoreboards/views" />
-      <recent name="$PROJECT_DIR$/application/modules/strikes/views" />
-      <recent name="$PROJECT_DIR$/application/modules/site/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/imagenes/teams/shield-big" />
@@ -1648,7 +1632,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419283960060</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="incluye tabla de revista">
+      <created>1419288657422</created>
+      <option name="number" value="00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1419288657422</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1677,8 +1667,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40246913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41079813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40987656" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1691,7 +1682,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40258217" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1725,10 +1715,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php</url>
+          <line>19</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php</url>
+          <line>79</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="184" />
+      <option name="time" value="188" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -1738,27 +1740,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/third_party/MX/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0416665" vertical-offset="3875" max-vertical-offset="6345">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7916667" vertical-offset="671" max-vertical-offset="1335">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24809161" vertical-offset="0" max-vertical-offset="1875">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.708333" vertical-offset="613" max-vertical-offset="1620">
@@ -1784,13 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375" vertical-offset="240" max-vertical-offset="3750">
           <caret line="31" column="100" selection-start-line="31" selection-start-column="100" selection-end-line="31" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13667426" vertical-offset="0" max-vertical-offset="525">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1949,14 +1923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1110">
-          <caret line="17" column="74" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="548" max-vertical-offset="975">
@@ -2035,16 +2001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.041667" vertical-offset="3332" max-vertical-offset="6240">
-          <caret line="313" column="9" selection-start-line="313" selection-start-column="9" selection-end-line="313" selection-end-column="9" />
-          <folding>
-            <element signature="n#seccion#0;n#Site#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/jquery.lazyload.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019762846" vertical-offset="0" max-vertical-offset="759">
@@ -2084,7 +2040,7 @@
         <state vertical-scroll-proportion="-43.75" vertical-offset="2175" max-vertical-offset="4725">
           <caret line="215" column="136" selection-start-line="215" selection-start-column="136" selection-end-line="215" selection-end-column="136" />
           <folding>
-            <element signature="n#style#0;n#iframe#0;n#span#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#span#0;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2121,10 +2077,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.42" vertical-offset="314" max-vertical-offset="2190">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasbasura.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14" vertical-offset="1148" max-vertical-offset="2235">
+          <caret line="77" column="49" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/team/views/ficha.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2610">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.625" vertical-offset="330" max-vertical-offset="2610">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="60" max-vertical-offset="1110">
+          <caret line="22" column="101" selection-start-line="19" selection-start-column="28" selection-end-line="22" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5833335" vertical-offset="151" max-vertical-offset="675">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2083335" vertical-offset="1051" max-vertical-offset="2265">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5755968" vertical-offset="4253" max-vertical-offset="7290">
+          <caret line="298" column="37" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="37" />
           <folding />
         </state>
       </provider>
