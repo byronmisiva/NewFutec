@@ -97,7 +97,7 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewSeccions ($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE)
+    public function viewSeccions ($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE )
     {
         setlocale(LC_ALL, "es_ES");
         $this->load->module('banners');
@@ -109,9 +109,8 @@ class Noticias extends MY_Controller
         $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
 
-
         $data['idsection'] = $idsection;
-        $storys = $this->mdl_noticias->get_by_position(24, $idsection, $posSection);
+        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection);
 
         $dataStory['tipoLink'] = "secction";
 
@@ -126,10 +125,14 @@ class Noticias extends MY_Controller
             array_splice($noticias, 5, 0, $banners[0]);
             array_splice($noticias, 12, 0, $banners[1]);
             array_splice($noticias, 17, 0, $banners[2]);
-            array_splice($noticias, 25, 0, $banners[3]);
+            if ($totalMiniNews > 25)
+                array_splice($noticias, 25, 0, $banners[3]);
         } else {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
+            if ($totalMiniNews > 5)
+                array_splice($noticias, 5, 0, $banners[0]);
+
+            if ($totalMiniNews > 12)
+                array_splice($noticias, 12, 0, $banners[1]);
         }
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;

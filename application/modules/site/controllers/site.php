@@ -397,6 +397,8 @@ class Site extends MY_Controller
         $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
         $nameSeccion = $infoSeccionEquipo[0]->name;
 
+
+
         if (!$this->uri->segment(6)) {
             $this->load->module('team');
 
@@ -410,11 +412,15 @@ class Site extends MY_Controller
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo ($idEquipo) ;
+
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
+            $cabeceraEquipo = $this->team->getCabeceraEquipo($dataTeam);
             // fin informacion recupera
         } else {
             $infoEquipo = "";
+            $cabeceraEquipo = "";
         }
+
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
@@ -450,8 +456,12 @@ class Site extends MY_Controller
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
-        $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
-
+        //en caso
+        if ($infoEquipo != "") {
+            $noticiasCuerpo = $this->noticias->viewSeccions("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 2);
+        } else {
+            $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
+        }
 
         $storia = "";
         $bodytag = $nameSeccion;
@@ -467,8 +477,13 @@ class Site extends MY_Controller
         $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
         // fin carga la informacion de la noticia
 
+        // en caso de que sea la portada o el listado de noticias
+        if ($infoEquipo != "") {
+            $data['content'] = $cabeceraEquipo . $noticiasCuerpo . $infoEquipo ;
+        } else {
+            $data['content'] = $storia . $noticiasCuerpo;
+        }
 
-        $data['content'] = $infoEquipo . $storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();

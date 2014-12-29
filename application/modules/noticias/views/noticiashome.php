@@ -1,12 +1,12 @@
-<?php if (isset($namesection)) { ?>
+<?php if (isset($namesection)) {
+    if ($namesection != "") { ?>
 <div class="col-md-12 separador20 margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title"><?php echo $namesection ; ?></h4>
     </div>
 </div>
-
-<?php } ?>
-
+<?php }
+    } ?>
 <?php
 $indice = 0;
 foreach ($noticias as $noticia) {

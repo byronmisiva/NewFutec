@@ -144,7 +144,9 @@ footer {
     padding-left: 9px;
     padding-right: 9px;
 }
-
+.separador5 {
+    margin-top: 5px;
+}
 .separador10 {
     margin-top: 10px;
 }
@@ -331,6 +333,16 @@ footer {
     outline: none;
 }
 
+ .h3, .h3:hover   {
+    font-family: "Oxygen";
+    font-size: 13px;
+    padding: 0 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+}
+
   .sidebar h2, .sidebar .h2 ,
  .sidebar h2:hover, .sidebar .h2:hover  {
     font-family: "Oxygen";
@@ -413,7 +425,10 @@ sub {
 .lineseparador {
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
-
+}
+.lineseparador-dot {
+    border-bottom: 1px dashed #c0c0c0;
+    padding-bottom: 5px;
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -824,3 +839,17 @@ h2.gigante, h2:hover.gigante {
 td.equipo1 {
     width: 135px;
 }
+
+
+h4.contenidos {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.contenido .nav-tabs > li > a, .contenido .nav-tabs > li > a:hover {
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+

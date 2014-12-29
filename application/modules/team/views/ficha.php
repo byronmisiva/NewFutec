@@ -1,168 +1,132 @@
 <!--ficha Equipo-->
-<div class="col-md-12 separador20 margen0">
-    <div class="panel-heading backcuadros">
-        <h4 class="panel-title"><?php echo $infoEquipo->name; ?></h4>
+
+
+<div class="col-md-12  fondoazul  separador20">
+    <h4 class="contenidos">Perfil</h4>
+</div>
+<div class="row noticia-content">
+
+    <div class="col-md-6 separador10     ">
+        <div class="col-md-12 separador5   h3">
+            <strong>PALMARÉS</strong>
+        </div>
+        <div class="col-md-12       ">
+            <?php if (isset($infoEquipo->histories[0]->palmares)) { ?>
+                <?php echo $infoEquipo->histories[0]->palmares; ?>
+            <?php } ?>
+        </div>
+        <div class="col-md-12 separador5   h3 ">
+            <strong>ESTADIO</strong>
+        </div>
+        <div class="col-md-12       ">
+            <?php echo $infoEquipo->stadia[0]->name; ?>
+        </div>
+
+    </div>
+    <div class="col-md-6 separador10     ">
+
+        <div class="col-md-12 separador10">
+            <?php if (isset($infoEquipo->team_pic)) { ?>
+                <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->team_pic; ?>"
+                     class="img-responsive imagen-full" alt="Foto Equipo <?php echo $infoEquipo->name; ?>">
+            <?php } ?>
+        </div>
     </div>
 </div>
 
-<div class="row noticia-content">
-    <div class="col-md-6 separador10     ">
-        <table class="table table-striped font12  tablemargin4">
-            <tbody>
-            <tr>
-                <td class="equipo1"><strong>Nombre Oficial:</strong></td>
-                <td><?php echo $infoEquipo->name; ?></td>
-            </tr>
-            <tr>
-                <td><strong>Fundación:</strong></td>
-                <td><?php echo $infoEquipo->foundation; ?></td>
-            </tr>
-            <tr>
-                <td><strong>Presidente del Club:</strong></td>
-                <td><?php echo $infoEquipo->president; ?></td>
-            </tr>
-            <tr>
-                <td><strong>Director Técnico:</strong></td>
-                <td><?php echo $infoEquipo->couch; ?></td>
-            </tr>
-            <tr>
-                <td><strong>Estadio:</strong></td>
-                <td><?php echo $infoEquipo->stadia[0]->name; ?></td>
-            </tr>
-            <tr>
-                <td><strong>Página web oficial</strong></td>
-                <td><a href="<?php echo $infoEquipo->site; ?>" target="_blank"><?php echo $infoEquipo->site; ?></a></td>
-            </tr>
-            <tr>
-                <td><strong>Palmarés</strong></td>
-                <td><?php if (isset($infoEquipo->histories[0]->palmares)) { ?>
-                        <?php echo $infoEquipo->histories[0]->palmares; ?>
-                    <?php } ?>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-md-6 separador10     ">
-        <div class="col-md-6 separador10    ">
-            <?php if (isset($infoEquipo->shield)) { ?>
-                <img class = "img-responsive imagen-full" src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield_big; ?>">
-            <?php } ?>
-        </div>
-        <div class="col-md-6 separador10    ">
-            <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0) ) { ?>
-                <img class = "img-responsive imagen-full"  src="<?php echo base_url($infoEquipo->shirt); ?>">
-            <?php } ?>
-        </div>
-         <div class="col-md-12 separador10">
-            <?php if (isset($infoEquipo->team_pic)) { ?>
-                <img  src="http://www.futbolecuador.com/<?php echo $infoEquipo->team_pic; ?>" class="img-responsive imagen-full" alt="Foto Equipo <?php echo $infoEquipo->name; ?>">
-            <?php } ?>
-        </div>
-    </div>
+
+<div class="col-md-12  fondoazul  separador20">
+    <h4 class="contenidos">Partidos <?php echo $infoEquipo->name; ?></h4>
 </div>
+
+
 
 <!--lsitado de jugadores -->
 <div class="col-md-12 separador20 margen0">
 
+    <div class="col-md-6 separador20 margen0">
+        <div class="col-md-12  fondoazul ">
+            <h4 class="contenidos">El Equipo </h4>
+        </div>
+        <div class="col-md-6 separador10    ">
+            <?php if (isset($infoEquipo->shield)) { ?>
+                <img class="img-responsive imagen-full"
+                     src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield_big; ?>">
+            <?php } ?>
+        </div>
+        <div class="col-md-5 separador10   ">
+            <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0)) { ?>
+                <img class="img-responsive imagen-full" src="<?php echo base_url($infoEquipo->shirt); ?>">
+            <?php } ?>
+        </div>
+    </div>
 
-    <div id="collapseOne" class="panel-collapse collapse in tablaposiciones">
-        <div class="panel-body panel-body-clear-margin margen0">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
+    <div class="col-md-6 separador20 margen0 contenido">
 
-                <li class="active quarter  text-center">
-                    <a href="#arqueros" role="tab" data-toggle="tab">Arqueros</a></li>
-                <li class="quarter  text-center">
-                    <a href="#defensas" role="tab" data-toggle="tab">Defensas</a></li>
-                <li class="quarter  text-center">
-                    <a href="#volantes" role="tab" data-toggle="tab">Volantes</a></li>
-                <li class="quarter    text-center">
-                    <a href="#delanteros" role="tab" data-toggle="tab">Delanteros</a></li>
-            </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active panel-no-border" id="arqueros">
-                    <div class="table-responsive">
-                        <table class="table table-striped font12  tablemargin4">
-                            <thead>
-                            <tr>
-                                <th></th>
+        <div id="collapseOne" class="panel-collapse collapse in tablaposiciones">
+            <div class="panel-body panel-body-clear-margin margen0">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
 
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php
-                            foreach ($infoJugadoresEquipo['arqueros'] as $jugador) {
-                                echo "<tr><td>".$jugador->last_name. ", " . $jugador->first_name."</td> </tr>";
-                            }
+                    <li class="active quarter  text-center">
+                        <a href="#arqueros" role="tab" data-toggle="tab">Arqueros</a></li>
+                    <li class="quarter  text-center">
+                        <a href="#defensas" role="tab" data-toggle="tab">Defensas</a></li>
+                    <li class="quarter  text-center">
+                        <a href="#volantes" role="tab" data-toggle="tab">Volantes</a></li>
+                    <li class="quarter    text-center">
+                        <a href="#delanteros" role="tab" data-toggle="tab">Delanteros</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active panel-no-border" id="arqueros">
+                        <?php
+                        foreach ($infoJugadoresEquipo['arqueros'] as $jugador) {
                             ?>
-                            </tbody>
-                        </table>
-                    </div>                </div>
-                <div class="tab-pane" id="defensas">
-                    <div class="table-responsive">
-                        <table class="table table-striped font12  tablemargin4">
-                            <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php
-                            foreach ($infoJugadoresEquipo['defensas'] as $jugador) {
-                                echo "<tr><td>".$jugador->last_name. ", " . $jugador->first_name."</td> </tr>";
-                            }
-                            ?>
-
-                            </tbody>
-                        </table>
+                            <div class="col-md-12 separador5  margen0 lineseparador-dot">
+                                <?php
+                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                            </div>
+                        <?php } ?>
                     </div>
-                </div>
-                <div class="tab-pane panel-no-border" id="volantes">
-                    <div class="table-responsive">
-                        <table class="table table-striped font12  tablemargin4">
-                            <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php
-                            foreach ($infoJugadoresEquipo['volantes'] as $jugador) {
-                                echo "<tr><td>".$jugador->last_name. ", " . $jugador->first_name."</td> </tr>";
-                            }
+                    <div class="tab-pane" id="defensas">
+                        <?php
+                        foreach ($infoJugadoresEquipo['defensas'] as $jugador) {
                             ?>
-
-                            </tbody>
-                        </table>
-                    </div>                </div>
-                <div class="tab-pane" id="delanteros">
-                    <div class="table-responsive">
-                        <table class="table table-striped font12  tablemargin4">
-                            <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php
-                            foreach ($infoJugadoresEquipo['delanteros'] as $jugador) {
-                                echo "<tr><td>".$jugador->last_name. ", " . $jugador->first_name ."</td> </tr>";
-                            }
+                            <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                <?php
+                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="tab-pane panel-no-border" id="volantes">
+                        <?php
+                        foreach ($infoJugadoresEquipo['volantes'] as $jugador) {
                             ?>
-
-                            </tbody>
-                        </table>
+                            <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                <?php
+                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                            </div>
+                        <?php } ?>
+                    </div>
+                    <div class="tab-pane" id="delanteros">
+                        <?php
+                        foreach ($infoJugadoresEquipo['delanteros'] as $jugador) {
+                            ?>
+                            <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                <?php
+                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-
 </div>
-
 
 
 

@@ -13,4 +13,8 @@ class Team extends MY_Controller
     {
         return $this->load->view('ficha', $data, TRUE);
     }
+    public function getCabeceraEquipo($data = FALSE)
+    {
+        return $this->load->view('fichacabecera', $data, TRUE);
+    }
 }

@@ -12,19 +12,31 @@
 
                 ?>
 
-
                 <tr>
+                    <?php if ($key + 1 == 1) { ?>
+                        <td colspan="3">
+                            <div class="col-md-6 margen0">
+                                <img class="img-responsive"
+                                     src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
+                            </div>
+                            <div class="col-md-6 margen0">
+                                <img src="http://www.futbolecuador.com/<?php echo $jugador->shield; ?>">
+                                <?php echo $jugador->last_name . " " . $jugador->first_name; ?><br>
 
-                    <td ><?php echo $key + 1 ?></td>
-                    <td><?php if ($key + 1 == 1 ) {
-                            echo '<img class="img-responsive" src="http://www.futbolecuador.com/'. $jugador->thumb220.'"><br>';
-                            echo '<img src="http://www.futbolecuador.com/' .$jugador->shield.'">';
-
-                            echo $jugador->last_name . " " . $jugador->first_name;}
-                        else {
+                                <div class="col-md-12 text-center h1">
+                                    <?php echo $jugador->goals ?> Goles
+                                </div>
+                            </div>
+                        </td>
+                    <?php
+                    } else {
+                        ?>
+                        <td><?php echo $key + 1 ?></td>
+                        <td><?php
                             echo $jugador->last_name . " " . $jugador->first_name;
-                        }?></td>
-                    <td class="text-center"><?php echo $jugador->goals ?> Goles</td>
+                            ?></td>
+                        <td class="text-center"><?php echo $jugador->goals ?> Goles</td>
+                    <?php } ?>
                 </tr>
             <?php
             }
@@ -33,7 +45,7 @@
     </table>
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
-    <a  href="<?= base_url('goleadores') ?>">Ver más</a>
+    <a href="<?= base_url('goleadores') ?>">Ver más</a>
 </div>
 
 

@@ -4,9 +4,6 @@
     </h4>
 </div>
 
-
-
-
 <div class="table-responsive">
     <table class="table table-striped font12  tablemargin4">
         <tbody>
