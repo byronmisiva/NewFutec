@@ -8,12 +8,13 @@
     $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($story->title) . '/' . $story->id;
 }
 ?>
-
+<div class="col-md-12  col-xs-4">
 <div class="noticia-img">
     <a href="<?php echo $link ?>">
         <img  data-original="http://www.futbolecuador.com/<?php echo $story->thumb300 ?>"  class="img-responsive lazy"
              alt="<?php echo str_replace('"', '', "$story->title"); ?>">
     </a>
+</div>
 </div>
 <div class="row clearfix news-detail">
     <div class="col-md-12 column text-news-date">
@@ -51,7 +52,7 @@
 
 
 </div>
-<div class="col-md-12 column content-gris hidden-lg">
+<div class="col-md-12 column content-gris hidden-xs">
     <div class="col-md-4 column margen0">
         Lecturas <?php echo $story->lecturas ?>
     </div>

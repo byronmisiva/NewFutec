@@ -10,8 +10,12 @@
 <?php
 $indice = 0;
 foreach ($noticias as $noticia) {
+
+$findme   = '<div class="noticia-img">';
+$pos = strpos($noticia, $findme);
+
     if ($indice % 2 == 0) echo '<div class="row noticia-content">'; ?>
-    <div class="col-md-6 separador10  noticia lineseparador">
+    <div class="col-md-6 separador10  <?php if ($pos==1) echo "noticia" ?> lineseparador">
         <?php echo $noticia ?>
     </div>
     <?php
