@@ -35,10 +35,9 @@
 </div>
 
 
-<div class="col-md-12  fondoazul  separador20">
+<div class="col-md-12  fondoazul  separador20 ">
     <h4 class="contenidos">Partidos <?php echo $infoEquipo->name; ?></h4>
 </div>
-
 
 
 <!--lsitado de jugadores -->
@@ -48,16 +47,20 @@
         <div class="col-md-12  fondoazul ">
             <h4 class="contenidos">El Equipo </h4>
         </div>
-        <div class="col-md-6 separador10    ">
-            <?php if (isset($infoEquipo->shield)) { ?>
-                <img class="img-responsive imagen-full"
-                     src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield_big; ?>">
-            <?php } ?>
+        <div class="col-md-12  margen0 separador10 separador10r ">
+        <div class="borde">
+            <div class="col-md-6 separador10    ">
+                <?php if (isset($infoEquipo->shield)) { ?>
+                    <img class="img-responsive imagen-full"
+                         src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield_big; ?>">
+                <?php } ?>
+            </div>
+            <div class="col-md-5 separador10   ">
+                <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0)) { ?>
+                    <img class="img-responsive imagen-full" src="<?php echo base_url($infoEquipo->shirt); ?>">
+                <?php } ?>
+            </div>
         </div>
-        <div class="col-md-5 separador10   ">
-            <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0)) { ?>
-                <img class="img-responsive imagen-full" src="<?php echo base_url($infoEquipo->shirt); ?>">
-            <?php } ?>
         </div>
     </div>
 

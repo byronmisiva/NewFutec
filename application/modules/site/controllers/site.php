@@ -36,39 +36,37 @@ class Site extends MY_Controller
                 $isMobile = true;
         }
 
-        /* if ($isMobile) {
+        if ($isMobile) {
 
-             $data['cabecera'] = $this->contenido->menum();
+             $data['top1'] = "";
+            $data['header1'] = "";
 
-             $data['content'] = $this->contenido->header_mobile();
-             //$data['content'] .= $this->partidos->partidosFechaMovil();
-             $data['content'] .= $this->partidos->partidosFinal();
-             $data['content'] .= $this->contenido->view_banner_contenidotop();
-             $data['content'] .= $this->contenido->view_noticia_home();
-             $data['content'] .= $this->contenido->view_banner_contenido();
-             $data['content'] .= $this->contenido->view_twitter();
+            $dataHeader2['FE_Bigboxbanner'] = "";
+            $data['header2'] = "";
+            $data['top2'] = "";
 
-             $data['footer'] = '';
+            $data['content'] = $this->noticias->viewNoticiasHome();
+            $data['sidebar'] = "";
 
-             $data['sidebar'] = '';
+            $data['footer'] = "";
+            $data['bottom'] = "";
 
-         } else {*/
+        } else {
 
-        $data['top1'] = $this->banners->top1();
-        $data['header1'] = $this->contenido->menu();
+            $data['top1'] = $this->banners->top1();
+            $data['header1'] = $this->contenido->menu();
 
-        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
-        $data['header2'] = $this->contenido->header2($dataHeader2);
-        $data['top2'] = $this->banners->FE_Megabanner();
+            $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+            $data['header2'] = $this->contenido->header2($dataHeader2);
+            $data['top2'] = $this->banners->FE_Megabanner();
 
-        $data['content'] = $this->noticias->viewNoticiasHome();
-        $data['sidebar'] = $this->contenido->sidebar();
+            $data['content'] = $this->noticias->viewNoticiasHome();
+            $data['sidebar'] = $this->contenido->sidebar();
 
-        $data['footer'] = $this->contenido->footer();
-        $data['bottom'] = $this->contenido->bottom();
+            $data['footer'] = $this->contenido->footer();
+            $data['bottom'] = $this->contenido->bottom();
 
-
-        /*   }*/
+        }
         $this->templates->_index($data);
     }
 
@@ -298,11 +296,11 @@ class Site extends MY_Controller
 
         $id = $this->uri->segment(3);
         //$id = SERIE_B;
-        $name=$this->matches->getChampionship ($id)->row();
+        $name = $this->matches->getChampionship($id)->row();
 
-        $title=$name->name;
+        $title = $name->name;
         //$title = "Calendario - Campeonato Serie B 2014";
-        $fechas = $this->matches->matches($id, $title );
+        $fechas = $this->matches->matches($id, $title);
         $this->singleConten($title, $fechas);
     }
 
@@ -311,10 +309,10 @@ class Site extends MY_Controller
         $this->load->module('matches');
         $id = $this->uri->segment(4);
         $id = 49;
-        $match = $this->matches->getMatch ($id);
-        $name=$this->matches->getMath ($id)->row();
-        $title=$name->name;
-        $fechas = $this->matches->matches($id, $title );
+        $match = $this->matches->getMatch($id);
+        $name = $this->matches->getMath($id)->row();
+        $title = $name->name;
+        $fechas = $this->matches->matches($id, $title);
         $this->singleConten($title, $fechas);
     }
 
@@ -398,7 +396,6 @@ class Site extends MY_Controller
         $nameSeccion = $infoSeccionEquipo[0]->name;
 
 
-
         if (!$this->uri->segment(6)) {
             $this->load->module('team');
 
@@ -411,7 +408,7 @@ class Site extends MY_Controller
             $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
-            $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo ($idEquipo) ;
+            $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
 
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
             $cabeceraEquipo = $this->team->getCabeceraEquipo($dataTeam);
@@ -479,7 +476,7 @@ class Site extends MY_Controller
 
         // en caso de que sea la portada o el listado de noticias
         if ($infoEquipo != "") {
-            $data['content'] = $cabeceraEquipo . $noticiasCuerpo . $infoEquipo ;
+            $data['content'] = $cabeceraEquipo . $noticiasCuerpo . $infoEquipo;
         } else {
             $data['content'] = $storia . $noticiasCuerpo;
         }

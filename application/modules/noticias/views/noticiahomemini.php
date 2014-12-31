@@ -51,11 +51,11 @@
 
 
 </div>
-<div class="col-md-12 column content-gris ">
+<div class="col-md-12 column content-gris hidden-lg">
     <div class="col-md-4 column margen0">
         Lecturas <?php echo $story->lecturas ?>
     </div>
-    <div class="col-md-8 column margen0 text-right text-news-zone">
+    <div class="col-md-8 column margen0 text-right text-news-zone ">
         <?php echo $story->category ?>
     </div>
 </div>

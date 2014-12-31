@@ -150,6 +150,9 @@ footer {
 .separador10 {
     margin-top: 10px;
 }
+.separador10r {
+    padding-right: 10px;
+}
 
 .separador10bot {
     margin-bottom: 10px;
@@ -452,6 +455,10 @@ sub {
     text-decoration: none;
     color: #1f1f1f  ;
 
+}
+
+.fondogris {
+    background-color: #f7f7f7;
 }
 
 
@@ -805,7 +812,7 @@ h2.gigante, h2:hover.gigante {
 }
 
 .nombre-equipo {
-    font-size: 16px;
+    font-size: 15px;
     font-family: oxygen;
     font-weight: bold;
     display: table-cell;
@@ -813,14 +820,15 @@ h2.gigante, h2:hover.gigante {
 
 }
 .resultado-equipo {
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 24px;
     font-family: oxygen;
     font-weight: bold;
 }
 
 .textos-equipo {
     font-family: oxygen;
+    color: #797979;
 }
 
 .sidebar .list-group, .sidebar .list-group-item {
@@ -853,3 +861,14 @@ h4.contenidos {
     padding-bottom: 5px;
 }
 
+.borde {
+    outline: 1px solid #f0f0f0;
+}
+
+.miniletra {
+    font-size: 9px;
+}
+
+.texto-gris {
+    color: #c7c8ca;
+}

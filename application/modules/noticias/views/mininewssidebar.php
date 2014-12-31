@@ -36,6 +36,8 @@
 
     <?php } ?>
 </div>
+
+
 <div class="col-md-12 text-right fondoazul separador10">
     <a href="<?php echo $linkShort;?>"?>Más noticias</a>
 
