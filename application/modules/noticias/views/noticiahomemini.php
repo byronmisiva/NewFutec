@@ -26,7 +26,7 @@
             echo date("F d, Y", strtotime($story->created)); ?>
         </a>
     </div>
-    <div class="col-md-12 column col-xs-5">
+    <div class="col-md-12 column col-xs-7">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <?php
@@ -44,7 +44,7 @@
 
     } else {
         ?>
-        <div class="col-md-12 col-xs-5 column text-news-sub">
+        <div class="col-md-12 col-xs-7 column text-news-sub">
             <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
         </div>
         <div class="col-md-12 column mini-new-conten hidden-xs">
