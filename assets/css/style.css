@@ -872,7 +872,9 @@ h4.contenidos {
 .texto-gris {
     color: #c7c8ca;
 }
-
+.img-responsive {
+    width: 100%;
+}
 
 .banner300x250 {
     width:300px;
