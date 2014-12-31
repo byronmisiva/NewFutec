@@ -872,3 +872,9 @@ h4.contenidos {
 .texto-gris {
     color: #c7c8ca;
 }
+
+
+.banner300x250 {
+    width:300px; height:250px;
+    border: 1px solid red;
+}
