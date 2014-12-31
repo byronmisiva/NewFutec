@@ -35,12 +35,15 @@ class Site extends MY_Controller
 
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $isMobile = false;
+
+
         if ($this->agent->is_mobile()) {
             $m = $this->agent->mobile();
             if (in_array($m, $mobiles))
                 $isMobile = true;
         }
 
+        $data['isMobile'] = $isMobile;
         if ($isMobile) {
 
             $data['cabecera'] = $this->contenido->menum();
@@ -48,7 +51,7 @@ class Site extends MY_Controller
             $data['content'] = $this->contenido->header_mobile();
             $data['content'] .= $this->partidos->partidosFechaMovil();
             $data['content'] .= $this->contenido->view_banner_contenidotop();
-            $data['content'] .= $this->contenido->view_noticia_home();
+            $data['content'] .= $this->contenido->view_noticia_home($isMobile);
             $data['content'] .= $this->contenido->view_banner_contenido();
             $data['content'] .= $this->contenido->view_twitter();
 
