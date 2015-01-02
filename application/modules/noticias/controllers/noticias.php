@@ -13,6 +13,17 @@ class Noticias extends MY_Controller
 
     public function viewNoticiasHome($totalMiniNews = RESULT_PAGE, $data = FALSE)
     {
+        $this->load->library('user_agent');
+
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $isMobile = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $isMobile = true;
+        }
+
+
         setlocale(LC_ALL, "es_ES");
         $this->load->module('banners');
         $this->load->module('story');
@@ -39,6 +50,7 @@ class Noticias extends MY_Controller
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
+            $dataStory['isMobile'] = $isMobile;
             $noticias[] = $this->viewNoticia($dataStory);
         }
         //intercalo entre las noticias los banners.

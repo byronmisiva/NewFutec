@@ -48,7 +48,7 @@ class Mdl_story extends MY_Model
     {
         $this->load->module('story');
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
-        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
+        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, i.thumbh120, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
