@@ -11,7 +11,7 @@ $this->load->view('header');
 </div>
 
 <div class=" visible-xs-block"  >
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-futec navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -21,7 +21,9 @@ $this->load->view('header');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Futbol Ecuador</a>
+                <a href="<?php echo base_url() ?>" class="navbar-brand"><img src="<?= base_url('assets/img/logotipo.png') ?>"
+                                                                 alt="FutbolEcuador" class=" media-object img-responsive">
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

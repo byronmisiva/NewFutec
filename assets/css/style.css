@@ -888,3 +888,104 @@ h4.contenidos {
         margin-left: 4px;
     }
 }
+
+
+.navbar-futec {
+    background-color: #133751;
+    border-color: #06131d;
+}
+.navbar-futec .navbar-brand {
+    color: #ffffff;
+}
+.navbar-futec .navbar-brand:hover,
+.navbar-futec .navbar-brand:focus {
+    color: #eee;
+    background-color: transparent;
+}
+.navbar-futec .navbar-text {
+    color: #fff;
+}
+.navbar-futec .navbar-nav > li > a {
+    font-size: 14px;
+    color: #fff;
+}
+.navbar-futec .navbar-nav > li > a:hover,
+.navbar-futec .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+.navbar-futec .navbar-nav > .active > a,
+.navbar-futec .navbar-nav > .active > a:hover,
+.navbar-futec .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+
+}
+.navbar-futec .navbar-nav > .disabled > a,
+.navbar-futec .navbar-nav > .disabled > a:hover,
+.navbar-futec .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-futec .navbar-toggle {
+    border-color: #123650;
+}
+.navbar-futec .navbar-toggle:hover,
+.navbar-futec .navbar-toggle:focus {
+    background-color: #07131c;
+}
+.navbar-futec .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-futec .navbar-collapse,
+.navbar-futec .navbar-form {
+    border-color: #375168;
+}
+.navbar-futec .navbar-nav > .open > a,
+.navbar-futec .navbar-nav > .open > a:hover,
+.navbar-futec .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #375168;
+}
+@media (max-width: 767px) {
+    .navbar-futec .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .navbar-futec .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-futec .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #eee;
+        background-color: transparent;
+    }
+    .navbar-futec .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-futec .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-futec .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #375168;
+    }
+    .navbar-futec .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-futec .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-futec .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-futec .navbar-link {
+    color: #fff;
+}
+.navbar-futec .navbar-link:hover {
+    color: #333;
+}
+.navbar-futec .btn-link {
+    color: #fff;
+}
+.navbar-futec .btn-link:hover,
+.navbar-futec .btn-link:focus {
+    color: #333;
+}
+.navbar-futec .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-futec .btn-link:hover,
+.navbar-futec .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-futec .btn-link:focus {
+    color: #ccc;
+}
