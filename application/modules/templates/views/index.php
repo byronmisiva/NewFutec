@@ -10,20 +10,28 @@ $this->load->view('header');
     </div>
 </div>
 
-<div class=" visible-xs-block"  >
+<div class=" visible-xs-block">
     <nav class="navbar navbar-futec navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="<?php echo base_url() ?>" class="navbar-brand"><img src="<?= base_url('assets/img/logotipo.png') ?>"
-                                                                 alt="FutbolEcuador" class=" media-object img-responsive">
-                </a>
+
+                <div class="col-xs-10 margen0">
+                    <a href="<?php echo base_url() ?>" class="navbar-brand"><img
+                            src="<?= base_url('assets/img/logotipo.png') ?>"
+                            alt="FutbolEcuador" class=" media-object img-responsive">
+                    </a>
+                </div>
+                <div class="col-xs-2 margen0">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Navegacion</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+                </div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,7 +39,8 @@ $this->load->view('header');
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
+                            <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -40,7 +49,8 @@ $this->load->view('header');
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resultados <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resultados
+                            <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -49,7 +59,8 @@ $this->load->view('header');
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calendario <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calendario
+                            <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -61,7 +72,8 @@ $this->load->view('header');
                     <li><a href="#">Futbol Internacional</a></li>
                     <li><a href="#">Nuestros embajadores</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
+                            <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -72,8 +84,10 @@ $this->load->view('header');
                     <li><a href="#">Zona FE</a></li>
                 </ul>
 
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 </div>
 
