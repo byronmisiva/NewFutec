@@ -894,6 +894,12 @@ h4.contenidos {
     background-color: #133751;
     border-color: #06131d;
 }
+
+.navbar-futec .navbar-collapse {
+    background-color: #152f4a;
+    background-image: url("../img/menu-back.png");
+}
+
 .navbar-futec .navbar-brand {
     color: #ffffff;
 }
@@ -908,10 +914,14 @@ h4.contenidos {
 .navbar-futec .navbar-nav > li > a {
     font-size: 14px;
     color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #28475c;
+    margin: 0px 20px;
+    padding-left: 20px;
 }
 .navbar-futec .navbar-nav > li > a:hover,
 .navbar-futec .navbar-nav > li > a:focus {
-    color: #333;
+    color: #fff;
     background-color: transparent;
 }
 .navbar-futec .navbar-nav > .active > a,
@@ -933,7 +943,7 @@ h4.contenidos {
 }
 .navbar-futec .navbar-toggle:hover,
 .navbar-futec .navbar-toggle:focus {
-    background-color: #07131c;
+    background-color: #103049;
 }
 .navbar-futec .navbar-toggle .icon-bar {
     background-color: #888;
@@ -945,8 +955,9 @@ h4.contenidos {
 .navbar-futec .navbar-nav > .open > a,
 .navbar-futec .navbar-nav > .open > a:hover,
 .navbar-futec .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #375168;
+    color: #fff;
+    border-bottom: 0px solid;
+
 }
 @media (max-width: 767px) {
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a {
