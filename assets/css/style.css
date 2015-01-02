@@ -962,6 +962,7 @@ h4.contenidos {
 @media (max-width: 767px) {
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
+        padding: 5px 0 5px 60px ;
     }
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a:focus {
