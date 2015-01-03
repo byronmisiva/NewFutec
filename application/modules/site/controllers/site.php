@@ -38,7 +38,7 @@ class Site extends MY_Controller
 
         if ($isMobile) {
 
-             $data['top1'] = "";
+            $data['top1'] = "";
             $data['header1'] = "";
 
             $dataHeader2['FE_Bigboxbanner'] = "";
@@ -50,9 +50,7 @@ class Site extends MY_Controller
 
             $data['footer'] = "";
             $data['bottom'] = "";
-
         } else {
-
             $data['top1'] = $this->banners->top1();
             $data['header1'] = $this->contenido->menu();
 
