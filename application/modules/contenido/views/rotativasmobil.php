@@ -1,4 +1,4 @@
-<div class="flexslider preloader " style="height: 348px; overflow: hidden">
+<div class="flexslidermobile preloader " style="height: 348px; overflow: hidden">
     <ul class="slides ">
         <?php
         foreach ($rotativasData as &$rotativa) {

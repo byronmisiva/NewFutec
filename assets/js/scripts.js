@@ -131,6 +131,15 @@ $(window).load(function () {
             $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
         }
     });
+    $('.flexslidermobile').flexslider({
+        animation: "slide",
+       // controlNav: "thumbnails",
+        slideshow: true,
+        start: function (slider) {
+            $('.preloader').removeClass('preloader');
+            $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
+        }
+    });
 
 //ajustes resultados
 
