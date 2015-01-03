@@ -76,6 +76,42 @@ class Contenido extends MY_Controller
         return $this->load->view('header2', $data, TRUE);
 
     }
+    public function header2mobile ($data = FALSE)
+    {
+        $this->load->module('story');
+        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
+        $excluded = array();
+        foreach ($dataRotativas['rotativasData'] as $key => $row) {
+            $excluded[] = $row->id;
+            $dataRotativas['rotativasData'][$key]->sponsored = false;
+        }
+        //ponemos en caso de existir la noticia ZONA FE
+
+        //recupera  y cambia por la ultima noticia
+        $sponsor = current($this->mdl_story->get_zonafe($excluded));
+        if ($sponsor !== FALSE) {
+            array_pop($dataRotativas['rotativasData']);
+            array_push($dataRotativas['rotativasData'], $sponsor);
+        }
+        //fin poner en caso de existir la ZONE FE
+
+        $dataRotativas['check'] = 0;
+        $data['rotativas'] = $this->load->view('rotativasmobil', $dataRotativas, TRUE);
+        //cargamos partidos
+        $this->load->module('scoreboards');
+
+        //$datamarcador['title'] = "Partidos de Hoy";
+        //$datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
+        $datamarcador['scores'] = "";
+        if ($datamarcador['scores'] == false) {
+            $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
+            //$data['title'] = "Ultima Fecha";
+        }
+        $data['marcadorvivo'] = "";
+
+        return $this->load->view('header2', $data, TRUE);
+
+    }
 
     /* function verificaDispositivo(){
          $this->load->library('user_agent');
