@@ -117,7 +117,7 @@ $(window).resize(function () {
     $('.flexslider').height(alto);
     ancho = $('.clone').first().width();
 
-    //$('.flexslider  .slides li').height(ancho * 0.61566);
+    $('.flexslider  .slides li').height(ancho * 0.61566);
 });
 
 // rotativas
