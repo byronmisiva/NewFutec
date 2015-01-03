@@ -73,11 +73,11 @@ function centradoMenu() {
 //ajuste rotativas
 
     setTimeout(function () {
-        alto = $('.flex-control-thumbs').height();
-        console.log ($('.flex-control-thumbs').height());
+        alto = $('.flexslider .flex-control-thumbs').height();
+        console.log ($('.flexslider .flex-control-thumbs').height());
         $('.flexslider').height(alto);
-        ancho = $('.clone').first().width();
-        $( ".slides li img" ).each(function( index ) {
+        ancho = $('.flexslider  .clone').first().width();
+        $( ".flexslider .slides li img" ).each(function( index ) {
             if ($( this ).height() < alto ){
                 $( this ).height(alto)
             };
@@ -87,10 +87,10 @@ function centradoMenu() {
 
     setTimeout(function () {
         console.log (alto);
-        alto = $('.flex-control-thumbs').height();
+        alto = $('.flexslider  .flex-control-thumbs').height();
         $('.flexslider').height(alto);
-        ancho = $('.clone').first().width();
-        $( ".slides li img" ).each(function( index ) {
+        ancho = $('.flexslider  .clone').first().width();
+        $( ".flexslider  .slides li img" ).each(function( index ) {
             if ($( this ).height() < alto ){
                 $( this ).height(alto)
             };
@@ -99,10 +99,10 @@ function centradoMenu() {
     }, 5000)
 
     setTimeout(function () {
-        alto = $('.flex-control-thumbs').height();
-        $('.flexslider').height(alto);
-        ancho = $('.clone').first().width();
-        $( ".slides li img" ).each(function( index ) {
+        alto = $('.flexslider  .flex-control-thumbs').height();
+        $(' .flexslider').height(alto);
+        ancho = $('.flexslider  .clone').first().width();
+        $( ".flexslider  .slides li img" ).each(function( index ) {
             if ($( this ).height() < alto ){
                 $( this ).height(alto)
             };
@@ -113,11 +113,11 @@ function centradoMenu() {
 
 
 $(window).resize(function () {
-    alto = $('.flex-viewport').height();
+    alto = $('.flexslider  .flex-viewport').height();
     $('.flexslider').height(alto);
     ancho = $('.clone').first().width();
 
-    $('.slides li').height(ancho * 0.61566);
+    //$('.flexslider  .slides li').height(ancho * 0.61566);
 });
 
 // rotativas
@@ -134,10 +134,11 @@ $(window).load(function () {
     $('.flexslidermobile').flexslider({
         animation: "slide",
        // controlNav: "thumbnails",
-        slideshow: true,
+     //   slideshow: true,
+        itemWidth: "100%",
         start: function (slider) {
             $('.preloader').removeClass('preloader');
-            $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
+            $(".flexslidermobile .slides").css('transform', 'translate3d(-600px, 0px, 0px)')
         }
     });
 
