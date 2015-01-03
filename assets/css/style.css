@@ -207,14 +207,27 @@ footer {
     margin: 5px 0 0;
 }
 
-.text-rotativas {
+.flexslider .text-rotativas {
+    width: 95%;
+    background-color: transparent;
+    background-image: url("../img/title-rotativas.png");
+    padding: 15px 10px;
+}
+.flexslidermobile .text-rotativas {
     width: 95%;
     background-color: transparent;
     background-image: url("../img/title-rotativas.png");
     padding: 15px 10px;
 }
 
-.text-rotativas h2 {
+.flexslider .text-rotativas h2 {
+    font-size: 20px;
+    font-family: "HelveticaNeue", Arial;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+.flexslidermobile .text-rotativas h2 {
     font-size: 20px;
     font-family: "HelveticaNeue", Arial;
     margin: 0;
@@ -252,11 +265,16 @@ footer {
     color: #fff;
     float: left;
     position: fixed;
-    top: 180px;
+    top: 160px;
 }
 
-.flex-viewport {
+.flexslider .flex-viewport {
     width: 90.5% !important;
+    float: left;
+}
+
+.flexslidermobile .flex-viewport {
+    width: 100% !important;
     float: left;
 }
 
