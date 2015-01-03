@@ -42,7 +42,7 @@ class Site extends MY_Controller
             $data['header1'] = "";
 
             $dataHeader2['FE_Bigboxbanner'] = "";
-            $data['header2'] = $this->contenido->header2($dataHeader2);
+            $data['header2'] = $this->contenido->header2mobile($dataHeader2);
             $data['top2'] = "";
 
             $data['content'] = $this->noticias->viewNoticiasHome();
