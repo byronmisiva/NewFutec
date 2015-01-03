@@ -92,12 +92,7 @@
     }else {
         ?>
         <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>
-        <style>
-            .container{
-                max-width: none !important;
-                width: 990px;
-            }
-        </style>
+
     <?php
     }
     ?>

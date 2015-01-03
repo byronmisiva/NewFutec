@@ -21,6 +21,11 @@ body {
     font-size: 11px;
 }
 
+.container{
+    max-width: none !important;
+    width: 990px;
+}
+
 pre {
     margin: 0;
     padding: 10px 20px !important;
@@ -883,6 +888,9 @@ h4.contenidos {
 }
 
 @media (max-width: 767px) {
+    .container{
+         width: 100%;
+    }
     .noticia-content {
         margin-right:4px;
         margin-left: 4px;

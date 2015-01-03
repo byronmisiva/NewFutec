@@ -74,7 +74,7 @@ $this->load->view('header');
                     <li><a href="#">Nuestros embajadores</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
-                            <span class="caret"></span></a>
+                            <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
