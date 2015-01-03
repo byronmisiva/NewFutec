@@ -222,7 +222,7 @@ footer {
     font-weight: 300;
 }
 
-.text-rotativas h3 {
+.flexslider .text-rotativas h3 {
     font-size: 14px;
     font-family: "HelveticaNeue", Arial;
     font-weight: 200;
@@ -230,14 +230,29 @@ footer {
     padding: 0;
     letter-spacing: 0.5px;
 }
+.flexslidermobile .text-rotativas h3 {
+    font-size: 12px;
+    font-family: "HelveticaNeue", Arial;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
 
-.content-text-rotativas {
+.flexslider .content-text-rotativas {
     width: inherit;
-
     color: #fff;
     float: left;
     position: fixed;
     top: 255px;
+}
+
+.flexslidermobile .content-text-rotativas {
+    width: inherit;
+    color: #fff;
+    float: left;
+    position: fixed;
+    top: 180px;
 }
 
 .flex-viewport {

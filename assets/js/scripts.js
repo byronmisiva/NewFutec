@@ -134,7 +134,7 @@ $(window).load(function () {
     $('.flexslidermobile').flexslider({
         animation: "slide",
        // controlNav: "thumbnails",
-     //   slideshow: true,
+      slideshow: true,
         itemWidth: "100%",
         start: function (slider) {
             $('.preloader').removeClass('preloader');
