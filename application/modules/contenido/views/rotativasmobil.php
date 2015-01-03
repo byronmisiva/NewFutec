@@ -6,7 +6,7 @@
             ?>
             <li data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
                 <a href="<?php echo $link ?>">
-                    <img src="http://www.futbolecuador.com/<?php echo $rotativa->thumb500; ?>"
+                    <img src="http://www.futbolecuador.com/<?php echo $rotativa->thumb300; ?>"
                          alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>"/>
                 </a>
 

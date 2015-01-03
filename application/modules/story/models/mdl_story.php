@@ -78,6 +78,7 @@ class Mdl_story extends MY_Model
 				s.votes,
 				i.name,
 				i.thumbh80,
+				i.thumb300,
 				i.thumb500", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
