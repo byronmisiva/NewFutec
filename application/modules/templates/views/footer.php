@@ -14,7 +14,7 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?refresh=123456') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?refresh=1234567') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
 
