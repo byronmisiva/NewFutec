@@ -48,7 +48,13 @@ class Site extends MY_Controller
             $data['content'] = $this->noticias->viewNoticiasHome();
             $data['sidebar'] = "";
 
-            $data['footer'] = "";
+            //Resultados tabla de posiciones
+            $this->load->module('scoreboards');
+
+            $scroreBoardAcumulative = $this->scoreboards->leaderboard_cumulative(SERIE_A);
+            $scroreBoardSingle = $this->scoreboards->leaderboard(SERIE_A);
+
+            $data['footer'] = $scroreBoardAcumulative;
             $data['bottom'] = "";
         } else {
             $data['top1'] = $this->banners->top1();
