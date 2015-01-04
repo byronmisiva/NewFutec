@@ -956,6 +956,11 @@ h4.contenidos {
         padding-left: 0 ;
     }
 
+    .margen10lados-sx {
+        margin-left: 5px ;
+        margin-right: 5px ;
+    }
+
 }
 
 

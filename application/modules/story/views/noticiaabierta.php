@@ -12,7 +12,7 @@
         echo $noticia->origen . ", " . date("l d F Y", strtotime($noticia->created)); ?>
         <h1><?php echo $noticia->title; ?></h1>
 
-        <h2 class="gris sub"><?php echo $noticia->subtitle; ?></h2>
+        <h2 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h2>
 
         <div class="fb-like" data-href="<?= 'http://www.futbolecuador.com/stories/publica/' . $noticia->id; ?>"
              data-send="false" data-layout="box_count" data-width="90" data-show-faces="false" data-font="arial"></div>
@@ -22,9 +22,12 @@
            data-count="vertical" data-via="futbolecuador" data-lang="es"
            data-counturl="http://www.futbolecuador.com/stories/publica/<?= $noticia->id; ?>">Tweet</a>
         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-        <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
-        <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
+        <div class="margen10lados-sx">
+            <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
+        </div>
+        <div class="margen10lados-sx">
+            <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
+        </div>
     </div>
 </div>
 
