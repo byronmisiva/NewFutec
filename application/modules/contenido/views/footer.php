@@ -1,4 +1,4 @@
-<div class="row clearfix separador10 separador10bot footer-fe margen0">
+<div class="row clearfix separador10 separador10bot footer-fe margen0  hidden-xs">
     <div class="col-md-3">
         <div class="col-md-12  azulfooter">
             <h3>Secciones</h3>

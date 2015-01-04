@@ -125,7 +125,7 @@ $this->load->view('header');
                 ?>
             </div>
         </div>
-        <div class="col-md-4 sidebar">
+        <div class="col-md-4 sidebar hidden-xs">
             <?php
             echo $sidebar;
             ?>
@@ -134,7 +134,7 @@ $this->load->view('header');
 </div>
 
 
-<!-- /container -->
+<!-- footer -->
 <div class="top1">
     <div class="container">
         <?php
