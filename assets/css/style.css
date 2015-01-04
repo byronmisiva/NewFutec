@@ -155,6 +155,9 @@ footer {
 .separador10 {
     margin-top: 10px;
 }
+.separador10respon {
+    margin-top: 10px;
+}
 .separador10r {
     padding-right: 10px;
 }
@@ -938,6 +941,10 @@ h4.contenidos {
     .separador20respon {
         margin-top: 0px;
         padding-left: 0;
+    }
+
+    .separador10respon {
+        margin-top: 0;
     }
 
 }
