@@ -951,6 +951,11 @@ h4.contenidos {
          padding-right: 0px;
     }
 
+    .margen0-sx {
+        padding-right: 0;
+        padding-left: 0 ;
+    }
+
 }
 
 
