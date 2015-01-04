@@ -51,7 +51,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css');?>" type="text/css" media="screen" />
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/style.css?refresh=123456') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/style.css?refresh=1234568') ?>" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
