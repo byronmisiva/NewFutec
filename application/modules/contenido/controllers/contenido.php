@@ -217,8 +217,9 @@ class Contenido extends MY_Controller
         //Resultados tabla de posiciones
         $this->load->module('scoreboards');
 
-        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative(SERIE_A);
-        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard(SERIE_A);
+      //  $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative(SERIE_A);
+      //  $data['scroreBoardSingle'] = $this->scoreboards->leaderboard(SERIE_A);
+        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones(SERIE_A);
 
         //Resultados goleadores
         $this->load->module('strikes');

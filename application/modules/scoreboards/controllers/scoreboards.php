@@ -10,6 +10,13 @@ class Scoreboards extends MY_Controller
         parent::__construct();
     }
 
+    function tablaposiciones($temporada)
+    {
+        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative($temporada);
+        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard($temporada);
+        return $this->load->view('tablaposiciones', $data, TRUE);
+    }
+
     public function matches_today()
     {
 
@@ -23,6 +30,7 @@ class Scoreboards extends MY_Controller
         $this->load->view('scoreboards/scoreboards_live', $data);
 
     }
+
 
     function list_played_matches()
     {

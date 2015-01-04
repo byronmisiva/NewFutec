@@ -12,10 +12,10 @@ $db['default']['username'] = "futec";
 $db['default']['password'] = "feadmin06";
 $db['default']['database'] = "fe2008";
 
-$db['default']['hostname'] = "127.0.0.1";
+$db['default']['hostname'] = "localhost";
 $db['default']['username'] = "root";
 $db['default']['password'] = "";
-$db['default']['database'] = "fe2008";
+$db['default']['database'] = "futec";
 
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";

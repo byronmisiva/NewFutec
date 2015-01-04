@@ -45,16 +45,14 @@ class Site extends MY_Controller
             $data['header2'] = $this->contenido->header2mobile($dataHeader2);
             $data['top2'] = "";
 
-            $data['content'] = $this->noticias->viewNoticiasHome();
-            $data['sidebar'] = "";
-
             //Resultados tabla de posiciones
             $this->load->module('scoreboards');
+            $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
-            $scroreBoardAcumulative = $this->scoreboards->leaderboard_cumulative(SERIE_A);
-            $scroreBoardSingle = $this->scoreboards->leaderboard(SERIE_A);
+            $data['content'] = $this->noticias->viewNoticiasHome() . $tablaposiciones;
+            $data['sidebar'] = "";
 
-            $data['footer'] = $scroreBoardAcumulative;
+            $data['footer'] = '';
             $data['bottom'] = "";
         } else {
             $data['top1'] = $this->banners->top1();
