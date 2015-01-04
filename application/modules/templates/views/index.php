@@ -92,7 +92,7 @@ $this->load->view('header');
     </nav>
 </div>
 
-<div class="page-header header1 ">
+<div class="page-header header1 hidden-xs">
     <div class="container">
         <div class="row clearfix">
             <nav class="navbar  fhmm  menutype" role="navigation">
