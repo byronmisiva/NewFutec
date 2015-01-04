@@ -29,10 +29,10 @@
 </div>
 
 <div class="col-md-12 column content-gris ">
-    <div class="col-md-4 column margen0">
+    <div class="col-md-4 col-xs-4 column margen0">
         Lecturas <?php echo $noticia->lecturas; ?>
     </div>
-    <div class="col-md-8 column margen0 text-right text-news-zone">
+    <div class="col-md-8 col-xs-8 column margen0 text-right text-news-zone">
         <?php echo $noticia->tags[0]->name; ?>
     </div>
 </div>
