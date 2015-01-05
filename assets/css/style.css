@@ -977,6 +977,8 @@ h4.contenidos {
 
 .navbar-futec .navbar-brand {
     color: #ffffff;
+    height: 40px;
+    padding: 10px;
 }
 .navbar-futec .navbar-brand:hover,
 .navbar-futec .navbar-brand:focus {
