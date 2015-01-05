@@ -1,10 +1,10 @@
-<div class="navbar-header">
+<div class="navbar-header hidden-xs">
     <a href="<?php echo base_url() ?>" class=""><img src="<?= base_url('assets/img/logotipo.png') ?>"
                                                      alt="FutbolEcuador" class=" media-object">
     </a>
 </div>
 <!-- end navbar-header -->
-<div class="navbar-collapse collapse">
+<div class="navbar-collapse collapse hidden-xs">
 <ul class="nav navbar-nav">
 <!-- list elements -->
 <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown"

@@ -143,7 +143,7 @@ class Mdl_story extends MY_Model
         $data = $this->db->get($this->table_name . ' s')->result();
 
         foreach ($data as $key=>$nota) {
-            $this->db->select('i.thumbh120 as thumb1,i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumb300 as thumb300', FALSE);
+            $this->db->select('i.thumbh120 as thumb1,i.thumbh120, i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumb300 as thumb300', FALSE);
             $this->db->where('i.id', $nota->image_id);
             $imagenes = $this->db->get("images" . ' i')->result();
             $data[$key]->thumb1 = $imagenes[0]->thumb1;

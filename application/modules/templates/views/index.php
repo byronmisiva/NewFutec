@@ -42,47 +42,43 @@ $this->load->view('header');
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
                             <span class="caret  link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="<?= base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
+                            <li><a href="<?= base_url('tabla-de-posiciones-b') ?>">Posiciones Serie B</a></li>
 
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resultados
-                            <span class="caret link-menu"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-
-                        </ul>
-                    </li>
-
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calendario
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-
+                            <li><a href="<?= base_url() ?>site/resultados/<?php echo SERIE_A; ?>/campeonato-serie-a">Serie A</a></li>
+                            <li><a href="<?= base_url() ?>site/resultados/<?php echo SERIE_B; ?>/campeonato-serie-b">Serie B</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Futbol Nacional</a></li>
-                    <li><a href="#">Futbol Internacional</a></li>
-                    <li><a href="#">Nuestros embajadores</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Fútbol Nacional
+                            <span class="caret link-menu"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="<?= base_url('site/seriea') ?>">Serie A</a></li>
+                            <li><a href="<?= base_url('site/serieb') ?>">Serie B</a></li>
+                            <li><a href="<?= base_url('site/seleccion') ?>">Selección</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
+                    <li><a href="<?= base_url('nuestros-embajadores') ?>">Nuestros embajadores</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#"><?= base_url('copa-libertadores') ?></a></li>
+                            <li><a href="<?= base_url('copa-libertadores') ?>">Copa Sudamericana action</a></li>
+                            <li><a href="<?= base_url('copa-libertadores') ?>">Copa America 2015</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="#">Zona FE</a></li>
+                    <li><a href="<?= base_url('copa-libertadores') ?>">Zona FE</a></li>
+                    <li><a href="<?= base_url('goleadores') ?>">Goleadores</a></li>
+                    <li><a href="<?= base_url('fuera-de-juego') ?>">Fuera de <juego></juego></a></li>
                 </ul>
 
             </div>
@@ -92,10 +88,10 @@ $this->load->view('header');
     </nav>
 </div>
 
-<div class="page-header header1 hidden-xs">
+<div class="page-header header1 ">
     <div class="container">
         <div class="row clearfix">
-            <nav class="navbar  fhmm  menutype" role="navigation">
+            <nav class="navbar  fhmm  menutype " role="navigation">
                 <?php echo $header1; ?>
             </nav>
         </div>

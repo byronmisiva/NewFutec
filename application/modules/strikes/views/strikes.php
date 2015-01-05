@@ -13,14 +13,14 @@
                 if ($key == 0 ) {
                     ?>
                     <div class="row clearfix  separador10 cabeceragoleador">
-                        <div class="col-md-2 ">
+                        <div class="col-md-2 col-xs-2 ">
                             <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
                         </div>
-                        <div class="col-md-1 column ">
+                        <div class="col-md-1 col-xs-1 column ">
                              <img src="http://www.futbolecuador.com/<?php echo $jugador->shield; ?>">
                         </div>
 
-                        <div class="col-md-9 column lineseparador">
+                        <div class="col-md-9 col-xs-9 column lineseparador">
                             <div class="col-md-8 column ">
                                 <h1><?php echo $jugador->last_name . " " . $jugador->first_name ?></h1>
                                 <?php echo $jugador->name; ?>
