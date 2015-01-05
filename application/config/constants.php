@@ -39,7 +39,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
 //Pagination
-define('RESULT_PAGE', 24);
+define('RESULT_PAGE', 26);
 
 //Secciones
 define('SECTION_PRIN',3);

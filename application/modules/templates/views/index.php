@@ -11,7 +11,14 @@ $this->load->view('header');
 </div>
 
 <div class=" visible-xs-block">
+
     <nav class="navbar navbar-futec navbar-fixed-top">
+        <!-- FE_SMART_BOTTOM -->
+        <div id='div-gpt-ad-1383593619381-2' style='width:320px; height:auto;margin:0 auto;'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-2'); });
+            </script>
+        </div>
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
