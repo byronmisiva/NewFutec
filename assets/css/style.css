@@ -271,7 +271,7 @@ footer {
     color: #fff;
     float: left;
     position: fixed;
-    top: 140px;
+    top: 145px;
 }
 
 .flexslider .flex-viewport {
@@ -936,11 +936,11 @@ h4.contenidos {
     }
 
     .flex-control-nav {
-        bottom: 0px !important;
-        text-align: right !important;
+        bottom: 1px !important;
+        text-align: center !important;
     }
     .separador20respon {
-        margin-top: 47px;
+        margin-top: 77px;
         padding-left: 0;
     }
 
@@ -967,7 +967,7 @@ h4.contenidos {
 
 .navbar-futec {
     background-color: #133751;
-    border-color: #06131d;
+    border-color:92 #06131d;
 }
 
 .navbar-futec .navbar-collapse {

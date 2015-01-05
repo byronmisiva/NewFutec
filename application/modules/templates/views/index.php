@@ -13,10 +13,10 @@ $this->load->view('header');
 <div class=" visible-xs-block">
 
     <nav class="navbar navbar-futec navbar-fixed-top">
-        <!-- FE_SMART_BOTTOM -->
-        <div id='div-gpt-ad-1383593619381-2' style='width:320px; height:auto;margin:0 auto;'>
+        <!-- FE_HEADER -->
+        <div id='div-gpt-ad-1383593619381-0' style='width:320px; height:80px;margin:0 auto;'>
             <script type='text/javascript'>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-2'); });
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-0'); });
             </script>
         </div>
         <div class="container-fluid">
@@ -139,6 +139,12 @@ $this->load->view('header');
 
 <!-- footer -->
 <div class="top1">
+    <!-- FE_SMART_BOTTOM -->
+    <div id='div-gpt-ad-1383593619381-2' style='width:320px; height:auto;margin:0 auto;'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-2'); });
+        </script>
+    </div>
     <div class="container">
         <?php
         echo $footer;
