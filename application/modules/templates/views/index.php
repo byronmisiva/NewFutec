@@ -77,9 +77,9 @@ $this->load->view('header');
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#"><?= base_url('copa-libertadores') ?></a></li>
-                            <li><a href="<?= base_url('copa-libertadores') ?>">Copa Sudamericana action</a></li>
-                            <li><a href="<?= base_url('copa-libertadores') ?>">Copa America 2015</a></li>
+                            <li><a href="<?= base_url('copa-libertadores') ?>">Copa Libertadores</a></li>
+                            <li><a href="<?= base_url('copa-sudamericana') ?>">Copa Sudamericana action</a></li>
+                            <li><a href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>
 
                         </ul>
                     </li>

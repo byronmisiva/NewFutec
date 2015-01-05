@@ -138,7 +138,8 @@ $(window).load(function () {
         itemWidth: "100%",
         start: function (slider) {
             $('.preloader').removeClass('preloader');
-            $(".flexslidermobile .slides").css('transform', 'translate3d(-320px, 0px, 0px)')
+            $(".flexslidermobile .slides").css('transform', 'translate3d(-320px, 0px, 0px)');
+            $(".flexslidermobile .text-rotativas").show();
         }
     });
 
