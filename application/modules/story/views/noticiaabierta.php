@@ -22,6 +22,17 @@
            data-count="vertical" data-via="futbolecuador" data-lang="es"
            data-counturl="http://www.futbolecuador.com/stories/publica/<?= $noticia->id; ?>">Tweet</a>
         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!--        Tag para watsapp-->
+        <?php if ($isMobile){
+            ?>
+
+                <a class='ssba'
+                   data-action='share/whatsapp/share'
+                   href='whatsapp://send?text= <?=$noticia->title?> <?php echo base_url().$this->uri->segment(1).'/'.$this->uri->segment(2).'/'.$this->uri->segment(3)?>'>
+                    <img border='0' src='<?php echo base_url()?>imagenes/moviles/boton-whatapp2.png' /></a>
+
+            <?php
+        } ?>
         <div class="margen10lados-sx">
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
         </div>
@@ -31,7 +42,7 @@
     </div>
 </div>
 
-<div class="col-md-12 column content-gris ">
+<div class="col-md-12 column content-gris hidden-xs">
     <div class="col-md-4 col-xs-4 column margen0">
         Lecturas <?php echo $noticia->lecturas; ?>
     </div>

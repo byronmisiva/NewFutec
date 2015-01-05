@@ -32,6 +32,16 @@ class Story extends MY_Controller
 
     function get_complete($id)
     {
+        $this->load->library('user_agent');
+
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $data['isMobile'] = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $data['isMobile'] = true;
+        }
+
         $data['noticia'] = $this->mdl_story->get_story($id);
         return $this->load->view('noticiaabierta', $data, TRUE);
     }
