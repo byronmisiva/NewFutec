@@ -297,8 +297,7 @@ class Site extends MY_Controller
         $this->load->module('matches');
 
         $id = $this->uri->segment(3);
-        //$id = SERIE_B;
-        $name = $this->matches->getChampionship($id)->row();
+         $name = $this->matches->getChampionship($id)->row();
 
         $title = $name->name;
         //$title = "Calendario - Campeonato Serie B 2014";
@@ -400,6 +399,7 @@ class Site extends MY_Controller
 
         if (!$this->uri->segment(6)) {
             $this->load->module('team');
+            $this->load->module('matches');
 
             $infoEquipo = $this->mdl_site->getNameTeam($nameSeccion);
             if (isset($infoEquipo[0]->stadia_id))
@@ -411,7 +411,7 @@ class Site extends MY_Controller
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
-
+            $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, 49);
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
             $cabeceraEquipo = $this->team->getCabeceraEquipo($dataTeam);
             // fin informacion recupera

@@ -22,7 +22,16 @@ class Matches extends MY_Controller
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
         return $this->load->view('matches', $data, true);
     }
-   public function match ($idSerie, $title)
+
+    public function matchesperteam($idEquipo, $idSerie)
+    {
+        $data['idEquipo'] = $idEquipo;
+        $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);
+        $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
+        return $this->load->view('matchesperteam', $data, true);
+    }
+
+    public function match ($idSerie, $title)
     {
         $data['title'] = $title;
         $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);

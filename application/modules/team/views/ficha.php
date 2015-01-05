@@ -39,6 +39,10 @@
     <h4 class="contenidos">Partidos <?php echo $infoEquipo->name; ?></h4>
 </div>
 
+<?php
+echo $fechas;
+?>
+
 
 <!--lsitado de jugadores -->
 <div class="col-md-12 separador20 margen0">
