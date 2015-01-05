@@ -224,6 +224,7 @@ footer {
     background-color: transparent;
     background-image: url("../img/title-rotativas-mobile.png");
     padding: 15px 10px;
+    display: none;
 }
 
 .flexslider .text-rotativas h2 {
