@@ -192,6 +192,13 @@ class Noticias extends MY_Controller
 
     public function viewNoticia($data = FALSE)
     {
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $data['isMobile'] = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $data['isMobile'] = true;
+        }
         return $this->load->view('noticiahomemini', $data, TRUE);
     }
 
