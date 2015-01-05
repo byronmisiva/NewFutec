@@ -97,6 +97,8 @@ class Contenido extends MY_Controller
 
         $dataRotativas['check'] = 0;
         $data['rotativas'] = $this->load->view('rotativasmobil', $dataRotativas, TRUE);
+
+        $bannerMedio = $this->banners->fe_smart_bottom ();
         //cargamos partidos
         $this->load->module('scoreboards');
 

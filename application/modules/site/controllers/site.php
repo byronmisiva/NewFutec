@@ -41,8 +41,9 @@ class Site extends MY_Controller
             $data['top1'] = "";
             $data['header1'] = "";
 
+            $bannerMedio = $this->banners->fe_smart_bottom ();
             $dataHeader2['FE_Bigboxbanner'] = "";
-            $data['header2'] = $this->contenido->header2mobile($dataHeader2);
+            $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerMedio;
             $data['top2'] = "";
 
             //Resultados tabla de posiciones

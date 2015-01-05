@@ -85,7 +85,7 @@ $this->load->view('header');
                     </li>
                     <li><a href="<?= base_url('copa-libertadores') ?>">Zona FE</a></li>
                     <li><a href="<?= base_url('goleadores') ?>">Goleadores</a></li>
-                    <li><a href="<?= base_url('fuera-de-juego') ?>">Fuera de <juego></juego></a></li>
+                    <li><a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>
 
             </div>
@@ -139,12 +139,7 @@ $this->load->view('header');
 
 <!-- footer -->
 <div class="top1">
-    <!-- FE_SMART_BOTTOM -->
-    <div id='div-gpt-ad-1383593619381-2' style='width:320px; height:auto;margin:0 auto;'>
-        <script type='text/javascript'>
-            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-2'); });
-        </script>
-    </div>
+
     <div class="container">
         <?php
         echo $footer;

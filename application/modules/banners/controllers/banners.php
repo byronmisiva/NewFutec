@@ -96,6 +96,10 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_skyscraper2', $data, TRUE);
     }
+    public function fe_smart_bottom($data = FALSE)
+    {
+        return $this->load->view('fe_smart_bottom', $data, TRUE);
+    }
 
 
 }
