@@ -884,14 +884,12 @@ h2.gigante, h2:hover.gigante {
 }
 
 .sidebar .list-group  {
-
     margin-bottom: 0;
 }
 
 td.equipo1 {
     width: 135px;
 }
-
 
 h4.contenidos {
     font-size: 14px;
@@ -922,8 +920,10 @@ h4.contenidos {
 
 .banner300x250 {
     width:300px;
+}
 
-
+.flex-control-paging li a.flex-active {
+    background: rgba(174, 174, 174, 0.9);
 }
 
 @media (max-width: 767px) {
