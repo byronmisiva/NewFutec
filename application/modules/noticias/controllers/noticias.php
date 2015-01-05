@@ -202,6 +202,7 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiahomemini', $data, TRUE);
     }
 
+
     public function viewmininewssidebar($namesection , $idsection , $posSection, $nameSectionUrl, $data = FALSE)
     {
         $data['namesection'] = $namesection;
