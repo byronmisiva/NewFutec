@@ -179,7 +179,7 @@ $(window).load(function () {
 function altoshome() {
     $('.noticia-content').each(function () {
         $(this).each(function () {
-            noticias = $(this).children("div.noticia");
+            noticias = $(this).children("div.noti");
             noticia1 = $(noticias).children("div.news-detail");
             alto1 = $(noticia1[0]).height();
             alto2 = $(noticia1[1]).height();
