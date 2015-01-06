@@ -10,7 +10,7 @@
         </div>
         <div class="margen10lados-sx">
             <?php setlocale(LC_ALL, "es_ES");
-            echo $noticia->origen . ", " . date("l d F Y", strtotime($noticia->created)); ?>
+            echo $noticia->origen . ", " . strftime("%A, %d %B %Y", strtotime($noticia->created)); ?>
         </div>
         <h1><?php echo $noticia->title; ?></h1>
 

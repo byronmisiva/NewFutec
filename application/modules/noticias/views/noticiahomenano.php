@@ -12,7 +12,7 @@
     <div class="col-md-12 column text-news-date hidden-xs">
         <a href="<?php echo $link ?>">
             <?php setlocale(LC_ALL, "es_ES");
-            echo date("F d, Y", strtotime($story->created)); ?>
+            echo strftime("%d %B %Y", strtotime($story->created)); ?>
         </a>
     </div>
     <div class="col-md-12 column col-xs-7">
