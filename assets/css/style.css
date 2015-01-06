@@ -174,7 +174,7 @@ footer {
 .separador20 {
     margin-top: 20px;
 }
-.separador20respon {
+.separador20-xs {
     margin-top: 20px;
 }
 
@@ -945,7 +945,7 @@ h4.contenidos {
         bottom: 1px !important;
         text-align: center !important;
     }
-    .separador20respon {
+    .separador20-xs {
         margin-top: 77px;
         padding-left: 0;
     }

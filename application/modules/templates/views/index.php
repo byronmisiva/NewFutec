@@ -109,7 +109,7 @@ $this->load->view('header');
 <div class="container blanco">
     <!-- Example row of columns -->
     <?php if (isset($header2)) { ?>
-        <div class="row separador20respon">
+        <div class="row separador20-xs">
             <?php echo $header2; ?>
         </div>
     <?php } ?>

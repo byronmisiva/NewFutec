@@ -11,7 +11,7 @@ $estado['8'] = 'Fin del Partido';?>
 <!--Tabla de posiciones-->
 
 
-<div class="col-md-12 separador20 margen0">
+<div class="col-md-12 separador20-xs margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             <? echo $title; ?>
