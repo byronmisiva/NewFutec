@@ -13,27 +13,34 @@
         <h1><?php echo $noticia->title; ?></h1>
 
         <h2 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h2>
+        <div class="col-md-12 clearfix">
+            <div class="col-md-4 col-xs-4">
+                <div class="fb-like" data-href="<?= 'http://www.futbolecuador.com/stories/publica/' . $noticia->id; ?>"
+                     data-send="false" data-layout="box_count" data-width="90" data-show-faces="false" data-font="arial"></div>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                   data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
+                   data-count="vertical" data-via="futbolecuador" data-lang="es"
+                   data-counturl="http://www.futbolecuador.com/stories/publica/<?= $noticia->id; ?>">Tweet</a>
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="col-md-4 col-xs-4  ">
+                <!--        Tag para watsapp-->
+                <?php if ($isMobile){
+                    ?>
 
-        <div class="fb-like" data-href="<?= 'http://www.futbolecuador.com/stories/publica/' . $noticia->id; ?>"
-             data-send="false" data-layout="box_count" data-width="90" data-show-faces="false" data-font="arial"></div>
+                    <a class='ssba'
+                       data-action='share/whatsapp/share'
+                       href='whatsapp://send?text= <?=$noticia->title?> <?php echo base_url().$this->uri->segment(1).'/'.$this->uri->segment(2).'/'.$this->uri->segment(3)?>'>
+                        <img border='0' src='<?php echo base_url()?>imagenes/moviles/boton-whatapp2.png' /></a>
 
-        <a href="http://twitter.com/share" class="twitter-share-button"
-           data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
-           data-count="vertical" data-via="futbolecuador" data-lang="es"
-           data-counturl="http://www.futbolecuador.com/stories/publica/<?= $noticia->id; ?>">Tweet</a>
-        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<!--        Tag para watsapp-->
-        <?php if ($isMobile){
-            ?>
+                <?php
+                } ?>
+            </div>
+        </div>
 
-                <a class='ssba'
-                   data-action='share/whatsapp/share'
-                   href='whatsapp://send?text= <?=$noticia->title?> <?php echo base_url().$this->uri->segment(1).'/'.$this->uri->segment(2).'/'.$this->uri->segment(3)?>'>
-                    <img border='0' src='<?php echo base_url()?>imagenes/moviles/boton-whatapp2.png' /></a>
-
-            <?php
-        } ?>
-        <div class="margen10lados-sx">
+        <div class="margen10lados-sx  separador5">
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
         </div>
         <div class="margen10lados-sx">
