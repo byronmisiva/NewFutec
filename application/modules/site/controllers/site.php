@@ -413,8 +413,9 @@ class Site extends MY_Controller
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
-            $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, 49);
+            $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, SERIE_A);
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
+
             $cabeceraEquipo = $this->team->getCabeceraEquipo($dataTeam);
             // fin informacion recupera
         } else {
@@ -459,7 +460,7 @@ class Site extends MY_Controller
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
         if ($infoEquipo != "") {
-            $noticiasCuerpo = $this->noticias->viewSeccions("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 2);
+            $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 6);
         } else {
             $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
         }

@@ -151,6 +151,32 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
+    public function viewSeccionsEquipo ($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE )
+    {
+        setlocale(LC_ALL, "es_ES");
+         $noticias = array();
+
+        $data['idsection'] = $idsection;
+        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection);
+
+        $dataStory['tipoLink'] = "secction";
+
+        $dataStory['urlsecction'] = $urlSeccion;
+
+        foreach ($storys as $key=>$story) {
+            $dataStory['story'] = $story;
+            if ($key == 0) {
+                $noticias[] = $this->viewNoticia($dataStory);
+            } else {
+                $noticias[] = $this->viewNoticiaNano($dataStory);
+            }
+        }
+
+        $data ['namesection'] = $namesection;
+        $data['noticias'] = $noticias;
+        return $this->load->view('noticiasequipo', $data, TRUE);
+    }
+
     public function viewseccion_plus ($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE)
     {
         setlocale(LC_ALL, "es_ES");
@@ -200,6 +226,17 @@ class Noticias extends MY_Controller
                 $data['isMobile'] = true;
         }
         return $this->load->view('noticiahomemini', $data, TRUE);
+    }
+    public function viewNoticiaNano($data = FALSE)
+    {
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $data['isMobile'] = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $data['isMobile'] = true;
+        }
+        return $this->load->view('noticiahomenano', $data, TRUE);
     }
 
 
