@@ -8,11 +8,15 @@
                      alt="<?php echo $noticia->image_name; ?>">
             </div>
         </div>
-        <?php setlocale(LC_ALL, "es_ES");
-        echo $noticia->origen . ", " . date("l d F Y", strtotime($noticia->created)); ?>
+        <div class="margen10lados-sx">
+            <?php setlocale(LC_ALL, "es_ES");
+            echo $noticia->origen . ", " . date("l d F Y", strtotime($noticia->created)); ?>
+        </div>
         <h1><?php echo $noticia->title; ?></h1>
 
-        <h2 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h2>
+        <div class="margen10lados-sx">
+            <h2 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h2>
+        </div>
         <div class="col-md-5  col-xs-12">
             <div class="col-md-6 col-xs-4">
                 <div class="fb-like" data-href="<?= 'http://www.futbolecuador.com/stories/publica/' . $noticia->id; ?>"

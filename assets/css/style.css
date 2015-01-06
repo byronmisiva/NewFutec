@@ -970,6 +970,23 @@ h4.contenidos {
         margin-right: 5px ;
     }
 
+    .img-responsive-xs {
+        width: 100%;
+    }
+
+    .nombre-equipo {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .resultado-equipo {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .textos-equipo {
+        font-size: 10px;
+    }
+
 }
 
 
