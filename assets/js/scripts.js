@@ -74,7 +74,6 @@ function centradoMenu() {
 
     setTimeout(function () {
         alto = $('.flexslider .flex-control-thumbs').height();
-        console.log ($('.flexslider .flex-control-thumbs').height());
         $('.flexslider').height(alto);
         ancho = $('.flexslider  .clone').first().width();
         $( ".flexslider .slides li img" ).each(function( index ) {
@@ -154,7 +153,6 @@ $(window).load(function () {
             var sectionID = openAnchor.attr('href');
             var sectionID = sectionID.substring(0, sectionID.length - 1);
             $(sectionID).collapse('toggle');
-            console.log (sectionID )
             setInterval(function () {
                 bloqueAcordio = true;
             }, 3000);
@@ -170,7 +168,6 @@ $(window).load(function () {
             var openAnchor = $(this).find('a[data-toggle=collapse]:not(.collapsed)');
             var sectionID = openAnchor.attr('href') + "1";
             $(sectionID ).collapse('toggle');
-            console.log (sectionID )
             setInterval(function () {
                 bloqueAcordio = true;
             }, 3000);

@@ -144,11 +144,25 @@
         googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
         // splsh movil
-        googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads())
+        googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
 
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
+</script>
+
+<script type='text/javascript'
+        src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+    GS_googleAddAdSenseService("ca-pub-2857298972794488");
+    GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+    GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");
+</script>
+<script type='text/javascript'>
+    GA_googleFetchAds();
 </script>
 
 <!-- Google Tag Manager -->

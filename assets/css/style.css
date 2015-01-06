@@ -89,6 +89,11 @@ footer {
 
 }
 
+.blanco {
+    background-color: #fff;
+    background-image: url("../img/blanco.png");
+}
+
 .top1, .bottom1 {
     background-color: #152f4a;
     background-image: url("../img/menu-back.png");

@@ -106,7 +106,7 @@ $this->load->view('header');
 </div>
 
 
-<div class="container">
+<div class="container blanco">
     <!-- Example row of columns -->
     <?php if (isset($header2)) { ?>
         <div class="row separador20respon">

@@ -56,7 +56,7 @@ class Site extends MY_Controller
             $data['footer'] = '';
             $data['bottom'] = "";
         } else {
-            $data['top1'] = $this->banners->top1();
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
 
             $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -66,8 +66,9 @@ class Site extends MY_Controller
             $data['content'] = $this->noticias->viewNoticiasHome();
             $data['sidebar'] = $this->contenido->sidebar();
 
+
             $data['footer'] = $this->contenido->footer();
-            $data['bottom'] = $this->contenido->bottom();
+            $data['bottom'] = $this->contenido->bottom() ;
 
         }
         $this->templates->_index($data);
