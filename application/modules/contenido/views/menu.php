@@ -131,7 +131,7 @@
                                    class="pull-left">
                                     <h4><?= $serieb[0]->title ?></h4>
 
-                                    <p><?= $seriea[0]->subtitle ?></p>
+                                    <p><?= $serieb[0]->subtitle ?></p>
 
                                 </a>
                                 <a href="<?= base_url('site/serieb') ?>">

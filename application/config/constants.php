@@ -85,7 +85,7 @@ define('ZONACOPAAMERICAPOS',2);
 
 //todo actualizar seccion futbol internacion
 define('ZONAINTERNACIONAL'   ,12);
-define('ZONAINTERNACIONALPOS',2);
+define('ZONAINTERNACIONALPOS',1);
 
 
 define('LAVOZDELASTRIBUNAS',''); //La voz de las tribunas
