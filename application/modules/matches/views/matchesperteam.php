@@ -21,36 +21,39 @@ $estado['8'] = 'Fin del Partido';?>
                 if (($team->hid == $idEquipo) or ($team->aid == $idEquipo)) {
                     if ($teams_pics['shield'][$team->hid] == "") $teams_pics['shield'][$team->hid] = "imagenes/teams/shield/default.png";
                     ?>
-                    <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border ">
+                    <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix">
                         <a class="sidebarlink"
                            href="<?= base_url('site/partido/' . $this->matches->_urlFriendly($team->hname) . '-' . $this->matches->_urlFriendly($team->aname) . '/' . $team->id) ?>">
 
-                            <div class="col-md-2 margen0 text-center ">
-                                <img
-                                    src="<?= base_url($teams_pics['shield'][$team->hid]); ?>">
+                            <div class="col-md-2 col-xs-1 margen0 text-center ">
+                                <img class="img-responsive-xs"
+                                     src="<?= base_url($teams_pics['shield'][$team->hid]); ?>">
                             </div>
-                            <div class="col-md-8 separador10 margen0    ">
-                                <div class="col-md-5 text-left nombre-equipo margen0 ">
-                                    <?= $team->hname ?>
-                                </div>
-                                <div class="col-md-2 text-center margen0">
-                                    <div class="col-md-12 text-center resultado-equipo margen0">
-                                        <? echo ($team->result == "") ? "vs" : $team->result; ?>
+                            <div class="col-md-8 col-xs-10   margen0    ">
+                                <div class="col-md-12 col-xs-12   margen0    ">
+                                    <div class="col-md-5 col-xs-5 text-left nombre-equipo margen0 ">
+                                        <?= $team->hname ?>
                                     </div>
-                                    <div class="col-md-12 text-center margen0 textos-equipo">
-                                        <?= $estado[$team->state] ?>
+                                    <div class="col-md-2 col-xs-2 text-center margen0">
+                                        <div class="col-md-12 text-center resultado-equipo margen0">
+                                            <? echo ($team->result == "") ? "vs" : $team->result; ?>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-5 col-xs-5 text-right nombre-equipo margen0">
+                                        <?= $team->aname ?>
                                     </div>
                                 </div>
-                                <div class="col-md-5 text-right nombre-equipo margen0">
-                                    <?= $team->aname ?>
+                                <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
+                                    <?= $estado[$team->state] ?>
                                 </div>
-                                <div class="col-md-12 text-center textos-equipo">
+                                <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
                                     <?= $team->dm ?>
                                 </div>
                             </div>
-                            <div class="col-md-2 text-center margen0">
-                                <img
-                                    src="<?= base_url($teams_pics['shield'][$team->aid]); ?>">
+                            <div class="col-md-2 col-xs-1 text-center margen0">
+                                <img class="img-responsive-xs"
+                                     src="<?= base_url($teams_pics['shield'][$team->aid]); ?>">
                             </div>
                         </a>
 
@@ -61,7 +64,6 @@ $estado['8'] = 'Fin del Partido';?>
             }
         }
         ?>
-
     </div>
 </div>
 

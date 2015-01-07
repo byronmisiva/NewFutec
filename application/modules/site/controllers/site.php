@@ -41,7 +41,7 @@ class Site extends MY_Controller
             $data['top1'] = "";
             $data['header1'] = "";
 
-            $bannerMedio = $this->banners->fe_smart_bottom ();
+            $bannerMedio = $this->banners->fe_smart_bottom();
             $dataHeader2['FE_Bigboxbanner'] = "";
             $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerMedio;
             $data['top2'] = "";
@@ -68,7 +68,7 @@ class Site extends MY_Controller
 
 
             $data['footer'] = $this->contenido->footer();
-            $data['bottom'] = $this->contenido->bottom() ;
+            $data['bottom'] = $this->contenido->bottom();
 
         }
         $this->templates->_index($data);
@@ -299,7 +299,7 @@ class Site extends MY_Controller
         $this->load->module('matches');
 
         $id = $this->uri->segment(3);
-         $name = $this->matches->getChampionship($id)->row();
+        $name = $this->matches->getChampionship($id)->row();
 
         $title = $name->name;
         //$title = "Calendario - Campeonato Serie B 2014";
@@ -395,11 +395,19 @@ class Site extends MY_Controller
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
         // Informacion de equipo
+        $idNoticia = $this->uri->segment(6);
+
+        $nombreNoticia = $this->uri->segment(5);
+        if  ($nombreNoticia === "0") {
+                $idNoticia = "1";
+            }
+
+
         $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
         $nameSeccion = $infoSeccionEquipo[0]->name;
 
 
-        if (!$this->uri->segment(6)) {
+        if  (!$idNoticia)  {
             $this->load->module('team');
             $this->load->module('matches');
 
@@ -469,9 +477,14 @@ class Site extends MY_Controller
         $bodytag = $nameSeccion;
 
         // carga la informacion de la noticia
-        $idNoticia = $this->uri->segment(6);
+
+
         if ($idNoticia) {
-            $storia = $this->story->get_complete($idNoticia);
+            if ($nombreNoticia == "0") {
+                $storia = "";
+            } else {
+                $storia = $this->story->get_complete($idNoticia);
+            }
             $aux = $this->mdl_story->get_story($idNoticia);
             $bodytag = str_replace('"', '', strip_tags($aux->title));
         }

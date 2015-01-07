@@ -53,13 +53,13 @@ echo $fechas;
         </div>
         <div class="col-md-12  margen0 separador10 separador10r ">
         <div class="borde">
-            <div class="col-md-6 separador10    ">
+            <div class="col-md-6 col-xs-6 separador10    ">
                 <?php if (isset($infoEquipo->shield)) { ?>
                     <img class="img-responsive imagen-full"
                          src="http://www.futbolecuador.com/<?php echo $infoEquipo->shield_big; ?>">
                 <?php } ?>
             </div>
-            <div class="col-md-5 separador10   ">
+            <div class="col-md-5 col-xs-5 separador10   ">
                 <?php if (isset($infoEquipo->shirt) and (strlen($infoEquipo->shirt) > 0)) { ?>
                     <img class="img-responsive imagen-full" src="<?php echo base_url($infoEquipo->shirt); ?>">
                 <?php } ?>

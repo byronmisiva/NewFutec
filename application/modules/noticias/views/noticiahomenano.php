@@ -15,7 +15,7 @@
             echo strftime("%d %B %Y", strtotime($story->created)); ?>
         </a>
     </div>
-    <div class="col-md-12 column col-xs-7">
+    <div class="col-md-12 column col-xs-12">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <?php
@@ -30,7 +30,7 @@
 
     } else {
         ?>
-        <div class="col-md-12 col-xs-7 column text-news-sub">
+        <div class="col-md-12 col-xs-12 column text-news-sub">
             <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
         </div>
     <?php
