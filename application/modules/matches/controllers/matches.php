@@ -42,10 +42,24 @@ class Matches extends MY_Controller
     public function getMatch($id)
     {
         $data['title'] = "Marcador en Vivo";
-        $id = 49;
-        $data['teamsFecha'] = $this->mdl_matches->matches_all($id);
-        $data['teams_pics'] = $this->mdl_matches->get_pics_teams($id);
+        $data['teamsFecha'] = $this->mdl_matches->matches_id($id);
+        // arreglar esta funcion
+        $idSerie  = $this->getSerie($id);
+        $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
+
+        $data['teamsFecha']['local'] = "d1";
+        $data['teamsFecha']['visita'] = "d2";
+
+
         return $this->load->view('matchdetail', $data, true);
+    }
+    public function getSerie($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('teams');
+        $match = $query->result();
+        //return $match[0]->name;
+        return 49;
     }
     public function matches($idSerie, $title)
     {

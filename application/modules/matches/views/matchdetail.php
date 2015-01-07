@@ -8,9 +8,7 @@ $estado['5'] = 'Primer Extra';
 $estado['6'] = 'Segundo Extra';
 $estado['7'] = 'Penales';
 $estado['8'] = 'Fin del Partido';?>
-<!--Tabla de posiciones-->
-
-
+<!--Titulo-->
 <div class="col-md-12 separador20-xs margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
@@ -18,18 +16,13 @@ $estado['8'] = 'Fin del Partido';?>
         </h4>
     </div>
 </div>
-
+<!--El marcador-->
 <div class="panel-group separador20" id="accordion" role="tablist" aria-multiselectable="true">
     <?php
-    $i = 1;
-    foreach ($teamsFecha as $key => $teams) {
-
+    foreach ($teamsFecha as $teams) {
         ?>
-        <div class="col-md-12  fondoazul  separador20">
-            <a id="<?= $key ?>"></a><h4 class="contenidos">Fecha <?= $key ?></h4>
-        </div>
         <?php
-        foreach ($teams as $key => $team) {
+        foreach ($teams as $team) {
             if ($teams_pics['shield'][$team->hid] == "") $teams_pics['shield'][$team->hid] = "imagenes/teams/shield/default.png";
             ?>
             <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix">
@@ -68,22 +61,11 @@ $estado['8'] = 'Fin del Partido';?>
                              src="<?= base_url($teams_pics['shield'][$team->aid]); ?>">
                     </div>
                 </a>
-
-
             </div>
-
-
-
         <?php
         }
         ?>
-
-
-
     <?php
     }
     ?>
-
 </div>
-</div>
-

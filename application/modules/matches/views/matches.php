@@ -17,20 +17,21 @@ $estado['8'] = 'Fin del Partido';?>
             <? echo $title; ?>
         </h4>
     </div>
-    <div class="hidden-xs"
-    <?php foreach ($teamsFecha as $key => $teams) {
-        $totalTeams = count($teamsFecha);
-        ?>
-        <a class="sidebarlink" href="#<?= $key ?>">
-            <div class="fondogris borde separador20 text-center texto-gris miniletra"
-                 style="width: <?= 100 / $totalTeams ?>%; float: left">
-                Fecha<br>
+    <div class="hidden-xs">
+        <?php foreach ($teamsFecha as $key => $teams) {
+            $totalTeams = count($teamsFecha);
+            ?>
+            <a class="sidebarlink" href="#<?= $key ?>">
+                <div class="fondogris borde separador20 text-center texto-gris miniletra"
+                     style="width: <?= 100 / $totalTeams ?>%; float: left">
+                    Fecha<br>
 
-                <div style="font-size: 13px"><?= $key ?></div>
-            </div>
+                    <div style="font-size: 13px"><?= $key ?></div>
+                </div>
 
-        </a>
-    <?php } ?>
+            </a>
+        <?php } ?>
+    </div>
 </div>
 
 <div class="panel-group separador20" id="accordion" role="tablist" aria-multiselectable="true">
@@ -70,7 +71,7 @@ $estado['8'] = 'Fin del Partido';?>
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
-                                <?= $estado[$team->state] ?>
+                            <?= $estado[$team->state] ?>
                         </div>
                         <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
                             <?php setlocale(LC_ALL, "es_ES");
@@ -82,22 +83,12 @@ $estado['8'] = 'Fin del Partido';?>
                              src="<?= base_url($teams_pics['shield'][$team->aid]); ?>">
                     </div>
                 </a>
-
-
-            </div>
-
-
-
+             </div>
         <?php
         }
         ?>
-
-
-
     <?php
     }
     ?>
-
-</div>
 </div>
 

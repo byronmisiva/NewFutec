@@ -315,6 +315,7 @@ class Site extends MY_Controller
         $match = $this->matches->getMatch($id);
         $title = $this->matches->getMatchName($id);
 
+
         $this->singleConten($title, $match);
     }
 
