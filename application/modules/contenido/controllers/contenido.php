@@ -27,9 +27,9 @@ class Contenido extends MY_Controller
 
 //
 
-        $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 1);
-        $data['serieb'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_B, 1);
-        $data['seleccion'] = $this->mdl_noticias->get_by_position(1, SECTION_SELECCION, 1);
+        $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 2);
+        $data['serieb'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_B, 2);
+        $data['seleccion'] = $this->mdl_noticias->get_by_position(1, SECTION_SELECCION, 2);
 
         /*  $teams=array();
           foreach($positions as $key=>$pos){

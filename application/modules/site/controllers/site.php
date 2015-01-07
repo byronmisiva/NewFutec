@@ -149,17 +149,17 @@ class Site extends MY_Controller
 
     public function seriea()
     {
-        $this->seccion(SECTION_SERIE_A, 1, "Serie A", "seriea");
+        $this->seccion(SECTION_SERIE_A, 2, "Serie A", "seriea");
     }
 
     public function serieb()
     {
-        $this->seccion(SECTION_SERIE_B, 1, "Serie B", "serieb");
+        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb");
     }
 
     public function seleccion()
     {
-        $this->seccion(SECTION_SELECCION, 1, "Selección", "seleccion");
+        $this->seccion(SECTION_SELECCION, 2, "Selección", "seleccion");
     }
 
     public function lavoz()
