@@ -17,20 +17,6 @@ $estado['8'] = 'Fin del Partido';?>
             <? echo $title; ?>
         </h4>
     </div>
-    <div class="hidden-xs"
-    <?php foreach ($teamsFecha as $key => $teams) {
-        $totalTeams = count($teamsFecha);
-        ?>
-        <a class="sidebarlink" href="#<?= $key ?>">
-            <div class="fondogris borde separador20 text-center texto-gris miniletra"
-                 style="width: <?= 100 / $totalTeams ?>%; float: left">
-                Fecha<br>
-
-                <div style="font-size: 13px"><?= $key ?></div>
-            </div>
-
-        </a>
-    <?php } ?>
 </div>
 
 <div class="panel-group separador20" id="accordion" role="tablist" aria-multiselectable="true">
