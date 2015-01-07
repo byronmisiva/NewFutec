@@ -311,12 +311,11 @@ class Site extends MY_Controller
     {
         $this->load->module('matches');
         $id = $this->uri->segment(4);
-        $id = 49;
+
         $match = $this->matches->getMatch($id);
-        $name = $this->matches->getMath($id)->row();
-        $title = $name->name;
-        $fechas = $this->matches->matches($id, $title);
-        $this->singleConten($title, $fechas);
+        $title = $this->matches->getMatchName($id);
+
+        $this->singleConten($title, $match);
     }
 
 

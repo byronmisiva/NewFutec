@@ -70,7 +70,7 @@ $estado['8'] = 'Fin del Partido';?>
                             </div>
                         </div>
                         <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
-                                <?= $estado[$team->state] ?>
+                            <?= $estado[$team->state] ?>
                         </div>
                         <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
                             <?php setlocale(LC_ALL, "es_ES");

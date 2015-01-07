@@ -23,7 +23,7 @@ class Mdl_matches extends MY_Model
 
     function matches_all($championship){
     // Todo el calendario
-        $query=$this->db->query('Select m.*, DATE_FORMAT(m.date_match, "%W %M %Y  %H:%i") as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
+        $query=$this->db->query('Select m.*, m.date_match as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
 								 From matches as m, groups as g, rounds as r, championships as c, schedules as s, matches_teams as mt, stadia as st, teams as t, teams as t1
 								 Where mt.match_id=m.id AND mt.team_id_home=t.id AND mt.team_id_away=t1.id AND m.schedule_id IN (SELECT sch.id
 																	    														 FROM   (SELECT round_id, s.position as p

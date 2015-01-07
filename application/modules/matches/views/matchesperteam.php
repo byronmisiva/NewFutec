@@ -48,7 +48,8 @@ $estado['8'] = 'Fin del Partido';?>
                                     <?= $estado[$team->state] ?>
                                 </div>
                                 <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
-                                    <?= $team->dm ?>
+                                    <?php setlocale(LC_ALL, "es_ES");
+                                    echo strftime("%A, %d %B %Y %H:%M", strtotime($team->dm)); ?>
                                 </div>
                             </div>
                             <div class="col-md-2 col-xs-1 text-center margen0">

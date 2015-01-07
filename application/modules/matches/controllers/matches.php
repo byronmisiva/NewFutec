@@ -15,6 +15,38 @@ class Matches extends MY_Controller
         return $this->db->get('championships');
     }
 
+
+    public function getMatchName($id)
+    {
+        //recuperamos id equipos del partido
+        $this->db->where('match_id', $id);
+        $query = $this->db->get('matches_teams');
+        $match = $query->result();
+        $team_id_home = $match[0]->team_id_home;
+        $team_id_away = $match[0]->team_id_away;
+        return $this->getTeamName($team_id_home) . "-". $this->getTeamName($team_id_away);
+        //update `fe2008`.`matches_teams` set `team_id_home`='121', `team_id_away`='31' where `id`='1'
+
+    }
+
+    public function getTeamName($id)
+    {
+        //recuperamos id equipos del partido
+        $this->db->where('id', $id);
+        $query = $this->db->get('teams');
+        $match = $query->result();
+        return $match[0]->name;
+
+    }
+
+    public function getMatch($id)
+    {
+        $data['title'] = "Marcador en Vivo";
+        $id = 49;
+        $data['teamsFecha'] = $this->mdl_matches->matches_all($id);
+        $data['teams_pics'] = $this->mdl_matches->get_pics_teams($id);
+        return $this->load->view('matchdetail', $data, true);
+    }
     public function matches($idSerie, $title)
     {
         $data['title'] = $title;
@@ -31,12 +63,6 @@ class Matches extends MY_Controller
         return $this->load->view('matchesperteam', $data, true);
     }
 
-    public function match ($idSerie, $title)
-    {
-        $data['title'] = $title;
-        $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);
-        $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
-        return $this->load->view('matches', $data, true);
-    }
+
 }
 
