@@ -243,7 +243,7 @@ class Contenido extends MY_Controller
         $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS, "zonafe");
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
 
 
         return $this->load->view('sidebar', $data, TRUE);
@@ -313,7 +313,7 @@ class Contenido extends MY_Controller
         $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona Fe", ZONAFE, ZONAFEPOS, "zonafe");
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
 
 
         return $this->load->view('sidebaropennews', $data, TRUE);

@@ -47,8 +47,6 @@ class Matches extends MY_Controller
         $idSerie  = $this->getSerie($id);
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
 
-        $data['teamsFecha']['local'] = "d1";
-        $data['teamsFecha']['visita'] = "d2";
 
 
         return $this->load->view('matchdetail', $data, true);

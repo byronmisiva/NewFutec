@@ -144,7 +144,7 @@ class Site extends MY_Controller
 
     public function zonafe()
     {
-        $this->seccion(ZONAFE, ZONAFEPOS, "Zona Fe", "zonafe");
+        $this->seccion(ZONAFE, ZONAFEPOS, "Zona FE", "zonafe");
     }
 
     public function seriea()

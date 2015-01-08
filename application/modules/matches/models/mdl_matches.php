@@ -34,7 +34,11 @@ class Mdl_matches extends MY_Model
         // separamos por fechas
         $fechaSub = "";
         foreach($query->result() as $row):
-            $teams[$row->sn][]=$row;
+            $id = $row->sn;
+            $teams[$id][]=$row;
+            $teams[$id][0]  = "ho";
+
+
         endforeach;
         return $teams;
     }
