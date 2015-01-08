@@ -41,13 +41,36 @@ class Matches extends MY_Controller
 
     public function getMatch($id)
     {
+        $this->output->cache(CACHE_PARTIDOS);
+
         $data['title'] = "Marcador en Vivo";
         $data['teamsFecha'] = $this->mdl_matches->matches_id($id);
-        // arreglar esta funcion
+
+        $equipos = $this->mdl_matches->get_match_teams ($id);
+        //todo  arreglar esta funcion
         $idSerie  = $this->getSerie($id);
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
 
+        $data['infoLocal']= $this->mdl_matches->get_info_team($equipos[0]->team_id_home);
+        $data['infoVisitante']= $this->mdl_matches->get_info_team($equipos[0]->team_id_away);
 
+        $data['golesLocal']= $this->mdl_matches->get_goals_team($id, $equipos[0]->team_id_home);
+        $data['golesVisitante']= $this->mdl_matches->get_goals_team($id, $equipos[0]->team_id_away);
+
+        $data['estrategiaLocal']= $this->mdl_matches->get_estrategia_team($id, $equipos[0]->team_id_home);
+        $data['estrategiaVisitante']= $this->mdl_matches->get_estrategia_team($id, $equipos[0]->team_id_away);
+
+        $data['titularesLocal']= $this->mdl_matches->get_titulares_team($id, $equipos[0]->team_id_home);
+        $data['titularesVisitante']= $this->mdl_matches->get_titulares_team($id, $equipos[0]->team_id_away);
+
+
+//        $data['jugadoresLocal']= $this->mdl_matches->get_players_team($equipos[0]->team_id_home);
+//        $data['jugadoresVisitante']= $this->mdl_matches->get_players_team($equipos[0]->team_id_away);
+//
+        $data['comentarios']= $this->mdl_matches->get_info_team($id);
+
+        //todo se debe poner con la fecha
+//        $data['otrospartidos']= $this->mdl_matches->get_info_team($id);
 
         return $this->load->view('matchdetail', $data, true);
     }

@@ -69,3 +69,167 @@ $estado['8'] = 'Fin del Partido';?>
     }
     ?>
 </div>
+
+<div class="col-md-6 separador20-xs  margen5r ">
+    <div class="col-md-12     clearfix borde">
+        <div class="col-md-6    margen0">
+            <img class="img-responsive" src="<?php echo base_url($infoLocal->shirt) ?>"
+                 alt="<?php echo $infoLocal->name ?>">
+        </div>
+        <div class="col-md-6   col-xs-6 margen0">
+            <div class="col-md-12 col-xs-12 text-right separador20 nombre-equipo margen5l">
+                Director Técnico
+            </div>
+            <div class="col-md-12 col-xs-12 text-right  margen5l">
+                <?php echo $infoLocal->couch ?>
+            </div>
+            <div class="col-md-12 col-xs-12 text-right separador20 nombre-equipo margen5l">
+                Estrategia
+            </div>
+            <div class="col-md-12 col-xs-12 text-right  margen5l">
+                <?php echo $estrategiaLocal ?>
+            </div>
+            <div class="col-md-12 col-xs-12 text-right separador20 nombre-equipo margen5l  text-visitante">
+                <div class="text-right   bottom">
+                    Local
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="col-md-6 separador20-xs  margen5l ">
+    <div class="col-md-12     clearfix borde">
+        <div class="col-md-6   col-xs-6 margen0">
+            <div class="col-md-12 col-xs-12 text-left separador20 nombre-equipo margen5l">
+                Director Técnico
+            </div>
+            <div class="col-md-12 col-xs-12 text-left  margen5l">
+                <?php echo $infoVisitante->couch ?>
+            </div>
+            <div class="col-md-12 col-xs-12 text-left separador20 nombre-equipo margen5l">
+                Estrategia
+            </div>
+            <div class="col-md-12 col-xs-12 text-left  margen5l">
+                <?php echo $estrategiaVisitante ?>
+            </div>
+            <div class="col-md-12 col-xs-12 text-left separador20 nombre-equipo margen5l  text-visitante">
+                <div class="  bottom">
+                    Visitante
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6    margen0">
+            <img class="img-responsive" src="<?php echo base_url($infoVisitante->shirt) ?>"
+                 alt="<?php echo $infoVisitante->name ?>">
+        </div>
+    </div>
+</div>
+
+<!--GOLES-->
+<div class="col-md-12 separador10-xs   clearfix">
+    <div class="col-md-6  margen0l">
+        <div class="col-md-12    margen0">
+            <div class="panel-heading backcuadros">
+                <h4 class="panel-title">
+                    Goles
+                </h4>
+            </div>
+        </div>
+        <!--El marcador-->
+        <div class="col-md-12   margen0      clearfix">
+            <?php
+            if (count($golesLocal) > 0) {
+                foreach ($golesLocal as $golLocal) {
+                    ?>
+                    <div
+                        class="col-md-12 separador5   lineseparador-dot"> <?php echo $golLocal->first_name . " " . $golLocal->last_name . " - " . $golLocal->minute . "'"; ?></div>
+                <?php
+                }
+            }
+            ?>
+        </div>
+    </div>
+
+    <div class="col-md-6    margen0r">
+        <div class="col-md-12    margen0">
+            <div class="panel-heading backcuadros">
+                <h4 class="panel-title">
+                    Goles
+                </h4>
+            </div>
+        </div>
+        <!--El marcador-->
+        <div class="panel-group  " id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="col-md-12   margen0   clearfix">
+                <?php
+                if (count($golesVisitante) > 0) {
+                    foreach ($golesVisitante as $golVisitante) {
+                        ?>
+                        <div
+                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $golVisitante->first_name . " " . $golVisitante->last_name . " - " . $golVisitante->minute . "'"; ?></div>
+                    <?php
+                    }
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Titulares-->
+<div class="col-md-12 separador10-xs   clearfix">
+    <div class="col-md-6  margen0l">
+        <div class="col-md-12    margen0">
+            <div class="panel-heading backcuadros">
+                <h4 class="panel-title">
+                    Titulares
+                </h4>
+            </div>
+        </div>
+        <!--El marcador-->
+        <div class="col-md-12   margen0      clearfix">
+            <?php
+            if (count($titularesLocal) > 0) {
+                foreach ($titularesLocal as $titular) {
+                    if ($player->status == 1 || $player->status == 3) {
+                        ?>
+                        <div
+                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->first_name . " " . $titular->last_name; ?></div>
+                    <?php
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
+
+    <div class="col-md-6    margen0r">
+        <div class="col-md-12    margen0">
+            <div class="panel-heading backcuadros">
+                <h4 class="panel-title">
+                    Titulares
+                </h4>
+            </div>
+        </div>
+        <!--El marcador-->
+        <div class="panel-group  " id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="col-md-12   margen0   clearfix">
+                <?php
+                if (count($titularesVisitante) > 0) {
+                    foreach ($titularesVisitante as $titular) {
+                        if ($player->status == 1 || $player->status == 3) {
+                        ?>
+                        <div
+                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->first_name . " " . $titular->last_name; ?></div>
+                    <?php
+                    }
+                    }
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+</div>

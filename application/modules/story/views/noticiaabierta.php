@@ -1,5 +1,5 @@
 <?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id; ?>
-<div class="row clearfix news-open separador10respon noticiaabierta">
+<div class="row clearfix news-open separador10-xs noticiaabierta">
     <div class="col-md-12 separador10">
         <div class="col-md-7 margen10r">
             <div class="row">

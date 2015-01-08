@@ -21,68 +21,123 @@ class Mdl_matches extends MY_Model
         parent::__construct();
     }
 
-    function matches_id($id){
+    function matches_id($id)
+    {
         // Todo el calendario
-        $query=$this->db->query('Select m.*, m.date_match as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
+        $query = $this->db->query('Select m.*, m.date_match as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
 								 From matches as m, groups as g, rounds as r, championships as c, schedules as s, matches_teams as mt, stadia as st, teams as t, teams as t1
-								 Where mt.match_id=m.id AND mt.team_id_home=t.id AND mt.team_id_away=t1.id AND m.id = ' . $id.'
+								 Where mt.match_id=m.id AND mt.team_id_home=t.id AND mt.team_id_away=t1.id AND m.id = ' . $id . '
 									   AND m.group_id=g.id AND g.round_id=r.id AND r.championship_id=c.id AND c.active_round=r.id AND st.id=m.stadia_id AND m.schedule_id = s.id
 								 Order by cn asc, sp desc, dm asc, gn asc');
-        if($query->num_rows()==0)
+        if ($query->num_rows() == 0)
             return NULL;
-        $teams=array();
+        $teams = array();
         // separamos por fechas
         $fechaSub = "";
-        foreach($query->result() as $row):
-            $teams[$row->sn][]=$row;
+        foreach ($query->result() as $row):
+            $teams[$row->sn][] = $row;
         endforeach;
         return $teams;
     }
 
-    function matches_all($championship){
-    // Todo el calendario
-        $query=$this->db->query('Select m.*, m.date_match as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
+    function matches_all($championship)
+    {
+        // Todo el calendario
+        $query = $this->db->query('Select m.*, m.date_match as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
 								 From matches as m, groups as g, rounds as r, championships as c, schedules as s, matches_teams as mt, stadia as st, teams as t, teams as t1
 								 Where mt.match_id=m.id AND mt.team_id_home=t.id AND mt.team_id_away=t1.id AND m.schedule_id IN (SELECT sch.id
 																	    														 FROM   (SELECT round_id, s.position as p
 																																									FROM schedules AS s, championships AS ch
-																																									WHERE s.round_id = ch.active_round AND ch.id='.$championship.'
+																																									WHERE s.round_id = ch.active_round AND ch.id=' . $championship . '
 																																									ORDER BY p DESC) as s, schedules as sch
 																																 WHERE s.p=sch.position AND s.round_id=sch.round_id)
 									   AND m.group_id=g.id AND g.round_id=r.id AND r.championship_id=c.id AND c.active_round=r.id AND st.id=m.stadia_id AND m.schedule_id = s.id
 								 Order by cn asc, sp desc, dm asc, gn asc');
-        if($query->num_rows()==0)
+        if ($query->num_rows() == 0)
             return NULL;
-        $teams=array();
+        $teams = array();
         // separamos por fechas
         $fechaSub = "";
-        foreach($query->result() as $row):
-                $teams[$row->sn][]=$row;
+        foreach ($query->result() as $row):
+            $teams[$row->sn][] = $row;
         endforeach;
         return $teams;
     }
 
-    function get_pics_teams($id){
-        $query=$this->db->query('Select t.id,t.shield, t.shield2
+    function get_pics_teams($id)
+    {
+        $query = $this->db->query('Select  t.id,t.shield, t.shield2
     					  		 From championships as c, teams  as t, championships_teams as ct, images as i
-    					  		 Where c.id='.$id.'
+    					  		 Where c.id=' . $id . '
     					  		   And c.id=ct.championship_id
     					  		   And t.id=ct.team_id');
 
-        if($query->num_rows()==0)
+        if ($query->num_rows() == 0)
             return NULL;
 
-        $teams='';
+        $teams = '';
 
-        foreach($query->result() as $row):
-            $teams['shield'][$row->id]=$row->shield;
-            $teams['shield2'][$row->id]=$row->shield2;
+        foreach ($query->result() as $row):
+            $teams['shield'][$row->id] = $row->shield;
+            $teams['shield2'][$row->id] = $row->shield2;
         endforeach;
 
         return $teams;
     }
 
+    function get_match_teams($id)
+    {
+        $query = $this->db->query("select * from matches_teams where match_id  = $id;");
+        if ($query->num_rows() == 0)
+            return NULL;
+        return $query->result();
+    }
 
+    function get_info_team($id)
+    {
+        $query = $this->db->query("select * from teams where id  = $id;");
+        if ($query->num_rows() == 0)
+            return NULL;
+        $result = $query->result();
+        return $result[0];
+    }
+
+    function get_goals_team($match_id, $team_id)
+    {
+        $query = $this->db->query("SELECT
+                                        players.first_name,
+                                        players.last_name,
+	                                      goals.minute
+                                    FROM goals INNER JOIN players ON goals.player_id = players.id where match_id = $match_id and team_id = $team_id;");
+        if ($query->num_rows() == 0)
+            return NULL;
+        $result = $query->result();
+        return $result;
+    }
+    function get_estrategia_team($match_id, $team_id)
+    {
+        $query = $this->db->query("SELECT CONCAT( SUM(IF(position='Defensa',1,0)), '-', SUM(IF(position='Volante',1,0)) ,'-', SUM(IF(position='Delantero',1,0)) ) as res
+								   FROM lineups
+								   WHERE match_id=$match_id and team_id=$team_id and (status=1 OR status=2)");
+        if ($query->num_rows() == 0)
+            return NULL;
+        $result = $query->result();
+        return $result[0]->res;
+    }
+
+    function get_titulares_team($match_id, $team_id)
+    {
+        $query=$this->db->query("SELECT p.first_name, p.last_name, p.nick, l.position, l.status, l.match_id, p.id, l.status %2 AS s,
+										   if(l.position='Arquero',1,if(l.position='Defensa',2,if(l.position='Volante',3,4))) as pos
+								    FROM players AS p, lineups AS l
+								    WHERE p.id = l.player_id AND l.match_id =$match_id  AND l.team_id=$team_id
+								    ORDER BY s DESC , pos ASC, p.last_name ASC, p.first_name ASC");
+
+        if ($query->num_rows() == 0)
+            return NULL;
+        $result = $query->result();
+        return $result;
+    }
 
     //todo las siguientes funciones no se si usan
 

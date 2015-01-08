@@ -160,7 +160,7 @@ footer {
 .separador10 {
     margin-top: 10px;
 }
-.separador10respon {
+.separador10-xs {
     margin-top: 10px;
 }
 .separador10r {
@@ -931,6 +931,16 @@ h4.contenidos {
     background: rgba(174, 174, 174, 0.9);
 }
 
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+.text-visitante {
+    height: 65px;
+}
+
 @media (max-width: 767px) {
     .container{
          width: 100%;
@@ -949,7 +959,7 @@ h4.contenidos {
         padding-left: 0;
     }
 
-    .separador10respon {
+    .separador10-xs {
         margin-top: 65px;
         margin-left: -10px;
         margin-right: 0;
