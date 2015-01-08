@@ -114,6 +114,7 @@ class Mdl_matches extends MY_Model
         $result = $query->result();
         return $result;
     }
+
     function get_estrategia_team($match_id, $team_id)
     {
         $query = $this->db->query("SELECT CONCAT( SUM(IF(position='Defensa',1,0)), '-', SUM(IF(position='Volante',1,0)) ,'-', SUM(IF(position='Delantero',1,0)) ) as res
@@ -127,7 +128,7 @@ class Mdl_matches extends MY_Model
 
     function get_titulares_team($match_id, $team_id)
     {
-        $query=$this->db->query("SELECT p.first_name, p.last_name, p.nick, l.position, l.status, l.match_id, p.id, l.status %2 AS s,
+        $query = $this->db->query("SELECT p.first_name, p.last_name, p.nick, l.position, l.status, l.match_id, p.id, l.status %2 AS s,
 										   if(l.position='Arquero',1,if(l.position='Defensa',2,if(l.position='Volante',3,4))) as pos
 								    FROM players AS p, lineups AS l
 								    WHERE p.id = l.player_id AND l.match_id =$match_id  AND l.team_id=$team_id
@@ -137,6 +138,44 @@ class Mdl_matches extends MY_Model
             return NULL;
         $result = $query->result();
         return $result;
+    }
+
+    function get_actions_team($match_id)
+    {
+        $tipo['cambio'] = base_url() . 'imagenes/icons/mccambio.png';
+        $tipo['falta'] = base_url() . 'imagenes/icons/mcfalta.png';
+        $tipo['gol'] = base_url() . 'imagenes/icons/mcgol.png';
+        $tipo['penal'] = base_url() . 'imagenes/icons/mcpenal.png';
+        $tipo['pitazo'] = base_url() . 'imagenes/icons/mcpitazo.png';
+        $tipo['tarjeta'] = base_url() . 'imagenes/icons/mctarjeta.png';
+
+        $query = $this->db->query("Select match_time, type, text
+									  From actions
+									  Where match_id= $match_id
+									  Order by match_time DESC");
+
+
+        if ($query->num_rows() == 0)
+            return NULL;
+        $resultado = array();
+        foreach ($query->result() as $row) {
+            if ($row->type == 'cambio' || $row->type == 'falta' || $row->type == 'gol' || $row->type == 'penal' || $row->type == 'pitazo' || $row->type == 'tarjeta')
+                $type = $tipo[$row->type];
+            else
+                $type = base_url() . 'imagenes/icons/arbitro.png';
+            if ($row->match_time != 200)
+                $min = $row->match_time;
+            else
+                $min = "--";
+
+            array_push($resultado,   array(
+                'minuto' => $min,
+                'tipo' => $type,
+                'texto' => $row->text));
+        }
+
+
+        return $resultado;
     }
 
     //todo las siguientes funciones no se si usan

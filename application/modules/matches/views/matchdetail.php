@@ -194,10 +194,10 @@ $estado['8'] = 'Fin del Partido';?>
             <?php
             if (count($titularesLocal) > 0) {
                 foreach ($titularesLocal as $titular) {
-                    if ($player->status == 1 || $player->status == 3) {
+                    if ($titular->status == 1 || $titular->status == 3) {
                         ?>
                         <div
-                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->first_name . " " . $titular->last_name; ?></div>
+                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
                     <?php
                     }
                 }
@@ -220,16 +220,130 @@ $estado['8'] = 'Fin del Partido';?>
                 <?php
                 if (count($titularesVisitante) > 0) {
                     foreach ($titularesVisitante as $titular) {
-                        if ($player->status == 1 || $player->status == 3) {
-                        ?>
-                        <div
-                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->first_name . " " . $titular->last_name; ?></div>
-                    <?php
-                    }
+                        if ($titular->status == 1 || $titular->status == 3) {
+                            ?>
+                            <div
+                                class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
+                        <?php
+                        }
                     }
                 }
                 ?>
             </div>
         </div>
+    </div>
+</div>
+<!--Suplentes -->
+<div class="col-md-12 separador10-xs   clearfix">
+    <div class="col-md-6  margen0l">
+        <div class="col-md-12    margen0">
+            <div class="panel-heading backcuadros">
+                <h4 class="panel-title">
+                    Suplentes
+                </h4>
+            </div>
+        </div>
+        <!--El marcador-->
+        <div class="col-md-12   margen0      clearfix">
+            <?php
+            if (count($titularesLocal) > 0) {
+                foreach ($titularesLocal as $titular) {
+                    if (!($titular->status == 1 || $titular->status == 3)) {
+                        ?>
+                        <div
+                            class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
+                    <?php
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
+
+    <div class="col-md-6    margen0r">
+        <div class="col-md-12    margen0">
+            <div class="panel-heading backcuadros">
+                <h4 class="panel-title">
+                    Suplentes
+                </h4>
+            </div>
+        </div>
+        <!--El marcador-->
+        <div class="panel-group  " id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="col-md-12   margen0   clearfix">
+                <?php
+                if (count($titularesVisitante) > 0) {
+                    foreach ($titularesVisitante as $titular) {
+                        if (!($titular->status == 1 || $titular->status == 3)) {
+                            ?>
+                            <div
+                                class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
+                        <?php
+                        }
+                    }
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!--actions -->
+<div class="col-md-12  separador10-xs margen0l">
+    <div class="col-md-12    margen0">
+        <div class="panel-heading backcuadros">
+            <h4 class="panel-title">
+                Comentarios
+            </h4>
+        </div>
+    </div>
+    <!--El actions-->
+    <div class="col-md-12   margen0      clearfix">
+        <?php
+        if (count($actions) > 0) {
+            foreach ($actions as $action) {
+                ?>
+                <div class="col-md-12 separador5   lineseparador-dot">
+                    <div class="col-md-2 col-xs-2">
+                        <div class="col-md-6 col-xs-6">
+                            <img src="<?php echo $action['tipo']; ?>">
+                        </div>
+                        <div class="col-md-6 col-xs-6 nombre-equipo">
+                            <?php echo $action['minuto']; echo is_numeric($action['minuto'])? "'":""; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <?php echo $action['texto']; ?>
+                    </div>
+                </div>
+            <?php
+
+            }
+        }
+        ?>
+    </div>
+</div>
+
+<div class="col-md-12 separador10-xs margen0l">
+    <div class="col-md-12    margen0">
+        <div class="panel-heading backcuadros">
+            <h4 class="panel-title">
+                Otros Partidos
+            </h4>
+        </div>
+    </div>
+    <!--El marcador-->
+    <div class="col-md-12   margen0      clearfix">
+        <?php
+        if (count($titularesLocal) > 0) {
+            foreach ($titularesLocal as $titular) {
+                if (!($titular->status == 1 || $titular->status == 3)) {
+                    ?>
+                    <div
+                        class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
+                <?php
+                }
+            }
+        }
+        ?>
     </div>
 </div>
