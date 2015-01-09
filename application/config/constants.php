@@ -40,6 +40,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 //Pagination
 define('RESULT_PAGE', 19);
+define('TOTALNEWSINOPENNEWS',7); //
+
 
 //Secciones
 define('SECTION_PRIN',3);
@@ -96,7 +98,6 @@ define('LOMASLEIDOPOS',1); //
 
 define('NUMNEWSSIDE',5); //
 
-define('TOTALNEWSINOPENNEWS',8); //
 
 
 
