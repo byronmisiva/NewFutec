@@ -34,17 +34,7 @@
     <script type="text/javascript" src="'/cse'/brand'?form='cref_iframe" ></script>
 </div>
 
-<!-- Google CSE Search Box Begins  -->
-<!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
-<!-- The terms of service are available at https://www.google.com/cse/docs/tos.html -->
-<form id="cref_iframe" action="<?= base_url('site/search') ?>">
-    <input type="hidden" name="cref" value="http://www.guha.com/cref_cse.xml" />
-    <input type="hidden" name="cof" value="FORID:9" />
-    <input type="text" name="q" size="40" />
-    <input type="submit" name="sa" value="Search" />
-</form>
-<script type="text/javascript" src="'/cse'/brand'?form='cref_iframe" ></script>
-<!-- Google CSE Search Box Ends -->
+
 
 <div class="col-md-12 separador20  margen0r lateral">
 
