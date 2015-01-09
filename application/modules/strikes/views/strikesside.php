@@ -15,16 +15,23 @@
                 <tr>
                     <?php if ($key + 1 == 1) { ?>
                         <td colspan="3">
-                            <div class="col-md-6 margen0">
+                            <div class="col-md-4 margen0">
                                 <img class="img-responsive"
                                      src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
                             </div>
+                            <div class="col-md-2 margen0 text-center">
+                                <img src="http://www.futbolecuador.com/<?php echo $jugador->thumb_shield; ?>">
+                            </div>
                             <div class="col-md-6 margen0">
-                                <img src="http://www.futbolecuador.com/<?php echo $jugador->shield; ?>">
-                                <?php echo $jugador->last_name . " " . $jugador->first_name; ?><br>
 
-                                <div class="col-md-12 text-center h1">
-                                    <?php echo $jugador->goals ?> Goles
+                                <h2><?php echo $jugador->last_name . " " . $jugador->first_name; ?></h2>
+                                <?php echo $jugador->name ?><br>
+
+                                <div class="col-md-12 margen0">
+                                    <h2><?php echo $jugador->goals ?> Goles</h2>
+                                </div>
+                                <div class="col-md-12 margen0">
+                                    <?php echo $jugador->jugadas ?> jugada, <?php echo $jugador->penals ?> penales
                                 </div>
                             </div>
                         </td>
@@ -32,7 +39,7 @@
                     } else {
                         ?>
                         <td><?php echo $key + 1 ?></td>
-                        <td><?php
+                        <td><img src="http://www.futbolecuador.com/<?php echo $jugador->mini_shield; ?>"> <?php
                             echo $jugador->last_name . " " . $jugador->first_name;
                             ?></td>
                         <td class="text-center"><?php echo $jugador->goals ?> Goles</td>
