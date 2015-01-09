@@ -112,7 +112,10 @@
             <input type="text" placeholder="Correo" name="Correo" class="search2">
         </div>
         <div class="col-md-12 ">
-            <input type="textarea" rows="4" placeholder="Mensaje" name="Mensaje" class="search2">
+            <textarea placeholder="Mensaje" name="Mensaje" class="search3">
+
+            </textarea>
+
         </div>
         <div class="col-md-12  text-right">
             <a href="#" class="newsButton">Enviar</a>
@@ -142,7 +145,9 @@
             <input type="text" placeholder="Correo" name="Correo" class="search2">
         </div>
         <div class="col-md-12 ">
-            <input type="text" placeholder="Mensaje" name="Mensaje" class="search2">
+            <textarea placeholder="Mensaje" name="Mensaje" class="search3">
+
+            </textarea>
         </div>
         <div class="col-md-12  text-right">
             <a href="#" class="newsButton">Enviar</a>
