@@ -104,22 +104,24 @@
         </div>
         <div class="col-md-12 ">
         </div>
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Nombre" name="Nombre" class="search2">
-        </div>
+        <form id="publicidad">
+            <div class="col-md-12 ">
+                <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrepublicidad" class="search2" >
+            </div>
 
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Correo" name="Correo" class="search2">
-        </div>
-        <div class="col-md-12 ">
-            <textarea placeholder="Mensaje" name="Mensaje" class="search3">
+            <div class="col-md-12 ">
+                <input type="text" placeholder="Correo" name="CorreoContacto" id="correopublicidad" class="search2">
+            </div>
+            <div class="col-md-12 ">
+                <textarea placeholder="Mensaje" name="MensajeContacto" id="mensajepublicidad" class="search3"></textarea>
+            </div>
+            <div class="col-md-8  text-left" id="publicidadmensaje">
 
-            </textarea>
-
-        </div>
-        <div class="col-md-12  text-right">
-            <a href="#" class="newsButton">Enviar</a>
-        </div>
+            </div>
+            <div class="col-md-4  text-center">
+                <a href="#" class="newsButton" id="enviarpublicidad">Enviar</a>
+            </div>
+        </form>
     </div>
 
     <div class="col-md-3">
@@ -137,20 +139,23 @@
         </div>
         <div class="col-md-12 ">
         </div>
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Nombre" name="Nombre" class="search2">
-        </div>
+        <form id="contacto">
+            <div class="col-md-12 ">
+                <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrecontacto" class="search2" >
+            </div>
 
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Correo" name="Correo" class="search2">
-        </div>
-        <div class="col-md-12 ">
-            <textarea placeholder="Mensaje" name="Mensaje" class="search3">
+            <div class="col-md-12 ">
+                <input type="text" placeholder="Correo" name="CorreoContacto" id="correocontacto" class="search2">
+            </div>
+            <div class="col-md-12 ">
+                <textarea placeholder="Mensaje" name="MensajeContacto" id="mensajecontacto" class="search3"></textarea>
+            </div>
+            <div class="col-md-8  text-left" id="contactomensaje">
 
-            </textarea>
-        </div>
-        <div class="col-md-12  text-right">
-            <a href="#" class="newsButton">Enviar</a>
-        </div>
+            </div>
+            <div class="col-md-4  text-center">
+                <a href="#" class="newsButton" id="enviarcontacto">Enviar</a>
+            </div>
+        </form>
     </div>
 </div>

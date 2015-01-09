@@ -78,8 +78,8 @@
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61945033" vertical-offset="1537" max-vertical-offset="2040">
-              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.42917547" vertical-offset="1177" max-vertical-offset="2115">
+              <caret line="118" column="17" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
               <folding>
                 <element signature="tag#div#2;tag#div#0" expanded="false" />
               </folding>
@@ -90,8 +90,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10933" max-vertical-offset="17070">
-              <caret line="748" column="21" selection-start-line="748" selection-start-column="21" selection-end-line="748" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="12000" max-vertical-offset="17070">
+              <caret line="818" column="19" selection-start-line="818" selection-start-column="19" selection-end-line="818" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -246,7 +246,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
+    <option name="x" value="142" />
     <option name="y" value="23" />
     <option name="width" value="1324" />
     <option name="height" value="966" />
@@ -2032,7 +2032,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420835944953</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary="incluye tabla de revista">
+      <created>1420837712272</created>
+      <option name="number" value="00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1420837712272</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2056,7 +2062,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="23" width="1324" height="966" extended-state="0" />
+    <frame x="142" y="23" width="1324" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2539,16 +2545,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10933" max-vertical-offset="17070">
-          <caret line="748" column="21" selection-start-line="748" selection-start-column="21" selection-end-line="748" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="12000" max-vertical-offset="17070">
+          <caret line="818" column="19" selection-start-line="818" selection-start-column="19" selection-end-line="818" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61945033" vertical-offset="1537" max-vertical-offset="2040">
-          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.42917547" vertical-offset="1177" max-vertical-offset="2115">
+          <caret line="118" column="17" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
           <folding>
             <element signature="tag#div#2;tag#div#0" expanded="false" />
           </folding>
