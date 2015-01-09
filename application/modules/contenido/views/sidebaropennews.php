@@ -30,7 +30,13 @@
 
 
 <div class="col-md-6 separador10 pull-right margen0">
-    <input class="search" type="text" name="firstname" placeholder="Buscar...">
+    <form action="<?= base_url('site/search') ?>" id="searchbox_003647730963788853882:cfsv-n7w47w">
+        <input type="hidden" name="cx" value="003647730963788853882:cfsv-n7w47w">
+        <input type="hidden" name="cof" value="FORID:11">
+        <input class="search" type="text" name="q" placeholder="Buscar...">
+        <input  class="hide" type="submit" name="sa" value="Search" />
+    </form>
+    <script type="text/javascript" src="'/cse'/brand'?form='cref_iframe" ></script>
 </div>
 
 <!--Lo más leido-->
