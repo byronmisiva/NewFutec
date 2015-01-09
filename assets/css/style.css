@@ -730,7 +730,7 @@ input.search[type=text]
     font-size: 12px;
 }
 
-input.search2[type=text]
+input.search2[type=text], input.search2[type=textarea]
 {
     height: 28px;
     padding-left: 25px;
