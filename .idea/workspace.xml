@@ -5,11 +5,204 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" afterPath="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" afterPath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" afterPath="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/abajo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/accept.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/accion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/accion_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/alineacion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/alineacion_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/aprobado.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/arbitro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/arbitro_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/arr2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/arriba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/arrow_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/arrow_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/banners.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/banners_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/barra_galleries.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/borrar1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/borrar2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/calendario.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/calendario_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/calendario_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/calendario_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cambio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cambio_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/campeonato.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/campeonato_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cancha_pelota.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cancha_porcentaje.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cerrar1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cerrar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/clock_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/clock_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/coments.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/coments_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/coments_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/coments_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cortar1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cortar2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/cross.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/door.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/door_in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/door_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/door_out.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/empty.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/encabezados.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/encabezados_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/encuesta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/encuesta_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/encuestasecciones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/encuestasecciones_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/entra.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/equipo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/equipo_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/equiposxcampeonato.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/equiposxcampeonato_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/estadio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/estadio_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/flecha.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/flecha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/flecha_abajo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/flecha_arriba.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/folder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/folder_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/folder_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/folder_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/fondo_user.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/gol.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/gol2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/gol_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/group.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/group_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/group_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/group_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/grupoequipo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/grupoequipo_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/historiaequipo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/historiaequipo_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/house.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_delicious.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_delicious2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_delicious2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_digg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_digg2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_digg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_email_link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_email_link2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_facebook.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_facebook2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_facebook2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_google.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_google2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_imprimir.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_imprimir2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_meneame.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_meneame2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_meneame2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_mister_wong.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_mister_wong2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_mister_wong2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_technorati.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_technorati2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_twitter2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_yahoo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_yahoo2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ico_yahoo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/icono_user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/igual.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/images.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/information.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/iso_azul.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/iso_credife.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/iso_naranja.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/iso_rojo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/isotipo_plomo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/jugador.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/jugador_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/jugadoresxequipo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/jugadoresxequipo_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/key.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/llega.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock_break.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/lock_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mccambio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mcfalta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mcgol.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mcpenal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mcpitazo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mctarjeta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/medio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/medio_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mediosecciones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/mediosecciones_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/modulo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/modulo_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/modulossecciones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/modulossecciones_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/news.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/news_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/news_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/news_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/opcion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/opcion_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/partido.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/partido_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/pencil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/perfiljugador.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/perfiljugador_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/por_aprobar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/rechazado.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/resource.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/resource_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/resource_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/resource_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ronda.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/ronda_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/sale.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/se_va.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/seccion.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/seccion_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/send.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/soccer16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/soccer32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/soccer48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/soccer64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/statistics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/tarjeta.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/tarjeta_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/tarjeta_amarilla.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/tarjeta_amarilla2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/tarjeta_roja.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/tarjeta_roja2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/thome1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/thome2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/thumb1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/thumb2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/titulo_credife_ct.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/titulo_credife_ct1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/titulo_credife_lt.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/titulo_credife_lt1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/triangulo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/triangulo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/twitter_completo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/user.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/user_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/user_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/icons/user_edit.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -49,8 +242,8 @@
       <file leaf-file-name="matches.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.9166665" vertical-offset="743" max-vertical-offset="1635">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.9166665" vertical-offset="833" max-vertical-offset="1695">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,22 +252,23 @@
       <file leaf-file-name="mdl_matches.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5897436" vertical-offset="1946" max-vertical-offset="5220">
-              <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.3461537" vertical-offset="1803" max-vertical-offset="5805">
+              <caret line="148" column="64" selection-start-line="148" selection-start-column="64" selection-end-line="148" selection-end-column="64" />
               <folding>
-                <marker date="1420749874000" expanded="true" signature="522:1195" placeholder="Select m.*, ..matches..." />
-                <marker date="1420749874000" expanded="true" signature="1587:2706" placeholder="Select m.*, ..matches..." />
-                <marker date="1420749874000" expanded="true" signature="2060:2505" placeholder="SELECT sch.i..round_id..." />
-                <marker date="1420749874000" expanded="true" signature="2118:2397" placeholder="SELECT round..schedules..." />
-                <marker date="1420749874000" expanded="true" signature="3061:3301" placeholder="Select t.id,..championships..." />
-                <marker date="1420749874000" expanded="true" signature="3673:3719" placeholder="select * fro..matches_teams..." />
-                <marker date="1420749874000" expanded="true" signature="3902:3934" placeholder="select * fro..teams..." />
-                <marker date="1420749874000" expanded="true" signature="4164:4481" placeholder="SELECT playe..goals..." />
-                <marker date="1420749874000" expanded="true" signature="4717:4958" placeholder="SELECT SUM(I..lineups..." />
-                <marker date="1420749874000" expanded="true" signature="5191:5597" placeholder="SELECT p.fir..players..." />
-                <marker date="1420749874000" expanded="true" signature="11156:11602" placeholder="SELECT m.*, ..matches..." />
-                <marker date="1420749874000" expanded="true" signature="13073:13470" placeholder="SELECT sch.i..round_id..." />
-                <marker date="1420749874000" expanded="true" signature="13125:13366" placeholder="SELECT round..schedules..." />
+                <marker date="1420757564000" expanded="true" signature="522:1195" placeholder="Select m.*, ..matches..." />
+                <marker date="1420757564000" expanded="true" signature="1587:2706" placeholder="Select m.*, ..matches..." />
+                <marker date="1420757564000" expanded="true" signature="2060:2505" placeholder="SELECT sch.i..round_id..." />
+                <marker date="1420757564000" expanded="true" signature="2118:2397" placeholder="SELECT round..schedules..." />
+                <marker date="1420757564000" expanded="true" signature="3061:3301" placeholder="Select t.id,..championships..." />
+                <marker date="1420757564000" expanded="true" signature="3673:3719" placeholder="select * fro..matches_teams..." />
+                <marker date="1420757564000" expanded="true" signature="3902:3934" placeholder="select * fro..teams..." />
+                <marker date="1420757564000" expanded="true" signature="4164:4481" placeholder="SELECT playe..goals..." />
+                <marker date="1420757564000" expanded="true" signature="4718:4959" placeholder="SELECT CONCA..lineups..." />
+                <marker date="1420757564000" expanded="true" signature="5194:5600" placeholder="SELECT p.fir..players..." />
+                <marker date="1420757564000" expanded="true" signature="6229:6355" placeholder="Select match..actions..." />
+                <marker date="1420757564000" expanded="true" signature="12543:12989" placeholder="SELECT m.*, ..matches..." />
+                <marker date="1420757564000" expanded="true" signature="14460:14857" placeholder="SELECT sch.i..round_id..." />
+                <marker date="1420757564000" expanded="true" signature="14512:14753" placeholder="SELECT round..schedules..." />
               </folding>
             </state>
           </provider>
@@ -83,9 +277,16 @@
       <file leaf-file-name="matchdetail.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92957747" vertical-offset="3024" max-vertical-offset="3615">
-              <caret line="228" column="21" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="21" />
-              <folding />
+            <state vertical-scroll-proportion="0.5093897" vertical-offset="4433" max-vertical-offset="5325">
+              <caret line="310" column="104" selection-start-line="310" selection-start-column="104" selection-end-line="310" selection-end-column="104" />
+              <folding>
+                <marker date="1420760810000" expanded="true" signature="12426:13166" placeholder="..." />
+                <marker date="1420760810000" expanded="true" signature="12465:12625" placeholder="..." />
+                <marker date="1420760810000" expanded="true" signature="12513:12614" placeholder="..." />
+                <marker date="1420760810000" expanded="true" signature="12550:12599" placeholder="..." />
+                <marker date="1420760810000" expanded="true" signature="12700:13159" placeholder="..." />
+                <marker date="1420760810000" expanded="true" signature="12930:13073" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,7 +397,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="408" />
+    <option name="x" value="475" />
     <option name="y" value="23" />
     <option name="width" value="1353" />
     <option name="height" value="902" />
@@ -256,46 +457,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="imagenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imagenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imagenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shield" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2220,7 +2381,19 @@
       <option name="project" value="LOCAL" />
       <updated>1420728280362</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="incluye tabla de revista">
+      <created>1420751758256</created>
+      <option name="number" value="00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1420751758256</updated>
+    </task>
+    <task id="LOCAL-00262" summary="incluye tabla de revista">
+      <created>1420761286930</created>
+      <option name="number" value="00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1420761286930</updated>
+    </task>
+    <option name="localTasksCounter" value="263" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2244,8 +2417,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="408" y="23" width="1353" height="902" extended-state="0" />
-    <editor active="true" />
+    <frame x="475" y="23" width="1353" height="902" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2260,7 +2433,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24943182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20976354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20976354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2320,32 +2493,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php</url>
-          <line>194</line>
-          <option name="timeStamp" value="227" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="228" />
+      <option name="time" value="233" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
-        <watch expression="$teams[0]-&gt;hname" />
-        <watch expression="$teams_pics['shield'][43]" />
-        <watch expression="$match[0]-&gt;team_id_home" />
-        <watch expression="$match[0]-&gt;team_id_away" />
-        <watch expression="$teams[1][0]-&gt;id" />
-        <watch expression="$teams[1][0]" />
-        <watch expression="$equipos[0]-&gt;team_id_home" />
-        <watch expression="$infoLocal-&gt;shirt" />
-        <watch expression="$golesLocal[0]-&gt;first_name" />
-        <watch expression="$golesVisitante[0]-&gt;first_name" />
-        <watch expression="$data['estrategiaLocal']" />
-        <watch expression="$data['estrategiaLocal']-&gt;res" />
+        <watch expression="$action['tipo']" />
       </configuration>
     </watches-manager>
   </component>
@@ -2693,41 +2848,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5897436" vertical-offset="1946" max-vertical-offset="5220">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <marker date="1420749874000" expanded="true" signature="522:1195" placeholder="Select m.*, ..matches..." />
-            <marker date="1420749874000" expanded="true" signature="1587:2706" placeholder="Select m.*, ..matches..." />
-            <marker date="1420749874000" expanded="true" signature="2060:2505" placeholder="SELECT sch.i..round_id..." />
-            <marker date="1420749874000" expanded="true" signature="2118:2397" placeholder="SELECT round..schedules..." />
-            <marker date="1420749874000" expanded="true" signature="3061:3301" placeholder="Select t.id,..championships..." />
-            <marker date="1420749874000" expanded="true" signature="3673:3719" placeholder="select * fro..matches_teams..." />
-            <marker date="1420749874000" expanded="true" signature="3902:3934" placeholder="select * fro..teams..." />
-            <marker date="1420749874000" expanded="true" signature="4164:4481" placeholder="SELECT playe..goals..." />
-            <marker date="1420749874000" expanded="true" signature="4717:4958" placeholder="SELECT SUM(I..lineups..." />
-            <marker date="1420749874000" expanded="true" signature="5191:5597" placeholder="SELECT p.fir..players..." />
-            <marker date="1420749874000" expanded="true" signature="11156:11602" placeholder="SELECT m.*, ..matches..." />
-            <marker date="1420749874000" expanded="true" signature="13073:13470" placeholder="SELECT sch.i..round_id..." />
-            <marker date="1420749874000" expanded="true" signature="13125:13366" placeholder="SELECT round..schedules..." />
-          </folding>
+        <state vertical-scroll-proportion="-5.9166665" vertical-offset="833" max-vertical-offset="1695">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9166665" vertical-offset="743" max-vertical-offset="1635">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-5.3461537" vertical-offset="1803" max-vertical-offset="5805">
+          <caret line="148" column="64" selection-start-line="148" selection-start-column="64" selection-end-line="148" selection-end-column="64" />
+          <folding>
+            <marker date="1420757564000" expanded="true" signature="522:1195" placeholder="Select m.*, ..matches..." />
+            <marker date="1420757564000" expanded="true" signature="1587:2706" placeholder="Select m.*, ..matches..." />
+            <marker date="1420757564000" expanded="true" signature="2060:2505" placeholder="SELECT sch.i..round_id..." />
+            <marker date="1420757564000" expanded="true" signature="2118:2397" placeholder="SELECT round..schedules..." />
+            <marker date="1420757564000" expanded="true" signature="3061:3301" placeholder="Select t.id,..championships..." />
+            <marker date="1420757564000" expanded="true" signature="3673:3719" placeholder="select * fro..matches_teams..." />
+            <marker date="1420757564000" expanded="true" signature="3902:3934" placeholder="select * fro..teams..." />
+            <marker date="1420757564000" expanded="true" signature="4164:4481" placeholder="SELECT playe..goals..." />
+            <marker date="1420757564000" expanded="true" signature="4718:4959" placeholder="SELECT CONCA..lineups..." />
+            <marker date="1420757564000" expanded="true" signature="5194:5600" placeholder="SELECT p.fir..players..." />
+            <marker date="1420757564000" expanded="true" signature="6229:6355" placeholder="Select match..actions..." />
+            <marker date="1420757564000" expanded="true" signature="12543:12989" placeholder="SELECT m.*, ..matches..." />
+            <marker date="1420757564000" expanded="true" signature="14460:14857" placeholder="SELECT sch.i..round_id..." />
+            <marker date="1420757564000" expanded="true" signature="14512:14753" placeholder="SELECT round..schedules..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92957747" vertical-offset="3024" max-vertical-offset="3615">
-          <caret line="228" column="21" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="21" />
-          <folding />
+        <state vertical-scroll-proportion="0.5093897" vertical-offset="4433" max-vertical-offset="5325">
+          <caret line="310" column="104" selection-start-line="310" selection-start-column="104" selection-end-line="310" selection-end-column="104" />
+          <folding>
+            <marker date="1420760810000" expanded="true" signature="12426:13166" placeholder="..." />
+            <marker date="1420760810000" expanded="true" signature="12465:12625" placeholder="..." />
+            <marker date="1420760810000" expanded="true" signature="12513:12614" placeholder="..." />
+            <marker date="1420760810000" expanded="true" signature="12550:12599" placeholder="..." />
+            <marker date="1420760810000" expanded="true" signature="12700:13159" placeholder="..." />
+            <marker date="1420760810000" expanded="true" signature="12930:13073" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
