@@ -177,6 +177,10 @@ class Contenido extends MY_Controller
         return $this->load->view('femagazine', $data, TRUE);
 
     }
+    public function search($data = FALSE)
+    {
+        return $this->load->view('search', $data, TRUE);
+    }
 
 
     public function sidebar($data = FALSE)

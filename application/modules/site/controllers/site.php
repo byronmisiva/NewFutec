@@ -276,6 +276,12 @@ class Site extends MY_Controller
         $femagazine = $this->contenido->femagazine();
         $this->singleConten("Fe Magazine", $femagazine);
     }
+    public function search()
+    {
+        $this->load->module('contenido');
+        $search = $this->contenido->search();
+        $this->singleConten("Búsqueda", $search);
+    }
 
     public function goleadores()
     {
