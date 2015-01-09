@@ -131,9 +131,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12  text-right">
-            <a href="#" class="newsButton">Más información</a>
+        <div class="col-md-12 ">
+        </div>
+        <div class="col-md-12 ">
+            <input type="text" placeholder="Nombre" name="Nombre" class="search2">
         </div>
 
+        <div class="col-md-12 ">
+            <input type="text" placeholder="Correo" name="Correo" class="search2">
+        </div>
+        <div class="col-md-12 ">
+            <input type="text" placeholder="Mensaje" name="Mensaje" class="search2">
+        </div>
+        <div class="col-md-12  text-right">
+            <a href="#" class="newsButton">Enviar</a>
+        </div>
     </div>
 </div>

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/footer.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -78,8 +77,8 @@
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8801956" vertical-offset="881" max-vertical-offset="1785">
-              <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.92665035" vertical-offset="1436" max-vertical-offset="1950">
+              <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
               <folding>
                 <element signature="tag#div#3;tag#div#0" expanded="false" />
                 <element signature="tag#div#0;tag#div#3;tag#div#0" expanded="false" />
@@ -248,8 +247,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="475" />
-    <option name="y" value="23" />
+    <option name="x" value="338" />
+    <option name="y" value="149" />
     <option name="width" value="1353" />
     <option name="height" value="902" />
   </component>
@@ -2364,7 +2363,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420814604441</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="incluye tabla de revista">
+      <created>1420833548687</created>
+      <option name="number" value="00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1420833548687</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2388,7 +2393,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="475" y="23" width="1353" height="902" extended-state="0" />
+    <frame x="338" y="149" width="1353" height="902" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2881,8 +2886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8801956" vertical-offset="881" max-vertical-offset="1785">
-          <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.92665035" vertical-offset="1436" max-vertical-offset="1950">
+          <caret line="147" column="14" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
           <folding>
             <element signature="tag#div#3;tag#div#0" expanded="false" />
             <element signature="tag#div#0;tag#div#3;tag#div#0" expanded="false" />
