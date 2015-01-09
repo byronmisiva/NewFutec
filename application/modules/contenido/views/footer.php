@@ -32,6 +32,7 @@
         </div>
 
     </div>
+
     <div class="col-md-3">
         <div class="col-md-12 separa">
             <a href="<?= base_url('tabla-de-posiciones') ?>">Posiciones</a>
@@ -57,37 +58,6 @@
         </div>
         <div class="col-md-12 ">
             <a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a>
-        </div>
-    </div>
-
-    <div class="col-md-3 ">
-        <div class="col-md-12  azulfooter">
-            <h3>Contacto</h3>
-        </div>
-
-        <div class="col-md-12 ">
-            <div class="row ">
-                <div class="col-md-1 ">
-                </div>
-                <div class="col-md-10 ">
-                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 ">
-        </div>
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Nombre" name="Nombre" class="search2">
-        </div>
-
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Correo" name="Correo" class="search2">
-        </div>
-        <div class="col-md-12 ">
-            <input type="text" placeholder="Mensaje" name="Mensaje" class="search2">
-        </div>
-        <div class="col-md-12  text-right">
-            <a href="#" class="newsButton">Enviar</a>
         </div>
     </div>
     <div class="col-md-3 hide">
@@ -118,9 +88,40 @@
         </div>
     </div>
 
+    <div class="col-md-3 ">
+        <div class="col-md-12  azulfooter">
+            <h3>Contacto</h3>
+        </div>
+
+        <div class="col-md-12 ">
+            <div class="row ">
+                <div class="col-md-1 ">
+                </div>
+                <div class="col-md-10 ">
+                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 ">
+        </div>
+        <div class="col-md-12 ">
+            <input type="text" placeholder="Nombre" name="Nombre" class="search2">
+        </div>
+
+        <div class="col-md-12 ">
+            <input type="text" placeholder="Correo" name="Correo" class="search2">
+        </div>
+        <div class="col-md-12 ">
+            <input type="textarea" placeholder="Mensaje" name="Mensaje" class="search2">
+        </div>
+        <div class="col-md-12  text-right">
+            <a href="#" class="newsButton">Enviar</a>
+        </div>
+    </div>
+
     <div class="col-md-3">
         <div class="col-md-12  azulfooter">
-            <h3>Pauta con nosotros</h3>
+            <h3>Publicidad</h3>
         </div>
         <div class="col-md-12 ">
             <div class="row ">
