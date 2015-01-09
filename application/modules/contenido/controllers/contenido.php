@@ -237,7 +237,7 @@ class Contenido extends MY_Controller
         //La entrevista
         $data['fueradejuego'] = $this->view_mod_fuera_de_juego();
 
-        //Lo más leido
+        //Lo más leído
 
         $this->load->module('story');
         $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO, "masleido");
@@ -307,7 +307,7 @@ class Contenido extends MY_Controller
         //La entrevista
      //   $data['fueradejuego'] = $this->view_mod_fuera_de_juego();
 
-        //Lo más leido
+        //Lo más leído
 
         $this->load->module('story');
         $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO, "masleido");

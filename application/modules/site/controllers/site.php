@@ -169,7 +169,7 @@ class Site extends MY_Controller
 
     public function masleido()
     {
-        $this->seccion(LOMASLEIDO, LOMASLEIDOPOS, "Lo más leido", "masleido", "masleido");
+        $this->seccion(LOMASLEIDO, LOMASLEIDOPOS, "Lo más leído", "masleido", "masleido");
     }
 
     public function nuestrosembajadores()

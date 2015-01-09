@@ -39,7 +39,7 @@
     <script type="text/javascript" src="'/cse'/brand'?form='cref_iframe" ></script>
 </div>
 
-<!--Lo más leido-->
+<!--Lo más leído-->
 <div class="col-md-12 separador20 margen0r">
 
     <? echo $loMasLeido; ?>

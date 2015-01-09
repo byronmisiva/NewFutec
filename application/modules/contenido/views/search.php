@@ -10,16 +10,20 @@
     </div>
     <div id='mod_femagazine' style='position:relative;width:100%; height:793px;' class="separador10-xs">
 
-        <script type="text/javascript">
-            var googleSearchIframeName = "cse-search-results";
-            var googleSearchFormName = "cse-search-box";
-            var googleSearchFrameWidth = 500;
-            var googleSearchFrameHeight = 545;
-            var googleSearchResizeIframe = true;
-            var googleSearchDomain = "www.google.com";
-            var googleSearchPath = "/cse";
-            var googleNumSearchResults = 15;
+
+
+        <script>
+            (function() {
+                var cx = '004910472998778424762:nfid2pouogg';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
         </script>
-        <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+        <gcse:search></gcse:search>
     </div>
 </div>

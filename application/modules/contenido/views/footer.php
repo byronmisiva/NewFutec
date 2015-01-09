@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-md-12 separa">
-            <a href="<?= base_url('lo-mas-leido') ?>">Lo más leido</a>
+            <a href="<?= base_url('lo-mas-leido') ?>">Lo más leído</a>
         </div>
 
         <div class="col-md-12 separa">
