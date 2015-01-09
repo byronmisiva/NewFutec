@@ -34,8 +34,11 @@
     </div>
 
     <div class="col-md-3">
+        <div class="col-md-12 azulfooter ">
+            <h3>&nbsp;</h3>
+        </div>
         <div class="col-md-12 separa">
-            <a href="<?= base_url('tabla-de-posiciones') ?>">Posiciones</a>
+            <a href="<?= base_url('tabla-de-posiciones') ?>">Resultados</a>
         </div>
 
 
@@ -93,19 +96,15 @@
             <h3>Contacto</h3>
         </div>
 
-        <div class="col-md-12 ">
-            <div class="row ">
-                <div class="col-md-1 ">
+        <div class="col-md-12 separador5 margen0">
+
+                <div class="col-md-11 ">
+                    Forma parte del selecto grupo de auspiciantes de futbolecuador.com
                 </div>
-                <div class="col-md-10 ">
-                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
-                </div>
-            </div>
+
         </div>
-        <div class="col-md-12 ">
-        </div>
-        <form id="publicidad">
-            <div class="col-md-12 ">
+         <form id="publicidad">
+            <div class="col-md-12 separador10">
                 <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrepublicidad" class="search2" >
             </div>
 
@@ -128,19 +127,16 @@
         <div class="col-md-12  azulfooter">
             <h3>Publicidad</h3>
         </div>
-        <div class="col-md-12 ">
-            <div class="row ">
-                <div class="col-md-1 ">
+        <div class="col-md-12 separador5 margen0">
+
+                <div class="col-md-12 ">
+                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
                 </div>
-                <div class="col-md-10 ">
-                    Forma parte del selecto grupo de auspiciantes de futbolecuador.com
-                </div>
-            </div>
+
         </div>
-        <div class="col-md-12 ">
-        </div>
+
         <form id="contacto">
-            <div class="col-md-12 ">
+            <div class="col-md-12 separador10 ">
                 <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrecontacto" class="search2" >
             </div>
 
