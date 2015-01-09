@@ -5,15 +5,27 @@
     float: left;
 }
 
-.sprite-barcelona-icon{ background-position: 0 0; width: 30px; height: 30px; }
-.sprite-deportivo-cuenca-icon{ background-position: 0 -80px; width: 30px; height: 30px; }
-.sprite-deportivo-quito-icon{ background-position: 0 -160px; width: 30px; height: 30px; }
-.sprite-emelec-icon{ background-position: 0 -240px; width: 30px; height: 30px; }
-.sprite-independiente-del-valle-icon{ background-position: 0 -320px; width: 30px; height: 30px; }
-.sprite-liga-de-loja-icon{ background-position: 0 -400px; width: 30px; height: 30px; }
-.sprite-liga-de-quito-icon{ background-position: 0 -480px; width: 30px; height: 30px; }
-.sprite-manta-fc-icon{ background-position: 0 -560px; width: 30px; height: 30px; }
-.sprite-mushuc-runa-icon{ background-position: 0 -640px; width: 30px; height: 30px; }
-.sprite-el-nacional-icon{ background-position: 0 -720px; width: 30px; height: 30px; }
-.sprite-olmedo-icon{ background-position: 0 -800px; width: 30px; height: 30px; }
-.sprite-universidad-catolica-de-quito-icon{ background-position: 0 -880px; width: 30px; height: 30px; }
+.sprite-aucas-icon{ background-position: 0 0; width: 30px; height: 30px; }
+.sprite-barcelona-icon{ background-position: 0 -60px; width: 30px; height: 30px; }
+.sprite-delfin-icon{ background-position: 0 -120px; width: 30px; height: 30px; }
+.sprite-deportivo-azogues-icon{ background-position: 0 -180px; width: 30px; height: 30px; }
+.sprite-deportivo-cuenca-icon{ background-position: 0 -240px; width: 30px; height: 30px; }
+.sprite-deportivo-quito-icon{ background-position: 0 -300px; width: 30px; height: 30px; }
+.sprite-deportivo-quevedo-icon{ background-position: 0 -360px; width: 30px; height: 30px; }
+.sprite-emelec-icon{ background-position: 0 -420px; width: 30px; height: 30px; }
+.sprite-espoli-icon{ background-position: 0 -480px; width: 30px; height: 30px; }
+.sprite-imbabura-sc-icon{ background-position: 0 -540px; width: 30px; height: 30px; }
+.sprite-independiente-del-valle-icon{ background-position: 0 -600px; width: 30px; height: 30px; }
+.sprite-liga-de-loja-icon{ background-position: 0 -660px; width: 30px; height: 30px; }
+.sprite-liga-de-portoviejo-icon{ background-position: 0 -720px; width: 30px; height: 30px; }
+.sprite-liga-de-quito-icon{ background-position: 0 -780px; width: 30px; height: 30px; }
+.sprite-macara-icon{ background-position: 0 -840px; width: 30px; height: 30px; }
+.sprite-manta-fc-icon{ background-position: 0 -900px; width: 30px; height: 30px; }
+.sprite-municipal-de-canar-icon{ background-position: 0 -960px; width: 30px; height: 30px; }
+.sprite-mushuc-runa-icon{ background-position: 0 -1020px; width: 30px; height: 30px; }
+.sprite-el-nacional-icon{ background-position: 0 -1080px; width: 30px; height: 30px; }
+.sprite-olmedo-icon{ background-position: 0 -1140px; width: 30px; height: 30px; }
+.sprite-river-plate-ecuador-icon{ background-position: 0 -1200px; width: 30px; height: 30px; }
+.sprite-tecnico-universitario-icon{ background-position: 0 -1260px; width: 30px; height: 30px; }
+.sprite-universidad-catolica-de-quito-icon{ background-position: 0 -1320px; width: 30px; height: 30px; }
+.sprite-utc-icon{ background-position: 0 -1380px; width: 30px; height: 30px; }
