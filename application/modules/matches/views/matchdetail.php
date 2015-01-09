@@ -323,7 +323,7 @@ $estado['8'] = 'Fin del Partido';?>
         ?>
     </div>
 </div>
-<!--
+<!--test
 <div class="col-md-12 separador10-xs margen0l">
     <div class="col-md-12    margen0">
         <div class="panel-heading fondoazul">
@@ -332,19 +332,20 @@ $estado['8'] = 'Fin del Partido';?>
             </h4>
         </div>
     </div>
-    <!--El marcador-->
+    
     <div class="col-md-12   margen0      clearfix">
         <?php
-/*        if (count($titularesLocal) > 0) {
+        if (count($titularesLocal) > 0) {
             foreach ($titularesLocal as $titular) {
                 if (!($titular->status == 1 || $titular->status == 3)) {
-                    */?>
+                    ?>
                     <div
-                        class="col-md-12 separador5   lineseparador-dot"> <?php /*echo $titular->last_name . " " . $titular->first_name; */?></div>
+                        class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
                 <?php
-/*                }
+                }
             }
         }
-        */?>
+        ?>
     </div>
-</div>-->
+</div>
+-->
