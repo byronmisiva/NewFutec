@@ -4,30 +4,33 @@
         $active = " active";
         foreach ($scores as $score) {
             ?>
+
             <div class="item <?php echo $active;
             $active = ""; ?>">
+                <a href="site/partido/<?php echo $score->hsname."-".$score->asname."/" .$score->id;?>">
                 <div class="  text-white">
-                    <div class="col-md-12 margen0l margen0r text-center h5">
+                    <div class="col-md-12 margen0l margen0r   h5">
                         <div class="col-md-1 text-center  margen0">
                         </div>
-                        <div class="col-md-1 text-center  margen0">
+                        <div class="col-md-1   margen0">
                             <img src="http://www.futbolecuador.com/<?php echo $score->hthumb; ?>"
                                  alt="<?php echo $score->hname; ?>">
                         </div>
-                        <div class="col-md-8 text-center h5">
+                        <div class="col-md-8    h5">
                             <?php
                             if (strlen($score->result) == 0) {
                                 $score->result = " - ";
                                 if ($score->state > 0) $score->result = "0 - 0";
 
                             };?>
-                            <div class="col-md-5 margen0 h5 text-rigth">
+                            <div class="col-md-5 margen5r h5 text-right">
                                 <?php echo $score->hsname  ; ?>
                             </div>
-                            <div class="col-md-2 margen0 h5">
-                                <?php echo   $score->result  ; ?>
+                            <div class="col-md-2 margen0 h5 text-marcador-home">
+                                <?php
+                                echo str_replace(' ', '', $score->result); ?>
                             </div>
-                            <div class="col-md-5 margen0 h5">
+                            <div class="col-md-5 margen5l h5 text-left">
                                 <?php echo   $score->asname; ?>
                             </div>
                         </div>
@@ -55,7 +58,9 @@
                             echo $states[$score->state];?></p>
                     </div>
                 </div>
+                </a>
             </div>
+
         <?php
         }
         ?>
