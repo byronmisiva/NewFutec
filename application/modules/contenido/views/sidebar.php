@@ -36,7 +36,7 @@
 
 
 
-<div class="col-md-12 separador20  margen0r lateral">
+<div class="col-md-12 separador10  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
         <div class="panel-body panel-body-clear-margin">
@@ -227,55 +227,55 @@
 
 
 <!--la entrevista -->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $laentrevista; ?>
 </div>
 
 <!--Tabla de posiciones-->
 <? echo $tablaposiciones; ?>
 
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
 </div>
 
 
 <!--Goleadores-->
 
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $strikes; ?>
 </div>
 
 <!--Fin Goleadores -->
 
 <!--banner lateral 2 -->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[1]; ?>
 </div>
 <!--Lo más leído-->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
 
     <? echo $loMasLeido; ?>
 </div>
 
 <!--fuera de juego -->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $fueradejuego; ?>
 </div>
 <!--Zona Fe-->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $zonaFe; ?>
 </div>
 <!--banner lateral 3 -->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[2]; ?>
 </div>
 
 <!--La voz de las tribunas-->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $laVozDeLasTribunas; ?>
 </div>
 <!--banner lateral 4 -->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[3]; ?>
 </div>
 

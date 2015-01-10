@@ -1,7 +1,7 @@
 <!--ficha Equipo-->
 
 
-<div class="col-md-12  fondoazul  separador20">
+<div class="col-md-12  fondoazul  separador10">
     <h4 class="contenidos">Perfil</h4>
 </div>
 <div class="row noticia-content">
@@ -35,7 +35,7 @@
 </div>
 
 
-<div class="col-md-12  fondoazul  separador20 ">
+<div class="col-md-12  fondoazul  separador10 ">
     <h4 class="contenidos">Partidos <?php echo $infoEquipo->name; ?></h4>
 </div>
 
@@ -45,9 +45,9 @@ echo $fechas;
 
 
 <!--lsitado de jugadores -->
-<div class="col-md-12 separador20 margen0">
+<div class="col-md-12 separador10 margen0">
 
-    <div class="col-md-6 separador20 margen0">
+    <div class="col-md-6 separador10 margen0">
         <div class="col-md-12  fondoazul ">
             <h4 class="contenidos">El Equipo </h4>
         </div>
@@ -68,7 +68,7 @@ echo $fechas;
         </div>
     </div>
 
-    <div class="col-md-6 separador20 margen0 contenido">
+    <div class="col-md-6 separador10 margen0 contenido">
 
 
         <div id="collapseOne" class="panel-collapse collapse in tablaposiciones">

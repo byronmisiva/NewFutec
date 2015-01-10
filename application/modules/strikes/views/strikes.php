@@ -1,4 +1,4 @@
-<div class="panel-heading backcuadros separador20 margen0">
+<div class="panel-heading backcuadros separador10 margen0">
     <h4 class="panel-title">
         Goleadores
     </h4>

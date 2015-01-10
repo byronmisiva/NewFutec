@@ -1,4 +1,4 @@
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
 </div>
 
@@ -40,22 +40,22 @@
 </div>
 
 <!--Lo más leído-->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
 
     <? echo $loMasLeido; ?>
 </div>
 
 <!--Zona Fe-->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $zonaFe; ?>
 </div>
 
 <!--banner lateral 2 -->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[1]; ?>
 </div>
 
 <!--La voz de las tribunas-->
-<div class="col-md-12 separador20 margen0r">
+<div class="col-md-12 separador10 margen0r">
     <? echo $laVozDeLasTribunas; ?>
 </div>

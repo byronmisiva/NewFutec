@@ -9,7 +9,7 @@ $estado['6'] = 'Segundo Extra';
 $estado['7'] = 'Penales';
 $estado['8'] = 'Fin del Partido';?>
 <!--Titulo-->
-<div class="col-md-12 separador20-xs margen0">
+<div class="col-md-12 separador10-xs margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             <? echo $title; ?>
@@ -17,7 +17,7 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 <!--El marcador-->
-<div class="panel-group separador20" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group separador10" id="accordion" role="tablist" aria-multiselectable="true">
     <?php
     foreach ($teamsFecha as $teams) {
         ?>
@@ -70,26 +70,26 @@ $estado['8'] = 'Fin del Partido';?>
     ?>
 </div>
 
-<div class="col-md-6 separador20-xs  margen5r ">
+<div class="col-md-6 separador10-xs  margen5r ">
     <div class="col-md-12     clearfix borde">
         <div class="col-md-6    margen0">
             <img class="img-responsive" src="<?php echo base_url($infoLocal->shirt) ?>"
                  alt="<?php echo $infoLocal->name ?>">
         </div>
         <div class="col-md-6   col-xs-6 margen0">
-            <div class="col-md-12 col-xs-12 text-right separador20 nombre-equipo margen5l">
+            <div class="col-md-12 col-xs-12 text-right separador10 nombre-equipo margen5l">
                 Director Técnico
             </div>
             <div class="col-md-12 col-xs-12 text-right  margen5l">
                 <?php echo $infoLocal->couch ?>
             </div>
-            <div class="col-md-12 col-xs-12 text-right separador20 nombre-equipo margen5l">
+            <div class="col-md-12 col-xs-12 text-right separador10 nombre-equipo margen5l">
                 Estrategia
             </div>
             <div class="col-md-12 col-xs-12 text-right  margen5l">
                 <?php echo $estrategiaLocal ?>
             </div>
-            <div class="col-md-12 col-xs-12 text-right separador20 nombre-equipo margen5l  text-visitante">
+            <div class="col-md-12 col-xs-12 text-right separador10 nombre-equipo margen5l  text-visitante">
                 <div class="text-right   bottom">
                     Local
                 </div>
@@ -100,22 +100,22 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 
-<div class="col-md-6 separador20-xs  margen5l ">
+<div class="col-md-6 separador10-xs  margen5l ">
     <div class="col-md-12     clearfix borde">
         <div class="col-md-6   col-xs-6 margen0">
-            <div class="col-md-12 col-xs-12 text-left separador20 nombre-equipo margen5l">
+            <div class="col-md-12 col-xs-12 text-left separador10 nombre-equipo margen5l">
                 Director Técnico
             </div>
             <div class="col-md-12 col-xs-12 text-left  margen5l">
                 <?php echo $infoVisitante->couch ?>
             </div>
-            <div class="col-md-12 col-xs-12 text-left separador20 nombre-equipo margen5l">
+            <div class="col-md-12 col-xs-12 text-left separador10 nombre-equipo margen5l">
                 Estrategia
             </div>
             <div class="col-md-12 col-xs-12 text-left  margen5l">
                 <?php echo $estrategiaVisitante ?>
             </div>
-            <div class="col-md-12 col-xs-12 text-left separador20 nombre-equipo margen5l  text-visitante">
+            <div class="col-md-12 col-xs-12 text-left separador10 nombre-equipo margen5l  text-visitante">
                 <div class="  bottom">
                     Visitante
                 </div>

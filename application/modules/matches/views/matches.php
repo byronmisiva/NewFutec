@@ -11,7 +11,7 @@ $estado['8'] = 'Fin del Partido';?>
 <!--Tabla de posiciones-->
 
 
-<div class="col-md-12 separador20-xs margen0">
+<div class="col-md-12 separador10-xs margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             <? echo $title; ?>
@@ -22,7 +22,7 @@ $estado['8'] = 'Fin del Partido';?>
             $totalTeams = count($teamsFecha);
             ?>
             <a class="sidebarlink" href="#<?= $key ?>">
-                <div class="fondogris borde separador20 text-center texto-gris miniletra"
+                <div class="fondogris borde separador10 text-center texto-gris miniletra"
                      style="width: <?= 100 / $totalTeams ?>%; float: left">
                     Fecha<br>
 
@@ -34,13 +34,13 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 
-<div class="panel-group separador20" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group separador10" id="accordion" role="tablist" aria-multiselectable="true">
     <?php
     $i = 1;
     foreach ($teamsFecha as $key => $teams) {
 
         ?>
-        <div class="col-md-12  fondoazul  separador20">
+        <div class="col-md-12  fondoazul  separador10">
             <a id="<?= $key ?>"></a><h4 class="contenidos">Fecha <?= $key ?></h4>
         </div>
         <?php

@@ -39,7 +39,7 @@
                     } else {
                         ?>
                         <td><?php echo $key + 1 ?></td>
-                        <td><img src="http://www.futbolecuador.com/<?php echo $jugador->mini_shield; ?>"> <?php
+                        <td><img src="http://www.futbolecuador.com/<?php echo $jugador->mini_shield; ?>" alt="<?php echo $jugador->name ?>"> <?php
                             echo $jugador->last_name . " " . $jugador->first_name;
                             ?></td>
                         <td class="text-center"><?php echo $jugador->goals ?> Goles</td>
