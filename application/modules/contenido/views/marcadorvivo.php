@@ -6,19 +6,40 @@
             ?>
             <div class="item <?php echo $active;
             $active = ""; ?>">
-                <div class="row text-white">
-                    <div class="col-md-12 text-center h5">
-                        <img src="http://www.futbolecuador.com/<?php echo $score->hthumb; ?>" alt="<?php echo $score->hname; ?>">
-                        <?php
-                        if (strlen($score->result) == 0) {
-                            $score->result = " - ";
-                            if ($score->state > 0) $score->result = "0 - 0";
+                <div class="  text-white">
+                    <div class="col-md-12 margen0l margen0r text-center h5">
+                        <div class="col-md-1 text-center  margen0">
+                        </div>
+                        <div class="col-md-1 text-center  margen0">
+                            <img src="http://www.futbolecuador.com/<?php echo $score->hthumb; ?>"
+                                 alt="<?php echo $score->hname; ?>">
+                        </div>
+                        <div class="col-md-8 text-center h5">
+                            <?php
+                            if (strlen($score->result) == 0) {
+                                $score->result = " - ";
+                                if ($score->state > 0) $score->result = "0 - 0";
 
-                        };
-                        echo $score->hsname . " " . $score->result . " " . $score->asname;?>
-                        <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>" alt="<?php echo $score->asname; ?>">
+                            };?>
+                            <div class="col-md-5 margen0 h5 text-rigth">
+                                <?php echo $score->hsname  ; ?>
+                            </div>
+                            <div class="col-md-2 margen0 h5">
+                                <?php echo   $score->result  ; ?>
+                            </div>
+                            <div class="col-md-5 margen0 h5">
+                                <?php echo   $score->asname; ?>
+                            </div>
+                        </div>
+                        <div class="col-md-1 text-center margen0">
+
+                            <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>"
+                                 alt="<?php echo $score->asname; ?>">
+                        </div>
+                        <div class="col-md-1 text-center  margen0">
+                        </div>
                     </div>
-                    <div class="col-md-5 col-md-offset-1 h6 text-blue1">
+                    <div class="col-md-5 col-md-offset-1 h6 text-blue1 margen0">
                         <p><?php echo $score->championship; ?></p>
 
                         <p><?php echo $active; ?> </p>

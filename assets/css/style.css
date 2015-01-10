@@ -351,7 +351,8 @@ footer {
 }
 
 .flex-control-thumbs img {
-    width: 58px;
+    width: 56px;
+    border-bottom: 2px solid #fff;
 }
 
 /* Noticias***********************/
@@ -543,7 +544,7 @@ sub {
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
     font-size: 10px;
     height: 30px;
-    margin-top: -20px;
+    margin-top: 0px;
     width: 30px;
 }
 
