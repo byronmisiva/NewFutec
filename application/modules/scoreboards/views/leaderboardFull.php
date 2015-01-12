@@ -1,5 +1,5 @@
 <!--Tabla de posiciones-->
-<div class="col-md-12 separador10 margen0r">
+<div class="col-md-12 separador10-xs margen0r">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             Tabla de posiciones

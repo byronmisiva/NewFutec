@@ -1,4 +1,4 @@
-<div class="col-md-12 separador10 ">
+<div class="col-md-12 separador10-xs ">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             Tabla de posiciones
