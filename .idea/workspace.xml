@@ -4,15 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" afterPath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" afterPath="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -54,8 +48,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50576925" vertical-offset="14482" max-vertical-offset="17520">
-              <caret line="983" column="4" selection-start-line="983" selection-start-column="4" selection-end-line="983" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.25754526" vertical-offset="15517" max-vertical-offset="17550">
+              <caret line="1043" column="0" selection-start-line="1043" selection-start-column="0" selection-end-line="1043" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bottom.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/bottom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -152,7 +156,6 @@
         <option value="$PROJECT_DIR$/application/modules/site/controllers/sitebak.php" />
         <option value="$PROJECT_DIR$/assets/css/sprites.css" />
         <option value="$PROJECT_DIR$/application/modules/strikes/models/mdl_strikes.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/search.php" />
@@ -176,6 +179,7 @@
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxbanner.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxsidebar1.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
       </list>
     </option>
@@ -2241,7 +2245,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421077401528</updated>
     </task>
-    <option name="localTasksCounter" value="287" />
+    <task id="LOCAL-00287" summary="incluye tabla de revista">
+      <created>1421083112314</created>
+      <option name="number" value="00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1421083112314</updated>
+    </task>
+    <option name="localTasksCounter" value="288" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2361,13 +2371,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="570" max-vertical-offset="1620">
-          <caret line="47" column="58" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
@@ -2494,13 +2497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="690">
           <caret line="32" column="105" selection-start-line="32" selection-start-column="105" selection-end-line="32" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/bottom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="240">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -2761,10 +2757,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/logo_SMG.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/bottom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50576925" vertical-offset="14482" max-vertical-offset="17520">
-          <caret line="983" column="4" selection-start-line="983" selection-start-column="4" selection-end-line="983" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.25754526" vertical-offset="15517" max-vertical-offset="17550">
+          <caret line="1043" column="0" selection-start-line="1043" selection-start-column="0" selection-end-line="1043" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1041,7 +1041,9 @@ h4.contenidos {
     .textos-equipo {
         font-size: 10px;
     }
-
+    .footer-fe {
+        margin-top: 10px;
+    }
 }
 
 
