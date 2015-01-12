@@ -269,7 +269,7 @@ class Contenido extends MY_Controller
         //fin carga banners
 
         //Proxima Fecha
-        /*$listCampeonatos = $this->mdl_scoreboards->active_schedules(false, false);
+        $listCampeonatos = $this->mdl_scoreboards->active_schedules(false, false);
         $campeonatos = array();
         foreach ($listCampeonatos as $listcampeonato) {
             $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_week($listcampeonato->champ);
@@ -277,11 +277,11 @@ class Contenido extends MY_Controller
 
             $campeonatos[] = $listcampeonato;
         }
-        $data['campeonatos'] = $campeonatos;*/
+        $data['campeonatos'] = $campeonatos;
         //Fin Proxima Fecha
 
         //Resultados fecha ultima
-        /*$listCampeonatosResultados = $this->mdl_scoreboards->active_schedules(false, false);
+        $listCampeonatosResultados = $this->mdl_scoreboards->active_schedules(false, false);
         $campeonatosResultados = array();
         foreach ($listCampeonatosResultados as $listcampeonato) {
             $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_results($listcampeonato->champ);
@@ -289,13 +289,13 @@ class Contenido extends MY_Controller
 
             $campeonatosResultados[] = $listcampeonato;
         }
-        $data['campeonatosResultados'] = $campeonatosResultados;*/
+        $data['campeonatosResultados'] = $campeonatosResultados;
 
         //Resultados tabla de posiciones
-        /*$this->load->module('scoreboards');
+        $this->load->module('scoreboards');
 
-        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative(SERIE_A);
-        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard(SERIE_A);*/
+
+        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones(SERIE_A);
 
         //Resultados goleadores
         /*$this->load->module('strikes');
