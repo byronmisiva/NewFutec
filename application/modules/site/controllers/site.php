@@ -174,7 +174,7 @@ class Site extends MY_Controller
 
     public function nuestrosembajadores()
     {
-        $this->seccion(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Nuestros embajadores", "nuestrosembajadores", "nuestrosembajadores");
+        $this->seccion(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Nuestros Embajadores", "nuestrosembajadores", "nuestrosembajadores");
     }
 
     public function copalibertadores()
@@ -474,7 +474,7 @@ class Site extends MY_Controller
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
         if ($infoEquipo != "") {
-            $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 6);
+            $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 5);
         } else {
             $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
         }

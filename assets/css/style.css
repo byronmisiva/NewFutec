@@ -962,6 +962,11 @@ h4.contenidos {
     font-family: 'Wallpoet', cursive;
 }
 
+.img-goleadores {
+    max-height: 80px;
+    overflow: hidden;
+}
+
 @media (max-width: 767px) {
     .container{
          width: 100%;

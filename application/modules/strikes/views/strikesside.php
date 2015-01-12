@@ -15,7 +15,7 @@
                 <tr>
                     <?php if ($key + 1 == 1) { ?>
                         <td colspan="3">
-                            <div class="col-md-4 margen0">
+                            <div class="col-md-4 margen0 img-goleadores">
                                 <img class="img-responsive"
                                      src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
                             </div>

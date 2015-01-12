@@ -78,7 +78,7 @@
 <!-- end list elements -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Fútbol Nacional<b
+    <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->title) . '/' . $seriea[0]->id) ?>" data-toggle="dropdown" class="dropdown-toggle">Fútbol Nacional<b
             class="caret"></b></a>
     <ul class="dropdown-menu fullwidth">
         <li class="fhmm-content">

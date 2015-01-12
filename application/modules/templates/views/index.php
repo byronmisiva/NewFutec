@@ -72,7 +72,7 @@ $this->load->view('header');
                         </ul>
                     </li>
                     <li><a href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
-                    <li><a href="<?= base_url('nuestros-embajadores') ?>">Nuestros embajadores</a></li>
+                    <li><a href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
                             <span class="caret link-menu"></span></a>
@@ -138,7 +138,7 @@ $this->load->view('header');
 
 
 <!-- footer -->
-<div class="top1">
+<div class="top1 separador10">
 
     <div class="container">
         <?php
