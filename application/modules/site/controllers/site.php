@@ -54,7 +54,7 @@ class Site extends MY_Controller
             $data['sidebar'] = "";
 
             $data['footer'] = '';
-            $data['bottom'] = "";
+            $data['bottom'] = $this->contenido->bottom();
         } else {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
@@ -474,7 +474,7 @@ class Site extends MY_Controller
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
         if ($infoEquipo != "") {
-            $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 5);
+            $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 4);
         } else {
             $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
         }

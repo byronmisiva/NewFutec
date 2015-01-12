@@ -168,7 +168,7 @@ class Mdl_matches extends MY_Model
             else
                 $min = "--";
 
-            array_push($resultado,   array(
+            array_push($resultado, array(
                 'minuto' => $min,
                 'tipo' => $type,
                 'texto' => $row->text));
@@ -275,9 +275,10 @@ class Mdl_matches extends MY_Model
             $partidos[$key]->hthumb = 'imagenes/teams/thumb_shield/default.png';
             if ($team_home->shield != '')
                 $partidos[$key]->hshield = $team_home->shield;
-            if ($team_home->thumb_shield != '')
+            if ($team_home->thumb_shield != '') {
                 $partidos[$key]->hthumb = $team_home->thumb_shield2;
-
+                $partidos[$key]->mhthumb = $team_home->mini_shield;
+            }
             //Equipo Visitante
             $this->db->where('id', $partidos[$key]->aid);
             $team_away = current($this->db->get('teams')->result());
@@ -287,8 +288,10 @@ class Mdl_matches extends MY_Model
             $partidos[$key]->athumb = 'imagenes/teams/thumb_shield/default.png';
             if ($team_away->shield2 != '')
                 $partidos[$key]->ashield = $team_away->shield2;
-            if ($team_away->thumb_shield2 != '')
+            if ($team_away->thumb_shield2 != '') {
                 $partidos[$key]->athumb = $team_away->thumb_shield2;
+                $partidos[$key]->mathumb = $team_away->mini_shield;
+            }
         }
         return $partidos;
     }

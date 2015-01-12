@@ -261,8 +261,9 @@ class Contenido extends MY_Controller
         $this->load->module('banners');
         $this->load->module('scoreboards');
         $bannersSidebar = array();
+
+        $bannersSidebar[] = $this->banners->FE_Bigboxbanner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
-        $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
        // $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
        // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
         $data['bannersSidebar'] = $bannersSidebar;
