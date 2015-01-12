@@ -83,7 +83,7 @@ $this->load->view('header');
 
                         </ul>
                     </li>
-                    <li><a href="<?= base_url('copa-libertadores') ?>">Zona FE</a></li>
+                    <li><a href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
                     <li><a href="<?= base_url('goleadores') ?>">Goleadores</a></li>
                     <li><a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>

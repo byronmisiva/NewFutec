@@ -1,7 +1,7 @@
 <?php if (isset($namesection)) {
     if ($namesection != "") {
         ?>
-        <div class="col-md-12 separador10 margen0">
+        <div class="col-md-12 separador10-xs margen0">
             <div class="panel-heading backcuadros">
                 <h4 class="panel-title"><?php echo $namesection; ?></h4>
             </div>
