@@ -225,12 +225,6 @@
     </div>
 </div>
 
-
-<!--la entrevista -->
-<div class="col-md-12 separador10 margen0r">
-    <? echo $laentrevista; ?>
-</div>
-
 <!--Tabla de posiciones-->
 <? echo $tablaposiciones; ?>
 
