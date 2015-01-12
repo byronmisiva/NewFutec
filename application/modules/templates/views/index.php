@@ -50,7 +50,7 @@ $this->load->view('header');
                             <span class="caret  link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="<?= base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
-                            <li><a href="<?= base_url('tabla-de-posiciones-b') ?>">Posiciones Serie B</a></li>
+                            <li><a href="<?= base_url('site/tabladeposiciones/' . SERIE_B) ?>">Posiciones Serie B</a></li>
 
                         </ul>
                     </li>

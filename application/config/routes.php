@@ -56,6 +56,7 @@ $route['futbol-internacional'] = "site/futbolinternacional";
 $route['fe-magazine'] = "site/femagazine";
 $route['goleadores'] = "site/goleadores";
 $route['tabla-de-posiciones'] = "site/tabladeposiciones";
+$route['tabla-de-posicionesb'] = "site/tabladeposiciones/30";
 $route['resultados'] = "site/resultados";
 $route['fuera-de-juego'] = "site/fueradejuego";
 

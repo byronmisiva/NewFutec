@@ -183,7 +183,7 @@ class Contenido extends MY_Controller
     }
 
 
-    public function sidebar($data = FALSE)
+    public function sidebar($data = FALSE, $serie = SERIE_A )
     {
 
         //carga Banners
@@ -223,13 +223,12 @@ class Contenido extends MY_Controller
         //Resultados tabla de posiciones
         $this->load->module('scoreboards');
 
-      //  $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative(SERIE_A);
-      //  $data['scroreBoardSingle'] = $this->scoreboards->leaderboard(SERIE_A);
-        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones(SERIE_A);
+
+        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
 
         //Resultados goleadores
         $this->load->module('strikes');
-        $data['strikes'] = $this->strikes->goleadores(SERIE_A);
+        $data['strikes'] = $this->strikes->goleadores($serie);
 
         //La entrevista
         $data['laentrevista'] = $this->view_la_entrevista();
@@ -254,7 +253,7 @@ class Contenido extends MY_Controller
         // todo validar si se queda
     }
 
-    public function sidebarOpenNews($data = FALSE)
+    public function sidebarOpenNews($data = FALSE, $serie = SERIE_A )
     {
 
         //carga Banners
@@ -296,7 +295,7 @@ class Contenido extends MY_Controller
         $this->load->module('scoreboards');
 
 
-        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones(SERIE_A);
+        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
 
         //Resultados goleadores
         /*$this->load->module('strikes');

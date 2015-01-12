@@ -290,13 +290,16 @@ class Site extends MY_Controller
         $this->singleConten("Goleadores", $goleadores);
     }
 
-    public function tabladeposiciones()
+    public function tabladeposiciones($serie = SERIE_A)
     {
 
+        $id = $this->uri->segment(3);
+        if ($id) {
+            $serie = $id;
+        }
 
         $this->load->module('scoreboards');
-
-        $tablapocisiones = $this->scoreboards->scoreboardFull(SERIE_A);
+        $tablapocisiones = $this->scoreboards->scoreboardFull($serie);
         $this->singleConten("Tabla de posiciones", $tablapocisiones);
     }
 
