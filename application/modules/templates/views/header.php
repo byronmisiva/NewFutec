@@ -50,7 +50,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
 
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css');?>" type="text/css" media="screen" />
-    <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/sprites.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
