@@ -392,7 +392,7 @@ class Site extends MY_Controller
     {
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
-        $this->section_equipo($idEquipo, 1, $shortEquipo);
+        $this->section_equipo($idEquipo, 2, $shortEquipo);
     }
 
 
