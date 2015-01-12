@@ -3,7 +3,7 @@
         2015 © Todos los derechos reservados.
     </div>
 
-    <div class="col-md-6  ">
+    <div class="col-md-6 text-right">
         <div class="col-md-6 col-xs-6 text-left margen0">
             <img src="<?php echo base_url(); ?>assets/img/logo_SMG.png" alt="logoSMG"/>
         </div>
