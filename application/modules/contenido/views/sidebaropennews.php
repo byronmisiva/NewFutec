@@ -62,7 +62,7 @@
                         <div class="panel-group" id="accordion2">
                             <?php
                             foreach ($campeonatosResultados as $campeonato) {
-                                if (CHAMP_DEFAULT == $campeonato->champ) {
+                                if ($serie == $campeonato->champ) {
                                     $active = "in";
                                 } else {
                                     $active = "";
@@ -144,7 +144,7 @@
                             <?php
 
                             foreach ($campeonatos as $campeonato) {
-                                if (CHAMP_DEFAULT == $campeonato->champ) {
+                                if ($serie == $campeonato->champ) {
                                     $name_champ_default = $campeonato->shortname;
                                     $active = "in";
                                 } else {

@@ -154,7 +154,7 @@ class Site extends MY_Controller
 
     public function serieb()
     {
-        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb");
+        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb", "",SERIE_B);
     }
 
     public function seleccion()
@@ -198,7 +198,7 @@ class Site extends MY_Controller
     }
 
 
-    public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "")
+    public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = SERIE_A)
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(30);
@@ -242,7 +242,7 @@ class Site extends MY_Controller
         if ($tipoSeccion == "masleido") {
             $noticiasCuerpo = $this->noticias->viewseccion_plus($nameSeccion, $seccion, $seccionpos, $urlSeccion);
 
-            // $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+
         } else {
             $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
         }
@@ -262,7 +262,7 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
 
         $data['content'] = $storia . $noticiasCuerpo;
-        $data['sidebar'] = $this->contenido->sidebarOpenNews();
+        $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie);
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();

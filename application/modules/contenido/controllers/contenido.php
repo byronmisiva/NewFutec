@@ -319,6 +319,7 @@ class Contenido extends MY_Controller
         //Zona Fe
         $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
 
+        $data['serie'] = $serie;
 
         return $this->load->view('sidebaropennews', $data, TRUE);
 
