@@ -142,7 +142,7 @@
                         <!--contenido colapsable-->
                         <div class="panel-group" id="accordion1">
                             <?php
-
+                            $name_champ_default = "";
                             foreach ($campeonatos as $campeonato) {
                                 if ($serie == $campeonato->champ) {
                                     $name_champ_default = $campeonato->shortname;

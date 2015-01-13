@@ -4,8 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/constants.php" afterPath="$PROJECT_DIR$/application/config/constants.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/teams/shield/cf9d5142904464b7e88d44534f931804.png" afterPath="$PROJECT_DIR$/imagenes/teams/shield/cf9d5142904464b7e88d44534f931804.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/equipos-sprite.png" afterPath="$PROJECT_DIR$/assets/img/equipos-sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/teams/mini_shield/mushuc-runa-sporting-club.png" afterPath="$PROJECT_DIR$/imagenes/teams/mini_shield/mushuc-runa-sporting-club.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/teams/thumb/mushuc-runa-sporting-club.png" afterPath="$PROJECT_DIR$/imagenes/teams/thumb/mushuc-runa-sporting-club.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/teams/thumb2/mushuc-runa-sporting-club.png" afterPath="$PROJECT_DIR$/imagenes/teams/thumb2/mushuc-runa-sporting-club.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php" afterPath="$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/sprites.css" afterPath="$PROJECT_DIR$/assets/css/sprites.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -42,11 +50,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matchesperteam.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="450">
+              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+              <folding>
+                <element signature="e#532#3639#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6860215" vertical-offset="596" max-vertical-offset="1635">
-              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state vertical-scroll-proportion="-8.916667" vertical-offset="596" max-vertical-offset="1635">
+              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5416665" vertical-offset="1973" max-vertical-offset="4260">
+              <caret line="142" column="57" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contenido.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.7916665" vertical-offset="857" max-vertical-offset="4980">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,27 +157,23 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/menu.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxbanner.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxsidebar1.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" />
-        <option value="$PROJECT_DIR$/assets/css/sprites.css" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboardFull.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matches.php" />
-        <option value="$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiasequipo.php" />
         <option value="$PROJECT_DIR$/application/modules/strikes/views/strikes.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
@@ -148,6 +184,10 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/config/constants.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
+        <option value="$PROJECT_DIR$/assets/css/sprites.css" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
+        <option value="$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php" />
       </list>
     </option>
   </component>
@@ -158,7 +198,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="444" />
+    <option name="x" value="130" />
     <option name="y" value="23" />
     <option name="width" value="1324" />
     <option name="height" value="966" />
@@ -418,7 +458,7 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Unnamed" start_url="/newFutbolEcuador/site/NewFutec/site/partido/barcelona-emelec/6705">
+    <configuration default="false" name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="Unnamed" start_url="/newFutbolEcuador/site/NewFutec">
       <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
@@ -2258,7 +2298,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421182136029</updated>
     </task>
-    <option name="localTasksCounter" value="304" />
+    <task id="LOCAL-00304" summary="incluye tabla de revista">
+      <created>1421182636781</created>
+      <option name="number" value="00304" />
+      <option name="project" value="LOCAL" />
+      <updated>1421182636781</updated>
+    </task>
+    <option name="localTasksCounter" value="305" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2282,7 +2328,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="444" y="23" width="1324" height="966" extended-state="0" />
+    <frame x="130" y="23" width="1324" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2360,15 +2406,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php</url>
-          <line>68</line>
-          <option name="timeStamp" value="249" />
+          <url>file://$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php</url>
+          <line>18</line>
+          <option name="timeStamp" value="256" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="253" />
+      <option name="time" value="257" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -2380,14 +2426,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/rotativas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="585">
-          <caret line="23" column="89" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.056338027" vertical-offset="358" max-vertical-offset="1545">
@@ -2511,14 +2549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/sprites.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6666665" vertical-offset="728" max-vertical-offset="5355">
@@ -2531,14 +2561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3333335" vertical-offset="1027" max-vertical-offset="1500">
           <caret line="77" column="101" selection-start-line="77" selection-start-column="101" selection-end-line="77" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="480" max-vertical-offset="1140">
-          <caret line="51" column="109" selection-start-line="51" selection-start-column="109" selection-end-line="51" selection-end-column="109" />
           <folding />
         </state>
       </provider>
@@ -2599,14 +2621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.125" vertical-offset="468" max-vertical-offset="9075">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.75" vertical-offset="1908" max-vertical-offset="3705">
-          <caret line="146" column="42" selection-start-line="146" selection-start-column="42" selection-end-line="146" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -2720,14 +2734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67741936" vertical-offset="390" max-vertical-offset="4980">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9655914" vertical-offset="2971" max-vertical-offset="5850">
@@ -2755,14 +2761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31612903" vertical-offset="648" max-vertical-offset="1845">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.354839" vertical-offset="0" max-vertical-offset="4245">
-          <caret line="228" column="24" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -2801,6 +2799,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7916665" vertical-offset="857" max-vertical-offset="4980">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.916667" vertical-offset="596" max-vertical-offset="1635">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/equipos-sprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/sprites.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030674847" vertical-offset="0" max-vertical-offset="555">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5416665" vertical-offset="1973" max-vertical-offset="4260">
+          <caret line="142" column="57" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5701358" vertical-offset="1908" max-vertical-offset="3705">
+          <caret line="144" column="53" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-46.875" vertical-offset="0" max-vertical-offset="7965">
@@ -2809,11 +2852,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6860215" vertical-offset="596" max-vertical-offset="1635">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="450">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding>
+            <element signature="e#532#3639#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

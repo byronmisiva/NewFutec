@@ -140,6 +140,7 @@
                             <?php
 
                             foreach ($campeonatos as $campeonato) {
+                                $name_champ_default = "";
                                 if (CHAMP_DEFAULT == $campeonato->champ) {
                                     $name_champ_default = $campeonato->shortname;
                                     $active = "in";
