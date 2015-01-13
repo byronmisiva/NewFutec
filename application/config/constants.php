@@ -59,7 +59,7 @@ define('LIBERTADORES',41);
 define('SUDAMERICANA',39);
 
 //Futbolecuador
-define('CHAMP_DEFAULT',49);
+define('CHAMP_DEFAULT',53);
 define('REFRESH_VIVO',300); //segundos
 define('CACHE_PARTIDOS',3); //minutos
 define('CACHE_MENU',60);	//minutos
