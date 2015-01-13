@@ -25,7 +25,7 @@ class Site extends MY_Controller
         $this->load->module('templates');
         $this->load->module('contenido');
         $this->load->module('banners');
-        $data['pageTitle'] = "futbolecuador.com - Noticia abierta Lo mejor del fútbol ecuatoriano";
+        $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
 
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
@@ -74,6 +74,12 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
+    public function masnoticias()
+    { $this->load->module('noticias');
+
+        echo  $this->noticias->viewNoticiasHome();
+
+    }
     public function noticia()
     {
         // para la final se comentan la llamada a las secciones.

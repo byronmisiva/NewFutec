@@ -1,4 +1,9 @@
 jQuery(document).ready(function () {
+    $("#masnoticias").click(function(){
+        $( ".noticiasextras" ).load( "site/masnoticias" );
+        $(this).remove ();
+    })
+
     //sidebar
     $(function() {
         $("img.lazy").lazyload();

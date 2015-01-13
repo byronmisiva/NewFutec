@@ -23,9 +23,9 @@ $pos = strpos($noticia, $findme);
     $indice++;
 }
 ?>
-<div class="col-md-12 text-right fondoazul separador10 masnoticias">
-    Más noticias
+<div class="noticiasextras">
 </div>
-<div class="col-md-12  separador10">
 
+<div class="col-md-12 text-right fondoazul separador10 masnoticias" id="masnoticias" params="0" seccion="" type="2">
+    Más noticias
 </div>
