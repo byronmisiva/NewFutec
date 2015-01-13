@@ -956,6 +956,9 @@ h4.contenidos {
     background: rgba(174, 174, 174, 0.9);
 }
 
+.masnoticias {
+    cursor: pointer;
+}
 .bottom {
     position: absolute;
     bottom: 0;
@@ -967,7 +970,7 @@ h4.contenidos {
 }
 
 .text-marcador-home {
-    font-family: 'Wallpoet', cursive;
+    font-family: 'Rationale', sans-serif;
 }
 
 .img-goleadores {

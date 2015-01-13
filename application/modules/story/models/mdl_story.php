@@ -44,7 +44,7 @@ class Mdl_story extends MY_Model
         return  $aux;
     }
 
-    function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '')
+    function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '', $offset = 0)
     {
         $this->load->module('story');
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
@@ -54,7 +54,7 @@ class Mdl_story extends MY_Model
         $this->db->where('s.invisible', 0, FALSE);
         $this->db->where('s.position !=', 10);
         $this->db->order_by('s.created', 'desc', FALSE);
-        $this->db->limit($limit);
+        $this->db->limit($limit, $offset);
         //quitamos las noticias rotativas
 
         if ($exclude != "")

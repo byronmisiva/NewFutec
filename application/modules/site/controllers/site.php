@@ -75,11 +75,12 @@ class Site extends MY_Controller
     }
 
     public function masnoticias()
-    { $this->load->module('noticias');
-
-        echo  $this->noticias->viewNoticiasHome();
-
+    {
+        $this->load->module('noticias');
+        // parametros
+        echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE -1 , RESULT_PAGE);
     }
+
     public function noticia()
     {
         // para la final se comentan la llamada a las secciones.
@@ -160,7 +161,7 @@ class Site extends MY_Controller
 
     public function serieb()
     {
-        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb", "",SERIE_B);
+        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb", "", SERIE_B);
     }
 
     public function seleccion()
@@ -282,6 +283,7 @@ class Site extends MY_Controller
         $femagazine = $this->contenido->femagazine();
         $this->singleConten("Fe Magazine", $femagazine);
     }
+
     public function search()
     {
         $this->load->module('contenido');
@@ -413,16 +415,16 @@ class Site extends MY_Controller
         $idNoticia = $this->uri->segment(6);
 
         $nombreNoticia = $this->uri->segment(5);
-        if  ($nombreNoticia === "0") {
-                $idNoticia = "1";
-            }
+        if ($nombreNoticia === "0") {
+            $idNoticia = "1";
+        }
 
 
         $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
         $nameSeccion = $infoSeccionEquipo[0]->name;
 
 
-        if  (!$idNoticia)  {
+        if (!$idNoticia) {
             $this->load->module('team');
             $this->load->module('matches');
 

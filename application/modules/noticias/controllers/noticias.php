@@ -10,8 +10,12 @@ class Noticias extends MY_Controller
         parent::__construct();
     }
 
+    //parametros
+    //mostrarBanner indica si muestra los banners en las noticias
+    //totalMiniNews total de noticias a mostrar
+    //offset desplazamiento en las noticias
 
-    public function viewNoticiasHome($totalMiniNews = RESULT_PAGE, $data = FALSE)
+    public function viewNoticiasHome($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
         $this->load->library('user_agent');
 
@@ -25,13 +29,7 @@ class Noticias extends MY_Controller
 
 
         setlocale(LC_ALL, "es_ES");
-        $this->load->module('banners');
         $this->load->module('story');
-        $banners = array();
-        $banners[] = $this->banners->FE_Bigboxnews1();
-        $banners[] = $this->banners->FE_Bigboxnews2();
-        $banners[] = $this->banners->FE_Bigboxnews3();
-        $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
 
         $rotativasData = $this->mdl_story->get_banner(6, 44);
@@ -40,30 +38,40 @@ class Noticias extends MY_Controller
         foreach ($rotativasData as $rotativaData) {
             $listRotativas[] = $rotativaData->id;
         }
-        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas);
+        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas, $offset);
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
             $dataStory['isMobile'] = $isMobile;
             $noticias[] = $this->viewNoticia($dataStory);
         }
-        //intercalo entre las noticias los banners.
-        if ($totalMiniNews > 10) {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
-            array_splice($noticias, 17, 0, $banners[2]);
-            //array_splice($noticias, 25, 0, $banners[3]);
-        } else {
-            if ($totalMiniNews > 2) {
-                array_splice($noticias, 5, 0, $banners[0]);
-            }
+        if ($mostrarBanner) {
+            //intercalar banners
+            $this->load->module('banners');
+            $banners = array();
+            $banners[] = $this->banners->FE_Bigboxnews1();
+            $banners[] = $this->banners->FE_Bigboxnews2();
+            $banners[] = $this->banners->FE_Bigboxnews3();
+            $banners[] = $this->banners->FE_Bigboxnews4();
+            //intercalo entre las noticias los banners.
             if ($totalMiniNews > 10) {
-
+                array_splice($noticias, 5, 0, $banners[0]);
                 array_splice($noticias, 12, 0, $banners[1]);
+                array_splice($noticias, 17, 0, $banners[2]);
+                //array_splice($noticias, 25, 0, $banners[3]);
+            } else {
+                if ($totalMiniNews > 2) {
+                    array_splice($noticias, 5, 0, $banners[0]);
+                }
+                if ($totalMiniNews > 10) {
+
+                    array_splice($noticias, 12, 0, $banners[1]);
+                }
             }
+            //fin intercalar banners
         }
         $data['noticias'] = $noticias;
-
+        $data['offset'] = $totalMiniNews + $offset;
 
         return $this->load->view('noticiashome', $data, TRUE);
     }

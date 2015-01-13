@@ -53,8 +53,7 @@
     <link href="<?php echo base_url('assets/css/sprites.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
     <script src="<?php echo base_url('assets/js/ie8-responsive-file-warning.js') ?>"></script><![endif]-->
