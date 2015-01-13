@@ -48,7 +48,8 @@ class Matches extends MY_Controller
 
         $equipos = $this->mdl_matches->get_match_teams($id);
         //todo  arreglar esta funcion
-        $idSerie = $this->getSerie($id);
+        $Serie = $this->getSerie($id);
+        $idSerie = $Serie->id;
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
 
         $data['infoLocal'] = $this->mdl_matches->get_info_team($equipos[0]->team_id_home);
@@ -79,11 +80,17 @@ class Matches extends MY_Controller
 
     public function getSerie($id)
     {
-        $this->db->where('id', $id);
-        $query = $this->db->get('teams');
+
+        $query = $this->db->query('SELECT championships.id,
+                                        championships.name
+                                    FROM matches INNER JOIN schedules ON matches.schedule_id = schedules.id
+                                         INNER JOIN championships ON schedules.round_id = championships.active_round
+                                    WHERE matches.id = ' . $id);
+
+
         $match = $query->result();
-        //return $match[0]->name;
-        return 49;
+
+        return $match[0];
     }
 
     public function matches($idSerie, $title)

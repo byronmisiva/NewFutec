@@ -99,9 +99,5 @@ define('LOMASLEIDOPOS',1); //
 define('NUMNEWSSIDE',5); //
 
 
-
-
-
-
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
