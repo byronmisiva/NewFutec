@@ -124,6 +124,12 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
+    function cuentaVisita($id)
+    {
+        $aux = $this->db->query('update stories_stats set `reads` = `reads` + 1 where story_id=' . $id);
+        return $aux;
+    }
+
     function get_plus($num = 5)
     {
 //todo terminar esta funcion

@@ -188,8 +188,8 @@ class Noticias extends MY_Controller
         $noticias = array();
 
         $data['idsection'] = $idsection;
-        //$storys = $this->mdl_noticias->get_by_position(24, $idsection, $posSection);
-        $storys = $this->mdl_story->get_plus(24);
+
+        $storys = $this->mdl_story->get_plus($totalMiniNews);
 
         $dataStory['tipoLink'] = "secction";
 
@@ -199,15 +199,21 @@ class Noticias extends MY_Controller
             $dataStory['story'] = $story;
             $noticias[] = $this->viewNoticia($dataStory);
         }
+
+        //intercalo entre las noticias los banners.
         //intercalo entre las noticias los banners.
         if ($totalMiniNews > 10) {
             array_splice($noticias, 5, 0, $banners[0]);
             array_splice($noticias, 12, 0, $banners[1]);
             array_splice($noticias, 17, 0, $banners[2]);
-            array_splice($noticias, 25, 0, $banners[3]);
+            if ($totalMiniNews > 25)
+                array_splice($noticias, 25, 0, $banners[3]);
         } else {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
+            if ($totalMiniNews > 5)
+                array_splice($noticias, 5, 0, $banners[0]);
+
+            if ($totalMiniNews > 12)
+                array_splice($noticias, 12, 0, $banners[1]);
         }
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
