@@ -99,7 +99,7 @@
         <div class="col-md-12 separador5 margen0">
 
                 <div class="col-md-11 ">
-                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
+                    Tu opinión nos interesa, escríbe tus sugerencias o comentarios
                 </div>
 
         </div>
