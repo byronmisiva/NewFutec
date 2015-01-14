@@ -18,7 +18,7 @@
 
 body {
     color: #666666  ;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .container{
@@ -502,9 +502,9 @@ sub {
 
 .fondoazul {
     color: #1f1f1f  ;
-    font-size: 11px;
+    font-size: 12px;
     padding-bottom: 2px;
-    padding-top: 3px;
+    padding-top: 2px;
     background-color: #f1f1f1;
     font-family: oxygen;
     background-image: url("../img/fondo-subtitulos-white.png");
@@ -587,7 +587,8 @@ sub {
     border-radius: 0px;
     color: #fff;
     font-family: oxygen;
-}
+      height: 24px;
+  }
 
   .backcuadros a {
       color: #ffffff;
@@ -637,7 +638,7 @@ sub {
 
 .tablaposiciones .nav > li > a, .tablaposiciones .nav > li > a:hover {
 
-    padding: 3px 3px;
+    padding: 3px 3px 4px;
 
 }
 
@@ -666,7 +667,7 @@ sub {
 
 .lateral .nav > li > a, .lateral .nav > li > a:hover {
     display: block;
-    padding: 6px 15px;
+    padding: 4px 15px 5px;
     position: relative;
 }
 
