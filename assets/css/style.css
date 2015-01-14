@@ -224,6 +224,9 @@ footer {
 .menu-points {
     margin: 5px 0 0;
 }
+.flexslider {
+    height: 345px !important; overflow: hidden
+}
 
 .flexslider .text-rotativas {
     width: 95%;

@@ -13,16 +13,16 @@
                 <div class="content-text-rotativas">
                     <a href="<?php echo $link ?>">
                         <div class="col-md-12 margen0 text-rotativas">
-                            <div class="col-md-11 margen0">
+                            <div class="col-md-12 margen0">
                                 <h2><?php echo $rotativa->title; ?> </h2>
 
                                 <h3>
                                     <?php echo $rotativa->subtitle; ?>
                                 </h3>
                             </div>
-                            <div class="col-md-1  margen0 text-right">
-                                <img src="<?php echo 'assets/img/leer-mas-home.png' ?>"   />
-                            </div>
+                            <!--<div class="col-md-1  margen0 text-right">
+                                <img src="<?php /*echo 'assets/img/leer-mas-home.png' */?>"   />
+                            </div>-->
                         </div>
                     </a>
                 </div>

@@ -99,7 +99,7 @@
         <div class="col-md-12 separador5 margen0">
 
                 <div class="col-md-11 ">
-                    Forma parte del selecto grupo de auspiciantes de futbolecuador.com
+                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
                 </div>
 
         </div>
@@ -130,7 +130,7 @@
         <div class="col-md-12 separador5 margen0">
 
                 <div class="col-md-12 ">
-                    Tu opiinón nos interesa, escríbenos tus sugerencias o comentarios
+                    Forma parte del selecto grupo de auspiciantes de futbolecuador.com
                 </div>
 
         </div>

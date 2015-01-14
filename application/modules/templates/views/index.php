@@ -121,7 +121,7 @@ $this->load->view('header');
         </div>
     <?php } ?>
     <div class="row ">
-        <div class="col-md-8 margen0r-xs">
+        <div class="col-md-8 ">
             <div class="row margen0  content">
                 <?php
                 echo $content;
