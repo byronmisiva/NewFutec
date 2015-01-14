@@ -43,7 +43,7 @@
 
     } else {
         ?>
-        <div class="col-md-12 col-xs-7 column text-news-sub">
+        <div class="col-md-12 col-xs-9 column text-news-sub">
             <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
         </div>
         <div class="col-md-12 column mini-new-conten hidden-xs">
@@ -51,8 +51,6 @@
         </div>
     <?php
     }?>
-
-
 </div>
 <div class="col-md-12 column content-gris hidden-xs">
     <div class="col-md-4 column margen0">
