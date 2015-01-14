@@ -269,19 +269,19 @@ function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
     var s_email = $(mail).val();
     var s_name = $(nombre).val();
     var s_msg = $(mensaje).val();
-    var error = "";
+    var error = "Falta: ";
     if (filter.test(s_email)) {
         sendMail = "true";
     } else {
-        error = error + "Falta email, ";
+        error = error + "email, ";
         sendMail = "false";
     }
     if (s_name.length == 0) {
-        error = error + " Falta nombre,";
+        error = error + "nombre, ";
         var sendMail = "false";
     }
     if (s_msg.length == 0) {
-        error = error + " Falta mensaje";
+        error = error + "mensaje, ";
         var sendMail = "false";
     }
     if (sendMail == "true") {

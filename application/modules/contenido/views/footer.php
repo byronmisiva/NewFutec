@@ -34,8 +34,8 @@
     </div>
 
     <div class="col-md-3">
-        <div class="col-md-12 azulfooter ">
-            <h3>&nbsp;</h3>
+        <div class="col-md-12  ">
+            <div class="espaciador" ></div>
         </div>
         <div class="col-md-12 separa">
             <a href="<?= base_url('tabla-de-posiciones') ?>">Resultados</a>

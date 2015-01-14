@@ -456,6 +456,7 @@ class Site extends MY_Controller
             $idEquipo = $infoEquipo[0]->id;
             $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
+
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
             $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, SERIE_A);

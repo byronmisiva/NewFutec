@@ -1,6 +1,4 @@
 <!--ficha Equipo-->
-
-
 <div class="col-md-12  fondoazul  separador10">
     <h4 class="contenidos">Perfil</h4>
 </div>
@@ -18,10 +16,10 @@
         <div class="col-md-12 separador5   h3 ">
             <strong>ESTADIO</strong>
         </div>
-        <div class="col-md-12       ">
-            <?php echo $infoEquipo->stadia[0]->name; ?>
+        <div class="col-md-12">
+            <?php if (isset($infoEquipo->stadia[0]->name))
+            echo $infoEquipo->stadia[0]->name; ?>
         </div>
-
     </div>
     <div class="col-md-6 separador10     ">
 
