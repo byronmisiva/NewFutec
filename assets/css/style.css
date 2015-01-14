@@ -956,7 +956,7 @@ h4.contenidos {
     background: rgba(174, 174, 174, 0.9);
 }
 
-.masnoticias {
+.masnoticias, .masnoticiasequipos  {
     cursor: pointer;
 }
 .bottom {

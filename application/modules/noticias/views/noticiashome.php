@@ -26,6 +26,6 @@ $pos = strpos($noticia, $findme);
 <div class="noticiasextras">
 </div>
 
-<div class="col-md-12 text-right fondoazul separador10 masnoticias"  offset="0" seccion="" type="2">
+<div class="col-md-12 text-right fondoazul separador10 masnoticias"  offset="<?php echo $offset;?>" section="<?php echo $idsection;?>" pos="<?php echo $posSection;?>">
     Más noticias
 </div>

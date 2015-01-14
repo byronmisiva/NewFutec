@@ -77,8 +77,16 @@ class Site extends MY_Controller
     public function masnoticias()
     {
         $this->load->module('noticias');
-        // parametros
-        echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE -1 , RESULT_PAGE);
+
+        $offset = $_POST["offset"];
+        $idsection = $_POST["section"];
+        $posSection = $_POST["pos"];
+
+        if ($idsection==""){
+        echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE -1 , $offset );
+        } else {
+            echo $this->noticias->viewSeccions("", $idsection, $posSection,   "",   RESULT_PAGE -1, $offset, false );
+        }
     }
 
     public function noticia()

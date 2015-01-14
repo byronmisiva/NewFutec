@@ -36,7 +36,7 @@
         <?php
         }
         ?>
-        <div class="col-md-12 text-right fondoazul separador10 masnoticias">
+        <div class="col-md-12 text-right fondoazul separador10 masnoticiasequipos">
             <a href="<?php echo base_url() . 'site/' . $urlsecction. "/0"    ?>">Más noticias</a>
         </div>
     </div>

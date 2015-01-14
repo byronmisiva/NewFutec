@@ -130,7 +130,7 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-    function get_plus($num = 5)
+    function get_plus($num = 5, $offset = 0)
     {
 //todo terminar esta funcion
         $past_days = 7;
@@ -138,7 +138,7 @@ class Mdl_story extends MY_Model
         $this->db->where('s.created >', $last_month);
         $this->db->where('s.invisible', '0');
         $this->db->where('s.position !=', 10);
-        $this->db->limit($num);
+        $this->db->limit($num, $offset);
 
 
         $this->db->from('stories_stats ss');

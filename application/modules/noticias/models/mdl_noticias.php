@@ -75,7 +75,7 @@ class Mdl_Noticias extends MY_Model
     //end from secction
 
 
-    public function get_by_position($limit, $seccion = "", $position)
+    public function get_by_position($limit, $seccion = "", $position, $offset = 0)
     {
         if ($seccion != "") {
             $sec = $this->get($seccion);
@@ -116,7 +116,7 @@ class Mdl_Noticias extends MY_Model
         if (count($l) > 1)
             $this->db->limit($l[0], $l[1]);
         else
-            $this->db->limit($limit);
+            $this->db->limit($limit, $offset);
         $this->db->order_by('s.created', "desc");
 
 

@@ -1,7 +1,11 @@
 function clickMasNoticias() {
     $(".masnoticias").click(function () {
+        var offset  = $(this).attr('offset');
+        var section  = $(this).attr('section');
+        var pos  = $(this).attr('pos');
+        if (section!="") console.log ("quita");
         $(this).remove();
-        $.post("site/masnoticias", function (data) {
+        $.post(baseUrl + "site/masnoticias", { offset: offset, section:section , pos: pos  }, function (data) {
             noticiasExtras = $(".noticiasextras").html();
 
             $(".noticiasextras").html(noticiasExtras + data);

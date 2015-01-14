@@ -72,20 +72,16 @@ class Noticias extends MY_Controller
         }
         $data['noticias'] = $noticias;
         $data['offset'] = $totalMiniNews + $offset;
+        $data['idsection'] = "";
+        $data['posSection'] = "";
 
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewNoticias($totalMiniNews = RESULT_PAGE, $data = FALSE)
+    public function viewNoticias($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
         setlocale(LC_ALL, "es_ES");
-        $this->load->module('banners');
         $this->load->module('story');
-        $banners = array();
-        $banners[] = $this->banners->FE_Bigboxnews1();
-        $banners[] = $this->banners->FE_Bigboxnews2();
-        $banners[] = $this->banners->FE_Bigboxnews3();
-        $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
 
         $rotativasData = $this->mdl_story->get_banner(6, 44);
@@ -94,13 +90,23 @@ class Noticias extends MY_Controller
         foreach ($rotativasData as $rotativaData) {
             $listRotativas[] = $rotativaData->id;
         }
-        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas);
+
+        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas, $offset);
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
             $noticias[] = $this->viewNoticia($dataStory);
         }
+
+        if ($mostrarBanner){
         //intercalo entre las noticias los banners.
+        $this->load->module('banners');
+        $banners = array();
+        $banners[] = $this->banners->FE_Bigboxnews1();
+        $banners[] = $this->banners->FE_Bigboxnews2();
+        $banners[] = $this->banners->FE_Bigboxnews3();
+        $banners[] = $this->banners->FE_Bigboxnews4();
+
         if ($totalMiniNews > 10) {
             array_splice($noticias, 5, 0, $banners[0]);
             array_splice($noticias, 12, 0, $banners[1]);
@@ -110,25 +116,25 @@ class Noticias extends MY_Controller
             array_splice($noticias, 5, 0, $banners[0]);
             array_splice($noticias, 12, 0, $banners[1]);
         }
-        $data['noticias'] = $noticias;
+        // fin intercalar
+        }
 
+        $data['noticias'] = $noticias;
+        $data['offset'] = $totalMiniNews + $offset;
+        $data['idsection'] = "";
+        $data['posSection'] = "";
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE)
+    public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
     {
         setlocale(LC_ALL, "es_ES");
-        $this->load->module('banners');
-
-        $banners = array();
-        $banners[] = $this->banners->FE_Bigboxnews1();
-        $banners[] = $this->banners->FE_Bigboxnews2();
-        $banners[] = $this->banners->FE_Bigboxnews3();
-        $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
 
         $data['idsection'] = $idsection;
-        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection);
+        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset);
+
+
 
         $dataStory['tipoLink'] = "secction";
 
@@ -138,22 +144,39 @@ class Noticias extends MY_Controller
             $dataStory['story'] = $story;
             $noticias[] = $this->viewNoticia($dataStory);
         }
-        //intercalo entre las noticias los banners.
-        if ($totalMiniNews > 10) {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
-            array_splice($noticias, 17, 0, $banners[2]);
-            if ($totalMiniNews > 25)
-                array_splice($noticias, 25, 0, $banners[3]);
-        } else {
-            if ($totalMiniNews > 5)
-                array_splice($noticias, 5, 0, $banners[0]);
+        if ($mostrarBanner) {
+            //intercalo entre las noticias los banners.
+            $this->load->module('banners');
+            $banners = array();
+            $banners[] = $this->banners->FE_Bigboxnews1();
+            $banners[] = $this->banners->FE_Bigboxnews2();
+            $banners[] = $this->banners->FE_Bigboxnews3();
+            $banners[] = $this->banners->FE_Bigboxnews4();
 
-            if ($totalMiniNews > 12)
+            if ($totalMiniNews > 10) {
+                array_splice($noticias, 5, 0, $banners[0]);
                 array_splice($noticias, 12, 0, $banners[1]);
+                array_splice($noticias, 17, 0, $banners[2]);
+                if ($totalMiniNews > 25)
+                    array_splice($noticias, 25, 0, $banners[3]);
+            } else {
+                if ($totalMiniNews > 5)
+                    array_splice($noticias, 5, 0, $banners[0]);
+
+                if ($totalMiniNews > 12)
+                    array_splice($noticias, 12, 0, $banners[1]);
+            }
+            //fin intercalo entre las noticias los banners.
         }
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
+
+        $data['offset'] = $totalMiniNews;
+        $data['idsection'] = trim($idsection);
+        $data['posSection'] = $posSection;
+
+        //$data['offset'] = $totalMiniNews + $offset;
+
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
@@ -183,21 +206,15 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiasequipo', $data, TRUE);
     }
 
-    public function viewseccion_plus($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE)
+    public function viewseccion_plus($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
     {
         setlocale(LC_ALL, "es_ES");
-        $this->load->module('banners');
 
-        $banners = array();
-        $banners[] = $this->banners->FE_Bigboxnews1();
-        $banners[] = $this->banners->FE_Bigboxnews2();
-        $banners[] = $this->banners->FE_Bigboxnews3();
-        $banners[] = $this->banners->FE_Bigboxnews4();
         $noticias = array();
 
         $data['idsection'] = $idsection;
 
-        $storys = $this->mdl_story->get_plus($totalMiniNews);
+        $storys = $this->mdl_story->get_plus($totalMiniNews, $offset);
 
         $dataStory['tipoLink'] = "secction";
 
@@ -209,7 +226,14 @@ class Noticias extends MY_Controller
         }
 
         //intercalo entre las noticias los banners.
-        //intercalo entre las noticias los banners.
+        if ($mostrarBanner){
+        $this->load->module('banners');
+
+        $banners = array();
+        $banners[] = $this->banners->FE_Bigboxnews1();
+        $banners[] = $this->banners->FE_Bigboxnews2();
+        $banners[] = $this->banners->FE_Bigboxnews3();
+        $banners[] = $this->banners->FE_Bigboxnews4();
         if ($totalMiniNews > 10) {
             array_splice($noticias, 5, 0, $banners[0]);
             array_splice($noticias, 12, 0, $banners[1]);
@@ -223,13 +247,18 @@ class Noticias extends MY_Controller
             if ($totalMiniNews > 12)
                 array_splice($noticias, 12, 0, $banners[1]);
         }
+        }
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
+        $data['offset'] = $totalMiniNews + $offset;
+        $data['idsection'] = trim($idsection);
+        $data['posSection'] = $posSection;
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
     public function viewNoticia($data = FALSE)
     {
+        $this->load->library('user_agent');
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $data['isMobile'] = false;
         if ($this->agent->is_mobile()) {
