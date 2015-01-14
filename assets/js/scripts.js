@@ -291,6 +291,7 @@ function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
             "mensaje": $(mensaje).val()
         };
 
+
         $.ajax({
             data: datos,
             // hacemos referencia al archivo contacto.php
