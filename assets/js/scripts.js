@@ -103,7 +103,6 @@ setTimeout(function () {
 }, 3000);
 
 setTimeout(function () {
-    console.log(alto);
     alto = $('.flexslider  .flex-control-thumbs').height();
     $('.flexslider').height(alto);
     ancho = $('.flexslider  .clone').first().width();
