@@ -1024,6 +1024,9 @@ h4.contenidos {
         margin-left: -10px;
         margin-right: 0;
     }
+    .margen0r-xs {
+        margin-right: 10px;
+    }
 
     .lineseparador {
         border-bottom: 0 solid #f0f0f0;
