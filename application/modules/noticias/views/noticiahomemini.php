@@ -10,10 +10,10 @@
 ?>
 
 <div class="row clearfix news-detail">
-    <div class="col-md-12  col-xs-3">
+    <div class="col-md-12  col-xs-2">
         <div class="noticia-img">
             <a href="<?php echo $link ?>">
-                <img data-original="http://www.futbolecuador.com/<?php echo ($isMobile) ? $story->thumbh120:$story->thumb300; ?>"
+                <img data-original="http://www.futbolecuador.com/<?php echo ($isMobile) ? $story->thumbh80:$story->thumb300; ?>"
                      class="img-responsive lazy"
                      alt="<?php echo str_replace('"', '', "$story->title"); ?>">
             </a>
@@ -25,7 +25,7 @@
             echo strftime("%d %B %Y", strtotime($story->created)); ?>
         </a>
     </div>
-    <div class="col-md-12 column col-xs-9">
+    <div class="col-md-12 column col-xs-10">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <?php
@@ -36,14 +36,14 @@
         $bodyCortado = substr($str, 0, -(strlen($str) - strrpos($str, ' ')));
         echo '<a href="' . $link . '" class="sidebarlink">' . '</a>';
         ?>
-        <div class="col-md-12 column mini-new-conten">
+        <div class="col-md-12 col-xs-10 column mini-new-conten">
             <a href="<?php echo $link ?>"> <?php echo $bodyCortado . "..." ?></a>
         </div>
     <?php
 
     } else {
         ?>
-        <div class="col-md-12 col-xs-9 column text-news-sub">
+        <div class="col-md-12 col-xs-10 column text-news-sub">
             <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
         </div>
         <div class="col-md-12 column mini-new-conten hidden-xs">
