@@ -16,6 +16,8 @@ class Site extends MY_Controller
     }
 
 
+
+        // para la final se comentan la llamada a las secciones.
     public function home()
     {
 
@@ -72,6 +74,16 @@ class Site extends MY_Controller
 
         }
         $this->templates->_index($data);
+    }
+
+    public function contacto()
+    {
+        echo "Mensaje Enviado";
+    }
+
+    public function publicidad()
+    {
+        echo "Mensaje Enviado";
     }
 
     public function masnoticias()

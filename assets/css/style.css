@@ -827,7 +827,7 @@ input.search2[type=text]
     padding-top: 8px;
 }
 
-a.newsButton {
+a.newsButton, .newsButton {
     background-color:transparent;
     display:inline-block;
     cursor:pointer;
@@ -836,6 +836,7 @@ a.newsButton {
     font-size:12px;
     padding:16px 20px;
     text-decoration:none;
+
 }
 a.newsButton:hover {
     background-color:transparent;

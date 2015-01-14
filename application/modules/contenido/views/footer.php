@@ -4,7 +4,7 @@
             <h3>Secciones</h3>
         </div>
         <div class="col-md-12 separa">
-             <div class="subtitulo"><strong>Fútbol Nacional</strong></div>
+            <div class="subtitulo"><strong>Fútbol Nacional</strong></div>
         </div>
 
         <div class="col-md-12 separa">
@@ -98,46 +98,14 @@
 
         <div class="col-md-12 separador5 margen0">
 
-                <div class="col-md-11 ">
-                    Tu opinión nos interesa, escríbe tus sugerencias o comentarios
-                </div>
+            <div class="col-md-11 ">
+                Tu opinión nos interesa, escríbe tus sugerencias o comentarios
+            </div>
 
         </div>
-         <form id="publicidad">
-            <div class="col-md-12 separador10">
-                <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrepublicidad" class="search2" >
-            </div>
-
-            <div class="col-md-12 ">
-                <input type="text" placeholder="Correo" name="CorreoContacto" id="correopublicidad" class="search2">
-            </div>
-            <div class="col-md-12 ">
-                <textarea placeholder="Mensaje" name="MensajeContacto" id="mensajepublicidad" class="search3"></textarea>
-            </div>
-            <div class="col-md-8  text-left" id="publicidadmensaje">
-
-            </div>
-            <div class="col-md-4  text-center">
-                <a href="#" class="newsButton" id="enviarpublicidad">Enviar</a>
-            </div>
-        </form>
-    </div>
-
-    <div class="col-md-3">
-        <div class="col-md-12  azulfooter">
-            <h3>Publicidad</h3>
-        </div>
-        <div class="col-md-12 separador5 margen0">
-
-                <div class="col-md-12 ">
-                    Forma parte del selecto grupo de auspiciantes de futbolecuador.com
-                </div>
-
-        </div>
-
         <form id="contacto">
             <div class="col-md-12 separador10 ">
-                <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrecontacto" class="search2" >
+                <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrecontacto" class="search2">
             </div>
 
             <div class="col-md-12 ">
@@ -146,11 +114,43 @@
             <div class="col-md-12 ">
                 <textarea placeholder="Mensaje" name="MensajeContacto" id="mensajecontacto" class="search3"></textarea>
             </div>
-            <div class="col-md-8  text-left" id="contactomensaje">
+            <div class="col-md-8  text-left" id="errorcontacto">
+            </div>
+            <div class="col-md-4  text-center">
+                <div class="newsButton " id="enviarcontacto">Enviar</div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="col-md-3">
+        <div class="col-md-12  azulfooter">
+            <h3>Publicidad</h3>
+        </div>
+        <div class="col-md-12 separador5 margen0">
+
+            <div class="col-md-12 ">
+                Forma parte del selecto grupo de auspiciantes de futbolecuador.com
+            </div>
+
+        </div>
+        <form id="publicidad">
+            <div class="col-md-12 separador10">
+                <input type="text" placeholder="Nombre" name="NombreContacto" id="nombrepublicidad" class="search2">
+            </div>
+
+            <div class="col-md-12 ">
+                <input type="text" placeholder="Correo" name="CorreoContacto" id="correopublicidad" class="search2">
+            </div>
+            <div class="col-md-12 ">
+                <textarea placeholder="Mensaje" name="MensajeContacto" id="mensajepublicidad"
+                          class="search3"></textarea>
+            </div>
+            <div class="col-md-8  text-left" id="errorpublicidad">
 
             </div>
             <div class="col-md-4  text-center">
-                <a href="#" class="newsButton" id="enviarcontacto">Enviar</a>
+                <div class="newsButton " id="enviarpublicidad">Enviar</div>
             </div>
         </form>
     </div>

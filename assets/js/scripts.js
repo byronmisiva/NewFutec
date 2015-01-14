@@ -1,12 +1,12 @@
 var masnoticas = "";
 function clickMasNoticias() {
     $(".masnoticias").click(function () {
-        var offset  = $(this).attr('offset');
-        var section  = $(this).attr('section');
-        var pos  = $(this).attr('pos');
+        var offset = $(this).attr('offset');
+        var section = $(this).attr('section');
+        var pos = $(this).attr('pos');
         $(this).html("Cargando...");
         masnoticas = this;
-        $.post(baseUrl + "site/masnoticias", { offset: offset, section:section , pos: pos  }, function (data) {
+        $.post(baseUrl + "site/masnoticias", {offset: offset, section: section, pos: pos}, function (data) {
             $(masnoticas).remove();
             noticiasExtras = $(".noticiasextras").html();
 
@@ -18,6 +18,13 @@ function clickMasNoticias() {
 }
 
 jQuery(document).ready(function () {
+
+    $("#enviarcontacto").click(function () {
+        cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")
+    })
+    $("#enviarpublicidad").click(function () {
+        cargaSendMail("#correopublicidad", "#nombrepublicidad", "#mensajepublicidad", "#enviarpublicidad", "#errorpublicidad", "publicidad")
+    })
 
     clickMasNoticias();
 
@@ -254,3 +261,57 @@ jQuery(function () {
 
 
 });
+
+
+function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
+    $(botEnvio).attr("disabled", true);
+    var filter = /^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;
+    var s_email = $(mail).val();
+    var s_name = $(nombre).val();
+    var s_msg = $(mensaje).val();
+    var error = "";
+    if (filter.test(s_email)) {
+        sendMail = "true";
+    } else {
+        error = error + "Falta email, ";
+        sendMail = "false";
+    }
+    if (s_name.length == 0) {
+        error = error + " Falta nombre,";
+        var sendMail = "false";
+    }
+    if (s_msg.length == 0) {
+        error = error + " Falta mensaje";
+        var sendMail = "false";
+    }
+    if (sendMail == "true") {
+        var datos = {
+            "nombre": $(nombre).val(),
+            "email": $(mail).val(),
+            "mensaje": $(mensaje).val()
+        };
+
+        $.ajax({
+            data: datos,
+            // hacemos referencia al archivo contacto.php
+            url: baseUrl + 'site/' + urlMensaje,
+            type: 'post',
+            beforeSend: function () {
+                //aplicamos color de borde si el envio es exitoso
+                $(botEnvio).val("Enviando...");
+            },
+            success: function (response) {
+                $(mail).val("");
+                $(nombre).val("");
+                $(mensaje).val("");
+
+                $(botEnvio).val("Enviar");
+                $(errorCaja).html(response);
+                $(errorCaja).fadeIn('slow');
+                $(botEnvio).removeAttr("disabled");
+            }
+        });
+    } else {
+        $(errorCaja).html(error);
+    }
+}
