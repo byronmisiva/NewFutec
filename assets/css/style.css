@@ -409,7 +409,7 @@ footer {
     font-family: "Oxygen";
     font-size: 13px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 5px 0;
     color: #000;
     font-weight: bold;
     text-decoration: none;
@@ -535,9 +535,10 @@ sub {
 }
 
 .h5 {
-    font-size: 13px;
-    margin-top: 7px;
+    font-size: 12px;
+    margin-top: 4px;
     margin-bottom: 0px;
+    line-height: 11px;
 }
 
 .h6 {
@@ -588,6 +589,10 @@ sub {
     font-family: oxygen;
 }
 
+  .backcuadros a {
+      color: #ffffff;
+      text-decoration: none;
+  }
 .panel-default > .panel-heading  {
     border-radius: 0px;
     color: #ffffff;
@@ -970,7 +975,9 @@ h4.contenidos {
 }
 
 .text-marcador-home {
-    font-family: 'Rationale', sans-serif;
+    font-family: "Rationale",sans-serif;
+    font-size: 17px;
+    padding: 0 0 3px;
 }
 
 .img-goleadores {

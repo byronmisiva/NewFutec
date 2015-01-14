@@ -247,9 +247,9 @@ jQuery(function () {
         ;
     })
 
-    /*  jQuery('#carousel-marcadorenvivo').carousel({
+     jQuery('#carousel-marcadorenvivo').carousel({
      interval: 1200000
-     })*/
+     })
 
 
 });
