@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8450704" vertical-offset="15015" max-vertical-offset="18060">
+            <state vertical-scroll-proportion="0.0" vertical-offset="15015" max-vertical-offset="18060">
               <caret line="1029" column="25" selection-start-line="1029" selection-start-column="25" selection-end-line="1029" selection-end-column="25" />
               <folding />
             </state>
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiahomemini.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="noticiahomemini.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.166667" vertical-offset="131" max-vertical-offset="930">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.13530655" vertical-offset="266" max-vertical-offset="930">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
               <folding>
                 <element signature="tag#div#1;tag#div#0" expanded="false" />
               </folding>
@@ -200,8 +200,8 @@
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
       </list>
     </option>
   </component>
@@ -2446,7 +2446,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421253693342</updated>
     </task>
-    <option name="localTasksCounter" value="314" />
+    <task id="LOCAL-00314" summary="incluye tabla de revista">
+      <created>1421254971117</created>
+      <option name="number" value="00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1421254971117</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2980,21 +2986,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.166667" vertical-offset="131" max-vertical-offset="930">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding>
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="15015" max-vertical-offset="18060">
+          <caret line="1029" column="25" selection-start-line="1029" selection-start-column="25" selection-end-line="1029" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8450704" vertical-offset="15015" max-vertical-offset="18060">
-          <caret line="1029" column="25" selection-start-line="1029" selection-start-column="25" selection-end-line="1029" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.13530655" vertical-offset="266" max-vertical-offset="930">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding>
+            <element signature="tag#div#1;tag#div#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

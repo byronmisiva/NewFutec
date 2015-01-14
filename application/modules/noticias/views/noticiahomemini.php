@@ -25,7 +25,7 @@
             echo strftime("%d %B %Y", strtotime($story->created)); ?>
         </a>
     </div>
-    <div class="col-md-12 column col-xs-9">
+    <div class="col-md-12 column col-xs-9  margen0-xs">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <?php
@@ -36,14 +36,14 @@
         $bodyCortado = substr($str, 0, -(strlen($str) - strrpos($str, ' ')));
         echo '<a href="' . $link . '" class="sidebarlink">' . '</a>';
         ?>
-        <div class="col-md-12 col-xs-9 column mini-new-conten">
+        <div class="col-md-12 col-xs-9 margen0-xs column mini-new-conten">
             <a href="<?php echo $link ?>"> <?php echo $bodyCortado . "..." ?></a>
         </div>
     <?php
 
     } else {
         ?>
-        <div class="col-md-12 col-xs-9 column text-news-sub">
+        <div class="col-md-12 col-xs-9  margen0-xs column text-news-sub">
             <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
         </div>
         <div class="col-md-12 column mini-new-conten hidden-xs">
