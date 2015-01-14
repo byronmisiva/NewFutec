@@ -1,11 +1,13 @@
+var masnoticas = "";
 function clickMasNoticias() {
     $(".masnoticias").click(function () {
         var offset  = $(this).attr('offset');
         var section  = $(this).attr('section');
         var pos  = $(this).attr('pos');
-        if (section!="") console.log ("quita");
-        $(this).remove();
+        $(this).html("Cargando...");
+        masnoticas = this;
         $.post(baseUrl + "site/masnoticias", { offset: offset, section:section , pos: pos  }, function (data) {
+            $(masnoticas).remove();
             noticiasExtras = $(".noticiasextras").html();
 
             $(".noticiasextras").html(noticiasExtras + data);
@@ -247,9 +249,9 @@ jQuery(function () {
         ;
     })
 
-     jQuery('#carousel-marcadorenvivo').carousel({
+    /* jQuery('#carousel-marcadorenvivo').carousel({
      interval: 1200000
-     })
+     })*/
 
 
 });

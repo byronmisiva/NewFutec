@@ -29,6 +29,6 @@
         </div>
     </div>
     <div class="col-md-12 text-right fondoazul separador10">
-        <a href="<?= base_url('tabla-de-posiciones') ?>">Ver más</a>
+        <a href="<?= base_url('tabla-de-posiciones') ?>">Tabla completa</a>
     </div>
 </div>
