@@ -31,7 +31,7 @@
             <input class="search" type="text" name="q" placeholder="Buscar...">
             <input  class="hide" type="submit" name="sa" value="Search" />
     </form>
-    <script type="text/javascript" src="https://cse/brand?form=cref_iframe"></script>
+
 </div>
 
 

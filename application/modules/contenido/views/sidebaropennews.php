@@ -27,19 +27,14 @@
             style="border:none; overflow:hidden; width:60px; height:35px; border:0"></iframe>
     </span>
 </div>
-
 <div class="col-md-6 separador10 pull-right margen0">
-    <form action="<?= base_url('site/search') ?>" id="searchbox_003647730963788853882:cfsv-n7w47w">
-        <input type="hidden" name="cx" value="003647730963788853882:cfsv-n7w47w">
+    <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
+        <input type="hidden" name="cx" value="004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cof" value="FORID:11">
         <input class="search" type="text" name="q" placeholder="Buscar...">
         <input  class="hide" type="submit" name="sa" value="Search" />
     </form>
-    <script type="text/javascript" src="'/cse'/brand'?form='cref_iframe" ></script>
 </div>
-
-
-
 <div class="col-md-12 separador10  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/search.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -34,6 +33,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="sidebaropennews.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36290324" vertical-offset="255" max-vertical-offset="3630">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="fe_bigboxsidebar1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_bigboxsidebar1.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6653226" vertical-offset="90" max-vertical-offset="4260">
-              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+            <state vertical-scroll-proportion="-12.5" vertical-offset="90" max-vertical-offset="4260">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -101,7 +110,6 @@
         <option value="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
         <option value="$PROJECT_DIR$/application/config/constants.php" />
         <option value="$PROJECT_DIR$/assets/css/sprites.css" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiasequipo.php" />
@@ -132,6 +140,7 @@
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/search.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
       </list>
     </option>
   </component>
@@ -2556,7 +2565,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421259544837</updated>
     </task>
-    <option name="localTasksCounter" value="320" />
+    <task id="LOCAL-00320" summary="incluye tabla de revista">
+      <created>1421265223279</created>
+      <option name="number" value="00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1421265223279</updated>
+    </task>
+    <option name="localTasksCounter" value="321" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2807,14 +2822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030674847" vertical-offset="0" max-vertical-offset="555">
           <caret line="1" column="45" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5701358" vertical-offset="1908" max-vertical-offset="3705">
-          <caret line="144" column="53" selection-start-line="144" selection-start-column="53" selection-end-line="144" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -3111,8 +3118,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6653226" vertical-offset="90" max-vertical-offset="4260">
-          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="90" max-vertical-offset="4260">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36290324" vertical-offset="255" max-vertical-offset="3630">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
