@@ -10,7 +10,7 @@
 ?>
 
 <div class="row clearfix news-detail">
-    <div class="col-md-12  col-xs-5">
+    <div class="col-md-12  col-xs-3">
         <div class="noticia-img">
             <a href="<?php echo $link ?>">
                 <img data-original="http://www.futbolecuador.com/<?php echo ($isMobile) ? $story->thumbh120:$story->thumb300; ?>"
@@ -25,7 +25,7 @@
             echo strftime("%d %B %Y", strtotime($story->created)); ?>
         </a>
     </div>
-    <div class="col-md-12 column col-xs-7">
+    <div class="col-md-12 column col-xs-9">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <?php
