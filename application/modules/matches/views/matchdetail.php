@@ -31,7 +31,7 @@ $estado['8'] = 'Fin del Partido';?>
 
                     <div class="col-md-2 col-xs-1 margen0 text-center ">
                         <img class="img-responsive-xs"
-                             src="<?= base_url($teams_pics['shield'][$team->hid]); ?>">
+                             src="http://www.futbolecuador.com/<?= $teams_pics['shield'][$team->hid]; ?>">
                     </div>
                     <div class="col-md-8 col-xs-10   margen0    ">
                         <div class="col-md-12 col-xs-12   margen0    ">
@@ -59,7 +59,7 @@ $estado['8'] = 'Fin del Partido';?>
                     </div>
                     <div class="col-md-2 col-xs-1 text-center margen0">
                         <img class="img-responsive-xs"
-                             src="<?= base_url($teams_pics['shield'][$team->aid]); ?>">
+                             src="http://www.futbolecuador.com/<?= $teams_pics['shield'][$team->aid]; ?>">
                     </div>
                 </a>
             </div>
@@ -74,7 +74,7 @@ $estado['8'] = 'Fin del Partido';?>
 <div class="col-md-6 separador10-xs  margen5r ">
     <div class="col-md-12     clearfix borde">
         <div class="col-md-6    margen0">
-            <img class="img-responsive" src="<?php echo base_url($infoLocal->shirt) ?>"
+            <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $infoLocal->shirt ?>"
                  alt="<?php echo $infoLocal->name ?>">
         </div>
         <div class="col-md-6   col-xs-6 margen0">
@@ -124,7 +124,7 @@ $estado['8'] = 'Fin del Partido';?>
 
         </div>
         <div class="col-md-6    margen0">
-            <img class="img-responsive" src="<?php echo base_url($infoVisitante->shirt) ?>"
+            <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $infoVisitante->shirt ?>"
                  alt="<?php echo $infoVisitante->name ?>">
         </div>
     </div>
