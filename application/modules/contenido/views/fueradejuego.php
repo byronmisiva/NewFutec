@@ -784,7 +784,7 @@
         </div>
 
 
-        <div class="linksFueraJuego">
+        <div class="linksFueraJuego col-md-12">
             <div class="controlfueraJuego"><img class="prev"
                                                 src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/left-fuera.jpg"
                                                 width="18" heigth="163"/></div>
