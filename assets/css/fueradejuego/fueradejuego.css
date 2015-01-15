@@ -99,6 +99,14 @@ img.tituloFuera {
     height: 595px !important;
 }
 
+@media (max-width: 767px) {
+    .logosGPAS {
+        top: inherit;
+        bottom: 10px;
+    }
+}
+
+
 
 
   
