@@ -192,6 +192,44 @@ $estado['8'] = 'Fin del Partido';?>
         </div>
     </div>
 </div>
+<!--actions -->
+<div class="col-md-12  separador10-xs margen0">
+    <div class="col-md-12    margen0">
+
+        <div class="panel-heading fondoazul">
+            <h4 class="panel-title">
+                Comentarios
+            </h4>
+        </div>
+    </div>
+    <!--El actions-->
+    <div class="col-md-12   margen0  panelGuest    clearfix">
+        <?php
+        if (count($actions) > 0) {
+            foreach ($actions as $action) {
+                ?>
+                <div class="col-md-12 separador5   lineseparador-dot">
+                    <div class="col-md-2 col-xs-2">
+                        <div class="col-md-6 col-xs-6">
+                            <img src="<?php echo $action['tipo']; ?>">
+                        </div>
+                        <div class="col-md-6 col-xs-6 nombre-equipo">
+                            <?php echo $action['minuto']; echo is_numeric($action['minuto'])? "'":""; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <?php echo $action['texto']; ?>
+                    </div>
+                </div>
+            <?php
+
+            }
+        }
+        ?>
+    </div>
+</div>
+
+
 <!--Titulares-->
 <div class="col-md-12 separador10-xs  margen0 clearfix">
     <div class="col-md-6  margen0l">
@@ -298,42 +336,6 @@ $estado['8'] = 'Fin del Partido';?>
                 ?>
             </div>
         </div>
-    </div>
-</div>
-<!--actions -->
-<div class="col-md-12  separador10-xs margen0">
-    <div class="col-md-12    margen0">
-
-        <div class="panel-heading fondoazul">
-            <h4 class="panel-title">
-                Comentarios
-            </h4>
-        </div>
-    </div>
-    <!--El actions-->
-    <div class="col-md-12   margen0      clearfix">
-        <?php
-        if (count($actions) > 0) {
-            foreach ($actions as $action) {
-                ?>
-                <div class="col-md-12 separador5   lineseparador-dot">
-                    <div class="col-md-2 col-xs-2">
-                        <div class="col-md-6 col-xs-6">
-                            <img src="<?php echo $action['tipo']; ?>">
-                        </div>
-                        <div class="col-md-6 col-xs-6 nombre-equipo">
-                            <?php echo $action['minuto']; echo is_numeric($action['minuto'])? "'":""; ?>
-                        </div>
-                    </div>
-                    <div class="col-md-10 col-xs-10">
-                        <?php echo $action['texto']; ?>
-                    </div>
-                </div>
-            <?php
-
-            }
-        }
-        ?>
     </div>
 </div>
 <!--test
