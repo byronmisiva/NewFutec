@@ -831,9 +831,9 @@
             </div>
 
             <!-- Feel free to load scripts in the footer -->
-            <link rel="stylesheet" href="<?= base_url() ?>assets/css/fueradejuego/liquid-slider.css">
+            <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css?refresh=' . rand(1, 2000)  ) ?>"/>
 
-            <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css??refresh=' . rand(1, 2000)) ?>"/>
+            <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css?refresh=' . rand(1, 2000)  ) ?>"/>
 
         </div>
     </div>
