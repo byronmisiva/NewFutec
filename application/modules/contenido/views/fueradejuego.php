@@ -833,7 +833,7 @@
             <!-- Feel free to load scripts in the footer -->
             <link rel="stylesheet" href="<?= base_url() ?>assets/css/fueradejuego/liquid-slider.css">
 
-            <link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/fueradejuego/fueradejuego.css"/>
+            <link type="text/css" rel="stylesheet" href="<?= base_url() ?>assets/css/fueradejuego/fueradejuego.css?refresh=10"/>
 
         </div>
     </div>
