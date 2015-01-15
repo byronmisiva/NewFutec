@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,118 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <file leaf-file-name="fueradejuego.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.875" vertical-offset="3738" max-vertical-offset="8310">
-              <caret line="273" column="45" selection-start-line="273" selection-start-column="37" selection-end-line="273" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noticias.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.56" vertical-offset="1782" max-vertical-offset="4605">
-              <caret line="134" column="37" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdl_noticias.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91402715" vertical-offset="1171" max-vertical-offset="2265">
-              <caret line="105" column="108" selection-start-line="105" selection-start-column="108" selection-end-line="105" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdl_matches.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7083333" vertical-offset="955" max-vertical-offset="5850">
-              <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
-              <folding>
-                <marker date="1421337674000" expanded="true" signature="522:1195" placeholder="Select m.*, ..matches..." />
-                <marker date="1421337674000" expanded="true" signature="1587:2706" placeholder="Select m.*, ..matches..." />
-                <marker date="1421337674000" expanded="true" signature="2060:2505" placeholder="SELECT sch.i..round_id..." />
-                <marker date="1421337674000" expanded="true" signature="2118:2397" placeholder="SELECT round..schedules..." />
-                <marker date="1421337674000" expanded="true" signature="3061:3318" placeholder="Select DISTI..championships..." />
-                <marker date="1421337674000" expanded="true" signature="3690:3736" placeholder="select * fro..matches_teams..." />
-                <marker date="1421337674000" expanded="true" signature="3919:3951" placeholder="select * fro..teams..." />
-                <marker date="1421337674000" expanded="true" signature="4181:4498" placeholder="SELECT playe..goals..." />
-                <marker date="1421337674000" expanded="true" signature="4735:4976" placeholder="SELECT CONCA..lineups..." />
-                <marker date="1421337674000" expanded="true" signature="5211:5617" placeholder="SELECT p.fir..players..." />
-                <marker date="1421337674000" expanded="true" signature="6246:6372" placeholder="Select match..actions..." />
-                <marker date="1421337674000" expanded="true" signature="12725:13171" placeholder="SELECT m.*, ..matches..." />
-                <marker date="1421337674000" expanded="true" signature="14642:15039" placeholder="SELECT sch.i..round_id..." />
-                <marker date="1421337674000" expanded="true" signature="14694:14935" placeholder="SELECT round..schedules..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matches.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0833335" vertical-offset="610" max-vertical-offset="1800">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <marker date="1421170195000" expanded="true" signature="2944:3308" placeholder="SELECT champ..matches..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matchdetail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="4425" max-vertical-offset="5535">
-              <caret line="303" column="45" selection-start-line="303" selection-start-column="45" selection-end-line="303" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="41.615383" vertical-offset="1082" max-vertical-offset="1545">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.8333335" vertical-offset="871" max-vertical-offset="1635">
-              <caret line="69" column="12" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.8333335" vertical-offset="496" max-vertical-offset="1635">
-              <caret line="44" column="12" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.5828221" vertical-offset="435" max-vertical-offset="1635">
+              <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -208,13 +102,13 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
-        <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
         <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
+        <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
       </list>
     </option>
   </component>
@@ -357,6 +251,152 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fueradejuego" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noticias" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noticias" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noticias" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2449,7 +2489,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421355438932</updated>
     </task>
-    <option name="localTasksCounter" value="335" />
+    <task id="LOCAL-00335" summary="incluye tabla de revista">
+      <created>1421356151813</created>
+      <option name="number" value="00335" />
+      <option name="project" value="LOCAL" />
+      <updated>1421356151813</updated>
+    </task>
+    <option name="localTasksCounter" value="336" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2549,10 +2595,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php</url>
+          <line>138</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="269" />
+      <option name="time" value="270" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -2637,13 +2690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47568712" vertical-offset="0" max-vertical-offset="585">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12903225" vertical-offset="266" max-vertical-offset="930">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -2821,14 +2867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.056737587" vertical-offset="78" max-vertical-offset="1635">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27304965" vertical-offset="3234" max-vertical-offset="4770">
@@ -2850,30 +2888,20 @@
         <state vertical-scroll-proportion="-2.7083333" vertical-offset="955" max-vertical-offset="5850">
           <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
           <folding>
-            <marker date="1421337674000" expanded="true" signature="522:1195" placeholder="Select m.*, ..matches..." />
-            <marker date="1421337674000" expanded="true" signature="1587:2706" placeholder="Select m.*, ..matches..." />
-            <marker date="1421337674000" expanded="true" signature="2060:2505" placeholder="SELECT sch.i..round_id..." />
-            <marker date="1421337674000" expanded="true" signature="2118:2397" placeholder="SELECT round..schedules..." />
-            <marker date="1421337674000" expanded="true" signature="3061:3318" placeholder="Select DISTI..championships..." />
-            <marker date="1421337674000" expanded="true" signature="3690:3736" placeholder="select * fro..matches_teams..." />
-            <marker date="1421337674000" expanded="true" signature="3919:3951" placeholder="select * fro..teams..." />
-            <marker date="1421337674000" expanded="true" signature="4181:4498" placeholder="SELECT playe..goals..." />
-            <marker date="1421337674000" expanded="true" signature="4735:4976" placeholder="SELECT CONCA..lineups..." />
-            <marker date="1421337674000" expanded="true" signature="5211:5617" placeholder="SELECT p.fir..players..." />
-            <marker date="1421337674000" expanded="true" signature="6246:6372" placeholder="Select match..actions..." />
-            <marker date="1421337674000" expanded="true" signature="12725:13171" placeholder="SELECT m.*, ..matches..." />
-            <marker date="1421337674000" expanded="true" signature="14642:15039" placeholder="SELECT sch.i..round_id..." />
-            <marker date="1421337674000" expanded="true" signature="14694:14935" placeholder="SELECT round..schedules..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0833335" vertical-offset="610" max-vertical-offset="1800">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <marker date="1421170195000" expanded="true" signature="2944:3308" placeholder="SELECT champ..matches..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="Select m.*, ..matches..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="Select m.*, ..matches..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT sch.i..round_id..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT round..schedules..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="Select DISTI..championships..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="select * fro..matches_teams..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="select * fro..teams..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT playe..goals..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT CONCA..lineups..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT p.fir..players..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="Select match..actions..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT m.*, ..matches..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT sch.i..round_id..." />
+            <marker date="1421337674000" expanded="true" signature="-1:-1" placeholder="SELECT round..schedules..." />
           </folding>
         </state>
       </provider>
@@ -2891,9 +2919,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3369331" vertical-offset="1082" max-vertical-offset="1545">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33173078" vertical-offset="1872" max-vertical-offset="4605">
+          <caret line="134" column="37" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8076923" vertical-offset="3738" max-vertical-offset="8310">
+          <caret line="273" column="45" selection-start-line="273" selection-start-column="37" selection-end-line="273" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20588236" vertical-offset="134" max-vertical-offset="1005">
+          <caret line="15" column="106" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56344086" vertical-offset="1313" max-vertical-offset="2265">
+          <caret line="105" column="109" selection-start-line="105" selection-start-column="109" selection-end-line="105" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3655914" vertical-offset="610" max-vertical-offset="1800">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <marker date="1421170195000" expanded="true" signature="-1:-1" placeholder="SELECT champ..matches..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="4425" max-vertical-offset="5535">
+        <state vertical-scroll-proportion="0.2580645" vertical-offset="4425" max-vertical-offset="5535">
           <caret line="303" column="45" selection-start-line="303" selection-start-column="45" selection-end-line="303" selection-end-column="45" />
           <folding />
         </state>
@@ -2907,17 +2985,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="41.615383" vertical-offset="1082" max-vertical-offset="1545">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/constants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8333335" vertical-offset="871" max-vertical-offset="1635">
+        <state vertical-scroll-proportion="0.35268816" vertical-offset="871" max-vertical-offset="1635">
           <caret line="69" column="12" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="12" />
           <folding />
         </state>
@@ -2925,32 +2995,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8333335" vertical-offset="496" max-vertical-offset="1635">
+        <state vertical-scroll-proportion="0.35268816" vertical-offset="496" max-vertical-offset="1635">
           <caret line="44" column="12" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.875" vertical-offset="3738" max-vertical-offset="8310">
-          <caret line="273" column="45" selection-start-line="273" selection-start-column="37" selection-end-line="273" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.56" vertical-offset="1782" max-vertical-offset="4605">
-          <caret line="134" column="37" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91402715" vertical-offset="1171" max-vertical-offset="2265">
-          <caret line="105" column="108" selection-start-line="105" selection-start-column="108" selection-end-line="105" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.5828221" vertical-offset="435" max-vertical-offset="1635">
+          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
           <folding />
         </state>
       </provider>
