@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -33,11 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fueradejuego.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fueradejuego.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5828221" vertical-offset="435" max-vertical-offset="1635">
+            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1635">
               <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fueradejuego.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.032258064" vertical-offset="0" max-vertical-offset="12675">
+              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -102,13 +111,13 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
         <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
         <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
       </list>
     </option>
   </component>
@@ -2495,7 +2504,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421356151813</updated>
     </task>
-    <option name="localTasksCounter" value="336" />
+    <task id="LOCAL-00336" summary="incluye tabla de revista">
+      <created>1421356782178</created>
+      <option name="number" value="00336" />
+      <option name="project" value="LOCAL" />
+      <updated>1421356782178</updated>
+    </task>
+    <option name="localTasksCounter" value="337" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2859,14 +2874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9192708" vertical-offset="11639" max-vertical-offset="12675">
-          <caret line="823" column="56" selection-start-line="823" selection-start-column="56" selection-end-line="823" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27304965" vertical-offset="3234" max-vertical-offset="4770">
@@ -3003,8 +3010,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5828221" vertical-offset="435" max-vertical-offset="1635">
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1635">
           <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.032258064" vertical-offset="0" max-vertical-offset="12675">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
           <folding />
         </state>
       </provider>
