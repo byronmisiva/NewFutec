@@ -66,7 +66,7 @@ class Mdl_matches extends MY_Model
 
     function get_pics_teams($id)
     {
-        $query = $this->db->query('Select  t.id,t.shield, t.shield2
+        $query = $this->db->query('Select  DISTINCT(t.id) as id ,t.shield, t.shield2
     					  		 From championships as c, teams  as t, championships_teams as ct, images as i
     					  		 Where c.id=' . $id . '
     					  		   And c.id=ct.championship_id
