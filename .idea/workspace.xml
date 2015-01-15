@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.69758064" vertical-offset="12179" max-vertical-offset="12675">
-              <caret line="835" column="125" selection-start-line="835" selection-start-column="125" selection-end-line="835" selection-end-column="125" />
+              <caret line="835" column="138" selection-start-line="835" selection-start-column="138" selection-end-line="835" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.82" vertical-offset="489" max-vertical-offset="2820">
-              <caret line="52" column="68" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="68" />
+              <caret line="52" column="85" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -2526,7 +2526,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421356932368</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="incluye tabla de revista">
+      <created>1421357103093</created>
+      <option name="number" value="00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1421357103093</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3028,7 +3034,7 @@
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.82" vertical-offset="489" max-vertical-offset="2820">
-          <caret line="52" column="68" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="68" />
+          <caret line="52" column="85" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="85" />
           <folding />
         </state>
       </provider>
@@ -3036,7 +3042,7 @@
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69758064" vertical-offset="12179" max-vertical-offset="12675">
-          <caret line="835" column="125" selection-start-line="835" selection-start-column="125" selection-end-line="835" selection-end-column="125" />
+          <caret line="835" column="138" selection-start-line="835" selection-start-column="138" selection-end-line="835" selection-end-column="138" />
           <folding />
         </state>
       </provider>
