@@ -59,7 +59,12 @@ $estado['8'] = 'Fin del Partido';?>
                     </div>
                     <div class="col-md-2 col-xs-1 text-center margen0">
                         <img class="img-responsive-xs"
-                             src="http://www.futbolecuador.com/<?= $teams_pics['shield'][$team->aid]; ?>">
+                             src="http://www.futbolecuador.com/<?php
+                             if ((isset($teams_pics['shield'][$team->aid])) or ($teams_pics['shield'][$team->aid]!="")) {
+                                 echo $teams_pics['shield'][$team->aid];
+                             } else {
+                                 echo "/imagenes/teams/shield/default.png";
+                             } ?>">
                     </div>
                 </a>
             </div>
@@ -71,11 +76,14 @@ $estado['8'] = 'Fin del Partido';?>
     ?>
 </div>
 
-<div class="col-md-6 separador10-xs  margen5r ">
+<div class="col-md-6 separador10-xs  margen0l ">
     <div class="col-md-12     clearfix borde">
         <div class="col-md-6    margen0">
-            <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $infoLocal->shirt ?>"
-                 alt="<?php echo $infoLocal->name ?>">
+            <img class="img-responsive" src="http://www.futbolecuador.com/<?php if ((isset($infoLocal->shirt)) or ($infoLocal->shirt !="")) {
+                echo $infoLocal->shirt;
+            } else {
+                echo "imagenes/teams/shirt/uniforme.jpg";
+            } ?>"  alt="<?php echo $infoLocal->name ?>">
         </div>
         <div class="col-md-6   col-xs-6 margen0">
             <div class="col-md-12 col-xs-12 text-right separador10 nombre-equipo margen5l">
@@ -101,7 +109,7 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 
-<div class="col-md-6 separador10-xs  margen5l ">
+<div class="col-md-6 separador10-xs  margen0r ">
     <div class="col-md-12     clearfix borde">
         <div class="col-md-6   col-xs-6 margen0">
             <div class="col-md-12 col-xs-12 text-left separador10 nombre-equipo margen5l">
@@ -124,14 +132,18 @@ $estado['8'] = 'Fin del Partido';?>
 
         </div>
         <div class="col-md-6    margen0">
-            <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $infoVisitante->shirt ?>"
+            <img class="img-responsive" src="http://www.futbolecuador.com/<?php if ((isset($infoVisitante->shirt)) or ($infoVisitante->shirt !="")) {
+                echo $infoVisitante->shirt;
+            } else {
+                echo "imagenes/teams/shirt/uniforme.jpg";
+            } ?>"
                  alt="<?php echo $infoVisitante->name ?>">
         </div>
     </div>
 </div>
 
 <!--GOLES-->
-<div class="col-md-12 separador10-xs   clearfix">
+<div class="col-md-12 separador10-xs  margen0 clearfix">
     <div class="col-md-6  margen0l">
         <div class="col-md-12    margen0">
             <div class="panel-heading fondoazul">
@@ -181,7 +193,7 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 <!--Titulares-->
-<div class="col-md-12 separador10-xs   clearfix">
+<div class="col-md-12 separador10-xs  margen0 clearfix">
     <div class="col-md-6  margen0l">
         <div class="col-md-12    margen0">
             <div class="panel-heading fondoazul">
@@ -235,7 +247,7 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 <!--Suplentes -->
-<div class="col-md-12 separador10-xs   clearfix">
+<div class="col-md-12 separador10-xs margen0      clearfix">
     <div class="col-md-6  margen0l">
         <div class="col-md-12    margen0">
             <div class="panel-heading fondoazul">
@@ -289,7 +301,7 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
 </div>
 <!--actions -->
-<div class="col-md-12  separador10-xs margen0l">
+<div class="col-md-12  separador10-xs margen0">
     <div class="col-md-12    margen0">
 
         <div class="panel-heading fondoazul">
