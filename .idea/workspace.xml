@@ -4,8 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/flexslider.css" afterPath="$PROJECT_DIR$/assets/css/flexslider.css" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -35,18 +35,28 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.92" vertical-offset="5119" max-vertical-offset="8310">
-              <caret line="351" column="0" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.875" vertical-offset="3738" max-vertical-offset="8310">
+              <caret line="273" column="45" selection-start-line="273" selection-start-column="37" selection-end-line="273" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
+      <file leaf-file-name="noticias.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="510" max-vertical-offset="975">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.56" vertical-offset="1782" max-vertical-offset="4605">
+              <caret line="134" column="37" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mdl_noticias.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.91402715" vertical-offset="1171" max-vertical-offset="2265">
+              <caret line="105" column="108" selection-start-line="105" selection-start-column="108" selection-end-line="105" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -109,11 +119,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3369331" vertical-offset="1082" max-vertical-offset="1545">
+            <state vertical-scroll-proportion="41.615383" vertical-offset="1082" max-vertical-offset="1545">
               <caret line="0" column="2" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.8333335" vertical-offset="871" max-vertical-offset="1635">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.8333335" vertical-offset="496" max-vertical-offset="1635">
+              <caret line="44" column="12" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -151,7 +181,6 @@
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomenano.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
@@ -185,6 +214,7 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
       </list>
     </option>
   </component>
@@ -2413,7 +2443,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421343055318</updated>
     </task>
-    <option name="localTasksCounter" value="334" />
+    <task id="LOCAL-00334" summary="incluye tabla de revista">
+      <created>1421355438932</created>
+      <option name="number" value="00334" />
+      <option name="project" value="LOCAL" />
+      <updated>1421355438932</updated>
+    </task>
+    <option name="localTasksCounter" value="335" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2527,24 +2563,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/sprites.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030674847" vertical-offset="0" max-vertical-offset="555">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchesperteam.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6447964" vertical-offset="0" max-vertical-offset="450">
           <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4524313" vertical-offset="596" max-vertical-offset="1635">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -2559,13 +2581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="675">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125" vertical-offset="1335" max-vertical-offset="2265">
-          <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -2622,13 +2637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47568712" vertical-offset="0" max-vertical-offset="585">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07459678" vertical-offset="218" max-vertical-offset="4605">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -2883,14 +2891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.92" vertical-offset="5119" max-vertical-offset="8310">
-          <caret line="351" column="0" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0" vertical-offset="4425" max-vertical-offset="5535">
@@ -2909,8 +2909,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3369331" vertical-offset="1082" max-vertical-offset="1545">
+        <state vertical-scroll-proportion="41.615383" vertical-offset="1082" max-vertical-offset="1545">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8333335" vertical-offset="871" max-vertical-offset="1635">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8333335" vertical-offset="496" max-vertical-offset="1635">
+          <caret line="44" column="12" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.875" vertical-offset="3738" max-vertical-offset="8310">
+          <caret line="273" column="45" selection-start-line="273" selection-start-column="37" selection-end-line="273" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.56" vertical-offset="1782" max-vertical-offset="4605">
+          <caret line="134" column="37" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.91402715" vertical-offset="1171" max-vertical-offset="2265">
+          <caret line="105" column="108" selection-start-line="105" selection-start-column="108" selection-end-line="105" selection-end-column="108" />
           <folding />
         </state>
       </provider>
