@@ -130,7 +130,7 @@
         <div class="col-md-12 separador5 margen0">
 
             <div class="col-md-12 ">
-                Forma parte del selecto grupo de auspiciantes de futbolecuador.com
+                Forma parte del selecto grupo de anunciantes de futbolecuador.com
             </div>
 
         </div>
