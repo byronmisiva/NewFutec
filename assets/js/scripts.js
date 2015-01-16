@@ -257,7 +257,10 @@ jQuery(function () {
 
 
     //jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').adjustHeightNoAnimation();
-    visibles = 4
+    ancho = $("body").width();
+    if (ancho < 600) { visibles = 3} else {visibles = 5 }
+
+
     jQuery(".otrasmodelos").jCarouselLite({
         btnNext: ".next",
         btnPrev: ".prev",

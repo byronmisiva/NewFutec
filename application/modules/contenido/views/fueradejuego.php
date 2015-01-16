@@ -791,37 +791,37 @@
             <div class="otrasmodelos">
                 <ul>
                     <li class="galeria16"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/1a.jpg"
-                                               width="139" heigth="170" alt="Alison"/></li>
+                                               width="110" heigth="140" alt="Alison"/></li>
                     <li class="galeria15"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1a.jpg"
-                                               width="139" heigth="170" alt="Alison"/></li>
+                                               width="110" heigth="140" alt="Alison"/></li>
                     <li class="galeria14"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/1a.jpg"
-                                               width="139" heigth="170" alt="Alison"/></li>
+                                               width="110" heigth="140" alt="Alison"/></li>
                     <li class="galeria13"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/1a.jpg"
-                                               width="139" heigth="170" alt="Karen"/></li>
+                                               width="110" heigth="140" alt="Karen"/></li>
                     <li class="galeria12"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/1a.jpg"
-                                               width="139" heigth="170" alt="Karen"/></li>
+                                               width="110" heigth="140" alt="Karen"/></li>
                     <li class="galeria11"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/1a.jpg"
-                                               width="139" heigth="170" alt="Paulina"/></li>
+                                               width="110" heigth="140" alt="Paulina"/></li>
                     <li class="galeria10"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/1a.jpg"
-                                               width="139" heigth="170" alt="Alisson Hidalgo"/></li>
+                                               width="110" heigth="140" alt="Alisson Hidalgo"/></li>
                     <li class="galeria9"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/1a.jpg"
-                                              width="139" heigth="170" alt="Angeles Azules"/></li>
+                                              width="110" heigth="140" alt="Angeles Azules"/></li>
                     <li class="galeria8"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/1a.jpg"
-                                              width="139" heigth="170" alt="Michelle López"/></li>
+                                              width="110" heigth="140" alt="Michelle López"/></li>
                     <li class="galeria7"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/1a.jpg"
-                                              width="139" heigth="170" alt="Adriana Palacios"/></li>
+                                              width="110" heigth="140" alt="Adriana Palacios"/></li>
                     <li class="galeria6"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/1a.jpg"
-                                              width="139" heigth="170" alt="Sanny Cabrera"/></li>
+                                              width="110" heigth="140" alt="Sanny Cabrera"/></li>
                     <li class="galeria5"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/1a.jpg"
-                                              width="139" heigth="170" alt="Francesca Galarza"/></li>
+                                              width="110" heigth="140" alt="Francesca Galarza"/></li>
                     <li class="galeria4"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/1a.jpg"
-                                              width="139" heigth="170" alt=""/></li>
+                                              width="110" heigth="140" alt=""/></li>
                     <li class="galeria3"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/1a.jpg"
-                                              width="139" heigth="170" alt="Andrea Ortiz"/></li>
+                                              width="110" heigth="140" alt="Andrea Ortiz"/></li>
                     <li class="galeria2"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/1a.jpg"
-                                              width="139" heigth="170" alt="Marcela Recalde"/></li>
+                                              width="110" heigth="140" alt="Marcela Recalde"/></li>
                     <li class="galeria1"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/1a.jpg"
-                                              width="139" heigth="170" alt="Diana Bastidas"/></li>
+                                              width="110" heigth="140" alt="Diana Bastidas"/></li>
                 </ul>
             </div>
             <div class="controlfueraJuego">

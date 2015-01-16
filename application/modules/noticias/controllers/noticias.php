@@ -17,6 +17,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticiasHome($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
+        $this->output->cache(30);
         $this->load->library('user_agent');
 
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');

@@ -37,7 +37,6 @@ class Site extends MY_Controller
             if (in_array($m, $mobiles))
                 $isMobile = true;
         }
-
         if ($isMobile) {
 
             $data['top1'] = "";
