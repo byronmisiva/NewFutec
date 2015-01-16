@@ -20,6 +20,21 @@
             <?php if (isset($infoEquipo->stadia[0]->name))
             echo $infoEquipo->stadia[0]->name; ?>
         </div>
+        <div class="col-md-12 separador5   h3 ">
+            <strong>PRESIDENTE</strong>
+        </div>
+        <div class="col-md-12">
+            <?php if (isset($infoEquipo->president))
+                echo $infoEquipo->president; ?>
+        </div>
+
+        <div class="col-md-12 separador5   h3 ">
+            <strong>ENTRENADOR</strong>
+        </div>
+        <div class="col-md-12">
+            <?php if (isset($infoEquipo->couch))
+                echo $infoEquipo->couch; ?>
+        </div>
     </div>
     <div class="col-md-6 separador10     ">
 
