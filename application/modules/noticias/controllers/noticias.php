@@ -17,7 +17,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticiasHome($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
-        $this->output->cache(30);
+        $this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
 
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
@@ -81,6 +81,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticias($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $this->load->module('story');
         $noticias = array();
@@ -129,6 +130,7 @@ class Noticias extends MY_Controller
 
     public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
@@ -183,6 +185,7 @@ class Noticias extends MY_Controller
 
     public function viewSeccionsEquipo($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
@@ -209,6 +212,7 @@ class Noticias extends MY_Controller
 
     public function viewseccion_plus($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
 
         $noticias = array();
@@ -259,6 +263,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticia($data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $data['isMobile'] = false;
@@ -272,6 +277,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticiaNano($data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $data['isMobile'] = false;
         if ($this->agent->is_mobile()) {
@@ -285,6 +291,7 @@ class Noticias extends MY_Controller
 
     public function viewmininewssidebar($namesection, $idsection, $posSection, $nameSectionUrl, $data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         $data['namesection'] = $namesection;
         $data['idsection'] = $idsection;
         $data['nameSectionUrl'] = $nameSectionUrl;
@@ -294,6 +301,7 @@ class Noticias extends MY_Controller
 
     public function viewNewsSection($namesection, $idsection, $posSection, $data = FALSE)
     {
+        $this->output->cache(CACHE_DEFAULT);
         $data['namesection'] = $namesection;
         $data['idsection'] = $idsection;
         $data['noticias'] = $this->mdl_noticias->get_by_position(NUMNEWSSIDE, $idsection, $posSection);
