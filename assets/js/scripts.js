@@ -32,6 +32,11 @@ jQuery(document).ready(function () {
             //para el caso de youtube
             var n = src.search("youtube");
             if (n>0) $(this).attr( 'width', "100%" );
+
+            var n = src.search("vine");
+            if (n>0) $(this).attr( 'width', "100%" ).attr( 'heigth', "280px" );
+
+
         })
 
         $(".noticia-body img").each (function(){

@@ -4,8 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -96,8 +95,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84909457" vertical-offset="148" max-vertical-offset="5130">
-              <caret line="38" column="10" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.81891346" vertical-offset="133" max-vertical-offset="5205">
+              <caret line="36" column="75" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -2683,7 +2682,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421425411006</updated>
     </task>
-    <option name="localTasksCounter" value="351" />
+    <task id="LOCAL-00351" summary="incluye tabla de revista">
+      <created>1421425936679</created>
+      <option name="number" value="00351" />
+      <option name="project" value="LOCAL" />
+      <updated>1421425936679</updated>
+    </task>
+    <option name="localTasksCounter" value="352" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3172,8 +3177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84909457" vertical-offset="148" max-vertical-offset="5130">
-          <caret line="38" column="10" selection-start-line="36" selection-start-column="8" selection-end-line="38" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.81891346" vertical-offset="133" max-vertical-offset="5205">
+          <caret line="36" column="75" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
           <folding />
         </state>
       </provider>
