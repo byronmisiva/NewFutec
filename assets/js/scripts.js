@@ -23,6 +23,19 @@ jQuery(document).ready(function () {
         $(".navbar-collapse").addClass("collapsing");
     })
 
+    // si el ancho es menor a 600 cambiamos cambiamos los videos
+    ancho = $("body").width();
+
+    if (ancho < 600) {
+        $("iframe").each(function () {
+            src = $(this).attr( 'src' );
+            //para el caso de youtube
+            var n = src.search("youtube");
+            if (n>0) $(this).attr( 'width', "100%" );
+        })
+    }
+
+
     $("#enviarcontacto").click(function () {
         cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")
     })
