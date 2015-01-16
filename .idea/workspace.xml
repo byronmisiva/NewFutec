@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6176991" vertical-offset="3596" max-vertical-offset="5160">
-              <caret line="263" column="18" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+              <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -2648,7 +2646,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421427175813</updated>
     </task>
-    <option name="localTasksCounter" value="354" />
+    <task id="LOCAL-00354" summary="incluye tabla de revista">
+      <created>1421430705072</created>
+      <option name="number" value="00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1421430705072</updated>
+    </task>
+    <option name="localTasksCounter" value="355" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3138,7 +3142,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6176991" vertical-offset="3596" max-vertical-offset="5160">
-          <caret line="263" column="18" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+          <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
           <folding />
         </state>
       </provider>
