@@ -10,9 +10,10 @@
         </div>
         <div class="margen10lados-sx">
             <?php setlocale(LC_ALL, "es_ES");
-            echo $noticia->origen . ", " . strftime("%A %d %B %Y %Hh%M", strtotime($noticia->created)); ?>
+            echo $noticia->origen . ", " . utf8_encode(strftime("%A %d %B %Y %Hh%M", strtotime($noticia->created))); ?>
+            <h1><?php echo $noticia->title; ?></h1>
         </div>
-        <h1><?php echo $noticia->title; ?></h1>
+
 
         <div class="margen10lados-sx">
             <h2 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h2>
