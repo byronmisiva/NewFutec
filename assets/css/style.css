@@ -113,6 +113,7 @@ footer {
 }
 
 .margen0 {padding: 0;}
+.margen0-noti {padding: 0;}
 .margen0r {padding-right: 0;}
 .margen0l {padding-left: 0;}
 .margen4l {padding-left: 4px;  }
@@ -1044,6 +1045,8 @@ h4.contenidos {
     .margen10r {
          padding-right: 0px;
     }
+
+    .margen0-noti {padding: 0 0 0 10px;}
 
     .margen0-sx {
         padding-right: 0;
