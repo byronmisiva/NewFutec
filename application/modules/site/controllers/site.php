@@ -15,9 +15,40 @@ class Site extends MY_Controller
         $this->home();
     }
 
-
-
+    // para la final se comentan la llamada a las secciones.
+    public function movil()
+    {
         // para la final se comentan la llamada a las secciones.
+        $this->output->cache(CACHE_DEFAULT);
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
+        $this->load->library('user_agent');
+
+        $data['top1'] = "";
+        $data['header1'] = "";
+
+        $bannerMedio = $this->banners->fe_smart_bottom();
+        $dataHeader2['FE_Bigboxbanner'] = "";
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerMedio;
+        $data['top2'] = "";
+
+        //Resultados tabla de posiciones
+        $this->load->module('scoreboards');
+        $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
+
+        $data['content'] = $this->noticias->viewNoticiasHome() . $tablaposiciones;
+        $data['sidebar'] = "";
+
+        $data['footer'] = '';
+        $data['bottom'] = $this->contenido->bottom();
+
+        $this->templates->_index($data);
+    }
+
+    // para la final se comentan la llamada a las secciones.
     public function home()
     {
 
@@ -38,7 +69,7 @@ class Site extends MY_Controller
                 $isMobile = true;
         }
         if ($isMobile) {
-
+            redirect(base_url(). 'site/movil/');
             $data['top1'] = "";
             $data['header1'] = "";
 
@@ -94,10 +125,10 @@ class Site extends MY_Controller
         $idsection = $_POST["section"];
         $posSection = $_POST["pos"];
 
-        if ($idsection==""){
-        echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE -1 , $offset );
+        if ($idsection == "") {
+            echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE - 1, $offset);
         } else {
-            echo $this->noticias->viewSeccions("", $idsection, $posSection,   "",   RESULT_PAGE -1, $offset, false );
+            echo $this->noticias->viewSeccions("", $idsection, $posSection, "", RESULT_PAGE - 1, $offset, false);
         }
     }
 
