@@ -28,7 +28,8 @@
                                 </div>
                                 <div class="col-md-2 margen0 h5  text-center text-marcador-home">
                                     <?php
-                                    echo str_replace(' ', '', $score->result); ?>
+                                    //echo str_replace(' ', '', $score->result);
+                                    echo   $score->result ; ?>
                                 </div>
                                 <div class="col-md-5 margen0 h5 text-left  ">
                                     <?php echo $score->asname; ?>

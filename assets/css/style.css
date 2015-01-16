@@ -591,6 +591,7 @@ sub {
     color: #fff;
     font-family: oxygen;
       height: 24px;
+      border-bottom: 1px solid #ffffff;
   }
 
   .backcuadros a {
@@ -1019,7 +1020,7 @@ h4.contenidos {
     }
 
     .separador10 {
-        padding-right: 0;
+        padding-right: 5px;
         padding-left: 0;
     }
     .separador10-xs {
