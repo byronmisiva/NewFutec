@@ -12,7 +12,7 @@
     <div class="col-md-12  margen0 col-xs-2">
         <div class="noticia-img">
             <a href="<?php echo $link ?>">
-                <img data-original="http://www.futbolecuador.com/<?php echo ($isMobile) ? $story->thumbh80:$story->thumb300; ?>"
+                <img data-original="http://www.futbolecuador.com/<?php echo ($isMobile) ? $story->thumbh50:$story->thumb300; ?>"
                      class="img-responsive lazy"
                      alt="<?php echo str_replace('"', '', "$story->title"); ?>">
             </a>

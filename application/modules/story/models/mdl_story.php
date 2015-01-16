@@ -48,7 +48,7 @@ class Mdl_story extends MY_Model
     {
         $this->load->module('story');
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
-        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, i.thumbh120,i.thumbh80, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
+        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, i.thumbh120,i.thumbh80,i.thumbh50, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
@@ -77,6 +77,7 @@ class Mdl_story extends MY_Model
 				s.sends,
 				s.votes,
 				i.name,
+				i.thumbh50,
 				i.thumbh80,
 				i.thumb300,
 				i.thumb500", FALSE);
@@ -149,7 +150,7 @@ class Mdl_story extends MY_Model
         $data = $this->db->get($this->table_name . ' s')->result();
 
         foreach ($data as $key=>$nota) {
-            $this->db->select('i.thumbh120 as thumb1,i.thumbh120, i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumb300 as thumb300', FALSE);
+            $this->db->select('i.thumbh120 as thumb1,i.thumbh120, i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumbh50,i.thumb300 as thumb300', FALSE);
             $this->db->where('i.id', $nota->image_id);
             $imagenes = $this->db->get("images" . ' i')->result();
             $data[$key]->thumb1 = $imagenes[0]->thumb1;
