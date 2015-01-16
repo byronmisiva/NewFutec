@@ -18,6 +18,10 @@ function clickMasNoticias() {
 }
 
 jQuery(document).ready(function () {
+    //ocultar el menu al dar click
+    $(".clickmenu").click (function () {
+        $(".navbar-collapse").addClass("collapsing");
+    })
 
     $("#enviarcontacto").click(function () {
         cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")

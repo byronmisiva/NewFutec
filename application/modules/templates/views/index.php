@@ -48,8 +48,8 @@ $this->load->view('header');
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
                             <span class="caret  link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?= base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
-                            <li><a href="<?= base_url('site/tabladeposiciones/' . SERIE_B) ?>">Posiciones Serie B</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('site/tabladeposiciones/' . SERIE_B) ?>">Posiciones Serie B</a></li>
 
                         </ul>
                     </li>
@@ -57,34 +57,34 @@ $this->load->view('header');
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calendario
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?= base_url() ?>site/resultados/<?php echo SERIE_A; ?>/campeonato-serie-a">Serie A</a></li>
-                            <li><a href="<?= base_url() ?>site/resultados/<?php echo SERIE_B; ?>/campeonato-serie-b">Serie B</a></li>
+                                <li><a class="clickmenu" href="<?= base_url() ?>site/resultados/<?php echo SERIE_A; ?>/campeonato-serie-a">Serie A</a></li>
+                            <li><a class="clickmenu" href="<?= base_url() ?>site/resultados/<?php echo SERIE_B; ?>/campeonato-serie-b">Serie B</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Fútbol Nacional
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?= base_url('site/seriea') ?>">Serie A</a></li>
-                            <li><a href="<?= base_url('site/serieb') ?>">Serie B</a></li>
-                            <li><a href="<?= base_url('site/seleccion') ?>">Selección</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('site/seriea') ?>">Serie A</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('site/serieb') ?>">Serie B</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('site/seleccion') ?>">Selección</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
-                    <li><a href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?= base_url('copa-libertadores') ?>">Copa Libertadores</a></li>
-                            <li><a href="<?= base_url('copa-sudamericana') ?>">Copa Sudamericana action</a></li>
-                            <li><a href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('copa-libertadores') ?>">Copa Libertadores</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('copa-sudamericana') ?>">Copa Sudamericana action</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
-                    <li><a href="<?= base_url('goleadores') ?>">Goleadores</a></li>
-                    <li><a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('goleadores') ?>">Goleadores</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>
 
             </div>
