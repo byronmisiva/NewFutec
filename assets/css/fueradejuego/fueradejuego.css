@@ -96,7 +96,6 @@ img.tituloFuera {
 }
 
 .ls-wrapper .liquid-slider {
-    height: 595px !important;
 }
 
 @media (max-width: 767px) {
