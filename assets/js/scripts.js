@@ -33,6 +33,10 @@ jQuery(document).ready(function () {
             var n = src.search("youtube");
             if (n>0) $(this).attr( 'width', "100%" );
         })
+
+        $(".noticia-body img").each (function(){
+            $(this).addClass("img-responsive")
+        })
     }
 
 
