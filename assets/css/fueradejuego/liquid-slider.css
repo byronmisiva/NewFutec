@@ -153,9 +153,11 @@
 .ls-wrapper .ls-nav a {
   background: #d8d8d8;
   color: #333333;
-  margin-right: 0px;
+  margin-right: 0;
   padding: 2px 1px;  
   outline:0;
+    text-align: center;
+    width: 100%;
 }
 .ls-wrapper .ls-nav a:hover {
   background: #f2f2f2;
@@ -175,10 +177,13 @@
   display: block;
   margin: auto;
   overflow: hidden;
+    width: 100%;
 }
 .ls-wrapper .ls-nav ul li {
   /* Do not edit below this line */
   display: inline;
+    float: left;
+    width: 20%;
 }
 .ls-wrapper .ls-nav ul li a {
  
