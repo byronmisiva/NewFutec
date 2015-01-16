@@ -34,9 +34,7 @@ jQuery(document).ready(function () {
             if (n>0) $(this).attr( 'width', "100%" );
 
             var n = src.search("vine");
-            if (n>0) $(this).attr( 'width', "100%" ).attr( 'heigth', "280px" );
-
-
+            if (n>0) $(this).attr( 'width', "100%" ).attr( 'height', "280" );
         })
 
         $(".noticia-body img").each (function(){
