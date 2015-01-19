@@ -681,7 +681,7 @@
         </div>
         <div class="containerfueradejuego galeria2content">
 
-            <div class="liquid-slider" id="main-slider1">
+            <div class="liquid-slider" id="main-slider2">
                 <div><h2 class="title hidden"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/1b.jpg" alt=" "/>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/1a.jpg" alt="Marcela Recalde"/>
                 </div>
@@ -730,7 +730,7 @@
         </div>
         <div class="containerfueradejuego galeria1content">
 
-            <div class="liquid-slider" id="main-slider2">
+            <div class="liquid-slider" id="main-slider1">
                 <div><h2 class="title hidden"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/1b.jpg" alt=" "/>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/1a.jpg" alt="Diana Bastidas"/>
                 </div>

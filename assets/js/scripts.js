@@ -274,8 +274,13 @@ jQuery(function () {
     jQuery(".galeria1, .galeria2,.galeria3,.galeria4,.galeria5,.galeria6,.galeria7,.galeria8,.galeria9,.galeria10,.galeria11,.galeria12,.galeria13,.galeria14,.galeria15,.galeria16").click(function () {
         for (var i = 1; i <= 16; i++)
             jQuery(".galeria" + i + "content").hide();
-        jQuery("." + jQuery(this).attr('class') + "content").show()
-        ;
+        jQuery("." + jQuery(this).attr('class') + "content").show();
+        idclic = jQuery(this).attr('class');
+        idclic = idclic.replace("galeria", "");
+        console.log (idclic);
+        jQuery("#main-slider" +idclic+ "-nav-ul li.tab2 a ").click();
+        jQuery("#main-slider" +idclic+ "-nav-ul li.tab1 a ").click();
+
     })
 
     /* jQuery('#carousel-marcadorenvivo').carousel({

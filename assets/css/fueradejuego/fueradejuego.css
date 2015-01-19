@@ -69,10 +69,10 @@ img.tituloFuera {
 }
 
 .logosGPAS {
+    bottom: 100px;
     float: left;
-    left: 64px;
+    left: 114px;
     position: absolute;
-    top: 450px;
 }
 
 .logosGPAS2 {
