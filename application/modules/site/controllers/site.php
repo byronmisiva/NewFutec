@@ -51,16 +51,7 @@ class Site extends MY_Controller
     // para la final se comentan la llamada a las secciones.
     public function home()
     {
-
-        // para la final se comentan la llamada a las secciones.
-        $this->output->cache(CACHE_DEFAULT);
-        $this->load->module('noticias');
-        $this->load->module('templates');
-        $this->load->module('contenido');
-        $this->load->module('banners');
-        $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
-
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $isMobile = false;
         if ($this->agent->is_mobile()) {
@@ -71,6 +62,14 @@ class Site extends MY_Controller
         if ($isMobile) {
             redirect(base_url(). 'site/movil/');
         } else {
+            // para la final se comentan la llamada a las secciones.
+            $this->output->cache(CACHE_DEFAULT);
+            $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
+
+            $this->load->module('noticias');
+            $this->load->module('templates');
+            $this->load->module('contenido');
+            $this->load->module('banners');
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
 
