@@ -13,12 +13,12 @@
         ?>
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
-                <div class="col-md-2 ">
+                <div class="col-md-2 col-sm-2">
                     <a href="<?php echo $link ?>"><img
                             src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>"
                             alt="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
-                <div class="col-md-10  ">
+                <div class="col-md-10  col-sm-10">
                     <h2><a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
                     <?php
                     if (strlen(strip_tags($noticia->lead)) == 0) {
@@ -40,6 +40,6 @@
 </div>
 
 
-<div class="col-md-12 text-right fondoazul separador10 <?php if ($namesection == "Lo más leído") echo "hidden" ?>">
+<div class="col-md-12 col-sm-12 text-right fondoazul separador10 <?php if ($namesection == "Lo más leído") echo "hidden" ?>">
     <a href="<?php echo $linkShort; ?>"?>Más noticias</a>
 </div>

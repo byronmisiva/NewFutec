@@ -120,14 +120,14 @@ $this->load->view('header');
         </div>
     <?php } ?>
     <div class="row ">
-        <div class="col-md-8 ">
+        <div class="col-md-8  col-sm-8 ">
             <div class="row margen0  content">
                 <?php
                 echo $content;
                 ?>
             </div>
         </div>
-        <div class="col-md-4 sidebar hidden-xs">
+        <div class="col-md-4 col-sm-4 sidebar hidden-xs">
             <?php
             echo $sidebar;
             ?>

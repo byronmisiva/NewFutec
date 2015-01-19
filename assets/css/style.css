@@ -1172,6 +1172,11 @@ h4.contenidos {
     border-bottom: 0px solid;
 
 }
+@media (max-width: 990px) {
+    .container {
+        width: 100%;
+    }
+}
 @media (max-width: 767px) {
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;

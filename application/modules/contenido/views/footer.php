@@ -1,5 +1,5 @@
 <div class="row clearfix separador5 separador10bot footer-fe margen0  hidden-xs">
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-3 ">
         <div class="col-md-12  azulfooter">
             <h3>Secciones</h3>
         </div>
@@ -33,7 +33,7 @@
 
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-3">
         <div class="col-md-12  ">
             <div class="espaciador" ></div>
         </div>
@@ -63,7 +63,7 @@
             <a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a>
         </div>
     </div>
-    <div class="col-md-3 hide">
+    <div class="col-md-3 col-sm-3 hide">
         <div class="col-md-12  azulfooter">
             <h3>Newsletter</h3>
         </div>
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="col-md-3 ">
+    <div class="col-md-3 col-sm-3">
         <div class="col-md-12  azulfooter">
             <h3>Contacto</h3>
         </div>
@@ -123,7 +123,7 @@
 
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-3">
         <div class="col-md-12  azulfooter">
             <h3>Publicidad</h3>
         </div>

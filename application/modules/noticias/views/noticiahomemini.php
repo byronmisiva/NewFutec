@@ -9,7 +9,7 @@
 }
 ?>
 <div class="margen0-xs clearfix news-detail">
-    <div class="col-md-12  margen0 col-xs-2">
+    <div class="col-md-12 col-sm-12  margen0 col-xs-2">
         <div class="noticia-img">
             <a href="<?php echo $link ?>">
                 <img data-original="http://www.futbolecuador.com/<?php echo ($isMobile) ? $story->thumbh50:$story->thumb300; ?>"
@@ -24,7 +24,7 @@
             echo strftime("%d %B %Y", strtotime($story->created)); ?>
         </a>
     </div>
-    <div class="col-md-12 margen0-noti column col-xs-10 ">
+    <div class="col-md-12 col-sm-12 margen0-noti column col-xs-10 ">
         <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
     </div>
     <?php
@@ -35,27 +35,27 @@
         $bodyCortado = substr($str, 0, -(strlen($str) - strrpos($str, ' ')));
         echo '<a href="' . $link . '" class="sidebarlink">' . '</a>';
         ?>
-        <div class="col-md-12  margen0-noti col-xs-10  column mini-new-conten">
+        <div class="col-md-12  col-sm-12  margen0-noti col-xs-10  column mini-new-conten">
             <a href="<?php echo $link ?>"> <?php echo $bodyCortado . "..." ?></a>
         </div>
     <?php
 
     } else {
         ?>
-        <div class="col-md-12 margen0-noti col-xs-10 column text-news-sub">
+        <div class="col-md-12 col-sm-12 margen0-noti col-xs-10 column text-news-sub">
             <a href="<?php echo $link ?>"> <?php echo $story->subtitle ?></a>
         </div>
-        <div class="col-md-12  margen0-noti column mini-new-conten hidden-xs">
+        <div class="col-md-12  col-sm-12 margen0-noti column mini-new-conten hidden-xs">
             <a href="<?php echo $link ?>"> <?php echo strip_tags($story->lead); ?></a>
         </div>
     <?php
     }?>
 </div>
-<div class="col-md-12 column content-gris hidden-xs">
-    <div class="col-md-4 column margen0">
+<div class="col-md-12 col-sm-12 column content-gris hidden-xs">
+    <div class="col-md-4 col-sm-4 column margen0">
         Lecturas <?php echo $story->lecturas ?>
     </div>
-    <div class="col-md-8 column margen0-noti text-right text-news-zone">
+    <div class="col-md-8 col-sm-8 column margen0-noti text-right text-news-zone">
         <?php echo $story->category ?>
     </div>
 </div>
