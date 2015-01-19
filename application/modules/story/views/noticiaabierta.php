@@ -67,7 +67,7 @@
     <h4 class="panel-title">Comentarios </h4>
 </div>
 
-<div class="separador10 col-xs-12 col-md-12 center-block" data-href="<?php echo $url?>">
+<div class="separador10 col-xs-12 col-md-12 center-block" data-href="<?php //echo $url?>">
 
 
 <div id="disqus_thread"></div>
