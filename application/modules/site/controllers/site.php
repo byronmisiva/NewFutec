@@ -90,11 +90,41 @@ class Site extends MY_Controller
 
     public function contacto()
     {
+        $this->load->library('email');
+        $config['protocol'] = 'sendmail';
+        $config['charset'] = 'utf8';
+        $config['mailtype'] = 'html';
+        $config['wordwrap'] = FALSE;
+
+        $this->email->initialize($config);
+        $this->email->from('info@misiva.com.ec','Contacto Futbolecuador.com');
+        $this->email->to('ddelosreyes@futbolecuador.com');
+        $this->email->cc('jortiz@misiva.com.ec');
+        $data['informacion']=$_POST;
+        $body=$this->load->view( 'email-contacto',$data,TRUE);
+        $this->email->subject("Contacto Futbolecuador.com");
+        $this->email->message($body);
+        $this->email->send();
         echo "Mensaje Enviado";
     }
 
     public function publicidad()
     {
+        $this->load->library('email');
+        $config['protocol'] = 'sendmail';
+        $config['charset'] = 'utf8';
+        $config['mailtype'] = 'html';
+        $config['wordwrap'] = FALSE;
+
+        $this->email->initialize($config);
+        $this->email->from('info@misiva.com.ec','Publicidad Futbolecuador.com');
+        $this->email->to('ddelosreyes@futbolecuador.com');
+        $this->email->cc('jortiz@misiva.com.ec');
+        $data['informacion']=$_POST;
+        $body=$this->load->view( 'email-publicidad',$data,TRUE);
+        $this->email->subject("Publicidad Futbolecuador.com");
+        $this->email->message($body);
+        $this->email->send();
         echo "Mensaje Enviado";
     }
 
