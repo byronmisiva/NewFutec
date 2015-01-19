@@ -1,4 +1,5 @@
-<div class="table-responsive">
+<?php if (is_array($tabla)) { ?>
+    <div class="table-responsive">
     <table class="table table-striped font12  tablemargin4">
         <thead>
         <tr>
@@ -14,7 +15,7 @@
         </tr>
         </thead>
         <tbody>
-        <?php if (is_array($tabla)) {
+        <?php
             foreach ($tabla as $key => $row) {
                 $sign = ($row['gd'] > 0) ? '+' : '';
                 ?>
@@ -32,8 +33,13 @@
                 </tr>
 
             <?php
-            }
+
         } ?>
         </tbody>
     </table>
 </div>
+<?php
+} else {
+    ?>Tabla vacía
+<?php
+} ?>

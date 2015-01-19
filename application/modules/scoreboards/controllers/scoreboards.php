@@ -12,8 +12,12 @@ class Scoreboards extends MY_Controller
 
     function tablaposiciones($temporada)
     {
-        $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative($temporada);
-        $data['scroreBoardSingle'] = $this->scoreboards->leaderboard($temporada);
+        $data['scroreBoardAcumulative'] = $this->leaderboard_cumulative($temporada);
+        $data['scroreBoardSingle'] = $this->leaderboard($temporada);
+        $conten = strip_tags(trim (  $data['scroreBoardSingle']));
+        if ($conten == "Tabla vacía"){
+            $data['scroreBoardSingle'] = $data['scroreBoardAcumulative'];
+        }
         return $this->load->view('tablaposiciones', $data, TRUE);
     }
 
@@ -46,6 +50,10 @@ class Scoreboards extends MY_Controller
         $this->load->module('contenido');
         $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative($champ, "leaderboarddetail");
         $data['scroreBoardSingle'] = $this->scoreboards->leaderboard($champ, "leaderboarddetail");
+        $conten = strip_tags(trim (  $data['scroreBoardSingle']));
+        if ($conten == "Tabla vacía"){
+            $data['scroreBoardSingle'] = $data['scroreBoardAcumulative'];
+        }
 
         return $this->load->view('leaderboardFull', $data, true);
     }

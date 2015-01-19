@@ -70,23 +70,6 @@ class Site extends MY_Controller
         }
         if ($isMobile) {
             redirect(base_url(). 'site/movil/');
-            $data['top1'] = "";
-            $data['header1'] = "";
-
-            $bannerMedio = $this->banners->fe_smart_bottom();
-            $dataHeader2['FE_Bigboxbanner'] = "";
-            $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerMedio;
-            $data['top2'] = "";
-
-            //Resultados tabla de posiciones
-            $this->load->module('scoreboards');
-            $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
-
-            $data['content'] = $this->noticias->viewNoticiasHome() . $tablaposiciones;
-            $data['sidebar'] = "";
-
-            $data['footer'] = '';
-            $data['bottom'] = $this->contenido->bottom();
         } else {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
