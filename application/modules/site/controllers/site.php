@@ -130,7 +130,7 @@ class Site extends MY_Controller
 
     public function masnoticias()
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->module('noticias');
 
         $offset = $_POST["offset"];
