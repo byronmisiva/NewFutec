@@ -91,6 +91,7 @@ class Mdl_Noticias extends MY_Model
                 $this->db->from('stories s, images i,stories_tags st');
                 $this->db->where('s.id', 'st.story_id', FALSE);
                 $this->db->where('i.id', 's.image_id', FALSE);
+                $this->db->where('s.position <', 10);
                 $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
                 $this->db->where($where);
                 $this->db->group_by('s.id');
@@ -101,16 +102,22 @@ class Mdl_Noticias extends MY_Model
         } else {
             $this->db->from('stories s, images i');
             $this->db->where('i.id', 's.image_id', FALSE);
+            $this->db->where('s.position <', 10);
+
+            if ($position > 0)
+                $this->db->where('s.position', $position);
         }
 
         $this->db->select('s.*,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
         $this->db->where('s.invisible', '0');
 
         //Check if there are multiple positions
-        if (is_array($position))
+        if (is_array($position)) {
             $this->db->where_in('s.position', $position);
-        else
-            $this->db->where('s.position', $position);
+        } else {
+            if (isset($position))
+                $this->db->where('s.position', $position);
+        }
 
         $l = explode(',', $limit);
         if (count($l) > 1)
@@ -121,7 +128,7 @@ class Mdl_Noticias extends MY_Model
 
 
         $aux = $this->db->get()->result();
-
+        $test = $this->db->last_query();
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);
             $fecha = explode("-", $date[0]);

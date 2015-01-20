@@ -1,1 +1,1 @@
-<a  href="<?= base_url('fuera-de-juego') ?>"><img src="<?=base_url('imagenes/fuera-de-juego/mod-fuera-juego-portada.png')?>" alt="Fuera de juego"></a>
+<a  href="<?= base_url('fuera-de-juego') ?>"><img src="<?=base_url('imagenes/fuera-de-juego/mod-fuera-juego-portada.jpg')?>" alt="Fuera de juego"></a>

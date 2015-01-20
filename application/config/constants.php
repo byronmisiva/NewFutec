@@ -77,10 +77,10 @@ define('ZONANUESTROSEMBAJADORESPOS',2); //NUESTROS EMBAJADORES
 
 //blogs
 define('ZONACOPALIBERTADORES'   ,31);
-define('ZONACOPALIBERTADORESPOS',3);
+define('ZONACOPALIBERTADORESPOS', null);
 
 define('ZONACOPASUDAMERICANA',32);
-define('ZONACOPASUDAMERICANAPOS',1);
+define('ZONACOPASUDAMERICANAPOS',null);
 
 //todo actualizar copa america
 define('ZONACOPAAMERICA'   ,63);
@@ -89,7 +89,6 @@ define('ZONACOPAAMERICAPOS',2);
 //todo actualizar seccion futbol internacion
 define('ZONAINTERNACIONAL'   ,66);
 define('ZONAINTERNACIONALPOS',1);
-
 
 define('LAVOZDELASTRIBUNAS',''); //La voz de las tribunas
 define('LAVOZDELASTRIBUNASPOS',14); //La voz de las tribunas
