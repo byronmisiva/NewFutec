@@ -29,6 +29,10 @@
         </div>
     </div>
     <div class="col-md-12 text-right fondoazul separador10">
-        <a href="<?= base_url('tabla-de-posiciones') ?>">Tabla completa</a>
+        <?php if ($champ == CHAMP_DEFAULT) { ?>
+            <a href="<?= base_url('tabla-de-posiciones') ?>">Tabla completa</a>
+        <?php } else { ?>
+            <a href="<?= base_url('site/tabladeposiciones/' . $champ ) ?>">Tabla completa</a>
+        <?php } ?>
     </div>
 </div>

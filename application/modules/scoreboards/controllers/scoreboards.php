@@ -14,6 +14,7 @@ class Scoreboards extends MY_Controller
     {
         $data['scroreBoardAcumulative'] = $this->leaderboard_cumulative($temporada);
         $data['scroreBoardSingle'] = $this->leaderboard($temporada);
+        $data['champ'] = $temporada;
         $conten = strip_tags(trim (  $data['scroreBoardSingle']));
         if ($conten == "Tabla vacía"){
             $data['scroreBoardSingle'] = $data['scroreBoardAcumulative'];
@@ -48,6 +49,7 @@ class Scoreboards extends MY_Controller
     public function scoreboardFull($champ)
     {
         $this->load->module('contenido');
+        $data['champ'] = $champ;
         $data['scroreBoardAcumulative'] = $this->scoreboards->leaderboard_cumulative($champ, "leaderboarddetail");
         $data['scroreBoardSingle'] = $this->scoreboards->leaderboard($champ, "leaderboarddetail");
         $conten = strip_tags(trim (  $data['scroreBoardSingle']));

@@ -10,7 +10,7 @@
         </div>
         <div class="margen10lados-sx">
             <?php setlocale(LC_ALL, "es_ES");
-            echo $noticia->origen . ", " . utf8_encode(strftime("%A %d %B %Y %Hh%M", strtotime($noticia->created))); ?>
+            echo $noticia->origen . ", " . ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($noticia->created)))); ?>
             <h1><?php echo $noticia->title; ?></h1>
         </div>
 
@@ -59,7 +59,10 @@
         Lecturas <?php echo $noticia->lecturas; ?>
     </div>
     <div class="col-md-8 col-xs-8 column margen0 text-right text-news-zone">
-        <?php echo $noticia->tags[0]->name; ?>
+        <?php foreach ($noticia->tags as $key=>$tag) {
+        echo $tag->name  ;
+            if ($key < count($noticia->tags) - 1  )  echo   ", ";
+        } ?>
     </div>
 </div>
 

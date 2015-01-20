@@ -16,6 +16,7 @@ class Strikes extends MY_Controller
     public function goleadores($campeonato)
     {
         $data['jugadores'] = $this->mdl_strikes->get_strikers($campeonato);
+        $data['champ'] = $campeonato;
         return $this->load->view('strikesside', $data, true);
     }
     public function goleadoresFull($campeonato)

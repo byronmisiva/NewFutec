@@ -23,10 +23,11 @@
 <div class="col-md-3 separador10">
     <span class="social-pos">
         <iframe
-            src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Ffutbolecuador&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true&amp;appId=1396413573964675"
+            src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Ffutbolecuador&amp;locale=es_ES&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true&amp;appId=1396413573964675"
             style="border:none; overflow:hidden; width:60px; height:35px; border:0"></iframe>
     </span>
 </div>
+
 <div class="col-md-6 separador10 pull-right margen0">
     <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cx" value="004910472998778424762:cfsv-n7w47w">
@@ -35,6 +36,8 @@
         <input  class="hide" type="submit" name="sa" value="Search" />
     </form>
 </div>
+
+
 <div class="col-md-12 separador10  margen0r lateral">
 
     <div id="collapseTwo" class="panel-collapse collapse in">
@@ -234,3 +237,16 @@
 <div class="col-md-12 separador10 margen0r">
     <? echo $loMasLeido; ?>
 </div>
+
+<!--banner lateral 2 -->
+<div class="col-md-12 separador10 margen0r">
+    <? echo $bannersSidebar[2]; ?>
+</div>
+
+<!--Goleadores-->
+
+<div class="col-md-12 separador10 margen0r">
+    <? echo $strikes; ?>
+</div>
+
+<!--Fin Goleadores -->

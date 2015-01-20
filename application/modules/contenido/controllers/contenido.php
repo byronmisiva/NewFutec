@@ -263,7 +263,7 @@ class Contenido extends MY_Controller
 
         $bannersSidebar[] = $this->banners->FE_Bigboxbanner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
-       // $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
        // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
         $data['bannersSidebar'] = $bannersSidebar;
         //fin carga banners
@@ -296,6 +296,10 @@ class Contenido extends MY_Controller
 
 
         $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
+
+        //Resultados goleadores
+        $this->load->module('strikes');
+        $data['strikes'] = $this->strikes->goleadores($serie);
 
         //Resultados goleadores
         /*$this->load->module('strikes');

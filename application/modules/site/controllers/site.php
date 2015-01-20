@@ -355,11 +355,16 @@ class Site extends MY_Controller
         $this->singleConten("Búsqueda", $search);
     }
 
-    public function goleadores()
+    public function goleadores($serie = SERIE_A)
     {
         $this->output->cache(CACHE_DEFAULT);
+        $id = $this->uri->segment(3);
+        if ($id) {
+            $serie = $id;
+        }
+
         $this->load->module('strikes');
-        $goleadores = $this->strikes->goleadoresFull(SERIE_A);
+        $goleadores = $this->strikes->goleadoresFull($serie);
         $this->singleConten("Goleadores", $goleadores);
     }
 

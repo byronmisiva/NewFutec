@@ -309,7 +309,7 @@ function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
         var sendMail = "false";
     }
     if (s_msg.length == 0) {
-        error = error + "mensaje, ";
+        error = error + "mensaje ";
         var sendMail = "false";
     }
     if (sendMail == "true") {

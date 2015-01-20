@@ -52,7 +52,11 @@
     </table>
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
-    <a href="<?= base_url('goleadores') ?>">Ver más</a>
+    <?php if ($champ == CHAMP_DEFAULT) { ?>
+        <a href="<?= base_url('goleadores') ?>">Tabla completa</a>
+    <?php } else { ?>
+        <a href="<?= base_url('site/goleadores/' . $champ ) ?>">Tabla completa</a>
+    <?php } ?>
 </div>
 
 

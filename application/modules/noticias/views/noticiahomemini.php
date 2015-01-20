@@ -21,7 +21,7 @@
     <div class="col-md-12 margen0-noti column text-news-date hidden-xs">
         <a href="<?php echo $link ?>">
             <?php setlocale(LC_ALL, "es_ES");
-            echo strftime("%d %B %Y", strtotime($story->created)); ?>
+            echo ucfirst(strftime("%B %d %Y", strtotime($story->created))); ?>
         </a>
     </div>
     <div class="col-md-12 col-sm-12 margen0-noti column col-xs-10 ">
