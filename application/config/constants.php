@@ -53,7 +53,7 @@ define('SECTION_SUDAMERICANA',32);
 
 //Campeonatos
 define('SERIE_A',53);
-define('SERIE_B',51);
+define('SERIE_B',54);
 define('MUNDIAL',43);
 define('LIBERTADORES',41);
 define('SUDAMERICANA',39);
