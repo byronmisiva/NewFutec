@@ -336,8 +336,8 @@ class Mdl_matches extends MY_Model
         foreach ($matches as $match) {
             //validar el logo
 
-            if ($match->hshield == '') $match->hshield = "imagenes/teams/mini_shields/default.jpg";
-            if ($match->ashield == '') $match->ashield = "imagenes/teams/mini_shields/default.jpg";
+            if ($match->hshield == '') $match->hshield = "imagenes/teams/mini_shields/default.png";
+            if ($match->ashield == '') $match->ashield = "imagenes/teams/mini_shields/default.png";
             $data[$i] = $match;
             $data[$i]->cn = $champs[$match->schedule_id]['name'];
             $data[$i]->cid = $champs[$match->schedule_id]['id'];

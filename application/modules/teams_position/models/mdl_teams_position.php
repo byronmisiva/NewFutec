@@ -35,7 +35,7 @@ class Mdl_teams_position extends MY_Model{
         $this->db->where('id',$id);
         $data=current($this->db->get($this->name)->result());
         if($data->round==0){
-            $this->db->select('id as round');
+            $this->db->select('rounds.id as round');
             $this->db->from('championships');
             $this->db->where('championship_id',$id);
             $this->db->order_by('priority','desc');

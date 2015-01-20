@@ -55,8 +55,8 @@ define('SECTION_SUDAMERICANA',32);
 define('SERIE_A',53);
 define('SERIE_B',54);
 define('MUNDIAL',43);
-define('LIBERTADORES',41);
-define('SUDAMERICANA',39);
+define('LIBERTADORES',50);
+define('SUDAMERICANA',52);
 
 //Futbolecuador
 define('CHAMP_DEFAULT',53);

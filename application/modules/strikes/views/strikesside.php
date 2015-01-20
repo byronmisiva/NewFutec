@@ -16,8 +16,14 @@
                     <?php if ($key + 1 == 1) { ?>
                         <td colspan="3">
                             <div class="col-md-4 margen0 img-goleadores">
-                                <img class="img-responsive"
-                                     src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
+                                <?php if ((isset($jugador->thumb220)) and ($jugador->thumb220 != "")) { ?>
+                                    <img class="img-responsive"
+                                         src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
+                                <?php } else { ?>
+                                    <img class="img-responsive"
+                                         src="http://www.futbolecuador.com/imagenes/players/striker.jpg">
+                                <?php } ?>
+
                             </div>
                             <div class="col-md-2 margen0 text-center">
                                 <img src="http://www.futbolecuador.com/<?php echo $jugador->thumb_shield; ?>">
@@ -39,7 +45,14 @@
                     } else {
                         ?>
                         <td><?php echo $key + 1 ?></td>
-                        <td><img src="http://www.futbolecuador.com/<?php echo $jugador->mini_shield; ?>" alt="<?php echo $jugador->name ?>"> <?php
+                        <?php if ((isset($jugador->mini_shield)) and ($jugador->mini_shield != "")) {
+
+                        } else {
+                            $jugador->mini_shield = "imagenes/teams/mini_shields/default.png";
+                        } ?>
+
+                        <td><img src="http://www.futbolecuador.com/<?php echo $jugador->mini_shield; ?>"
+                                 alt="<?php echo $jugador->name ?>"> <?php
                             echo $jugador->last_name . " " . $jugador->first_name;
                             ?></td>
                         <td class="text-center"><?php echo $jugador->goals ?> Goles</td>
@@ -55,7 +68,7 @@
     <?php if ($champ == CHAMP_DEFAULT) { ?>
         <a href="<?= base_url('goleadores') ?>">Tabla completa</a>
     <?php } else { ?>
-        <a href="<?= base_url('site/goleadores/' . $champ ) ?>">Tabla completa</a>
+        <a href="<?= base_url('site/goleadores/' . $champ) ?>">Tabla completa</a>
     <?php } ?>
 </div>
 

@@ -14,7 +14,13 @@
                     ?>
                     <div class="row clearfix  separador10 cabeceragoleador">
                         <div class="col-md-2 col-xs-3 margen0-xs ">
-                            <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
+                            <?php if ((isset($jugador->thumb220)) and ($jugador->thumb220 != "")) { ?>
+                                <img class="img-responsive"
+                                     src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
+                            <?php } else { ?>
+                                <img class="img-responsive"
+                                     src="http://www.futbolecuador.com/imagenes/players/striker.jpg">
+                            <?php } ?>
                         </div>
                         <div class="col-md-1 col-xs-2 column ">
                              <img src="http://www.futbolecuador.com/<?php echo $jugador->shield; ?>">
@@ -50,7 +56,12 @@
                     ?>
                     <tr>
                         <td ><?php echo $key + 1 ?></td>
-                        <td><img src="http://www.futbolecuador.com/<?php echo $jugador->thumb_shield; ?>"></td>
+                        <td><?php if ((isset($jugador->mini_shield)) and ($jugador->mini_shield != "")) {
+
+                            } else {
+                                $jugador->thumb_shield = "imagenes/teams/thumb_shield/default.png";
+                            } ?>
+                            <img src="http://www.futbolecuador.com/<?php echo $jugador->thumb_shield; ?>"></td>
                         <td class="hidden-xs"><?php echo $jugador->name; ?></td>
                         <td><?php echo $jugador->last_name . " " . $jugador->first_name ?></td>
                         <td class="text-center hidden-xs"><?php echo $jugador->jugadas ?> </td>
