@@ -20,7 +20,7 @@
                     <td><?php echo $key + 1 ?></td>
                     <td>
                         <div
-                            class="equipos sprite-<?php echo strtolower($this->contenido->_clearStringGion($row['name'])) ?>-icon zoom06 "></div>
+                            class="equipos sprite-<?php echo strtolower(htmlentities($this->contenido->_clearStringGion($row['name']))) ?>-icon zoom06 "></div>
                     </td>
 
                     <td><?php echo $row['name'] ?></td>
