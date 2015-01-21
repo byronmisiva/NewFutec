@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
     // si el ancho es menor a 600 cambiamos cambiamos los videos
     ancho = $("body").width();
 
-    if (ancho < 600) {
+      if (ancho < 600) {
         $("iframe").each(function () {
             src = $(this).attr( 'src' );
             //para el caso de youtube
