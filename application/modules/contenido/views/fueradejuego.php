@@ -55,12 +55,12 @@
         <div class="containerfueradejuego galeria15content">
 
             <div class="liquid-slider" id="main-slider15">
-                <div><h2 class="title hidden"><img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1b.jpg" alt=" "/>
-                    </h2> <img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1a.jpg" alt="Karen"/></div>
-                <div><h2 class="title hidden"><img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/2b.jpg" alt=" "/>
-                    </h2> <img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/2a.jpg" alt="Karen"/></div>
-                <div><h2 class="title hidden"><img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" alt=" "/>
-                    </h2> <img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" alt="Karen"/>
+                <div><h2 class="title hidden"><img class="img-responsive lazy" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1b.jpg" alt=" "/>
+                    </h2> <img class="img-responsive lazy" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1a.jpg" alt="Karen"/></div>
+                <div><h2 class="title hidden"><img class="img-responsive lazy" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/2b.jpg" alt=" "/>
+                    </h2> <img class="img-responsive lazy" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/2a.jpg" alt="Karen"/></div>
+                <div><h2 class="title hidden"><img class="img-responsive lazy" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" alt=" "/>
+                    </h2> <img class="img-responsive lazy" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" alt="Karen"/>
 
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
@@ -71,8 +71,8 @@
                             </a></div>
                     </div>
                 </div>
-                <div><h2 class="title hidden"><img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" alt=" "/>
-                    </h2> <img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" alt="Karen"/>
+                <div><h2 class="title hidden"><img class="img-responsive lazy" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" alt=" "/>
+                    </h2> <img class="img-responsive lazy" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" alt="Karen"/>
 
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
@@ -83,8 +83,8 @@
                             </a></div>
                     </div>
                 </div>
-                <div><h2 class="title hidden"><img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" alt=" "/>
-                    </h2> <img class="img-responsive" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" alt="Karen"/>
+                <div><h2 class="title hidden"><img class="img-responsive lazy" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" alt=" "/>
+                    </h2> <img class="img-responsive lazy" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" alt="Karen"/>
 
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
