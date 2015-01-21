@@ -17,7 +17,7 @@ class Noticias extends MY_Controller
 
     public function viewNoticiasHome($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
 
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
@@ -130,7 +130,7 @@ class Noticias extends MY_Controller
 
     public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
