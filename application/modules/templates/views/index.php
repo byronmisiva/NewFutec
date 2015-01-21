@@ -44,6 +44,7 @@ $this->load->view('header');
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><a class="clickmenu" href="<?= base_url('site/resultados/49') ?>">Marcador en vivo</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
                             <span class="caret  link-menu"></span></a>

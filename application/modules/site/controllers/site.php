@@ -412,6 +412,15 @@ class Site extends MY_Controller
         $fechas = $this->matches->matches($id, $title);
         $this->singleConten($title, $fechas);
     }
+    public function marcadorenvivo()
+    {
+        $this->load->module('matches');
+        $id = 49;
+        $title = "Marcador En Vivo";
+        //$title = "Calendario - Campeonato Serie B 2014";
+        $fechas = $this->matches->matchesLive($id, $title);
+        $this->singleConten($title, $fechas);
+    }
 
     public function partido()
     {
