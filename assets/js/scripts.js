@@ -1,17 +1,11 @@
 var masnoticas = "";
-
-
 jQuery(document).ready(function () {
-
-
     //ocultar el menu al dar click
     $(".clickmenu").click (function () {
         $(".navbar-collapse").addClass("collapsing");
     })
-
     // si el ancho es menor a 600 cambiamos cambiamos los videos
     ancho = $("body").width();
-
       if (ancho < 600) {
         $("iframe").each(function () {
             src = $(this).attr( 'src' );
@@ -21,12 +15,10 @@ jQuery(document).ready(function () {
             var n = src.search("vine");
             if (n>0) $(this).attr( 'width', "100%" ).attr( 'height', "290" );
         })
-
         $(".noticia-body img").each (function(){
             $(this).addClass("img-responsive")
         })
     }
-
 
     $("#enviarcontacto").click(function () {
         cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")
@@ -34,15 +26,11 @@ jQuery(document).ready(function () {
     $("#enviarpublicidad").click(function () {
         cargaSendMail("#correopublicidad", "#nombrepublicidad", "#mensajepublicidad", "#enviarpublicidad", "#errorpublicidad", "publicidad")
     })
-
     clickMasNoticias();
-
     $("img.lazy").lazyload();
-
     //centrado menu
     $("a.panel-link").click(function () {
         link = $(".result-link").attr("href");
-        console.log (link)
         var res = link.split("/");
         //reemplazar el penultimo
         res1 = res[res.length - 1];
@@ -50,12 +38,8 @@ jQuery(document).ready(function () {
         res2 = res[res.length - 0];
 
         link = link.replace(res2, $(this).attr("data-name"));
-        console.log (link)
         $(".result-link").attr("href", link);
-
     })
-
-
     var original = jQuery(".et_lb_module_content_inner").html();
     jQuery.each(jQuery(".cargo select option"), function (index, value) {
         mensaje = jQuery(value).html();
@@ -93,8 +77,6 @@ jQuery(document).ready(function () {
     $(window).resize(function () {
         centradoMenu();
     });
-
-
 });
 
 function centradoMenu() {
@@ -104,24 +86,19 @@ function centradoMenu() {
     $(".fhmm .dropdown.fhmm-fw .dropdown-menu").attr('style', 'left: -' + posleft + 'px; width: ' + ancho + 'px');
     $(".fhmm-content").attr('style', 'margin-left: auto; margin-right: auto;').width(anchocuerpo);
 }
-
 //ajuste rotativas
-
 setTimeout(function () {
     ajustesRotativas ();
     altoshome();
 }, 3000);
-
 setTimeout(function () {
     ajustesRotativas ();
     altoshome();
 }, 5000)
-
 setTimeout(function () {
     ajustesRotativas ();
     altoshome();
 }, 10000)
-
 
 
 //recargar marcador en vivo REFRESH_VIVO
@@ -214,8 +191,8 @@ function altoshome() {
 }
 // fuera de juego
 jQuery(function () {
-   // jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').liquidSlider({
-    jQuery('#main-slider15,#main-slider16').liquidSlider({
+    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').liquidSlider({
+  //  jQuery('#main-slider15,#main-slider16').liquidSlider({
         includeTitle: false,
         mobileNavigation: false,
         slideEaseFunction: "easeInOutCubic",
@@ -230,7 +207,8 @@ jQuery(function () {
 
     //jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').adjustHeightNoAnimation();
     ancho = $("body").width();
-    if (ancho < 600) { visibles = 3} else {visibles = 5 }
+
+    if (ancho < 600) { if (ancho < 380) {visibles = 2} else {visibles = 3} } else {visibles = 5 }
 
 
     jQuery(".otrasmodelos").jCarouselLite({
@@ -243,7 +221,6 @@ jQuery(function () {
     jQuery(".containerfueradejuego").hide();
     jQuery(".galeria16content").show();
     //menuchicas
-//    jQuery(".galeria1, .galeria2,.galeria3,.galeria4,.galeria5,.galeria6,.galeria7,.galeria8,.galeria9,.galeria10,.galeria11,.galeria12,.galeria13,.galeria14,.galeria15,.galeria16").click(function () {
     jQuery(".galeria1, .galeria2,.galeria3,.galeria4,.galeria5,.galeria6,.galeria7,.galeria8,.galeria9,.galeria10,.galeria11,.galeria12,.galeria13,.galeria14,.galeria15,.galeria16").click(function () {
         for (var i = 1; i <= 16; i++)
             jQuery(".galeria" + i + "content").hide();
@@ -253,14 +230,13 @@ jQuery(function () {
 
         jQuery("#main-slider" +idclic+ "-nav-ul li.tab2 a ").click();
         jQuery("#main-slider" +idclic+ "-nav-ul li.tab1 a ").click();
-        $("img.lazy").lazyload();
-        console.log ("jaja")
+        $(".galeria2content img.lazy").lazyload({
+
+        });
 
     })
 
-    /* jQuery('#carousel-marcadorenvivo').carousel({
-     interval: 1200000
-     })*/
+
 
 
 });
