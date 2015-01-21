@@ -99,6 +99,7 @@
 
     <script>
         var baseUrl = "<?php echo base_url(); ?>";
+        var REFRESH_VIVO = "<?php echo REFRESH_VIVO; ?>";
     </script>
 
 

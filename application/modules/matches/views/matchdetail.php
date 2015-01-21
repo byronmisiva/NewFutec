@@ -9,7 +9,9 @@ $estado['6'] = 'Segundo Extra';
 $estado['7'] = 'Penales';
 $estado['8'] = 'Fin del Partido';?>
 <!--Titulo-->
-<div class="col-md-12 separador10-xs margen0">
+
+<div class="matchdetail col-md-12 separador10-xs margen0">
+<div class="col-md-12   margen0">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
             <? echo $title; ?>
@@ -48,19 +50,19 @@ $estado['8'] = 'Fin del Partido';?>
                                 <?= $team->aname ?>
                             </div>
                         </div>
-                        <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
+                        <div class="matchdetailestado col-md-12 col-xs-12 text-center textos-equipo clearfix">
                             <?= $estado[$team->state] ?>
                         </div>
                         <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
                             <?php setlocale(LC_ALL, "es_ES");
-                            echo utf8_encode(strftime("%A, %d %B %Y %H:%M", strtotime($team->dm)));?>
+                            echo ucwords(utf8_encode(strftime("%A, %d %B %Y, %HH%M", strtotime($team->dm))));?>
 
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-1 text-center margen0">
                         <img class="img-responsive-xs"
                              src="http://www.futbolecuador.com/<?php
-                             if ((isset($teams_pics['shield'][$team->aid])) or ($teams_pics['shield'][$team->aid]!="")) {
+                             if ((isset($teams_pics['shield'][$team->aid])) or ($teams_pics['shield'][$team->aid] != "")) {
                                  echo $teams_pics['shield'][$team->aid];
                              } else {
                                  echo "/imagenes/teams/shield/default.png";
@@ -79,11 +81,12 @@ $estado['8'] = 'Fin del Partido';?>
 <div class="col-md-6 separador10-xs  margen0l ">
     <div class="col-md-12     clearfix borde">
         <div class="col-md-6    margen0">
-            <img class="img-responsive" src="http://www.futbolecuador.com/<?php if ((isset($infoLocal->shirt)) or ($infoLocal->shirt !="")) {
-                echo $infoLocal->shirt;
-            } else {
-                echo "imagenes/teams/shirt/uniforme.jpg";
-            } ?>"  alt="<?php echo $infoLocal->name ?>">
+            <img class="img-responsive"
+                 src="http://www.futbolecuador.com/<?php if ((isset($infoLocal->shirt)) or ($infoLocal->shirt != "")) {
+                     echo $infoLocal->shirt;
+                 } else {
+                     echo "imagenes/teams/shirt/uniforme.jpg";
+                 } ?>" alt="<?php echo $infoLocal->name ?>">
         </div>
         <div class="col-md-6   col-xs-6 margen0">
             <div class="col-md-12 col-xs-12 text-right separador10 nombre-equipo margen5l">
@@ -132,11 +135,12 @@ $estado['8'] = 'Fin del Partido';?>
 
         </div>
         <div class="col-md-6    margen0">
-            <img class="img-responsive" src="http://www.futbolecuador.com/<?php if ((isset($infoVisitante->shirt)) or ($infoVisitante->shirt !="")) {
-                echo $infoVisitante->shirt;
-            } else {
-                echo "imagenes/teams/shirt/uniforme.jpg";
-            } ?>"
+            <img class="img-responsive"
+                 src="http://www.futbolecuador.com/<?php if ((isset($infoVisitante->shirt)) or ($infoVisitante->shirt != "")) {
+                     echo $infoVisitante->shirt;
+                 } else {
+                     echo "imagenes/teams/shirt/uniforme.jpg";
+                 } ?>"
                  alt="<?php echo $infoVisitante->name ?>">
         </div>
     </div>
@@ -214,7 +218,8 @@ $estado['8'] = 'Fin del Partido';?>
                             <img src="<?php echo $action['tipo']; ?>">
                         </div>
                         <div class="col-md-6 col-xs-6 nombre-equipo">
-                            <?php echo $action['minuto']; echo is_numeric($action['minuto'])? "'":""; ?>
+                            <?php echo $action['minuto'];
+                            echo is_numeric($action['minuto']) ? "'" : ""; ?>
                         </div>
                     </div>
                     <div class="col-md-10 col-xs-10">
@@ -338,6 +343,7 @@ $estado['8'] = 'Fin del Partido';?>
         </div>
     </div>
 </div>
+
 <!--test
 <div class="col-md-12 separador10-xs margen0l">
     <div class="col-md-12    margen0">
@@ -350,17 +356,23 @@ $estado['8'] = 'Fin del Partido';?>
     
     <div class="col-md-12   margen0      clearfix">
         <?php
-        if (count($titularesLocal) > 0) {
-            foreach ($titularesLocal as $titular) {
-                if (!($titular->status == 1 || $titular->status == 3)) {
-                    ?>
+if (count($titularesLocal) > 0) {
+    foreach ($titularesLocal as $titular) {
+        if (!($titular->status == 1 || $titular->status == 3)) {
+            ?>
                     <div
                         class="col-md-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name; ?></div>
                 <?php
-                }
-            }
         }
-        ?>
+    }
+}
+?>
     </div>
 </div>
 -->
+
+</div>
+<script>
+    var idEquipo = "<?php echo idEquipo; ?>";
+
+</script>

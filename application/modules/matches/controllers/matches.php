@@ -41,7 +41,7 @@ class Matches extends MY_Controller
 
     public function getMatch($id)
     {
-        $this->output->cache(CACHE_PARTIDOS);
+        //$this->output->cache(CACHE_PARTIDOS);
 
         $data['title'] = "Marcador en Vivo";
         $data['teamsFecha'] = $this->mdl_matches->matches_id($id);
@@ -50,6 +50,7 @@ class Matches extends MY_Controller
         //todo  arreglar esta funcion
         $Serie = $this->getSerie($id);
         $idSerie = $Serie->id;
+        $data['idEquipo']= $id;
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
 
         $data['infoLocal'] = $this->mdl_matches->get_info_team($equipos[0]->team_id_home);

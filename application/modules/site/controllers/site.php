@@ -60,7 +60,7 @@ class Site extends MY_Controller
                 $isMobile = true;
         }
         if ($isMobile) {
-            redirect(base_url(). 'site/movil/');
+            redirect(base_url() . 'site/movil/');
         } else {
             // para la final se comentan la llamada a las secciones.
             $this->output->cache(CACHE_DEFAULT);
@@ -97,11 +97,11 @@ class Site extends MY_Controller
         $config['wordwrap'] = FALSE;
 
         $this->email->initialize($config);
-        $this->email->from('info@misiva.com.ec','Contacto Futbolecuador.com');
+        $this->email->from('info@misiva.com.ec', 'Contacto Futbolecuador.com');
         $this->email->to('ddelosreyes@futbolecuador.com');
         $this->email->cc('bherrera@misiva.com.ec');
-        $data['informacion']=$_POST;
-        $body=$this->load->view( 'email-contacto',$data,TRUE);
+        $data['informacion'] = $_POST;
+        $body = $this->load->view('email-contacto', $data, TRUE);
         $this->email->subject("Contacto Futbolecuador.com");
         $this->email->message($body);
         $this->email->send();
@@ -117,11 +117,11 @@ class Site extends MY_Controller
         $config['wordwrap'] = FALSE;
 
         $this->email->initialize($config);
-        $this->email->from('info@misiva.com.ec','Publicidad Futbolecuador.com');
+        $this->email->from('info@misiva.com.ec', 'Publicidad Futbolecuador.com');
         $this->email->to('ddelosreyes@futbolecuador.com');
         $this->email->cc('bherrera@misiva.com.ec');
-        $data['informacion']=$_POST;
-        $body=$this->load->view( 'email-publicidad',$data,TRUE);
+        $data['informacion'] = $_POST;
+        $body = $this->load->view('email-publicidad', $data, TRUE);
         $this->email->subject("Publicidad Futbolecuador.com");
         $this->email->message($body);
         $this->email->send();
@@ -142,6 +142,20 @@ class Site extends MY_Controller
         } else {
             echo $this->noticias->viewSeccions("", $idsection, $posSection, "", RESULT_PAGE - 1, $offset, false);
         }
+    }
+
+    public function masMarcadorVivo()
+    {
+        $this->load->module('contenido');
+        echo $this->contenido->marcadorVivo();
+    }
+
+    public function MarcadorVivoDetail()
+    {
+        $idEquipo = $_POST["idEquipo"];
+        $this->load->module('matches');
+
+        echo $this->matches->getMatch($idEquipo);
     }
 
     public function noticia()
@@ -249,8 +263,8 @@ class Site extends MY_Controller
 
     public function copalibertadores()
     {
-        $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores" );
-       // $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores" , LIBERTADORES);
+        $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores");
+        // $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores" , LIBERTADORES);
     }
 
     public function copaamerica()

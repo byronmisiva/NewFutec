@@ -71,10 +71,20 @@ class Contenido extends MY_Controller
             $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             //$data['title'] = "Ultima Fecha";
         }
-        $data['marcadorvivo'] = $this->load->view('marcadorvivo', $datamarcador, TRUE);
+        $data['marcadorvivo'] = $this->marcadorVivo();
 
         return $this->load->view('header2', $data, TRUE);
 
+    }
+
+    public function marcadorVivo () {
+        $this->load->module('scoreboards');
+        $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
+        if ($datamarcador['scores'] == false) {
+            $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
+            //$data['title'] = "Ultima Fecha";
+        }
+        return  $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
     public function header2mobile ($data = FALSE)
     {

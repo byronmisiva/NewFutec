@@ -159,6 +159,30 @@ setTimeout(function () {
     });
     altoshome();
 }, 10000)
+//recargar marcador en vivo REFRESH_VIVO
+setInterval(function () {
+    $.post(baseUrl + "site/masMarcadorVivo",   function (data) {
+        $("#carousel-marcadorenvivo").html(data);
+
+    });
+}, REFRESH_VIVO * 1000)
+
+//matchdetailestado
+machDetail = $ ('.matchdetail') ;
+if ( machDetail.length > 0) {
+    estado = $ ('.matchdetailestado').html() ;
+
+    if (estado.replace(/\s/g,'') != 'FindelPartido'){
+        //recargar marcador en vivo REFRESH_VIVO
+        setInterval(function () {
+            $.post(baseUrl + "site/MarcadorVivoDetail", {idEquipo: idEquipo}, function (data) {
+
+                $(".matchdetail").html(data);
+            });
+        }, REFRESH_VIVO * 1000)
+
+    }
+}
 
 
 $(window).resize(function () {
