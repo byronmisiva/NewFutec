@@ -13,13 +13,15 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
+<!-- FlexSlider -->
+<script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
+
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?refresh=1234567') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
 
-<!-- FlexSlider -->
-<script defer src="<?php echo base_url('assets/js/jquery.flexslider.js') ?>"></script>
+
 
 <!-- Optional FlexSlider Additions -->
 <script src="<?php echo base_url('assets/js/jquery.easing.js') ?>"></script>

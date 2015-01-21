@@ -61,6 +61,7 @@ class Site extends MY_Controller
         }
 
 
+
         if ($isMobile) {
             redirect(base_url(). 'site/movil/');
         } else {

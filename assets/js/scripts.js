@@ -1,23 +1,9 @@
 var masnoticas = "";
-function clickMasNoticias() {
-    $(".masnoticias").click(function () {
-        var offset = $(this).attr('offset');
-        var section = $(this).attr('section');
-        var pos = $(this).attr('pos');
-        $(this).html("Cargando...");
-        masnoticas = this;
-        $.post(baseUrl + "site/masnoticias", {offset: offset, section: section, pos: pos}, function (data) {
-            $(masnoticas).remove();
-            noticiasExtras = $(".noticiasextras").html();
 
-            $(".noticiasextras").html(noticiasExtras + data);
-            $("img.lazy").lazyload();
-            clickMasNoticias();
-        });
-    })
-}
 
 jQuery(document).ready(function () {
+
+
     //ocultar el menu al dar click
     $(".clickmenu").click (function () {
         $(".navbar-collapse").addClass("collapsing");
@@ -122,43 +108,22 @@ function centradoMenu() {
 //ajuste rotativas
 
 setTimeout(function () {
-    alto = $('.flexslider .flex-control-thumbs').height();
-    $('.flexslider').height(alto);
-    ancho = $('.flexslider  .clone').first().width();
-    $(".flexslider .slides li img").each(function (index) {
-        if ($(this).height() < alto) {
-            $(this).height(alto)
-        }
-        ;
-    });
+    ajustesRotativas ();
     altoshome();
 }, 3000);
 
 setTimeout(function () {
-    alto = $('.flexslider  .flex-control-thumbs').height();
-    $('.flexslider').height(alto);
-    ancho = $('.flexslider  .clone').first().width();
-    $(".flexslider  .slides li img").each(function (index) {
-        if ($(this).height() < alto) {
-            $(this).height(alto)
-        }
-        ;
-    });
+    ajustesRotativas ();
     altoshome();
 }, 5000)
 
 setTimeout(function () {
-    alto = $('.flexslider  .flex-control-thumbs').height();
-    $(' .flexslider').height(alto);
-    ancho = $('.flexslider  .clone').first().width();
-    $(".flexslider  .slides li img").each(function (index) {
-        if ($(this).height() < alto) {
-            $(this).height(alto)
-        }
-        ;
-    });
+    ajustesRotativas ();
     altoshome();
 }, 10000)
+
+
+
 //recargar marcador en vivo REFRESH_VIVO
 setInterval(function () {
     $.post(baseUrl + "site/masMarcadorVivo",   function (data) {
@@ -194,26 +159,7 @@ $(window).resize(function () {
 
 // rotativas
 $(window).load(function () {
-    $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: "thumbnails",
-        slideshow: true,
-        start: function (slider) {
-            $('.preloader').removeClass('preloader');
-            $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
-        }
-    });
 
-    $('.flexslidermobile').flexslider({
-        animation: "slide",
-        slideshow: true,
-        itemWidth: "100%",
-        start: function (slider) {
-            $('.preloader').removeClass('preloader');
-            $(".flexslidermobile .slides").css('transform', 'translate3d(-320px, 0px, 0px)');
-            $(".flexslidermobile .text-rotativas").show();
-        }
-    });
 
 //ajustes resultados
 
@@ -368,4 +314,87 @@ function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
     } else {
         $(errorCaja).html(error);
     }
+}
+
+jQuery(document).ready(function () {
+
+    setTimeout(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails",
+            slideshow: true,
+            start: function (slider) {
+                $('.preloader').removeClass('preloader');
+                $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)');
+                console.log ("cargo slider 2");
+            }
+        });
+
+    }, 1119000);
+
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        slideshow: true,
+        start: function (slider) {
+
+            $('.preloader').removeClass('preloader');
+            $(".slides").css('transform', 'translate3d(-598px, 0px, 0px)');
+            $(".flex-viewport ul.slides li").each(function(){
+                $(this).height(384);
+
+            });
+            $(".flex-viewport ul.slides li .img").each(function(){
+                $(this).height(384);
+
+            })
+            ajustesRotativas ();
+        }
+    });
+
+
+
+
+    $('.flexslidermobile').flexslider({
+        animation: "slide",
+        slideshow: true,
+        itemWidth: "100%",
+        start: function (slider) {
+            $('.preloader').removeClass('preloader');
+            $(".flexslidermobile .slides").css('transform', 'translate3d(-320px, 0px, 0px)');
+            $(".flexslidermobile .text-rotativas").show();
+        }
+    });
+})
+
+
+function clickMasNoticias() {
+    $(".masnoticias").click(function () {
+        var offset = $(this).attr('offset');
+        var section = $(this).attr('section');
+        var pos = $(this).attr('pos');
+        $(this).html("Cargando...");
+        masnoticas = this;
+        $.post(baseUrl + "site/masnoticias", {offset: offset, section: section, pos: pos}, function (data) {
+            $(masnoticas).remove();
+            noticiasExtras = $(".noticiasextras").html();
+
+            $(".noticiasextras").html(noticiasExtras + data);
+            $("img.lazy").lazyload();
+            clickMasNoticias();
+        });
+    })
+}
+
+function ajustesRotativas () {
+    alto = $('.flexslider .flex-control-thumbs').height();
+    $('.flexslider').height(alto);
+    ancho = $('.flexslider  .clone').first().width();
+    $(".flexslider .slides li img").each(function (index) {
+        if ($(this).height() < alto) {
+            $(this).height(alto)
+        }
+        ;
+    });
 }
