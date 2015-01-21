@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/flexslider.css" afterPath="$PROJECT_DIR$/assets/css/flexslider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="fueradejuego.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.435898" vertical-offset="9569" max-vertical-offset="12720">
-              <caret line="765" column="57" selection-start-line="765" selection-start-column="57" selection-end-line="765" selection-end-column="57" />
+            <state vertical-scroll-proportion="-0.974359" vertical-offset="9569" max-vertical-offset="12720">
+              <caret line="643" column="63" selection-start-line="643" selection-start-column="59" selection-end-line="643" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -82,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34634146" vertical-offset="3271" max-vertical-offset="5550">
-              <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.62765956" vertical-offset="699" max-vertical-offset="1545">
+              <caret line="82" column="97" selection-start-line="82" selection-start-column="97" selection-end-line="82" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -111,7 +110,6 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
         <option value="$PROJECT_DIR$/assets/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiasequipo.php" />
-        <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
         <option value="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
         <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
         <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
@@ -158,6 +156,7 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
       </list>
     </option>
   </component>
@@ -2838,7 +2837,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421878866362</updated>
     </task>
-    <option name="localTasksCounter" value="397" />
+    <task id="LOCAL-00397" summary="incluye tabla de revista">
+      <created>1421879993800</created>
+      <option name="number" value="00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1421879993800</updated>
+    </task>
+    <option name="localTasksCounter" value="398" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2961,13 +2966,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/third_party/MX/Loader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4583335" vertical-offset="3760" max-vertical-offset="6345">
-          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/leaderboarddetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.916667" vertical-offset="248" max-vertical-offset="765">
@@ -3334,8 +3332,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.435898" vertical-offset="9569" max-vertical-offset="12720">
-          <caret line="765" column="57" selection-start-line="765" selection-start-column="57" selection-end-line="765" selection-end-column="57" />
+        <state vertical-scroll-proportion="-0.974359" vertical-offset="9569" max-vertical-offset="12720">
+          <caret line="643" column="63" selection-start-line="643" selection-start-column="59" selection-end-line="643" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36463416" vertical-offset="3211" max-vertical-offset="5550">
+          <caret line="234" column="17" selection-start-line="234" selection-start-column="17" selection-end-line="234" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -3365,10 +3371,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34634146" vertical-offset="3271" max-vertical-offset="5550">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.62765956" vertical-offset="699" max-vertical-offset="1545">
+          <caret line="82" column="97" selection-start-line="82" selection-start-column="97" selection-end-line="82" selection-end-column="97" />
           <folding />
         </state>
       </provider>
