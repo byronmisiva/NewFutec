@@ -227,18 +227,14 @@ jQuery(function () {
         jQuery("." + jQuery(this).attr('class') + "content").show();
         idclic = jQuery(this).attr('class');
         idclic = idclic.replace("galeria", "");
-
-        jQuery("#main-slider" +idclic+ "-nav-ul li.tab2 a ").click();
-        jQuery("#main-slider" +idclic+ "-nav-ul li.tab1 a ").click();
-        $(".galeria2content img.lazy").lazyload({
-
+        $(".galeria" +idclic+ "content img.lazo").each(function(){
+            $(this).attr("src", $(this).attr("data-original"))
+            setTimeout(function () {
+                jQuery("#main-slider" +idclic+ "-nav-ul li.tab2 a ").click();
+                jQuery("#main-slider" +idclic+ "-nav-ul li.tab1 a ").click();
+            }, 1000);
         });
-
     })
-
-
-
-
 });
 
 
