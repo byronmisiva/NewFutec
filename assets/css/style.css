@@ -1219,11 +1219,9 @@ fieldset[disabled] .navbar-futec .btn-link:hover,
 fieldset[disabled] .navbar-futec .btn-link:focus {
     color: #ccc;
 }
-
 textarea {
     resize: none;
 }
-
 .panelGuest{
     float: left;
     height: 388px;
