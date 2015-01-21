@@ -59,8 +59,10 @@ class Site extends MY_Controller
             if (in_array($m, $mobiles))
                 $isMobile = true;
         }
+
+
         if ($isMobile) {
-            redirect(base_url() . 'site/movil/');
+            redirect(base_url(). 'site/movil/');
         } else {
             // para la final se comentan la llamada a las secciones.
             $this->output->cache(CACHE_DEFAULT);
