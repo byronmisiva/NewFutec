@@ -1012,7 +1012,7 @@ h4.contenidos {
     }
 
     .flex-control-nav {
-        bottom: 1px !important;
+        top: 1px !important;
         text-align: center !important;
     }
     .separador20-xs {

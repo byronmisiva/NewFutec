@@ -203,9 +203,9 @@ $(window).load(function () {
             $(".slides").css('transform', 'translate3d(-600px, 0px, 0px)')
         }
     });
+
     $('.flexslidermobile').flexslider({
         animation: "slide",
-        // controlNav: "thumbnails",
         slideshow: true,
         itemWidth: "100%",
         start: function (slider) {
