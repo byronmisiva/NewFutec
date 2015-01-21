@@ -6,6 +6,6 @@
         </h4>
     </div>
     <div id='mod_femagazine' style='position:relative;width:100%; height:793px;' class="separador10-xs">
-        <iframe src="http://www.misiva.com.ec/animaciones/femagazine/" scrolling="no" style="width: 100%;height:100%;"></iframe>
+        contenido 1
     </div>
 </div>
