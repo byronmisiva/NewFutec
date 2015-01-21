@@ -180,7 +180,6 @@ if ( machDetail.length > 0) {
                 $(".matchdetail").html(data);
             });
         }, REFRESH_VIVO * 1000)
-
     }
 }
 
