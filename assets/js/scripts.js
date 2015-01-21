@@ -317,9 +317,6 @@ jQuery(document).ready(function () {
         }
     });
 
-
-
-
     $('.flexslidermobile').flexslider({
         animation: "slide",
         slideshow: true,

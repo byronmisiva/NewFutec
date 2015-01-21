@@ -94,8 +94,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49527186" vertical-offset="4531" max-vertical-offset="5580">
-              <caret line="330" column="78" selection-start-line="330" selection-start-column="78" selection-end-line="330" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.3002364" vertical-offset="4531" max-vertical-offset="5535">
+              <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2859,7 +2859,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421881401173</updated>
     </task>
-    <option name="localTasksCounter" value="399" />
+    <task id="LOCAL-00399" summary="incluye tabla de revista">
+      <created>1421881638427</created>
+      <option name="number" value="00399" />
+      <option name="project" value="LOCAL" />
+      <updated>1421881638427</updated>
+    </task>
+    <option name="localTasksCounter" value="400" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3389,8 +3395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49527186" vertical-offset="4531" max-vertical-offset="5580">
-          <caret line="330" column="78" selection-start-line="330" selection-start-column="78" selection-end-line="330" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.3002364" vertical-offset="4531" max-vertical-offset="5535">
+          <caret line="319" column="0" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
           <folding />
         </state>
       </provider>
