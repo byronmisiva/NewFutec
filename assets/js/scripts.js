@@ -56,13 +56,15 @@ jQuery(document).ready(function () {
     //centrado menu
     $("a.panel-link").click(function () {
         link = $(".result-link").attr("href");
+        console.log (link)
         var res = link.split("/");
         //reemplazar el penultimo
-        res1 = res[res.length - 2];
+        res1 = res[res.length - 1];
         link = link.replace(res1, $(this).attr("data-info"));
+        res2 = res[res.length - 0];
 
-        res2 = res[res.length - 1];
         link = link.replace(res2, $(this).attr("data-name"));
+        console.log (link)
         $(".result-link").attr("href", link);
 
     })
