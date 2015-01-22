@@ -226,12 +226,15 @@
     </div>
 </div>
 
-<!--Tabla de posiciones-->
-<? echo $tablaposiciones; ?>
 
 <div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
 </div>
+
+<!--Tabla de posiciones-->
+<? echo $tablaposiciones; ?>
+
+
 
 
 <!--Goleadores-->
