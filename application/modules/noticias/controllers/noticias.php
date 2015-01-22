@@ -54,12 +54,14 @@ class Noticias extends MY_Controller
             $banners[] = $this->banners->FE_Bigboxnews2();
             $banners[] = $this->banners->FE_Bigboxnews3();
             $banners[] = $this->banners->FE_Bigboxnews4();
+            $banners[] = $this->banners->FE_Bigboxnews5();
             //intercalo entre las noticias los banners.
             if ($totalMiniNews > 10) {
                 array_splice($noticias, 5, 0, $banners[0]);
-                array_splice($noticias, 12, 0, $banners[1]);
+                array_splice($noticias, 10, 0, $banners[1]);
                 array_splice($noticias, 17, 0, $banners[2]);
-                //array_splice($noticias, 25, 0, $banners[3]);
+                array_splice($noticias, 22, 0, $banners[3]);
+                array_splice($noticias, 29, 0, $banners[4]);
             } else {
                 if ($totalMiniNews > 2) {
                     array_splice($noticias, 5, 0, $banners[0]);
