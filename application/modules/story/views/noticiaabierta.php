@@ -3,7 +3,7 @@
     <div class="col-md-12 ">
         <div class="col-md-7 margen10r">
             <div class="row">
-                <img class="img-responsive margen10b margen10r margen0-sx"
+                <img class="img-responsive margen10b margen10r margen0-xs"
                      src="http://www.futbolecuador.com/<?php echo $noticia->thumb400; ?>"
                      alt="<?php echo $noticia->image_name; ?>">
             </div>

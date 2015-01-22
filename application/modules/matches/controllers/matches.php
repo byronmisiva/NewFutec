@@ -25,7 +25,7 @@ class Matches extends MY_Controller
         $team_id_home = $match[0]->team_id_home;
         $team_id_away = $match[0]->team_id_away;
         return $this->getTeamName($team_id_home) . "-" . $this->getTeamName($team_id_away);
-        //update `fe2008`.`matches_teams` set `team_id_home`='121', `team_id_away`='31' where `id`='1'
+
 
     }
 

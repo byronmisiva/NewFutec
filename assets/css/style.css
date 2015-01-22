@@ -1048,9 +1048,11 @@ h4.contenidos {
 
     .margen0-noti {padding: 0 0 0 10px;}
 
-    .margen0-sx {
+    .margen0-xs {
         padding-right: 0;
         padding-left: 0 ;
+        margin-right: 0;
+        margin-left: 0 ;
     }
 
     .margen10lados-sx {
