@@ -39,7 +39,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
 //Pagination
-define('RESULT_PAGE', 17);
+define('RESULT_PAGE', 20);
 define('TOTALNEWSINOPENNEWS',7); //
 
 
