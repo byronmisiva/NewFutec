@@ -186,7 +186,7 @@ class Mdl_scoreboards extends MY_Model
             $dates[$i] = $match->dm;
             $i++;
         }
-
+        if (isset ($champ))
         array_multisort($champ, SORT_ASC, $dates, SORT_ASC, $data);
 
         return $data;
