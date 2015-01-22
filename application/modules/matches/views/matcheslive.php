@@ -17,39 +17,17 @@ $estado['8'] = 'Fin del Partido';?>
             <? echo $title; ?>
         </h4>
     </div>
-    <div class="hidden-xs">
-        <?php if (isset($teamsFecha)) {
-            foreach ($teamsFecha as $key => $teams) {
-                $totalTeams = count($teamsFecha);
-                ?>
-                <a class="sidebarlink" href="#<?= $key ?>">
-                    <div class="fondogris borde separador10 text-center texto-gris miniletra"
-                         style="width: <?= 100 / $totalTeams ?>%; float: left">
-                        Fecha<br>
 
-                        <div style="font-size: 13px"><?= $key ?></div>
-                    </div>
-
-                </a>
-            <?php
-            }
-        } ?>
-    </div>
 </div>
 
 <div class="panel-group separador10" id="accordion" role="tablist" aria-multiselectable="true">
     <?php
     $i = 1;
-    if (isset($teamsFecha)) {
-        foreach ($teamsFecha as $key => $teams) {
+    if (isset($fechas)) {
 
-            ?>
-            <div class="col-md-12  fondoazul  separador10">
-                <a id="<?= $key ?>"></a><h4 class="contenidos">Fecha <?= $key ?></h4>
-            </div>
-            <?php
-            foreach ($teams as $key => $team) {
-                if ($teams_pics['shield'][$team->hid] == "") $teams_pics['shield'][$team->hid] = "imagenes/teams/shield/default.png";
+            foreach ($fechas as $key => $team) {
+                if ($team->hshield == "") $team->hshield = "imagenes/teams/shield/default.png";
+                if ($team->ashield == "") $team->ashield = "imagenes/teams/shield/default.png";
                 ?>
                 <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix">
                     <a class="sidebarlink"
@@ -57,7 +35,7 @@ $estado['8'] = 'Fin del Partido';?>
 
                         <div class="col-md-2 col-xs-1 margen0 text-center ">
                             <img class="img-responsive-xs"
-                                 src="<?= base_url($teams_pics['shield'][$team->hid]); ?>">
+                                 src="http://www.futbolecuador.com/<?= $team->hshield; ?>">
                         </div>
                         <div class="col-md-8 col-xs-10   margen0    ">
                             <div class="col-md-12 col-xs-12   margen0    ">
@@ -79,12 +57,12 @@ $estado['8'] = 'Fin del Partido';?>
                             </div>
                             <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
                                 <?php setlocale(LC_ALL, "es_ES");
-                                echo utf8_encode(strftime("%A, %d %B %Y %H:%M", strtotime($team->dm)));?>
+                                echo utf8_encode(strftime("%A, %d %B %Y %H:%M", strtotime($team->date_match)));?>
                             </div>
                         </div>
                         <div class="col-md-2 col-xs-1 text-center margen0">
                             <img class="img-responsive-xs"
-                                 src="<?= base_url($teams_pics['shield'][$team->aid]); ?>">
+                            src="http://www.futbolecuador.com/<?= $team->ashield; ?>">
                         </div>
                     </a>
                 </div>
@@ -92,7 +70,7 @@ $estado['8'] = 'Fin del Partido';?>
             }
             ?>
         <?php
-        }
+
     } else {
         echo "No existen partidos";
     } ?>

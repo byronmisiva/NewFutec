@@ -61,9 +61,8 @@ class Site extends MY_Controller
         }
 
 
-
         if ($isMobile) {
-            redirect(base_url(). 'site/movil/');
+            redirect(base_url() . 'site/movil/');
         } else {
             // para la final se comentan la llamada a las secciones.
             $this->output->cache(CACHE_DEFAULT);
@@ -412,13 +411,16 @@ class Site extends MY_Controller
         $fechas = $this->matches->matches($id, $title);
         $this->singleConten($title, $fechas);
     }
+
     public function marcadorenvivo()
     {
+
+
         $this->load->module('matches');
-        $id = 49;
+
         $title = "Marcador En Vivo";
-        //$title = "Calendario - Campeonato Serie B 2014";
-        $fechas = $this->matches->matchesLive($id, $title);
+
+        $fechas = $this->matches->matchesLive($title );
         $this->singleConten($title, $fechas);
     }
 

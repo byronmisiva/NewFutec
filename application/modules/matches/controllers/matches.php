@@ -99,15 +99,20 @@ class Matches extends MY_Controller
         $data['title'] = $title;
         $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
-        return $this->load->view('matcheslive', $data, true);
+        return $this->load->view('matches', $data, true);
     }
-
-    public function matchesLive($idSerie, $title)
+    //listado con partidos en vivo
+    public function matchesLive( $title)
     {
         $data['title'] = $title;
-        $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);
-        $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
-        return $this->load->view('matches', $data, true);
+
+        $this->load->module('scoreboards');
+        $data['fechas'] = $this->mdl_scoreboards->today_matches();
+        if ($data['fechas'] == false) {
+            $data['fechas'] = $this->mdl_scoreboards->last_matches();
+        }
+
+        return $this->load->view('matcheslive', $data, true);
     }
 
     public function matchesperteam($idEquipo, $idSerie)
