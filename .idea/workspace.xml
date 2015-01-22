@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" afterPath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/views/matcheslive.php" afterPath="$PROJECT_DIR$/application/modules/matches/views/matcheslive.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/index.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -66,21 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matcheslive.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matcheslive.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matcheslive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5361991" vertical-offset="723" max-vertical-offset="1275">
+            <state vertical-scroll-proportion="-9.875" vertical-offset="723" max-vertical-offset="1275">
               <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="2385">
-              <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.45927602" vertical-offset="487" max-vertical-offset="2385">
+              <caret line="46" column="84" selection-start-line="46" selection-start-column="84" selection-end-line="46" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -187,11 +185,11 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
-        <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matcheslive.php" />
+        <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
       </list>
     </option>
   </component>
@@ -2994,7 +2992,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421884528329</updated>
     </task>
-    <option name="localTasksCounter" value="402" />
+    <task id="LOCAL-00402" summary="incluye tabla de revista">
+      <created>1421943849748</created>
+      <option name="number" value="00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1421943849748</updated>
+    </task>
+    <option name="localTasksCounter" value="403" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3412,14 +3416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="2385">
-          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matches.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3220974" vertical-offset="597" max-vertical-offset="1605">
@@ -3480,8 +3476,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matcheslive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5361991" vertical-offset="723" max-vertical-offset="1275">
+        <state vertical-scroll-proportion="-9.875" vertical-offset="723" max-vertical-offset="1275">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45927602" vertical-offset="487" max-vertical-offset="2385">
+          <caret line="46" column="84" selection-start-line="46" selection-start-column="84" selection-end-line="46" selection-end-column="84" />
           <folding />
         </state>
       </provider>
