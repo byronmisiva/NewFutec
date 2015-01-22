@@ -209,7 +209,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1();
+        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -321,7 +321,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1();
+        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -482,7 +482,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1();
+        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -583,7 +583,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1();
+        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();

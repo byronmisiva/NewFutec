@@ -81,6 +81,8 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
+
+
     public function viewNoticias($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
         $this->output->cache(CACHE_DEFAULT);
@@ -103,24 +105,31 @@ class Noticias extends MY_Controller
         }
 
         if ($mostrarBanner){
-        //intercalo entre las noticias los banners.
-        $this->load->module('banners');
-        $banners = array();
-        $banners[] = $this->banners->FE_Bigboxnews1();
-        $banners[] = $this->banners->FE_Bigboxnews2();
-        $banners[] = $this->banners->FE_Bigboxnews3();
-        $banners[] = $this->banners->FE_Bigboxnews4();
+            //intercalar banners
+            $this->load->module('banners');
+            $banners = array();
+            $banners[] = $this->banners->FE_Bigboxnews1();
+            $banners[] = $this->banners->FE_Bigboxnews2();
+            $banners[] = $this->banners->FE_Bigboxnews3();
+            $banners[] = $this->banners->FE_Bigboxnews4();
+            $banners[] = $this->banners->FE_Bigboxnews5();
+            //intercalo entre las noticias los banners.
+            if ($totalMiniNews > 10) {
+                array_splice($noticias, 5, 0, $banners[0]);
+                array_splice($noticias, 10, 0, $banners[1]);
+                array_splice($noticias, 17, 0, $banners[2]);
+                array_splice($noticias, 22, 0, $banners[3]);
+                array_splice($noticias, 29, 0, $banners[4]);
+            } else {
+                if ($totalMiniNews > 2) {
+                    array_splice($noticias, 5, 0, $banners[0]);
+                }
+                if ($totalMiniNews > 10) {
 
-        if ($totalMiniNews > 10) {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
-            array_splice($noticias, 17, 0, $banners[2]);
-            array_splice($noticias, 25, 0, $banners[3]);
-        } else {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
-        }
-        // fin intercalar
+                    array_splice($noticias, 12, 0, $banners[1]);
+                }
+            }
+            //fin intercalar banners
         }
 
         $data['noticias'] = $noticias;
@@ -150,28 +159,31 @@ class Noticias extends MY_Controller
             $noticias[] = $this->viewNoticia($dataStory);
         }
         if ($mostrarBanner) {
-            //intercalo entre las noticias los banners.
+            //intercalar banners
             $this->load->module('banners');
             $banners = array();
             $banners[] = $this->banners->FE_Bigboxnews1();
             $banners[] = $this->banners->FE_Bigboxnews2();
             $banners[] = $this->banners->FE_Bigboxnews3();
             $banners[] = $this->banners->FE_Bigboxnews4();
-
+            $banners[] = $this->banners->FE_Bigboxnews5();
+            //intercalo entre las noticias los banners.
             if ($totalMiniNews > 10) {
                 array_splice($noticias, 5, 0, $banners[0]);
-                array_splice($noticias, 12, 0, $banners[1]);
+                array_splice($noticias, 10, 0, $banners[1]);
                 array_splice($noticias, 17, 0, $banners[2]);
-                if ($totalMiniNews > 25)
-                    array_splice($noticias, 25, 0, $banners[3]);
+                array_splice($noticias, 22, 0, $banners[3]);
+                array_splice($noticias, 29, 0, $banners[4]);
             } else {
-                if ($totalMiniNews > 5)
+                if ($totalMiniNews > 2) {
                     array_splice($noticias, 5, 0, $banners[0]);
+                }
+                if ($totalMiniNews > 10) {
 
-                if ($totalMiniNews > 12)
                     array_splice($noticias, 12, 0, $banners[1]);
+                }
             }
-            //fin intercalo entre las noticias los banners.
+            //fin intercalar banners
         }
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
@@ -236,24 +248,31 @@ class Noticias extends MY_Controller
         if ($mostrarBanner){
         $this->load->module('banners');
 
-        $banners = array();
-        $banners[] = $this->banners->FE_Bigboxnews1();
-        $banners[] = $this->banners->FE_Bigboxnews2();
-        $banners[] = $this->banners->FE_Bigboxnews3();
-        $banners[] = $this->banners->FE_Bigboxnews4();
-        if ($totalMiniNews > 10) {
-            array_splice($noticias, 5, 0, $banners[0]);
-            array_splice($noticias, 12, 0, $banners[1]);
-            array_splice($noticias, 17, 0, $banners[2]);
-            if ($totalMiniNews > 25)
-                array_splice($noticias, 25, 0, $banners[3]);
-        } else {
-            if ($totalMiniNews > 5)
+            //intercalar banners
+            $this->load->module('banners');
+            $banners = array();
+            $banners[] = $this->banners->FE_Bigboxnews1();
+            $banners[] = $this->banners->FE_Bigboxnews2();
+            $banners[] = $this->banners->FE_Bigboxnews3();
+            $banners[] = $this->banners->FE_Bigboxnews4();
+            $banners[] = $this->banners->FE_Bigboxnews5();
+            //intercalo entre las noticias los banners.
+            if ($totalMiniNews > 10) {
                 array_splice($noticias, 5, 0, $banners[0]);
+                array_splice($noticias, 10, 0, $banners[1]);
+                array_splice($noticias, 17, 0, $banners[2]);
+                array_splice($noticias, 22, 0, $banners[3]);
+                array_splice($noticias, 29, 0, $banners[4]);
+            } else {
+                if ($totalMiniNews > 2) {
+                    array_splice($noticias, 5, 0, $banners[0]);
+                }
+                if ($totalMiniNews > 10) {
 
-            if ($totalMiniNews > 12)
-                array_splice($noticias, 12, 0, $banners[1]);
-        }
+                    array_splice($noticias, 12, 0, $banners[1]);
+                }
+            }
+            //fin intercalar banners
         }
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
