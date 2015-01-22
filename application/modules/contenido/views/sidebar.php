@@ -259,14 +259,15 @@
     <? echo $loMasLeido; ?>
 </div>
 
+<!--banner lateral 3 -->
+<div class="col-md-12 separador10 margen0r">
+    <? echo $bannersSidebar[2]; ?>
+</div>
+
 
 <!--Zona Fe-->
 <div class="col-md-12 separador10 margen0r">
     <? echo $zonaFe; ?>
-</div>
-<!--banner lateral 3 -->
-<div class="col-md-12 separador10 margen0r">
-    <? echo $bannersSidebar[2]; ?>
 </div>
 
 <!--La voz de las tribunas-->
