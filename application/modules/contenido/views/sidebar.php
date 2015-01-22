@@ -235,6 +235,10 @@
 <? echo $tablaposiciones; ?>
 
 
+<!--banner lateral 2 -->
+<div class="col-md-12 separador10 margen0r">
+    <? echo $bannersSidebar[1]; ?>
+</div>
 
 
 <!--Goleadores-->
@@ -245,10 +249,6 @@
 
 <!--Fin Goleadores -->
 
-<!--banner lateral 2 -->
-<div class="col-md-12 separador10 margen0r">
-    <? echo $bannersSidebar[1]; ?>
-</div>
 <!--Lo más leído-->
 <div class="col-md-12 separador10 margen0r">
 
