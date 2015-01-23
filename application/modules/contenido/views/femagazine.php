@@ -10,12 +10,19 @@
 
 </div>
 <div class="col-md-12 separador10  ">
-    <div class="col-md-6 separador10  ">
-        mensaje 1
+    <div class="col-md-6 separador10 margen0 ">
+        <img src="<?= base_url('imagenes/femagazine/header.png'); ?>" class="img-responsive">
 
     </div>
-    <div class="col-md-6 separador10  ">
-        logos
+    <div class="col-md-3 separador10 margen0 ">
+        <a href="http://goo.gl/jhlPq" target="_blank">
+            <img src="<?= base_url('imagenes/femagazine/logoGP.png'); ?>" class="img-responsive">
+        </a>
+    </div>
+    <div class="col-md-3 separador10 margen0 ">
+        <a href="http://goo.gl/76UWV" target="_blank">
+            <img src="<?= base_url('imagenes/femagazine/logoAS.png'); ?>" class="img-responsive">
+        </a>
 
     </div>
 
@@ -199,15 +206,9 @@
 </div>
 
 <div class="col-md-12 separador10  ">
-    <div class="col-md-6 separador10  ">
-        mensaje 1
-
+    <div class="col-md-12 separador10  ">
+        <img src="<?= base_url('imagenes/femagazine/footer.png'); ?>" class=" ">
     </div>
-    <div class="col-md-6 separador10  ">
-        logos
-
-    </div>
-
 </div>
 
 </div>
