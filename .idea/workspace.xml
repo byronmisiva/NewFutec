@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/femagazine/zonafe01.jpg" afterPath="$PROJECT_DIR$/imagenes/femagazine/zonafe01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/femagazine/zonafe02.jpg" afterPath="$PROJECT_DIR$/imagenes/femagazine/zonafe02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/femagazine/zonafe03.jpg" afterPath="$PROJECT_DIR$/imagenes/femagazine/zonafe03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -34,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1153846" vertical-offset="0" max-vertical-offset="3330">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            <state vertical-scroll-proportion="4.98568" vertical-offset="791" max-vertical-offset="3330">
+              <caret line="192" column="132" selection-start-line="192" selection-start-column="132" selection-end-line="192" selection-end-column="132" />
               <folding />
             </state>
           </provider>
@@ -94,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42887473" vertical-offset="15158" max-vertical-offset="18870">
+            <state vertical-scroll-proportion="-7.769231" vertical-offset="15158" max-vertical-offset="18870">
               <caret line="1024" column="18" selection-start-line="1024" selection-start-column="18" selection-end-line="1024" selection-end-column="18" />
               <folding />
             </state>
@@ -200,8 +198,8 @@
         <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/footer.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
       </list>
     </option>
   </component>
@@ -2996,7 +2994,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422027597718</updated>
     </task>
-    <option name="localTasksCounter" value="428" />
+    <task id="LOCAL-00428" summary="incluye tabla de revista">
+      <created>1422027896216</created>
+      <option name="number" value="00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1422027896216</updated>
+    </task>
+    <option name="localTasksCounter" value="429" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3491,18 +3495,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1153846" vertical-offset="0" max-vertical-offset="3330">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        <state vertical-scroll-proportion="-7.769231" vertical-offset="15158" max-vertical-offset="18870">
+          <caret line="1024" column="18" selection-start-line="1024" selection-start-column="18" selection-end-line="1024" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42887473" vertical-offset="15158" max-vertical-offset="18870">
-          <caret line="1024" column="18" selection-start-line="1024" selection-start-column="18" selection-end-line="1024" selection-end-column="18" />
+        <state vertical-scroll-proportion="4.98568" vertical-offset="791" max-vertical-offset="3330">
+          <caret line="192" column="132" selection-start-line="192" selection-start-column="132" selection-end-line="192" selection-end-column="132" />
           <folding />
         </state>
       </provider>

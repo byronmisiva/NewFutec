@@ -35,7 +35,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4 margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion01.jpg'); ?>" class="img-circle img-responsive ">
+                    <img src="<?= base_url('imagenes/femagazine/seccion01.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Especial Emelec Campeón</h2>
@@ -50,7 +50,7 @@
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4  margen0  ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion03.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion03.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Directorio de Apps</h2>
@@ -66,7 +66,7 @@
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4 margen0   ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion04.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion04.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>La de todos</h2>
@@ -81,7 +81,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion10.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion10.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Ascenso</h2>
@@ -97,7 +97,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12   clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion06.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion06.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Jóvenes promesas</h2>
@@ -112,7 +112,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion07.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion07.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Rueda de prensa</h2>
@@ -128,7 +128,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion08.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion08.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Internacional</h2>
@@ -143,7 +143,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion09.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion09.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>90 minutos</h2>
@@ -159,7 +159,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion11.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion11.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Fuera de juego</h2>
@@ -174,7 +174,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion05.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion05.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Copa Sudamericana</h2>
@@ -190,7 +190,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion02.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion02.jpg'); ?>" class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>12 pasos</h2>
