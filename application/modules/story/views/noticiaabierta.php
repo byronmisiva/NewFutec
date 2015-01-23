@@ -39,7 +39,6 @@
                        data-action='share/whatsapp/share'
                        href='whatsapp://send?text= <?=$noticia->title?> <?php echo base_url().$this->uri->segment(1).'/'.$this->uri->segment(2).'/'.$this->uri->segment(3)?>'>
                         <img border='0' src='<?php echo base_url()?>imagenes/moviles/boton-whatapp2.png' /></a>
-
                 <?php
                 } ?>
             </div>
@@ -50,6 +49,9 @@
         </div>
         <div class="margen10lados-sx noticia-body">
             <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
+        </div>
+        <div class="margen10lados-sx noticia-body">
+            <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"   target="_blank">@<?php echo $autor[0]->twitter; ?></a>
         </div>
     </div>
 </div>

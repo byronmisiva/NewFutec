@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/controllers/story.php" afterPath="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -32,11 +33,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.98568" vertical-offset="791" max-vertical-offset="3330">
+            <state vertical-scroll-proportion="-26.782051" vertical-offset="791" max-vertical-offset="3330">
               <caret line="192" column="132" selection-start-line="192" selection-start-column="132" selection-end-line="192" selection-end-column="132" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticiaabierta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.75" vertical-offset="648" max-vertical-offset="1260">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3325792" vertical-offset="558" max-vertical-offset="2550">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,31 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fueradejuego.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1785">
-              <caret line="60" column="76" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fueradejuego.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-55.041668" vertical-offset="8369" max-vertical-offset="12720">
               <caret line="646" column="44" selection-start-line="646" selection-start-column="24" selection-end-line="646" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.28" vertical-offset="4156" max-vertical-offset="9555">
-              <caret line="298" column="0" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,16 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiahomemini.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.375" vertical-offset="168" max-vertical-offset="990">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -151,7 +142,6 @@
       <list>
         <option value="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
         <option value="$PROJECT_DIR$/application/modules/team/views/ficha.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasbasura.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboarddetail.php" />
@@ -185,7 +175,6 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matcheslive.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
@@ -200,6 +189,8 @@
         <option value="$PROJECT_DIR$/application/modules/templates/views/footer.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
+        <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
+        <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
       </list>
     </option>
   </component>
@@ -3000,7 +2991,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422027896216</updated>
     </task>
-    <option name="localTasksCounter" value="429" />
+    <task id="LOCAL-00429" summary="incluye tabla de revista">
+      <created>1422028056403</created>
+      <option name="number" value="00429" />
+      <option name="project" value="LOCAL" />
+      <updated>1422028056403</updated>
+    </task>
+    <option name="localTasksCounter" value="430" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3030,22 +3027,22 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3729977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3729977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40846682" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287052" sideWeight="0.32846716" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287052" sideWeight="0.32688588" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837528" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3215103" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24882995" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287052" sideWeight="0.67153287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287052" sideWeight="0.6711799" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40846682" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -3110,7 +3107,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="322" />
+      <option name="time" value="325" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -3121,24 +3118,12 @@
         <watch expression="$infoEquipo-&gt;president" />
         <watch expression="$fechas2[0]-&gt;hshield" />
         <watch expression="$team-&gt;ashield" />
+        <watch expression="$noticia-&gt;author_id" />
+        <watch expression="$autor[0]-&gt;twitter" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.208333" vertical-offset="58" max-vertical-offset="555">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/header2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="300">
@@ -3323,13 +3308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09386733" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuegoOld.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="11685" max-vertical-offset="12675">
@@ -3505,8 +3483,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.98568" vertical-offset="791" max-vertical-offset="3330">
+        <state vertical-scroll-proportion="-26.782051" vertical-offset="791" max-vertical-offset="3330">
           <caret line="192" column="132" selection-start-line="192" selection-start-column="132" selection-end-line="192" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/story/models/mdl_story.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056561086" vertical-offset="305" max-vertical-offset="2535">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <marker date="1421441800000" expanded="true" signature="-1:-1" placeholder="update stori..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.75" vertical-offset="648" max-vertical-offset="1260">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325792" vertical-offset="558" max-vertical-offset="2550">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>

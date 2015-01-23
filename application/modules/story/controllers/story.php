@@ -43,11 +43,18 @@ class Story extends MY_Controller
             if (in_array($m, $mobiles))
                 $data['isMobile'] = true;
         }
-        $data['noticia'] = $this->mdl_story->get_story($id);
-
+        $noticia = $this->mdl_story->get_story($id);
+        $data['noticia'] = $noticia;
+        $data['autor'] = $this->get_author($noticia->author_id);
         $this->mdl_story->cuentaVisita($id);
-
         return $this->load->view('noticiaabierta', $data, TRUE);
+    }
+
+    function get_author($id)
+    {
+        $this->db->where('id', $id);
+        $data = $this->db->get('users')->result();
+        return $data;
     }
 
     function get_more($section, $noticias = 0, $num = 5)
