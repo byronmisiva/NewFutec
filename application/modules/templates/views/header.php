@@ -174,11 +174,16 @@
 </script>
 
 <!-- Google Tag Manager -->
-<noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53XBQP');</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-53XBQP');</script>
 <!-- End Google Tag Manager -->
+
+
 
 <!-- Facebook Conversion Code for FE_Visitas -->
 <script>(function () {
@@ -219,9 +224,11 @@
 
 <!-- Start Alexa Certify Javascript -->
 <script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script>
-<script type="text/javascript">_atrk_opts={atrk_acct:"A9Dnf1aUOO00Gi",domain:"futbolecuador.com"};atrk();</script>
+<script type="text/javascript">_atrk_opts = {atrk_acct: "A9Dnf1aUOO00Gi", domain: "futbolecuador.com"};
+    atrk();</script>
 <noscript>
-    <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=A9Dnf1aUOO00Gi" style="display: none" height="1" width="1" alt=""/>
+    <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=A9Dnf1aUOO00Gi" style="display: none" height="1"
+         width="1" alt=""/>
 </noscript>
 <!-- End Alexa Certify Javascript -->
 
