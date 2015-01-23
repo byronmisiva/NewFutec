@@ -1,24 +1,21 @@
 <!--Tabla de posiciones-->
-<div class="col-md-12 separador10-xs margen0r">
+<div class="col-md-12 col-xs-12   separador10-xs-2 margen0r">
 <div class="panel-heading backcuadros">
     <h4 class="panel-title">
         Fe Magazine
     </h4>
 </div>
-<div class="col-md-12 separador10  margen0 ">
+<div class="col-md-12 col-xs-12  separador10  margen0 ">
     <img src="<?= base_url('imagenes/femagazine/zonafe01.jpg'); ?>" class="img-responsive">
 
 </div>
-<div class="col-md-12 separador10  ">
+<div class="col-md-12 col-xs-12  separador10 margen0  ">
     <div class="col-md-6 col-xs-12 separador10 margen0 ">
         <img src="<?= base_url('imagenes/femagazine/header.png'); ?>" class="img-responsive">
 
     </div>
     <div class="col-md-3 col-xs-6 separador10 margen0 ">
-        <a href="http://www.google.com" target="_blank">Google</a>
-
         <a href="http://goo.gl/jhlPq" target="_blank">
-
             <img src="<?= base_url('imagenes/femagazine/logoGP.png'); ?>" class="img-responsive"/>
         </a>
     </div>
@@ -30,13 +27,13 @@
     </div>
 
 </div>
-<div class="col-md-12 col-xs-12 text-left fondoazul separador10">
+<div class="col-md-12 col-xs-12   text-left fondoazul separador10">
     En esta edición
 </div>
-<div class="col-md-12  margen0 separador10">
-    <div class="col-md-12  margen0 ">
+<div class="col-md-12 col-xs-12   margen0 separador10">
+    <div class="col-md-12 col-xs-12   margen0 ">
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4 margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion01.jpg'); ?>" class="img-circle img-responsive ">
                 </div>
@@ -51,7 +48,7 @@
         </div>
 
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4  margen0  ">
                     <img src="<?= base_url('imagenes/femagazine/seccion03.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -65,9 +62,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12  margen0 ">
+    <div class="col-md-12 col-xs-12   margen0 ">
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10  ">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4 margen0   ">
                     <img src="<?= base_url('imagenes/femagazine/seccion04.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -82,7 +79,7 @@
         </div>
 
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion10.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -96,9 +93,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12  margen0 ">
+    <div class="col-md-12 col-xs-12   margen0 ">
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12   clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion06.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -113,7 +110,7 @@
         </div>
 
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion07.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -127,9 +124,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12  margen0 ">
+    <div class="col-md-12 col-xs-12   margen0 ">
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion08.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -144,7 +141,7 @@
         </div>
 
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion09.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -158,9 +155,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12  margen0 ">
+    <div class="col-md-12 col-xs-12   margen0 ">
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion11.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -175,7 +172,7 @@
         </div>
 
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion05.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -189,9 +186,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12  margen0 ">
+    <div class="col-md-12 col-xs-12   margen0 ">
         <div class="col-md-6  col-xs-12 margen0l separador10">
-            <div class="col-md-12  col-xs-12  clearfix borde">
+            <div class="col-md-12 col-xs-12    clearfix borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion02.jpg'); ?>" class="img-circle img-responsive">
                 </div>
@@ -208,8 +205,8 @@
 
 </div>
 
-<div class="col-md-12 separador10  ">
-    <div class="col-md-12 separador10  ">
+<div class="col-md-12 col-xs-12  separador10  ">
+    <div class="col-md-12 col-xs-12  separador10  ">
         <img src="<?= base_url('imagenes/femagazine/footer.png'); ?>" class="img-responsive ">
     </div>
 </div>

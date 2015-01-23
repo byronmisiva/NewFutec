@@ -169,9 +169,14 @@ footer {
 .separador10-xs {
     margin-top: 10px;
 }
+.separador10-xs-2 {
+    margin-top: 10px;
+}
 .separador10-xs-bot {
     margin-top: 10px;
 }
+
+
 .separador10r {
     padding-right: 10px;
 }
@@ -1017,6 +1022,8 @@ h4.contenidos {
     .flex-control-nav {
         top: 1px !important;
         text-align: center !important;
+        height: 12px;
+        overflow: hidden;
     }
     .separador20-xs {
         margin-top: 75px;
@@ -1032,6 +1039,14 @@ h4.contenidos {
         margin-left: -10px;
         margin-right: -10px;
     }
+
+    .separador10-xs-2 {
+        margin-top: 75px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0;
+    }
+
     .separador10-xs-bot {
         margin-top: 10px;
         margin-left: -10px;
