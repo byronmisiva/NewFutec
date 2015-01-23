@@ -207,7 +207,7 @@
 
 <div class="col-md-12 separador10  ">
     <div class="col-md-12 separador10  ">
-        <img src="<?= base_url('imagenes/femagazine/footer.png'); ?>" class=" ">
+        <img src="<?= base_url('imagenes/femagazine/footer.png'); ?>" class="img-responsive ">
     </div>
 </div>
 

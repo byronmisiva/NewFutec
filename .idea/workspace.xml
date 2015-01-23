@@ -35,8 +35,8 @@
       <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72938687" vertical-offset="90" max-vertical-offset="3330">
-              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.58773786" vertical-offset="2857" max-vertical-offset="3330">
+              <caret line="209" column="91" selection-start-line="209" selection-start-column="91" selection-end-line="209" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -2948,7 +2948,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422023097066</updated>
     </task>
-    <option name="localTasksCounter" value="422" />
+    <task id="LOCAL-00422" summary="incluye tabla de revista">
+      <created>1422023500673</created>
+      <option name="number" value="00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1422023500674</updated>
+    </task>
+    <option name="localTasksCounter" value="423" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3452,8 +3458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72938687" vertical-offset="90" max-vertical-offset="3330">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.58773786" vertical-offset="2857" max-vertical-offset="3330">
+          <caret line="209" column="91" selection-start-line="209" selection-start-column="91" selection-end-line="209" selection-end-column="91" />
           <folding />
         </state>
       </provider>
