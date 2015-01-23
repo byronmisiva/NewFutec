@@ -16,12 +16,12 @@
     </div>
     <div class="col-md-3 col-xs-6 separador10 margen0 ">
         <a href="http://goo.gl/jhlPq" target="_blank">
-            <img src="<?= base_url('imagenes/femagazine/logoGP.png'); ?>" class="img-responsive">
+            <img src="<?= base_url('imagenes/femagazine/logoGP.png'); ?>" class="img-responsive"/>
         </a>
     </div>
     <div class="col-md-3 col-xs-6 separador10 margen0 ">
         <a href="http://goo.gl/76UWV" target="_blank">
-            <img src="<?= base_url('imagenes/femagazine/logoAS.png'); ?>" class="img-responsive">
+            <img src="<?= base_url('imagenes/femagazine/logoAS.png'); ?>" class="img-responsive"/>
         </a>
 
     </div>

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/femagazine/zonafe01.jpg" afterPath="$PROJECT_DIR$/imagenes/femagazine/zonafe01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -35,8 +35,8 @@
       <file leaf-file-name="femagazine.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58773786" vertical-offset="2857" max-vertical-offset="3330">
-              <caret line="209" column="91" selection-start-line="209" selection-start-column="91" selection-end-line="209" selection-end-column="91" />
+            <state vertical-scroll-proportion="0.72938687" vertical-offset="0" max-vertical-offset="3330">
+              <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -2960,7 +2960,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422023613370</updated>
     </task>
-    <option name="localTasksCounter" value="424" />
+    <task id="LOCAL-00424" summary="incluye tabla de revista">
+      <created>1422023758054</created>
+      <option name="number" value="00424" />
+      <option name="project" value="LOCAL" />
+      <updated>1422023758054</updated>
+    </task>
+    <option name="localTasksCounter" value="425" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3464,8 +3470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58773786" vertical-offset="2857" max-vertical-offset="3330">
-          <caret line="209" column="91" selection-start-line="209" selection-start-column="91" selection-end-line="209" selection-end-column="91" />
+        <state vertical-scroll-proportion="0.72938687" vertical-offset="0" max-vertical-offset="3330">
+          <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
           <folding />
         </state>
       </provider>
