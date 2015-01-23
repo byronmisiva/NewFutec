@@ -19,11 +19,12 @@ $estado['8'] = 'Fin del Partido';?>
     </div>
     <div class="hidden-xs">
         <?php if (isset($teamsFecha)) {
+            $fondogris = "texto-gris-strong";
             foreach ($teamsFecha as $key => $teams) {
                 $totalTeams = count($teamsFecha);
                 ?>
                 <a class="sidebarlink" href="#<?= $key ?>">
-                    <div class="fondogris borde separador10 text-center texto-gris miniletra"
+                    <div class="fondogris borde separador10 text-center   miniletra <?php echo $fondogris; $fondogris = "texto-gris"; ?>"
                          style="width: <?= 100 / $totalTeams ?>%; float: left">
                         Fecha<br>
 
