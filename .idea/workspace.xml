@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_skin.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_skin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/constants.php" afterPath="$PROJECT_DIR$/application/config/constants.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -44,11 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.666667" vertical-offset="350" max-vertical-offset="1650">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.12" vertical-offset="3159" max-vertical-offset="9555">
-              <caret line="211" column="21" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.70212764" vertical-offset="285" max-vertical-offset="9555">
+              <caret line="41" column="83" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -57,17 +66,17 @@
       <file leaf-file-name="noticias.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.3" vertical-offset="2895" max-vertical-offset="5055">
-              <caret line="274" column="36" selection-start-line="274" selection-start-column="36" selection-end-line="274" selection-end-column="36" />
+            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="5055">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fe_skin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fe_skin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18145162" vertical-offset="0" max-vertical-offset="496">
+            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
               <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -136,12 +145,12 @@
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
-        <option value="$PROJECT_DIR$/application/config/constants.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
-        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skin.php" />
+        <option value="$PROJECT_DIR$/application/config/constants.php" />
+        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       </list>
     </option>
   </component>
@@ -2852,7 +2861,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421966226967</updated>
     </task>
-    <option name="localTasksCounter" value="414" />
+    <task id="LOCAL-00414" summary="incluye tabla de revista">
+      <created>1421969721150</created>
+      <option name="number" value="00414" />
+      <option name="project" value="LOCAL" />
+      <updated>1421969721151</updated>
+    </task>
+    <option name="localTasksCounter" value="415" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2877,7 +2892,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="33" y="23" width="1324" height="966" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2891,7 +2906,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24882995" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287052" sideWeight="0.67153287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287052" sideWeight="0.67153287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3275,22 +3290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32160193" vertical-offset="350" max-vertical-offset="1635">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-53.166668" vertical-offset="1499" max-vertical-offset="3315">
-          <caret line="185" column="73" selection-start-line="185" selection-start-column="73" selection-end-line="185" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/controllers/banners.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="469" max-vertical-offset="1950">
@@ -3327,29 +3326,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.3" vertical-offset="2895" max-vertical-offset="5055">
-          <caret line="274" column="36" selection-start-line="274" selection-start-column="36" selection-end-line="274" selection-end-column="36" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="5055">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.666667" vertical-offset="350" max-vertical-offset="1650">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.166668" vertical-offset="1499" max-vertical-offset="3315">
+          <caret line="185" column="73" selection-start-line="185" selection-start-column="73" selection-end-line="185" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12" vertical-offset="3159" max-vertical-offset="9555">
-          <caret line="211" column="21" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.70212764" vertical-offset="285" max-vertical-offset="9555">
+          <caret line="41" column="83" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18145162" vertical-offset="0" max-vertical-offset="496">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
