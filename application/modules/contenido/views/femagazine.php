@@ -1,5 +1,5 @@
 <!--Tabla de posiciones-->
-<div class="col-md-12 separador10 margen0r">
+<div class="col-md-12 separador10-xs margen0r">
 <div class="panel-heading backcuadros">
     <h4 class="panel-title">
         Fe Magazine
@@ -27,7 +27,7 @@
     </div>
 
 </div>
-<div class="col-md-12 text-left fondoazul separador10">
+<div class="col-md-12 col-xs-12 text-left fondoazul separador10">
     En esta edición
 </div>
 <div class="col-md-12  margen0 separador10">
