@@ -73,6 +73,7 @@ $this->load->view('header');
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
                     <li><a class="clickmenu" href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('site/lavoz') ?>">La voz de las tribunas</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
                             <span class="caret link-menu"></span></a>
