@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/femagazine/zonafe01.jpg" afterPath="$PROJECT_DIR$/imagenes/femagazine/zonafe01.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -2954,7 +2954,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422023500674</updated>
     </task>
-    <option name="localTasksCounter" value="423" />
+    <task id="LOCAL-00423" summary="incluye tabla de revista">
+      <created>1422023613370</created>
+      <option name="number" value="00423" />
+      <option name="project" value="LOCAL" />
+      <updated>1422023613370</updated>
+    </task>
+    <option name="localTasksCounter" value="424" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
