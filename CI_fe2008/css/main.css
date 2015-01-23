@@ -1,0 +1,718 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #01416F;
+}
+
+h1 {
+	margin: 5px;
+	margin-top: 0px;
+	color: #01416F;
+	border-bottom: 2px solid #01416F;
+}
+
+.content {
+	padding: 5px;
+}
+
+/* MENU */
+
+.menu {
+	border-top: 2px solid #01416F;
+	border-bottom: 2px solid #01416F;
+	border-left: 2px solid #01416F;
+	
+	-webkit-border-top-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.menu_admin ol#level0{
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu_admin li#level0{
+	padding: 0px;
+	list-style-type: none;
+	margin: 8px 0px 0px 0px;
+	
+}
+
+.menu_admin ol#level1{
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu_admin li#level1{
+	padding: 0px;
+	list-style-type: none;
+	margin: 0px 0px 8px 0px;
+}
+
+.menu_admin {
+	border-top: 1px solid #01416F;
+	border-bottom: 1px solid #01416F;
+	padding: 8px;
+	font-style: bold;
+	font-family: helvetic;
+    font-size: 14px;
+    color: red;
+    
+}
+
+.menu_admin #nivel1{
+	margin-bottom: -5px;
+	border: 1px outset #242729;
+	margin-left: 5px;
+	padding: 1px;
+	padding-left: 3px;
+	font-weight: bold;
+	background-color: #01416F;
+	color: white;
+	
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border-bottom-right-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-left-radius: 7px;
+}
+
+.menu_admin #nivel1:hover{
+	color: #BFBFBF;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.menu_admin #nivel2{
+	border-style: solid;
+	border-color: green;
+	border-width: 1px;
+	margin-left: 5px;
+}
+.menu_admin #nivel3{
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	margin-left: 5px;
+}
+.menu_admin a{
+	font-style: italic;
+	font-family: helvetic;
+    color: white;
+    background-color: #1D6B9F;
+    border: 1px outset #1D6B9F;
+   	padding: 2px;
+   	padding-left: 5px;
+   	padding-right: 5px;
+   	text-decoration: none;
+   	
+   	-webkit-border-radius: 5px 5px;
+   	-moz-border-radius: 5px 5px;
+	border-radius: 5px 5px;
+}
+.menu_admin a:hover{
+    color: #BFBFBF;
+}
+
+.marco_imagen{
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	height: 120px;
+	width: 120px;
+	font-family: helvetic;
+	font-size: 11px;
+    color: red;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Alertas */
+div#alertas {
+	margin: 5px;
+	border: 1px solid #8F1508;
+	font-size: 14px;
+	
+	-webkit-border-radius: 5px 5px;
+   	-moz-border-radius: 5px 5px;
+	border-radius: 5px 5px;
+}
+
+div#alertas th {
+	background-color:#8F1508;
+	font-size: 15px;
+	color: white;
+}
+
+div#alertas td {
+	height: 25px;
+	padding: 2px;
+}
+
+div#alertas tr:hover {
+	background-color: lightgray;
+}
+
+div#alertas a {
+	color: red;
+	text-decoration: none;
+}
+
+div#alertas td.value {
+	color: #8F1508;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/* User Data */
+
+div#user_data {
+	margin: 5px;
+	border: 1px solid #01416F;
+	font-size: 16px;
+	
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-left-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-left-radius: 7px;
+}
+
+div#user_data div#user{
+	padding: 5px;
+	color: #8F1508;
+	font-weight: bold;	
+}
+
+div#user_data a{
+	color:white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+div#user_data a:hover {
+	 color: #BFBFBF;
+}
+
+div#user_data  div#user a{
+	color: #8F1508;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+div#user_data div#logout {
+	margin: 5px;
+	background-color: #01416F;
+	text-align: center;
+	color: white;
+	border: 1px solid #01416F;
+	
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-left-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	border-top-left-radius: 7px;
+}
+
+
+
+
+/*  Actions  */
+div.actions {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+div.actions ul {
+	margin: 0px 0;
+	padding: 0;
+}
+div.actions li {
+	display: inline;
+	list-style-type: none;
+	line-height: 2em;
+	margin: 0 2em 0 0;
+	white-space: nowrap;
+}
+div.actions ul li a {
+	color: #003d4c;
+	text-decoration: none;
+}
+div.actions ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+
+/* Actions buttons */
+div#admin div.actions>ul>li {
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 5px;
+    margin: auto 0.3em;
+    
+    -moz-border-radius-topright: 0.7em;
+    -moz-border-radius-bottomleft: 0.5em;
+}
+div#admin div.actions a {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+div#admin div.actions>ul>li:hover {
+    background-color: #ddd;
+}
+div#admin div.actions>ul>li>a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Tables listing */
+div#admin table.listing {
+    background-color: #fff;
+    border: none;
+    clear: both;
+    color: #333;
+    margin: 1em 0 2em 12px;
+    width: 95%;
+    text-align: left;
+}
+div#admin table.listing th {
+    background: #f9f9f9;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    padding: 0.2em;
+    font-weight: bold;
+}
+div#admin table.listing th a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;    
+}
+div#admin table.listing th a:hover {
+    background-color: inherit;
+}
+div#admin table.listing th:hover {
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+div#admin table.listing tr td {
+    background: #f9f9f9;
+    padding: 0.2em 0.6em;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+div#admin table.listing tr.altrow td {
+    background: #fff;
+}
+div#admin table.listing td.actions, div#admin table.listing th.actions {
+    text-align: right; 
+    white-space: nowrap;
+}
+div#admin table.listing td.actions a {
+    display: inline;
+/*     margin: 0; */
+}
+div#admin table.listing tr td a {
+    text-decoration: none;
+     font-weight: normal; 
+}
+div#admin table.listing tr:hover td {
+    background-color: #f6f6f6;
+}
+
+div#admin table.listing tr.altrow:hover td {
+    background-color: #fcfcfc;
+}
+
+div#admin table.tableminwidth {
+    width: auto;
+}
+
+div#admin table.listing tr.disabled td, div#admin table.listing tr.disabled td a {
+    color: #999;
+}
+
+div#admin table.listing td.dates{
+	font-size: 11px;
+}
+
+/* Tables principal */
+div#admin table.principal {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    clear: both;
+    color: #333;
+    margin: 1em 0 2em 12px;
+    width: 95%;
+    text-align: left;
+}
+div#admin table.principal th {
+    background: #f9f9f9;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    padding: 0.2em;
+    font-weight: bold;
+}
+div#admin table.principal th a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;    
+}
+div#admin table.principal th a:hover {
+    background-color: inherit;
+}
+div#admin table.principa th:hover {
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+div#admin table.principal tr td {
+    background: #f9f9f9;
+    padding: 0.2em 0.6em;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+div#admin table.principal tr.altrow td {
+    background: #fff;
+}
+div#admin table.principal td.actions, div#admin table.principal th.actions {
+    text-align: right; 
+    white-space: nowrap;
+    cursor: crosshair;
+}
+div#admin table.principal td.actions a {
+    display: inline;
+/*     margin: 0; */
+}
+div#admin table.principal tr td a {
+    text-decoration: none;
+    font-weight: normal; 
+}
+div#admin table.principal tr:hover td {
+    background-color: #f6f6f6;
+    cursor: auto;
+}
+
+div#admin table.principal tr.altrow:hover td {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Tabla para listado de imagenes(list_image)*/
+
+.listing_images {
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #ccc;
+	clear: both;
+}
+
+.listing_images table{
+	margin: 5px 5px 5px 5px;
+	height: 100%;
+}
+
+.listing_images tr td{
+	vertical-align: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.listing_images table.item td{
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	border: 0px;
+}
+
+
+
+/*  Tabs  */
+pre {
+	text-indent: 30px;
+}
+
+#tabmenu {
+	color: #000;
+	border-bottom: 1px solid black;
+	margin: 0px;
+	padding: 0px;
+	z-index: 1;
+	padding-left: 10px;
+}
+
+#tabmenu li {
+	display: inline;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+#tabmenu a, a.active {
+	color: #000000;
+	/*background: #e0ebfe;*/ /*fondo tab iniabilitado*/
+	background: #f9f9f9;
+	font: normal 14px tahoma,verdana, Arial, sans-serif;
+	border: 1px solid #666666;
+	border-bottom: none;
+	padding: 2px 5px 2px 5px;
+	margin: 0px;
+	text-decoration: none;
+	cursor:hand;
+	}
+
+#tabmenu a.active {
+	/*background: #b2cbec;
+	border-bottom: 10px solid #b2cbec;*/ /* tab activo*/
+	background: #e8e8e8;
+	border-bottom: 10px solid #e8e8e8;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#tabmenu a:hover {
+	color: #000000;
+	background: #e8e8e8;
+	cursor:pointer;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#tabmenu a:visited {
+	color: #000000;
+}
+
+#tabmenu a.active:hover {
+background: #d7d7d7;
+color: #000000;
+border-bottom: 10px solid #d7d7d7;
+}
+
+div#contenido {
+	font: 12px verdana, sans-serif;
+	text-align: justify;
+	/*background: #b2cbec;*/
+	padding: 20px;
+	border: 1px solid /*#666666*/;
+	border-top: none;
+	z-index: 2;
+}
+
+div#contenido a {
+	text-decoration: none;
+	/*color: #E8E9BE;*/
+}
+
+div#contenido a:hover {
+	/*background: #666666;*/
+}
+
+.alert a{
+	color:red;
+}
+
+.alert {
+	color:red;
+	text-align:left;
+	width: 100%;
+}
+
+.alert th{
+	color:#01416F;
+	text-align:center;
+}
+
+div#admin div#imagen {
+	/*border: 1px solid #666666;
+	margin: 10px;*/
+	padding: 4px;
+	/*width: 100px;*/
+	text-align:center;
+	font-size: 12px;
+}
+
+/*AUTOCOMPLETADOR*/
+div.autocomplete {
+      position:absolute;
+      width:250px;
+      background-color:white;
+      border:1px solid #888;
+      margin:0px;
+      padding:0px;
+}
+
+div.autocomplete ul {
+	list-style:none!important;
+	list-style-image:none!important;
+	margin:0px;
+	padding:0px;
+}
+
+div.autocomplete ul li.selected {
+	background-color: #B9DAF0;
+}
+
+div.autocomplete ul li {
+	font-size: small;
+	list-style-type:none;
+	display:block;
+	margin:0;
+	padding:2px;
+	cursor:pointer;
+}
+
+div#team_lineup {
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: 20px;
+	color: #01416F;
+
+}
+
+div#team_lineup table{
+	margin: 10px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+	border: 1px solid black;
+}
+
+div#final_home_lineup{
+	margin: 5px;
+	border: 1px solid gray;
+	
+}
+
+div#final_away_lineup{
+	margin: 5px;
+	border: 1px solid gray;
+	
+}
+
+div#pagination {
+	text-align: center;
+
+}
+
+div#validation {
+	color: red;
+	font-size: 13px;
+}
+
+div#admin table.formulario{
+	margin: 5px;
+	border: 1px outset black;
+	font-size: 14px;
+}
+
+div#admin td.label {
+	text-align: left;
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+/* WIZARDS */
+
+
+div#admin #mensaje{
+	margin: 25px;
+	padding: 10px;
+	background-color: #EDEDED;
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+
+div#admin #formulario{
+	border: 1px outset #01416F;
+	margin: 10px;
+	padding: 10px;
+}
+
+div#formulario td.label{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+} 
+
+div#formulario input{
+	font-weight: bold;
+	color: #01416F;
+}
+
+div#formulario #anuncio {
+	background-color: #F1FFB8;
+	color: #01416F;
+	font-size: 16px;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+div#subtitulo {
+	padding-left: 10px;
+	font-size:20px;
+	font-weight: bold;
+	color: #01416F;
+}
+
+
+/* FORMULARIOS */
+
+.required {
+	color:red;
+	vertical-align:top;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:6px;
+}
+
+/*Autocompletador*/
+div.autocomplete {
+      position:absolute;
+      width:250px;
+      background-color:white;
+      border:1px solid #01416F;
+      margin:0px;
+      padding:0px;
+}
+
+div.autocomplete ul {
+	list-style:none!important;
+	list-style-image:none!important;
+	margin:0px;
+	padding:0px;
+}
+
+div.autocomplete ul li.selected {
+	background-color: #5C8AAA;
+}
+
+div.autocomplete ul li {
+	font-size: small;
+	list-style-type:none;
+	display:block;
+	margin:0;
+	padding:2px;
+	cursor:pointer;
+}
+

@@ -1250,3 +1250,44 @@ textarea {
     overflow-y: scroll;
     width: 100%;
 }
+
+
+/*spalsh*/
+
+div#darkLayer {
+    background-color: #000000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div#FE_LOADING {
+    border: 1px solid #FFFFFF;
+    height: 600px;
+    left: 50%;
+    margin-left: -400px;
+    position: fixed;
+    top: 50px;
+    width: 800px;
+}
+div#closeBanner {
+    background-color: #000000;
+    border-bottom: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    cursor: pointer;
+    height: 34px;
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 118px;
+}
+div#closeBanner {
+    cursor: pointer;
+}
+
+/*spalsh*/

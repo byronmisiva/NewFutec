@@ -1,0 +1,243 @@
+1420598474TS--->
+	<div style='margin-top: 3px;'>
+	<table class="tabla_posiciones" cellpadding="0" cellspacing="0">
+		<tr>
+
+			<th colspan='3' style='padding-left: 10px;'>Equipo</th>
+			<th>PJ</th>
+			<th>PG</th>
+			<th>PE</th>
+			<th>PP</th>
+			<th>Pts</th>
+			<th>GD</th>
+		</tr>
+						<tr >
+					<td class='data' width='15px'>1</td>
+											<td class='name'><a href="http://localhost:10088/CI_fe2008/sections/publica/24">Técnico Universitario</a></td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/igual.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+															</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>14</td>
+					<td class='data'>2</td>
+					<td class='data'>6</td>
+					<td class='data'>44</td>
+					<td class='data'>+16</td>
+				</tr>											
+								<tr class="altrow">
+					<td class='data' width='15px'>2</td>
+											<td class='name'>Aucas</td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/igual.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+															</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>12</td>
+					<td class='data'>7</td>
+					<td class='data'>3</td>
+					<td class='data'>43</td>
+					<td class='data'>+14</td>
+				</tr>											
+								<tr >
+					<td class='data' width='15px'>3</td>
+											<td class='name'>River Plate Ecuador</td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/igual.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+															</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>10</td>
+					<td class='data'>6</td>
+					<td class='data'>6</td>
+					<td class='data'>36</td>
+					<td class='data'>+5</td>
+				</tr>											
+								<tr class="altrow">
+					<td class='data' width='15px'>4</td>
+											<td class='name'><a href="http://localhost:10088/CI_fe2008/sections/publica/49">Imbabura SC</a></td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha_arriba.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+								1							</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>9</td>
+					<td class='data'>6</td>
+					<td class='data'>7</td>
+					<td class='data'>33</td>
+					<td class='data'>+1</td>
+				</tr>											
+								<tr >
+					<td class='data' width='15px'>5</td>
+											<td class='name'><a href="http://localhost:10088/CI_fe2008/sections/publica/56">Deportivo Quevedo</a></td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha_arriba.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+								1							</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>9</td>
+					<td class='data'>5</td>
+					<td class='data'>8</td>
+					<td class='data'>32</td>
+					<td class='data'>0</td>
+				</tr>											
+								<tr class="altrow">
+					<td class='data' width='15px'>6</td>
+											<td class='name'><a href="http://localhost:10088/CI_fe2008/sections/publica/20">Liga de Portoviejo</a></td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha_arriba.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+								1							</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>8</td>
+					<td class='data'>7</td>
+					<td class='data'>7</td>
+					<td class='data'>31</td>
+					<td class='data'>0</td>
+				</tr>											
+								<tr >
+					<td class='data' width='15px'>7</td>
+											<td class='name'>Deportivo Azogues</td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha_abajo.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+								3							</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>7</td>
+					<td class='data'>9</td>
+					<td class='data'>6</td>
+					<td class='data'>30</td>
+					<td class='data'>+3</td>
+				</tr>											
+								<tr class="altrow">
+					<td class='data' width='15px'>8</td>
+											<td class='name'><a href="http://localhost:10088/CI_fe2008/sections/publica/19">Macará</a></td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha_arriba.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+								1							</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>8</td>
+					<td class='data'>4</td>
+					<td class='data'>10</td>
+					<td class='data'>28</td>
+					<td class='data'>0</td>
+				</tr>											
+								<tr >
+					<td class='data' width='15px'>9</td>
+											<td class='name'>U.T.C.</td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha_abajo.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+								1							</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>8</td>
+					<td class='data'>4</td>
+					<td class='data'>10</td>
+					<td class='data'>28</td>
+					<td class='data'>-1</td>
+				</tr>											
+								<tr class="altrow">
+					<td class='data' width='15px'>10</td>
+											<td class='name'>Delfí­n</td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/igual.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+															</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>6</td>
+					<td class='data'>7</td>
+					<td class='data'>9</td>
+					<td class='data'>25</td>
+					<td class='data'>-6</td>
+				</tr>											
+								<tr >
+					<td class='data' width='15px'>11</td>
+											<td class='name'><a href="http://localhost:10088/CI_fe2008/sections/publica/16">Espoli</a></td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/igual.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+															</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>5</td>
+					<td class='data'>6</td>
+					<td class='data'>11</td>
+					<td class='data'>21</td>
+					<td class='data'>-7</td>
+				</tr>											
+								<tr class="altrow">
+					<td class='data' width='15px'>12</td>
+											<td class='name'>Municipal Cañar</td>
+										<td align="center">
+						<div style="width:25px; height: 20px;">
+							<div style="position: absolute;">
+								<img src="http://localhost:10088/CI_fe2008/imagenes/icons/igual.png" width="20" height="20">
+							</div>
+							<div id=down style="position: relative; font-size: 11px; top: 5px; right: 2px; line-height:11px; padding:0px; color:white; width:5px;">
+															</div>
+						</div>
+					</td>	
+					<td class='data'>22</td>
+					<td class='data'>2</td>
+					<td class='data'>5</td>
+					<td class='data'>15</td>
+					<td class='data'>11</td>
+					<td class='data'>-25</td>
+				</tr>											
+					</table>
+</div>

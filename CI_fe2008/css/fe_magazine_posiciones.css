@@ -1,0 +1,74 @@
+@CHARSET "UTF-8";
+
+	#contenido{
+			position:absolute;
+			width: 100%;		
+			margin:0 0;			
+			oevrflow:hidden;
+		}
+
+	table{
+			border-collapse:collapse;
+			border-spacing: 0;
+		}
+		
+		.info{
+		   color: white; line-height: 33px;min-height:33px 
+		}
+		
+		.posicion{
+			width:40px;
+			height:32px;
+		}
+		
+		.nombre{				
+			width:214px;
+			height:17px;
+		}
+		
+		.pj{
+			width:61px;
+			height:17px;					
+			
+		}
+		
+		.pg{					
+			width:61px;
+			height:17px;
+		}
+		
+		.pt{
+			width:91px;
+			height:15px;
+		}
+		
+		@media screen and (max-width:500px) {
+		.info{
+		    color: white; line-height:15px;min-height:33px;
+		    font-size:13px;
+		}
+			.posicion{		
+				width:15px;
+				height:10px; 
+			}
+			
+			.nombre{				
+				width:80px;
+				height:10px;
+			}
+			
+			.pj{
+				width:25px;
+				height:10px;
+			}
+			
+			.pg{					
+				width:25px;
+				height:10px;
+			}
+			
+			.pt{
+				width:35px;
+				height:10px;
+			}
+		}

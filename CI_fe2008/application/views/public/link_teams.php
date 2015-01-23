@@ -1,0 +1,13 @@
+<div id='modulo'>
+	<table class='titulo' cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<th><?=$name;?></th>
+		</tr>
+	</table>
+</div>
+	
+<div id='link_teams' >
+	<?=$table?>
+</div>
+
+
