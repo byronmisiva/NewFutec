@@ -85,6 +85,7 @@ $this->load->view('header');
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
                     <li><a class="clickmenu" href="<?= base_url('goleadores') ?>">Goleadores</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('fe-magazine') ?>">Fe Magazine</a></li>
                     <li><a class="clickmenu" href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>
 
