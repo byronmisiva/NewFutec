@@ -15,7 +15,10 @@
 
     </div>
     <div class="col-md-3 col-xs-6 separador10 margen0 ">
+        <a href="http://www.google.com" target="_blank">Google</a>
+
         <a href="http://goo.gl/jhlPq" target="_blank">
+
             <img src="<?= base_url('imagenes/femagazine/logoGP.png'); ?>" class="img-responsive"/>
         </a>
     </div>
@@ -35,7 +38,7 @@
         <div class="col-md-6  col-xs-12 margen0l separador10">
             <div class="col-md-12  col-xs-12  clearfix borde">
                 <div class="col-md-4  col-xs-4 margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion01.jpg'); ?>" class="img-circle img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/seccion01.jpg'); ?>" class="img-circle img-responsive ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Especial Emelec Campeón</h2>
