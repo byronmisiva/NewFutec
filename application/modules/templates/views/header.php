@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -13,29 +14,36 @@
     <meta name="author" content=""/>
 
     <!-- Fav and touch icons -->
-                <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=base_url('assets/img/apple-touch-icon-144-precomposed.png')?>"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=base_url('assets/img/apple-touch-icon-114-precomposed.png')?>"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="<?=base_url('assets/img/apple-touch-icon-72-precomposed.png')?>"/>
-    <link rel="apple-touch-icon-precomposed" href="<?=base_url('assets/img/apple-touch-icon-57-precomposed.png')?>"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="<?= base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="<?= base_url('assets/img/apple-touch-icon-114-precomposed.png') ?>"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="<?= base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
+    <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
 
-    <link rel="apple-touch-icon" sizes="144x144" href="<?=base_url('assets/img/apple-touch-icon-144-precomposed.png')?>"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="<?=base_url('assets/img/apple-touch-icon-114-precomposed.png')?>"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="<?=base_url('assets/img/apple-touch-icon-72-precomposed.png')?>"/>
-    <link rel="apple-touch-icon" href="<?=base_url('assets/img/apple-touch-icon-57-precomposed.png')?>"/>
+    <link rel="apple-touch-icon" sizes="144x144"
+          href="<?= base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="<?= base_url('assets/img/apple-touch-icon-114-precomposed.png') ?>"/>
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="<?= base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
+    <link rel="apple-touch-icon" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
 
 
-    <link rel="icon" href="<?=base_url('assets/img/favicon.ico')?>">
+    <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
 
     <!--Facebook TAGS-->
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
     <meta property='og:url' content="http://www.futbolecuador.com"/>
     <meta property='og:site_name' content="Futbool Ecuador"/>
     <meta property='og:type' content="site"/>
-    <meta property='og:image' content="<?=base_url('img/apple-touch-icon-144-precomposed.png')?>"/>
+    <meta property='og:image' content="<?= base_url('img/apple-touch-icon-144-precomposed.png') ?>"/>
 
     <!--SEO TAGS-->
-     <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
-     <meta name="keywords" content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo"/>
+    <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
+    <meta name="keywords"
+          content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo"/>
 
     <title><?php echo $pageTitle ?></title>
 
@@ -49,7 +57,7 @@
     <!-- Input slider -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
 
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css');?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     <link href="<?php echo base_url('assets/css/sprites.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
 
@@ -72,24 +80,24 @@
     <script src="<?php echo base_url('assets/js/modernizr.js') ?>"></script>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
     <?php
     $this->load->library('user_agent');
 
-    $mobiles=array('Apple iPhone','Generic Mobile');
-    $isMobile = false   ;
-    if ($this->agent->is_mobile()){
-        $m=$this->agent->mobile();
-        if ( in_array($m,$mobiles))
-            $isMobile = true ;
+    $mobiles = array('Apple iPhone', 'Generic Mobile');
+    $isMobile = false;
+    if ($this->agent->is_mobile()) {
+        $m = $this->agent->mobile();
+        if (in_array($m, $mobiles))
+            $isMobile = true;
 
     }
-    if ($isMobile){
+    if ($isMobile) {
         ?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
-    }else {
+    } else {
         ?>
         <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>
 
@@ -103,14 +111,13 @@
     </script>
 
 
-
 </head>
 
 <body>
 <script type='text/javascript'>
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
-    (function() {
+    (function () {
         var gads = document.createElement('script');
         gads.async = true;
         gads.type = 'text/javascript';
@@ -168,17 +175,53 @@
 
 <!-- Google Tag Manager -->
 <noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-ND3RBS"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-<script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-ND3RBS');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53XBQP');</script>
 <!-- End Google Tag Manager -->
+
+<!-- Facebook Conversion Code for FE_Visitas -->
+<script>(function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6017525548394', {'value': '0.00', 'currency': 'USD'}]);</script>
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
+
+
+<!-- Facebook Conversion Code for futbolecuador.com -->
+<script>(function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6015959317594', {'value': '0.00', 'currency': 'USD'}]);</script>
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6015959317594&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script>
+<script type="text/javascript">_atrk_opts={atrk_acct:"A9Dnf1aUOO00Gi",domain:"futbolecuador.com"};atrk();</script>
+<noscript>
+    <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=A9Dnf1aUOO00Gi" style="display: none" height="1" width="1" alt=""/>
+</noscript>
+<!-- End Alexa Certify Javascript -->
+

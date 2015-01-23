@@ -1,12 +1,3 @@
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-44225428-2', 'movistar.com.ec');
-    ga('send', 'pageview');
-</script>
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -22,20 +13,17 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
 
 
-
 <!-- Optional FlexSlider Additions -->
 <script src="<?php echo base_url('assets/js/jquery.easing.js') ?>"></script>
 <script src="<?php echo base_url('assets/js/jquery.mousewheel.js') ?>"></script>
 
 <!--fuera de juego -->
-<script src="<?=base_url()?>assets/js/jquery.easing.js"></script>
-<script src="<?=base_url()?>assets/js/jquery.touchSwipe.min.js"></script>
-<script src="<?=base_url()?>assets/js/jquery.liquid-slider.min.js"></script>
+<script src="<?= base_url() ?>assets/js/jquery.easing.js"></script>
+<script src="<?= base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
+<script src="<?= base_url() ?>assets/js/jquery.liquid-slider.min.js"></script>
 <!-- Third, add the GalleryView Javascript and CSS files -->
-<script type="text/javascript" src="<?=base_url()?>assets/js/jcarousellite_1.0.1.js"></script>
-<script type="text/javascript" src="<?=base_url()?>assets/js/jquery.lazyload.min.js"></script>
-
-
+<script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.lazyload.min.js"></script>
 
 
 <script type="text/javascript">
@@ -84,27 +72,71 @@
     adroll_pix_id = "3ZEKOXB4VRE57G7GJ2DCC5";
     (function () {
         var oldonload = window.onload;
-        window.onload = function(){
-            __adroll_loaded=true;
+        window.onload = function () {
+            __adroll_loaded = true;
             var scr = document.createElement("script");
             var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
             scr.setAttribute('async', 'true');
             scr.type = "text/javascript";
             scr.src = host + "/j/roundtrip.js";
             ((document.getElementsByTagName('head') || [null])[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-            if(oldonload){oldonload()}};
+            document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+            if (oldonload) {
+                oldonload()
+            }
+        };
     }());
 </script>
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>(function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=595644553876654&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+<!-- Alexa.com -->
+<div style='display: none;'>
+    <a href="http://www.alexa.com/siteinfo/www.futbolecuador.com">
+        <script type='text/javascript' src='http://xslt.alexa.com/site_stats/js/t/a?url=www.futbolecuador.com'></script>
+    </a> <a href="http://www.alexa.com/siteinfo/www.futbolecuador.com?p=rwidget#reviews"><img src='http://www.alexa.com/images/widgets/blue/light/v1-125x60.png' alt='Review www.futbolecuador.com on alexa.com'/> </a>
+</div>
+<!-- FIN Alexa.com -->
+
+<!-- Push Notifications -->
+<script type="text/javascript">var checkRemotePermission = function (permissionData) {
+        if (permissionData.permission === 'default') {
+            window.safari.pushNotification.requestPermission('https://cp.pushwoosh.com/json/1.3/safari', 'web.futbolecuador.pushwoosh', {application: '0E44F-5F59B'}, checkRemotePermission);
+        } else if (permissionData.permission === 'denied') {
+        } else if (permissionData.permission === 'granted') {
+        }
+    };
+    if ('safari'in window && 'pushNotification'in window.safari) {
+        var permissionData = window.safari.pushNotification.permission('web.futbolecuador.pushwoosh');
+        checkRemotePermission(permissionData);
+    } else {
+    }</script>
+<script type="text/javascript">adroll_adv_id = "7IEKX4QU7NGODM7RAJE7NN";
+    adroll_pix_id = "3ZEKOXB4VRE57G7GJ2DCC5";
+    (function () {
+        var oldonload = window.onload;
+        window.onload = function () {
+            __adroll_loaded = true;
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] || document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+            if (oldonload) {
+                oldonload()
+            }
+        };
+    }());</script>
+<!-- Push Notifications -->
+
 </body>
 </html>
