@@ -53,7 +53,7 @@
  * as this file.
  *
  */
-	$system_path = './CodeIgniter2/system';
+	$system_path = '../system';
 
 /*
  *---------------------------------------------------------------
