@@ -604,7 +604,7 @@ if (isset($this->establet)){
 
     // Ensure that the user can receive Safari Push Notifications
     if ('safari' in window && 'pushNotification' in window.safari) {
-        var permissionData = window.safari.pushNotification.permission('web.futbolecuador.pushwoosh'); // Your Website Push ID
+        var permissionData = window.safari.pushNotification.permission('web.futbolecuador.pushwoosh.2015'); // Your Website Push ID
         checkRemotePermission(permissionData);
     } else {
         //console.log('Push Notifications are available for Safari browser only');

@@ -103,7 +103,7 @@
 	<td class='required'>*</td>
 	<td width='85' valign='top'>Imagen:</td>
 	<td valign='top'>
-		<?php echo form_dropdown('image_id', $images, $row[0]->image_id,'id="image_id" onChange="imageFromSelect(this,\'marco_imagen\',\''.base_url().'\');"');?>
+		<?php echo form_dropdown('image_id', $images, $row[0]->image_id,'id="image_id" onChange="imageFromSelect(this,\'marco_imagen\',\''.'http://www.futbolecuador.com/'.'\');"');?>
 	</td>
 	<td rowspan='2' style="padding-left: 40px;">
 		<div id='marco_imagen' class='marco_imagen'><?=img(array('src'=>$images_url[$row[0]->image_id],'border'=>'0')) ?></div>

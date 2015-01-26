@@ -214,7 +214,7 @@ class Stories extends CI_Controller {
 				
 				// Send Push Notification
 				
-				/*$this->pwCall( 'createMessage', array(
+				$this->pwCall( 'createMessage', array(
 						'application' => PW_APPLICATION,
 						'auth' => PW_AUTH,
 						'notifications' => array(
@@ -227,7 +227,7 @@ class Stories extends CI_Controller {
 								)
 						)
 				)
-				);*/
+				);
 			
 				
 				redirect($previous_url);	
@@ -340,8 +340,8 @@ class Stories extends CI_Controller {
 	
 	
 	function list_plus(){
-	//	$this->output->cache(CACHE_MENU);
- 		$option=$this->uri->segment(3);
+		$this->output->cache(CACHE_MENU);
+		$option=$this->uri->segment(3);
 		$data['noticias']=$this->model->get_plus($option);
 		
 		switch($option){
@@ -441,7 +441,7 @@ class Stories extends CI_Controller {
 	
 	
 	
-	function rss(){
+	function rss(){		
 		$this->config->set_item('compress_output', 'FALSE');
 		$this->output->cache(CACHE_DEFAULT);
 		$data['name']='XML RSS';
@@ -473,8 +473,75 @@ class Stories extends CI_Controller {
 				 ';
 		if($this->uri->segment(3)!=3)
 			$news=$this->model->rss($this->uri->segment(3));
-		else
+		else{
 			$news=$this->model->rss(FALSE);
+		}
+		
+		$champ="49";
+		$this->load->model('group');
+		$this->load->model('teams_position');
+		$this->load->model('section');
+		$this->load->model('championship');
+		$round = $this->championship->get_active_round($champ);
+		if ($round != false) {
+			$data['groups'] = $this->group->get_by_round($round);
+			$data['teams'] = $this->section->get_teams($champ);
+			$data['active'] = current($data['groups'])->id;
+			if (count($data['groups']) > 1)
+				$data['script'] = "document.observe('dom:loaded',function(){ new Control.Tabs('groups_tabs');});";
+			$group = current($data['groups'])->id;
+				
+			if ($group != "")
+				$data['tabla'] = $this->teams_position->get_table($group);
+		}
+		
+		$tabla_posicion="
+			<figure>
+				<table width='100%' >
+				<tr >
+					<td style='color: white; line-height: 43px;text-align:center;width:10%;'>#</td>
+					<td style='width:50%;color:#A0A0A0;'>Equipo</td>
+					<td style='text-align:center;width:12%;color:#A0A0A0;'>PJ</td>
+					<td style='text-align:center;width:12%;color:#A0A0A0;'>PTS</td>
+					<td style='text-align:left;width:15%;padding-left:4%;color:#A0A0A0;'>GD</td>
+				</tr>";
+		
+		foreach ( $data['tabla'] as  $key => $row ){
+			$tabla_posicion.="
+				<tr >
+					<td style='color:#000;line-height: 43px;text-align:center;width:10%;'>".( $key + 1 )."</td>
+					<td style='width:50%;color: #000;'>".$row['name']."</td>
+					<td style='text-align:center;width:12%;color: #000;'>".$row['pj']."</td>
+					<td style='text-align:center;width:12%;color: #000;'>".$row['points']."</td>
+					<td style='text-align:left;width:15%;padding-left:4%;color: #000;'>".$row['gd']."</td>
+				</tr>";
+		}
+		$tabla_posicion.="</table>
+					</figure>";
+		$request=$request.'
+						<item>
+							<id></id>
+							<title>Tabla de Posiciones</title>
+							<subtitle>Tabla de Posiciones</subtitle>
+				           <link>http://www.futbolecuador.com/#tabla-posiciones</link>	      
+	      			       <guid>http://www.futbolecuador.com/#tabla-posiciones</guid>							
+							<fecha>'.date("YYYY").'</fecha>					      		
+					      		<pubDate> '.date("YYYY").' </pubDate>
+					      		<dc:creator> @futbolecuador </dc:creator>
+					      		<description>
+								<![CDATA[
+					      				Entérate de quienes estan en la punta del Campeonato Nacional Seria A.
+					      			]]>
+							</description>
+					   		<content:encoded><![CDATA[
+							        '.$tabla_posicion.'
+							      ]]>
+							   </content:encoded>
+							</item>';
+		
+		/*echo "<pre>";
+		var_dump($news->result());
+		echo "<pre>";die;*/
 
 		foreach($news->result() as $row):			
 			$posicionInicio=0;			
@@ -820,8 +887,8 @@ class Stories extends CI_Controller {
 	}
 	
 	function send_tweet($titular,$id){
-    		$this->load->library('Twitter');
-
+		$this->load->library('Twitter');
+		
 		$this->twitter->update($titular.' http://en.fut.ec/?l='.$id);
 	}
 	
@@ -838,7 +905,7 @@ class Stories extends CI_Controller {
 				$this->db->query('Update stories
 								  Set invisible=0 , modified=NOW(),created=NOW(), programed=NULL
 								  Where id='.$row->id);
-				$this->send_tweet($row->twitter,$row->id);
+				$this->send_tweet($row->twitter,$row->id);	
 			}
 		}
 	}
