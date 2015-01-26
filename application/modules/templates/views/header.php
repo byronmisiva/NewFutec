@@ -158,7 +158,7 @@
         googletag.enableServices();
 
         //para el caso que no existe publicicad --MISIVA--
-        googletag.pubads().collapseEmptyDivs();
+        googletag.pubads().collapseEmptyDivs(true);
 
     });
 </script>
