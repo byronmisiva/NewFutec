@@ -50,7 +50,7 @@
 	<tr>
 	<td width='110'>Imagen:</td>
 	<td>
-		<?php echo form_dropdown('image_id', $images, set_value('image_id'),'id="image_id" onChange="imageFromSelect(this,\'marco_imagen\',\''.base_url().'\');"');?>
+		<?php echo form_dropdown('image_id', $images, set_value('image_id'),'id="image_id" onChange="imageFromSelect(this,\'marco_imagen\',\''.'http://www.futbolecuador.com/'.'\');"');?>
 	</td>
 	<td rowspan='2' style="padding-left: 40px;">
 		<div id='marco_imagen' class='marco_imagen'></div>
