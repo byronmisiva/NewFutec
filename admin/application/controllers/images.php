@@ -375,6 +375,7 @@ class Images extends CI_Controller {
 		foreach($result as $row){
 			$height=getimagesize('/' . $row->thumb640);
 			$height=$height[1]+80;
+
 			$aux ="\n<table class='item' width='110' cellpadding='0' cellspacing='0'>\n";
 			$aux.="<tr><td colspan='4'>".anchor('images/update/'.$row->id,img(array('src'=>$row->thumb100,'border'=>'0')), array('title' => 'Cambiar Imagen'))."</td><tr>\n";
 			

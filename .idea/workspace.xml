@@ -104,18 +104,18 @@
       <file leaf-file-name="images.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35106382" vertical-offset="5460" max-vertical-offset="7515">
-              <caret line="375" column="36" selection-start-line="375" selection-start-column="36" selection-end-line="375" selection-end-column="36" />
+            <state vertical-scroll-proportion="-0.031914894" vertical-offset="5670" max-vertical-offset="7530">
+              <caret line="377" column="12" selection-start-line="377" selection-start-column="12" selection-end-line="377" selection-end-column="12" />
               <folding>
-                <marker date="1422301186000" expanded="true" signature="16073:16112" placeholder="Select id,or..images..." />
-                <marker date="1422301186000" expanded="true" signature="16585:16843" placeholder="SELECT id, n..images..." />
-                <marker date="1422301186000" expanded="true" signature="16701:16820" placeholder="SELECT disti..stories..." />
-                <marker date="1422301186000" expanded="true" signature="17219:17510" placeholder="SELECT count..images..." />
-                <marker date="1422301186000" expanded="true" signature="17333:17487" placeholder="SELECT disti..stories..." />
-                <marker date="1422301186000" expanded="true" signature="17910:18157" placeholder="SELECT id, n..images..." />
-                <marker date="1422301186000" expanded="true" signature="18019:18134" placeholder="SELECT disti..stories..." />
-                <marker date="1422301186000" expanded="true" signature="18471:18763" placeholder="SELECT count..images..." />
-                <marker date="1422301186000" expanded="true" signature="18585:18740" placeholder="SELECT disti..stories..." />
+                <marker date="1422301201000" expanded="true" signature="16086:16125" placeholder="Select id,or..images..." />
+                <marker date="1422301201000" expanded="true" signature="16598:16856" placeholder="SELECT id, n..images..." />
+                <marker date="1422301201000" expanded="true" signature="16714:16833" placeholder="SELECT disti..stories..." />
+                <marker date="1422301201000" expanded="true" signature="17232:17523" placeholder="SELECT count..images..." />
+                <marker date="1422301201000" expanded="true" signature="17346:17500" placeholder="SELECT disti..stories..." />
+                <marker date="1422301201000" expanded="true" signature="17923:18170" placeholder="SELECT id, n..images..." />
+                <marker date="1422301201000" expanded="true" signature="18032:18147" placeholder="SELECT disti..stories..." />
+                <marker date="1422301201000" expanded="true" signature="18484:18776" placeholder="SELECT count..images..." />
+                <marker date="1422301201000" expanded="true" signature="18598:18753" placeholder="SELECT disti..stories..." />
               </folding>
             </state>
           </provider>
@@ -3183,7 +3183,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422301036456</updated>
     </task>
-    <option name="localTasksCounter" value="453" />
+    <task id="LOCAL-00453" summary="incluye tabla de revista">
+      <created>1422301195396</created>
+      <option name="number" value="00453" />
+      <option name="project" value="LOCAL" />
+      <updated>1422301195396</updated>
+    </task>
+    <option name="localTasksCounter" value="454" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3697,18 +3703,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35106382" vertical-offset="5460" max-vertical-offset="7515">
-          <caret line="375" column="36" selection-start-line="375" selection-start-column="36" selection-end-line="375" selection-end-column="36" />
+        <state vertical-scroll-proportion="-0.031914894" vertical-offset="5670" max-vertical-offset="7530">
+          <caret line="377" column="12" selection-start-line="377" selection-start-column="12" selection-end-line="377" selection-end-column="12" />
           <folding>
-            <marker date="1422301186000" expanded="true" signature="16073:16112" placeholder="Select id,or..images..." />
-            <marker date="1422301186000" expanded="true" signature="16585:16843" placeholder="SELECT id, n..images..." />
-            <marker date="1422301186000" expanded="true" signature="16701:16820" placeholder="SELECT disti..stories..." />
-            <marker date="1422301186000" expanded="true" signature="17219:17510" placeholder="SELECT count..images..." />
-            <marker date="1422301186000" expanded="true" signature="17333:17487" placeholder="SELECT disti..stories..." />
-            <marker date="1422301186000" expanded="true" signature="17910:18157" placeholder="SELECT id, n..images..." />
-            <marker date="1422301186000" expanded="true" signature="18019:18134" placeholder="SELECT disti..stories..." />
-            <marker date="1422301186000" expanded="true" signature="18471:18763" placeholder="SELECT count..images..." />
-            <marker date="1422301186000" expanded="true" signature="18585:18740" placeholder="SELECT disti..stories..." />
+            <marker date="1422301201000" expanded="true" signature="16086:16125" placeholder="Select id,or..images..." />
+            <marker date="1422301201000" expanded="true" signature="16598:16856" placeholder="SELECT id, n..images..." />
+            <marker date="1422301201000" expanded="true" signature="16714:16833" placeholder="SELECT disti..stories..." />
+            <marker date="1422301201000" expanded="true" signature="17232:17523" placeholder="SELECT count..images..." />
+            <marker date="1422301201000" expanded="true" signature="17346:17500" placeholder="SELECT disti..stories..." />
+            <marker date="1422301201000" expanded="true" signature="17923:18170" placeholder="SELECT id, n..images..." />
+            <marker date="1422301201000" expanded="true" signature="18032:18147" placeholder="SELECT disti..stories..." />
+            <marker date="1422301201000" expanded="true" signature="18484:18776" placeholder="SELECT count..images..." />
+            <marker date="1422301201000" expanded="true" signature="18598:18753" placeholder="SELECT disti..stories..." />
           </folding>
         </state>
       </provider>
