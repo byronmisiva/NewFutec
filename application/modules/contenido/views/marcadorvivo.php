@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-md-5 col-sm-5 h6  text-blue1">
                             <p> <?php setlocale(LC_ALL, "es_ES");
-                                echo ucwords (utf8_encode(strftime("%B %d %Hh%M", strtotime($scores[0]->date_match))));?>
+                                echo ucwords (utf8_encode(strftime("%B %d %Hh%M", strtotime($score->date_match))));?>
                             </p>
                             <p><?php echo $active; ?>
                                 <?php

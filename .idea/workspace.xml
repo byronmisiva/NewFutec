@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" afterPath="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -121,31 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <file leaf-file-name="marcadorvivo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.666667" vertical-offset="6215" max-vertical-offset="9555">
-              <caret line="433" column="31" selection-start-line="433" selection-start-column="24" selection-end-line="433" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matches.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.08" vertical-offset="916" max-vertical-offset="2010">
-              <caret line="78" column="45" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matchdetail.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40169132" vertical-offset="2945" max-vertical-offset="5745">
-              <caret line="209" column="90" selection-start-line="209" selection-start-column="90" selection-end-line="209" selection-end-column="90" />
+            <state vertical-scroll-proportion="1.6490486" vertical-offset="0" max-vertical-offset="1230">
+              <caret line="52" column="98" selection-start-line="52" selection-start-column="98" selection-end-line="52" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -207,7 +187,6 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/rotativas.php" />
         <option value="$PROJECT_DIR$/assets/css/flexslider.css" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matcheslive.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
@@ -239,6 +218,7 @@
         <option value="$PROJECT_DIR$/admin/application/views/images/view_thumb.php" />
         <option value="$PROJECT_DIR$/admin/application/controllers/images.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
       </list>
     </option>
   </component>
@@ -3167,7 +3147,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422307496297</updated>
     </task>
-    <option name="localTasksCounter" value="460" />
+    <task id="LOCAL-00460" summary="incluye tabla de revista">
+      <created>1422308233097</created>
+      <option name="number" value="00460" />
+      <option name="project" value="LOCAL" />
+      <updated>1422308233097</updated>
+    </task>
+    <option name="localTasksCounter" value="461" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3347,13 +3333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1678832" vertical-offset="0" max-vertical-offset="1275">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03649635" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -3662,6 +3641,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40169132" vertical-offset="2945" max-vertical-offset="5745">
+          <caret line="209" column="90" selection-start-line="209" selection-start-column="90" selection-end-line="209" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56823266" vertical-offset="916" max-vertical-offset="2010">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59196615" vertical-offset="6215" max-vertical-offset="9555">
+          <caret line="433" column="31" selection-start-line="433" selection-start-column="24" selection-end-line="433" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="7545">
@@ -3680,26 +3683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.666667" vertical-offset="6215" max-vertical-offset="9555">
-          <caret line="433" column="31" selection-start-line="433" selection-start-column="24" selection-end-line="433" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.08" vertical-offset="916" max-vertical-offset="2010">
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40169132" vertical-offset="2945" max-vertical-offset="5745">
-          <caret line="209" column="90" selection-start-line="209" selection-start-column="90" selection-end-line="209" selection-end-column="90" />
+        <state vertical-scroll-proportion="1.6490486" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="52" column="98" selection-start-line="52" selection-start-column="98" selection-end-line="52" selection-end-column="98" />
           <folding />
         </state>
       </provider>
