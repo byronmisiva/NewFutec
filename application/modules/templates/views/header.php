@@ -156,6 +156,9 @@
 
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
+
+        //para el caso que no existe publicicad --MISIVA--
+        googletag.pubads().collapseEmptyDivs();
     });
 </script>
 
