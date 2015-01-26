@@ -66,7 +66,7 @@ class Images extends CI_Controller {
 			$height=$image_size[1]+80;
 			$width=$image_size[0]+80;
 			$aux ="\n<table class='item' width='110' cellpadding='0' cellspacing='0'>\n";
-			$aux.="<tr><td colspan='4'>".anchor('images/update/'.$row->id,img(array('src'=>"../" . $row->thumb100,'border'=>'0')), array('title' => 'Cambiar Imagen'))."</td><tr>\n";
+			$aux.="<tr><td colspan='4'>".anchor('images/update/'.$row->id,img(array('src'=>"http://new.futbolecuador.com/futec/" . $row->thumb100,'border'=>'0')), array('title' => 'Cambiar Imagen'))."</td><tr>\n";
 			
 			$aux.="<tr><td colspan='4'>".$row->name."</td><tr>\n";
 			$aux.="<tr>\n";
@@ -95,7 +95,7 @@ class Images extends CI_Controller {
 
 	function view_thumbh(){
 		$imagen=$this->model->get($this->uri->segment(3));
-		$data['thumb']="../" . $imagen->thumbh160;
+		$data['thumb']="http://new.futbolecuador.com/futec/" . $imagen->thumbh160;
 		$data['tam']=getimagesize(  $data['thumb']);
 		$data['name']=$imagen->name;
 		$data['descripcion']=$imagen->text;
@@ -104,7 +104,7 @@ class Images extends CI_Controller {
 
 	function view_thumb(){
 		$imagen=$this->model->get($this->uri->segment(3));
-		$data['thumb']="../" .$imagen->thumb400;
+		$data['thumb']="http://new.futbolecuador.com/futec/" .$imagen->thumb400;
 		$data['tam']=getimagesize( $data['thumb']);
 		$data['name']=$imagen->name;
 		$data['descripcion']=$imagen->text;
@@ -317,7 +317,7 @@ class Images extends CI_Controller {
 		$data['id']=$id;
 		$data['path']=base_url();
 		$data['name']=$imagen->name;
-		$data['thumb']="../" .$imagen->thumb640;
+		$data['thumb']="http://new.futbolecuador.com/futec/" .$imagen->thumb640;
 		$data['tam']=getimagesize($data['thumb']);
 
 		$this->load->view($this->model->name.'/edit_thumb',$data);
@@ -344,7 +344,7 @@ class Images extends CI_Controller {
 			echo $this->image_lib->display_errors();
 		}
 		else{
-			$filename='../imagenes/images/crop/'.$this->image_lib->source_image;
+			$filename='http://new.futbolecuador.com/futec/imagenes/images/crop/'.$this->image_lib->source_image;
 			$dimension['file_name']=$filename;
 			$dimension['width']=160;
 			$this->images_thumb($dimension,'h');
@@ -373,10 +373,10 @@ class Images extends CI_Controller {
 	
 		$datos=array();
 		foreach($result as $row){
-			$height=getimagesize('../' . $row->thumb640);
+			$height=getimagesize('http://new.futbolecuador.com/futec/' . $row->thumb640);
 			$height=$height[1]+80;
 			$aux ="\n<table class='item' width='110' cellpadding='0' cellspacing='0'>\n";
-			$aux.="<tr><td colspan='4'>".anchor('images/update/'.$row->id,img(array('src'=>"../" .$row->thumb100,'border'=>'0')), array('title' => 'Cambiar Imagen'))."</td><tr>\n";
+			$aux.="<tr><td colspan='4'>".anchor('images/update/'.$row->id,img(array('src'=>"http://new.futbolecuador.com/futec/" .$row->thumb100,'border'=>'0')), array('title' => 'Cambiar Imagen'))."</td><tr>\n";
 			
 			$aux.="<tr><td colspan='4'>".$row->name."</td><tr>\n";
 			$aux.="<tr>\n";
