@@ -1,0 +1,15 @@
+User-agent: *
+Disallow:
+
+User-agent: *
+Disallow:/js/
+Disallow:/css/
+Disallow:/CodeIgniter2/
+Disallow:/aplication/
+Disallow:/imagenes/
+Disallow:/admin/
+Disallow:/users/login/	
+Disallow:/CodeIgniter/
+
+sitemap: /seo/sitemap.xml
+sitemap: /seo/sitemap_news.xml

@@ -1,0 +1,182 @@
+1420598483TS---><div id='ultimos'>
+	<table class='options' cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td width='50%' class='selected' >Resultados</td>
+			<td width='50%' onClick="ajax_update('ultimos','http://localhost:10088/CI_fe2008/championships/list_match_week/51','http://localhost:10088/CI_fe2008/');">Próxima Fecha</td>
+		</tr>
+	</table>
+	
+	
+	
+	<div id='camp'>
+<div id='name' onclick='menu_open("data_7","datas"); return false;'>Amistosos</div>
+<div id='data_7' style='display:none; ' class='datas'>
+<table class='lo_ultimo' cellpadding='0' cellspacing='0' width='100%'>
+<tr class='date'><td colspan='7' class='date'>Saturday, 06 September - 19:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6599";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/24d308afe8dd80a55ee49ca116174972.jpg" alt=""/></td>
+<td width='30%' class='left'>Ecuador</td>
+<td  class='result'>4 - 0</td>
+<td width='30%' class='right'>Bolivia</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/970234d319ec818da6a99131eeaf209a.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Tuesday, 09 September - 20:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6600";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/24d308afe8dd80a55ee49ca116174972.jpg" alt=""/></td>
+<td width='30%' class='left'>Ecuador</td>
+<td  class='result'>0 - 1</td>
+<td width='30%' class='right'>Brasil</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/6443a532f4bf85bfa409c5ff56c8e9b3.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Friday, 10 October - 18:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6695";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shields/default.jpg" alt=""/></td>
+<td width='30%' class='left'>Estados Unidos</td>
+<td  class='result'>1 - 1</td>
+<td width='30%' class='right'>Ecuador</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/24d308afe8dd80a55ee49ca116174972.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Tuesday, 14 October - 18:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6696";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/24d308afe8dd80a55ee49ca116174972.jpg" alt=""/></td>
+<td width='30%' class='left'>Ecuador</td>
+<td  class='result'>5 - 1</td>
+<td width='30%' class='right'>El Salvador</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shields/default.jpg" alt=""/></td>
+</tr>
+</table>
+<div id='boton_mas'>
+<div style='float:left;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/isotipo_plomo.jpg" alt=""/></div>
+<div style='float:right; margin-top:5px;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha.jpg" alt=""/></div>
+<div style='text-align:center; float:none; padding-top: 2px;'>
+<a href=http://localhost:10088/CI_fe2008/matches_calendary/publica/7 style='font-size:12px; text-decoration: none'>Calendario Completo</a>
+</div>
+</div></div></div>
+</table></div></div>
+<div id='camp'>
+<div id='name' onclick='menu_open("data_49","datas"); return false;'>Campeonato Serie A 2014</div>
+<div id='data_49' style='display:none; ' class='datas'>
+<table class='lo_ultimo' cellpadding='0' cellspacing='0' width='100%'>
+<tr class='date'><td colspan='7' class='date'>Sunday, 21 December - 16:30</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6706";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/21496967f16f9501f5dc6889a033a28c.jpg" alt=""/></td>
+<td width='30%' class='left'>Emelec</td>
+<td  class='result'>3 - 0</td>
+<td width='30%' class='right'>Barcelona</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/3c53631affa831e2adc082a2640a09be.jpg" alt=""/></td>
+</tr>
+</table>
+<div id='boton_mas'>
+<div style='float:left;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/isotipo_plomo.jpg" alt=""/></div>
+<div style='float:right; margin-top:5px;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha.jpg" alt=""/></div>
+<div style='text-align:center; float:none; padding-top: 2px;'>
+<a href=http://localhost:10088/CI_fe2008/matches_calendary/publica/49 style='font-size:12px; text-decoration: none'>Calendario Completo</a>
+</div>
+</div></div></div>
+</table></div></div>
+<div id='camp'>
+<div id='name' onclick='menu_open("data_51","datas"); return false;'>Campeonato Serie B 2014</div>
+<div id='data_51' style='' class='datas'>
+<table class='lo_ultimo' cellpadding='0' cellspacing='0' width='100%'>
+<tr class='date'><td colspan='7' class='date'>Saturday, 22 November - 15:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6667";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/0e61a506c7d3617be0586ac648783084.jpg" alt=""/></td>
+<td width='30%' class='left'>Espoli</td>
+<td  class='result'>1 - 1</td>
+<td width='30%' class='right'>Aucas</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/9430a2af497ba922c9f94aea98db47fb.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Saturday, 22 November - 16:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6668";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/778fed25dfa22f9bc7916cb84eab6d25.jpg" alt=""/></td>
+<td width='30%' class='left'>Liga de Portoviejo</td>
+<td  class='result'>4 - 1</td>
+<td width='30%' class='right'>Técnico Universitario</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/89031012a1622169a1bcc2f8844d2b9e.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Saturday, 22 November - 16:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6670";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/185d2ff6f53b254bacf3adaf9898f8d2.jpg" alt=""/></td>
+<td width='30%' class='left'>Deportivo Azogues</td>
+<td  class='result'>1 - 2</td>
+<td width='30%' class='right'>Imbabura SC</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/c26d8e1ba58e20d32cf6757ffbf10171.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Saturday, 22 November - 16:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6671";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/974bdafa8fc27f84100b17b25e54a39c.jpg" alt=""/></td>
+<td width='30%' class='left'>River Plate Ecuador</td>
+<td  class='result'>1 - 1</td>
+<td width='30%' class='right'>U.T.C.</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/fb720545252ac58b28f2cd38092cd378.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Sunday, 23 November - 11:30</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6669";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/8d11ab9f86aceb2556c19f20889f0ae1.jpg" alt=""/></td>
+<td width='30%' class='left'>Macará</td>
+<td  class='result'>2 - 1</td>
+<td width='30%' class='right'>Delfí­n</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shields/default.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Sunday, 23 November - 15:00</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6672";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/23d1afebabd4155c0d06309bcce96893.jpg" alt=""/></td>
+<td width='30%' class='left'>Deportivo Quevedo</td>
+<td  class='result'>5 - 0</td>
+<td width='30%' class='right'>Municipal Cañar</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/ea2df1916e7fa94c89dc14839731559c.jpg" alt=""/></td>
+</tr>
+</table>
+<div id='boton_mas'>
+<div style='float:left;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/isotipo_plomo.jpg" alt=""/></div>
+<div style='float:right; margin-top:5px;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha.jpg" alt=""/></div>
+<div style='text-align:center; float:none; padding-top: 2px;'>
+<a href=http://localhost:10088/CI_fe2008/matches_calendary/publica/51 style='font-size:12px; text-decoration: none'>Calendario Completo</a>
+</div>
+</div></div></div>
+</table></div></div>
+<div id='camp'>
+<div id='name' onclick='menu_open("data_52","datas"); return false;'>Copa Sudamericana 2014</div>
+<div id='data_52' style='display:none; ' class='datas'>
+<table class='lo_ultimo' cellpadding='0' cellspacing='0' width='100%'>
+<tr class='date'><td colspan='7' class='date'>Wednesday, 29 October - 20:30</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6697";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shields/default.jpg" alt=""/></td>
+<td width='30%' class='left'>Atlético Nacional</td>
+<td  class='result'>vs</td>
+<td width='30%' class='right'>Universidad César Vallejo</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/0cd64c941ace2c895abbe965e12763a7.png" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Wednesday, 29 October - 20:30</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6703";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/cb4fc05f5284f2f3a96dc7a9a498be06.jpg" alt=""/></td>
+<td width='30%' class='left'>Estudiantes</td>
+<td  class='result'>vs</td>
+<td width='30%' class='right'>River Plate</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/41861d15694a730b59e3c786a149e95c.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Thursday, 30 October - 17:15</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6699";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/b110fb11c18381c504af055963ad3b42.jpg" alt=""/></td>
+<td width='30%' class='left'>Sao Paulo</td>
+<td  class='result'>4 - 2</td>
+<td width='30%' class='right'>Emelec</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/21496967f16f9501f5dc6889a033a28c.jpg" alt=""/></td>
+</tr>
+<tr class='date'><td colspan='7' class='date'>Thursday, 30 October - 21:30</td></tr>
+<tr onClick='window.location="http://localhost:10088/CI_fe2008/matches/publica/6701";' >
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/6e333fef4103cac3b583e9f02b2ab711.jpg" alt=""/></td>
+<td width='30%' class='left'>Boca Juniors</td>
+<td  class='result'>vs</td>
+<td width='30%' class='right'>Cerro Porteño</td>
+<td width='10%' ><img src="http://localhost:10088/CI_fe2008/imagenes/teams/mini_shield/db8ad6b4206e26026b68d3838c4342e7.jpg" alt=""/></td>
+</tr>
+</table>
+<div id='boton_mas'>
+<div style='float:left;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/isotipo_plomo.jpg" alt=""/></div>
+<div style='float:right; margin-top:5px;'><img src="http://localhost:10088/CI_fe2008/imagenes/icons/flecha.jpg" alt=""/></div>
+<div style='text-align:center; float:none; padding-top: 2px;'>
+<a href=http://localhost:10088/CI_fe2008/matches_calendary/publica/52 style='font-size:12px; text-decoration: none'>Calendario Completo</a>
+</div>
+</div></div></div>
+</div>

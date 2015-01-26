@@ -1,0 +1,1 @@
+<a href='<?=base_url().$link?>'><img src="<?=base_url().$logo?>" width="320"  height="54" border="0"/></a>

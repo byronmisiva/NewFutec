@@ -1,0 +1,97 @@
+1422046368TS---><div
+    style='position:absolute; left:0px; width:968px; height:41px; background-image:url("http://localhost:10088/CI_fe2008//imagenes/template/public/fondo_menu2l.jpg");'>
+
+    <!-- AQUI EMPIEZA EL MENU PRINCIPAL -->
+    <div id='menu_principal'>
+        <a href='http://localhost:10088/CI_fe2008/'><img src="http://localhost:10088/CI_fe2008/imagenes/template/menu/barra_01.png" border="0"
+                                          title="Inicio" alt="Inicio"
+                                          onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_01.png'"
+                                          onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png'"/></a>
+        <a href='#' onclick="$('menu_principal').hide();new Effect.SlideDown('menu_equipos'); return false;"><img
+                src="http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_02n.png" border="0" title="Equipos" alt="Equipos"
+                onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_02n.png'"
+                onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_02n.png'"/></a>
+        <a href='#' onclick="$('menu_principal').hide();new Effect.Appear('menu_futbol'); return false;"><img
+                src="http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_03n.png" border="0" title="Fútbol Nacional"
+                alt="Fútbol Nacional"
+                onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_03n.png'"
+                onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_03n.png'"/></a>
+        <a href='http://localhost:10088/CI_fe2008/nuestros-embajadores'><img src="http://localhost:10088/CI_fe2008/imagenes/template/menu/barra_04n.png"
+                                                             border="0" title="Nuestros Embajadores"
+                                                             alt="Nuestros Embajadores"
+                                                             onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_04n.png'"
+                                                             onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_04n.png'"/></a>
+        <a href='#' onclick="$('menu_principal').hide();new Effect.Appear('menu_copas'); return false;"><img
+                src="http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_05n.png" border="0" title="Copas" alt="Copas"
+                onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_05n.png'"
+                onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_05n.png'"/></a>
+        <a href='http://localhost:10088/CI_fe2008/eliminatorias'><img
+                src="http://localhost:10088/CI_fe2008/imagenes/template/menu/eliminatoriasn.png" border="0" title="Eliminatorias"
+                alt="Eliminatorias"
+                onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/eliminatorias_rolln.png'"
+                onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/eliminatoriasn.png'"/></a>
+        <a href='http://localhost:10088/CI_fe2008/zona-fe'><img src="http://localhost:10088/CI_fe2008/imagenes/template/menu/zona-fe.png"
+                                                             border="0" title="ZonaFE" alt="ZonaFE"
+                                                             onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/zona-fe-roll.png'"
+                                                             onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/zona-fe.png'"/></a>
+
+        <a href='http://localhost:10088/CI_fe2008/femagazine'><img
+                src="http://localhost:10088/CI_fe2008/imagenes/template/menu/femagazinen.png" border="0" title="FE Magazine"
+                alt="FE Magazine" onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/femagazinen.png'"
+                onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/femagazinen.png'"/></a>
+
+
+    </div>
+
+    <!-- AQUI EMPIEZAN LOS MENUS SECUNDARIOS -->
+    <div id='menu_equipos' style='position:absolute; display:none; width:775px;'>
+        <div style='position:relative; width:100px;'>
+            <div style='position:absolute; left:0px; width:150px;'>
+                <a href='http://localhost:10088/CI_fe2008/'><img src="http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png"
+                                                  border="0" title="Inicio" alt="Inicio"
+                                                  onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_01.png'"
+                                                  onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png'"/></a>
+                <a href='#' onclick="$('menu_equipos').hide();new Effect.Appear('menu_principal'); return false;"><img
+                        src="http://localhost:10088/CI_fe2008//imagenes/template/menu/equipos.png" border="0" title="Equipos"
+                        alt="Equipos"/></a>
+            </div>
+            <div style='position:absolute; left:150px; top:5px; width:400px;'>
+                <a href='http://localhost:10088/CI_fe2008/equipo/emelec' onmouseover="$('menu_nombre').innerHTML='Emelec';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/club-sport-emelec.png' title='Emelec'  alt='Emelec' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/independiente-del-valle' onmouseover="$('menu_nombre').innerHTML='Independiente del Valle';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/independiente-del-valle.png' title='Independiente del Valle'  alt='Independiente del Valle' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/barcelona' onmouseover="$('menu_nombre').innerHTML='Barcelona';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/barcelona-sporting-club.png' title='Barcelona'  alt='Barcelona' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/liga-de-quito' onmouseover="$('menu_nombre').innerHTML='Liga de Quito';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/liga-de-quito.png' title='Liga de Quito'  alt='Liga de Quito' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/liga-de-loja' onmouseover="$('menu_nombre').innerHTML='Liga de Loja';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/ldu-loja.png' title='Liga de Loja'  alt='Liga de Loja' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/universidad-catolica-de-quito' onmouseover="$('menu_nombre').innerHTML='Universidad Católica de Quito';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/cd-universidad-catolica.png' title='Universidad Católica de Quito'  alt='Universidad Católica de Quito' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/el-nacional' onmouseover="$('menu_nombre').innerHTML='El Nacional';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/el-nacional.png' title='El Nacional'  alt='El Nacional' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/deportivo-cuenca' onmouseover="$('menu_nombre').innerHTML='Deportivo Cuenca';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/deportivo-cuenca.png' title='Deportivo Cuenca'  alt='Deportivo Cuenca' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/mushuc-runa' onmouseover="$('menu_nombre').innerHTML='Mushuc Runa';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/mushuc-runa-sporting-club.png' title='Mushuc Runa'  alt='Mushuc Runa' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/deportivo-quito' onmouseover="$('menu_nombre').innerHTML='Deportivo Quito';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/sd-quito.png' title='Deportivo Quito'  alt='Deportivo Quito' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/manta-fc' onmouseover="$('menu_nombre').innerHTML='Manta F.C.';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/manta-fc.png' title='Manta F.C.'  alt='Manta F.C.' border='0'  /></a><a href='http://localhost:10088/CI_fe2008/equipo/olmedo' onmouseover="$('menu_nombre').innerHTML='Olmedo';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/teams/thumb/centro-deportivo-olmedo.png' title='Olmedo'  alt='Olmedo' border='0'  /></a>            </div>
+            <div id='menu_nombre'
+                 style='position:absolute; left:560px; top:10px; width:200px; color:white; font-family: arial,sans-serif; font-size:14px;'>
+            </div>
+        </div>
+    </div>
+
+    <div id='menu_futbol' style='position:absolute; display:none;'>
+        <div style='position:relative; width:100px;'>
+            <div style='position:absolute; left:0px; width:200px;'>
+                <a href='http://localhost:10088/CI_fe2008/'><img src="http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png"
+                                                  border="0" title="Inicio" alt="Inicio"
+                                                  onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_01.png'"
+                                                  onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png'"/></a>
+                <a href='#' onclick="$('menu_futbol').hide();new Effect.Appear('menu_principal'); return false;"><img
+                        src="http://localhost:10088/CI_fe2008//imagenes/template/menu/fut_nac.png" border="0" title="Fútbol Nacional"
+                        alt="Fútbol Nacional"/></a>
+            </div>
+            <div style='position:absolute; left:200px; width:400px;'>
+                <a href='http://localhost:10088/CI_fe2008/serie-a' onmouseover="$('menu_nombre').innerHTML='Serie A';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_02.png' title='Serie A'  alt='Serie A' border='0' onmouseover="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_rollover_02.png'" onmouseout="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_02.png'" /></a><a href='http://localhost:10088/CI_fe2008/serie-b' onmouseover="$('menu_nombre').innerHTML='Serie B';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_03.png' title='Serie B'  alt='Serie B' border='0' onmouseover="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_rollover_03.png'" onmouseout="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_03.png'" /></a><a href='http://localhost:10088/CI_fe2008/seleccion-nacional' onmouseover="$('menu_nombre').innerHTML='Selección Nacional';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_04.png' title='Selección Nacional'  alt='Selección Nacional' border='0' onmouseover="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_rollover_04.png'" onmouseout="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/fut_nac_04.png'" /></a>            </div>
+        </div>
+    </div>
+
+    <div id='menu_copas' style='position:absolute; display:none;'>
+        <div style='position:relative; width:100px;'>
+            <div style='position:absolute; left:0px; width:130px;'>
+                <a href='http://localhost:10088/CI_fe2008/'><img src="http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png"
+                                                  border="0" title="Inicio" alt="Inicio"
+                                                  onmouseover="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/rollover_01.png'"
+                                                  onmouseout="this.src ='http://localhost:10088/CI_fe2008//imagenes/template/menu/barra_01.png'"/></a>
+                <a href='#' onclick="$('menu_copas').hide();new Effect.Appear('menu_principal'); return false;"><img
+                        src="http://localhost:10088/CI_fe2008//imagenes/template/menu/copas.png" border="0" title="Fútbol Nacional"
+                        alt="Fútbol Nacional"/></a>
+            </div>
+            <div style='position:absolute; left:130px; width:500px;'>
+                <a href='http://localhost:10088/CI_fe2008/copa-libertadores' onmouseover="$('menu_nombre').innerHTML='Copa Libertadores';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/template/menu/copas_02.png' title='Copa Libertadores'  alt='Copa Libertadores' border='0' onmouseover="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/copas_rollover_02.png'" onmouseout="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/copas_02.png'" /></a><a href='http://localhost:10088/CI_fe2008/copa-sudamericana' onmouseover="$('menu_nombre').innerHTML='Copa Sudamericana';" onmouseout="$('menu_nombre').innerHTML='';" ><img src='http://localhost:10088/CI_fe2008/imagenes/template/menu/copas_03.png' title='Copa Sudamericana'  alt='Copa Sudamericana' border='0' onmouseover="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/copas_rollover_03.png'" onmouseout="this.src ='http://localhost:10088/CI_fe2008/imagenes/template/menu/copas_03.png'" /></a>            </div>
+        </div>
+    </div>
+</div>
