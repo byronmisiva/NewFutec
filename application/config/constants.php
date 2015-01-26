@@ -66,7 +66,7 @@ define('REFRESH_VIVO',300); //segundos
 define('CACHE_PARTIDOS',3); //minutos
 define('CACHE_MENU',60);	//minutos
 define('CACHE_MOVIL',5);	//minutos
-define('CACHE_DEFAULT',4);	//minutos
+define('CACHE_DEFAULT',5);	//minutos
 
 //blogs
 define('ZONAFE',63); //ZonaFe
