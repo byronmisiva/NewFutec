@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/065523448b7afb5f64251f97c47c1a6e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/3512013c83d8f93d177287cd4eb20d2e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/434671f770f19992303b56fe6cf134bd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/4a5e15dbdf4da8d058a3e804d704e014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/761896a5564f400ae9494924d257e3c2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/8f6bd0dc05d788952dda8b776b83a470" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/969dae325515f989e2716b01e5be4ab4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/9fc4f64a4f43bd99def70fa4f0ad570b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/b5768f88ca57aadd17ff869d3162f284" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/b5e782a49333ff9ed047170ba48b412e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/bcdb48a8e0104eea057019bfba67e117" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/cd747444990f44426560fd7492f9e7de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/e49a59e1c1c7943a670a4562b6c22a6a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/ebf4fda861606f4d02a7eceea2ff7485" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/cache1/f1416c0eb69a58cc696f18ce6f8d633a" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blogs/insert.php" afterPath="$PROJECT_DIR$/admin/application/views/blogs/insert.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/stories/insert.php" afterPath="$PROJECT_DIR$/admin/application/views/stories/insert.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blogs/update.php" afterPath="$PROJECT_DIR$/admin/application/views/blogs/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/stories/update.php" afterPath="$PROJECT_DIR$/admin/application/views/stories/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -36,18 +53,50 @@
       <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/views/blogs/insert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2083335" vertical-offset="607" max-vertical-offset="1140">
-              <caret line="52" column="173" selection-start-line="52" selection-start-column="173" selection-end-line="52" selection-end-column="173" />
+            <state vertical-scroll-proportion="-19.25" vertical-offset="318" max-vertical-offset="1140">
+              <caret line="52" column="116" selection-start-line="52" selection-start-column="101" selection-end-line="52" selection-end-column="116" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/js/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5346154" vertical-offset="457" max-vertical-offset="6780">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="31" />
+              <folding>
+                <marker date="1422296511000" expanded="false" signature="13038:13079" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/views/blogs/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34879032" vertical-offset="592" max-vertical-offset="1125">
-              <caret line="51" column="169" selection-start-line="51" selection-start-column="169" selection-end-line="51" selection-end-column="169" />
+            <state vertical-scroll-proportion="-7.2083335" vertical-offset="592" max-vertical-offset="1125">
+              <caret line="51" column="147" selection-start-line="51" selection-start-column="139" selection-end-line="51" selection-end-column="147" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/stories/insert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.125" vertical-offset="1281" max-vertical-offset="1965">
+              <caret line="100" column="153" selection-start-line="100" selection-start-column="143" selection-end-line="100" selection-end-column="153" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/stories/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.375" vertical-offset="1446" max-vertical-offset="2040">
+              <caret line="105" column="149" selection-start-line="105" selection-start-column="139" selection-end-line="105" selection-end-column="149" />
               <folding />
             </state>
           </provider>
@@ -68,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/header2.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomenano.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_megabanner.php" />
@@ -114,11 +162,12 @@
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/application/controllers/stories.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/stories/insert.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/stories/update.php" />
         <option value="$PROJECT_DIR$/admin/application/config/config.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/blogs/insert.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/stories/update.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/stories/insert.php" />
         <option value="$PROJECT_DIR$/admin/application/views/blogs/update.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/blogs/insert.php" />
+        <option value="$PROJECT_DIR$/admin/js/ajax.js" />
       </list>
     </option>
   </component>
@@ -3065,7 +3114,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422296932117</updated>
     </task>
-    <option name="localTasksCounter" value="448" />
+    <task id="LOCAL-00448" summary="incluye tabla de revista">
+      <created>1422297219454</created>
+      <option name="number" value="00448" />
+      <option name="project" value="LOCAL" />
+      <updated>1422297219454</updated>
+    </task>
+    <option name="localTasksCounter" value="449" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3185,13 +3240,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3125" vertical-offset="385" max-vertical-offset="9075">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5685484" vertical-offset="468" max-vertical-offset="1215">
@@ -3482,14 +3530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/stories/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613" vertical-offset="1335" max-vertical-offset="1965">
-          <caret line="100" column="173" selection-start-line="100" selection-start-column="144" selection-end-line="100" selection-end-column="173" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/controllers/stories.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.294355" vertical-offset="240" max-vertical-offset="13785">
@@ -3542,14 +3582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/stories/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26008064" vertical-offset="1446" max-vertical-offset="2040">
-          <caret line="105" column="169" selection-start-line="105" selection-start-column="169" selection-end-line="105" selection-end-column="169" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45362905" vertical-offset="0" max-vertical-offset="4935">
@@ -3566,19 +3598,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/blogs/insert.php">
+    <entry file="file://$PROJECT_DIR$/admin/application/views/stories/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2083335" vertical-offset="607" max-vertical-offset="1140">
-          <caret line="52" column="173" selection-start-line="52" selection-start-column="173" selection-end-line="52" selection-end-column="173" />
+        <state vertical-scroll-proportion="-5.375" vertical-offset="1446" max-vertical-offset="2040">
+          <caret line="105" column="149" selection-start-line="105" selection-start-column="139" selection-end-line="105" selection-end-column="149" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/stories/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.125" vertical-offset="1281" max-vertical-offset="1965">
+          <caret line="100" column="153" selection-start-line="100" selection-start-column="143" selection-end-line="100" selection-end-column="153" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/views/blogs/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34879032" vertical-offset="592" max-vertical-offset="1125">
-          <caret line="51" column="169" selection-start-line="51" selection-start-column="169" selection-end-line="51" selection-end-column="169" />
+        <state vertical-scroll-proportion="-7.2083335" vertical-offset="592" max-vertical-offset="1125">
+          <caret line="51" column="147" selection-start-line="51" selection-start-column="139" selection-end-line="51" selection-end-column="147" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/blogs/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.25" vertical-offset="318" max-vertical-offset="1140">
+          <caret line="52" column="116" selection-start-line="52" selection-start-column="101" selection-end-line="52" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5346154" vertical-offset="457" max-vertical-offset="6780">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <marker date="1422296511000" expanded="false" signature="13038:13079" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
