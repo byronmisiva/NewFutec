@@ -207,7 +207,7 @@ $estado['8'] = 'Fin del Partido';?>
         </div>
     </div>
     <!--El actions-->
-    <div class="col-md-12   margen0  panelGuest    clearfix">
+    <div class="col-md-12   margen0  <?php if (count($actions) > 0 ) echo "panelGuest" ?> clearfix">
         <?php
         if (count($actions) > 0) {
             foreach ($actions as $action) {
