@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/images.php" afterPath="$PROJECT_DIR$/admin/application/controllers/images.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/1a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/1b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/2a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/2b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/3a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/3b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/4a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/4b.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/5a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/5b.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -105,17 +114,17 @@
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.031914894" vertical-offset="5670" max-vertical-offset="7530">
-              <caret line="377" column="12" selection-start-line="377" selection-start-column="12" selection-end-line="377" selection-end-column="12" />
+              <caret line="377" column="0" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
               <folding>
-                <marker date="1422301201000" expanded="true" signature="16086:16125" placeholder="Select id,or..images..." />
-                <marker date="1422301201000" expanded="true" signature="16598:16856" placeholder="SELECT id, n..images..." />
-                <marker date="1422301201000" expanded="true" signature="16714:16833" placeholder="SELECT disti..stories..." />
-                <marker date="1422301201000" expanded="true" signature="17232:17523" placeholder="SELECT count..images..." />
-                <marker date="1422301201000" expanded="true" signature="17346:17500" placeholder="SELECT disti..stories..." />
-                <marker date="1422301201000" expanded="true" signature="17923:18170" placeholder="SELECT id, n..images..." />
-                <marker date="1422301201000" expanded="true" signature="18032:18147" placeholder="SELECT disti..stories..." />
-                <marker date="1422301201000" expanded="true" signature="18484:18776" placeholder="SELECT count..images..." />
-                <marker date="1422301201000" expanded="true" signature="18598:18753" placeholder="SELECT disti..stories..." />
+                <marker date="1422301203000" expanded="true" signature="16074:16113" placeholder="Select id,or..images..." />
+                <marker date="1422301203000" expanded="true" signature="16586:16844" placeholder="SELECT id, n..images..." />
+                <marker date="1422301203000" expanded="true" signature="16702:16821" placeholder="SELECT disti..stories..." />
+                <marker date="1422301203000" expanded="true" signature="17220:17511" placeholder="SELECT count..images..." />
+                <marker date="1422301203000" expanded="true" signature="17334:17488" placeholder="SELECT disti..stories..." />
+                <marker date="1422301203000" expanded="true" signature="17911:18158" placeholder="SELECT id, n..images..." />
+                <marker date="1422301203000" expanded="true" signature="18020:18135" placeholder="SELECT disti..stories..." />
+                <marker date="1422301203000" expanded="true" signature="18472:18764" placeholder="SELECT count..images..." />
+                <marker date="1422301203000" expanded="true" signature="18586:18741" placeholder="SELECT disti..stories..." />
               </folding>
             </state>
           </provider>
@@ -277,7 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="imagenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,25 +300,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="imagenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="galerias-fuera-de-juego" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,51 +318,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="imagenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
+              <option name="myItemId" value="galerias-fuera-de-juego" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="galeria17" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,11 +365,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego" />
       <recent name="$PROJECT_DIR$/admin/application/config" />
       <recent name="$PROJECT_DIR$/application/config" />
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/imagenes/femagazine" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/imagenes/moviles" />
@@ -3189,7 +3148,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422301195396</updated>
     </task>
-    <option name="localTasksCounter" value="454" />
+    <task id="LOCAL-00454" summary="incluye tabla de revista">
+      <created>1422301204197</created>
+      <option name="number" value="00454" />
+      <option name="project" value="LOCAL" />
+      <updated>1422301204198</updated>
+    </task>
+    <option name="localTasksCounter" value="455" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3214,7 +3179,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="23" width="1324" height="966" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -3228,7 +3193,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24882995" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27067083" sideWeight="0.67153287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27067083" sideWeight="0.67153287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3704,17 +3669,17 @@
     <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.031914894" vertical-offset="5670" max-vertical-offset="7530">
-          <caret line="377" column="12" selection-start-line="377" selection-start-column="12" selection-end-line="377" selection-end-column="12" />
+          <caret line="377" column="0" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
           <folding>
-            <marker date="1422301201000" expanded="true" signature="16086:16125" placeholder="Select id,or..images..." />
-            <marker date="1422301201000" expanded="true" signature="16598:16856" placeholder="SELECT id, n..images..." />
-            <marker date="1422301201000" expanded="true" signature="16714:16833" placeholder="SELECT disti..stories..." />
-            <marker date="1422301201000" expanded="true" signature="17232:17523" placeholder="SELECT count..images..." />
-            <marker date="1422301201000" expanded="true" signature="17346:17500" placeholder="SELECT disti..stories..." />
-            <marker date="1422301201000" expanded="true" signature="17923:18170" placeholder="SELECT id, n..images..." />
-            <marker date="1422301201000" expanded="true" signature="18032:18147" placeholder="SELECT disti..stories..." />
-            <marker date="1422301201000" expanded="true" signature="18484:18776" placeholder="SELECT count..images..." />
-            <marker date="1422301201000" expanded="true" signature="18598:18753" placeholder="SELECT disti..stories..." />
+            <marker date="1422301203000" expanded="true" signature="16074:16113" placeholder="Select id,or..images..." />
+            <marker date="1422301203000" expanded="true" signature="16586:16844" placeholder="SELECT id, n..images..." />
+            <marker date="1422301203000" expanded="true" signature="16702:16821" placeholder="SELECT disti..stories..." />
+            <marker date="1422301203000" expanded="true" signature="17220:17511" placeholder="SELECT count..images..." />
+            <marker date="1422301203000" expanded="true" signature="17334:17488" placeholder="SELECT disti..stories..." />
+            <marker date="1422301203000" expanded="true" signature="17911:18158" placeholder="SELECT id, n..images..." />
+            <marker date="1422301203000" expanded="true" signature="18020:18135" placeholder="SELECT disti..stories..." />
+            <marker date="1422301203000" expanded="true" signature="18472:18764" placeholder="SELECT count..images..." />
+            <marker date="1422301203000" expanded="true" signature="18586:18741" placeholder="SELECT disti..stories..." />
           </folding>
         </state>
       </provider>
