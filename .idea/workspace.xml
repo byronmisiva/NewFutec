@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/stories.php" afterPath="$PROJECT_DIR$/admin/application/controllers/stories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/images.php" afterPath="$PROJECT_DIR$/admin/application/controllers/images.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -64,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stories.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stories.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/stories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8467742" vertical-offset="3135" max-vertical-offset="13815">
+            <state vertical-scroll-proportion="-17.5" vertical-offset="3135" max-vertical-offset="13815">
               <caret line="237" column="37" selection-start-line="237" selection-start-column="37" selection-end-line="237" selection-end-column="37" />
               <folding>
                 <marker date="1422300850000" expanded="true" signature="12887:13497" placeholder="..." />
@@ -96,6 +96,26 @@
                 <marker date="1422300850000" expanded="false" signature="26400:26419" placeholder="..." />
                 <marker date="1422300850000" expanded="true" signature="30446:30517" placeholder="Select * Fro..stories..." />
                 <marker date="1422300850000" expanded="true" signature="30681:30788" placeholder="Update stori..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="images.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35106382" vertical-offset="5460" max-vertical-offset="7515">
+              <caret line="375" column="36" selection-start-line="375" selection-start-column="36" selection-end-line="375" selection-end-column="36" />
+              <folding>
+                <marker date="1422301186000" expanded="true" signature="16073:16112" placeholder="Select id,or..images..." />
+                <marker date="1422301186000" expanded="true" signature="16585:16843" placeholder="SELECT id, n..images..." />
+                <marker date="1422301186000" expanded="true" signature="16701:16820" placeholder="SELECT disti..stories..." />
+                <marker date="1422301186000" expanded="true" signature="17219:17510" placeholder="SELECT count..images..." />
+                <marker date="1422301186000" expanded="true" signature="17333:17487" placeholder="SELECT disti..stories..." />
+                <marker date="1422301186000" expanded="true" signature="17910:18157" placeholder="SELECT id, n..images..." />
+                <marker date="1422301186000" expanded="true" signature="18019:18134" placeholder="SELECT disti..stories..." />
+                <marker date="1422301186000" expanded="true" signature="18471:18763" placeholder="SELECT count..images..." />
+                <marker date="1422301186000" expanded="true" signature="18585:18740" placeholder="SELECT disti..stories..." />
               </folding>
             </state>
           </provider>
@@ -136,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomenano.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_megabanner.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_halfbanner.php" />
@@ -187,6 +206,7 @@
         <option value="$PROJECT_DIR$/admin/application/views/blogs/insert.php" />
         <option value="$PROJECT_DIR$/admin/js/ajax.js" />
         <option value="$PROJECT_DIR$/admin/application/controllers/stories.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/images.php" />
       </list>
     </option>
   </component>
@@ -3151,7 +3171,19 @@
       <option name="project" value="LOCAL" />
       <updated>1422300790882</updated>
     </task>
-    <option name="localTasksCounter" value="451" />
+    <task id="LOCAL-00451" summary="incluye tabla de revista">
+      <created>1422300855133</created>
+      <option name="number" value="00451" />
+      <option name="project" value="LOCAL" />
+      <updated>1422300855133</updated>
+    </task>
+    <task id="LOCAL-00452" summary="incluye tabla de revista">
+      <created>1422301036456</created>
+      <option name="number" value="00452" />
+      <option name="project" value="LOCAL" />
+      <updated>1422301036456</updated>
+    </task>
+    <option name="localTasksCounter" value="453" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3271,13 +3303,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5685484" vertical-offset="468" max-vertical-offset="1215">
-          <caret line="50" column="92" selection-start-line="50" selection-start-column="92" selection-end-line="50" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34879032" vertical-offset="4897" max-vertical-offset="5850">
@@ -3637,7 +3662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/controllers/stories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8467742" vertical-offset="3135" max-vertical-offset="13815">
+        <state vertical-scroll-proportion="-17.5" vertical-offset="3135" max-vertical-offset="13815">
           <caret line="237" column="37" selection-start-line="237" selection-start-column="37" selection-end-line="237" selection-end-column="37" />
           <folding>
             <marker date="1422300850000" expanded="true" signature="12887:13497" placeholder="..." />
@@ -3666,6 +3691,24 @@
             <marker date="1422300850000" expanded="false" signature="26400:26419" placeholder="..." />
             <marker date="1422300850000" expanded="true" signature="30446:30517" placeholder="Select * Fro..stories..." />
             <marker date="1422300850000" expanded="true" signature="30681:30788" placeholder="Update stori..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35106382" vertical-offset="5460" max-vertical-offset="7515">
+          <caret line="375" column="36" selection-start-line="375" selection-start-column="36" selection-end-line="375" selection-end-column="36" />
+          <folding>
+            <marker date="1422301186000" expanded="true" signature="16073:16112" placeholder="Select id,or..images..." />
+            <marker date="1422301186000" expanded="true" signature="16585:16843" placeholder="SELECT id, n..images..." />
+            <marker date="1422301186000" expanded="true" signature="16701:16820" placeholder="SELECT disti..stories..." />
+            <marker date="1422301186000" expanded="true" signature="17219:17510" placeholder="SELECT count..images..." />
+            <marker date="1422301186000" expanded="true" signature="17333:17487" placeholder="SELECT disti..stories..." />
+            <marker date="1422301186000" expanded="true" signature="17910:18157" placeholder="SELECT id, n..images..." />
+            <marker date="1422301186000" expanded="true" signature="18019:18134" placeholder="SELECT disti..stories..." />
+            <marker date="1422301186000" expanded="true" signature="18471:18763" placeholder="SELECT count..images..." />
+            <marker date="1422301186000" expanded="true" signature="18585:18740" placeholder="SELECT disti..stories..." />
           </folding>
         </state>
       </provider>
