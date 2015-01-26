@@ -27,7 +27,7 @@ class Site extends MY_Controller
         if ($isMobile) {
             redirect(base_url() . 'site/movil/');
         } else {
-        $this->home();
+            $this->home();
         }
     }
 
@@ -67,8 +67,19 @@ class Site extends MY_Controller
     // para la final se comentan la llamada a las secciones.
     public function home()
     {
+        $this->load->library('user_agent');
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $isMobile = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $isMobile = true;
+        }
 
 
+        if ($isMobile) {
+            redirect(base_url() . 'site/movil/');
+        } else {
             // para la final se comentan la llamada a las secciones.
             $this->output->cache(CACHE_DEFAULT);
             $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
@@ -91,7 +102,7 @@ class Site extends MY_Controller
             $data['footer'] = $this->contenido->footer();
             $data['bottom'] = $this->contenido->bottom();
 
-
+        }
         $this->templates->_index($data);
     }
 
@@ -214,7 +225,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -326,7 +337,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -425,7 +436,7 @@ class Site extends MY_Controller
 
         $title = "Marcador En Vivo";
 
-        $fechas = $this->matches->matchesLive($title );
+        $fechas = $this->matches->matchesLive($title);
         $this->singleConten($title, $fechas);
     }
 
@@ -487,7 +498,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -588,7 +599,7 @@ class Site extends MY_Controller
 
          } else {*/
 
-        $data['top1'] = $this->banners->top1(). $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
