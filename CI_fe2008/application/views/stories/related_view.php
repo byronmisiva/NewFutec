@@ -1,1 +1,0 @@
-<input type="text" id="tags" name="related" size="80" value="<?php echo set_value('related')?>"/>*
