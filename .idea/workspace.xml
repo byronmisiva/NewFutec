@@ -4,18 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/original/30579639b8ff0dd19cf7fa2c2cbd6b8c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/original/81c0431f93f995111747073b3605d049.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb150/30579639b8ff0dd19cf7fa2c2cbd6b8c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb150/81c0431f93f995111747073b3605d049.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb300/30579639b8ff0dd19cf7fa2c2cbd6b8c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb300/81c0431f93f995111747073b3605d049.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb400/30579639b8ff0dd19cf7fa2c2cbd6b8c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb400/81c0431f93f995111747073b3605d049.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb500/30579639b8ff0dd19cf7fa2c2cbd6b8c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/imagenes/images/thumb500/81c0431f93f995111747073b3605d049.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/images.php" afterPath="$PROJECT_DIR$/admin/application/controllers/images.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/images/view_thumb.php" afterPath="$PROJECT_DIR$/admin/application/views/images/view_thumb.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -111,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="images.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="images.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40524194" vertical-offset="4989" max-vertical-offset="7515">
-              <caret line="346" column="58" selection-start-line="346" selection-start-column="23" selection-end-line="346" selection-end-column="58" />
+            <state vertical-scroll-proportion="-4.92" vertical-offset="1269" max-vertical-offset="7515">
+              <caret line="101" column="57" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="57" />
               <folding>
                 <marker date="1422306981000" expanded="true" signature="16340:16379" placeholder="Select id,or..images..." />
                 <marker date="1422306981000" expanded="true" signature="16852:17110" placeholder="SELECT id, n..images..." />
@@ -126,6 +116,18 @@
                 <marker date="1422306981000" expanded="true" signature="18286:18401" placeholder="SELECT disti..stories..." />
                 <marker date="1422306981000" expanded="true" signature="18738:19030" placeholder="SELECT count..images..." />
                 <marker date="1422306981000" expanded="true" signature="18852:19007" placeholder="SELECT disti..stories..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_thumb.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/images/view_thumb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09513742" vertical-offset="0" max-vertical-offset="473">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_megabanner.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_halfbanner.php" />
         <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
@@ -217,6 +218,7 @@
         <option value="$PROJECT_DIR$/admin/application/controllers/stories.php" />
         <option value="$PROJECT_DIR$/admin/application/config/config.php" />
         <option value="$PROJECT_DIR$/admin/application/controllers/images.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/images/view_thumb.php" />
       </list>
     </option>
   </component>
@@ -3127,7 +3129,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422304662819</updated>
     </task>
-    <option name="localTasksCounter" value="457" />
+    <task id="LOCAL-00457" summary="incluye tabla de revista">
+      <created>1422306994777</created>
+      <option name="number" value="00457" />
+      <option name="project" value="LOCAL" />
+      <updated>1422306994778</updated>
+    </task>
+    <option name="localTasksCounter" value="458" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3247,13 +3255,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34879032" vertical-offset="4897" max-vertical-offset="5850">
-          <caret line="338" column="97" selection-start-line="338" selection-start-column="58" selection-end-line="338" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54435486" vertical-offset="645" max-vertical-offset="1260">
@@ -3641,8 +3642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/controllers/images.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40524194" vertical-offset="4989" max-vertical-offset="7515">
-          <caret line="346" column="58" selection-start-line="346" selection-start-column="23" selection-end-line="346" selection-end-column="58" />
+        <state vertical-scroll-proportion="-4.92" vertical-offset="1269" max-vertical-offset="7515">
+          <caret line="101" column="57" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="57" />
           <folding>
             <marker date="1422306981000" expanded="true" signature="16340:16379" placeholder="Select id,or..images..." />
             <marker date="1422306981000" expanded="true" signature="16852:17110" placeholder="SELECT id, n..images..." />
@@ -3653,6 +3654,16 @@
             <marker date="1422306981000" expanded="true" signature="18286:18401" placeholder="SELECT disti..stories..." />
             <marker date="1422306981000" expanded="true" signature="18738:19030" placeholder="SELECT count..images..." />
             <marker date="1422306981000" expanded="true" signature="18852:19007" placeholder="SELECT disti..stories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/images/view_thumb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09513742" vertical-offset="0" max-vertical-offset="473">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
