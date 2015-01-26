@@ -234,6 +234,8 @@ class Stories extends CI_Controller {
 		}
 		if (isset ($_SERVER['HTTP_REFERER'])) {
 		    $data['previous_url']=$_SERVER['HTTP_REFERER'];
+        } else {
+            $data['previous_url']='';
         }
 		$this->view($this->model->name.'/insert',$data);
 	}
