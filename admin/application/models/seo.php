@@ -41,7 +41,7 @@ class Seo extends CI_Model {
         $result[] = array ("url" => base_url() . "copa-sudamericana" , "desc" => "Copa Sudamericana resultados" );
         $result[] = array ("url" => base_url() . "zona-fe" , "desc" => "Zona FE" );
         $result[] = array ("url" => base_url() . "revista-fe-magazine" , "desc" => "FE Magazine" );
-        $result[] = array ("url" => base_url() . "nuestros-embajadores" , "desc" => "Nuestros embajadores" );
+        $result[] = array ("url" => base_url() . "nuestros-embajadores" , "desc" => "En el Exterior" );
  
       return $result;
     }

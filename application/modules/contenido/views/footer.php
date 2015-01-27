@@ -24,9 +24,7 @@
             <a href="<?= base_url('lo-mas-leido') ?>">Lo más leído</a>
         </div>
 
-        <div class="col-md-12 separa">
-            <a href="<?= base_url('lo-mas-leido') ?>">Lo más enviado</a>
-        </div>
+
         <div class="col-md-12 ">
             <a href="<?= base_url('lo-mas-leido') ?>">Lo más buscado</a>
         </div>
@@ -46,21 +44,17 @@
             <a href="<?= base_url('calendario') ?>">Calendario</a>
         </div>
         <div class="col-md-12 separa">
-            <a href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a>
+            <a href="<?= base_url('nuestros-embajadores') ?>">En el Exterior</a>
         </div>
         <div class="col-md-12 separa">
-            <a href="<?= base_url('futbol-internacional') ?>">Fútbol internacional</a>
-        </div>
-
-        <div class="col-md-12 separa">
-            <a href="<?= base_url('eliminatorias') ?>">Eliminatioras 2018</a>
+            <a href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a>
         </div>
 
         <div class="col-md-12 separa">
             <a href="<?= base_url('zona-fe') ?>">Zona FE</a>
         </div>
         <div class="col-md-12 ">
-            <a href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a>
+            <a href="<?= base_url('fuera-de-juego') ?>">Fuera de Juego</a>
         </div>
     </div>
     <div class="col-md-3 col-sm-3 hide">

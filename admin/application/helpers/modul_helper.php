@@ -281,7 +281,7 @@ class Modul
         $this->CI->load->model('story');
         $this->rotativas(5);
 
-        $data['name'] = 'Nuestros Embajadores';
+        $data['name'] = 'En el Exterior';
         $data['section'] = $this->section->id;
         //TODO: Poner la variable general de la seccion ecuatorianos en el exterior
         $data['ecuatorianos'] = $this->CI->story->get_more(28, $this->noticias);

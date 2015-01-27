@@ -276,7 +276,7 @@ class Site extends MY_Controller
 
     public function nuestrosembajadores()
     {
-        $this->seccion(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Nuestros Embajadores", "nuestrosembajadores", "nuestrosembajadores");
+        $this->seccion(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "En el Exterior", "nuestrosembajadores", "nuestrosembajadores");
     }
 
     public function copalibertadores()
