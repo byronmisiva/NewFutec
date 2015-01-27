@@ -74,7 +74,7 @@ define('ZONAFEPOS',1); //ZonaFe
 
 //blogs
 define('ZONANUESTROSEMBAJADORES'   ,28); //En el Exterior
-define('ZONANUESTROSEMBAJADORESPOS',2); //En el Exterior
+define('ZONANUESTROSEMBAJADORESPOS',null); //En el Exterior
 
 //blogs
 define('ZONACOPALIBERTADORES'   ,31);

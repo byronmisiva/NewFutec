@@ -80,7 +80,7 @@ $this->load->view('header');
                         <ul class="dropdown-menu" role="menu">
                             <li><a class="clickmenu" href="<?= base_url('copa-libertadores') ?>">Copa Libertadores</a></li>
                             <li><a class="clickmenu" href="<?= base_url('copa-sudamericana') ?>">Copa Sudamericana</a></li>
-<!--                            <!--<li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>-->
+                          <!--<li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>-->
                         </ul>
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
