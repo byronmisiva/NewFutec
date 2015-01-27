@@ -16,7 +16,7 @@
                 alt="Fútbol Nacional"
                 onmouseover="this.src ='<?= base_url(); ?>/imagenes/template/menu/rollover_03n.png'"
                 onmouseout="this.src ='<?= base_url(); ?>/imagenes/template/menu/barra_03n.png'"/></a>
-        <a href='<?= base_url(); ?>nuestros-embajadores'><img src="<?= base_url(); ?>imagenes/template/menu/barra_04n.png"
+        <a href='<?= base_url(); ?>en-el-exterior'><img src="<?= base_url(); ?>imagenes/template/menu/barra_04n.png"
                                                              border="0" title="En el Exterior"
                                                              alt="En el Exterior"
                                                              onmouseover="this.src ='<?= base_url(); ?>/imagenes/template/menu/rollover_04n.png'"

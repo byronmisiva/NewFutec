@@ -83,7 +83,7 @@ $route['copa-sudamericana'] = "sections/publica/32";
 $route['zona-fe'] = "sections/publica/63";
 $route['femagazine'] = "sections/publica/58";
 $route['revista-fe-magazine'] = "sections/publica/58";
-$route['nuestros-embajadores'] = "sections/publica/28";
+$route['en-el-exterior'] = "sections/publica/28";
 $route['yo-amo-el-futbol'] = "sections/publica/66";
 
 /* End of file routes.php */

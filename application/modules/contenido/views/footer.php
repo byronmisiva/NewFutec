@@ -44,7 +44,7 @@
             <a href="<?= base_url('calendario') ?>">Calendario</a>
         </div>
         <div class="col-md-12 separa">
-            <a href="<?= base_url('nuestros-embajadores') ?>">En el Exterior</a>
+            <a href="<?= base_url('en-el-exterior') ?>">En el Exterior</a>
         </div>
         <div class="col-md-12 separa">
             <a href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a>

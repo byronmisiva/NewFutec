@@ -90,7 +90,7 @@ $route['copa-libertadores'] = "sections/publica/31";
 $route['copa-sudamericana'] = "sections/publica/32";
 $route['femagazine'] = "sections/publica/58";
 $route['revista-fe-magazine'] = "sections/publica/58";
-$route['nuestros-embajadores'] = "sections/publica/28";
+$route['en-el-exterior'] = "sections/publica/28";
 
 $route['marcador-en-vivo'] = "scoreboards/matches_today_open/ExMpLKey123";
 $route['calendario-campeonato-ecuatoriano'] = "matches_calendary/publica/49/calendario";
