@@ -146,9 +146,9 @@ class Site extends MY_Controller
         echo "Mensaje Enviado";
     }
 
-    public function masnoticias()
+        public function masnoticias()
     {
-        //$this->output->cache(CACHE_DEFAULT);
+
         $this->load->module('noticias');
 
         $offset = $_POST["offset"];

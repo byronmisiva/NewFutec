@@ -23,12 +23,9 @@
         <div class="col-md-12 separa">
             <a href="<?= base_url('lo-mas-leido') ?>">Lo más leído</a>
         </div>
-
-
         <div class="col-md-12 ">
-            <a href="<?= base_url('lo-mas-leido') ?>">Lo más buscado</a>
+            <a href="<?= base_url('fuera-de-juego') ?>">Fuera de Juego</a>
         </div>
-
     </div>
 
     <div class="col-md-3 col-sm-3">
@@ -53,9 +50,7 @@
         <div class="col-md-12 separa">
             <a href="<?= base_url('zona-fe') ?>">Zona FE</a>
         </div>
-        <div class="col-md-12 ">
-            <a href="<?= base_url('fuera-de-juego') ?>">Fuera de Juego</a>
-        </div>
+
     </div>
     <div class="col-md-3 col-sm-3 hide">
         <div class="col-md-12  azulfooter">
