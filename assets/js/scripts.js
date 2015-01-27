@@ -343,7 +343,7 @@ function clickMasNoticias() {
         var pos = $(this).attr('pos');
         $(this).html("Cargando...");
         masnoticas = this;
-        $.post(baseUrl + "site/masnoticias", {offset: offset, section: section, pos: pos}, function (data) {
+        $.post(baseUrl + "site/masnoticias/" + offset , {offset: offset, section: section, pos: pos}, function (data) {
             $(masnoticas).remove();
             noticiasExtras = $(".noticiasextras").html();
 

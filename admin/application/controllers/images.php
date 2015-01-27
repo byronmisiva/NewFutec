@@ -17,7 +17,7 @@ class Images extends CI_Controller {
 		$this->form_validation->set_rules('name', 'Nombre', 'required');
 		$this->form_validation->set_rules('text', 'Texto', 'required');
 		$this->form_validation->set_error_delimiters('<li>', '</li>');
-		$config['upload_path']='./imagenes/images/original/';
+		$config['upload_path']= '../imagenes/images/original/';
 		$config['allowed_types']='gif|jpg|png|swf';
 		$config['max_size']	= '100000';
 		$config['max_width']  = '4000';
@@ -223,7 +223,7 @@ class Images extends CI_Controller {
 		$this->image_lib->clear();
 		$config['image_library'] = 'gd2';
 		$config['source_image'] = $dimension['file_name'];
-		$config['new_image']='./imagenes/images/thumb'.$prefix.$dimension['width'].'/';
+		$config['new_image']='../imagenes/images/thumb'.$prefix.$dimension['width'].'/';
 		//$config['create_thumb'] = TRUE;
 		$config['maintain_ratio'] = TRUE;
 		$config['create_thumb'] = FALSE;
@@ -279,7 +279,7 @@ class Images extends CI_Controller {
 		$result=$this->db->get('images')->result();
 		echo count($result)."\n";
 		
-		if ($handle = opendir('./imagenes/images/thumbh80')) {
+		if ($handle = opendir('../imagenes/images/thumbh80')) {
 			while (false !== ($entry = readdir($handle))) {
 				if ($entry != "." && $entry != "..") {
 					echo "$entry\n";
@@ -332,8 +332,8 @@ class Images extends CI_Controller {
 		
 		// now crop the image from the center
 		$config['image_library']        = 'GD2';
-		$config['source_image']         = $imagen->thumb640;
-		$config['new_image']			='./imagenes/images/crop/';
+		$config['source_image']         = "../" .$imagen->thumb640;
+		$config['new_image']			='../imagenes/images/crop/';
 		$config['width']                = $_POST['width'];
 		$config['height']               = $_POST['height'];
 		$config['x_axis']               = $_POST['x1'];
@@ -346,7 +346,7 @@ class Images extends CI_Controller {
 			echo $this->image_lib->display_errors();
 		}
 		else{
-			$filename='http://new.futbolecuador.com/futec/imagenes/images/crop/'.$this->image_lib->source_image;
+			$filename='../imagenes/images/crop/'.$this->image_lib->source_image;
 			$dimension['file_name']=$filename;
 			$dimension['width']=160;
 			$this->images_thumb($dimension,'h');

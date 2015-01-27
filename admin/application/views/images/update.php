@@ -16,7 +16,7 @@
 	<?php echo form_open_multipart('images/update/'.$this->uri->segment(3));
 	echo form_hidden('id',$row->id);?>
 	<table>
-	<tr><td></td><td style='padding-left: 10px;'><?=img(array('src'=>$row->thumb150,'border'=>'0'))?></td></tr>
+	<tr><td></td><td style='padding-left: 10px;'><?=img(array('src'=>"http://www.futbolecuador.com/" .$row->thumb150,'border'=>'0'))?></td></tr>
 	<tr><td>Nombre:</td><td><input type="text" name="name" value="<?=$row->name?>" />*</td></tr>
 	<tr><td>Texto:</td><td><input type="text" name="text" value="<?=$row->text?>" />*</td></tr>
 	<tr><td>Imagen:</td><td><input type="file" name="original"  /></td></tr>

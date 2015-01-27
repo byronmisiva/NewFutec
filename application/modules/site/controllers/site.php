@@ -148,10 +148,10 @@ class Site extends MY_Controller
 
         public function masnoticias()
     {
-
         $this->load->module('noticias');
 
-        $offset = $_POST["offset"];
+
+        $offset = $this->uri->segment(3);
         $idsection = $_POST["section"];
         $posSection = $_POST["pos"];
 
