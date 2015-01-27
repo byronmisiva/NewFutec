@@ -3,6 +3,15 @@
     <h4 class="contenidos">Perfil</h4>
 </div>
 <div class="row noticia-content">
+    <div class="col-md-6 separador10     ">
+
+        <div class="col-md-12 separador10">
+            <?php if (isset($infoEquipo->team_pic)) { ?>
+                <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->team_pic; ?>"
+                     class="img-responsive imagen-full" alt="Foto Equipo <?php echo $infoEquipo->name; ?>">
+            <?php } ?>
+        </div>
+    </div>
 
     <div class="col-md-6 separador10     ">
         <div class="col-md-12 separador5   h3">
@@ -36,15 +45,6 @@
                 echo $infoEquipo->couch; ?>
         </div>
     </div>
-    <div class="col-md-6 separador10     ">
-
-        <div class="col-md-12 separador10">
-            <?php if (isset($infoEquipo->team_pic)) { ?>
-                <img src="http://www.futbolecuador.com/<?php echo $infoEquipo->team_pic; ?>"
-                     class="img-responsive imagen-full" alt="Foto Equipo <?php echo $infoEquipo->name; ?>">
-            <?php } ?>
-        </div>
-    </div>
 </div>
 
 
@@ -65,7 +65,7 @@ echo $fechas;
             <h4 class="contenidos">El Equipo </h4>
         </div>
         <div class="col-md-12  margen0 separador10 separador10r ">
-        <div class="borde">
+        <div class="borde col-md-12  margen0">
             <div class="col-md-6 col-xs-6 separador10    ">
                 <?php if (isset($infoEquipo->shield)) { ?>
                     <img class="img-responsive imagen-full"

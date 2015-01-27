@@ -184,7 +184,7 @@
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('futbol-internacional') ?>" class="pull-left">Fútbol Internacional</a>
+    <a href="<?= base_url('zona-fe') ?>" class="pull-left">Zona FE</a>
     <!-- dropdown-menu -->
 </li>
 <!-- mega menu -->
@@ -230,7 +230,7 @@
 <!-- list elements -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('zona-fe') ?>" class="pull-left">Zona FE</a>
+    <a href="<?= base_url('futbol-internacional') ?>" class="pull-left">Fútbol Internacional</a>
     <!-- dropdown-menu -->
 </li>
 <!-- mega menu -->

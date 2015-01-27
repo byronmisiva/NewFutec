@@ -297,7 +297,7 @@ class Site extends MY_Controller
 
     public function futbolinternacional()
     {
-        $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Futbol Internacional", "futbolinternacional", "futbolinternacional");
+        $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Fútbol Internacional", "futbolinternacional", "futbolinternacional");
     }
 
 

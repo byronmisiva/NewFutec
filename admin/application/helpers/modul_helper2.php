@@ -231,7 +231,7 @@ class Modul{
 		$this->CI->load->model('story');
 		$this->rotativas(5);
 		
-		$data['name']='Futbol Internacional';
+		$data['name']='Fútbol Internacional';
 		$data['section']=$this->section->id;
 		//TODO: Poner la variable general de la seccion ecuatorianos en el exterior
 		$data['ecuatorianos']=$this->CI->story->get_more(27,$this->noticias);
