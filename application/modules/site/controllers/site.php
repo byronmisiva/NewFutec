@@ -194,7 +194,7 @@ class Site extends MY_Controller
         $aux = $this->mdl_story->get_story($idNoticia);
         $bodytag = str_replace('"', '', strip_tags($aux->title));
 
-        $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
 
         // fin carga la informacion de la noticia
 
@@ -361,7 +361,7 @@ class Site extends MY_Controller
             $bodytag = str_replace('"', '', strip_tags($aux->title));
         }
 
-        $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
         // fin carga la informacion de la noticia
 
         $data['content'] = $storia . $noticiasCuerpo;
@@ -505,7 +505,7 @@ class Site extends MY_Controller
 
         $bodytag = $nameSeccion;
 
-        $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
 
         // fin carga la informacion de la noticia
         $data['content'] = $contenSeccion;
@@ -626,7 +626,7 @@ class Site extends MY_Controller
             $bodytag = str_replace('"', '', strip_tags($aux->title));
         }
 
-        $data['pageTitle'] = "Futbol Ecuador - " . $bodytag;
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
         // fin carga la informacion de la noticia
 
         // en caso de que sea la portada o el listado de noticias
