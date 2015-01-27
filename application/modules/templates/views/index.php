@@ -73,7 +73,7 @@ $this->load->view('header');
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
                     <li><a class="clickmenu" href="<?= base_url('nuestros-embajadores') ?>">Nuestros Embajadores</a></li>
-                    <li><a class="clickmenu" href="<?= base_url('site/lavoz') ?>">La voz de las tribunas</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('site/lavoz') ?>">La Voz de las Tribunas</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas
                             <span class="caret link-menu"></span></a>
@@ -85,7 +85,7 @@ $this->load->view('header');
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
                     <li><a class="clickmenu" href="<?= base_url('goleadores') ?>">Goleadores</a></li>
-                    <li><a class="clickmenu" href="<?= base_url('fe-magazine') ?>">Fe Magazine</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('fe-magazine') ?>">FE Magazine</a></li>
                     <li><a class="clickmenu" href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>
 

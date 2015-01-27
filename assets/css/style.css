@@ -240,13 +240,16 @@ footer {
     background-image: url("../img/title-rotativas.png");
     padding: 15px 10px;
 }
+
 .flexslidermobile .text-rotativas {
     width: 100%;
     background-color: transparent;
     background-image: url("../img/title-rotativas-mobile.png");
-    padding: 15px 10px;
+    padding: 5px 10px;
     display: none;
+    height: 45px;
 }
+
 
 .flexslider .text-rotativas h2 {
     font-size: 20px;
@@ -1018,12 +1021,15 @@ h4.contenidos {
         margin-right:4px;
         margin-left: 4px;
     }
-
     .flex-control-nav {
-        top: 1px !important;
-        text-align: center !important;
+        bottom: 1px !important;
+        /* text-align: center !important; */
         height: 12px;
         overflow: hidden;
+        width: auto;
+        left: 150px;
+        display: block;
+        /* position: absolute; */
     }
     .separador20-xs {
         margin-top: 75px;
