@@ -45,7 +45,7 @@ $route['404_override'] = '';
 $route['zona-fe'] = "site/zonafe";
 $route['la-voz-de-las-tribunas'] = "site/lavoz";
 $route['lo-mas-leido'] = "site/masleido";
-$route['nuestros-embajadores'] = "site/nuestrosembajadores";
+$route['en-el-exterior'] = "site/nuestrosembajadores";
 
 $route['copa-libertadores'] = "site/copalibertadores";
 $route['copa-sudamericana'] = "site/copasudamericana";

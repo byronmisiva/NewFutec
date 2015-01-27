@@ -200,20 +200,20 @@
             <div class="row">
                 <div class="col-sm-1  ">
                 </div>
-                <div class="col-sm-3  text-center separador-dotted">
+                <div class="col-sm-4  text-center separador-dotted">
                     <a href="<?= base_url('copa-libertadores') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-libertadores.png') ?>" alt="Copa Libertadores">
                     </a>
 
                 </div>
                 <!-- end col-4 -->
-                <div class="col-sm-3 text-center separador-dotted">
+                <div class="col-sm-4 text-center separador-dotted">
                     <a href="<?= base_url('copa-sudamericana') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana">
                     </a>
                 </div>
                 <!-- end col-4 -->
-                <div class="col-sm-3 text-center">
+                <div class="col-sm-3 text-center hidden">
                     <a href="<?= base_url('copa-america') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America">
                     </a>
@@ -237,6 +237,9 @@
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
     <a href="<?= base_url('fe-magazine') ?>" class="pull-left">FE Magazine</a>
+</li>
+<li class="dropdown fhmm-fw">
+    <a href="<?= base_url('fuera-de-juego') ?>" class="pull-left">Fuera de Juego</a>
 </li>
 </ul>
 <!-- end nav navbar-nav -->
