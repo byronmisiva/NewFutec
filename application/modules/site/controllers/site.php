@@ -152,6 +152,9 @@ class Site extends MY_Controller
 
 
         $offset = $this->uri->segment(3);
+        $porciones = explode("-", $offset);
+        $offset =  $porciones[0];
+
         $idsection = $this->uri->segment(4);
         $posSection = $this->uri->segment(5);
         //$idsection = $_POST["section"];
