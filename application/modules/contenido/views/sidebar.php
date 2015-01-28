@@ -208,7 +208,6 @@
                                                             </li>
                                                             <li class="list-group-item">
                                                                 <div class="col-md-1  text-center">
-
                                                                 </div>
                                                                 <div class="col-md-1  text-right">
                                                                     <img
