@@ -45,7 +45,7 @@
 		<div style='background-color:#FFFFFF; width: 570px;'>
 			<font size=2>
 			<br><br>
-				<b>Suscripciones:</b> Este e-mail es autogenerado y lo recibes porque te suscribiste a este bolet&iacute;n a trav&eacute;s de <a href="<?=base_url()?>" target="_blank">Futbol Ecuador</a>.
+				<b>Suscripciones:</b> Este e-mail es autogenerado y lo recibes porque te suscribiste a este bolet&iacute;n a trav&eacute;s de <a href="<?=base_url()?>" target="_blank">Futbol Ecuador</a>. 
 				Si deseas modificar tus suscripciones, puedes hacerlo <a href="<?=base_url()?>" target="_blank">aqu&iacute;</a>.
 			</font>
 		</div>

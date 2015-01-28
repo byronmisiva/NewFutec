@@ -127,13 +127,14 @@ class Mdl_story extends MY_Model
 
     function cuentaVisita($id)
     {
-        $aux = $this->db->query('update stories_stats set `reads` = `reads` + 1 where story_id=' . $id);
+        $sql = 'update stories_stats set `reads` = `reads` + 1 where story_id=' . $id;
+        $aux = $this->db->query($sql);
         return $aux;
     }
 
     function get_plus($num = 5, $offset = 0)
     {
-//todo terminar esta funcion
+        //todo terminar esta funcion
         $past_days = 7;
         $last_month = date('Y-m-d', mktime(0, 0, 0, date("m"), date("d") - $past_days, date("Y")));
         $this->db->where('s.created >', $last_month);

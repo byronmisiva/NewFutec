@@ -188,9 +188,10 @@ class Site extends MY_Controller
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
-// carga la informacion de la noticia
+        // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
         $storia = $this->story->get_complete($idNoticia);
+
         $aux = $this->mdl_story->get_story($idNoticia);
         $bodytag = str_replace('"', '', strip_tags($aux->title));
 
