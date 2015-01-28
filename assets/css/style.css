@@ -17,7 +17,7 @@
 }
 
 body {
-    color: #666666  ;
+    color: #333333  ;
     font-size: 12px;
 }
 
@@ -720,8 +720,8 @@ sub {
 
 .list-group-item {
     background-color: #f1f1f1;
-    height: 25px;
-    padding: 3px;
+    height: 50px;
+    padding: 0px;
 }
 
 #proximafecha .well, #resultado .well {
@@ -1308,4 +1308,11 @@ div#closeBanner {
 
 .femagazine .carousel-indicators {
     bottom: -12px;
+}
+
+.bordeabajo {
+    border-bottom: 1px solid #000000;
+}
+.bordeizquierda {
+    border-left: 1px solid #000000;
 }
