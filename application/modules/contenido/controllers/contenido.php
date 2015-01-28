@@ -254,9 +254,9 @@ class Contenido extends MY_Controller
         $this->load->module('story');
         $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
 
-        //La voz de las tribunas
+        //La Voz de las Tribunas
         $this->load->module('noticias');
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
         $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
@@ -329,9 +329,9 @@ class Contenido extends MY_Controller
         $this->load->module('story');
         $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
 
-        //La voz de las tribunas
+        //La Voz de las Tribunas
         $this->load->module('noticias');
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La voz de las tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
         $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");

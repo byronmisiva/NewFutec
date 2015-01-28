@@ -246,7 +246,7 @@ class Welcome extends CI_Controller {
 		$data['img']=base_url().'imagenes/moviles/button_vt.jpg';
 		$data['bg1']="#398BB0";
 		$data['bg2']="#0D4664";
-		$data['nombre']="La voz de las tribunas";
+		$data['nombre']="La Voz de las Tribunas";
 		$this->template->write_view('button2', 'movil/sms_button', $data, FALSE);
 		
 		$data='';

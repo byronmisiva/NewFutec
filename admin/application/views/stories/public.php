@@ -26,7 +26,7 @@
 		<a href="http://www.twitter.com/<?=$author->twitter;?>" style='color:#5599BB;' target='_blank'>@<?=$author->twitter;?></a>
 	</div>
 	<div id='blog'>
-		<?='<br/><b>La voz de las tribunas:</b> <a href="'.base_url().'stories/publica/'.$blog[0]->id.'">'.$blog[0]->title.'</a><br/><br/>'?>
+		<?='<br/><b>La Voz de las Tribunas:</b> <a href="'.base_url().'stories/publica/'.$blog[0]->id.'">'.$blog[0]->title.'</a><br/><br/>'?>
 	</div>
 
     <div id='blog'>

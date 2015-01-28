@@ -269,7 +269,7 @@ class Site extends MY_Controller
 
     public function lavoz()
     {
-        $this->seccion(LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "La voz de las tribunas", "lavoz");
+        $this->seccion(LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "La Voz de las Tribunas", "lavoz");
     }
 
     public function masleido()

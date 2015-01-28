@@ -41,5 +41,5 @@
 
 
 <div class="col-md-12 col-sm-12 text-right fondoazul separador10 <?php if ($namesection == "Lo más Leído") echo "hidden" ?>">
-    <a href="<?php echo $linkShort; ?>"?>Más noticias</a>
+    <a href="<?php echo $linkShort; ?>"?>Más Noticias</a>
 </div>

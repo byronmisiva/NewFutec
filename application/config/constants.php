@@ -92,8 +92,8 @@ define('ZONACOPAAMERICAPOS',2);
 define('ZONAINTERNACIONAL'   ,66);
 define('ZONAINTERNACIONALPOS',1);
 
-define('LAVOZDELASTRIBUNAS',''); //La voz de las tribunas
-define('LAVOZDELASTRIBUNASPOS',14); //La voz de las tribunas
+define('LAVOZDELASTRIBUNAS',''); //La Voz de las Tribunas
+define('LAVOZDELASTRIBUNASPOS',14); //La Voz de las Tribunas
 
 define('LOMASLEIDO',63); //
 define('LOMASLEIDOPOS',1); //

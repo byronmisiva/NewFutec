@@ -301,7 +301,7 @@
     <? echo $zonaFe; ?>
 </div>
 
-<!--La voz de las tribunas-->
+<!--La Voz de las Tribunas-->
 <div class="col-md-12 separador10 margen0r">
     <? echo $laVozDeLasTribunas; ?>
 </div>

@@ -1,7 +1,7 @@
 <div id='modulo'>
 <table class='mas_noticias' cellpadding="0" cellspacing="0" width="100%" style='background-color:white; padding-bottom: 5px;'>
 <tr>
-<th onClick='window.location = "<?=base_url().'stories/more/'.$section;?>";' style='cursor: pointer;'>Más noticias</th>
+<th onClick='window.location = "<?=base_url().'stories/more/'.$section;?>";' style='cursor: pointer;'>Más Noticias</th>
 <th onClick='window.location = "<?=base_url().'stories/more/28'?>";' style='cursor: pointer;'><?=$name?></th>
 </tr>
 <tr>
