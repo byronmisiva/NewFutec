@@ -190,7 +190,7 @@
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('en-el-exterior') ?>" class="pull-left">En el exterior</a>
+    <a href="<?= base_url('en-el-exterior') ?>" class="pull-left">En el Exterior</a>
 </li>
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
@@ -236,7 +236,7 @@
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('fe-magazine') ?>" class="pull-left">FE Magazine</a>
+    <a href="<?= base_url('fe-magazine') ?>" class="pull-left">Magazine</a>
 </li>
 <li class="dropdown fhmm-fw">
     <a href="<?= base_url('fuera-de-juego') ?>" class="pull-left">Fuera de Juego</a>

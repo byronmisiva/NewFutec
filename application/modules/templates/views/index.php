@@ -85,7 +85,7 @@ $this->load->view('header');
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
                     <li><a class="clickmenu" href="<?= base_url('goleadores') ?>">Goleadores</a></li>
-                    <li><a class="clickmenu" href="<?= base_url('fe-magazine') ?>">FE Magazine</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('fe-magazine') ?>">Magazine</a></li>
                     <li><a class="clickmenu" href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>
 
@@ -122,14 +122,14 @@ $this->load->view('header');
         </div>
     <?php } ?>
     <div class="row ">
-        <div class="col-md-8  col-sm-8 ">
-            <div class="row margen0  content">
+        <div class="col-md-8  col-sm-8 zonacontenido">
+            <div class="row margen0  content ">
                 <?php
                 echo $content;
                 ?>
             </div>
         </div>
-        <div class="col-md-4 col-sm-4 sidebar hidden-xs">
+        <div class="col-md-4 col-sm-4 sidebar hidden-xs zonasidebar">
             <?php
             echo $sidebar;
             ?>

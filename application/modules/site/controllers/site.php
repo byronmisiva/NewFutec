@@ -379,7 +379,7 @@ class Site extends MY_Controller
         $this->output->cache(CACHE_DEFAULT);
         $this->load->module('contenido');
         $femagazine = $this->contenido->femagazine();
-        $this->singleConten("Fe Magazine", $femagazine);
+        $this->singleConten("Magazine", $femagazine);
     }
 
     public function search()

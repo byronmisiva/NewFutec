@@ -284,7 +284,7 @@ if (isset($this->establet)){
     </div>
     <div class="deviceFE"></div>
     <div class="mensajeFE">
-        <p>Descárgate la edición mundialista de FE Magazine</p>
+        <p>Descárgate la edición mundialista de Magazine</p>
     </div>
     <div class="contenedor-btn-FE">
         <a href="http://goo.gl/76UWV" target='_blank'  >

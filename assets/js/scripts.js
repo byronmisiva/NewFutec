@@ -1,4 +1,5 @@
 var masnoticas = "";
+
 jQuery(document).ready(function () {
     //ocultar el menu al dar click
     $(".clickmenu").click (function () {
@@ -23,6 +24,25 @@ jQuery(document).ready(function () {
             $(this).addClass("img-responsive")
         })
     }
+
+    console.log ('revisa ');
+    setTimeout(function(){
+        console.log ("revisa")
+        if (  $("body").width() > 600) {
+            zonacontenido = $(".zonacontenido").height()
+            zonasidebar = $(".zonasidebar").height();
+            console.log (zonacontenido);
+            console.log (zonasidebar);
+
+            if (zonacontenido > zonasidebar ) {
+                $(".zonasidebar").height(zonacontenido);
+            } else {
+                $(".zonacontenido").height(zonasidebar);
+            }
+        }
+
+    }, 3000);
+
 
     $("#enviarcontacto").click(function () {
         cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")
@@ -103,6 +123,9 @@ setTimeout(function () {
     ajustesRotativas ();
     altoshome();
 }, 10000)
+
+// igualar columnas de contenidos
+
 
 
 //recargar marcador en vivo REFRESH_VIVO

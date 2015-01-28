@@ -48,7 +48,7 @@ class Magazine extends CI_Controller {
 		
 		$this->load->library('email');
 		
-		$this->email->from('contact@misiva.com.ec',"FE Magazine");
+		$this->email->from('contact@misiva.com.ec',"Magazine");
 		$this->email->to('magazine@misiva.com.ec');
 		
 		$this->email->subject('Comentario desde FEMag');

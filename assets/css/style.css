@@ -1124,6 +1124,9 @@ h4.contenidos {
         margin: 0 0 5px;
 
     }
+    .altofema {
+        min-height: auto;
+    }
 }
 
 
@@ -1297,3 +1300,11 @@ div#closeBanner {
 }
 
 /*spalsh*/
+
+.altofema {
+   min-height: 156px;
+}
+
+.femagazine .carousel-indicators {
+    bottom: -12px;
+}
