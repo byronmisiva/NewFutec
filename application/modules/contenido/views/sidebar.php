@@ -34,7 +34,7 @@
 
 </div>
 
-
+<!--Calendario-->
 <div class="col-md-12 separador10  margen0r lateral">
 
 <div id="collapseTwo" class="panel-collapse collapse in">
@@ -46,7 +46,7 @@
            data-toggle="tab"><h4 class="panel-title">Resultados</h4></a></li>
     <li class=" half  text-center backcuadros">
         <a href="#proximafecha" role="tab"
-           data-toggle="tab"><h4 class="panel-title">Próxima fecha</h4></a></li>
+           data-toggle="tab"><h4 class="panel-title">Próxima Fecha</h4></a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -246,6 +246,8 @@
 
 
 </div>
+
+
 </div>
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
@@ -254,7 +256,7 @@
 
 </div>
 </div>
-
+<!--Fin calendario -->
 
 <div class="col-md-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>

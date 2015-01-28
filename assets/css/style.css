@@ -898,6 +898,7 @@ h2.gigante, h2:hover.gigante {
 }
 .panel-group .panel-heading a {
     color: #fff;
+    text-decoration: none;
 }
 
 
