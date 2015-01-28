@@ -64,6 +64,30 @@ class Mdl_matches extends MY_Model
         return $teams;
     }
 
+    function matches_all_team($championship, $team)
+    {
+        // Todo el calendario
+        $query = $this->db->query('Select m.*, m.date_match as dm, c.name as cn, r.name as rn, g.name as gn, s.season as sn, s.position as sp, mt.team_id_home as hid, mt.team_id_away as aid, st.name, t.name hname, t1.name aname, r.id as rid, g.id as gid
+								 From matches as m, groups as g, rounds as r, championships as c, schedules as s, matches_teams as mt, stadia as st, teams as t, teams as t1
+								 Where mt.match_id=m.id AND mt.team_id_home=t.id AND mt.team_id_away=t1.id AND m.schedule_id IN (SELECT sch.id
+																	    														 FROM   (SELECT round_id, s.position as p
+																																									FROM schedules AS s, championships AS ch
+																																									WHERE s.round_id = ch.active_round AND ch.id=' . $championship . '
+																																									ORDER BY p DESC) as s, schedules as sch
+																																 WHERE s.p=sch.position AND s.round_id=sch.round_id)
+									   AND m.group_id=g.id AND g.round_id=r.id AND r.championship_id=c.id AND c.active_round=r.id AND st.id=m.stadia_id AND m.schedule_id = s.id
+								 Order by dm asc');
+        if ($query->num_rows() == 0)
+            return NULL;
+        $teams = array();
+        // separamos por fechas
+        $fechaSub = "";
+        foreach ($query->result() as $row):
+            $teams[$row->sn][] = $row;
+        endforeach;
+        return $teams;
+    }
+
     function get_pics_teams($id)
     {
         $query = $this->db->query('Select  DISTINCT(t.id) as id ,t.shield, t.shield2

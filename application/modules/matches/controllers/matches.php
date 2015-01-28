@@ -118,7 +118,7 @@ class Matches extends MY_Controller
     public function matchesperteam($idEquipo, $idSerie)
     {
         $data['idEquipo'] = $idEquipo;
-        $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);
+        $data['teamsFecha'] = $this->mdl_matches->matches_all_team($idSerie,$idEquipo);
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
         return $this->load->view('matchesperteam', $data, true);
     }

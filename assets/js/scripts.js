@@ -24,10 +24,8 @@ jQuery(document).ready(function () {
             $(this).addClass("img-responsive")
         })
     }
-
-    console.log ('revisa ');
+    // pone en el mismo alto a los contenedores
     setTimeout(function(){
-        console.log ("revisa")
         if (  $("body").width() > 600) {
             zonacontenido = $(".zonacontenido").height()
             zonasidebar = $(".zonasidebar").height();
@@ -40,9 +38,7 @@ jQuery(document).ready(function () {
                 $(".zonacontenido").height(zonasidebar);
             }
         }
-
     }, 3000);
-
 
     $("#enviarcontacto").click(function () {
         cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")
