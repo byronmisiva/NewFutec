@@ -884,7 +884,8 @@ h2.gigante, h2:hover.gigante {
 }
 
 .noticiaabierta {
-    font-size: 12px;
+    font-size: 14px;
+    font-size: 1.64;
 }
 
  .block-title {
@@ -1311,8 +1312,12 @@ div#closeBanner {
 }
 
 .bordeabajo {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 3px;
 }
 .bordeizquierda {
-    border-left: 1px solid #000000;
+    border-left: 1px solid #dddddd;
+    height: 48px;
+    padding-top: 10px;
 }
+

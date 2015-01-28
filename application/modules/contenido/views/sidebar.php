@@ -188,44 +188,43 @@
                                        href="<?= base_url('site/partido/' . $this->contenido->_urlFriendly($partido->hname) . '-' . $this->contenido->_urlFriendly($partido->aname) . '/' . $partido->id) ?>">
                                         <ul class="list-group">
                                             <li class="list-group-item">
+                                                <div class="col-md-10 margen0">
+                                                    <div class="col-md-12 margen0   bordeabajo" >
+                                                        <div class="col-md-1 text-center">
 
-                                                <div class="col-md-1 text-center">
+                                                        </div>
+                                                        <div class="col-md-1 text-right ">
+                                                            <img
+                                                                src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"
+                                                                alt="<?php echo $partido->hname; ?>">
+                                                        </div>
+                                                        <div class="col-md-10  ">
+                                                            <?php echo $partido->hname; ?>
+                                                        </div>
 
-                                                </div>
-                                                <div class="col-md-1 text-right">
-                                                    <img
-                                                        src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"
-                                                        alt="<?php echo $partido->hname; ?>">
-                                                </div>
-                                                <div class="col-md-9  ">
-                                                    <?php echo $partido->hname; ?>
-
-                                                </div>
-                                                <div class="col-md-1 text-right margen0">
-                                                    <div style="font-size: 11px">
-                                                        <?php echo ucwords(utf8_encode(strftime("%d", strtotime($partido->date_match)))); ?>
                                                     </div>
+                                                    <div class="col-md-12 margen0   separador5">
+                                                        <div class=" col-md-1  text-center">
 
-                                                </div>
+                                                        </div>
+                                                        <div class="col-md-1  text-right">
+                                                            <img
+                                                                src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"
+                                                                alt="<?php echo $partido->aname; ?>">
+                                                        </div>
+                                                        <div class="col-md-10  ">
+                                                            <?php echo $partido->aname; ?>
+                                                        </div>
 
-                                            </li>
-                                            <li class="list-group-item">
-                                                <div class="col-md-1  text-center">
-                                                </div>
-                                                <div class="col-md-1  text-right">
-                                                    <img
-                                                        src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"
-                                                        alt="<?php echo $partido->aname; ?>">
-                                                </div>
-                                                <div class="col-md-9  ">
-                                                    <?php echo $partido->aname; ?>
-                                                </div>
-                                                <div class="col-md-1 text-right margen0">
-                                                    <div style="font-size: 11px">
-                                                        <?php echo ucwords(utf8_encode(strftime("%b", strtotime($partido->date_match)))); ?>
                                                     </div>
-
                                                 </div>
+                                                <div class="col-md-2 margen0 text-center bordeizquierda">
+                                                    <div style="font-size: 11px">
+                                                        <?php echo ucwords(utf8_encode(strftime("%d %b", strtotime($partido->date_match)))); ?>
+                                                        <?php echo ucwords(utf8_encode(strftime("%HH%M", strtotime($partido->date_match)))); ?>
+                                                    </div>
+                                                </div>
+
                                             </li>
 
                                         </ul>
