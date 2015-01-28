@@ -114,7 +114,8 @@ setInterval(function () {
 }, REFRESH_VIVO * 1000)
 
 //matchdetailestado
-machDetail = $ ('.matchdetail') ;
+
+machDetail = $('.matchdetail') ;
 if ( machDetail.length > 0) {
     estado = $ ('.matchdetailestado').html() ;
 
@@ -124,6 +125,7 @@ if ( machDetail.length > 0) {
             $.post(baseUrl + "site/MarcadorVivoDetail", {idEquipo: idEquipo}, function (data) {
 
                 $(".matchdetail").html(data);
+                console.log ("recarga");
             });
         }, REFRESH_VIVO * 1000)
     }
@@ -211,10 +213,7 @@ jQuery(function () {
 
     //jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').adjustHeightNoAnimation();
     ancho = $("body").width();
-
     if (ancho < 600) { if (ancho < 380) {visibles = 2} else {visibles = 3} } else {visibles = 5 }
-
-
     jQuery(".otrasmodelos").jCarouselLite({
         btnNext: ".next",
         btnPrev: ".prev",
@@ -240,7 +239,6 @@ jQuery(function () {
         });
     })
 });
-
 
 function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
     $(botEnvio).attr("disabled", true);
@@ -269,8 +267,6 @@ function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
             "email": $(mail).val(),
             "mensaje": $(mensaje).val()
         };
-
-
         $.ajax({
             data: datos,
             // hacemos referencia al archivo contacto.php
@@ -297,10 +293,6 @@ function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
 }
 
 jQuery(document).ready(function () {
-
-
-
-
     $('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",

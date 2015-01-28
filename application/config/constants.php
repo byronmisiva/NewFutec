@@ -62,8 +62,9 @@ define('SUDAMERICANA',52);
 //Futbolecuador
 define('CHAMP_DEFAULT',53);
 
-define('REFRESH_VIVO',300); //segundos
-define('CACHE_PARTIDOS',3); //minutos
+//define('REFRESH_VIVO',300); //segundos
+define('REFRESH_VIVO',60); //segundos
+define('CACHE_PARTIDOS',2); //minutos
 define('CACHE_MENU',60);	//minutos
 define('CACHE_MOVIL',5);	//minutos
 define('CACHE_DEFAULT',5);	//minutos

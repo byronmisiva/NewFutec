@@ -373,6 +373,6 @@ if (count($titularesLocal) > 0) {
 
 </div>
 <script>
-    var idEquipo = "<?php echo idEquipo; ?>";
+    var idEquipo = "<?php echo $idEquipo; ?>";
 
 </script>

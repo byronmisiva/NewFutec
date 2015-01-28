@@ -14,13 +14,13 @@
 	</div>
 	<?php echo form_open('histories/update/'.$this->uri->segment(3).'/'.$this->uri->segment(4));
 	$row=$query->result(0);
-	echo form_hidden('id',$row[0]->id);
+	echo form_hidden('id',$row[0]['id']);
 	echo form_hidden('team_id',$this->uri->segment(4));?>
 	<table>
 	<tr><td>Palmares:</td>
-	<td><textarea name="palmares" cols=20 rows=15><?=$row[0]->palmares ?></textarea>*</td></tr>
+	<td><textarea name="palmares" cols=20 rows=15><?=$row[0]['palmares'] ?></textarea>*</td></tr>
 	<tr><td>Mejores Jugadores:</td>
-	<td><textarea name="best_players" cols=20 rows=15><?=$row[0]->best_players ?></textarea>*</td></tr>
+	<td><textarea name="best_players" cols=20 rows=15><?=$row[0]['best_players'] ?></textarea>*</td></tr>
 	</table>
 	<br>
 	<table>

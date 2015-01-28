@@ -95,7 +95,7 @@ class Site extends MY_Controller
             $data['header2'] = $this->contenido->header2($dataHeader2);
             $data['top2'] = $this->banners->FE_Megabanner();
 
-            $data['content'] = $this->noticias->viewNoticiasHome();
+            $data['content'] = $this->noticias->viewNoticiasHome(true);
             $data['sidebar'] = $this->contenido->sidebar();
 
 
@@ -443,7 +443,7 @@ class Site extends MY_Controller
 
     public function partido()
     {
-        $this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_PARTIDOS);
 
         $this->load->module('matches');
         $id = $this->uri->segment(4);
@@ -467,7 +467,7 @@ class Site extends MY_Controller
     public function singleConten($nameSeccion, $contenSeccion)
     {
         // para la final se comentan la llamada a las secciones.
-        $this->output->cache(CACHE_DEFAULT);
+
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');

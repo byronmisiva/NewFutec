@@ -33,11 +33,33 @@ class Noticias extends MY_Controller
         $this->load->module('story');
         $noticias = array();
 
-        $rotativasData = $this->mdl_story->get_banner(6, 44);
+        $rotativasData = array();
 
-        $listRotativas = array();
-        foreach ($rotativasData as $rotativaData) {
-            $listRotativas[] = $rotativaData->id;
+        if (!$this->uri->segment(1)) {
+            $rotativasData = $this->mdl_story->get_banner(6, 44);
+            $excluded = array();
+            foreach ($rotativasData as $key => $row) {
+                $excluded[] = $row->id;
+                $rotativasData[$key]->sponsored = false;
+            }
+            //ponemos en caso de existir la noticia ZONA FE
+            //recupera  y cambia por la ultima noticia
+            $sponsor = current($this->mdl_story->get_zonafe($excluded));
+            $sponsor->id = $sponsor->sid;
+
+            if ($sponsor !== FALSE) {
+                array_pop($rotativasData);
+                array_push($rotativasData, $sponsor);
+            }
+        }
+
+        if (count($rotativasData) > 0) {
+            $listRotativas = array();
+            foreach ($rotativasData as $rotativaData) {
+                $listRotativas[] = $rotativaData->id;
+            }
+        } else {
+            $listRotativas = '';
         }
         $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas, $offset);
 
@@ -82,7 +104,6 @@ class Noticias extends MY_Controller
     }
 
 
-
     public function viewNoticias($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
         $this->output->cache(CACHE_DEFAULT);
@@ -104,7 +125,7 @@ class Noticias extends MY_Controller
             $noticias[] = $this->viewNoticia($dataStory);
         }
 
-        if ($mostrarBanner){
+        if ($mostrarBanner) {
             //intercalar banners
             $this->load->module('banners');
             $banners = array();
@@ -139,7 +160,7 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
+    public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
     {
         //$this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
@@ -147,7 +168,6 @@ class Noticias extends MY_Controller
 
         $data['idsection'] = $idsection;
         $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset);
-
 
 
         $dataStory['tipoLink'] = "secction";
@@ -224,7 +244,7 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiasequipo', $data, TRUE);
     }
 
-    public function viewseccion_plus($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true,$data = FALSE)
+    public function viewseccion_plus($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
     {
         $this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
@@ -245,8 +265,8 @@ class Noticias extends MY_Controller
         }
 
         //intercalo entre las noticias los banners.
-        if ($mostrarBanner){
-        $this->load->module('banners');
+        if ($mostrarBanner) {
+            $this->load->module('banners');
 
             //intercalar banners
             $this->load->module('banners');
