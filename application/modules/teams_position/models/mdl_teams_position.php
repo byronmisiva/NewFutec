@@ -430,7 +430,7 @@ class Mdl_teams_position extends MY_Model{
 
     function make_table($matches,$teams,$last_schedule){
 
-        //TODO: Bonificacion en Tabla acumulada
+        //TODO: Bonificacion en Tabla Acumulada
 
         $table=array();
 

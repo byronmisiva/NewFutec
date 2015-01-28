@@ -152,10 +152,12 @@ class Site extends MY_Controller
 
 
         $offset = $this->uri->segment(3);
-        $idsection = $_POST["section"];
-        $posSection = $_POST["pos"];
+        $idsection = $this->uri->segment(4);
+        $posSection = $this->uri->segment(5);
+        //$idsection = $_POST["section"];
+        //$posSection = $_POST["pos"];
 
-        if ($idsection == "") {
+        if ($idsection) {
             echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE - 1, $offset);
         } else {
             echo $this->noticias->viewSeccions("", $idsection, $posSection, "", RESULT_PAGE - 1, $offset, false);
@@ -272,7 +274,7 @@ class Site extends MY_Controller
 
     public function masleido()
     {
-        $this->seccion(LOMASLEIDO, LOMASLEIDOPOS, "Lo más leído", "masleido", "masleido");
+        $this->seccion(LOMASLEIDO, LOMASLEIDOPOS, "Lo más Leído", "masleido", "masleido");
     }
 
     public function nuestrosembajadores()
@@ -412,7 +414,7 @@ class Site extends MY_Controller
 
         $this->load->module('scoreboards');
         $tablapocisiones = $this->scoreboards->scoreboardFull($serie);
-        $this->singleConten("Tabla de posiciones", $tablapocisiones);
+        $this->singleConten("Tabla de Posiciones", $tablapocisiones);
     }
 
     public function resultados()

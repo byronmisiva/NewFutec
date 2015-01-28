@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<MARQUEE bgcolor = "#DDDDFF" width = 50% scrolldelay = 120> <b>N1</b> <i>Resultados de la fecha</i>  <font color="#FFFFFF">|</font>  <b>N2</b> <i>Tabla de posiciones</i></MARQUEE> 
+<MARQUEE bgcolor = "#DDDDFF" width = 50% scrolldelay = 120> <b>N1</b> <i>Resultados de la fecha</i>  <font color="#FFFFFF">|</font>  <b>N2</b> <i>Tabla de Posiciones</i></MARQUEE>
 
 </body>
 </html>

@@ -252,7 +252,7 @@ class Contenido extends MY_Controller
         //Lo más leído
 
         $this->load->module('story');
-        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO, "masleido");
+        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
 
         //La voz de las tribunas
         $this->load->module('noticias');
@@ -327,7 +327,7 @@ class Contenido extends MY_Controller
         //Lo más leído
 
         $this->load->module('story');
-        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más leído", LOMASLEIDO, "masleido");
+        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
 
         //La voz de las tribunas
         $this->load->module('noticias');

@@ -252,7 +252,7 @@
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
     <a class="result-link" href="<?= base_url('site/resultados/' . CHAMP_DEFAULT . '/' . $name_champ_default) ?>">Calendario
-        completo</a>
+        Completo</a>
 
 </div>
 </div>
@@ -262,7 +262,7 @@
     <? echo $bannersSidebar[0]; ?>
 </div>
 
-<!--Tabla de posiciones-->
+<!--Tabla de Posiciones-->
 <? echo $tablaposiciones; ?>
 
 

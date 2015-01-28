@@ -66,9 +66,9 @@
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
     <?php if ($champ == CHAMP_DEFAULT) { ?>
-        <a href="<?= base_url('goleadores') ?>">Tabla completa</a>
+        <a href="<?= base_url('goleadores') ?>">Tabla Completa</a>
     <?php } else { ?>
-        <a href="<?= base_url('site/goleadores/' . $champ) ?>">Tabla completa</a>
+        <a href="<?= base_url('site/goleadores/' . $champ) ?>">Tabla Completa</a>
     <?php } ?>
 </div>
 

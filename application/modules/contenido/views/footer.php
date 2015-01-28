@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-md-12 separa">
-            <a href="<?= base_url('lo-mas-leido') ?>">Lo más leído</a>
+            <a href="<?= base_url('lo-mas-leido') ?>">Lo más Leído</a>
         </div>
         <div class="col-md-12 ">
             <a href="<?= base_url('fuera-de-juego') ?>">Fuera de Juego</a>
@@ -86,7 +86,7 @@
 
         <div class="col-md-12 separador5 margen0">
 
-            <div class="col-md-11 ">
+            <div class="col-md-12 margen-contacto">
                 Tu opinión nos interesa, escríbe tus sugerencias o comentarios
             </div>
 
@@ -117,7 +117,7 @@
         </div>
         <div class="col-md-12 separador5 margen0">
 
-            <div class="col-md-12 ">
+            <div class="col-md-12 margen-contacto ">
                 Forma parte del selecto grupo de anunciantes de futbolecuador.com
             </div>
 

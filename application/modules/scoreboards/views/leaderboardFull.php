@@ -1,8 +1,8 @@
-<!--Tabla de posiciones-->
+<!--Tabla de Posiciones-->
 <div class="col-md-12 separador10-xs margen0r">
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
-            Tabla de posiciones
+            Tabla de Posiciones
         </h4>
     </div>
 
@@ -10,7 +10,7 @@
 
     <div class="panel-heading backcuadros">
         <h4 class="panel-title">
-            Tabla de posiciones acumulada
+            Tabla de Posiciones Acumulada
         </h4>
     </div>
 

@@ -199,7 +199,7 @@ class Welcome extends CI_Controller {
 			$this->template->write_view('title2', 'movil/title', $data, TRUE);
 		}
 
-        //leo la tabla de pocisiones acumulada
+        //leo la tabla de pocisiones Acumulada
         $tabla2 = $this->teams_position->get_table_by_champ(SERIE_A);$data='';
 		$data['sel']=$sel;
 		$data['grp']=$grp;
@@ -210,7 +210,7 @@ class Welcome extends CI_Controller {
             $data['title']='Tabla Acumulada';
             $this->template->write_view('title3', 'movil/title', $data, TRUE);
 		}
-        //fin posiciones acumuladas
+        //fin posiciones Acumuladas
 
 		$data='';
 		$noticias='';

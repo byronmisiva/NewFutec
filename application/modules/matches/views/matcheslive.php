@@ -8,7 +8,7 @@ $estado['5'] = 'Primer Extra';
 $estado['6'] = 'Segundo Extra';
 $estado['7'] = 'Penales';
 $estado['8'] = 'Fin del Partido';?>
-<!--Tabla de posiciones-->
+<!--Tabla de Posiciones-->
 
 
 <div class="col-md-12 separador10-xs margen0">

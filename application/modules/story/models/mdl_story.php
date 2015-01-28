@@ -166,6 +166,7 @@ class Mdl_story extends MY_Model
             $data[$key]->thumb2 = $imagenes[0]->thumb2;
             $data[$key]->thumb3 = $imagenes[0]->thumb3;
             $data[$key]->thumb300 = $imagenes[0]->thumb300;
+            $data[$key]->thumbh50 = $imagenes[0]->thumbh50;
         }
         return $data;
     }

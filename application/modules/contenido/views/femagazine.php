@@ -1,4 +1,4 @@
-<!--Tabla de posiciones-->
+<!--Tabla de Posiciones-->
 <div class="col-md-12 col-xs-12   separador10-xs-2 margen0r femagazine">
 <div class="panel-heading backcuadros">
     <h4 class="panel-title">

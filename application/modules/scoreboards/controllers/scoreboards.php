@@ -60,7 +60,7 @@ class Scoreboards extends MY_Controller
         return $this->load->view('leaderboardFull', $data, true);
     }
 
-    // Tabla de posiciones
+    // Tabla de Posiciones
     public function leaderboard($champ, $leaderboard = 'leaderboard')
     {
         $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
@@ -76,9 +76,9 @@ class Scoreboards extends MY_Controller
             return false;
         }
     }
-    //Fin Tabla de posiciones
+    //Fin Tabla de Posiciones
 
-    // Tabla de posiciones  acumulada
+    // Tabla de Posiciones  acumulada
     public function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
     {
         $this->load->module('teams_position');
@@ -91,7 +91,7 @@ class Scoreboards extends MY_Controller
 
         return $this->load->view($leaderboard, $data, true);
     }
-    //Fin Tabla de posiciones acumulada
+    //Fin Tabla de Posiciones acumulada
 
 
 }

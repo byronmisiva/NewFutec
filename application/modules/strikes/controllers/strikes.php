@@ -11,7 +11,7 @@ class Strikes extends MY_Controller
     }
 
 
-    //Fin Tabla de posiciones
+    //Fin Tabla de Posiciones
 
     public function goleadores($campeonato)
     {
