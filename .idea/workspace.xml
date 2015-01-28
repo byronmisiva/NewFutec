@@ -4,38 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/banners.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/banners.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/button.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/button.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/button2.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/button2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/calendar.js" afterPath="$PROJECT_DIR$/admin/js/calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/cards_confirm_delete.php" afterPath="$PROJECT_DIR$/admin/application/views/cards_confirm_delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/championships_view.php" afterPath="$PROJECT_DIR$/admin/application/views/championships_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/goals_vinsert.php" afterPath="$PROJECT_DIR$/admin/application/views/goals_vinsert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/headers_view.php" afterPath="$PROJECT_DIR$/admin/application/views/headers_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/matches/last_games.php" afterPath="$PROJECT_DIR$/admin/application/views/matches/last_games.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/logo.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/logo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/matches_calendary_today_view.php" afterPath="$PROJECT_DIR$/admin/application/views/matches_calendary_today_view.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" afterPath="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/modules_sections_vinsert.php" afterPath="$PROJECT_DIR$/admin/application/views/modules_sections_vinsert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/newsletters_confirm_delete.php" afterPath="$PROJECT_DIR$/admin/application/views/newsletters_confirm_delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/newsletters_preview.php" afterPath="$PROJECT_DIR$/admin/application/views/newsletters_preview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/newsletters_view.php" afterPath="$PROJECT_DIR$/admin/application/views/newsletters_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_confirm_delete.php" afterPath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_confirm_delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_confirm_delete_fteam.php" afterPath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_confirm_delete_fteam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/players_teams_view.php" afterPath="$PROJECT_DIR$/admin/application/views/players_teams_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_view.php" afterPath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_vupdate.php" afterPath="$PROJECT_DIR$/admin/application/views/players_teams/players_teams_vupdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/matches/public.php" afterPath="$PROJECT_DIR$/admin/application/views/matches/public.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/schedules_view.php" afterPath="$PROJECT_DIR$/admin/application/views/schedules_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/single.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/sms_button.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/sms_button.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/stadiums_confirm_delete.php" afterPath="$PROJECT_DIR$/admin/application/views/stadiums_confirm_delete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/stories_vupdate.php" afterPath="$PROJECT_DIR$/admin/application/views/stories_vupdate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/table_positions.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/table_positions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/blackberry/title.php" afterPath="$PROJECT_DIR$/admin/application/views/blackberry/title.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/matches/update.php" afterPath="$PROJECT_DIR$/admin/application/views/matches/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -85,10 +55,10 @@
       <file leaf-file-name="mdl_story.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/story/models/mdl_story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="1795" max-vertical-offset="2550">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.17204301" vertical-offset="1885" max-vertical-offset="2670">
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
-                <marker date="1422403737000" expanded="true" signature="4556:4618" placeholder="update stori..." />
+                <marker date="1422407732000" expanded="true" signature="4556:4606" placeholder="select `read..." />
               </folding>
             </state>
           </provider>
@@ -3310,7 +3280,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422396871871</updated>
     </task>
-    <option name="localTasksCounter" value="480" />
+    <task id="LOCAL-00480" summary="incluye tabla de revista">
+      <created>1422404011433</created>
+      <option name="number" value="00480" />
+      <option name="project" value="LOCAL" />
+      <updated>1422404011433</updated>
+    </task>
+    <option name="localTasksCounter" value="481" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3420,7 +3396,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="334" />
+      <option name="time" value="336" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -3433,6 +3409,7 @@
         <watch expression="$team-&gt;ashield" />
         <watch expression="$noticia-&gt;author_id" />
         <watch expression="$autor[0]-&gt;twitter" />
+        <watch expression="$aux[0]-&gt;reads" />
       </configuration>
     </watches-manager>
   </component>
@@ -3877,10 +3854,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/story/models/mdl_story.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1795" max-vertical-offset="2550">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.17204301" vertical-offset="1885" max-vertical-offset="2670">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
-            <marker date="1422403737000" expanded="true" signature="4556:4618" placeholder="update stori..." />
+            <marker date="1422407732000" expanded="true" signature="4556:4606" placeholder="select `read..." />
           </folding>
         </state>
       </provider>

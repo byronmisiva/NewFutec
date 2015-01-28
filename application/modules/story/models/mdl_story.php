@@ -127,8 +127,16 @@ class Mdl_story extends MY_Model
 
     function cuentaVisita($id)
     {
-        $sql = 'update stories_stats set `reads` = `reads` + 1 where story_id=' . $id;
-        $aux = $this->db->query($sql);
+        $sql = 'select `reads` from stories_stats  where story_id=' . $id;
+        $aux = $this->db->query($sql)->result();
+
+        $data = array(
+            '`reads`' => $aux[0]->reads +1
+        );
+
+        $this->db->where('story_id', $id);
+        $this->db->update('stories_stats', $data);
+
         return $aux;
     }
 
