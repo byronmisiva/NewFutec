@@ -200,7 +200,7 @@
                                                                 </div>
                                                                 <div class="col-md-1 text-right margen0">
                                                                     <div style="font-size: 11px">
-                                                                        <?php echo ucwords(utf8_encode(strftime("%b", strtotime($partido->date_match)))); ?>
+                                                                        <?php echo ucwords(utf8_encode(strftime("%d", strtotime($partido->date_match)))); ?>
                                                                     </div>
 
                                                                 </div>
