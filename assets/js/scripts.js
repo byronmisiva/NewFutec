@@ -29,8 +29,6 @@ jQuery(document).ready(function () {
         if (  $("body").width() > 600) {
             zonacontenido = $(".zonacontenido").height()
             zonasidebar = $(".zonasidebar").height();
-            console.log (zonacontenido);
-            console.log (zonasidebar);
 
             if (zonacontenido > zonasidebar ) {
                 $(".zonasidebar").height(zonacontenido);
@@ -144,7 +142,7 @@ if ( machDetail.length > 0) {
             $.post(baseUrl + "site/MarcadorVivoDetail", {idEquipo: idEquipo}, function (data) {
 
                 $(".matchdetail").html(data);
-                console.log ("recarga");
+
             });
         }, REFRESH_VIVO * 1000)
     }

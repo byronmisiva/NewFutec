@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,16 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="goals_positions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/controllers/goals_positions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="345" max-vertical-offset="1050">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="media.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/media.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,21 +94,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.9166665" vertical-offset="2255" max-vertical-offset="9885">
-              <caret line="163" column="50" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.14799154" vertical-offset="2255" max-vertical-offset="9885">
+              <caret line="155" column="31" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiashome.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="noticiashome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7653277" vertical-offset="58" max-vertical-offset="555">
-              <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
+            <state vertical-scroll-proportion="-15.083333" vertical-offset="58" max-vertical-offset="555">
+              <caret line="28" column="111" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5052" max-vertical-offset="5730">
+              <caret line="354" column="53" selection-start-line="354" selection-start-column="47" selection-end-line="354" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -187,7 +188,6 @@
         <option value="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/footer.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/admin/application/controllers/welcome.php" />
         <option value="$PROJECT_DIR$/admin/application/views/stories/public.php" />
         <option value="$PROJECT_DIR$/application/config/constants.php" />
@@ -197,8 +197,9 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiasequipo.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/mininewssidebar.php" />
-        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" />
+        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       </list>
     </option>
   </component>
@@ -3377,7 +3378,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422486477647</updated>
     </task>
-    <option name="localTasksCounter" value="495" />
+    <task id="LOCAL-00495" summary="incluye tabla de revista">
+      <created>1422487360807</created>
+      <option name="number" value="00495" />
+      <option name="project" value="LOCAL" />
+      <updated>1422487360808</updated>
+    </task>
+    <option name="localTasksCounter" value="496" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3827,14 +3834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5154" max-vertical-offset="5760">
-          <caret line="356" column="86" selection-start-line="356" selection-start-column="86" selection-end-line="356" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.75" vertical-offset="5283" max-vertical-offset="6105">
@@ -3989,18 +3988,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9166665" vertical-offset="2255" max-vertical-offset="9885">
-          <caret line="163" column="50" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5052" max-vertical-offset="5730">
+          <caret line="354" column="53" selection-start-line="354" selection-start-column="47" selection-end-line="354" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7653277" vertical-offset="58" max-vertical-offset="555">
-          <caret line="28" column="110" selection-start-line="28" selection-start-column="110" selection-end-line="28" selection-end-column="110" />
+        <state vertical-scroll-proportion="-15.083333" vertical-offset="58" max-vertical-offset="555">
+          <caret line="28" column="111" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14799154" vertical-offset="2255" max-vertical-offset="9885">
+          <caret line="155" column="31" selection-start-line="155" selection-start-column="31" selection-end-line="155" selection-end-column="31" />
           <folding />
         </state>
       </provider>
