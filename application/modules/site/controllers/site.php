@@ -157,7 +157,7 @@ class Site extends MY_Controller
         //$idsection = $_POST["section"];
         //$posSection = $_POST["pos"];
 
-        if ($idsection) {
+        if (!$idsection) {
             echo $this->noticias->viewNoticiasHome(false, RESULT_PAGE - 1, $offset);
         } else {
             echo $this->noticias->viewSeccions("", $idsection, $posSection, "", RESULT_PAGE - 1, $offset, false);
