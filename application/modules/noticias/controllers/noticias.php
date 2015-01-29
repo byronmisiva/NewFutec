@@ -35,7 +35,7 @@ class Noticias extends MY_Controller
 
         $rotativasData = array();
 
-        if (!$this->uri->segment(1)) {
+        if ((!$this->uri->segment(1)) or ($this->uri->segment(2)!="mobil")) {
             $rotativasData = $this->mdl_story->get_banner(6, 44);
             $excluded = array();
             foreach ($rotativasData as $key => $row) {

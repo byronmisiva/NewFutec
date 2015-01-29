@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -35,45 +35,19 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.72" vertical-offset="6414" max-vertical-offset="9900">
-              <caret line="440" column="32" selection-start-line="440" selection-start-column="25" selection-end-line="440" selection-end-column="32" />
+            <state vertical-scroll-proportion="-5.7" vertical-offset="570" max-vertical-offset="9900">
+              <caret line="57" column="42" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matches.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+      <file leaf-file-name="noticias.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5833335" vertical-offset="1501" max-vertical-offset="2010">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-              <folding>
-                <marker date="1422468790000" expanded="true" signature="2876:3240" placeholder="SELECT champ..matches..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.833333" vertical-offset="571" max-vertical-offset="975">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.28857142" vertical-offset="454" max-vertical-offset="5355">
+              <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdl_scoreboards.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59158415" vertical-offset="1036" max-vertical-offset="3450">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-              <folding>
-                <marker date="1422492790000" expanded="true" signature="6089:6535" placeholder="SELECT m.*, ..matches..." />
-                <marker date="1422492790000" expanded="true" signature="8033:8430" placeholder="SELECT sch.i..round_id..." />
-                <marker date="1422492790000" expanded="true" signature="8085:8326" placeholder="SELECT round..schedules..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +75,6 @@
         <option value="$PROJECT_DIR$/admin/application/controllers/images.php" />
         <option value="$PROJECT_DIR$/admin/js/calendar.js" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/rotativas.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/admin/application/views/histories_vupdate.php" />
         <option value="$PROJECT_DIR$/admin/application/controllers/magazine.php" />
@@ -144,6 +117,7 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropenshort.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
       </list>
     </option>
   </component>
@@ -154,7 +128,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="461" />
+    <option name="x" value="574" />
     <option name="y" value="23" />
     <option name="width" value="1324" />
     <option name="height" value="966" />
@@ -3378,7 +3352,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422492707073</updated>
     </task>
-    <option name="localTasksCounter" value="500" />
+    <task id="LOCAL-00500" summary="incluye tabla de revista">
+      <created>1422492795880</created>
+      <option name="number" value="00500" />
+      <option name="project" value="LOCAL" />
+      <updated>1422492795881</updated>
+    </task>
+    <option name="localTasksCounter" value="501" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3402,7 +3382,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="461" y="23" width="1324" height="966" extended-state="0" />
+    <frame x="574" y="23" width="1324" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3498,7 +3478,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="364" />
+      <option name="time" value="367" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -3763,13 +3743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.4468086" vertical-offset="0" max-vertical-offset="5355">
-          <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49615383" vertical-offset="5052" max-vertical-offset="5730">
@@ -3848,17 +3821,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.72" vertical-offset="6414" max-vertical-offset="9900">
-          <caret line="440" column="32" selection-start-line="440" selection-start-column="25" selection-end-line="440" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.59158415" vertical-offset="1036" max-vertical-offset="3450">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <marker date="1422492790000" expanded="true" signature="-1:-1" placeholder="SELECT m.*, ..matches..." />
+            <marker date="1422492790000" expanded="true" signature="-1:-1" placeholder="SELECT sch.i..round_id..." />
+            <marker date="1422492790000" expanded="true" signature="-1:-1" placeholder="SELECT round..schedules..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.833333" vertical-offset="571" max-vertical-offset="975">
+        <state vertical-scroll-proportion="0.7029703" vertical-offset="571" max-vertical-offset="975">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
@@ -3866,23 +3843,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5833335" vertical-offset="1501" max-vertical-offset="2010">
+        <state vertical-scroll-proportion="0.33168316" vertical-offset="1501" max-vertical-offset="2010">
           <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
-            <marker date="1422468790000" expanded="true" signature="2876:3240" placeholder="SELECT champ..matches..." />
+            <marker date="1422468790000" expanded="true" signature="-1:-1" placeholder="SELECT champ..matches..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59158415" vertical-offset="1036" max-vertical-offset="3450">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <marker date="1422492790000" expanded="true" signature="6089:6535" placeholder="SELECT m.*, ..matches..." />
-            <marker date="1422492790000" expanded="true" signature="8033:8430" placeholder="SELECT sch.i..round_id..." />
-            <marker date="1422492790000" expanded="true" signature="8085:8326" placeholder="SELECT round..schedules..." />
-          </folding>
+        <state vertical-scroll-proportion="-5.7" vertical-offset="570" max-vertical-offset="9900">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28857142" vertical-offset="454" max-vertical-offset="5355">
+          <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
