@@ -70,11 +70,12 @@ class Mdl_scoreboards extends MY_Model
         //Saco todos los partidos en vivo de las fechas
         $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
         $this->db->where('live', '1');
+        $this->db->where('date_match >', 'ADDDATE(NOW(), INTERVAL -60 DAY)' , false);
         $this->db->where_in('state', array('0', '8'));
         $this->db->where_in('schedule_id', $fechas);
-        $this->db->order_by('date_match', 'desc');
+        $this->db->order_by('date_match', 'asc');
         $matches = $this->db->get('matches');
-
+        $test = $this->db->last_query();
         if ($matches->num_rows() > 0)
             $partidos = $this->data_matches($matches);
         else

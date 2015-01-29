@@ -266,4 +266,4 @@
     <? echo $bannersSidebar[1]; ?>
 </div>
 <!--Tabla de Posiciones-->
-<? echo $tablaposiciones; ?>
+<? //echo $tablaposiciones; ?>

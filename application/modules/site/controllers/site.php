@@ -436,12 +436,8 @@ class Site extends MY_Controller
 
     public function marcadorenvivo()
     {
-
-
         $this->load->module('matches');
-
         $title = "Marcador En Vivo";
-
         $fechas = $this->matches->matchesLive($title);
         $this->singleConten($title, $fechas);
     }
