@@ -13,14 +13,14 @@ class Site extends MY_Controller
     public function index(){
         $this->load->library('user_agent');
         //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $mobiles=array('Apple iPhone','Apple iPod Touch','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
+        $mobiles=array('Sony Ericsson','Samsung','Apple iPhone','Apple iPod Touch','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
         $isMobile = false;
         if ($this->agent->is_mobile()){
             $m=$this->agent->mobile();
-            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0){
+            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
                 $m = "Android Tablet";
-                echo $this->agent->agent;
-            }
+
+
             switch($m){
                 case in_array($m,$mobiles):
                     redirect(base_url() . 'site/movil/');
@@ -55,7 +55,6 @@ class Site extends MY_Controller
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(CACHE_DEFAULT);
-
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
