@@ -10,13 +10,28 @@ class Site extends MY_Controller
         parent::__construct();
     }
 
-    public function index()
-
-
-    {
+    public function index(){
         $this->load->library('user_agent');
-        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $mobiles=array('Apple iPhone','Apple iPod Touch','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
         $isMobile = false;
+        if ($this->agent->is_mobile()){
+            $m=$this->agent->mobile();
+            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
+                $m = "Android Tablet";
+            switch($m){
+                case in_array($m,$mobiles):
+                    redirect(base_url() . 'site/movil/');
+                    $isMobile = true;
+                    exit;
+                    break;
+            }
+
+        }
+        $this->home();
+
+
+        /*$isMobile = false;
         if ($this->agent->is_mobile()) {
             $m = $this->agent->mobile();
             if (in_array($m, $mobiles))
@@ -28,8 +43,10 @@ class Site extends MY_Controller
             redirect(base_url() . 'site/movil/');
         } else {
             $this->home();
-        }
+        }*/
     }
+
+
 
     // para la final se comentan la llamada a las secciones.
     public function movil()
@@ -146,14 +163,14 @@ class Site extends MY_Controller
         echo "Mensaje Enviado";
     }
 
-        public function masnoticias()
+    public function masnoticias()
     {
         $this->load->module('noticias');
 
 
         $offset = $this->uri->segment(3);
         $porciones = explode("-", $offset);
-        $offset =  $porciones[1];
+        $offset = $porciones[1];
 
         $idsection = $this->uri->segment(4);
         $posSection = $this->uri->segment(5);
@@ -162,10 +179,10 @@ class Site extends MY_Controller
 
         if (!$idsection) {
             $masnoticias = $this->noticias->viewNoticiasHome(false, RESULT_PAGE - 1, $offset);
-            if (count( $masnoticias) > 0){
+            if (count($masnoticias) > 0) {
                 echo $masnoticias;
             } else {
-                   echo "mal";
+                echo "mal";
             }
         } else {
             echo $this->noticias->viewSeccions("", $idsection, $posSection, "", RESULT_PAGE - 1, $offset, false);
@@ -517,10 +534,10 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
         $data['content'] = $contenSeccion;
 
-        if ($nameSeccion != "Magazine"){
-        $data['sidebar'] = $this->contenido->sidebarOpenNews();
+        if ($nameSeccion != "Magazine") {
+            $data['sidebar'] = $this->contenido->sidebarOpenNews();
         } else {
-            $data['sidebar'] = $this->contenido->sidebarOpenNews(  FALSE,  SERIE_A,  "short");
+            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, SERIE_A, "short");
 
         }
         $data['footer'] = $this->contenido->footer();
