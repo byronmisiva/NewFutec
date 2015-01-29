@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" afterPath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/controllers/story.php" afterPath="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/stories/views/email-contacto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/stories/views/email-publicidad.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/stories/views/marcador.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/stories/models/mdl_stories.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/stories.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -47,13 +49,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fecomeplto.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fecomeplto.sql">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/story.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,21 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7559449" vertical-offset="1751" max-vertical-offset="2550">
+            <state vertical-scroll-proportion="-25.166666" vertical-offset="1751" max-vertical-offset="2550">
               <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contenido.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="5325">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,8 +87,28 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5416665" vertical-offset="8363" max-vertical-offset="10350">
-              <caret line="568" column="8" selection-start-line="568" selection-start-column="8" selection-end-line="568" selection-end-column="8" />
+            <state vertical-scroll-proportion="-13.125" vertical-offset="60" max-vertical-offset="10350">
+              <caret line="25" column="57" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/stories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stories.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/stories/controllers/stories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3379224" vertical-offset="0" max-vertical-offset="799">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,9 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/application/models/teams_position.php" />
-        <option value="$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php" />
-        <option value="$PROJECT_DIR$/application/modules/teams_position/models/teams_position.php" />
         <option value="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
         <option value="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
@@ -207,6 +209,9 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
+        <option value="$PROJECT_DIR$/application/controllers/stories.php" />
+        <option value="$PROJECT_DIR$/application/modules/stories/models/mdl_stories.php" />
+        <option value="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" />
       </list>
     </option>
   </component>
@@ -317,7 +322,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="noticias" />
+              <option name="myItemId" value="stories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,11 +348,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="noticias" />
+              <option name="myItemId" value="stories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,11 +435,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/modules" />
+      <recent name="$PROJECT_DIR$/application/modules/site" />
+      <recent name="$PROJECT_DIR$/application/controllers" />
       <recent name="$PROJECT_DIR$/application/modules/contenido/views" />
       <recent name="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego" />
-      <recent name="$PROJECT_DIR$/admin/application/config" />
-      <recent name="$PROJECT_DIR$/application/config" />
-      <recent name="$PROJECT_DIR$/admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/imagenes/moviles" />
@@ -3615,7 +3668,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422553255900</updated>
     </task>
-    <option name="localTasksCounter" value="529" />
+    <task id="LOCAL-00529" summary="incluye tabla de revista">
+      <created>1422554045956</created>
+      <option name="number" value="00529" />
+      <option name="project" value="LOCAL" />
+      <updated>1422554045957</updated>
+    </task>
+    <option name="localTasksCounter" value="530" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3640,7 +3699,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="221" y="23" width="1324" height="966" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -3708,27 +3767,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/popups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613" vertical-offset="510" max-vertical-offset="1815">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.842553" vertical-offset="3076" max-vertical-offset="4800">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49615383" vertical-offset="5052" max-vertical-offset="5730">
-          <caret line="354" column="53" selection-start-line="354" selection-start-column="47" selection-end-line="354" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7298387" vertical-offset="58" max-vertical-offset="555">
@@ -4073,18 +4111,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5416665" vertical-offset="8363" max-vertical-offset="10350">
-          <caret line="568" column="8" selection-start-line="568" selection-start-column="8" selection-end-line="568" selection-end-column="8" />
+        <state vertical-scroll-proportion="-25.166666" vertical-offset="1751" max-vertical-offset="2550">
+          <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/stories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7559449" vertical-offset="1751" max-vertical-offset="2550">
-          <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/stories/models/mdl_stories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037546933" vertical-offset="0" max-vertical-offset="825">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125" vertical-offset="60" max-vertical-offset="10350">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/stories/controllers/stories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3379224" vertical-offset="0" max-vertical-offset="799">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
