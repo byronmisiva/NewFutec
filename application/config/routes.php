@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "site/home";
+$route['default_controller'] = "site/index";
 $route['404_override'] = '';
 
 //seciones de modulos a manos

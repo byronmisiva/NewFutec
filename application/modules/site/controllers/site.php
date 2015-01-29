@@ -27,6 +27,8 @@ class Site extends MY_Controller
                     break;
             }
 
+        } else {
+
         }
         $this->home();
 
