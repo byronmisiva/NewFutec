@@ -41,6 +41,8 @@
 $route['default_controller'] = "site/index";
 $route['404_override'] = '';
 
+
+
 //seciones de modulos a manos
 $route['zona-fe'] = "site/zonafe";
 $route['la-voz-de-las-tribunas'] = "site/lavoz";

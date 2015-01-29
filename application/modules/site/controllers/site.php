@@ -1,5 +1,4 @@
 <?php
-
 class Site extends MY_Controller
 {
     public $model = 'mdl_site';
@@ -26,8 +25,6 @@ class Site extends MY_Controller
                     exit;
                     break;
             }
-
-        } else {
 
         }
         $this->home();
@@ -87,18 +84,22 @@ class Site extends MY_Controller
     public function home()
     {
         $this->load->library('user_agent');
-        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $mobiles=array('Apple iPhone','Apple iPod Touch','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
         $isMobile = false;
-        if ($this->agent->is_mobile()) {
-            $m = $this->agent->mobile();
-            if (in_array($m, $mobiles))
-                $isMobile = true;
-        }
+        if ($this->agent->is_mobile()){
+            $m=$this->agent->mobile();
+            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
+                $m = "Android Tablet";
+            switch($m){
+                case in_array($m,$mobiles):
+                    redirect(base_url() . 'site/movil/');
+                    $isMobile = true;
+                    exit;
+                    break;
+            }
 
-
-        if ($isMobile) {
-            redirect(base_url() . 'site/movil/');
-        } else {
+        }  else {
             // para la final se comentan la llamada a las secciones.
             $this->output->cache(CACHE_DEFAULT);
             $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
