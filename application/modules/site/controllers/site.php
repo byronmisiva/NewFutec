@@ -214,7 +214,7 @@ class Site extends MY_Controller
     public function noticia()
     {
         // para la final se comentan la llamada a las secciones.
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
 
 
         $this->load->module('noticias');
