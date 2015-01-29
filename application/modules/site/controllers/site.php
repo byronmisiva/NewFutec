@@ -426,7 +426,7 @@ class Site extends MY_Controller
 
     public function goleadores($serie = SERIE_A)
     {
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         $id = $this->uri->segment(3);
         if ($id) {
             $serie = $id;
@@ -439,7 +439,7 @@ class Site extends MY_Controller
 
     public function tabladeposiciones($serie = SERIE_A)
     {
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         $id = $this->uri->segment(3);
         if ($id) {
             $serie = $id;
@@ -452,7 +452,7 @@ class Site extends MY_Controller
 
     public function resultados()
     {
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         $this->load->module('matches');
 
         $id = $this->uri->segment(3);
@@ -474,7 +474,7 @@ class Site extends MY_Controller
 
     public function partido()
     {
-        //$this->output->cache(CACHE_PARTIDOS);
+        $this->output->cache(CACHE_PARTIDOS);
 
         $this->load->module('matches');
         $id = $this->uri->segment(4);
@@ -489,7 +489,7 @@ class Site extends MY_Controller
 
     public function fueradejuego()
     {
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         $this->load->module('contenido');
         $fueradejuego = $this->contenido->view_fuera_de_juego();
         $this->singleConten("Fuera de Juego", $fueradejuego);
@@ -566,7 +566,7 @@ class Site extends MY_Controller
     public function section_equipo($seccion, $seccionpos, $urlSeccion)
     {
         // para la final se comentan la llamada a las secciones.
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         // Informacion de equipo
         $idNoticia = $this->uri->segment(6);
 
