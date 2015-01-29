@@ -102,6 +102,8 @@ class Contenido extends MY_Controller
 
         //recupera  y cambia por la ultima noticia
         $sponsor = current($this->mdl_story->get_zonafe($excluded));
+        // todo por que se genera esto mal
+        $sponsor->id = $sponsor->sid;
         if ($sponsor !== FALSE) {
             array_pop($dataRotativas['rotativasData']);
             array_push($dataRotativas['rotativasData'], $sponsor);

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" afterPath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -33,16 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tags.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/controllers/tags.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.666666" vertical-offset="512" max-vertical-offset="1335">
-              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="teams.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/controllers/teams.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,11 +92,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9788585" vertical-offset="8775" max-vertical-offset="10350">
-              <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
+            <state vertical-scroll-proportion="-3.9" vertical-offset="840" max-vertical-offset="10350">
+              <caret line="69" column="43" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contenido.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7024608" vertical-offset="1261" max-vertical-offset="5310">
+              <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -175,7 +174,6 @@
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropenshort.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
         <option value="$PROJECT_DIR$/application/config/user_agents.php" />
@@ -206,6 +204,7 @@
         <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
       </list>
     </option>
   </component>
@@ -216,8 +215,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="581" />
-    <option name="y" value="28" />
+    <option name="x" value="492" />
+    <option name="y" value="29" />
     <option name="width" value="1324" />
     <option name="height" value="966" />
   </component>
@@ -3734,7 +3733,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422502738635</updated>
     </task>
-    <option name="localTasksCounter" value="524" />
+    <task id="LOCAL-00524" summary="incluye tabla de revista">
+      <created>1422503109413</created>
+      <option name="number" value="00524" />
+      <option name="project" value="LOCAL" />
+      <updated>1422503109413</updated>
+    </task>
+    <option name="localTasksCounter" value="525" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3758,7 +3763,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="581" y="28" width="1324" height="966" extended-state="0" />
+    <frame x="492" y="29" width="1324" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3940,14 +3945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.324258" vertical-offset="3573" max-vertical-offset="4395">
           <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39417988" vertical-offset="3871" max-vertical-offset="5280">
-          <caret line="268" column="84" selection-start-line="268" selection-start-column="36" selection-end-line="268" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -4279,8 +4276,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9788585" vertical-offset="8775" max-vertical-offset="10350">
-          <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
+        <state vertical-scroll-proportion="-3.9" vertical-offset="840" max-vertical-offset="10350">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7024608" vertical-offset="1261" max-vertical-offset="5310">
+          <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
           <folding />
         </state>
       </provider>
