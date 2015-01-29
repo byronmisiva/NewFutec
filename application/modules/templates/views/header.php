@@ -56,7 +56,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery.lightbox.min.css') ?>"/>
     <!-- Input slider -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
-
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     <link href="<?php echo base_url('assets/css/sprites.css' ) ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
