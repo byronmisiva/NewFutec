@@ -659,6 +659,7 @@ class Site extends MY_Controller
             } else {
                 $storia = $this->story->get_complete($idNoticia);
             }
+
             $aux = $this->mdl_story->get_story($idNoticia);
             $bodytag = str_replace('"', '', strip_tags($aux->title));
         }

@@ -8,7 +8,7 @@
                      alt="<?php echo $noticia->image_name; ?>">
             </div>
         </div>
-        <div class="margen10lados-sx">
+        <div class="margen10lados-sx fechaabierta">
             <?php setlocale(LC_ALL, "es_ES");
             echo $noticia->origen . ", " . ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($noticia->created)))); ?>
             <h1><?php echo $noticia->title; ?></h1>

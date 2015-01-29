@@ -53,14 +53,25 @@ class Mdl_story extends MY_Model
         $this->db->join('images i', 's.image_id = i.id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
         $this->db->where('s.position !=', 10);
-        $this->db->order_by('s.created', 'desc', FALSE);
-        $this->db->limit($limit, $offset);
+
+        if ($offset >0){
+            $this->db->order_by('s.created', 'desc', FALSE);
+            $this->db->limit($limit, $offset);
+        } else {
+            $this->db->where('s.id >', '( select MAX(id) from stories )  -  ' . ($limit + 10) , false);
+        }
         //quitamos las noticias rotativas
 
         if ($exclude != "")
             $this->db->where_not_in('s.id', $exclude);
+
         $aux = $this->db->get()->result();
 
+        if ($offset == 0){
+            $aux = array_reverse($aux);
+            $aux=array_splice($aux, 0,$limit);
+        }
+        $test = $this->db->last_query();
         return $aux;
     }
 

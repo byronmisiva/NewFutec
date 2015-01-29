@@ -92,8 +92,9 @@ class Mdl_Noticias extends MY_Model
 
                 $res=$this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
                                       AND invisible =  '0' AND position =  $position ORDER BY created desc LIMIT $limit")->result(0);
-
-
+                //$numrows=$row[0]->numrows;
+                //$rowvalue = $row[0]['image_id'];
+                $tags_id = array();
                 $str_ids = "";
                 foreach ($res as $row) {
                     $str_ids .= '"' . $row['image_id'] . '"'. ',';
@@ -141,7 +142,7 @@ class Mdl_Noticias extends MY_Model
 
 
         $aux = $this->db->get()->result();
-        $test = $this->db->last_query();
+        //$test = $this->db->last_query();
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);
             $fecha = explode("-", $date[0]);
