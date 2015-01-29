@@ -96,7 +96,7 @@
             case in_array($m, $mobiles):
                 $isMobile = false;
         }
-        echo $m = $this->agent->mobile();
+
         ?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
