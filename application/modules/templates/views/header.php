@@ -59,7 +59,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     <link href="<?php echo base_url('assets/css/sprites.css?refresh=' . rand(1, 2000)) ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -84,20 +84,23 @@
     ================================================== -->
     <?php
     $this->load->library('user_agent');
+    //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+    $mobiles = array('Apple iPhone', 'Apple iPod Touch', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia");
 
-    $mobiles = array('Apple iPhone', 'Generic Mobile');
-    $isMobile = false;
     if ($this->agent->is_mobile()) {
         $m = $this->agent->mobile();
-        if (in_array($m, $mobiles))
-            $isMobile = true;
+        if ($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i', $this->agent->agent) == 0)
+            $m = "Android Tablet";
 
-    }
-    if ($isMobile) {
+        switch ($m) {
+            case in_array($m, $mobiles):
+                $isMobile = false;
+        }
+        echo $m = $this->agent->mobile();
         ?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
-    } else {
+    }  else {
         ?>
         <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>
 
@@ -178,15 +181,23 @@
 </script>
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-53XBQP');</script>
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');</script>
 <!-- End Google Tag Manager -->
-
 
 
 <!-- Facebook Conversion Code for FE_Visitas -->
