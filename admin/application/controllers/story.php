@@ -174,7 +174,7 @@ class Story extends Model {
 		    	if(is_null($sec->category_id))
 		    		$where = "(st.tag_id IN($str_tags))";
 		    	else
-		    		$where = "(s.category_id=$sec->category_id OR wwst.tag_id IN($str_tags))";
+		    		$where = "(s.category_id=$sec->category_id OR st.tag_id IN($str_tags))";
 				$this->db->where($where);
 					
 	    	}	

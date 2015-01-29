@@ -78,21 +78,33 @@ class Mdl_Noticias extends MY_Model
     public function get_by_position($limit, $seccion = "", $position, $offset = 0)
     {
         if ($seccion != "") {
+
             $sec = $this->get($seccion);
             $res = $this->get_tag_list($seccion);
             $tags = array();
             $str_tags = "";
             foreach ($res as $row) {
                 $tags[] = $row->tag_id;
-                $str_tags .= $row->tag_id . ',';
+                $str_tags .= '"' . $row->tag_id . '"'. ',';
             }
             $str_tags = trim($str_tags, ',');
             if (count($tags) > 0) {
-                $this->db->from('stories s, images i,stories_tags st');
-                $this->db->where('s.id', 'st.story_id', FALSE);
-                $this->db->where('i.id', 's.image_id', FALSE);
+
+                $res=$this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                                      AND invisible =  '0' AND position =  $position ORDER BY created desc LIMIT $limit")->result(0);
+
+
+                $str_ids = "";
+                foreach ($res as $row) {
+                    $str_ids .= '"' . $row['image_id'] . '"'. ',';
+                }
+                $str_ids = trim($str_ids, ',');
+
+                $this->db->from('stories s', false);
+                $this->db->join('(select * from images where  id IN('. $str_ids.')) i', 'i.id = s.image_id');
+                $this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
               //  $this->db->where('s.position <', 10);
-                $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
+                $where = "(category_id  =$sec->category_id )";
                 $this->db->where($where);
                 $this->db->group_by('s.id');
             } else {
@@ -125,7 +137,7 @@ class Mdl_Noticias extends MY_Model
             $this->db->limit($l[0], $l[1]);
         else
             $this->db->limit($limit, $offset);
-        $this->db->order_by('s.created', "desc");
+            $this->db->order_by('s.created', "desc");
 
 
         $aux = $this->db->get()->result();
