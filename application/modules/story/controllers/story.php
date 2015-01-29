@@ -13,7 +13,7 @@ class Story extends MY_Controller
 
     public function top1($data = FALSE)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $data['FE_Halfbanner'] = $this->load->view('fe_halfbanner', $data, TRUE);
         $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE);;
         return $this->load->view('top1', $data, TRUE);
@@ -21,7 +21,7 @@ class Story extends MY_Controller
 
     public function viewget_plus($namesection, $idsection, $nameSectionUrl, $data = FALSE)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->module('noticias');
 
         $data['namesection'] = $namesection;
@@ -34,7 +34,7 @@ class Story extends MY_Controller
 
     function get_complete($id)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $data['isMobile'] = false;
@@ -59,7 +59,7 @@ class Story extends MY_Controller
 
     function get_more($section, $noticias = 0, $num = 5)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         if ($section != 'all') {
             $sec = $this->section->get($section);
             $res = $this->section->get_tag_list($section);
@@ -118,7 +118,7 @@ class Story extends MY_Controller
     //from seccion
     function get($id)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->db->where('id', $id);
         $aux = current($this->db->get('sections')->result());
         $aux->survey_id = $this->get_survey($id);
@@ -145,7 +145,7 @@ class Story extends MY_Controller
 
     function get_tag_list($id)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->db->where('section_id', $id);
         $data = $this->db->get('sections_tags')->result();
         return $data;
@@ -155,7 +155,7 @@ class Story extends MY_Controller
 
     function get_story_stat($story)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->db->where('story_id', $story);
         $aux = current($this->db->get('stories_stats')->result());
 

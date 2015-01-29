@@ -8,7 +8,7 @@ class Blackberries extends CI_Controller {
 	}
 	
 	function read(){ //ready
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->helper('date');
    		$this->load->model('comment');
 		$this->template->set_template('blackberry');
@@ -94,7 +94,7 @@ class Blackberries extends CI_Controller {
    	
    	
 	function more(){ //ready
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->helper('inflector');
 		$this->load->helper('date');
 		$this->load->model('story');
@@ -197,7 +197,7 @@ class Blackberries extends CI_Controller {
 		$this->template->render();
    	} 
 	function single(){ //ready
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->helper('date');
 		$this->template->set_template('blackberry');
    		$this->template->write('title','futbolecuador.com - Lo mejor del fútbol ecuatoriano',TRUE);	
@@ -242,7 +242,7 @@ class Blackberries extends CI_Controller {
 	}
 	
 	function matches_today_movil(){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->helper('date');
 		$this->load->model('timer');
 		$this->load->model('match_calendary'                       );
@@ -321,7 +321,7 @@ class Blackberries extends CI_Controller {
 		$this->template->render();
    	} 
 	function game_all_movile($id){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->helper('date');
 			$this->load->model('timer');
 		
@@ -416,7 +416,7 @@ class Blackberries extends CI_Controller {
 	}
 
 	function tables(){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->helper('inflector');
 		$this->load->model('teams_position');
 		$this->load->model('group');

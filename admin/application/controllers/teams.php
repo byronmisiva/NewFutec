@@ -193,7 +193,7 @@ class Teams extends CI_Controller {
 	
 	
 	function ultimos(){
-		$this->output->cache(CACHE_DEFAULT);
+		//$this->output->cache(CACHE_DEFAULT);
 		$data=$this->model->get_results($this->uri->segment(3),8);
 		$data['team']=$this->uri->segment(3);
 		$this->load->view($this->model->name.'/results', $data, FALSE);
@@ -201,7 +201,7 @@ class Teams extends CI_Controller {
 	
 	
 	function por_jugar(){
-		$this->output->cache(CACHE_DEFAULT);
+		//$this->output->cache(CACHE_DEFAULT);
 		$data=$this->model->get_results($this->uri->segment(3),0);
 		$data['team']=$this->uri->segment(3);
 		$this->load->view($this->model->name.'/por_jugar', $data, FALSE);

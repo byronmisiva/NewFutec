@@ -346,7 +346,7 @@ class Stories extends CI_Controller {
 	
 	
 	function list_plus(){
-		$this->output->cache(CACHE_MENU);
+		//$this->output->cache(CACHE_MENU);
 		$option=$this->uri->segment(3);
 		$data['noticias']=$this->model->get_plus($option);
 		
@@ -449,7 +449,7 @@ class Stories extends CI_Controller {
 	
 	function rss(){		
 		$this->config->set_item('compress_output', 'FALSE');
-		$this->output->cache(CACHE_DEFAULT);
+		//$this->output->cache(CACHE_DEFAULT);
 		$data['name']='XML RSS';
 		$data['views']=1;
 		$this->statistic->sum($data);	
@@ -597,7 +597,7 @@ class Stories extends CI_Controller {
 	
 	function rss2(){
 		$this->config->set_item('compress_output', 'FALSE');
-		$this->output->cache(CACHE_DEFAULT);
+		//$this->output->cache(CACHE_DEFAULT);
 		$data['name']='XML RSS';
 		$data['views']=1;
 		$this->statistic->sum($data);	

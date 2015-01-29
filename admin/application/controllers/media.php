@@ -142,7 +142,7 @@ class Media extends CI_Controller {
 	
 	function xml(){//TODO: cambiar en flash
 		//Recojo datos de la base
-		$this->output->cache(5);
+		//$this->output->cache(5);
 		if($this->config->item("encryption_key")==$this->uri->segment(3)){
 			$this->load->model('statistic');
 			$data['name']='XML Media';

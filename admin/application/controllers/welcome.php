@@ -102,7 +102,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function movil(){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->model('module');
 		$this->load->model('section');
 
@@ -302,7 +302,7 @@ class Welcome extends CI_Controller {
 	
 	
 	function blackberry(){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		
 		$id=0;
 		$this->load->model('module');
@@ -451,7 +451,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function search(){
-		$this->output->cache(CACHE_MENU);
+		//$this->output->cache(CACHE_MENU);
 		$this->load->model('story');
 		
 		//Defino primero el template publico para poder escribir ahi los modulos
@@ -477,7 +477,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function publicMenu(){
-		$this->output->cache(CACHE_MENU);
+		//$this->output->cache(CACHE_MENU);
 		
 		$this->load->model('teams_position');
 		$this->load->model('team');

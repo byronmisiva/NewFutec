@@ -112,7 +112,7 @@ class Teams_Positions extends CI_Controller {
 	
 	function table_xml(){
 		
-		$this->output->cache(CACHE_PARTIDOS);
+		//$this->output->cache(CACHE_PARTIDOS);
 		if($this->config->item("encryption_key")==$this->uri->segment(4)){
 		
 		$data['name']='XML Tabla de Posiciones';
@@ -129,7 +129,7 @@ class Teams_Positions extends CI_Controller {
 	}
 	
 	function table_xml2(){
-		$this->output->cache(CACHE_PARTIDOS);
+		//$this->output->cache(CACHE_PARTIDOS);
 		if($this->config->item("encryption_key")==$this->uri->segment(4)){
 		
 		if($this->uri->segment(3)==='33')

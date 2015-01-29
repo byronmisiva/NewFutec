@@ -96,7 +96,7 @@ class Histories extends CI_Controller {
 	/////////FUNCIONES NOTICIAS SECCION MAGAZINE///// author: LUIS NAVARRETE
 	
 	function getNewsBySecction( $id_seccion = '', $limit = '' ){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->model( 'story' );
 		$this->load->model( 'image' );		
 
@@ -118,7 +118,7 @@ class Histories extends CI_Controller {
 	}
 	
 	function leaderboard_magazine($champ){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 	
 		$this->load->model('group');
 		$this->load->model('teams_position');

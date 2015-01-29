@@ -13,7 +13,7 @@ class Moviles extends CI_Controller
     function read(){
         $this->load->model('user');
 
-        $this->output->cache(CACHE_MOVIL);
+        //$this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -92,7 +92,7 @@ class Moviles extends CI_Controller
 
     function readProfile()
     {
-        $this->output->cache(CACHE_MOVIL);
+        //$this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -163,7 +163,7 @@ class Moviles extends CI_Controller
 
     function more()
     {
-        $this->output->cache(CACHE_MOVIL);
+        //$this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -241,7 +241,7 @@ class Moviles extends CI_Controller
 
     function scoreboard()
     {
-        $this->output->cache(REFRESH_VIVO / 60);
+        //$this->output->cache(REFRESH_VIVO / 60);
         $this->load->helper('date');
         $championship[1] = CHAMP_DEFAULT;
         $championship[2] = MUNDIAL;
@@ -302,7 +302,7 @@ class Moviles extends CI_Controller
 
     function single()
     {
-        $this->output->cache(REFRESH_VIVO / 60);
+        //$this->output->cache(REFRESH_VIVO / 60);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -477,7 +477,7 @@ class Moviles extends CI_Controller
 
     function games()
     {
-        $this->output->cache(CACHE_MOVIL);
+        //$this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -863,7 +863,7 @@ class Moviles extends CI_Controller
     function femagazine()
     {
         $this->load->library('user_agent');
-        $this->output->cache(CACHE_MOVIL);
+        //$this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;

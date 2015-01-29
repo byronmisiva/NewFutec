@@ -108,7 +108,7 @@ class Championships extends CI_Controller {
 	}
 	
 	function list_played_matches(){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$champ=$this->uri->segment(3);
 		$data['champ']=$champ;
 		$data['partidos']=$this->match_calendary->matches_last_next(FALSE,FALSE);
@@ -116,7 +116,7 @@ class Championships extends CI_Controller {
 	}
 	
 	function list_match_week(){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		$champ=$this->uri->segment(3);
 		$data['champ']=$champ;
 		$data['partidos']=$this->match_calendary->matches_last_next(FALSE,TRUE);
@@ -130,7 +130,7 @@ class Championships extends CI_Controller {
 	}
 	
 	function leaderboard($champ){
-		$this->output->cache(CACHE_MOVIL);		
+		//$this->output->cache(CACHE_MOVIL);
 		$this->load->model('group');
 		$this->load->model('teams_position');
 		$this->load->model('section');		
@@ -147,7 +147,7 @@ class Championships extends CI_Controller {
 	}
 	
 	function leaderboard_cumulative($champ){
-		$this->output->cache(CACHE_MOVIL);
+		//$this->output->cache(CACHE_MOVIL);
 		
 		$this->load->model('teams_position');
 		

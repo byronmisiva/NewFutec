@@ -7,7 +7,7 @@ class Vivo extends CI_Controller {
 	}
 	
 	function today(){
-		$this->output->cache(3);
+		//$this->output->cache(3);
 		
 		$partidos=$this->match->getAllbyToday();
 		$championships=array('28','30');

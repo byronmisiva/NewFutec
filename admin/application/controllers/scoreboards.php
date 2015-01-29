@@ -34,14 +34,14 @@ class Scoreboards extends CI_Controller {
 	}
 	
 	function matches_today_open(){		
-		$this->output->cache(CACHE_PARTIDOS);
+		//$this->output->cache(CACHE_PARTIDOS);
 		if( $this->config->item("encryption_key") == $this->uri->rsegment(3) ){
 			$this->load->view( 'scoreboards/scoreboards_open');
 		}
 	}
 	
 	function matches_today_magazine(){
-		$this->output->cache(CACHE_PARTIDOS);
+		//$this->output->cache(CACHE_PARTIDOS);
 		if( $this->config->item("encryption_key") == $this->uri->rsegment(3) ){
 			$this->load->view( 'scoreboards/scoreboards_magazine');
 		}
@@ -49,7 +49,7 @@ class Scoreboards extends CI_Controller {
 	
 	function list_matches(){
 		$imagenes = array();
-		$this->output->cache(CACHE_PARTIDOS);
+		//$this->output->cache(CACHE_PARTIDOS);
 		if( $this->config->item("encryption_key") == $this->uri->rsegment(3) ){
 			
 			$data['fondo_partido']="imagenes/match_center/barra_azul.png";
@@ -73,7 +73,7 @@ class Scoreboards extends CI_Controller {
 	}
 	
 	function game_all(){
-		$this->output->cache(CACHE_PARTIDOS);
+		//$this->output->cache(CACHE_PARTIDOS);
 		$this->load->model('timer');
 		$id = $this->uri->rsegment(3);
 		

@@ -39,7 +39,7 @@ class Scoreboards extends MY_Controller
 
     function list_played_matches()
     {
-        $this->output->cache(CACHE_MOVIL);
+
         $champ = $this->uri->segment(3);
         $data['champ'] = $champ;
         $data['partidos'] = $this->match_calendary->matches_last_next(FALSE, FALSE);

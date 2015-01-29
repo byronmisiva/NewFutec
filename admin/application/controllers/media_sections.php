@@ -80,7 +80,7 @@ class Media_sections extends CI_Controller {
 	
 	function xml_podcast(){
 		if($this->config->item("encryption_key")==$this->uri->segment(3)){
-			$this->output->cache(5);
+			//$this->output->cache(5);
 			$query=$this->db->query('SELECT s.id, s.name, COUNT( m.id ) AS podcast
 									 FROM sections AS s, media_sections AS ms, media AS m
 									 WHERE s.id = ms.section_id AND ms.media_id = m.id AND m.type =1

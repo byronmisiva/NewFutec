@@ -139,7 +139,7 @@ class Mdl_scoreboards extends MY_Model
     //listado de partidos de la semana
     function list_mwatch_week($championship)
     {
-        $this->output->cache(CACHE_MOVIL);
+
         $partidos = $this->matches_last_next($championship, TRUE);
         return $partidos;
     }
@@ -147,7 +147,7 @@ class Mdl_scoreboards extends MY_Model
     //listado de partidos de la semana
     function list_mwatch_results($championship)
     {
-        $this->output->cache(CACHE_MOVIL);
+
         $partidos = $this->matches_last_next($championship, FALSE);
         return $partidos;
     }
