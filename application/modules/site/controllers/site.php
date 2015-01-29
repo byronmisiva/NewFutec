@@ -515,8 +515,13 @@ class Site extends MY_Controller
 
         // fin carga la informacion de la noticia
         $data['content'] = $contenSeccion;
-        $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
+        if ($nameSeccion != "Magazine"){
+        $data['sidebar'] = $this->contenido->sidebarOpenNews();
+        } else {
+            $data['sidebar'] = $this->contenido->sidebarOpenNews(  FALSE,  SERIE_A,  "short");
+
+        }
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
         /*   }*/

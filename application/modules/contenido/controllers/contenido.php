@@ -266,7 +266,7 @@ class Contenido extends MY_Controller
         // todo validar si se queda
     }
 
-    public function sidebarOpenNews($data = FALSE, $serie = SERIE_A )
+    public function sidebarOpenNews($data = FALSE, $serie = SERIE_A, $tipo = "large" )
     {
 
         //carga Banners
@@ -337,8 +337,11 @@ class Contenido extends MY_Controller
         $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
 
         $data['serie'] = $serie;
-
-        return $this->load->view('sidebaropennews', $data, TRUE);
+        if ($tipo== "large"){
+            return $this->load->view('sidebaropennews', $data, TRUE);
+        } else {
+            return $this->load->view('sidebaropenshort', $data, TRUE);
+        }
 
     }
 }

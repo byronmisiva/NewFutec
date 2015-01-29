@@ -43,7 +43,7 @@
 <div class="col-md-12 col-xs-12  separador10 margen0  ">
     <div class="col-md-6 col-xs-12 separador10 margen0 ">
         <div class="h2">
-            Descarga aquí Futbolecuador Magazine la revista digital de futbolecuador.com
+            Descarga aquí futbolecuador Magazine, la revista digital de futbolecuador.com
         </div>
     </div>
     <div class="col-md-3 col-xs-6 separador10 margen0 ">
