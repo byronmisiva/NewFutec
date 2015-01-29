@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -105,8 +106,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50739956" vertical-offset="1365" max-vertical-offset="10350">
-              <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+            <state vertical-scroll-proportion="-4.9788585" vertical-offset="8775" max-vertical-offset="10350">
+              <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -115,15 +116,15 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="825" max-vertical-offset="3810">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.625" vertical-offset="630" max-vertical-offset="3810">
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#noscript#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#noscript#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#noscript#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1422502104000" expanded="true" signature="5848:5971" placeholder="..." />
-                <marker date="1422502104000" expanded="true" signature="5989:6003" placeholder="..." />
+                <marker date="1422502929000" expanded="true" signature="5846:5969" placeholder="..." />
+                <marker date="1422502929000" expanded="true" signature="5987:6001" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -3727,7 +3728,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422502110689</updated>
     </task>
-    <option name="localTasksCounter" value="523" />
+    <task id="LOCAL-00523" summary="incluye tabla de revista">
+      <created>1422502738635</created>
+      <option name="number" value="00523" />
+      <option name="project" value="LOCAL" />
+      <updated>1422502738635</updated>
+    </task>
+    <option name="localTasksCounter" value="524" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4257,23 +4264,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="825" max-vertical-offset="3810">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="630" max-vertical-offset="3810">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#noscript#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#noscript#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#noscript#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1422502104000" expanded="true" signature="5848:5971" placeholder="..." />
-            <marker date="1422502104000" expanded="true" signature="5989:6003" placeholder="..." />
+            <marker date="1422502929000" expanded="true" signature="5846:5969" placeholder="..." />
+            <marker date="1422502929000" expanded="true" signature="5987:6001" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50739956" vertical-offset="1365" max-vertical-offset="10350">
-          <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+        <state vertical-scroll-proportion="-4.9788585" vertical-offset="8775" max-vertical-offset="10350">
+          <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
           <folding />
         </state>
       </provider>

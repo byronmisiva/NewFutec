@@ -340,7 +340,7 @@ class Site extends MY_Controller
     public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = SERIE_A)
     {
         // para la final se comentan la llamada a las secciones.
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
 
         $this->load->module('noticias');
         $this->load->module('templates');
@@ -411,7 +411,7 @@ class Site extends MY_Controller
 
     public function femagazine()
     {
-       // $this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         $this->load->module('contenido');
         $femagazine = $this->contenido->femagazine();
         $this->singleConten("Magazine", $femagazine);
