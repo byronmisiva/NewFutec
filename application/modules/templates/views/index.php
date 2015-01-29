@@ -24,7 +24,7 @@ $this->load->view('header');
             <div class="navbar-header">
 
                 <div class="col-xs-10 margen0">
-                    <a href="<?php echo base_url() ?>" class="navbar-brand"><img
+                    <a href="<?php echo base_url('site/movil/') ?>" class="navbar-brand"><img
                             src="<?= base_url('assets/img/logotipo.png') ?>"
                             alt="FutbolEcuador" class=" media-object img-responsive">
                     </a>
