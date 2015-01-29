@@ -101,7 +101,7 @@ class Site extends MY_Controller
 
         }  else {
             // para la final se comentan la llamada a las secciones.
-            $this->output->cache(CACHE_DEFAULT);
+            //$this->output->cache(CACHE_DEFAULT);
             $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
 
             $this->load->module('noticias');
