@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropenshort.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropenshort.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -69,12 +67,12 @@
       <file leaf-file-name="mdl_scoreboards.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33168316" vertical-offset="1036" max-vertical-offset="3480">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.59158415" vertical-offset="1036" max-vertical-offset="3450">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
-                <marker date="1422492569000" expanded="true" signature="6091:6537" placeholder="SELECT m.*, ..matches..." />
-                <marker date="1422492569000" expanded="true" signature="8035:8432" placeholder="SELECT sch.i..round_id..." />
-                <marker date="1422492569000" expanded="true" signature="8087:8328" placeholder="SELECT round..schedules..." />
+                <marker date="1422492790000" expanded="true" signature="6089:6535" placeholder="SELECT m.*, ..matches..." />
+                <marker date="1422492790000" expanded="true" signature="8033:8430" placeholder="SELECT sch.i..round_id..." />
+                <marker date="1422492790000" expanded="true" signature="8085:8326" placeholder="SELECT round..schedules..." />
               </folding>
             </state>
           </provider>
@@ -3374,7 +3372,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422490481958</updated>
     </task>
-    <option name="localTasksCounter" value="499" />
+    <task id="LOCAL-00499" summary="incluye tabla de revista">
+      <created>1422492707073</created>
+      <option name="number" value="00499" />
+      <option name="project" value="LOCAL" />
+      <updated>1422492707073</updated>
+    </task>
+    <option name="localTasksCounter" value="500" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3872,12 +3876,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33168316" vertical-offset="1036" max-vertical-offset="3480">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.59158415" vertical-offset="1036" max-vertical-offset="3450">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
-            <marker date="1422492569000" expanded="true" signature="6091:6537" placeholder="SELECT m.*, ..matches..." />
-            <marker date="1422492569000" expanded="true" signature="8035:8432" placeholder="SELECT sch.i..round_id..." />
-            <marker date="1422492569000" expanded="true" signature="8087:8328" placeholder="SELECT round..schedules..." />
+            <marker date="1422492790000" expanded="true" signature="6089:6535" placeholder="SELECT m.*, ..matches..." />
+            <marker date="1422492790000" expanded="true" signature="8033:8430" placeholder="SELECT sch.i..round_id..." />
+            <marker date="1422492790000" expanded="true" signature="8085:8326" placeholder="SELECT round..schedules..." />
           </folding>
         </state>
       </provider>

@@ -83,8 +83,6 @@ class Mdl_scoreboards extends MY_Model
 
         return $partidos;
     }
-
-
     /* Extraigo los datos básicos del partido */
 
     function data_matches($matches)
