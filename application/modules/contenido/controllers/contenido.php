@@ -328,9 +328,6 @@ class Contenido extends MY_Controller
 
             //Zona Fe
             $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
-
-
-
             return $this->load->view('sidebaropennews', $data, TRUE);
         } else {
             //Resultados tabla de posiciones

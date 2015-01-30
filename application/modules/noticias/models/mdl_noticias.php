@@ -94,7 +94,7 @@ class Mdl_Noticias extends MY_Model
                                       AND invisible =  '0' AND position =  $position ORDER BY created desc LIMIT $limit")->result(0);
                 //$numrows=$row[0]->numrows;
                 //$rowvalue = $row[0]['image_id'];
-                $tags_id = array();
+
                 $str_ids = "";
                 foreach ($res as $row) {
                     $str_ids .= '"' . $row['image_id'] . '"'. ',';
@@ -103,9 +103,11 @@ class Mdl_Noticias extends MY_Model
 
                 $this->db->from('stories s', false);
                 $this->db->join('(select * from images where  id IN('. $str_ids.')) i', 'i.id = s.image_id');
-                $this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
+                $this->db->join('(select * from `stories_tags`   ) st', 's.id = st.story_id');
+                //$this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
               //  $this->db->where('s.position <', 10);
-                $where = "(category_id  =$sec->category_id )";
+//                $where = "(category_id  =$sec->category_id )";
+                $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
                 $this->db->where($where);
                 $this->db->group_by('s.id');
             } else {
@@ -140,9 +142,9 @@ class Mdl_Noticias extends MY_Model
             $this->db->limit($limit, $offset);
             $this->db->order_by('s.created', "desc");
 
-
         $aux = $this->db->get()->result();
         $test = $this->db->last_query();
+
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);
             $fecha = explode("-", $date[0]);
