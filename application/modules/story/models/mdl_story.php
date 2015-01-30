@@ -20,28 +20,29 @@ class Mdl_story extends MY_Model
         parent::__construct();
     }
 
-    function get_story($id){
-        $this->db->select('s.*, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, i.thumb400,i.thumb300,i.thumb150,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name',FALSE);
-        $this->db->join('images i','s.image_id=i.id','LEFT');
+    function get_story($id)
+    {
+        $this->db->select('s.*, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, i.thumb400,i.thumb300,i.thumb150,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name', FALSE);
+        $this->db->join('images i', 's.image_id=i.id', 'LEFT');
         //$this->db->where('s.image_id','i.id',FALSE);
-        $this->db->where('s.id',$id);
-        $aux=current($this->db->get('stories s')->result());
+        $this->db->where('s.id', $id);
+        $aux = current($this->db->get('stories s')->result());
 
         $this->db->select('t.*');
         $this->db->from('stories_tags st,tags t');
-        $this->db->where('st.tag_id','t.id',FALSE);
-        $this->db->where('st.story_id',$id);
-        $this->db->order_by('t.name','asc');
-        $aux->tags=$this->db->get()->result();
-        if($this->session->userdata('role')>=3){
-            $stat=$this->story_stat->get_story_stat($aux->id);
-            $aux->rate=$stat->rate;
-            $aux->reads=$stat->reads;
-            $aux->sends=$stat->sends;
-            $aux->votes=$stat->votes;
+        $this->db->where('st.tag_id', 't.id', FALSE);
+        $this->db->where('st.story_id', $id);
+        $this->db->order_by('t.name', 'asc');
+        $aux->tags = $this->db->get()->result();
+        if ($this->session->userdata('role') >= 3) {
+            $stat = $this->story_stat->get_story_stat($aux->id);
+            $aux->rate = $stat->rate;
+            $aux->reads = $stat->reads;
+            $aux->sends = $stat->sends;
+            $aux->votes = $stat->votes;
         }
 
-        return  $aux;
+        return $aux;
     }
 
     function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '', $offset = 0)
@@ -54,11 +55,11 @@ class Mdl_story extends MY_Model
         $this->db->where('s.invisible', 0, FALSE);
         $this->db->where('s.position !=', 10);
 
-        if ($offset >0){
+        if ($offset > 0) {
             $this->db->order_by('s.created', 'desc', FALSE);
             $this->db->limit($limit, $offset);
         } else {
-            $this->db->where('s.id >', '( select MAX(id) from stories )  -  ' . ($limit + 10) , false);
+            $this->db->where('s.id >', '( select MAX(id) from stories )  -  ' . ($limit + 10), false);
         }
         //quitamos las noticias rotativas
 
@@ -67,9 +68,9 @@ class Mdl_story extends MY_Model
 
         $aux = $this->db->get()->result();
 
-        if ($offset == 0){
+        if ($offset == 0) {
             $aux = array_reverse($aux);
-            $aux=array_splice($aux, 0,$limit);
+            $aux = array_splice($aux, 0, $limit);
         }
         $test = $this->db->last_query();
         return $aux;
@@ -142,7 +143,7 @@ class Mdl_story extends MY_Model
         $aux = $this->db->query($sql)->result();
 
         $data = array(
-            '`reads`' => $aux[0]->reads +1
+            '`reads`' => $aux[0]->reads + 1
         );
 
         $this->db->where('story_id', $id);
@@ -169,15 +170,23 @@ class Mdl_story extends MY_Model
 
         $data = $this->db->get($this->table_name . ' s')->result();
 
-        foreach ($data as $key=>$nota) {
+        foreach ($data as $key => $nota) {
             $this->db->select('i.thumbh120 as thumb1,i.thumbh120, i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumbh50,i.thumb300 as thumb300', FALSE);
             $this->db->where('i.id', $nota->image_id);
             $imagenes = $this->db->get("images" . ' i')->result();
-            $data[$key]->thumb1 = $imagenes[0]->thumb1;
-            $data[$key]->thumb2 = $imagenes[0]->thumb2;
-            $data[$key]->thumb3 = $imagenes[0]->thumb3;
-            $data[$key]->thumb300 = $imagenes[0]->thumb300;
-            $data[$key]->thumbh50 = $imagenes[0]->thumbh50;
+            if (count($imagenes) > 0) {
+                $data[$key]->thumb1 = $imagenes[0]->thumb1;
+                $data[$key]->thumb2 = $imagenes[0]->thumb2;
+                $data[$key]->thumb3 = $imagenes[0]->thumb3;
+                $data[$key]->thumb300 = $imagenes[0]->thumb300;
+                $data[$key]->thumbh50 = $imagenes[0]->thumbh50;
+            } else {
+                $data[$key]->thumb1 = "";
+                $data[$key]->thumb2 = "";
+                $data[$key]->thumb3 = "";
+                $data[$key]->thumb300 = "";
+                $data[$key]->thumbh50 = "";
+            }
         }
         return $data;
     }
