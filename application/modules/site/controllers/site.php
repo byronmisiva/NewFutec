@@ -5,60 +5,74 @@ class Site extends MY_Controller
     public $model = 'mdl_site';
     public $data = array();
 
-    public function __construct()
-    {
+    public function __construct(){
         parent::__construct();
+    }
+    
+    function verificarDispositivo(){
+    	$this->load->library('user_agent');
+    	$mobiles=array('Sony Ericsson','Apple iPhone','Ipad','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
+    	$isMobile = "0";    	
+    	if ($this->agent->is_mobile()){
+    		$m=$this->agent->mobile();
+    		if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
+    			$m = "Android Tablet";    		
+    		switch($m){
+    			case 'Apple iPad':
+    				$isMobile= "0";
+    				break;
+    			case 'Android Tablet':
+    				$isMobile= "0";
+    				break;
+    			case in_array($m,$mobiles):    				
+    				$isMobile = "1";    				
+    				break;
+    		} 
+    	}
+    	
+    	return $isMobile;
+    	/*
+    	$this->load->library('user_agent');
+    	$mobiles=array('iPad','Android','Windows CE','Symbian S60','Apple iPad');
+    	$movil="0";
+    	if ($this->agent->is_mobile()){
+    		$movil="1";
+    		$m=$this->agent->mobile();
+    		if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
+    			$m = "Android Tablet";
+    		switch($m){
+    			case 'Apple iPad':
+    				$movil="0";
+    				break;
+    			case 'Android Tablet':
+    				$movil="0";
+    				break;
+    			case in_array($m,$mobiles):
+    				$movil="0";
+    				break;
+    		}
+    	}
+    	return $movil;*/
+    	
     }
 
     public function index(){
-        $this->load->library('user_agent');
-        //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $mobiles=array('Sony Ericsson','Samsung','Apple iPhone','Apple iPod Touch','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
-        $isMobile = false;
-        if ($this->agent->is_mobile()){
-            $m=$this->agent->mobile();
-            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
-                $m = "Android Tablet";
-
-
-            switch($m){
-                case in_array($m,$mobiles):
-                    redirect(base_url() . 'site/movil/');
-                    $isMobile = true;
-                    exit;
-                    break;
-            }
-
-        }
-        $this->home();
-
-
-        /*$isMobile = false;
-        if ($this->agent->is_mobile()) {
-            $m = $this->agent->mobile();
-            if (in_array($m, $mobiles))
-                $isMobile = true;
-        }
-
-
-        if ($isMobile) {
-            redirect(base_url() . 'site/movil/');
-        } else {
-            $this->home();
-        }*/
-    }
-
-
+    	if($this->verificarDispositivo()=="1")
+    		redirect('site/movil/');
+    	else
+    		$this->home();    
+   	}
 
     // para la final se comentan la llamada a las secciones.
-    public function movil()
-    {
+    public function movil(){
         // para la final se comentan la llamada a las secciones.
+    	
         $this->output->cache(CACHE_DEFAULT);
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
         $this->load->module('banners');
+        $data['verMobile']=$this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
 
@@ -84,26 +98,7 @@ class Site extends MY_Controller
     }
 
     // para la final se comentan la llamada a las secciones.
-    public function home()
-    {
-        $this->load->library('user_agent');
-        //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $mobiles=array('Apple iPhone','Apple iPod Touch','Android','Windows CE','Symbian S60','Apple iPad',"LG","Nokia");
-
-        if ($this->agent->is_mobile()){
-            $m=$this->agent->mobile();
-            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
-                $m = "Android Tablet";
-
-            switch($m){
-                case in_array($m,$mobiles):
-                    redirect(base_url() . 'site/movil/');
-
-                    exit;
-                    break;
-            }
-
-        } else {
+    public function home(){        
             // para la final se comentan la llamada a las secciones.
             $this->output->cache(CACHE_DEFAULT);
             $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
@@ -112,7 +107,7 @@ class Site extends MY_Controller
             $this->load->module('templates');
             $this->load->module('contenido');
             $this->load->module('banners');
-
+            $data['verMobile']=$this->verificarDispositivo();
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
 
@@ -123,16 +118,13 @@ class Site extends MY_Controller
             $data['content'] = $this->noticias->viewNoticiasHome(true);
             $data['sidebar'] = $this->contenido->sidebar();
 
-
             $data['footer'] = $this->contenido->footer();
             $data['bottom'] = $this->contenido->bottom();
             $this->templates->_index($data);
-        }
 
     }
 
-    public function contacto()
-    {
+    public function contacto(){
         $this->load->library('email');
         $config['protocol'] = 'sendmail';
         $config['charset'] = 'utf8';
@@ -151,8 +143,7 @@ class Site extends MY_Controller
         echo "Mensaje Enviado";
     }
 
-    public function publicidad()
-    {
+    public function publicidad(){
         $this->load->library('email');
         $config['protocol'] = 'sendmail';
         $config['charset'] = 'utf8';
@@ -171,19 +162,14 @@ class Site extends MY_Controller
         echo "Mensaje Enviado";
     }
 
-    public function masnoticias()
-    {
+    public function masnoticias(){
         $this->load->module('noticias');
-
-
         $offset = $this->uri->segment(3);
         $porciones = explode("-", $offset);
         $offset = $porciones[1];
 
         $idsection = $this->uri->segment(4);
         $posSection = $this->uri->segment(5);
-        //$idsection = $_POST["section"];
-        //$posSection = $_POST["pos"];
 
         if (!$idsection) {
             $masnoticias = $this->noticias->viewNoticiasHome(false, RESULT_PAGE - 1, $offset);
@@ -197,26 +183,22 @@ class Site extends MY_Controller
         }
     }
 
-    public function masMarcadorVivo()
-    {
+    public function masMarcadorVivo(){
         $this->load->module('contenido');
         echo $this->contenido->marcadorVivo();
     }
 
-    public function MarcadorVivoDetail()
-    {
+    public function MarcadorVivoDetail(){
         $idEquipo = $_POST["idEquipo"];
         $this->load->module('matches');
-
         echo $this->matches->getMatch($idEquipo);
     }
 
-    public function noticia()
-    {
+
+    
+    public function noticia(){
         // para la final se comentan la llamada a las secciones.
         $this->output->cache(CACHE_DEFAULT);
-
-
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
@@ -229,38 +211,10 @@ class Site extends MY_Controller
 
         $aux = $this->mdl_story->get_story($idNoticia);
         $bodytag = str_replace('"', '', strip_tags($aux->title));
-
+        $data['verMobile']=$this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
 
-        // fin carga la informacion de la noticia
-
-
-        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $isMobile = false;
-        if ($this->agent->is_mobile()) {
-            $m = $this->agent->mobile();
-            if (in_array($m, $mobiles))
-                $isMobile = true;
-        }
-
-        /* if ($isMobile) {
-
-             $data['cabecera'] = $this->contenido->menum();
-
-             $data['content'] = $this->contenido->header_mobile();
-             //$data['content'] .= $this->partidos->partidosFechaMovil();
-             $data['content'] .= $this->partidos->partidosFinal();
-             $data['content'] .= $this->contenido->view_banner_contenidotop();
-             $data['content'] .= $this->contenido->view_noticia_home();
-             $data['content'] .= $this->contenido->view_banner_contenido();
-             $data['content'] .= $this->contenido->view_twitter();
-
-             $data['footer'] = '';
-
-             $data['sidebar'] = '';
-
-         } else {*/
-
+        // fin carga la informacion de la noticia        
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
@@ -274,19 +228,14 @@ class Site extends MY_Controller
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
-
-
-        /*   }*/
         $this->templates->_index($data);
     }
 
-    public function zonafe()
-    {
+    public function zonafe(){
         $this->seccion(ZONAFE, ZONAFEPOS, "Zona FE", "zonafe");
     }
 
-    public function seriea()
-    {
+    public function seriea(){
         $this->seccion(SECTION_SERIE_A, 2, "Serie A", "seriea");
     }
 
@@ -348,31 +297,7 @@ class Site extends MY_Controller
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
-
-        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $isMobile = false;
-        if ($this->agent->is_mobile()) {
-            $m = $this->agent->mobile();
-            if (in_array($m, $mobiles))
-                $isMobile = true;
-        }
-
-        /* if ($isMobile) {
-
-             $data['cabecera'] = $this->contenido->menum();
-             $data['content'] = $this->contenido->header_mobile();
-             //$data['content'] .= $this->partidos->partidosFechaMovil();
-             $data['content'] .= $this->partidos->partidosFinal();
-             $data['content'] .= $this->contenido->view_banner_contenidotop();
-             $data['content'] .= $this->contenido->view_noticia_home();
-             $data['content'] .= $this->contenido->view_banner_contenido();
-             $data['content'] .= $this->contenido->view_twitter();
-
-             $data['footer'] = '';
-             $data['sidebar'] = '';
-
-         } else {*/
-
+        $data['verMobile']=$this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
@@ -404,8 +329,7 @@ class Site extends MY_Controller
         $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie);
 
         $data['footer'] = $this->contenido->footer();
-        $data['bottom'] = $this->contenido->bottom();
-        /*   }*/
+        $data['bottom'] = $this->contenido->bottom();        
         $this->templates->_index($data);
     }
 
@@ -426,7 +350,7 @@ class Site extends MY_Controller
 
     public function goleadores($serie = SERIE_A)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $id = $this->uri->segment(3);
         if ($id) {
             $serie = $id;
@@ -439,7 +363,7 @@ class Site extends MY_Controller
 
     public function tabladeposiciones($serie = SERIE_A)
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $id = $this->uri->segment(3);
         if ($id) {
             $serie = $id;
@@ -452,7 +376,7 @@ class Site extends MY_Controller
 
     public function resultados()
     {
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->module('matches');
 
         $id = $this->uri->segment(3);
@@ -464,8 +388,7 @@ class Site extends MY_Controller
         $this->singleConten($title, $fechas);
     }
 
-    public function marcadorenvivo()
-    {
+    public function marcadorenvivo(){
         $this->load->module('matches');
         $title = "Marcador En Vivo";
         $fechas = $this->matches->matchesLive($title);
@@ -474,7 +397,7 @@ class Site extends MY_Controller
 
     public function partido()
     {
-        $this->output->cache(CACHE_PARTIDOS);
+        //$this->output->cache(CACHE_PARTIDOS);
 
         $this->load->module('matches');
         $id = $this->uri->segment(4);
@@ -487,9 +410,8 @@ class Site extends MY_Controller
     }
 
 
-    public function fueradejuego()
-    {
-        $this->output->cache(CACHE_DEFAULT);
+    public function fueradejuego(){
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->module('contenido');
         $fueradejuego = $this->contenido->view_fuera_de_juego();
         $this->singleConten("Fuera de Juego", $fueradejuego);
@@ -505,31 +427,7 @@ class Site extends MY_Controller
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
-
-        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $isMobile = false;
-        if ($this->agent->is_mobile()) {
-            $m = $this->agent->mobile();
-            if (in_array($m, $mobiles))
-                $isMobile = true;
-        }
-
-        /* if ($isMobile) {
-
-             $data['cabecera'] = $this->contenido->menum();
-             $data['content'] = $this->contenido->header_mobile();
-             //$data['content'] .= $this->partidos->partidosFechaMovil();
-             $data['content'] .= $this->partidos->partidosFinal();
-             $data['content'] .= $this->contenido->view_banner_contenidotop();
-             $data['content'] .= $this->contenido->view_noticia_home();
-             $data['content'] .= $this->contenido->view_banner_contenido();
-             $data['content'] .= $this->contenido->view_twitter();
-
-             $data['footer'] = '';
-             $data['sidebar'] = '';
-
-         } else {*/
-
+        $data['verMobile']=$this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
@@ -542,21 +440,19 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
         $data['content'] = $contenSeccion;
 
-        if ($nameSeccion != "Magazine") {
+        if (($nameSeccion != "Magazine") && ($nameSeccion !="Fuera de Juego")) {
             $data['sidebar'] = $this->contenido->sidebarOpenNews();
         } else {
             $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, SERIE_A, "short");
-
         }
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
-        /*   }*/
+    
         $this->templates->_index($data);
     }
 
 
-    public function equipo()
-    {
+    public function equipo(){
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
         $this->section_equipo($idEquipo, 2, $shortEquipo);
@@ -566,7 +462,7 @@ class Site extends MY_Controller
     public function section_equipo($seccion, $seccionpos, $urlSeccion)
     {
         // para la final se comentan la llamada a las secciones.
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         // Informacion de equipo
         $idNoticia = $this->uri->segment(6);
 
@@ -612,46 +508,20 @@ class Site extends MY_Controller
         $this->load->library('user_agent');
         $this->load->module('story');
 
-        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-        $isMobile = false;
-        if ($this->agent->is_mobile()) {
-            $m = $this->agent->mobile();
-            if (in_array($m, $mobiles))
-                $isMobile = true;
-        }
-
-        /* if ($isMobile) {
-
-             $data['cabecera'] = $this->contenido->menum();
-             $data['content'] = $this->contenido->header_mobile();
-             //$data['content'] .= $this->partidos->partidosFechaMovil();
-             $data['content'] .= $this->partidos->partidosFinal();
-             $data['content'] .= $this->contenido->view_banner_contenidotop();
-             $data['content'] .= $this->contenido->view_noticia_home();
-             $data['content'] .= $this->contenido->view_banner_contenido();
-             $data['content'] .= $this->contenido->view_twitter();
-
-             $data['footer'] = '';
-             $data['sidebar'] = '';
-
-         } else {*/
-
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
-        if ($infoEquipo != "") {
+        if ($infoEquipo != "") 
             $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 4);
-        } else {
+         else 
             $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
-        }
 
         $storia = "";
         $bodytag = $nameSeccion;
 
         // carga la informacion de la noticia
-
 
         if ($idNoticia) {
             if ($nombreNoticia == "0") {
@@ -659,11 +529,10 @@ class Site extends MY_Controller
             } else {
                 $storia = $this->story->get_complete($idNoticia);
             }
-
             $aux = $this->mdl_story->get_story($idNoticia);
             $bodytag = str_replace('"', '', strip_tags($aux->title));
         }
-
+        $data['verMobile']=$this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
         // fin carga la informacion de la noticia
 

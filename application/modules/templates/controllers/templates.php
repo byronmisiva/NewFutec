@@ -5,8 +5,7 @@ class Templates extends MX_Controller{
 		parent::__construct();		
 	}
 	
-	public function _index( $data = FALSE ){
-
+	public function _index( $data = FALSE ){		
 		$this->load->view( 'index', $data );
 	}
 

@@ -25,9 +25,6 @@ class Contenido extends MY_Controller
 
         $this->load->module('teams_position');
         $positions = $this->mdl_teams_position->get_table_by_champ(CHAMP_DEFAULT);
-
-
-
         $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 2);
         $data['serieb'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_B, 2);
         $data['seleccion'] = $this->mdl_noticias->get_by_position(1, SECTION_SELECCION, 2);
@@ -307,44 +304,51 @@ class Contenido extends MY_Controller
         }
         $data['campeonatosResultados'] = $campeonatosResultados;
 
-        //Resultados tabla de posiciones
-        $this->load->module('scoreboards');
 
-
-        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
-
-        //Resultados goleadores
-        $this->load->module('strikes');
-        $data['strikes'] = $this->strikes->goleadores($serie);
-
-        //Resultados goleadores
-        /*$this->load->module('strikes');
-        $data['strikes'] = $this->strikes->goleadores(SERIE_A);*/
-
-        //La entrevista
-     //   $data['laentrevista'] = $this->view_la_entrevista();
-
-        //La entrevista
-     //   $data['fueradejuego'] = $this->view_mod_fuera_de_juego();
-
-        //Lo más leído
-
-        $this->load->module('story');
-        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
-
-        //La Voz de las Tribunas
-        $this->load->module('noticias');
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
-
-        //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
-
+        //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
+
         if ($tipo== "large"){
+            //Resultados tabla de posiciones
+            $this->load->module('scoreboards');
+            $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
+
+            //Resultados goleadores
+            $this->load->module('strikes');
+            $data['strikes'] = $this->strikes->goleadores($serie);
+
+
+            //Lo más leído
+            $this->load->module('story');
+            $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
+
+            //La Voz de las Tribunas
+            $this->load->module('noticias');
+            $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
+
+            //Zona Fe
+            $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
+
+
+
             return $this->load->view('sidebaropennews', $data, TRUE);
         } else {
+            //Resultados tabla de posiciones
+            $data['tablaposiciones'] = "";
+
+            //Resultados goleadores
+            $data['strikes'] = "";
+
+            //Lo más leído
+            $data['loMasLeido'] = "";
+
+            //La Voz de las Tribunas
+            $data['laVozDeLasTribunas'] = "";
+
+            //Zona Fe
+            $data['zonaFe'] = "";
+
             return $this->load->view('sidebaropenshort', $data, TRUE);
         }
-
     }
 }

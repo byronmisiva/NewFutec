@@ -1,5 +1,6 @@
 <?php
-$this->load->view('header');
+ $data["verMobile"]=$verMobile;
+$this->load->view('header', $data);
 ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="page-header top1 ">
@@ -25,7 +26,7 @@ $this->load->view('header');
 
                 <div class="col-xs-10 margen0">
                     <a href="<?php echo base_url('site/movil/') ?>" class="navbar-brand"><img
-                            src="<?= base_url('assets/img/logotipo.png') ?>"
+                            src="<?php echo base_url('assets/img/logotipo.png') ?>"
                             alt="FutbolEcuador" class=" media-object img-responsive">
                     </a>
                 </div>
@@ -44,13 +45,13 @@ $this->load->view('header');
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a class="clickmenu" href="<?= base_url('site/marcadorenvivo') ?>">Marcador en Vivo</a></li>
+                    <li><a class="clickmenu" href="<?php echo base_url('site/marcadorenvivo') ?>">Marcador en Vivo</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
                             <span class="caret  link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a class="clickmenu" href="<?= base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
-                            <li><a class="clickmenu" href="<?= base_url('site/tabladeposiciones/' . SERIE_B) ?>">Posiciones Serie B</a></li>
+                            <li><a class="clickmenu" href="<?php echo base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
+                            <li><a class="clickmenu" href="<?php echo base_url('site/tabladeposiciones/' . SERIE_B) ?>">Posiciones Serie B</a></li>
 
                         </ul>
                     </li>
@@ -149,7 +150,7 @@ $this->load->view('header');
     </div>
 </div>
 <?php
-$this->load->view('footer');
+$this->load->view('footer',$data);
 ?>
 <!-- /container -->
 

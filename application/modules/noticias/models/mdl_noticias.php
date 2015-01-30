@@ -142,7 +142,7 @@ class Mdl_Noticias extends MY_Model
 
 
         $aux = $this->db->get()->result();
-        //$test = $this->db->last_query();
+        $test = $this->db->last_query();
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);
             $fecha = explode("-", $date[0]);

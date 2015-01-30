@@ -15,21 +15,20 @@
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="<?= base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
+          href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="<?= base_url('assets/img/apple-touch-icon-114-precomposed.png') ?>"/>
+          href="<?php echo base_url('assets/img/apple-touch-icon-114-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
-          href="<?= base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
+          href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
 
     <link rel="apple-touch-icon" sizes="144x144"
-          href="<?= base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
+          href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
     <link rel="apple-touch-icon" sizes="114x114"
-          href="<?= base_url('assets/img/apple-touch-icon-114-precomposed.png') ?>"/>
+          href="<?php echo base_url('assets/img/apple-touch-icon-114-precomposed.png') ?>"/>
     <link rel="apple-touch-icon" sizes="72x72"
-          href="<?= base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
+          href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
-
 
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
 
@@ -38,7 +37,7 @@
     <meta property='og:url' content="http://www.futbolecuador.com"/>
     <meta property='og:site_name' content="Futbool Ecuador"/>
     <meta property='og:type' content="site"/>
-    <meta property='og:image' content="<?= base_url('img/apple-touch-icon-144-precomposed.png') ?>"/>
+    <meta property='og:image' content="<?php echo base_url('img/apple-touch-icon-144-precomposed.png') ?>"/>
 
     <!--SEO TAGS-->
     <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
@@ -46,7 +45,6 @@
           content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo"/>
 
     <title><?php echo $pageTitle ?></title>
-
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
@@ -77,41 +75,22 @@
 
     <!-- Modernizr -->
     <script src="<?php echo base_url('assets/js/modernizr.js') ?>"></script>
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <?php
-    $this->load->library('user_agent');
-    //$mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
-    $mobiles = array('Apple iPhone', 'Apple iPod Touch', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia");
-
-    if ($this->agent->is_mobile()) {
-        $m = $this->agent->mobile();
-        if ($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i', $this->agent->agent) == 0)
-            $m = "Android Tablet";
-
-        switch ($m) {
-            case in_array($m, $mobiles):
-                $isMobile = false;
-        }
-
-        ?>
+    <?php 
+    
+    if($verMobile=="1"){?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
-    }  else {
-        ?>
+    }  else { ?>
         <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>
-
     <?php
     }
     ?>
-
     <script>
         var baseUrl = "<?php echo base_url(); ?>";
         var REFRESH_VIVO = "<?php echo REFRESH_VIVO; ?>";
     </script>
-
 
 </head>
 
