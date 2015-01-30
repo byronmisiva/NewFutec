@@ -41,7 +41,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 //Pagination
 define('RESULT_PAGE', 25);
 define('RESULT_PAGE_LITE', 10);
-define('TOTALNEWSINOPENNEWS',5); //
+define('TOTALNEWSINOPENNEWS',7); //
 
 
 //Secciones

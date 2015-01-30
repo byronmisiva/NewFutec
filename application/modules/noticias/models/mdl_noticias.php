@@ -104,11 +104,14 @@ class Mdl_Noticias extends MY_Model
                 $this->db->from('stories s', false);
                 $this->db->join('(select * from images where  id IN('. $str_ids.')) i', 'i.id = s.image_id');
 
-                $this->db->join('(select * from `stories_tags`   ) st', 's.id = st.story_id');
-                $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
+                if ($this->validarquery($str_ids, $str_tags, $sec->category_id, $position, $limit)) {
+                    $this->db->join('(select * from `stories_tags`   ) st', 's.id = st.story_id');
+                    $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
+                } else {
+                    $this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
+                    $where = "(category_id  =$sec->category_id )";
+                }
 
-                //$this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
-                //$where = "(category_id  =$sec->category_id )";
 
                 //  $this->db->where('s.position <', 10);
 
@@ -168,6 +171,28 @@ class Mdl_Noticias extends MY_Model
             }
         }
         return $aux;
+    }
+
+    public function validarquery ($images, $tags, $categoria, $position, $limit){
+
+        $query = 'SELECT s.*
+                    FROM (`stories` s)
+                    JOIN (select * from images where id IN('. $images .')) i ON `i`.`id` = `s`.`image_id`
+                    JOIN (select * from `stories_tags` where tag_id IN( '.$tags .' ) ) st ON `s`.`id` = `st`.`story_id`
+                    WHERE (category_id ='.$categoria .' )
+                    AND `s`.`invisible` =  "0"
+                    AND `s`.`position` =  '.$position.'
+                    LIMIT '.$limit;
+
+        $query = $this->db->query($query);
+
+        if ($query->num_rows() == 0){
+            return true;
+
+        } else {
+            return false;
+        }
+
     }
 
 

@@ -233,8 +233,7 @@ class Site extends MY_Controller
         //   $data['header2'] = $this->contenido->header2($dataHeader2);
         //   $data['top2'] = $this->banners->FE_Megabanner();
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(TOTALNEWSINOPENNEWS);
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(TOTALNEWSINOPENNEWS);
+        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true,TOTALNEWSINOPENNEWS);
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
