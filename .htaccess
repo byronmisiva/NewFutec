@@ -21,4 +21,4 @@ RewriteCond %{HTTP_USER_AGENT} "symbian|midp|wap|phone|pocket|mobile|pda|psp" [N
 RewriteCond %{HTTP_USER_AGENT} !^.*iPad.*$
 #-------------
 RewriteCond %{HTTP_USER_AGENT} !macintosh [NC] #*SEE NOTE BELOW
-RewriteRule ^(.*)$ /site/movil/ [L,R=302]
+RewriteRule ^(.*)$ /futec/site/movil/ [L,R=302]
