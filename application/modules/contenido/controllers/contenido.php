@@ -21,7 +21,7 @@ class Contenido extends MY_Controller
 
         //  $this->load->model('teams_position');
         //  $this->load->model('team');
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
 
         $this->load->module('teams_position');
         $positions = $this->mdl_teams_position->get_table_by_champ(CHAMP_DEFAULT);

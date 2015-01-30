@@ -342,7 +342,7 @@ class Noticias extends MY_Controller
 
     public function viewNewsSection($namesection, $idsection, $posSection, $data = FALSE)
     {
-        //$this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache  (CACHE_DEFAULT);
         $data['namesection'] = $namesection;
         $data['idsection'] = $idsection;
         $data['noticias'] = $this->mdl_noticias->get_by_position(NUMNEWSSIDE, $idsection, $posSection);

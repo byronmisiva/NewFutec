@@ -150,7 +150,7 @@ $this->load->view('header', $data);
     </div>
 </div>
 <?php
-$this->load->view('footer',$data);
+$this->load->view('footerend',$data);
 ?>
 <!-- /container -->
 

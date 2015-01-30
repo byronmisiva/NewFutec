@@ -63,7 +63,8 @@ class Site extends MY_Controller
         if ($this->verificarDispositivo() == "1")
             redirect('site/movil/');
         else
-            $this->home();
+            redirect('home');
+            //$this->home();
     }
 
     // para la final se comentan la llamada a las secciones.
@@ -101,11 +102,11 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    // para la final se comentan la llamada a las secciones.
+    // para la fial se comentan la llamada a las secciones.
     public function home()
     {
         // para la final se comentan la llamada a las secciones.
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
 
         $this->load->module('noticias');

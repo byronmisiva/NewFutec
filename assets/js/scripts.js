@@ -1,5 +1,7 @@
 var masnoticas = "";
 
+//if (window.location =="http://www.futbolecuador.com/site/movil")
+
 jQuery(document).ready(function () {
     //ocultar el menu al dar click
     $(".clickmenu").click (function () {
