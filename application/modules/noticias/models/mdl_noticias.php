@@ -103,11 +103,16 @@ class Mdl_Noticias extends MY_Model
 
                 $this->db->from('stories s', false);
                 $this->db->join('(select * from images where  id IN('. $str_ids.')) i', 'i.id = s.image_id');
-                //$this->db->join('(select * from `stories_tags`   ) st', 's.id = st.story_id');
-                //$this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
-              //  $this->db->where('s.position <', 10);
-                $where = "(category_id  =$sec->category_id )";
+
+                $this->db->join('(select * from `stories_tags`   ) st', 's.id = st.story_id');
                 $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
+
+                //$this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
+                //$where = "(category_id  =$sec->category_id )";
+
+                //  $this->db->where('s.position <', 10);
+
+
                 $this->db->where($where);
                 $this->db->group_by('s.id');
             } else {

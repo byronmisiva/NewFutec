@@ -71,7 +71,7 @@ class Site extends MY_Controller
     {
         // para la final se comentan la llamada a las secciones.
 
-        $this->output->cache(CACHE_DEFAULT);
+        //$this->output->cache(CACHE_DEFAULT);
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
