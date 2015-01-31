@@ -57,10 +57,10 @@
 </div>
 
 <div class="col-md-12 column content-gris hidden-xs">
-    <div class="col-md-4 col-xs-4 column margen0">
+    <div class="col-md-4 col-xs-4 column margen0 hidden">
         Lecturas <?php echo $noticia->lecturas; ?>
     </div>
-    <div class="col-md-8 col-xs-8 column margen0 text-right text-news-zone">
+    <div class="col-md-12 col-xs-12 column margen0 text-right text-news-zone">
         <?php foreach ($noticia->tags as $key=>$tag) {
         echo $tag->name  ;
             if ($key < count($noticia->tags) - 1  )  echo   ", ";

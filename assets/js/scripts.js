@@ -28,17 +28,14 @@ jQuery(document).ready(function () {
     }
     // pone en el mismo alto a los contenedores
     setTimeout(function(){
-        if (  $("body").width() > 600) {
-            zonacontenido = $(".zonacontenido").height()
-            zonasidebar = $(".zonasidebar").height();
-
-            if (zonacontenido > zonasidebar ) {
-                $(".zonasidebar").height(zonacontenido);
-            } else {
-                $(".zonacontenido").height(zonasidebar);
-            }
-        }
+        igualarancho();
     }, 3000);
+    setTimeout(function(){
+        igualarancho();
+    }, 5000);
+    setTimeout(function(){
+        igualarancho();
+    }, 7000);
 
     $("#enviarcontacto").click(function () {
         cargaSendMail("#correocontacto", "#nombrecontacto", "#mensajecontacto", "#enviarcontacto", "#errorcontacto", "contacto")
@@ -375,4 +372,17 @@ function ajustesRotativas () {
         }
         ;
     });
+}
+
+function igualarancho(){
+    if (  $("body").width() > 600) {
+        zonacontenido = $(".zonacontenido").height()
+        zonasidebar = $(".zonasidebar").height();
+
+        if (zonacontenido > zonasidebar ) {
+            $(".zonasidebar").height(zonacontenido);
+        } else {
+            $(".zonacontenido").height(zonasidebar);
+        }
+    }
 }

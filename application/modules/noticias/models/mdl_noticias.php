@@ -90,10 +90,12 @@ class Mdl_Noticias extends MY_Model
             $str_tags = trim($str_tags, ',');
             if (count($tags) > 0) {
 
+                if (isset($position))
                 $res=$this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
                                       AND invisible =  '0' AND position =  $position ORDER BY created desc LIMIT $limit")->result(0);
-                //$numrows=$row[0]->numrows;
-                //$rowvalue = $row[0]['image_id'];
+                else
+                    $res=$this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                                      AND invisible =  '0'  ORDER BY created desc LIMIT $limit")->result(0);
 
                 $str_ids = "";
                 foreach ($res as $row) {

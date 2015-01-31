@@ -55,10 +55,10 @@
     }?>
 </div>
 <div class="col-md-12 col-xs-12 col-sm-12 column content-gris hidden-xs">
-    <div class="col-md-4 col-sm-4 column margen0">
+    <div class="col-md-4 col-sm-4 column margen0 hidden">
         Lecturas <?php echo $story->lecturas ?>
     </div>
-    <div class="col-md-8 col-sm-8 column margen0-noti text-right text-news-zone">
+    <div class="col-md-12 col-sm-12 column margen0-noti text-right text-news-zone">
         <?php echo $story->category ?>
     </div>
 </div>
