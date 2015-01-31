@@ -177,6 +177,7 @@ class Mdl_Noticias extends MY_Model
 
     public function validarquery ($images, $tags, $categoria, $position, $limit){
 
+        if (isset($position))
         $query = 'SELECT s.*
                     FROM (`stories` s)
                     JOIN (select * from images where id IN('. $images .')) i ON `i`.`id` = `s`.`image_id`
@@ -184,6 +185,14 @@ class Mdl_Noticias extends MY_Model
                     WHERE (category_id ='.$categoria .' )
                     AND `s`.`invisible` =  "0"
                     AND `s`.`position` =  '.$position.'
+                    LIMIT '.$limit;
+        else
+            $query = 'SELECT s.*
+                    FROM (`stories` s)
+                    JOIN (select * from images where id IN('. $images .')) i ON `i`.`id` = `s`.`image_id`
+                    JOIN (select * from `stories_tags` where tag_id IN( '.$tags .' ) ) st ON `s`.`id` = `st`.`story_id`
+                    WHERE (category_id ='.$categoria .' )
+                    AND `s`.`invisible` =  "0"
                     LIMIT '.$limit;
 
         $query = $this->db->query($query);

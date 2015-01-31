@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/welcome.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/imagenes/.com.apple.timemachine.supported" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -43,13 +35,15 @@
       <file leaf-file-name="mdl_noticias.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5" vertical-offset="1253" max-vertical-offset="3090">
-              <caret line="97" column="60" selection-start-line="97" selection-start-column="60" selection-end-line="97" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.33168316" vertical-offset="2221" max-vertical-offset="3225">
+              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding>
-                <marker date="1422666351000" expanded="true" signature="2562:2748" placeholder="SELECT s.ima..stories..." />
-                <marker date="1422666351000" expanded="true" signature="2833:2994" placeholder="SELECT s.ima..stories..." />
-                <marker date="1422666351000" expanded="true" signature="6265:6728" placeholder="SELECT s.* F..*..." />
-                <marker date="1422666351000" expanded="true" signature="6341:6388" placeholder="select * fro..images..." />
+                <marker date="1422666772000" expanded="true" signature="2562:2748" placeholder="SELECT s.ima..stories..." />
+                <marker date="1422666772000" expanded="true" signature="2833:2994" placeholder="SELECT s.ima..stories..." />
+                <marker date="1422666772000" expanded="true" signature="6295:6758" placeholder="SELECT s.* F..*..." />
+                <marker date="1422666772000" expanded="true" signature="6371:6418" placeholder="select * fro..images..." />
+                <marker date="1422666772000" expanded="true" signature="6803:7210" placeholder="SELECT s.* F..*..." />
+                <marker date="1422666772000" expanded="true" signature="6879:6926" placeholder="select * fro..images..." />
               </folding>
             </state>
           </provider>
@@ -3745,7 +3739,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422651564211</updated>
     </task>
-    <option name="localTasksCounter" value="548" />
+    <task id="LOCAL-00548" summary="incluye tabla de revista">
+      <created>1422666590719</created>
+      <option name="number" value="00548" />
+      <option name="project" value="LOCAL" />
+      <updated>1422666590719</updated>
+    </task>
+    <option name="localTasksCounter" value="549" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -3843,16 +3843,21 @@
           <line>62</line>
           <option name="timeStamp" value="401" />
         </line-breakpoint>
-        <line-breakpoint type="php">
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php</url>
+          <line>99</line>
+          <option name="timeStamp" value="418" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php</url>
           <line>157</line>
-          <option name="timeStamp" value="414" />
+          <option name="timeStamp" value="420" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="418" />
+      <option name="time" value="421" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -4263,13 +4268,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5" vertical-offset="1253" max-vertical-offset="3090">
-          <caret line="97" column="60" selection-start-line="97" selection-start-column="60" selection-end-line="97" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.33168316" vertical-offset="2221" max-vertical-offset="3225">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
-            <marker date="1422666351000" expanded="true" signature="2562:2748" placeholder="SELECT s.ima..stories..." />
-            <marker date="1422666351000" expanded="true" signature="2833:2994" placeholder="SELECT s.ima..stories..." />
-            <marker date="1422666351000" expanded="true" signature="6265:6728" placeholder="SELECT s.* F..*..." />
-            <marker date="1422666351000" expanded="true" signature="6341:6388" placeholder="select * fro..images..." />
+            <marker date="1422666772000" expanded="true" signature="2562:2748" placeholder="SELECT s.ima..stories..." />
+            <marker date="1422666772000" expanded="true" signature="2833:2994" placeholder="SELECT s.ima..stories..." />
+            <marker date="1422666772000" expanded="true" signature="6295:6758" placeholder="SELECT s.* F..*..." />
+            <marker date="1422666772000" expanded="true" signature="6371:6418" placeholder="select * fro..images..." />
+            <marker date="1422666772000" expanded="true" signature="6803:7210" placeholder="SELECT s.* F..*..." />
+            <marker date="1422666772000" expanded="true" signature="6879:6926" placeholder="select * fro..images..." />
           </folding>
         </state>
       </provider>
