@@ -8,6 +8,6 @@
     </div>
 
     <div id='closeBanner'>
-        <img src='<?=base_url()?>imagenes/template/public/close_banner.png' width='81' height='15' />
+        <img src='<?=base_url()?>imagenes/public/close_banner.png' width='81' height='15' />
     </div>
 </div>
