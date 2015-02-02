@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -115,8 +114,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48289737" vertical-offset="0" max-vertical-offset="6225">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30181086" vertical-offset="0" max-vertical-offset="6225">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,9 +125,10 @@
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="255">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -3970,7 +3970,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422895790227</updated>
     </task>
-    <option name="localTasksCounter" value="566" />
+    <task id="LOCAL-00566" summary="incluye tabla de revista">
+      <created>1422896154862</created>
+      <option name="number" value="00566" />
+      <option name="project" value="LOCAL" />
+      <updated>1422896154862</updated>
+    </task>
+    <option name="localTasksCounter" value="567" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4470,9 +4476,10 @@
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="255">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
@@ -4481,8 +4488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48289737" vertical-offset="0" max-vertical-offset="6225">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30181086" vertical-offset="0" max-vertical-offset="6225">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
