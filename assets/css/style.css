@@ -1287,7 +1287,7 @@ div#FE_LOADING {
     margin: 5% auto;
     position: fixed;
     top: 50px;
-    width: inherit;
+    width: 322px;
 }
 
 div#closeBanner {
