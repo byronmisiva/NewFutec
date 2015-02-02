@@ -1277,7 +1277,7 @@ div#darkLayer {
     width: 100%;
 }
 div#FE_LOADING {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #dddddd;
     height: inherit;
     left: 50%;
     margin-left: -400px;
