@@ -1294,8 +1294,8 @@ div#FE_LOADING {
 
 div#closeBanner {
     background-color: black;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
     cursor: pointer;
     height: 20px;
     opacity: 0.6;
