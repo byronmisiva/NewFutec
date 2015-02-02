@@ -1294,8 +1294,8 @@ div#FE_LOADING {
 
 div#closeBanner {
     background-color: #000000;
-    border-bottom: 1px solid #FFFFFF;
-    border-left: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     cursor: pointer;
     height: 34px;
     opacity: 0.6;
@@ -1303,8 +1303,8 @@ div#closeBanner {
     left: 0;
     top: 0;
     width: 118px;
-
 }
+
 div#closeBanner {
     cursor: pointer;
 }
