@@ -202,7 +202,7 @@ class Site extends MY_Controller
 
     public function MarcadorVivoDetail()
     {
-        $idEquipo = $_POST["idEquipo"];
+        $idEquipo = $this->uri->segment(3);
         $this->load->module('matches');
         echo $this->matches->getMatch($idEquipo);
     }

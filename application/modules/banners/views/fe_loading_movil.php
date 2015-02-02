@@ -7,6 +7,6 @@
         </script>
     </div>
     <div id='closeBanner'>
-        <img style="height: 100%;" src='<?=base_url()?>imagenes/public/close_banner.png' />
+        <img style="height: auto;" src='<?=base_url()?>imagenes/public/close_banner.png' />
     </div>
 </div>
