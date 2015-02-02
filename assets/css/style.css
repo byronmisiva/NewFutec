@@ -1278,12 +1278,12 @@ div#darkLayer {
 }
 div#FE_LOADING {
     border: 1px solid #FFFFFF;
-    height: 600px;
+    height: inherit;
     left: 50%;
     margin-left: -400px;
     position: fixed;
     top: 50px;
-    width: 800px;
+    width: inherit;
 }
 div#closeBanner {
     background-color: #000000;

@@ -9,16 +9,18 @@ function cargarSplash(){
     }
 };
 
-var cleanBlackLayer = function(){
-    $('FE_LOADING').hide();
-    $('darkLayer').hide();
-};
 //fin funciones splash
 
 jQuery(document).ready(function () {
     //ocultar el menu al dar click
     $(".clickmenu").click (function () {
         $(".navbar-collapse").addClass("collapsing");
+    })
+
+    //ocultar el splash
+    $("#cleanBlackLayer").click (function () {
+        $('FE_LOADING').hide();
+        $('darkLayer').hide();
     })
     // si el ancho es menor a 600 cambiamos cambiamos los videos
     ancho = $("body").width();

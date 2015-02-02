@@ -7,7 +7,7 @@
         </script>
     </div>
 
-    <div id='closeBanner' onclick='cleanBlackLayer();'>
+    <div id='closeBanner'>
         <img src='<?=base_url()?>imagenes/template/public/close_banner.png' width='81' height='15' />
     </div>
 </div>
