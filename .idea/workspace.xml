@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -94,8 +95,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.694165" vertical-offset="19110" max-vertical-offset="20190">
-              <caret line="1297" column="31" selection-start-line="1297" selection-start-column="31" selection-end-line="1297" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.75452715" vertical-offset="19110" max-vertical-offset="20190">
+              <caret line="1299" column="14" selection-start-line="1299" selection-start-column="14" selection-end-line="1299" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -125,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -3939,7 +3940,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422895267760</updated>
     </task>
-    <option name="localTasksCounter" value="561" />
+    <task id="LOCAL-00561" summary="incluye tabla de revista">
+      <created>1422895422872</created>
+      <option name="number" value="00561" />
+      <option name="project" value="LOCAL" />
+      <updated>1422895422872</updated>
+    </task>
+    <option name="localTasksCounter" value="562" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4439,7 +4446,7 @@
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -4450,8 +4457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.694165" vertical-offset="19110" max-vertical-offset="20190">
-          <caret line="1297" column="31" selection-start-line="1297" selection-start-column="31" selection-end-line="1297" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.75452715" vertical-offset="19110" max-vertical-offset="20190">
+          <caret line="1299" column="14" selection-start-line="1299" selection-start-column="14" selection-end-line="1299" selection-end-column="14" />
           <folding />
         </state>
       </provider>
