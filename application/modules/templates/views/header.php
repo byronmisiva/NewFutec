@@ -137,6 +137,15 @@
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
 
         googletag.pubads().enableSingleRequest();
+
+        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+            if (event.slot.j == '/1022247/FE_LOADING_MOVIL'){
+            console.log (event.isEmpty);
+            console.log (event.size);
+            console.log (event.slot.j);
+            }
+        });
+
         googletag.enableServices();
 
         //para el caso que no existe publicicad --MISIVA--
