@@ -2,10 +2,13 @@ var masnoticas = "";
 
 //inicio funciones splash
 function cargarSplash(){
+    $('#darkLayer').show();
+    $('#FE_LOADING').show();
     $("iframe").each(function() {
         if ($(this).attr("name") == 'google_ads_iframe_/1022247/FE_LOADING_MOVIL_0')
         {
-            console.log (this.contentWindow.document.body.offsetHeight + 'px')
+            console.log (this.contentWindow.document.body.offsetHeight + 'px');
+
             if (this.contentWindow.document.body.offsetHeight   == 0)
             {
                 cleanBlackLayer()
