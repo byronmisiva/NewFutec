@@ -6,8 +6,7 @@
             googletag.display('div-gpt-ad-1383593884981-1');
         </script>
     </div>
-
     <div id='closeBanner'>
-        <img src='<?=base_url()?>imagenes/public/close_banner.png' />
+        <img style="height: auto;" src='<?=base_url()?>imagenes/public/close_banner.png' />
     </div>
 </div>

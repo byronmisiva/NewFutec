@@ -1300,7 +1300,7 @@ div#closeBanner {
     height: 20px;
     opacity: 0.6;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 81px;
 }
