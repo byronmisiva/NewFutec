@@ -95,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.54325956" vertical-offset="19080" max-vertical-offset="20175">
-              <caret line="1290" column="16" selection-start-line="1290" selection-start-column="16" selection-end-line="1290" selection-end-column="16" />
+              <caret line="1290" column="17" selection-start-line="1290" selection-start-column="17" selection-end-line="1290" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -3883,7 +3883,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422894954713</updated>
     </task>
-    <option name="localTasksCounter" value="557" />
+    <task id="LOCAL-00557" summary="incluye tabla de revista">
+      <created>1422894974798</created>
+      <option name="number" value="00557" />
+      <option name="project" value="LOCAL" />
+      <updated>1422894974798</updated>
+    </task>
+    <option name="localTasksCounter" value="558" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4395,7 +4401,7 @@
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54325956" vertical-offset="19080" max-vertical-offset="20175">
-          <caret line="1290" column="16" selection-start-line="1290" selection-start-column="16" selection-end-line="1290" selection-end-column="16" />
+          <caret line="1290" column="17" selection-start-line="1290" selection-start-column="17" selection-end-line="1290" selection-end-column="17" />
           <folding />
         </state>
       </provider>

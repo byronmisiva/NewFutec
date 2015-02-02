@@ -1288,7 +1288,7 @@ div#FE_LOADING {
     position: fixed;
     top: 50px;
     width: 322px;
-    z-index: 400;
+    z-index: 1040;
 }
 
 div#closeBanner {
