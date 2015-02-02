@@ -27,7 +27,7 @@ jQuery(document).ready(function () {
     $("#closeBanner").click (function () {
         cleanBlackLayer ()
     })
-    //
+
     // si el ancho es menor a 600 cambiamos cambiamos los videos
     ancho = $("body").width();
       if (ancho < 600) {
@@ -138,28 +138,29 @@ setTimeout(function () {
     altoshome();
 }, 10000)
 
-// igualar columnas de contenidos
-
-
 
 //recargar marcador en vivo REFRESH_VIVO
-setInterval(function () {
-    $.post(baseUrl + "site/masMarcadorVivo",   function (data) {
-        $("#carousel-marcadorenvivo").html(data);
+machDetailCarrousel = $ ('#carousel-marcadorenvivo') ;
 
-    });
-}, REFRESH_VIVO * 1000)
+if ( machDetailCarrousel.length > 0) {
+    setInterval(function () {
+        $.post(baseUrl + "site/masMarcadorVivo", function (data) {
+            $("#carousel-marcadorenvivo").html(data);
+
+        });
+    }, REFRESH_VIVO * 1000)
+}
 
 //matchdetailestado
 
-machDetail = $('.matchdetail') ;
+machDetail = $ ('.matchdetail') ;
 if ( machDetail.length > 0) {
     estado = $ ('.matchdetailestado').html() ;
 
     if (estado.replace(/\s/g,'') != 'FindelPartido'){
         //recargar marcador en vivo REFRESH_VIVO
         setInterval(function () {
-            $.post(baseUrl + "site/MarcadorVivoDetail", {idEquipo: idEquipo}, function (data) {
+            $.post(baseUrl + "site/MarcadorVivoDetail/" + idEquipo + "/" + Math.floor((Math.random() * 1000000) + 1), function (data) {
 
                 $(".matchdetail").html(data);
 
