@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
     cargarSplash();
     //ocultar el splash
     $("#closeBanner").click (function () {
-        cleanBlackLayer
+        cleanBlackLayer ()
     })
     //
     // si el ancho es menor a 600 cambiamos cambiamos los videos

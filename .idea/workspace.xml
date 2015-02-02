@@ -114,8 +114,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30181086" vertical-offset="0" max-vertical-offset="6225">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8450704" vertical-offset="0" max-vertical-offset="6225">
+              <caret line="28" column="6" selection-start-line="26" selection-start-column="4" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -3976,7 +3976,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422896154862</updated>
     </task>
-    <option name="localTasksCounter" value="567" />
+    <task id="LOCAL-00567" summary="incluye tabla de revista">
+      <created>1422897088025</created>
+      <option name="number" value="00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1422897088025</updated>
+    </task>
+    <option name="localTasksCounter" value="568" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4488,8 +4494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30181086" vertical-offset="0" max-vertical-offset="6225">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8450704" vertical-offset="0" max-vertical-offset="6225">
+          <caret line="28" column="6" selection-start-line="26" selection-start-column="4" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>
