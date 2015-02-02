@@ -1277,15 +1277,19 @@ div#darkLayer {
     width: 100%;
 }
 
+
+
 div#FE_LOADING {
     border: 1px solid #dddddd;
     height: inherit;
-    left: 50%;
-    margin-left: -400px;
+    left: 0;
+    right: 0;
+    margin: 5% auto;
     position: fixed;
     top: 50px;
     width: inherit;
 }
+
 div#closeBanner {
     background-color: #000000;
     border-bottom: 1px solid #FFFFFF;
