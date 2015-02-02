@@ -30,7 +30,9 @@ jQuery(document).ready(function () {
         $(".navbar-collapse").addClass("collapsing");
     })
 
-//    cargarSplash();
+    cargarSplash();
+    setTimeout(cargarSplash(),2000);
+
     //ocultar el splash
     $("#closeBanner").click (function () {
         cleanBlackLayer ()
