@@ -7,6 +7,7 @@ function cargarSplash(){
     setTimeout(cleanBlackLayer,15000);
 };
 
+
 var cleanBlackLayer = function(){
     $('#FE_LOADING').hide();
     $('#darkLayer').hide();
