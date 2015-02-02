@@ -93,7 +93,9 @@ class Site extends MY_Controller
         $this->load->module('scoreboards');
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $tablaposiciones;
+
+        $fe_loading_movil = $this->banners->fe_loading_movil();
+        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $tablaposiciones;
         $data['sidebar'] = "";
 
         $data['footer'] = '';

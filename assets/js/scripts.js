@@ -1,6 +1,19 @@
 var masnoticas = "";
 
-//if (window.location =="http://www.futbolecuador.com/site/movil")
+//inicio funciones splash
+function cargarSplash(){
+    if($('div-gpt-ad-1383593884981-1').getStyle('display') !== "none"){
+        $('darkLayer').show();
+        $('FE_LOADING').show();
+        setTimeout(cleanBlackLayer,15000);
+    }
+};
+
+var cleanBlackLayer = function(){
+    $('FE_LOADING').hide();
+    $('darkLayer').hide();
+};
+//fin funciones splash
 
 jQuery(document).ready(function () {
     //ocultar el menu al dar click

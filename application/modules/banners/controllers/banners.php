@@ -121,5 +121,10 @@ class Banners extends MY_Controller
         return $this->load->view('fe_skin', $data, TRUE);
     }
 
+    public function fe_loading_movil($data = FALSE)
+    {
+        return $this->load->view('fe_loading_movil', $data, TRUE);
+    }
+
 
 }
