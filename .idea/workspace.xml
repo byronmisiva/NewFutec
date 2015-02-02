@@ -80,8 +80,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80241936" vertical-offset="1837" max-vertical-offset="3735">
-              <caret line="149" column="53" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.8326613" vertical-offset="1837" max-vertical-offset="3750">
+              <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -4097,7 +4097,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422910885546</updated>
     </task>
-    <option name="localTasksCounter" value="577" />
+    <task id="LOCAL-00577" summary="incluye tabla de revista">
+      <created>1422911488096</created>
+      <option name="number" value="00577" />
+      <option name="project" value="LOCAL" />
+      <updated>1422911488096</updated>
+    </task>
+    <option name="localTasksCounter" value="578" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4615,8 +4621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80241936" vertical-offset="1837" max-vertical-offset="3735">
-          <caret line="149" column="53" selection-start-line="149" selection-start-column="53" selection-end-line="149" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.8326613" vertical-offset="1837" max-vertical-offset="3750">
+          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
           <folding />
         </state>
       </provider>

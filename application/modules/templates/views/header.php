@@ -148,6 +148,7 @@
                     $('#FE_LOADING').show();
                 } else {
                     console.log ("no debe mostrar ");
+
                 }
             }
         });
