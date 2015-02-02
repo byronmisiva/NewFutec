@@ -1293,16 +1293,16 @@ div#FE_LOADING {
 }
 
 div#closeBanner {
-    background-color: #000000;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
+    background-color: black;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
     cursor: pointer;
-    height: 29px;
+    height: 20px;
     opacity: 0.6;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    width: 118px;
+    width: 81px;
 }
 
 div#closeBanner {
