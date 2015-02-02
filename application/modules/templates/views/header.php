@@ -143,6 +143,12 @@
             console.log (event.isEmpty);
             console.log (event.size);
             console.log (event.slot.j);
+                if (!event.isEmpty) {
+                    $('#darkLayer').show();
+                    $('#FE_LOADING').show();
+                } else {
+                    console.log ("no debe mostrar ");
+                }
             }
         });
 
