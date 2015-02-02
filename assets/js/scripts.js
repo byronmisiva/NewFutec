@@ -4,35 +4,8 @@ var masnoticas = "";
 function cargarSplash(){
     $('#darkLayer').show();
     $('#FE_LOADING').show();
-       revisaIframe();
-      //  setTimeout(revisaIframe,2000);
-
-
+    setTimeout(cleanBlackLayer,15000);
 };
-  function revisaIframe(){
-    $("iframe").each(function() {
-        console.log ("xxxxxxx")
-
-        if ($(this).attr("name") == 'google_ads_iframe_/1022247/FE_LOADING_MOVIL_0')
-        {
-
-            console.log ("oasi 1")
-            if (this.contentWindow.document.body.offsetHeight   == 0)
-            {
-                cleanBlackLayer()
-                console.log ("oasi 2")
-
-            } else
-            {
-                console.log ("oasi 3")
-
-                $('#darkLayer').show();
-                $('#FE_LOADING').show();
-                setTimeout(cleanBlackLayer,15000);
-            }
-        }
-    });
-}
 
 var cleanBlackLayer = function(){
     $('#FE_LOADING').hide();
@@ -44,9 +17,6 @@ jQuery(document).ready(function () {
     $(".clickmenu").click (function () {
         $(".navbar-collapse").addClass("collapsing");
     })
-
-    cargarSplash();
-
 
     //ocultar el splash
     $("#closeBanner").click (function () {
