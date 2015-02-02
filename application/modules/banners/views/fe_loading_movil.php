@@ -1,5 +1,5 @@
-<div id="darkLayer" style="display:block;"></div>
-<div id="FE_LOADING" style="display:block;">
+<div id="darkLayer" style="display:none;"></div>
+<div id="FE_LOADING" style="display:none;">
     <!-- FE_LOADING_MOVIL -->
     <div id='div-gpt-ad-1383593884981-1' style='width:320px;height:350px;'>
         <script type='text/javascript'>
@@ -7,6 +7,6 @@
         </script>
     </div>
     <div id='closeBanner'>
-        <img style="height: auto;" src='<?=base_url()?>imagenes/public/close_banner.png' />
+        <img style="height: 100%;" src='<?=base_url()?>imagenes/public/close_banner.png' />
     </div>
 </div>

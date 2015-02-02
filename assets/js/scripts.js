@@ -9,7 +9,12 @@ function cargarSplash(){
     }
 };
 
-//fin funciones splash
+var cleanBlackLayer = function(){
+    $('FE_LOADING').hide();
+    $('darkLayer').hide();
+};
+
+
 
 jQuery(document).ready(function () {
     //ocultar el menu al dar click
@@ -17,11 +22,12 @@ jQuery(document).ready(function () {
         $(".navbar-collapse").addClass("collapsing");
     })
 
+    cargarSplash();
     //ocultar el splash
-    $("#cleanBlackLayer").click (function () {
-        $('FE_LOADING').hide();
-        $('darkLayer').hide();
+    $("#closeBanner").click (function () {
+        cleanBlackLayer
     })
+    //
     // si el ancho es menor a 600 cambiamos cambiamos los videos
     ancho = $("body").width();
       if (ancho < 600) {
