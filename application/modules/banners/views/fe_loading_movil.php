@@ -1,5 +1,5 @@
-<div id="darkLayer" style="display:none;"></div>
-<div id="FE_LOADING" style="display:none;">
+<div id="darkLayer" style="display:block;"></div>
+<div id="FE_LOADING" style="display:block;">
     <!-- FE_LOADING_MOVIL -->
     <div id='div-gpt-ad-1383593884981-1' style='width:320px;height:350px;'>
         <script type='text/javascript'>
