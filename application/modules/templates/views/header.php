@@ -4,7 +4,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="content-language" content="es"/>
-    <meta name="language" content="es"/>
+
 
     <meta name="robots" content="follow,index,nocache"/>
 
