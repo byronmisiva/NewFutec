@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="content-language" content="es"/>
-
-
     <meta name="robots" content="follow,index,nocache"/>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
           href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
@@ -29,9 +23,7 @@
     <link rel="apple-touch-icon" sizes="72x72"
           href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
-
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
-
     <!--Facebook TAGS-->
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
     <meta property='og:url' content="http://www.futbolecuador.com"/>
@@ -133,10 +125,9 @@
         googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
+
         // splsh movil
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-
-
 
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra
@@ -154,21 +145,14 @@
 
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
-
-
-
     });
 </script>
-
-
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>GS_googleAddAdSenseService("ca-pub-2857298972794488");
     GS_googleEnableAllServices();</script>
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
 </script>
-
-
 
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");
@@ -211,8 +195,6 @@
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
 
-
-
 <!-- Facebook Conversion Code for futbolecuador.com -->
 <script>(function() {
         var _fbq = window._fbq || (window._fbq = []);
@@ -239,4 +221,3 @@
          width="1" alt=""/>
 </noscript>
 <!-- End Alexa Certify Javascript -->
-

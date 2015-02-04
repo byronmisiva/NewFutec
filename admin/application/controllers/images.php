@@ -306,10 +306,10 @@ class Images extends CI_Controller {
 		$id=$this->uri->segment(3);
 		$this->db->where( 'id',$id);
 		$row=current($this->db->get('images')->result());
-		if($row->thumbh120 != "")
-			echo $row->thumbh120;
-		else
-			echo $row->thumb100;
+        if($row->thumbh80 != "")
+            echo $row->thumbh80;
+        else
+            echo $row->thumb100;
 	}
 
 	function edit_thumb(){

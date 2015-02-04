@@ -207,7 +207,7 @@ class Stories extends CI_Controller {
 				$this->tag->insert_story_tag($tags,$id);
 				$this->story_stat->insert_story_stat($id);
 				
-				/*
+				
 				// SEND TWEET
 				if($_POST['invisible']==0)
 					$this->send_tweet($_POST['twitter'],$id);
@@ -221,13 +221,13 @@ class Stories extends CI_Controller {
 								array(
 										'send_date' => 'now',
 										'content' => $_POST['subtitle'],
-										'link' => 'http://futbolecuador.com',
+										'link' => 'http://futbolecuador.com/site/noticia/safari-notificacion/',
 										"safari_title" => $_POST['title'],
 										"safari_url_args" => array("".$id)
 								)
 						)
 				)
-				);*/
+				);
 
 				redirect($previous_url);	
 	    	}	
@@ -346,7 +346,7 @@ class Stories extends CI_Controller {
 	
 	
 	function list_plus(){
-		//$this->output->cache(CACHE_MENU);
+		$this->output->cache(CACHE_MENU);
 		$option=$this->uri->segment(3);
 		$data['noticias']=$this->model->get_plus($option);
 		
@@ -446,26 +446,22 @@ class Stories extends CI_Controller {
 	}
 	
 	
-	
 	function rss(){		
-		$this->config->set_item('compress_output', 'FALSE');
-		//$this->output->cache(CACHE_DEFAULT);
+		$this->config->set_item('compress_output', 'FALSE');		
 		$data['name']='XML RSS';
 		$data['views']=1;
 		$this->statistic->sum($data);	
 		header('Content-type: text/xml; charset=utf-8');
 		$request='<?xml version="1.0" encoding="UTF-8"?>
-			  <?xml-stylesheet type="text/xsl" media="screen" 
-			  href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" 
-			  href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
-			  <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-			                     xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
+			  <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+			  <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
 					     xmlns:atom="http://www.w3.org/2005/Atom" 
 					     xmlns:media="http://search.yahoo.com/mrss/"
 					     xmlns:dc="http://purl.org/dc/elements/1.1/"								   
 					     xmlns:georss="http://www.georss.org/georss">  
 					<channel>
 					<atom:link rel="hub" href="http://www.futbolecuador.com" />
+					<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
 					<title>futbolecuador.com</title>
 					<link>http://www.futbolecuador.com</link>
 					<description><![CDATA[Futbol del Ecuador y del mundo]]></description>
@@ -479,76 +475,9 @@ class Stories extends CI_Controller {
 				 ';
 		if($this->uri->segment(3)!=3)
 			$news=$this->model->rss($this->uri->segment(3));
-		else{
-			$news=$this->model->rss(FALSE);
-		}
-		
-		$champ="49";
-		$this->load->model('group');
-		$this->load->model('teams_position');
-		$this->load->model('section');
-		$this->load->model('championship');
-		$round = $this->championship->get_active_round($champ);
-		if ($round != false) {
-			$data['groups'] = $this->group->get_by_round($round);
-			$data['teams'] = $this->section->get_teams($champ);
-			$data['active'] = current($data['groups'])->id;
-			if (count($data['groups']) > 1)
-				$data['script'] = "document.observe('dom:loaded',function(){ new Control.Tabs('groups_tabs');});";
-			$group = current($data['groups'])->id;
-				
-			if ($group != "")
-				$data['tabla'] = $this->teams_position->get_table($group);
-		}
-		
-		$tabla_posicion="
-			<figure>
-				<table width='100%' >
-				<tr >
-					<td style='color: white; line-height: 43px;text-align:center;width:10%;'>#</td>
-					<td style='width:50%;color:#A0A0A0;'>Equipo</td>
-					<td style='text-align:center;width:12%;color:#A0A0A0;'>PJ</td>
-					<td style='text-align:center;width:12%;color:#A0A0A0;'>PTS</td>
-					<td style='text-align:left;width:15%;padding-left:4%;color:#A0A0A0;'>GD</td>
-				</tr>";
-		
-		foreach ( $data['tabla'] as  $key => $row ){
-			$tabla_posicion.="
-				<tr >
-					<td style='color:#000;line-height: 43px;text-align:center;width:10%;'>".( $key + 1 )."</td>
-					<td style='width:50%;color: #000;'>".$row['name']."</td>
-					<td style='text-align:center;width:12%;color: #000;'>".$row['pj']."</td>
-					<td style='text-align:center;width:12%;color: #000;'>".$row['points']."</td>
-					<td style='text-align:left;width:15%;padding-left:4%;color: #000;'>".$row['gd']."</td>
-				</tr>";
-		}
-		$tabla_posicion.="</table>
-					</figure>";
-		$request=$request.'
-						<item>
-							<id></id>
-							<title>Tabla de Posiciones</title>
-							<subtitle>Tabla de Posiciones</subtitle>
-				           <link>http://www.futbolecuador.com/#tabla-posiciones</link>	      
-	      			       <guid>http://www.futbolecuador.com/#tabla-posiciones</guid>							
-							<fecha>'.date("YYYY").'</fecha>					      		
-					      		<pubDate> '.date("YYYY").' </pubDate>
-					      		<dc:creator> @futbolecuador </dc:creator>
-					      		<description>
-								<![CDATA[
-					      				Entérate de quienes estan en la punta del Campeonato Nacional Seria A.
-					      			]]>
-							</description>
-					   		<content:encoded><![CDATA[
-							        '.$tabla_posicion.'
-							      ]]>
-							   </content:encoded>
-							</item>';
-		
-		/*echo "<pre>";
-		var_dump($news->result());
-		echo "<pre>";die;*/
-
+		else
+			$news=$this->model->rss(FALSE);			
+	
 		foreach($news->result() as $row):			
 			$posicionInicio=0;			
 			$texto = strip_tags ($row->body);
@@ -565,19 +494,18 @@ class Stories extends CI_Controller {
 				$video="";
 			}
 
-			list($width, $height)=getimagesize($row->thumb400);
+			/*list($width, $height)=getimagesize($row->thumb400);*/
 			$request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>'.base_url().'stories/publica/'.$row->id.'</link>	      
-	      			  <guid>'.base_url().'stories/publica/'.$row->id.'</guid>
+ 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>	      
+	      			  <guid>http://www.futbolecuador.com/stories/publica/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
-				  <author>info@futbolecuador.com</author>
-	      			  <description><![CDATA[<img src="'.base_url().$row->thumb500.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
+				  	  <author>info@futbolecuador.com</author>
+	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
 	      			  <content:encoded><![CDATA[
-				        <!--<p class="fl-title">'.$row->title.'</p>-->
 				        <figure>
-				          <img src="'.base_url().$row->thumb640.'"  />
+				          <img src="http://www.futbolecuador.com/'.$row->thumb640.'"  />
 				          <figcaption>
 				           <strong>'.$row->title.'</strong>				            
 				          </figcaption>
@@ -589,15 +517,14 @@ class Stories extends CI_Controller {
 				</item>';
 		endforeach;
 		$request=$request.'
-			</channel></rss>';
-		
+			</channel></rss>';		
 		print $request;
 	}
 	
 	
 	function rss2(){
 		$this->config->set_item('compress_output', 'FALSE');
-		//$this->output->cache(CACHE_DEFAULT);
+		$this->output->cache(CACHE_DEFAULT);
 		$data['name']='XML RSS';
 		$data['views']=1;
 		$this->statistic->sum($data);	
@@ -630,19 +557,19 @@ class Stories extends CI_Controller {
 			$news=$this->model->rss(FALSE);		
 
 		foreach($news->result() as $row):	
-			list($width, $height)=getimagesize($row->thumb400);
+			/*list($width, $height)=getimagesize($row->thumb400);*/
 			$request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>'.base_url().'stories/publica/'.$row->id.'</link>	      
-	      			  <guid>'.base_url().'stories/publica/'.$row->id.'</guid>
+ 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>	      
+	      			  <guid>http://www.futbolecuador.com/stories/publica/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
 				  <author>info@futbolecuador.com</author>
-	      			  <description><![CDATA[<img src="'.base_url().$row->thumb500.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
+	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
 	      			  <content:encoded><![CDATA[
 				        <p class="fl-title">'.$row->title.'</p>
 				        <figure>
-				          <img src="'.base_url().$row->thumb400.'"  />
+				          <img src="http://www.futbolecuador.com/'.$row->thumb640.'"  />
 				          <figcaption>
 				           <strong>'.$row->title.'</strong>				            
 				          </figcaption>
@@ -652,8 +579,7 @@ class Stories extends CI_Controller {
 				</item>';
 		endforeach;
 		$request=$request.'
-		</channel></rss>';
-		
+		</channel></rss>';		
 		print $request;
 	}
 	
@@ -911,7 +837,7 @@ class Stories extends CI_Controller {
 				$this->db->query('Update stories
 								  Set invisible=0 , modified=NOW(),created=NOW(), programed=NULL
 								  Where id='.$row->id);
-			//	$this->send_tweet($row->twitter,$row->id);
+				$this->send_tweet($row->twitter,$row->id);	
 			}
 		}
 	}

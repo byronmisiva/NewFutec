@@ -116,6 +116,10 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_smart_bottom', $data, TRUE);
     }
+    public function fe_smart_top($data = FALSE)
+    {
+        return $this->load->view('fe_smart_top', $data, TRUE);
+    }
 
     public function fe_skin($data = FALSE)
     {

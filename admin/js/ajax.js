@@ -56,7 +56,7 @@ function imageFromSelect(origen_id,destino_id,fuente){
 			}
 			
 			if (ajax.readyState==4){
-				document.getElementById(destino_id).innerHTML="<img src='"+ "http://www.futbolecuador.com/"+ajax.responseText+"' border='0'/>";
+				document.getElementById(destino_id).innerHTML="<img src='"+ "../../"+ajax.responseText+"' border='0'/>";
 			} 
 		}
 		ajax.send(null);

@@ -3,7 +3,7 @@
 $this->load->view('header', $data);
 ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="page-header top1 ">
+<div class="page-header top1 hidden-xs">
     <div class="container margen0">
         <div class="row clearfix separador10 separador10bot">
             <?php echo $top1; ?>

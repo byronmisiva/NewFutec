@@ -43,6 +43,22 @@ jQuery(document).ready(function () {
             $(this).addClass("img-responsive")
         })
     }
+    if (ancho > 600) {
+        //ajuste rotativas
+        setTimeout(function () {
+            ajustesRotativas();
+            altoshome();
+        }, 2000);
+        setTimeout(function () {
+            ajustesRotativas();
+            altoshome();
+        }, 4000)
+        setTimeout(function () {
+            ajustesRotativas();
+            altoshome();
+        }, 6000)
+    }
+
     // pone en el mismo alto a los contenedores
     setTimeout(function(){
         igualarancho();
@@ -120,19 +136,7 @@ function centradoMenu() {
     $(".fhmm .dropdown.fhmm-fw .dropdown-menu").attr('style', 'left: -' + posleft + 'px; width: ' + ancho + 'px');
     $(".fhmm-content").attr('style', 'margin-left: auto; margin-right: auto;').width(anchocuerpo);
 }
-//ajuste rotativas
-setTimeout(function () {
-    ajustesRotativas ();
-    altoshome();
-}, 3000);
-setTimeout(function () {
-    ajustesRotativas ();
-    altoshome();
-}, 5000)
-setTimeout(function () {
-    ajustesRotativas ();
-    altoshome();
-}, 10000)
+
 
 
 //recargar marcador en vivo REFRESH_VIVO

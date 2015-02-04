@@ -84,18 +84,18 @@ class Site extends MY_Controller
         $data['top1'] = "";
         $data['header1'] = "";
 
-        $bannerMedio = $this->banners->fe_smart_bottom();
+        $bannerBottom = $this->banners->fe_smart_bottom();
+        $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
-        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerMedio;
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
         $data['top2'] = "";
 
         //Resultados tabla de posiciones
         $this->load->module('scoreboards');
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
-
         $fe_loading_movil = $this->banners->fe_loading_movil();
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $tablaposiciones;
+        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom.  $tablaposiciones;
         $data['sidebar'] = "";
 
         $data['footer'] = '';
@@ -484,7 +484,6 @@ class Site extends MY_Controller
         $data['pageTitle'] = "";
 
         // fin carga la informacion de la noticia
-
         $data['content'] = $this->banners->FE_Bigboxbanner();
 
             $data['sidebar'] = "";

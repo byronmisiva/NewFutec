@@ -161,6 +161,30 @@ class Mdl_matches extends MY_Model
         if ($query->num_rows() == 0)
             return NULL;
         $result = $query->result();
+        foreach ($result as $index=>$jugador){
+            $result[$index]->cambios = array();
+            $result[$index]->cambios = $this->cambios($jugador->match_id, $jugador->id );
+            $result[$index]->tarjetas = array();
+            $result[$index]->tarjetas = $this->tarjetas($jugador->match_id, $jugador->id );
+        }
+
+        return $result;
+    }
+
+    function cambios($idpartido, $idjugador) {
+        $query = $this->db->query("SELECT * FROM changes WHERE (`in` = $idjugador or `out` = $idjugador ) AND match_id = $idpartido");
+
+        if ($query->num_rows() == 0)
+            return NULL;
+        $result = $query->result();
+        return $result;
+    }
+    function tarjetas($idpartido, $idjugador) {
+        $query = $this->db->query("SELECT * FROM cards WHERE  player_id = $idjugador   AND match_id = $idpartido");
+
+        if ($query->num_rows() == 0)
+            return NULL;
+        $result = $query->result();
         return $result;
     }
 

@@ -84,14 +84,14 @@
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10 ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion11.jpg'); ?>"
-                         class="img-circle img-responsive separador10 ">
+                    <a href="http://www.futbolecuador.com/fuera-de-juego"> <img src="<?= base_url('imagenes/femagazine/seccion11.jpg'); ?>"
+                         class="img-circle img-responsive separador10 "></a>
                 </div>
                 <div class="col-md-8  col-xs-8   ">
-                    <h2>Fuera de juego</h2>
+                    <h2><a href="http://www.futbolecuador.com/fuera-de-juego"> Fuera de juego</a></h2>
 
-                    <p>Diana Rivillas y su aliento de inicio a fin a Emelec, campeón ecuatoriano 2014. No te puedes
-                        perder de esta sesión de infarto.
+                    <p><a href="http://www.futbolecuador.com/fuera-de-juego"> Diana Rivillas y su aliento de inicio a fin a Emelec, campeón ecuatoriano 2014. No te puedes
+                        perder de esta sesión de infarto.</a>
                     </p>
                 </div>
             </div>

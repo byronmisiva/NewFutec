@@ -68,9 +68,6 @@ class Matches extends MY_Controller
         $data['actions'] = $this->mdl_matches->get_actions_team($id);
 
 
-//        $data['jugadoresLocal']= $this->mdl_matches->get_players_team($equipos[0]->team_id_home);
-//        $data['jugadoresVisitante']= $this->mdl_matches->get_players_team($equipos[0]->team_id_away);
-//
         $data['comentarios'] = $this->mdl_matches->get_info_team($id);
 
         //todo se debe poner con la fecha
