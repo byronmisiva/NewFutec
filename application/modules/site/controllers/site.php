@@ -468,6 +468,31 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
+    public function pruebas ()
+    {
+        // para la final se comentan la llamada a las secciones.
+
+        $this->load->module('templates');
+        $this->load->module('banners');
+        $data['top1'] = "";
+        $data['header1'] = "";
+        $data['verMobile'] = $this->verificarDispositivo();
+        $dataHeader2['FE_Bigboxbanner'] = "caja1";
+
+        $bodytag = "";
+
+        $data['pageTitle'] = "";
+
+        // fin carga la informacion de la noticia
+        $data['content'] = $this->banners->FE_Bigboxbanner();
+
+            $data['sidebar'] = "";
+        $data['footer'] = "";
+        $data['bottom'] = "";
+
+        $this->templates->_index($data);
+    }
+
 
     public function equipo()
     {
