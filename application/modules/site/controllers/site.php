@@ -484,6 +484,7 @@ class Site extends MY_Controller
         $data['pageTitle'] = "";
 
         // fin carga la informacion de la noticia
+
         $data['content'] = $this->banners->FE_Bigboxbanner();
 
             $data['sidebar'] = "";

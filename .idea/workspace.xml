@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,8 +72,8 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6226415" vertical-offset="6993" max-vertical-offset="9120">
-              <caret line="486" column="60" selection-start-line="486" selection-start-column="60" selection-end-line="486" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.6226415" vertical-offset="6993" max-vertical-offset="9135">
+              <caret line="486" column="8" selection-start-line="486" selection-start-column="8" selection-end-line="486" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -4091,7 +4090,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423014632965</updated>
     </task>
-    <option name="localTasksCounter" value="584" />
+    <task id="LOCAL-00584" summary="incluye tabla de revista">
+      <created>1423016930045</created>
+      <option name="number" value="00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1423016930045</updated>
+    </task>
+    <option name="localTasksCounter" value="585" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4702,8 +4707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6226415" vertical-offset="6993" max-vertical-offset="9120">
-          <caret line="486" column="60" selection-start-line="486" selection-start-column="60" selection-end-line="486" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.6226415" vertical-offset="6993" max-vertical-offset="9135">
+          <caret line="486" column="8" selection-start-line="486" selection-start-column="8" selection-end-line="486" selection-end-column="8" />
           <folding />
         </state>
       </provider>
