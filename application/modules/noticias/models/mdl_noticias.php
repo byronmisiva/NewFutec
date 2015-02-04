@@ -197,7 +197,7 @@ class Mdl_Noticias extends MY_Model
 
         $query = $this->db->query($query);
 
-        if ($query->num_rows() == 0){
+        if ($query->num_rows() <= 1){
             return true;
 
         } else {

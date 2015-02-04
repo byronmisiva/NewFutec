@@ -300,6 +300,11 @@
 <div class="col-md-12 separador10 margen0r">
     <? echo $zonaFe; ?>
 </div>
+<!--banner lateral 4 -->
+<div class="col-md-12 separador10 margen0r">
+    <? echo $bannersSidebar[4]; ?>
+</div>
+
 
 <!--La Voz de las Tribunas-->
 <div class="col-md-12 separador10 margen0r">

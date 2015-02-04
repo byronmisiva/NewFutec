@@ -207,7 +207,7 @@ class Stories extends CI_Controller {
 				$this->tag->insert_story_tag($tags,$id);
 				$this->story_stat->insert_story_stat($id);
 				
-				
+				/*
 				// SEND TWEET
 				if($_POST['invisible']==0)
 					$this->send_tweet($_POST['twitter'],$id);
@@ -227,7 +227,7 @@ class Stories extends CI_Controller {
 								)
 						)
 				)
-				);
+				);*/
 
 				redirect($previous_url);	
 	    	}	
@@ -911,7 +911,7 @@ class Stories extends CI_Controller {
 				$this->db->query('Update stories
 								  Set invisible=0 , modified=NOW(),created=NOW(), programed=NULL
 								  Where id='.$row->id);
-				$this->send_tweet($row->twitter,$row->id);	
+			//	$this->send_tweet($row->twitter,$row->id);
 			}
 		}
 	}

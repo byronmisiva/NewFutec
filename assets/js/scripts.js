@@ -376,6 +376,8 @@ function clickMasNoticias() {
             $(".noticiasextras").html(noticiasExtras + data);
             $("img.lazy").lazyload();
             clickMasNoticias();
+
+            setTimeout(igualarancho(),2500);
         });
     })
 }
@@ -396,11 +398,12 @@ function igualarancho(){
     if (  $("body").width() > 600) {
         zonacontenido = $(".zonacontenido").height()
         zonasidebar = $(".zonasidebar").height();
+       console.log (zonacontenido + "-" + zonasidebar)
 
-        if (zonacontenido > zonasidebar ) {
-            $(".zonasidebar").height(zonacontenido);
+        if (zonacontenido >= zonasidebar ) {
+           // $(".zonasidebar").height(zonacontenido);
         } else {
-            $(".zonacontenido").height(zonasidebar);
+          //  $(".zonacontenido").height(zonasidebar);
         }
     }
 }

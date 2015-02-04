@@ -143,7 +143,7 @@ class Site extends MY_Controller
         $this->email->initialize($config);
         $this->email->from('info@misiva.com.ec', 'Contacto Futbolecuador.com');
         $this->email->to('ddelosreyes@futbolecuador.com');
-        $this->email->cc('bherrera@misiva.com.ec');
+        $this->email->cc('jfchiriboga@misiva.com.ec');
         $data['informacion'] = $_POST;
         $body = $this->load->view('email-contacto', $data, TRUE);
         $this->email->subject("Contacto Futbolecuador.com");
@@ -163,7 +163,7 @@ class Site extends MY_Controller
         $this->email->initialize($config);
         $this->email->from('info@misiva.com.ec', 'Publicidad Futbolecuador.com');
         $this->email->to('ddelosreyes@futbolecuador.com');
-        $this->email->cc('bherrera@misiva.com.ec');
+        $this->email->cc('jfchiriboga@misiva.com.ec');
         $data['informacion'] = $_POST;
         $body = $this->load->view('email-publicidad', $data, TRUE);
         $this->email->subject("Publicidad Futbolecuador.com");

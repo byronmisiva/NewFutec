@@ -28,7 +28,7 @@ class Players extends CI_Controller {
 		
 		
 		$this->form_validation->set_error_delimiters('<li>', '</li>');
-		$config['upload_path']='./imagenes/players/players/';
+		$config['upload_path']='../imagenes/players/players/';
    		$config['allowed_types']='gif|jpg|png|swf';
    		$config['max_size']	= '100000';
 		$config['max_width']  = '2600';
@@ -106,13 +106,13 @@ class Players extends CI_Controller {
 				//Thumb
 				$dimension['file_name']='./'.$_POST['image'];
 				$dimension['width']=$this->thumb_width;
-				$dimension['path']='./imagenes/players/thumb/';
+				$dimension['path']='../imagenes/players/thumb/';
 				$this->images_thumb($dimension);
 				
 				//Thumb 220
 				$dimension['file_name']='./'.$_POST['image'];
 				$dimension['width']=220;
-				$dimension['path']='./imagenes/players/thumb220/';
+				$dimension['path']='../imagenes/players/thumb220/';
 				$this->images_thumb($dimension);
 			}
 
@@ -159,22 +159,24 @@ class Players extends CI_Controller {
 				//Thumb
 				$dimension['file_name']='./'.$_POST['image'];
 				$dimension['width']=$this->thumb_width;
-				$dimension['path']='./imagenes/players/thumb/';
+				$dimension['path']='../imagenes/players/thumb/';
 				$this->images_thumb($dimension);
-				
+
 				//Thumb 220
 				$dimension['file_name']='./'.$_POST['image'];
 				$dimension['width']=220;
-				$dimension['path']='./imagenes/players/thumb220/';
+				$dimension['path']='../imagenes/players/thumb220/';
 				$this->images_thumb($dimension);
+
 				$this->session->set_flashdata('image_error',$this->upload->display_errors());
 			}
 
     		
 	    	$this->db->where( 'id',$_POST['id']);
         	$this->db->update('players', $_POST);	
-        	redirect('players/index/'.$this->uri->segment(4).'/'.$this->uri->segment(5));
-	
+        	//redirect('players/index/'.$letter);
+        	$this->index() ;
+
 		}
 		$this->db->where( 'id',$this->uri->segment(3));
 		$data['query']=$this->db->get('players');
@@ -322,7 +324,7 @@ class Players extends CI_Controller {
 			$this->change_config_upload($field);
 			if($this->upload->do_upload($field)){
 				$upload=$this->upload->data();
-				$field='imagenes/'.$this->model->name.'/'.$field.'/'.$upload['file_name'];
+				$field='../imagenes/'.$this->model->name.'/'.$field.'/'.$upload['file_name'];
 				return TRUE;
 	   		}	
 	   		else{
@@ -339,7 +341,7 @@ class Players extends CI_Controller {
 	
 	
  	function change_config_upload($field){
-		$config['upload_path']='./imagenes/'.$this->model->name.'/'.$field.'/';
+		$config['upload_path']='../imagenes/'.$this->model->name.'/'.$field.'/';
 		$config['allowed_types']='gif|jpg|png|swf';
    		$config['max_size']	= '100000';
    		$config['max_width']  = '1024000';

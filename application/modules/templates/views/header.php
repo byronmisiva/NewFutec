@@ -141,12 +141,9 @@
         googletag.pubads().addEventListener('slotRenderEnded', function(event) {
             if (event.slot.j == '/1022247/FE_LOADING_MOVIL'){
                 if (!event.isEmpty) {
-                    $('#darkLayer').show();
-                    $('#FE_LOADING').show();
+                    cargarSplash();
                 } else {
-                    $('#darkLayer').hide();
-                    $('#FE_LOADING').hide();
-
+                    cleanBlackLayer;
                 }
             }
         });
@@ -192,9 +189,8 @@
     })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');</script>
 <!-- End Google Tag Manager -->
 
-
 <!-- Facebook Conversion Code for FE_Visitas -->
-<script>(function () {
+<script>(function() {
         var _fbq = window._fbq || (window._fbq = []);
         if (!_fbq.loaded) {
             var fbds = document.createElement('script');
@@ -206,14 +202,14 @@
         }
     })();
     window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6017525548394', {'value': '0.00', 'currency': 'USD'}]);</script>
-<noscript><img height="1" width="1" alt="" style="display:none"
-               src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
-</noscript>
+    window._fbq.push(['track', '6017525548394', {'value':'0.00','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
 
 
 <!-- Facebook Conversion Code for futbolecuador.com -->
-<script>(function () {
+<script>(function() {
         var _fbq = window._fbq || (window._fbq = []);
         if (!_fbq.loaded) {
             var fbds = document.createElement('script');
@@ -225,10 +221,9 @@
         }
     })();
     window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6015959317594', {'value': '0.00', 'currency': 'USD'}]);</script>
-<noscript><img height="1" width="1" alt="" style="display:none"
-               src="https://www.facebook.com/tr?ev=6015959317594&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
-</noscript>
+    window._fbq.push(['track', '6015959317594', {'value':'0.00','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6015959317594&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
 
 <!-- Start Alexa Certify Javascript -->
 <script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script>

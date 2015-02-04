@@ -52,7 +52,7 @@ class Mdl_matches extends MY_Model
 																																									ORDER BY p DESC) as s, schedules as sch
 																																 WHERE s.p=sch.position AND s.round_id=sch.round_id)
 									   AND m.group_id=g.id AND g.round_id=r.id AND r.championship_id=c.id AND c.active_round=r.id AND st.id=m.stadia_id AND m.schedule_id = s.id
-								 Order by cn asc, sp desc, dm asc, gn asc');
+								 Order by cn asc,   dm asc, gn asc');
         if ($query->num_rows() == 0)
             return NULL;
         $teams = array();

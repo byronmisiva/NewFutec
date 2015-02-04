@@ -40,7 +40,7 @@
 				<input type="button" value="Reset" onclick="document.forms[0].birth.value='';">
 			</td>
 			<td rowspan='6'> 
-			<?=img($row->thumb)?>
+			<?=img("http://www.futbolecuador.com/" .$row->thumb)?>
 			</td>
 		</tr>
 			

@@ -110,7 +110,7 @@ class Blogs extends CI_Controller {
 				$id=$this->db->insert_id();
 				$this->tag->insert_story_tag($tag,$id);
 				$this->story_stat->insert_story_stat($id);
-				$this->send_tweet($_POST['title'],$id);
+				//$this->send_tweet($_POST['title'],$id);
 				redirect($this->model->name);	
 	    	}	
 		}

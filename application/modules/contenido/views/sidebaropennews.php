@@ -267,7 +267,10 @@
 </div>
 <!--Tabla de Posiciones-->
 <? echo $tablaposiciones; ?>
-
+<!--banner lateral 4 -->
+<div class="col-md-12 separador10 margen0r">
+    <? echo $bannersSidebar[3]; ?>
+</div>
 <!--Lo más leído-->
 <div class="col-md-12 separador10 margen0r">
     <? echo $loMasLeido; ?>

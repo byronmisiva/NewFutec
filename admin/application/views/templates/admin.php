@@ -23,7 +23,7 @@
 <body>
 <table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="100%"><div align="right"><a href='<?=base_url()?>'><img src="<?=$path?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /></a></div></td>
+    <td width="100%"><div align="right"><a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 15);?>'><img src="<?=$path?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /></a></div></td>
   </tr>
   <tr>
     <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">

@@ -12,7 +12,8 @@ class Banners extends MY_Controller
 
     public function top1($data = FALSE)
     {
-        $data['FE_Halfbanner'] = $this->load->view('fe_halfbanner', $data, TRUE);
+        $data['FE_Halfbanner'] = $this->load->view('fe_cocafm', $data, TRUE);
+        //$data['FE_Halfbanner'] = $this->load->view('fe_halfbanner', $data, TRUE);
         $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE);;
         return $this->load->view('top1', $data, TRUE);
     }
@@ -119,6 +120,12 @@ class Banners extends MY_Controller
     public function fe_skin($data = FALSE)
     {
         return $this->load->view('fe_skin', $data, TRUE);
+    }
+
+    public function fe_cocafm($data = FALSE)
+    {
+        return "";
+        //return $this->load->view('fe_cocafm', $data, TRUE);
     }
 
     public function fe_loading_movil($data = FALSE)
