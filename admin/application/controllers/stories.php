@@ -133,7 +133,6 @@ class Stories extends CI_Controller {
 	    $this->view($this->model->name.'/view',$data);
 	
 	}	
-	
 	/*********** Start Push Notifications *******/
 	function doPostRequest($url, $data, $optional_headers = null) {
 		$params = array(
@@ -221,9 +220,9 @@ class Stories extends CI_Controller {
 								array(
 										'send_date' => 'now',
 										'content' => $_POST['subtitle'],
-										'link' => 'http://futbolecuador.com/site/noticia/safari-notificacion/',
+										'link' => 'http://www.futbolecuador.com/',
 										"safari_title" => $_POST['title'],
-										"safari_url_args" => array("".$id)
+										"safari_url_args" => array("site/noticia/notificacion/" .$id)
 								)
 						)
 				)

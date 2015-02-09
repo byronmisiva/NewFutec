@@ -7,7 +7,7 @@
 
             <div class="item <?php echo $active;
             $active = ""; ?>">
-                <a href="site/partido/<?php echo $score->hsname . "-" . $score->asname . "/" . $score->id; ?>">
+                <a href="site/partido/<?php echo  $this->contenido->_urlFriendly($score->hname) . "-" . $this->contenido->_urlFriendly($score->aname) . "/" . $score->id; ?>">
                     <div class="  text-white">
                         <div class="col-md-12 col-sm-12 margen0l margen0r   h5">
                             <div class="col-md-1 col-sm-1 text-center  margen0">

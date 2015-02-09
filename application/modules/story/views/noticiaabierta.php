@@ -29,7 +29,7 @@
                 <a href="http://twitter.com/share" class="twitter-share-button"
                    data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
                    data-count="vertical" data-via="futbolecuador" data-lang="es"
-                   data-counturl="http://www.futbolecuador.com/site/noticia/interesante/<?= $noticia->id; ?>">Tweet</a>
+                   data-counturl="<?= $link; ?>">Tweet</a>
                 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
             </div>
             <div class="col-md-0 col-xs-4 visible-xs-block visible-xs-block">
@@ -51,7 +51,8 @@
         </div>
         <div class="margen10lados-sx noticia-body">
             <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
-               target="_blank">@<?php echo $autor[0]->twitter; ?></a>
+               target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
+            <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>" <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?>
         </div>
     </div>
 </div>

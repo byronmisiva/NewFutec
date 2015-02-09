@@ -47,6 +47,11 @@ class Story extends MY_Controller
         $data['noticia'] = $noticia;
         $data['autor'] = $this->get_author($noticia->author_id);
         $this->mdl_story->cuentaVisita($id);
+
+        //La Voz de las Tribunas
+        $this->load->module('noticias');
+
+        $data['laVozDeLasTribunas'] = $this->mdl_noticias->get_by_position(1, LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS);
         return $this->load->view('noticiaabierta', $data, TRUE);
     }
 

@@ -5,14 +5,13 @@
 
     <div class="col-md-6 text-right">
         <div class="col-md-6 col-xs-6 text-left margen0">
-            <img src="<?php echo base_url(); ?>assets/img/logo_SMG.png" alt="logoSMG"/>
+            <img src="<?php echo base_url(); ?>assets/img/logo_SMG.png" alt="logoSMG" class="img-responsive"/>
         </div>
-        <div class="col-md-6  col-xs-2 text-right margen0">
+        <div class="col-md-6  col-xs-6 text-right margen0">
 
-            <a href="http://www.misiva.com.ec" target="_blank" alt="Misiva Web Site">
-                <img src="<?php echo base_url(); ?>assets/img/logo_misiva.png" alt="logoMisiva"/>
+            <a href="http://www.misiva.com.ec" target="_blank" alt="Misiva Web Site" style="padding: 0">
+                <img src="<?php echo base_url(); ?>assets/img/logo_misiva.png" alt="logoMisiva" class="img-responsive"/>
             </a>
-
         </div>
     </div>
 </div>

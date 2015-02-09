@@ -1,3 +1,5 @@
+<!-- banner se muestra sobre todo -->
+
 <div id="darkLayer" style="display:none;"></div>
 <div id="FE_LOADING" style="display:none;">
     <!-- FE_LOADING_MOVIL -->

@@ -231,7 +231,7 @@ footer {
     margin: 5px 0 0;
 }
 .flexslider {
-    height: 345px !important; overflow: hidden
+    height: 355px !important; overflow: hidden
 }
 
 .flexslider .text-rotativas {
@@ -277,7 +277,7 @@ footer {
 .flexslidermobile .text-rotativas h3 {
     font-size: 12px;
     font-family: "HelveticaNeue", Arial;
-    font-weight: 200;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     letter-spacing: 0.5px;
@@ -371,7 +371,7 @@ footer {
 }
 
 .flex-control-thumbs img {
-    width: 56px;
+    width: 58px;
     border-bottom: 2px solid #fff;
 }
 
@@ -1020,8 +1020,8 @@ h4.contenidos {
     }
 
     .noticia-content {
-        margin-right:4px;
-        margin-left: 4px;
+        margin-right:0px;
+        margin-left: 0px;
     }
     .flex-control-nav {
         bottom: 1px !important;
@@ -1337,3 +1337,12 @@ div#closeBanner {
     font-size: 12px;
 }
 
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    width: 659px;
+    z-index: 1040;
+}
+.menu-fijo .miniletra {
+    margin-top: 0px !important;
+}

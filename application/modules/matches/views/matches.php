@@ -17,7 +17,7 @@ $estado['8'] = 'Fin del Partido';?>
             <? echo $title; ?>
         </h4>
     </div>
-    <div class="hidden-xs">
+    <div class="hidden-xs" id = "fechascalendario">
         <?php if (isset($teamsFecha)) {
             $fondogris = "texto-gris-strong";
             foreach ($teamsFecha as $key => $teams) {
@@ -45,7 +45,10 @@ $estado['8'] = 'Fin del Partido';?>
         foreach ($teamsFecha as $key => $teams) {
 
             ?>
-            <div class="col-md-12  fondoazul  separador10">
+            <div class="col-md-12 separador10">
+                <a id="<?= $key ?>"></a>
+            </div>
+            <div class="col-md-12  fondoazul  separador20">
                 <a id="<?= $key ?>"></a><h4 class="contenidos">Fecha <?= $key ?></h4>
             </div>
             <?php

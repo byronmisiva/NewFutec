@@ -223,9 +223,16 @@ class Site extends MY_Controller
         $storia = $this->story->get_complete($idNoticia);
 
         $aux = $this->mdl_story->get_story($idNoticia);
+        $image =  $aux->thumb150;
+        $description = $aux->lead;
         $bodytag = str_replace('"', '', strip_tags($aux->title));
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+        $data['image'] =   $image;
+        $data['description'] =   $description;
+        $data['idnoticia'] =   $idNoticia;
+        $data['ulrfriend'] =   $this->_urlFriendly($aux->title);
+
 
         // fin carga la informacion de la noticia        
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();

@@ -26,11 +26,9 @@
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
     <!--Facebook TAGS-->
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
-    <meta property='og:url' content="http://www.futbolecuador.com"/>
-    <meta property='og:site_name' content="Futbool Ecuador"/>
-    <meta property='og:type' content="site"/>
-    <meta property='og:image' content="<?php echo base_url('img/apple-touch-icon-144-precomposed.png') ?>"/>
-
+    <meta property="og:description" content="<?php echo (isset($description)) ?  $description :  'Futbol Ecuador'; ?>"/>
+    <meta property="og:image" content="<?php echo (isset($image)) ? base_url($image)   :  base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
+    
     <!--SEO TAGS-->
     <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
     <meta name="keywords"

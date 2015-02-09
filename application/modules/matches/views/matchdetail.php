@@ -348,7 +348,7 @@ $estado['8'] = 'Fin del Partido';?>
         </div>
     </div>
 
-    <div class="col-md-12 separador10-xs margen0l">
+    <div class="col-md-12 col-xs-12 separador10-xs margen0l">
         <div class="panel-heading fondoazul">
             <h4 class="panel-title">
                 <a href="<?= base_url('site/marcadorenvivo') ?>" >
@@ -386,6 +386,16 @@ $estado['8'] = 'Fin del Partido';?>
 -->
 
     </div>
+    <div class=" comentariosC col-xs-12 col-md-12 backcuadros block-title separador10">
+        <h4 class="panel-title">Comentarios </h4>
+    </div>
+
+    <div  class=" comentariosB separador10 col-xs-12 col-md-12 center-block" data-href="<?php //echo $url?>">
+        <div class="fb-comments" data-href="<?php echo base_url(). "site/partido/". $this->matches->_urlFriendly( $teams[0]->hname) . "-" . $this->matches->_urlFriendly($teams[0]->aname) . "/" . $teams[0]->id ?>" data-width="100%" data-numposts="5"
+             data-colorscheme="light"></div>
+    </div>
+
+
     <script>
         var idEquipo = "<?php echo $idEquipo; ?>";
 

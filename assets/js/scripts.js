@@ -1,45 +1,65 @@
 var masnoticas = "";
 
 //inicio funciones splash
-function cargarSplash(){
+function cargarSplash() {
     $('#darkLayer').show();
     $('#FE_LOADING').show();
-    setTimeout(cleanBlackLayer,15000);
+    setTimeout(cleanBlackLayer, 15000);
 };
 
 
-var cleanBlackLayer = function(){
+var cleanBlackLayer = function () {
     $('#FE_LOADING').hide();
     $('#darkLayer').hide();
 };
 
 jQuery(document).ready(function () {
+
+    //funcion anclar menu
+    if ($(".fechascalendario").length ) {
+        console.log ("e");
+        $(window).scroll(function (event) {
+            console.log($(window).scrollTop());
+            // Do something
+        });
+    }
+
+    if ($("#fechascalendario").length ) {
+        $(window).scroll(function (event) {
+            if ($(window).scrollTop()>190){
+                $("#fechascalendario").addClass('menu-fijo');
+            } else {
+                $("#fechascalendario").removeClass('menu-fijo');
+            }
+        });
+    }
+
     //ocultar el menu al dar click
-    $(".clickmenu").click (function () {
+    $(".clickmenu").click(function () {
         $(".navbar-collapse").addClass("collapsing");
     })
 
     //ocultar el splash
-    $("#closeBanner").click (function () {
-        cleanBlackLayer ()
+    $("#closeBanner").click(function () {
+        cleanBlackLayer()
     })
 
     // si el ancho es menor a 600 cambiamos cambiamos los videos
     ancho = $("body").width();
-      if (ancho < 600) {
+    if (ancho < 600) {
         $("iframe").each(function () {
-            src = $(this).attr( 'src' );
+            src = $(this).attr('src');
             //para el caso de youtube
 
             if (typeof src != 'undefined') {
 
                 var n = src.search("youtube");
-                if (n>0) $(this).attr( 'width', "100%" );
+                if (n > 0) $(this).attr('width', "100%");
                 var n = src.search("vine");
-                if (n>0) $(this).attr( 'width', "100%" ).attr( 'height', "290" );
+                if (n > 0) $(this).attr('width', "100%").attr('height', "290");
             }
         })
-        $(".noticia-body img").each (function(){
+        $(".noticia-body img").each(function () {
             $(this).addClass("img-responsive")
         })
     }
@@ -60,13 +80,13 @@ jQuery(document).ready(function () {
     }
 
     // pone en el mismo alto a los contenedores
-    setTimeout(function(){
+    setTimeout(function () {
         igualarancho();
     }, 3000);
-    setTimeout(function(){
+    setTimeout(function () {
         igualarancho();
     }, 5000);
-    setTimeout(function(){
+    setTimeout(function () {
         igualarancho();
     }, 7000);
 
@@ -138,11 +158,10 @@ function centradoMenu() {
 }
 
 
-
 //recargar marcador en vivo REFRESH_VIVO
-machDetailCarrousel = $ ('#carousel-marcadorenvivo') ;
+machDetailCarrousel = $('#carousel-marcadorenvivo');
 
-if ( machDetailCarrousel.length > 0) {
+if (machDetailCarrousel.length > 0) {
     setInterval(function () {
         $.post(baseUrl + "site/masMarcadorVivo", function (data) {
             $("#carousel-marcadorenvivo").html(data);
@@ -161,9 +180,9 @@ if ( machDetail.length > 0) {
         //recargar marcador en vivo REFRESH_VIVO
         setInterval(function () {
             $.post(baseUrl + "site/MarcadorVivoDetail/" + idEquipo + "/" + Math.floor((Math.random() * 1000000) + 1), function (data) {
-
                 $(".matchdetail").html(data);
-
+                $( ".matchdetail .comentariosC" ).remove();
+                $( ".matchdetail .comentariosB" ).remove();
             });
         }, REFRESH_VIVO * 1000)
     }
@@ -236,11 +255,11 @@ function altoshome() {
 // fuera de juego
 jQuery(function () {
     jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17').liquidSlider({
-  //  jQuery('#main-slider15,#main-slider16').liquidSlider({
+        //  jQuery('#main-slider15,#main-slider16').liquidSlider({
         includeTitle: false,
         mobileNavigation: false,
         slideEaseFunction: "easeInOutCubic",
-       // preloader: true,
+        // preloader: true,
         tabPosition: 'bottom',
         dynamicTabsPosition: "bottom",
         onload: function () {
@@ -251,7 +270,15 @@ jQuery(function () {
 
     //jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').adjustHeightNoAnimation();
     ancho = $("body").width();
-    if (ancho < 600) { if (ancho < 380) {visibles = 2} else {visibles = 3} } else {visibles = 5 }
+    if (ancho < 600) {
+        if (ancho < 380) {
+            visibles = 2
+        } else {
+            visibles = 3
+        }
+    } else {
+        visibles = 5
+    }
     jQuery(".otrasmodelos").jCarouselLite({
         btnNext: ".next",
         btnPrev: ".prev",
@@ -268,11 +295,11 @@ jQuery(function () {
         jQuery("." + jQuery(this).attr('class') + "content").show();
         idclic = jQuery(this).attr('class');
         idclic = idclic.replace("galeria", "");
-        $(".galeria" +idclic+ "content img.lazo").each(function(){
+        $(".galeria" + idclic + "content img.lazo").each(function () {
             $(this).attr("src", $(this).attr("data-original"))
             setTimeout(function () {
-                jQuery("#main-slider" +idclic+ "-nav-ul li.tab2 a ").click();
-                jQuery("#main-slider" +idclic+ "-nav-ul li.tab1 a ").click();
+                jQuery("#main-slider" + idclic + "-nav-ul li.tab2 a ").click();
+                jQuery("#main-slider" + idclic + "-nav-ul li.tab1 a ").click();
             }, 1000);
         });
     })
@@ -339,15 +366,15 @@ jQuery(document).ready(function () {
 
             $('.preloader').removeClass('preloader');
             $(".slides").css('transform', 'translate3d(-598px, 0px, 0px)');
-            $(".flex-viewport ul.slides li").each(function(){
+            $(".flex-viewport ul.slides li").each(function () {
                 $(this).height(384);
 
             });
-            $(".flex-viewport ul.slides li .img").each(function(){
+            $(".flex-viewport ul.slides li .img").each(function () {
                 $(this).height(384);
 
             })
-            ajustesRotativas ();
+            ajustesRotativas();
         }
     });
 
@@ -373,7 +400,7 @@ function clickMasNoticias() {
         var pos = $(this).attr('pos');
         $(this).html("Cargando...");
         masnoticas = this;
-        $.post(baseUrl + "site/masnoticias/" + offset + "/" + section + "/" + pos+ "/", function (data) {
+        $.post(baseUrl + "site/masnoticias/" + offset + "/" + section + "/" + pos + "/", function (data) {
             $(masnoticas).remove();
             noticiasExtras = $(".noticiasextras").html();
 
@@ -381,16 +408,17 @@ function clickMasNoticias() {
             $("img.lazy").lazyload();
             clickMasNoticias();
 
-            setTimeout(igualarancho(),2500);
+            setTimeout(igualarancho(), 2500);
         });
     })
 }
 
-function ajustesRotativas () {
+function ajustesRotativas() {
     alto = $('.flexslider .flex-control-thumbs').height();
     $('.flexslider').height(alto);
     ancho = $('.flexslider  .clone').first().width();
     $(".flexslider .slides li img").each(function (index) {
+        $(this).height('auto')
         if ($(this).height() < alto) {
             $(this).height(alto)
         }
@@ -398,16 +426,16 @@ function ajustesRotativas () {
     });
 }
 
-function igualarancho(){
-    if (  $("body").width() > 600) {
+function igualarancho() {
+    if ($("body").width() > 600) {
         zonacontenido = $(".zonacontenido").height()
         zonasidebar = $(".zonasidebar").height();
-       console.log (zonacontenido + "-" + zonasidebar)
+        console.log(zonacontenido + "-" + zonasidebar)
 
-        if (zonacontenido >= zonasidebar ) {
-           // $(".zonasidebar").height(zonacontenido);
+        if (zonacontenido >= zonasidebar) {
+            // $(".zonasidebar").height(zonacontenido);
         } else {
-          //  $(".zonacontenido").height(zonasidebar);
+            //  $(".zonacontenido").height(zonasidebar);
         }
     }
 }
