@@ -24,7 +24,7 @@
 <!-- Third, add the GalleryView Javascript and CSS files -->
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.lazyload.min.js"></script>
-
+<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -205,6 +205,22 @@
 
 </script>
 <!-- Push Notifications -->
+<?php
 
+       if ($this->uri->segment(1) == "home")
+       {
+           ?>
+           <script>
+               var gnEbMinZIndex = 10000;
+               var gfEbInIframe = false;
+               var gEbAd = new Object();
+               gEbAd.nFlightID = 12416657;
+               var gfEbUseCompression = true;
+           </script>
+           <script src="http://ds.serving-sys.com/BurstingScript/ebServing_12416657.js"></script>
+       <?php
+       };
+
+?>
 </body>
 </html>

@@ -23,12 +23,14 @@ $estado['8'] = 'Fin del Partido';?>
             foreach ($teamsFecha as $key => $teams) {
                 $totalTeams = count($teamsFecha);
                 ?>
-                <a class="sidebarlink" href="#<?= $key ?>">
-                    <div class="fondogris borde separador10 text-center   miniletra <?php echo $fondogris; $fondogris = "texto-gris"; ?>"
+
+                    <div id="<?= $key ?>" class="box"></div>
+
+                    <div class="fondogris borde separador10 text-center miniletra fechalista <?php echo $fondogris; $fondogris = "texto-gris"; ?>"
                          style="width: <?= 100 / $totalTeams ?>%; float: left">
                         Fecha<br>
 
-                        <div style="font-size: 13px"><?= $key ?></div>
+                        <div class="valor" style="font-size: 13px"><?= $key ?></div>
                     </div>
 
                 </a>
@@ -43,13 +45,12 @@ $estado['8'] = 'Fin del Partido';?>
     $i = 1;
     if (isset($teamsFecha)) {
         foreach ($teamsFecha as $key => $teams) {
-
             ?>
-            <div class="col-md-12 separador10">
-                <a id="<?= $key ?>"></a>
+            <div class="col-md-12 separador20" id="scrollto<?= $key ?>">
+
             </div>
-            <div class="col-md-12  fondoazul  separador20">
-                <a id="<?= $key ?>"></a><h4 class="contenidos">Fecha <?= $key ?></h4>
+            <div class="col-md-12  fondoazul  separador30"  >
+                 <h4 class="contenidos">Fecha <?= $key ?></h4>
             </div>
             <?php
             foreach ($teams as $key => $team) {

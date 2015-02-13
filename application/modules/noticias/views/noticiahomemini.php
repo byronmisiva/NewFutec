@@ -55,10 +55,21 @@
     }?>
 </div>
 <div class="col-md-12 col-xs-12 col-sm-12 column content-gris hidden-xs">
-    <div class="col-md-4 col-sm-4 column margen0 hidden">
+    <?php
+    $mostar = "hidden";
+    $ancho = "col-md-12 col-sm-12";
+    if ($this->uri->segment(2)) {
+        $mostar = "hidden";
+        if ($this->uri->segment(2) == "home"){
+            $mostar = "";
+            $ancho = "col-md-8 col-sm-8";
+        }
+    }
+    ?>
+    <div class="col-md-4 col-sm-4 column margen0 <?php echo $mostar; ?>">
         Lecturas <?php echo $story->lecturas ?>
     </div>
-    <div class="col-md-12 col-sm-12 column margen0-noti text-right text-news-zone">
+    <div class="<?php echo $ancho;?> column margen0-noti text-right text-news-zone">
         <?php echo $story->category ?>
     </div>
 </div>

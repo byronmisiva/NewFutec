@@ -16,13 +16,17 @@ var cleanBlackLayer = function () {
 jQuery(document).ready(function () {
 
     //funcion anclar menu
-    if ($(".fechascalendario").length ) {
-        console.log ("e");
-        $(window).scroll(function (event) {
-            console.log($(window).scrollTop());
-            // Do something
+    if ($("#fechascalendario").length ) {
+        $(" .fechalista").click(function(event){
+
+            result = $(this).find( ".valor").html();
+            console.log (result);
+            $('#scrollto'+ result).ScrollTo();
         });
     }
+
+
+
 
     if ($("#fechascalendario").length ) {
         $(window).scroll(function (event) {
@@ -430,7 +434,6 @@ function igualarancho() {
     if ($("body").width() > 600) {
         zonacontenido = $(".zonacontenido").height()
         zonasidebar = $(".zonasidebar").height();
-        console.log(zonacontenido + "-" + zonasidebar)
 
         if (zonacontenido >= zonasidebar) {
             // $(".zonasidebar").height(zonacontenido);

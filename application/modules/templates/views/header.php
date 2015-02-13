@@ -16,6 +16,8 @@
           href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
 
+    <meta name="twitter:widgets:csp" content="on">
+
     <link rel="apple-touch-icon" sizes="144x144"
           href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
     <link rel="apple-touch-icon" sizes="114x114"

@@ -188,6 +188,9 @@ footer {
 .separador20 {
     margin-top: 20px;
 }
+.separador30 {
+    margin-top: 30px;
+}
 .separador20-xs {
     margin-top: 20px;
 }
@@ -1038,6 +1041,7 @@ h4.contenidos {
         padding-left: 0;
     }
 
+
     .separador10 {
         padding-right: 5px;
         padding-left: 0;
@@ -1345,4 +1349,8 @@ div#closeBanner {
 }
 .menu-fijo .miniletra {
     margin-top: 0px !important;
+}
+
+.fechalista {
+    cursor: pointer;
 }

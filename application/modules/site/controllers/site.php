@@ -63,9 +63,12 @@ class Site extends MY_Controller
         if ($this->verificarDispositivo() == "1")
             redirect('site/movil/');
         else
+
             redirect('home');
-            //$this->home();
+
+        //$this->home();
     }
+
 
     // para la final se comentan la llamada a las secciones.
     public function movil()
@@ -95,7 +98,7 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom.  $tablaposiciones;
+        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones;
         $data['sidebar'] = "";
 
         $data['footer'] = '';
@@ -223,15 +226,15 @@ class Site extends MY_Controller
         $storia = $this->story->get_complete($idNoticia);
 
         $aux = $this->mdl_story->get_story($idNoticia);
-        $image =  $aux->thumb150;
+        $image = $aux->thumb150;
         $description = $aux->lead;
         $bodytag = str_replace('"', '', strip_tags($aux->title));
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
-        $data['image'] =   $image;
-        $data['description'] =   $description;
-        $data['idnoticia'] =   $idNoticia;
-        $data['ulrfriend'] =   $this->_urlFriendly($aux->title);
+        $data['image'] = $image;
+        $data['description'] = $description;
+        $data['idnoticia'] = $idNoticia;
+        $data['ulrfriend'] = $this->_urlFriendly($aux->title);
 
 
         // fin carga la informacion de la noticia        
@@ -243,7 +246,7 @@ class Site extends MY_Controller
         //   $data['header2'] = $this->contenido->header2($dataHeader2);
         //   $data['top2'] = $this->banners->FE_Megabanner();
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true,TOTALNEWSINOPENNEWS);
+        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
@@ -475,7 +478,7 @@ class Site extends MY_Controller
         $this->templates->_index($data);
     }
 
-    public function pruebas ()
+    public function pruebas()
     {
         // para la final se comentan la llamada a las secciones.
 
@@ -493,7 +496,7 @@ class Site extends MY_Controller
         // fin carga la informacion de la noticia
         $data['content'] = $this->banners->FE_Bigboxbanner();
 
-            $data['sidebar'] = "";
+        $data['sidebar'] = "";
         $data['footer'] = "";
         $data['bottom'] = "";
 
@@ -508,6 +511,13 @@ class Site extends MY_Controller
         $this->section_equipo($idEquipo, 2, $shortEquipo);
     }
 
+    public function setloc()
+    {
+        $id = $this->uri->segment(3);
+        $this->load->module('story');
+
+        $this->mdl_story->cuentaVisita($id);
+    }
 
     public function section_equipo($seccion, $seccionpos, $urlSeccion)
     {
@@ -563,11 +573,11 @@ class Site extends MY_Controller
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
-        if ($infoEquipo != "")
+        if ($infoEquipo != "") {
             $noticiasCuerpo = $this->noticias->viewSeccionsEquipo("", $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion, 4);
-        else
+        } else {
             $noticiasCuerpo = $this->noticias->viewSeccions("Noticias de " . $nameSeccion, $seccion, $seccionpos, "equipo/" . $urlSeccion . "/" . $seccion);
-
+        }
         $storia = "";
         $bodytag = $nameSeccion;
 

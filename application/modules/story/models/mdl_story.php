@@ -137,7 +137,7 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-    function cuentaVisita($id)
+        function cuentaVisita($id)
     {
         $sql = 'select `reads` from stories_stats  where story_id=' . $id;
         $aux = $this->db->query($sql)->result();

@@ -34,6 +34,7 @@ class Story extends MY_Controller
 
     function get_complete($id)
     {
+        $this->mdl_story->cuentaVisita($id);
         $this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
@@ -46,7 +47,7 @@ class Story extends MY_Controller
         $noticia = $this->mdl_story->get_story($id);
         $data['noticia'] = $noticia;
         $data['autor'] = $this->get_author($noticia->author_id);
-        $this->mdl_story->cuentaVisita($id);
+
 
         //La Voz de las Tribunas
         $this->load->module('noticias');

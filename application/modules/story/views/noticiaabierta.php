@@ -50,9 +50,10 @@
             <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
         </div>
         <div class="margen10lados-sx noticia-body">
+            <br/>
             <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
                target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
-            <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>" <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?>
+            <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>">  <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
         </div>
     </div>
 </div>
@@ -77,3 +78,10 @@
     <div class="fb-comments" data-href="<?php echo $link ?>" data-width="100%" data-numposts="5"
          data-colorscheme="light"></div>
 </div>
+<script>
+    setTimeout(function () {
+        $.post(baseUrl + "site/setloc/<?php echo  $noticia->id;?>");
+
+    }, 2500)
+
+</script>
