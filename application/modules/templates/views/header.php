@@ -18,6 +18,14 @@
 
     <meta name="twitter:widgets:csp" content="on">
 
+    <!--twitter TAGS-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@futbolecuador">
+    <meta name="twitter:title" content="<?php echo $pageTitle ?>">
+    <meta name="twitter:description" content="<?php echo (isset($description)) ?  strip_tags($description) :  'Futbol Ecuador'; ?>">
+    <meta name="twitter:image" content="<?php echo (isset($story->thumb300)) ? base_url($story->thumb300)   :  base_url('img/apple-touch-icon-144-precomposed.png'); ?>">
+    <meta name="twitter:url" content="<?php echo (isset($ulrfriend)) ? base_url($ulrfriend."/". $idnoticia)   :  "http://www.futbolecuador.com"; ?>" />
+
     <link rel="apple-touch-icon" sizes="144x144"
           href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
     <link rel="apple-touch-icon" sizes="114x114"

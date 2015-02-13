@@ -49,6 +49,7 @@ $route['zona-fe'] = "site/zonafe";
 $route['la-voz-de-las-tribunas'] = "site/lavoz";
 $route['lo-mas-leido'] = "site/masleido";
 $route['en-el-exterior'] = "site/nuestrosembajadores";
+$route['marcador-en-vivo'] = "site/marcadorenvivo";
 
 $route['copa-libertadores'] = "site/copalibertadores";
 $route['copa-sudamericana'] = "site/copasudamericana";
@@ -59,13 +60,17 @@ $route['futbol-internacional'] = "site/futbolinternacional";
 $route['fe-magazine'] = "site/femagazine";
 $route['goleadores'] = "site/goleadores";
 $route['tabla-de-posiciones'] = "site/tabladeposiciones";
-$route['tabla-de-posicionesb'] = "site/tabladeposiciones/30";
+$route['tabla-de-posicionesb'] = "site/tabladeposiciones/54";
 $route['resultados'] = "site/resultados";
 $route['fuera-de-juego'] = "site/fueradejuego";
 
 $route['serie-a'] = "site/seriea";
 $route['serie-b'] = "site/serieb";
 $route['seleccion'] = "site/seleccion";
+
+$route['sitemap\.xml'] = "seo/sitemap";
+$route['sitemap_news\.xml'] = "seo/sitemap_news";
+
 
 
 //$route['contactos'] =  "sections/publica/67";
@@ -78,7 +83,7 @@ $route['seleccion'] = "site/seleccion";
 //$route['equipo/liga-de-loja'] = "sections/publica/47/Liga_de_Loja";
 //$route['equipo/independiente-del-valle'] = "sections/publica/44/Independiente_del_Valle";
 //$route['equipo/barcelona'] = "sections/publica/23/Barcelona";
-$route['equipo/liga-de-quito'] = "site/equipo/liga-de-quito/14";
+$route['liga-de-quito'] = "site/equipo/liga-de-quito/14";
 //$route['equipo/manta-fc'] = "sections/publica/25/Manta_F.C.";
 //$route['equipo/deportivo-cuenca'] = "sections/publica/17/Deportivo_Cuenca";
 //$route['equipo/mushuc-runa'] = "sections/publica/65/Mushuc_Runa";

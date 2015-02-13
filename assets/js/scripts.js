@@ -174,6 +174,33 @@ if (machDetailCarrousel.length > 0) {
     }, REFRESH_VIVO * 1000)
 }
 
+//cronometro
+var cronometro = $('.cronometro');
+if (cronometro.length > 0) {
+    setInterval(function () {
+        $('.cronometro').each(function () {
+            partes = $(this).html().split("-");
+            hora = partes[0].split(':');
+            segundo =  parseInt(hora[1]) + 1;
+            minuto = parseInt(hora[0]);
+
+            if (segundo >= 60 )
+            {
+                segundo = 0;
+                minuto = minuto + 1;
+            }
+            if (segundo < 10  ) {
+                segundo = "0" + segundo;
+            }
+            if (minuto < 10  ) {
+                minuto = "0" + minuto;
+            }
+            nuevahora = minuto + ":" + segundo + ' - ' + partes[1];
+            $(this).html(nuevahora)
+        })
+    },  1000)
+}
+
 //matchdetailestado
 
 machDetail = $ ('.matchdetail') ;

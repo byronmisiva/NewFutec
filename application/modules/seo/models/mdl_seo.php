@@ -1,16 +1,27 @@
 <?php
-class Seo extends CI_Model {
 
-   //  var $limit = " LIMIT 4 ";
-    var $limit = " ";
+class Mdl_seo extends MY_Model
+{
 
-    function __construct() {
+    public $table_name = "seo";
+    public $primary_key = "id";
+    public $joins;
+    public $select_fields;
+    public $total_rows;
+    public $page_links;
+    public $current_page;
+    public $num_pages;
+    public $optional_params;
+    public $order_by;
+    public $form_values = array();
+    public $limit = "";
+
+    public function __construct()
+    {
         parent::__construct();
-        $this->load->library('pagination');
-        $this->name='seos';
     }
-       // genera seccion fijas
-    function get_seccions(){
+
+    public function get_seccions(){
 
         $result = array();
         $result[] = array("url" => base_url(), "desc" => "Home" );
@@ -42,16 +53,16 @@ class Seo extends CI_Model {
         $result[] = array ("url" => base_url() . "zona-fe" , "desc" => "Zona FE" );
         $result[] = array ("url" => base_url() . "revista-fe-magazine" , "desc" => "FE Magazine" );
         $result[] = array ("url" => base_url() . "en-el-exterior" , "desc" => "En el Exterior" );
- 
-      return $result;
+
+        return $result;
     }
 
-    function get_all_stories(){
+    public  function get_all_stories(){
         $query = $this->db->query('SELECT id, title, subtitle, DATE_FORMAT(created,"%Y-%m-%dT%H:%i:%s-05:00") AS created FROM stories ORDER BY stories.created DESC'. $this->limit);
         return $query->result();
     }
 
-    function get_stories_news(){
+    public function get_stories_news(){
         $query = $this->db->query('SELECT id, title, subtitle, DATE_FORMAT(created,"%Y-%m-%dT%H:%i:%s-05:00") AS created FROM stories ORDER BY stories.created DESC LIMIT 40');
 
         $data = $query->result();
@@ -63,13 +74,12 @@ class Seo extends CI_Model {
         return $data;
     }
 
-    function get_all_tags(){
+    public function get_all_tags(){
         $query = $this->db->query('SELECT name FROM tags ORDER BY sum DESC' . $this->limit);
         return $query->result();
     }
 
-    function get_tags_storie($idstorie){
-
+    public  function get_tags_storie($idstorie){
         $query = $this->db->query("SELECT tags.name
                                     FROM tags INNER JOIN stories_tags ON tags.id = stories_tags.tag_id
                                     WHERE stories_tags.story_id = '".$idstorie."'");

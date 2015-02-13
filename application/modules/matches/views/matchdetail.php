@@ -51,7 +51,13 @@ $estado['8'] = 'Fin del Partido';?>
                                 </div>
                             </div>
                             <div class="matchdetailestado col-md-12 col-xs-12 text-center textos-equipo clearfix">
-                                <?= $estado[$team->state] ?>
+                                <?php if (($cronometro['estado']== 1)||($cronometro['estado']== 3)||($cronometro['estado']== 5)||($cronometro['estado']== 6)) {
+                                        echo '<div class = "cronometro">'. $cronometro['minuto'] . ":" . $cronometro['segundo'] . " - " . $cronometro['tiempo'] ."</div>";
+
+                                } else {
+                                        echo  $estado[$team->state] ;
+                                }
+                                ?>
                             </div>
                             <div class="col-md-12 col-xs-12 text-center textos-equipo clearfix">
                                 <?php setlocale(LC_ALL, "es_ES");

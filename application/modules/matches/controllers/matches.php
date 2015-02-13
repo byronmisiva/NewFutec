@@ -70,6 +70,8 @@ class Matches extends MY_Controller
 
         $data['comentarios'] = $this->mdl_matches->get_info_team($id);
 
+        $data ['cronometro'] = $this->mdl_matches->cal_time($id);
+
         //todo se debe poner con la fecha
 //        $data['otrospartidos']= $this->mdl_matches->get_info_team($id);
 
