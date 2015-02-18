@@ -15,7 +15,18 @@ var cleanBlackLayer = function () {
 
 jQuery(document).ready(function () {
 
-    //funcion anclar menu
+    //funcion enviar encuesta
+    if ($(".enviar-encuesta").length ) {
+        console.log ("enviar-encuesta1")
+        $("#enviar-encuesta-boton").click(function (){
+            $(".enviar-encuesta").hide();
+            $(".resultados-encuesta").show();
+        })
+
+    }
+
+
+        //funcion anclar menu
     if ($("#fechascalendario").length ) {
         $(" .fechalista").click(function(event){
 

@@ -315,5 +315,8 @@
     <? echo $bannersSidebar[3]; ?>
 </div>
 
+<div class="col-md-12 separador10 margen0r">
+    <? echo $encuesta; ?>
+</div>
 
 

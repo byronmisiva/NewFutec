@@ -1354,3 +1354,28 @@ div#closeBanner {
 .fechalista {
     cursor: pointer;
 }
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 4px 5px 0 0;
+}
+
+.progress-bar-success {
+    background-color: #242331;
+}
+
+.progress {
+    height: 16px;
+    border-radius: 0px;
+}
+
+.progress-bar {
+    line-height: 16px;
+}
+
+.encuesta-porcentaje {
+    padding-left: 2px ;
+}
+
+#enviar-encuesta-boton, #ver-resultados {
+    cursor: pointer;
+}

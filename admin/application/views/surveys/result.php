@@ -1,4 +1,4 @@
-<?=$survey->title;?>
+<?=$survey->title;?>sss
 <table class='opciones' cellpadding="0" cellspacing="0" width="100%">
 <?php
 foreach($options as $row){

@@ -202,6 +202,7 @@ class Contenido extends MY_Controller
         //carga Banners
         $this->load->module('banners');
         $this->load->module('scoreboards');
+        $this->load->module('surveys');
         $bannersSidebar = array();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
@@ -261,6 +262,10 @@ class Contenido extends MY_Controller
 
         //Zona Fe
         $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
+
+        //Encuestas
+        $data['encuesta'] = $this->surveys->encuesta_formulario ();
+
 
 
         return $this->load->view('sidebar', $data, TRUE);
