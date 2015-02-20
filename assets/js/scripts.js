@@ -16,38 +16,60 @@ var cleanBlackLayer = function () {
 jQuery(document).ready(function () {
 
     //funcion enviar encuesta
-    if ($(".enviar-encuesta").length ) {
-        console.log ("enviar-encuesta1")
-        $("#enviar-encuesta-boton").click(function (){
+    if ($(".enviar-encuesta").length) {
+        $("#enviar-encuesta-boton").click(function () {
             $(".enviar-encuesta").hide();
             $(".resultados-encuesta").show();
+            // $(".resultados-encuesta").html('Enviando...');
+            $.post(
+                baseUrl + "surveys/envioencuesta/" + $("[name='option']:checked").val() + "/" + Math.floor((Math.random() * 1000000) + 1),
+                {vote: $("[name='option']:checked").val()},
+                function (data) {
+                    //       $(".resultados-encuesta").html('Ver Resultados' );
+                    $.post(baseUrl + "surveys/encuesta_resultado/" + Math.floor((Math.random() * 1000000) + 1), function (data) {
+                        $(".encuesta-contenedor").html(data);
+                        $(".resultados-encuesta").remove();
+                    });
+                });
         })
-
     }
+//    clickVerResultados()
 
-
-        //funcion anclar menu
-    if ($("#fechascalendario").length ) {
-        $(" .fechalista").click(function(event){
-
-            result = $(this).find( ".valor").html();
-            console.log (result);
-            $('#scrollto'+ result).ScrollTo();
+    //funcion anclar menu
+    if ($("#fechascalendario").length) {
+        $(" .fechalista").click(function (event) {
+            result = $(this).find(".valor").html();
+            $('#scrollto' + result).ScrollTo();
         });
     }
 
-
-
-
-    if ($("#fechascalendario").length ) {
+    if ($("#fechascalendario").length) {
         $(window).scroll(function (event) {
-            if ($(window).scrollTop()>190){
+            if ($(window).scrollTop() > 190) {
                 $("#fechascalendario").addClass('menu-fijo');
             } else {
                 $("#fechascalendario").removeClass('menu-fijo');
             }
         });
     }
+
+    //manejo de flecha arriba
+    if ($(".flechaariba").length) {
+        ancho = $("body").width();
+        if (ancho > 800) {
+            $(window).scroll(function (event) {
+                if ($(window).scrollTop() > 500) {
+                    $(".flechaariba").fadeIn();
+                } else {
+                    $(".flechaariba").fadeOut();
+                }
+            });
+        }
+    }
+
+    $(".flechaariba").click(function (event) {
+        $('.arriba').ScrollTo();
+    });
 
     //ocultar el menu al dar click
     $(".clickmenu").click(function () {
@@ -192,39 +214,38 @@ if (cronometro.length > 0) {
         $('.cronometro').each(function () {
             partes = $(this).html().split("-");
             hora = partes[0].split(':');
-            segundo =  parseInt(hora[1]) + 1;
+            segundo = parseInt(hora[1]) + 1;
             minuto = parseInt(hora[0]);
 
-            if (segundo >= 60 )
-            {
+            if (segundo >= 60) {
                 segundo = 0;
                 minuto = minuto + 1;
             }
-            if (segundo < 10  ) {
+            if (segundo < 10) {
                 segundo = "0" + segundo;
             }
-            if (minuto < 10  ) {
+            if (minuto < 10) {
                 minuto = "0" + minuto;
             }
             nuevahora = minuto + ":" + segundo + ' - ' + partes[1];
             $(this).html(nuevahora)
         })
-    },  1000)
+    }, 1000)
 }
 
 //matchdetailestado
 
-machDetail = $ ('.matchdetail') ;
-if ( machDetail.length > 0) {
-    estado = $ ('.matchdetailestado').html() ;
+machDetail = $('.matchdetail');
+if (machDetail.length > 0) {
+    estado = $('.matchdetailestado').html();
 
-    if (estado.replace(/\s/g,'') != 'FindelPartido'){
+    if (estado.replace(/\s/g, '') != 'FindelPartido') {
         //recargar marcador en vivo REFRESH_VIVO
         setInterval(function () {
             $.post(baseUrl + "site/MarcadorVivoDetail/" + idEquipo + "/" + Math.floor((Math.random() * 1000000) + 1), function (data) {
                 $(".matchdetail").html(data);
-                $( ".matchdetail .comentariosC" ).remove();
-                $( ".matchdetail .comentariosB" ).remove();
+                $(".matchdetail .comentariosC").remove();
+                $(".matchdetail .comentariosB").remove();
             });
         }, REFRESH_VIVO * 1000)
     }
@@ -451,6 +472,15 @@ function clickMasNoticias() {
             clickMasNoticias();
 
             setTimeout(igualarancho(), 2500);
+        });
+    })
+}
+function clickVerResultados() {
+    $("#ver-resultados").click(function () {
+        $(this).html("Cargando...");
+        $.post(baseUrl + "surveys/encuesta_resultado/" + Math.floor((Math.random() * 1000000) + 1), function (data) {
+            $(".encuesta-contenedor").html(data);
+            $(".resultados-encuesta").remove();
         });
     })
 }

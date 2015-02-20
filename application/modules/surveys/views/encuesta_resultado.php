@@ -28,6 +28,6 @@
     }
     ?>
 </div>
-<div class="col-md-12 col-xs-12 text-right fondoazul separador10">
-    <a id="ver-resultados" href="<?= base_url('goleadores') ?>">Ver siguiente encuesta</a>
+<div class="col-md-12 col-xs-12 text-right fondoazul separador10 hidden">
+    <a id="ver-resultados" href="">Ver siguiente encuesta</a>
 </div>

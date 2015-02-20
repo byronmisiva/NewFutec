@@ -10,19 +10,24 @@ class Surveys extends MY_Controller
         parent::__construct();
     }
 
+    public function envioencuesta()
+    {
+        $param = $this->uri->segment(3);
+        $this->mdl_surveys->set_data($param);
+
+
+    }
     public function encuesta_formulario($data = FALSE)
     {
-
         $ultimaEncuesta = $this->mdl_surveys->get_last_survey();
         $data['survey'] = $ultimaEncuesta[0];
         $data['options'] = $this->mdl_surveys->get_survey_options($data['survey']->id);
-
         return $this->load->view('encuesta_formulario', $data, TRUE);
     }
 
-    public function encuesta_resultado($data = FALSE)
+    public function encuesta_resultado()
     {
-
+        $this->load->module('surveys');
         $ultimaEncuesta = $this->mdl_surveys->get_last_survey();
         $data['survey'] = $ultimaEncuesta[0];
         $data['options'] = $this->mdl_surveys->get_survey_options($data['survey']->id);
@@ -38,5 +43,4 @@ class Surveys extends MY_Controller
         }
         $this->load->view('encuesta_resultado', $data);
     }
-
 }

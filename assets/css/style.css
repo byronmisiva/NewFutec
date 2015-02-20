@@ -1366,6 +1366,7 @@ input[type="checkbox"], input[type="radio"] {
 .progress {
     height: 16px;
     border-radius: 0px;
+    margin-bottom: 10px;
 }
 
 .progress-bar {
@@ -1378,4 +1379,12 @@ input[type="checkbox"], input[type="radio"] {
 
 #enviar-encuesta-boton, #ver-resultados {
     cursor: pointer;
+}
+
+.flechaariba {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
 }

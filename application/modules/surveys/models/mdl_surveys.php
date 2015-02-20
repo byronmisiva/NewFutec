@@ -22,15 +22,31 @@ class Mdl_surveys extends MY_Model{
         $this->db->from($this->table_name);
         $this->db->order_by('id', 'desc');
         $this->db->limit(1);
-
-        return $this->db->get()->result();
+        $resultado = $this->db->get()->result();
+        return $resultado;
     }
 
     public function get_survey_options($id){
         $this->db->select('*', false);
         $this->db->from('options');
         $this->db->where('survey_id', $id);
+        $this->db->order_by('votes', 'desc');
+
         return $this->db->get()->result();
+    }
+    public function set_data($id){
+        $this->db->select('votes', false);
+        $this->db->from('options');
+        $this->db->where('id', $id);
+        $votos =  $this->db->get()->result();
+
+        $data = array(
+            'votes' => $votos[0]->votes + 1
+        );
+        $this->db->where('id', $id);
+        $this->db->update('options', $data);
+        $sql = $this->db->last_query();
+        return 1;
     }
 
 

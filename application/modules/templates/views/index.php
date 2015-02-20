@@ -3,7 +3,7 @@
 $this->load->view('header', $data);
 ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="page-header top1 hidden-xs">
+<div class="page-header top1 hidden-xs arriba">
     <div class="container margen0">
         <div class="row clearfix separador10 separador10bot">
             <?php echo $top1; ?>
@@ -149,8 +149,11 @@ $this->load->view('header', $data);
         ?>
     </div>
 </div>
+
+<div class="flechaariba">
+    <img src="<?= base_url('assets/img/boton-arriba.png') ?>">
+</div>
 <?php
 $this->load->view('footerend',$data);
 ?>
 <!-- /container -->
-
