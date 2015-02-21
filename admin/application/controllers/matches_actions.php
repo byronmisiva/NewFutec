@@ -22,9 +22,9 @@ class Matches_actions extends CI_Controller {
 				'1'=>$path."tarjeta_amarilla.png",'in'=>$path."entra.png",'out'=>$path."sale.png",'tipo'=>$path.'player.png','cambio'=>$path.'cambio.png');
 		
 		//Validacion ACL
-		if(!$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2),FALSE)){
+		/*f(!$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2),FALSE)){
 			redirect('admin');
-		}
+		}*/
 		
 	}
 	

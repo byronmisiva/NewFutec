@@ -32,7 +32,7 @@ class Stories extends CI_Controller {
 		$this->positions=array('1' => 'Rotativas','2' => 'Principales','3'=>'Noticia del Dia');
 		
 		//Validacion ACL
-		$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2));
+		//$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2));
 	}
 	
 	

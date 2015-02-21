@@ -11,7 +11,7 @@ class Welcome extends CI_Controller {
 	
 	function index()
 	{
-        redirect('admin');
+        //redirect('admin');
 
 		if('http://'.$_SERVER['SERVER_NAME'].'/'!=base_url() and 'http://'.$_SERVER['SERVER_NAME'].'/CI_fe2008/'!=base_url())
 			Header('Location: '.base_url());
