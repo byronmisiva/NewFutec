@@ -56,6 +56,16 @@ class Mdl_Noticias extends MY_Model
 
         $data = $this->db->get('sections_tags')->result();
         return $data;
+
+        $base = "SELECT st.tag_id
+FROM (`stories` s)
+JOIN  `stories_tags`  st ON `s`.`id` = `st`.`story_id`
+WHERE (category_id =41 OR st.tag_id IN(\"212\") )
+AND `s`.`invisible` =  '0'
+AND `s`.`position` < 10
+GROUP BY `s`.`id`
+ORDER BY `s`.`created` desc
+LIMIT 8";
     }
 
 
@@ -85,33 +95,33 @@ class Mdl_Noticias extends MY_Model
             $str_tags = "";
             foreach ($res as $row) {
                 $tags[] = $row->tag_id;
-                $str_tags .= '"' . $row->tag_id . '"'. ',';
+                $str_tags .= '"' . $row->tag_id . '"' . ',';
             }
             $str_tags = trim($str_tags, ',');
             if (count($tags) > 0) {
-
-                if (isset($position))
-                    $res=$this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
-                                      AND invisible =  '0' AND position =  $position ORDER BY created desc LIMIT $limit")->result(0);
-                else
-                    $res=$this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                if (isset($position)) {
+                    $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                                      AND invisible =  '0'   ORDER BY created desc LIMIT $limit")->result(0);
+                } else
+                    $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
                                       AND invisible =  '0'  ORDER BY created desc LIMIT $limit")->result(0);
 
                 $str_ids = "";
                 foreach ($res as $row) {
-                    $str_ids .= '"' . $row['image_id'] . '"'. ',';
+                    $str_ids .= '"' . $row['image_id'] . '"' . ',';
                 }
                 $str_ids = trim($str_ids, ',');
 
                 $this->db->from('stories s', false);
-                $this->db->join('(select * from images where  id IN('. $str_ids.')) i', 'i.id = s.image_id');
+               //$this->db->join('(select * from images where  id IN(' . $str_ids . ')) i', 'i.id = s.image_id');
+                $this->db->join('images i', 'i.id = s.image_id');
 
                 if ($this->validarquery($str_ids, $str_tags, $sec->category_id, $position, $limit)) {
-                    $this->db->join('(select * from `stories_tags`   ) st', 's.id = st.story_id');
+                    $this->db->join('`stories_tags` st', 's.id = st.story_id');
                     $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
                 } else {
-                    $this->db->join('(select * from `stories_tags` where tag_id IN( '. $str_tags.' ) ) st', 's.id = st.story_id');
-                    $where = "(category_id  =$sec->category_id )";
+                    $this->db->join('`stories_tags`  st', 's.id = st.story_id');
+                    $where = "(category_id  =$sec->category_id OR st.tag_id IN($str_tags) )";
                 }
 
 
@@ -119,21 +129,23 @@ class Mdl_Noticias extends MY_Model
 
 
                 $this->db->where($where);
-                $this->db->group_by('s.id');
+                //$this->db->group_by('s.id');
             } else {
-                $this->db->from('stories s, images i');
-                $this->db->where('i.id', 's.image_id', FALSE);
+                $this->db->join('images i', 'i.id = s.image_id');
+                $this->db->from('stories s');
             }
         } else {
-            $this->db->from('stories s, images i');
-            $this->db->where('i.id', 's.image_id', FALSE);
-            //$this->db->where('s.position <', 10);
+            $this->db->from('stories s');
+            $this->db->join('images i', 'i.id = s.image_id');
+            $this->db->order_by('s.created', "desc");
+
+             //$this->db->where('s.position <', 10);
 
             //if ($position > 0)
             //    $this->db->where('s.position', $position);
         }
 
-        $this->db->select('s.*,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
+        $this->db->select('DISTINCT (s.id), s.*,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
         $this->db->where('s.invisible', '0');
 
         //Check if there are multiple positions
@@ -141,8 +153,14 @@ class Mdl_Noticias extends MY_Model
             $this->db->where_in('s.position', $position);
         } else {
             //arreglo generico
-            if (isset($position))
-                $this->db->where('s.position', $position);
+            if (isset($position)) {
+                if ($position == 2)
+                    $this->db->where('s.position <', 10);
+                else
+                    $this->db->where('s.position', $position);
+
+
+            }
         }
 
         $l = explode(',', $limit);
@@ -150,7 +168,7 @@ class Mdl_Noticias extends MY_Model
             $this->db->limit($l[0], $l[1]);
         else
             $this->db->limit($limit, $offset);
-        $this->db->order_by('s.created', "desc");
+        //$this->db->order_by('s.created', "desc");
 
         $aux = $this->db->get()->result();
         $test = $this->db->last_query();
@@ -175,29 +193,34 @@ class Mdl_Noticias extends MY_Model
         return $aux;
     }
 
-    public function validarquery ($images, $tags, $categoria, $position, $limit){
+    public function validarquery($images, $tags, $categoria, $position, $limit)
+    {
 
-        if (isset($position))
+        if (isset($position)) {
+            if ($position == 2)
+                $positioQuery = " < 10";
+            else
+                $positioQuery = " = " . $position;
             $query = 'SELECT s.*
                     FROM (`stories` s)
-                    JOIN (select * from images where id IN('. $images .')) i ON `i`.`id` = `s`.`image_id`
-                    JOIN (select * from `stories_tags` where tag_id IN( '.$tags .' ) ) st ON `s`.`id` = `st`.`story_id`
-                    WHERE (category_id ='.$categoria .' )
+                    JOIN (select * from images where id IN(' . $images . ')) i ON `i`.`id` = `s`.`image_id`
+                    JOIN (select * from `stories_tags` where tag_id IN( ' . $tags . ' ) ) st ON `s`.`id` = `st`.`story_id`
+                    WHERE (category_id =' . $categoria . ' OR st.tag_id IN(' . $tags . ') )
                     AND `s`.`invisible` =  "0"
-                    AND `s`.`position` =  '.$position.'
-                    LIMIT '.$limit;
-        else
+                    AND `s`.`position` ' . $positioQuery.'
+                    LIMIT ' . $limit;
+        } else
             $query = 'SELECT s.*
                     FROM (`stories` s)
-                    JOIN (select * from images where id IN('. $images .')) i ON `i`.`id` = `s`.`image_id`
-                    JOIN (select * from `stories_tags` where tag_id IN( '.$tags .' ) ) st ON `s`.`id` = `st`.`story_id`
-                    WHERE (category_id ='.$categoria .' )
+                    JOIN (select * from images where id IN(' . $images . ')) i ON `i`.`id` = `s`.`image_id`
+                    JOIN (select * from `stories_tags` where tag_id IN( ' . $tags . ' ) ) st ON `s`.`id` = `st`.`story_id`
+                    WHERE (category_id =' . $categoria . ' )
                     AND `s`.`invisible` =  "0"
-                    LIMIT '.$limit;
+                    LIMIT ' . $limit;
 
         $query = $this->db->query($query);
 
-        if ($query->num_rows() <= 5){
+        if ($query->num_rows() <= 5) {
             return true;
 
         } else {
