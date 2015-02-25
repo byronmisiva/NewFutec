@@ -317,6 +317,9 @@ function altoshome() {
 }
 // fuera de juego
 jQuery(function () {
+
+
+
     jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17').liquidSlider({
         //  jQuery('#main-slider15,#main-slider16').liquidSlider({
         includeTitle: false,
@@ -351,8 +354,41 @@ jQuery(function () {
     });
     jQuery(".containerfueradejuego").hide();
     jQuery(".galeria17content").show();
+
+
+    // funcion swipe menu inferior
+    jQuery(".otrasmodelos").swipe( {
+        tap:function(event, target) {
+            for (var i = 1; i <= 17; i++)
+                jQuery(".galeria" + i + "content").hide();
+            thisLocal = target;
+            jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
+            idclic = jQuery(thisLocal).attr('id');
+            idclic = idclic.replace("galeria", "");
+            console.log (idclic)
+            $(".galeria" + idclic + "content img.lazo").each(function () {
+                $(this).attr("src", $(this).attr("data-original"))
+                setTimeout(function () {
+                    jQuery("#main-slider" + idclic + "-nav-ul li.tab2 a ").click();
+                    jQuery("#main-slider" + idclic + "-nav-ul li.tab1 a ").click();
+                }, 1000);
+            });
+        },
+
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+            $("img.next").click()
+        },
+        swipeRight: function() {
+            $("img.prev").click()
+        },
+
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+        threshold:0
+    });
+
+
     //menuchicas
-    jQuery(".galeria1, .galeria2,.galeria3,.galeria4,.galeria5,.galeria6,.galeria7,.galeria8,.galeria9,.galeria10,.galeria11,.galeria12,.galeria13,.galeria14,.galeria15,.galeria16,.galeria17").click(function () {
+    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17").click(function () {
         for (var i = 1; i <= 17; i++)
             jQuery(".galeria" + i + "content").hide();
         jQuery("." + jQuery(this).attr('class') + "content").show();
@@ -366,6 +402,9 @@ jQuery(function () {
             }, 1000);
         });
     })
+
+
+
 });
 
 function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {

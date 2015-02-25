@@ -45,7 +45,6 @@
         </div>
 
         <div class="containerfueradejuego galeria16content">
-
             <div class="liquid-slider" id="main-slider16">
                 <div><h2 class="title hidden"><img class="img-responsive " src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/1b.jpg" alt=" "/>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/1a.jpg" alt="Karen"/></div>
@@ -53,7 +52,6 @@
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/2a.jpg" alt="Karen"/></div>
                 <div><h2 class="title hidden"><img class="img-responsive " src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/3b.jpg" alt=" "/>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/3a.jpg" alt="Karen"/>
-
                 </div>
                 <div><h2 class="title hidden"><img class="img-responsive " src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/4b.jpg" alt=" "/>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/4a.jpg" alt="Karen"/>
@@ -817,39 +815,39 @@
                                                 width="18" heigth="163"/></div>
             <div class="otrasmodelos">
                 <ul>
-                    <li class="galeria16"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/1b.jpg"
+                    <li class="galeria17"><img id="galeria17" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/1b.jpg"
                                                width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria16"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/1b.jpg"
+                    <li class="galeria16"><img id="galeria16" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/1b.jpg"
                                                width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria15"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1b.jpg"
+                    <li class="galeria15"><img id="galeria15" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1b.jpg"
                                                width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria14"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/1b.jpg"
+                    <li class="galeria14"><img id="galeria14" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/1b.jpg"
                                                width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria13"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/1b.jpg"
+                    <li class="galeria13"><img id="galeria13" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/1b.jpg"
                                                width="110" heigth="140" alt="Karen"/></li>
-                    <li class="galeria12"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/1b.jpg"
+                    <li class="galeria12"><img id="galeria12" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/1b.jpg"
                                                width="110" heigth="140" alt="Karen"/></li>
-                    <li class="galeria11"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/1b.jpg"
+                    <li class="galeria11"><img id="galeria11" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/1b.jpg"
                                                width="110" heigth="140" alt="Paulina"/></li>
-                    <li class="galeria10"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/1b.jpg"
+                    <li class="galeria10"><img id="galeria10" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/1b.jpg"
                                                width="110" heigth="140" alt="Alisson Hidalgo"/></li>
-                    <li class="galeria9"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/1b.jpg"
+                    <li class="galeria9"><img id="galeria9" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/1b.jpg"
                                               width="110" heigth="140" alt="Angeles Azules"/></li>
-                    <li class="galeria8"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/1b.jpg"
+                    <li class="galeria8"><img id="galeria8" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/1b.jpg"
                                               width="110" heigth="140" alt="Michelle López"/></li>
-                    <li class="galeria7"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/1b.jpg"
+                    <li class="galeria7"><img id="galeria7" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/1b.jpg"
                                               width="110" heigth="140" alt="Adriana Palacios"/></li>
-                    <li class="galeria6"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/1b.jpg"
+                    <li class="galeria6"><img id="galeria6" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/1b.jpg"
                                               width="110" heigth="140" alt="Sanny Cabrera"/></li>
-                    <li class="galeria5"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/1b.jpg"
+                    <li class="galeria5"><img id="galeria5" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/1b.jpg"
                                               width="110" heigth="140" alt="Francesca Galarza"/></li>
-                    <li class="galeria4"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/1b.jpg"
+                    <li class="galeria4"><img id="galeria4" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/1b.jpg"
                                               width="110" heigth="140" alt=""/></li>
-                    <li class="galeria3"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/1b.jpg"
+                    <li class="galeria3"><img id="galeria3" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/1b.jpg"
                                               width="110" heigth="140" alt="Andrea Ortiz"/></li>
-                    <li class="galeria2"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/1b.jpg"
+                    <li class="galeria2"><img id="galeria2" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/1b.jpg"
                                               width="110" heigth="140" alt="Marcela Recalde"/></li>
-                    <li class="galeria1"><img src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/1b.jpg"
+                    <li class="galeria1"><img id="galeria1" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/1b.jpg"
                                               width="110" heigth="140" alt="Diana Bastidas"/></li>
                 </ul>
             </div>
@@ -858,12 +856,9 @@
                      src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/right-fuera.jpg"
                      width="18" heigth="163"/>
             </div>
-
             <!-- Feel free to load scripts in the footer -->
             <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css?refresh=' . rand(1, 2000)  ) ?>"/>
-
             <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css?refresh=' . rand(1, 2000)  ) ?>"/>
-
         </div>
     </div>
 </div>

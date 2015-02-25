@@ -94,17 +94,33 @@ img.tituloFuera {
     display: none;
 
 }
-
-.ls-wrapper .liquid-slider {
-
-    /*height: 595px !important;*/
-}
-
 @media (max-width: 767px) {
     .logosGPAS {
         top: inherit;
         bottom: 10px;
 
+    }
+
+    .ls-wrapper .ls-nav {
+         width: 17%;
+     }
+
+    .ls-responsive .liquid-slider {
+        width: 83%;
+    }
+
+    .logosGPAS {
+        left: 0;
+    }
+    .logoGP, .logoAS {
+        width: 50%;
+        background-size: 100% auto;
+
+    }
+}
+@media (min-width: 767px) {
+    .ls-wrapper .liquid-slider {
+        height: 574px !important;
     }
 }
 

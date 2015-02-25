@@ -5,7 +5,157 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/1b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/2b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/3b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/4b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria8/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5a.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria1/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria10/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria11/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria12/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria14/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria16/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria17/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria2/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria3/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria5/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria6/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria7/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5b.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/5b.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/banner-chicas.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria9/banner-chicas.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/portada-fuera-de-juego1.jpg" afterPath="$PROJECT_DIR$/imagenes/galerias-fuera-de-juego/galeria13/portada-fuera-de-juego1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -32,10 +182,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mdl_noticias.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mdl_noticias.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3323782" vertical-offset="2509" max-vertical-offset="3570">
+            <state vertical-scroll-proportion="-2.62" vertical-offset="2494" max-vertical-offset="3570">
               <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
               <folding>
                 <marker date="1424792377000" expanded="true" signature="1616:1861" placeholder="SELECT st.ta..." />
@@ -55,50 +205,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/models/story.php">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.32" vertical-offset="1759" max-vertical-offset="8835">
-              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-              <folding>
-                <marker date="1422296510000" expanded="true" signature="9233:9337" placeholder="Select * Fro..stories..." />
-                <marker date="1422296510000" expanded="true" signature="9423:9871" placeholder="Select s.*, ..id..." />
-                <marker date="1422296510000" expanded="true" signature="9559:9807" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="10929:10996" placeholder="Select categ..sections..." />
-                <marker date="1422296510000" expanded="true" signature="11148:11617" placeholder="Select s.*, ..id..." />
-                <marker date="1422296510000" expanded="true" signature="11334:11560" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="11659:11728" placeholder="Select categ..sections..." />
-                <marker date="1422296510000" expanded="true" signature="11780:12293" placeholder="Select s.*, ..id..." />
-                <marker date="1422296510000" expanded="true" signature="11966:12236" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="12412:12865" placeholder="Select s.*, ..id..." />
-                <marker date="1422296510000" expanded="true" signature="12591:12792" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="12913:12963" placeholder="Select categ..sections..." />
-                <marker date="1422296510000" expanded="true" signature="13013:13555" placeholder="Select s.*, ..id..." />
-                <marker date="1422296510000" expanded="true" signature="13199:13478" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="15787:16090" placeholder="Select s.*, ..stories..." />
-                <marker date="1422296510000" expanded="true" signature="16263:16574" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="16655:16873" placeholder="Select s.tit..stories..." />
-                <marker date="1422296510000" expanded="true" signature="16963:17344" placeholder="Select s.id,..stories..." />
-                <marker date="1422296510000" expanded="true" signature="19167:19406" placeholder="SELECT s. * ..stories..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="5310" max-vertical-offset="8355">
+              <caret line="367" column="25" selection-start-line="367" selection-start-column="25" selection-end-line="367" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdl_noticiasnew.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasnew.php">
+      <file leaf-file-name="fueradejuego.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="21.25" vertical-offset="510" max-vertical-offset="3540">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1423835794000" expanded="true" signature="1616:1861" placeholder="SELECT st.ta..." />
-                <marker date="1423835794000" expanded="true" signature="2836:2998" placeholder="SELECT s.ima..stories..." />
-                <marker date="1423835794000" expanded="true" signature="3087:3248" placeholder="SELECT s.ima..stories..." />
-                <marker date="1423835794000" expanded="true" signature="6951:7456" placeholder="SELECT s.* F..*..." />
-                <marker date="1423835794000" expanded="true" signature="7027:7076" placeholder="select * fro..images..." />
-                <marker date="1423835794000" expanded="true" signature="7505:7920" placeholder="SELECT s.* F..*..." />
-                <marker date="1423835794000" expanded="true" signature="7581:7630" placeholder="select * fro..images..." />
-              </folding>
+            <state vertical-scroll-proportion="-6.875" vertical-offset="645" max-vertical-offset="13035">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liquid-slider.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4556" max-vertical-offset="6555">
+              <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="318" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fueradejuego.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.52191234" vertical-offset="1478" max-vertical-offset="2025">
+              <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,10 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
@@ -160,7 +298,6 @@
         <option value="$PROJECT_DIR$/application/modules/surveys/controllers/surveys.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/admin/application/libraries/Acl.php" />
         <option value="$PROJECT_DIR$/admin/application/config/config.php" />
         <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
@@ -169,6 +306,11 @@
         <option value="$PROJECT_DIR$/admin/application/controllers/stories.php" />
         <option value="$PROJECT_DIR$/admin/application/controllers/matches_actions.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/story.php" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
+        <option value="$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css" />
+        <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
       </list>
     </option>
   </component>
@@ -179,8 +321,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="177" />
-    <option name="y" value="29" />
+    <option name="x" value="461" />
+    <option name="y" value="23" />
     <option name="width" value="1445" />
     <option name="height" value="937" />
   </component>
@@ -239,7 +381,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,129 +399,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="noticias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="noticias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -4067,7 +4091,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424476842467</updated>
     </task>
-    <option name="localTasksCounter" value="599" />
+    <task id="LOCAL-00599" summary="incluye tabla de revista">
+      <created>1424794529927</created>
+      <option name="number" value="00599" />
+      <option name="project" value="LOCAL" />
+      <updated>1424794529927</updated>
+    </task>
+    <option name="localTasksCounter" value="600" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4091,27 +4121,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="177" y="29" width="1445" height="937" extended-state="0" />
+    <frame x="461" y="23" width="1445" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37278107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37278107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49467456" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49467456" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3100499" sideWeight="0.33723652" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3100499" sideWeight="0.33773586" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837528" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3215103" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25659302" sideWeight="0.49882904" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3100499" sideWeight="0.6627635" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3100499" sideWeight="0.66226417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -4221,42 +4251,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/sitemap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.208333" vertical-offset="190" max-vertical-offset="645">
-          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.583333" vertical-offset="4420" max-vertical-offset="4920">
-          <caret line="318" column="21" selection-start-line="318" selection-start-column="21" selection-end-line="318" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/sections_surveys.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2916665" vertical-offset="419" max-vertical-offset="1440">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/sections_surveys_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="615">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/sections_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="885">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/views/surveys/lasts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0989011" vertical-offset="0" max-vertical-offset="455">
@@ -4452,6 +4446,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7985348" vertical-offset="20106" max-vertical-offset="20925">
           <caret line="1384" column="20" selection-start-line="1384" selection-start-column="20" selection-end-line="1384" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4466,13 +4461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51861703" vertical-offset="855" max-vertical-offset="7770">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -4609,22 +4597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasnew.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.25" vertical-offset="510" max-vertical-offset="3540">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1423835794000" expanded="true" signature="1616:1861" placeholder="SELECT st.ta..." />
-            <marker date="1423835794000" expanded="true" signature="2836:2998" placeholder="SELECT s.ima..stories..." />
-            <marker date="1423835794000" expanded="true" signature="3087:3248" placeholder="SELECT s.ima..stories..." />
-            <marker date="1423835794000" expanded="true" signature="6951:7456" placeholder="SELECT s.* F..*..." />
-            <marker date="1423835794000" expanded="true" signature="7027:7076" placeholder="select * fro..images..." />
-            <marker date="1423835794000" expanded="true" signature="7505:7920" placeholder="SELECT s.* F..*..." />
-            <marker date="1423835794000" expanded="true" signature="7581:7630" placeholder="select * fro..images..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasVale.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3225">
@@ -4635,35 +4607,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/models/story.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.32" vertical-offset="1759" max-vertical-offset="8835">
+        <state vertical-scroll-proportion="0.30933332" vertical-offset="1759" max-vertical-offset="8835">
           <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
-            <marker date="1422296510000" expanded="true" signature="9233:9337" placeholder="Select * Fro..stories..." />
-            <marker date="1422296510000" expanded="true" signature="9423:9871" placeholder="Select s.*, ..id..." />
-            <marker date="1422296510000" expanded="true" signature="9559:9807" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="10929:10996" placeholder="Select categ..sections..." />
-            <marker date="1422296510000" expanded="true" signature="11148:11617" placeholder="Select s.*, ..id..." />
-            <marker date="1422296510000" expanded="true" signature="11334:11560" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="11659:11728" placeholder="Select categ..sections..." />
-            <marker date="1422296510000" expanded="true" signature="11780:12293" placeholder="Select s.*, ..id..." />
-            <marker date="1422296510000" expanded="true" signature="11966:12236" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="12412:12865" placeholder="Select s.*, ..id..." />
-            <marker date="1422296510000" expanded="true" signature="12591:12792" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="12913:12963" placeholder="Select categ..sections..." />
-            <marker date="1422296510000" expanded="true" signature="13013:13555" placeholder="Select s.*, ..id..." />
-            <marker date="1422296510000" expanded="true" signature="13199:13478" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="15787:16090" placeholder="Select s.*, ..stories..." />
-            <marker date="1422296510000" expanded="true" signature="16263:16574" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="16655:16873" placeholder="Select s.tit..stories..." />
-            <marker date="1422296510000" expanded="true" signature="16963:17344" placeholder="Select s.id,..stories..." />
-            <marker date="1422296510000" expanded="true" signature="19167:19406" placeholder="SELECT s. * ..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select * Fro..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.*, ..id..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select categ..sections..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.*, ..id..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select categ..sections..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.*, ..id..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.*, ..id..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select categ..sections..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.*, ..id..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.*, ..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.tit..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="Select s.id,..stories..." />
+            <marker date="1422296510000" expanded="true" signature="-1:-1" placeholder="SELECT s. * ..stories..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticiasnew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.36" vertical-offset="510" max-vertical-offset="3540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="SELECT st.ta..." />
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="SELECT s.ima..stories..." />
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="SELECT s.ima..stories..." />
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="SELECT s.* F..*..." />
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="select * fro..images..." />
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="SELECT s.* F..*..." />
+            <marker date="1423835794000" expanded="true" signature="-1:-1" placeholder="select * fro..images..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/jquery.liquid-slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.932773" vertical-offset="780" max-vertical-offset="15360">
+          <caret line="276" column="45" selection-start-line="276" selection-start-column="41" selection-end-line="276" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.touchSwipe.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3323782" vertical-offset="2509" max-vertical-offset="3570">
+        <state vertical-scroll-proportion="-2.62" vertical-offset="2494" max-vertical-offset="3570">
           <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
           <folding>
             <marker date="1424792377000" expanded="true" signature="1616:1861" placeholder="SELECT st.ta..." />
@@ -4679,6 +4683,38 @@
             <marker date="1424792377000" expanded="true" signature="7555:7602" placeholder="select * fro..images..." />
             <marker date="1424792377000" expanded="true" signature="7555:7604" placeholder="select * fro..images..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="645" max-vertical-offset="13035">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/liquid-slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4556" max-vertical-offset="6555">
+          <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="318" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5310" max-vertical-offset="8355">
+          <caret line="367" column="25" selection-start-line="367" selection-start-column="25" selection-end-line="367" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52191234" vertical-offset="1478" max-vertical-offset="2025">
+          <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -103,6 +103,7 @@
   display: block;
   float: left;
     border: 0px solid;
+    margin-bottom: 0;
 }
 
 /******************************************************
@@ -182,8 +183,8 @@
 .ls-wrapper .ls-nav ul li {
   /* Do not edit below this line */
   display: inline;
-    float: left;
-    width: 20%;
+    /*float: left;*/
+    width: 18%;
 }
 .ls-wrapper .ls-nav ul li a {
  
@@ -200,7 +201,9 @@
 *******************************************************/
 .ls-wrapper .ls-nav {
   overflow:hidden;
-  clear:both;
+/*  clear:both;*/
+    width: 15%;
+    float: right;
 }
 .ls-wrapper .ls-select-box {  
   /* Delete these if you want the standard select box.
@@ -311,7 +314,7 @@
 *******************************************************/
 .ls-responsive .liquid-slider {
   /* Do not edit below this line */
-  width: 100%;
+  width: 85%;
   margin: 0;
 }
 .ls-responsive .liquid-slider .panel .panel-wrapper {
