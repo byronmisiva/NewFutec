@@ -683,7 +683,7 @@ sub {
 
 .lateral .nav > li > a, .lateral .nav > li > a:hover {
     display: block;
-    padding: 4px 15px 5px;
+    padding: 4px 5px 5px;
     position: relative;
 }
 
@@ -1011,8 +1011,16 @@ h4.contenidos {
     max-height: 80px;
     overflow: hidden;
 }
-
 @media (max-width: 767px) {
+    .hyperbanner {
+    width: 100%;
+    overflow: hidden;
+}
+}
+@media (max-width: 767px) {
+    .lateral {
+        font-size: 12px;
+    }
     .container{
          width: 100%;
     }

@@ -81,6 +81,7 @@ class Story extends CI_Model {
         function get_by_position($position,$noticias,$limit,$seccion=""){
     	if($seccion != ""){
     		$sec=$this->section->get($seccion);
+            $test2 = $this->db->last_query();
     		$res=$this->section->get_tag_list($seccion);
     		$tags=array();
     		$str_tags="";
@@ -89,6 +90,7 @@ class Story extends CI_Model {
     			$str_tags.=$row->tag_id.',';
     		}
     		$str_tags=trim($str_tags,',');
+            $test1 = $this->db->last_query();
     		if(count($tags)>0){
 	    		$this->db->from('stories s, images i,stories_tags st');
 	    		$this->db->where('s.id','st.story_id', FALSE);

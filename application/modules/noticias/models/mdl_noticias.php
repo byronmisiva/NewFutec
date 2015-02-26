@@ -113,7 +113,7 @@ LIMIT 8";
                 $str_ids = trim($str_ids, ',');
 
                 $this->db->from('stories s', false);
-               //$this->db->join('(select * from images where  id IN(' . $str_ids . ')) i', 'i.id = s.image_id');
+                //$this->db->join('(select * from images where  id IN(' . $str_ids . ')) i', 'i.id = s.image_id');
                 $this->db->join('images i', 'i.id = s.image_id');
 
                 if ($this->validarquery($str_ids, $str_tags, $sec->category_id, $position, $limit)) {
@@ -129,7 +129,9 @@ LIMIT 8";
 
 
                 $this->db->where($where);
-                //$this->db->group_by('s.id');
+                // límite menor a 5 se usa solo en los listados de sidebar
+                if ($offset != 0)
+                    $this->db->group_by('s.id');
             } else {
                 $this->db->join('images i', 'i.id = s.image_id');
                 $this->db->from('stories s');
@@ -139,13 +141,13 @@ LIMIT 8";
             $this->db->join('images i', 'i.id = s.image_id');
             $this->db->order_by('s.created', "desc");
 
-             //$this->db->where('s.position <', 10);
+            //$this->db->where('s.position <', 10);
 
             //if ($position > 0)
             //    $this->db->where('s.position', $position);
         }
 
-        $this->db->select('DISTINCT (s.id), s.*,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
+        $this->db->select('s.*,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
         $this->db->where('s.invisible', '0');
 
         //Check if there are multiple positions
@@ -166,11 +168,23 @@ LIMIT 8";
         $l = explode(',', $limit);
         if (count($l) > 1)
             $this->db->limit($l[0], $l[1]);
-        else
-            $this->db->limit($limit, $offset);
-        //$this->db->order_by('s.created', "desc");
+        else {
+            $limitNew = $limit;
+            if ($offset == 0) {
+                //para ercuperar y luego  filtrar los repetidos por codigo
+                if ($limit == 1) $limitNew = $limit;
+                else
+                $limitNew = $limit * 4;
+            }
+            $this->db->limit($limitNew, $offset);
+        }
 
+        $this->db->order_by('s.created', "desc");
+        
         $aux = $this->db->get()->result();
+        // por optimizacion
+        $aux = $this->ajustaArray($aux, $limit);
+
         $test = $this->db->last_query();
 
         foreach ($aux as $key => $row) {
@@ -193,6 +207,21 @@ LIMIT 8";
         return $aux;
     }
 
+    public function ajustaArray($aux, $limit)
+    {
+        $temp_uids = array();
+        $unique_results = array();
+        foreach ($aux as $result) {
+            if (!in_array($result->id, $temp_uids)) {
+                $temp_uids[] = $result->id;
+                $unique_results[] = $result;
+            }
+        }
+        $aux = $unique_results;
+        unset($temp_uids, $unique_results);
+        return array_slice($aux, 0, $limit);
+    }
+
     public function validarquery($images, $tags, $categoria, $position, $limit)
     {
 
@@ -207,7 +236,7 @@ LIMIT 8";
                     JOIN (select * from `stories_tags` where tag_id IN( ' . $tags . ' ) ) st ON `s`.`id` = `st`.`story_id`
                     WHERE (category_id =' . $categoria . ' OR st.tag_id IN(' . $tags . ') )
                     AND `s`.`invisible` =  "0"
-                    AND `s`.`position` ' . $positioQuery.'
+                    AND `s`.`position` ' . $positioQuery . '
                     LIMIT ' . $limit;
         } else
             $query = 'SELECT s.*

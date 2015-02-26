@@ -13,12 +13,12 @@
         ?>
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
-                <div class="col-md-2 col-sm-2">
+                <div class="col-md-2 col-sm-3">
                     <a href="<?php echo $link ?>"><img
                             src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>"
                             alt="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
-                <div class="col-md-10  col-sm-10">
+                <div class="col-md-10  col-sm-9">
                     <h2><a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
                     <?php
                     if (strlen(strip_tags($noticia->lead)) == 0) {

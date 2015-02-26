@@ -13,9 +13,30 @@ foreach ($noticias as $noticia) {
 
 $findme   = '<div class="noticia-img">';
 $pos = strpos($noticia, $findme);
+    $paraTable = "6";
+    if ($indice % 2 == 0) {
+        echo '<div class="row noticia-content">';
+        $validaInicio = substr($noticia, 0, 45);
+        $validaInicio2 = substr($noticias[$indice + 1], 0, 45);
+        $cadenaCompara = '<div class="margen0-xs clearfix news-detail">';
+        if (($validaInicio != $cadenaCompara ) or ($validaInicio2 != $cadenaCompara ))
+            $paraTable = "12";
+        else
+            $paraTable = "6";
 
-    if ($indice % 2 == 0) echo '<div class="row noticia-content">'; ?>
-    <div class="col-md-6 col-sm-6 separador10 clearfix noti <?php if ($pos==1) echo "noticia" ?> lineseparador">
+    } else {
+        $validaInicio = substr($noticia, 0, 45);
+        $validaInicio2 = substr($noticias[$indice - 1], 0, 45);
+        $cadenaCompara = '<div class="margen0-xs clearfix news-detail">';
+        if (($validaInicio != $cadenaCompara ) or ($validaInicio2 != $cadenaCompara ))
+            $paraTable = "12";
+        else
+            $paraTable = "6";
+    }
+
+
+    ?>
+    <div class="col-md-6 col-sm-<?= $paraTable ?> separador10 clearfix noti <?php if ($pos==1) echo "noticia" ?> lineseparador">
         <?php echo $noticia ?>
     </div>
     <?php
