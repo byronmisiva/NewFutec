@@ -144,7 +144,8 @@
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra
         googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-            if (event.slot.j == '/1022247/FE_LOADING_MOVIL'){
+            console.log (event.slot)
+            if (event.slot.i == '/1022247/FE_LOADING_MOVIL'){
                 if (!event.isEmpty) {
                     cargarSplash();
                 } else {

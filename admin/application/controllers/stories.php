@@ -200,33 +200,39 @@ class Stories extends CI_Controller {
 					$_POST['sponsored']=0;
 				$previous_url = $_POST['previous_url'];
 				unset($_POST['previous_url']);
-				
-				$this->db->insert($this->model->name, $_POST);
+
+                $params = $_POST;
+                $tabla = $this->model->name;
+// no se por que se envia estos datos ... los filtramos previo a enviar a la insercion
+                unset($params['nick']);
+                unset($params['password']);
+
+				$this->db->insert($tabla, $params);
 				$id=$this->db->insert_id();
 				$this->tag->insert_story_tag($tags,$id);
 				$this->story_stat->insert_story_stat($id);
 				
 				
 				// SEND TWEET
-				if($_POST['invisible']==0)
-					$this->send_tweet($_POST['twitter'],$id);
+				/*if($_POST['invisible']==0)
+					$this->send_tweet($_POST['twitter'],$id);*/
 				
 				// Send Push Notification
 				
-				$this->pwCall( 'createMessage', array(
-						'application' => PW_APPLICATION,
-						'auth' => PW_AUTH,
-						'notifications' => array(
-								array(
-										'send_date' => 'now',
-										'content' => $_POST['subtitle'],
-										'link' => 'http://www.futbolecuador.com/',
-										"safari_title" => $_POST['title'],
-										"safari_url_args" => array("site/noticia/notificacion/" .$id)
-								)
-						)
-				)
-				);
+//				$this->pwCall( 'createMessage', array(
+//						'application' => PW_APPLICATION,
+//						'auth' => PW_AUTH,
+//						'notifications' => array(
+//								array(
+//										'send_date' => 'now',
+//										'content' => $_POST['subtitle'],
+//										'link' => 'http://www.futbolecuador.com/',
+//										"safari_title" => $_POST['title'],
+//										"safari_url_args" => array("site/noticia/notificacion/" .$id)
+//								)
+//						)
+//				)
+//				);
 
 				redirect($previous_url);	
 	    	}	

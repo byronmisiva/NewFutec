@@ -12,6 +12,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -26,6 +27,9 @@
             </div>
             <div class="item">
                 <img src="<?= base_url('imagenes/femagazine/zonafe03.jpg'); ?>" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="<?= base_url('imagenes/femagazine/zonafe04.jpg'); ?>" class="img-responsive">
             </div>
         </div>
 
@@ -71,11 +75,8 @@
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
-                    <h2>Especial Emelec Campeón</h2>
-
-                    <p>El Club Sport Emelec se consagró campeón del torneo nacional 2014. Dos finales inolvidables
-                        en
-                        detalle, y disfruta de las galerías en el Monumental y el Capwell.
+                    <h2>Especial</h2>
+                    <p>Arrancó el Campeonato Nacional 2015, las plantillas quedaron armadas, y los nuevos fichajes agitaron el mercado. Conoce las nuevas contrataciones de cada uno de los planteles, sus máximas figuras y el palmarés que los respalda.
                     </p>
                 </div>
             </div>
@@ -90,8 +91,8 @@
                 <div class="col-md-8  col-xs-8   ">
                     <h2><a href="http://www.futbolecuador.com/fuera-de-juego"> Fuera de juego</a></h2>
 
-                    <p><a href="http://www.futbolecuador.com/fuera-de-juego"> Diana Rivillas y su aliento de inicio a fin a Emelec, campeón ecuatoriano 2014. No te puedes
-                        perder de esta sesión de infarto.</a>
+                    <p><a href="http://www.futbolecuador.com/fuera-de-juego">Vanessa Vergara, en una sesión de infarto, prueba que la hinchada del Quito no abandona.
+                        </a>
                     </p>
                 </div>
             </div>
@@ -107,9 +108,8 @@
                 <div class="col-md-8  col-xs-8   ">
                     <h2>La de todos</h2>
 
-                    <p>La Seleccion Femenina marcó historia clasificando al Mundial de Canadá 2015. Resumen y
-                        análisis
-                        del repechaje ante Trinidad y Tobago. Además, el ranking FIFA de la Selección de mayores.
+                    <p>Resumen de la participación de Selección Sub 20 en el Sudamericano de la categoría.  Además, el análisis de los amistosos que la Selección absoluta disputará en este 2015, y los rivales que tendrá en la Copa América.
+
                     </p>
                 </div>
             </div>
@@ -124,50 +124,14 @@
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Ascenso</h2>
 
-                    <p>Papá Aucas está de vuelta en la Serie A. Recuerda la campaña del Ídolo del Pueblo, y el
-                        difícil
-                        camino que tuvo que recorrer para retornar a la categoría de privilegio
+                    <p>Fuerza Amarilla y Gualaceo lograron el ascenso a la Serie B, será su debut en primera categoría. Entérate más de estos equipos, y cómo se armaron para afrontar este nuevo reto.
+
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-12 col-xs-12   margen0 ">
-        <div class="col-md-6  col-xs-12 margen0l separador10  ">
-            <div class="col-md-12 col-xs-12   clearfix altofema borde">
-                <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion06.jpg'); ?>"
-                         class="img-circle img-responsive separador10 ">
-                </div>
-                <div class="col-md-8  col-xs-8   ">
-                    <h2>Jóvenes promesas</h2>
-
-                    <p>Los jóvenes talentos del fútbol ecuatoriano no paran de sorprender y sobresalir. Entérate de
-                        las
-                        futuras estrellas que brillan en nuestro país.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6  col-xs-12 margen0l separador10  ">
-            <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion07.jpg'); ?>"
-                         class="img-circle img-responsive separador10 ">
-                </div>
-                <div class="col-md-8  col-xs-8   ">
-                    <h2>Rueda de prensa</h2>
-
-                    <p>La opinión y reflexión de quienes hacen el fútbol ecuatoriano. Las frases de mayor
-                        importancia,
-                        que en su momento hicieron ruido en los medios de comunicación.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12 col-xs-12   margen0 ">
+      <div class="col-md-12 col-xs-12   margen0 ">
         <div class="col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
@@ -177,9 +141,8 @@
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Internacional</h2>
 
-                    <p>El Real Madrid es el equipo mas ganador del último trimestre del año, Leo Messi rompe todos
-                        los
-                        records que se le pongan en frente. El arquero alemán Neuer va por el Balón de Oro.
+                    <p> En colaboración con Don Balón te presentamos el espectacular momento que vive Neymar Junior, que a puro gol y buenas actuaciones, ha confirmado su nivel de estrella mundial. Además, el difícil presente que atraviesa Falcao
+
                     </p>
                 </div>
             </div>
@@ -187,15 +150,14 @@
 
         <div class="col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
+
                 <div class="col-md-4  col-xs-4   margen0 ">
                     <img src="<?= base_url('imagenes/femagazine/seccion09.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
-                    <h2>90 minutos</h2>
-
-                    <p>El ex dirigente de Liga de Quito, Esteban Paz, fue sancionado por un año. Conoce cómo se
-                        desarrolló el proceso, con sus antecedentes, posturas y conclusiones.
+                    <h2>La Figura</h2>
+                    <p>El ingeniero Luis Chiriboga Acosta, máximo dirigente del fútbol ecuatoriano, fue reelecto al frente de la FEF por 4 años más, sus logros, momentos destacados y conflictos, en 16 años de mandato.
                     </p>
                 </div>
             </div>
@@ -209,10 +171,9 @@
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
-                    <h2>12 pasos</h2>
+                    <h2>Tiempo extra</h2>
 
-                    <p>Segundo Alejandro Castillo se confiesa y revela varios detalles de su vida y su carrera como
-                        futbolista. Uno de los históricos de La Tri.
+                    <p>Edison Méndez,  histórico futbolista ecuatoriano, tri mundialista, en una entrevista imperdible. Revela en detalle toda su carrera en el mundo del deporte rey, y los momentos que lo marcaron.
                     </p>
                 </div>
             </div>
@@ -225,10 +186,9 @@
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
-                    <h2>Copa Sudamericana</h2>
+                    <h2>En el exterior</h2>
 
-                    <p>Detalles de la clasificación histórica del Club Sport Emelec a los cuartos de finalde la Copa
-                        Sudamericana y su derrota frente a Sao Paulo en instancias decisivas.
+                    <p>Conoce a todos nuestros embajadores 2015 y los equipos en los que militan, demostrando su talento en las Ligas más importantes del mundo
                     </p>
                 </div>
             </div>

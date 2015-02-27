@@ -91,6 +91,9 @@ class Site extends MY_Controller
         $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
+
+        $marcadorenvivo = $this->contenido->marcadorVivo() ;
+
         $data['top2'] = "";
 
         //Resultados tabla de posiciones
@@ -98,7 +101,7 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones;
+        $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones;
         $data['sidebar'] = "";
 
         $data['footer'] = '';
