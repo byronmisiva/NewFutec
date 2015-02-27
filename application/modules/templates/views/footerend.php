@@ -25,6 +25,7 @@
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>
+<script type="text/javascript" src="<?= base_url()?>assets/js/add2home.js?v1"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {

@@ -549,3 +549,14 @@ function igualarancho() {
         }
     }
 }
+
+
+//add2home
+var addToHomeConfig = {
+    animationIn: 'bubble',
+    animationOut: 'drop',
+    lifespan:10000,
+    expire:2,
+    touchIcon:true,
+    message:'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
+};

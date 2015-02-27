@@ -71,6 +71,10 @@ $route['seleccion'] = "site/seleccion";
 $route['sitemap\.xml'] = "seo/sitemap";
 $route['sitemap_news\.xml'] = "seo/sitemap_news";
 
+//arreglo pagina anterior
+$route['welcome/movil'] = "site/movil";
+
+
 
 
 //$route['contactos'] =  "sections/publica/67";
