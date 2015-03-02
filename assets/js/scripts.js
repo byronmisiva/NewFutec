@@ -318,7 +318,25 @@ function altoshome() {
 }
 // fuera de juego
 jQuery(function () {
+// funcion movile marcador en vivo
+    jQuery("#carousel-marcadorenvivo").swipe( {
+        tap:function(event, target) {
+             // click al partido
 
+        },
+
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+
+
+            $("a.right").click()
+        },
+        swipeRight: function() {
+            $("a.left").click()
+        },
+
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+        threshold:0
+    });
 
 
     jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17,#main-slider18').liquidSlider({
