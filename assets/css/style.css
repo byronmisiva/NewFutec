@@ -513,6 +513,7 @@ sub {
 
 .marcadorenvivofondo {
     background-image: url("../img/fondo_marcador_en_vivo.png");
+    background-size: 100% 100%;
 }
 
 .fondoazul {

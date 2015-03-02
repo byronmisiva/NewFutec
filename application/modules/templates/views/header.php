@@ -152,16 +152,14 @@
         // si no existe contenido no muestra
         googletag.pubads().addEventListener('slotRenderEnded', function(event) {
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL'){
-
                 if (!event.isEmpty) {
-
                     cargarSplash();
                 } else {
-
                     cleanBlackLayer;
                 }
             }
         });
+
 
         googletag.enableServices();
 
@@ -264,3 +262,14 @@
         </div>
     </div>
 </div>
+<script type='text/javascript'>
+    jQuery(document).ready(function () {
+
+        //funcion splash FE
+        if ($('.redireccionFE').length) {
+            $('.redireccionFE').click(function () {
+                cleanBlackLayer
+            })
+        }
+    })
+</script>

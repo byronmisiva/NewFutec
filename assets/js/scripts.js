@@ -16,14 +16,6 @@ var cleanBlackLayer = function () {
 };
 
 jQuery(document).ready(function () {
-
-    //funcion splash FE
-    if ($('.redireccionFE').length){
-        $('.redireccionFE').click(function(){
-            cleanBlackLayer
-        })
-    }
-
     //funcion enviar encuesta
     if ($(".enviar-encuesta").length) {
         $("#enviar-encuesta-boton").click(function () {
