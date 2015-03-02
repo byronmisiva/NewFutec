@@ -320,7 +320,7 @@ jQuery(function () {
 
 
 
-    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17').liquidSlider({
+    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17,#main-slider18').liquidSlider({
         //  jQuery('#main-slider15,#main-slider16').liquidSlider({
         includeTitle: false,
         mobileNavigation: false,
@@ -353,13 +353,13 @@ jQuery(function () {
         scroll: 2
     });
     jQuery(".containerfueradejuego").hide();
-    jQuery(".galeria17content").show();
+    jQuery(".galeria18content").show();
 
 
     // funcion swipe menu inferior
     jQuery(".otrasmodelos").swipe( {
         tap:function(event, target) {
-            for (var i = 1; i <= 17; i++)
+            for (var i = 1; i <= 18; i++)
                 jQuery(".galeria" + i + "content").hide();
             thisLocal = target;
             jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
@@ -388,8 +388,8 @@ jQuery(function () {
 
 
     //menuchicas
-    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17").click(function () {
-        for (var i = 1; i <= 17; i++)
+    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18").click(function () {
+        for (var i = 1; i <= 18; i++)
             jQuery(".galeria" + i + "content").hide();
         jQuery("." + jQuery(this).attr('class') + "content").show();
         idclic = jQuery(this).attr('class');
