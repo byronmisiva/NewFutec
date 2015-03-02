@@ -29,10 +29,9 @@ Web:	http://www.misiva.com.ec
 
 .introFE{
 		background-image: url('<?php echo base_url().'imagenes/introFEmagazine/fondo.jpg'?>');
-		background-size:100% 100%;
+		background-size: 100% auto;
 		width: 100%;
-		height: 100%;
-		position: absolute;
+    position: absolute;
 		left: 0;
 		top:0; 
 	}

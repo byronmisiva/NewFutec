@@ -552,7 +552,7 @@ div#FE_LOADING {
 	position: absolute;
 	top:50px; 
 	left:50%; 
-	width:320px; 
+	width:320px;
 	height:350px; 
 	margin-left: -160px;
 	border: 1px solid white;

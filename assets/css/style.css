@@ -1297,14 +1297,12 @@ div#darkLayer {
 
 
 div#FE_LOADING {
-    border: 1px solid #dddddd;
-    height: inherit;
     left: 0;
     right: 0;
     margin: 5% auto;
     position: fixed;
     top: 50px;
-    width: 322px;
+    width: 95%;
     z-index: 1040;
 }
 
@@ -1400,3 +1398,210 @@ input[type="checkbox"], input[type="radio"] {
     cursor: pointer;
     display: none;
 }
+
+
+/*Revista FE Magazine*/
+.introFE{
+    background-image: url('../../imagenes/introFEmagazine/fondo.jpg');
+    background-size: 100% auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    border: 1px solid white;
+}
+
+.redireccionFE{
+    background-color: rgba(0, 0, 0, 0.7);
+    float: right;
+    height: auto;
+    margin-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 55%;
+}
+.redireccionFE p{
+    font-size: 13px;
+    font-family:helvetica,sans-serif;
+    color:#fff;
+    cursor: pointer;
+}
+
+.deviceFE{
+    background-image: url('../../imagenes/introFEmagazine/dispositivos.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    float: left;
+    height: 360px;
+    width: 100%;
+    margin: 0 auto;
+    background-position: center;
+}
+
+.mensajeFE{
+    float: left;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.mensajeFE p{
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    height: auto;
+    left: 10%;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contenedor-btn-FE{
+    height: 65px;
+    width: 320px;
+    margin: 0 auto;
+}
+.itunesFE{
+    float:left;
+    background-image: url('../../imagenes/introFEmagazine/appstore.png');
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    width: 156px;
+    height: 56px;
+    margin-left:1px;
+    margin-right: 2%;
+    cursor: pointer;
+
+}
+.googleFE{
+    background-image: url('../../imagenes/introFEmagazine/google-play.png');
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    width: 156px;
+    height: 56px;
+    float:left;
+    cursor: pointer;
+}
+
+@media screen and (max-device-width: 320px) {
+    .redireccionFE {
+        background-color: rgba(0, 0, 0, 0.7);
+        float: right;
+        height: auto;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0;
+        width: 67%;
+    }
+
+    .deviceFE {
+        float: left;
+        height: 360px;
+        width: 100%;
+        background-size: auto 100%;
+        margin: 0 auto;
+        background-position: center;
+    }
+
+    .mensajeFE {
+        float: left;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .mensajeFE p {
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        height: auto;
+        left: 10%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .contenedor-btn-FE {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+
+    .itunesFE {
+        height: 55px;
+        margin-left: 20px;
+        margin-right: 2%;
+        width: 130px;
+    }
+
+    .googleFE {
+        height: 50px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-device-width: 300px) {
+    .redireccionFE {
+        background-color: rgba(0, 0, 0, 0.7);
+        float: right;
+        height: auto;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0;
+        width: 67%;
+    }
+
+    .deviceFE {
+        float: left;
+        height: 360px;
+        width: 100%;
+        background-size: auto 100%;
+        margin: 0 auto;
+        background-position: center;
+    }
+
+    .mensajeFE {
+        float: left;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .mensajeFE p {
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        height: auto;
+        left: 10%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .contenedor-btn-FE {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+
+    .itunesFE {
+        height: 55px;
+        margin-left: 1%;
+        margin-right: 2%;
+        width: 130px;
+    }
+
+    .googleFE {
+        height: 50px;
+        width: 130px;
+    }
+}
+/*Fin Revista FE Magazine*/

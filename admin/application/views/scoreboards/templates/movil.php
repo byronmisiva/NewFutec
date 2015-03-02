@@ -34,9 +34,9 @@ Web:	http://www.misiva.com.ec
 		height: 100%;
 		position: absolute;
 		left: 0;
-		top:0; 
+		top:0;
 	}
-	
+
 	.redireccionFE{
 		 background-color: rgba(0, 0, 0, 0.7);
 	    float: right;
@@ -48,13 +48,12 @@ Web:	http://www.misiva.com.ec
 	    width: 55%;
 	}
 	.redireccionFE p{
-		  font-size: 13px;
-	   	  font-family:helvetica,sans-serif;      
-	      color:#fff;	
-	      cursor: pointer;
+		  font-size: 13px;	   	  font-family:helvetica,sans-serif;
+	      color:	      cursor: pointer;
 	}
-	
-	.deviceFE{		
+: point
+	.deviceFE{
+iceFE{
 		background-image: url('<?php echo base_url().'imagenes/introFEmagazine/dispositivos.png'?>');
 		background-repeat: no-repeat;
 	   	background-size: 100% auto;
@@ -63,8 +62,9 @@ Web:	http://www.misiva.com.ec
 	    margin-left: 20%;
 	    margin-top: 18%;
 	    width: 60%;
-	}
-	
+
+}
+
 	.mensajeFE{
 		 float: left;
 	    height: 50px;
@@ -73,7 +73,7 @@ Web:	http://www.misiva.com.ec
 	    text-align: center;
 	    width: 80%;
 	}
-	
+
 	.mensajeFE p{
 		 color: #fff;
 	    font-family: "Aldrich";
@@ -83,10 +83,10 @@ Web:	http://www.misiva.com.ec
 	    height: auto;
 	    left: 10%;
 	    width: 100%;
-	    margin-top: 5px;	      
+	    margin-top: 5px;
 	}
-	
-	.contenedor-btn-FE{		
+
+	.contenedor-btn-FE{
 		 float: left;
 		    height: 65px;
 		    margin-left: 5%;
@@ -103,7 +103,7 @@ Web:	http://www.misiva.com.ec
 		margin-left:;
 		margin-right: 2%;
 		cursor: pointer;
-	
+
 	}
 	.googleFE{
 		background-image: url('<?php echo base_url().'imagenes/introFEmagazine/google-play.png'?>');
@@ -114,9 +114,9 @@ Web:	http://www.misiva.com.ec
 		float:left;
 		cursor: pointer;
 	}
-	
+
 	@media screen and (max-device-width: 320px) {
-		.redireccionFE {	    
+		.redireccionFE {
 	    	 background-color: rgba(0, 0, 0, 0.7);
 		    float: right;
 		    height: auto;
@@ -126,15 +126,15 @@ Web:	http://www.misiva.com.ec
 		    padding-top: 0;
 		    width: 67%;
 		}
-		
-		.deviceFE {  		    
+
+		.deviceFE {
 			float: left;
 		    height: 200px;
 		    margin-left: 26%;
 		    margin-top: 45px;
 		    width: 48%;
 		}
-		
+
 		.mensajeFE {
 		    float: left;
 		    height: auto;
@@ -143,7 +143,7 @@ Web:	http://www.misiva.com.ec
 		    text-align: center;
 		    width: 90%;
 		}
-		
+
 		.mensajeFE p {
 		      color: #fff;
 			    font-family: "Aldrich";
@@ -156,28 +156,28 @@ Web:	http://www.misiva.com.ec
 			    margin-top: 5px;
 			    width: 100%;
 		}
-		
+
 		.contenedor-btn-FE {
 		  margin-top: 10px;
 		    width: 100%;
 		}
-		
-		
-		.itunesFE {		 		    		    
+
+
+		.itunesFE {
 		     height: 55px;
 		    margin-left: 20px;
 		    margin-right: 2%;
 		    width: 130px;
 		}
-				
+
 		.googleFE {
 		     height: 50px;
     			width: 130px;
 		}
 	}
-	
+
 	@media screen and (max-device-width: 300px) {
-		.redireccionFE {	    
+		.redireccionFE {
 	    	background-color: rgba(0, 0, 0, 0.7);
 		    float: right;
 		    height: auto;
@@ -187,15 +187,15 @@ Web:	http://www.misiva.com.ec
 		    padding-top: 0;
 		    width: 67%;
 		}
-		
-		.deviceFE {  		    
+
+		.deviceFE {
 		     float: left;
 		    height: 190px;
 		    margin-left: 25%;
 		    margin-top: 25px;
 		    width: 50%;
 		}
-		
+
 		.mensajeFE {
 		    float: left;
     			height: auto;
@@ -204,7 +204,7 @@ Web:	http://www.misiva.com.ec
 		    text-align: center;
 		    width: 90%;
 		}
-		
+
 		.mensajeFE p {
 		    color: #fff;
 		    font-family: "Aldrich";
@@ -217,21 +217,21 @@ Web:	http://www.misiva.com.ec
 		    margin-top: 5px;
 		    width: 100%;
 		}
-		
+
 		.contenedor-btn-FE {
 	 		margin-left: 2%;
 		    	margin-top: 10px;
 		    	width: 100%;
 		}
-		
-		
-		.itunesFE {		 		    		    
+
+
+		.itunesFE {
 		     height: 55px;
 		    margin-left: 1%;
 		    margin-right: 2%;
 		    width: 130px;
 		}
-				
+
 		.googleFE {
 		    height: 50px;
     		width: 130px;

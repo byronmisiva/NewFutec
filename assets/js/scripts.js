@@ -2,6 +2,7 @@ var masnoticas = "";
 
 //inicio funciones splash
 function cargarSplash() {
+
     $('#darkLayer').show();
     $('#FE_LOADING').show();
     setTimeout(cleanBlackLayer, 15000);
@@ -9,11 +10,19 @@ function cargarSplash() {
 
 
 var cleanBlackLayer = function () {
-    $('#FE_LOADING').hide();
     $('#darkLayer').hide();
+    $('#FE_LOADING').hide();
+    //si no existe cargar splash de fe
 };
 
 jQuery(document).ready(function () {
+
+    //funcion splash FE
+    if ($('.redireccionFE').length){
+        $('.redireccionFE').click(function(){
+            cleanBlackLayer
+        })
+    }
 
     //funcion enviar encuesta
     if ($(".enviar-encuesta").length) {
@@ -365,7 +374,7 @@ jQuery(function () {
             jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
             idclic = jQuery(thisLocal).attr('id');
             idclic = idclic.replace("galeria", "");
-            console.log (idclic)
+
             $(".galeria" + idclic + "content img.lazo").each(function () {
                 $(this).attr("src", $(this).attr("data-original"))
                 setTimeout(function () {

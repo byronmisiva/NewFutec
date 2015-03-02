@@ -19,12 +19,21 @@
     <meta name="twitter:widgets:csp" content="on">
 
     <!--twitter TAGS-->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@futbolecuador">
-    <meta name="twitter:title" content="<?php echo $pageTitle ?>">
-    <meta name="twitter:description" content="<?php echo (isset($description)) ?  strip_tags($description) :  'Futbol Ecuador'; ?>">
-    <meta name="twitter:image" content="<?php echo (isset($story->thumb300)) ? base_url($story->thumb300)   :  base_url('img/apple-touch-icon-144-precomposed.png'); ?>">
-    <meta name="twitter:url" content="<?php echo (isset($ulrfriend)) ? base_url($ulrfriend."/". $idnoticia)   :  "http://www.futbolecuador.com"; ?>" />
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:app:id:iphone" content="622931242">
+    <meta name="twitter:app:id:ipad" content="622931242">
+    <meta name="twitter:app:id:googleplay" content="com.futbolecuador.femagazine">
+    <meta name="twitter:widgets:csp" content="on">
+    <meta name="twitter:app:country" content="US">
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        twttr.conversion.trackPid('l4vk1');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt=""
+             src="https://analytics.twitter.com/i/adsct?txn_id=l4vk1&p_id=Twitter"/>
+        <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4vk1&p_id=Twitter"/>
+    </noscript>
 
     <link rel="apple-touch-icon" sizes="144x144"
           href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
@@ -38,7 +47,7 @@
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
     <meta property="og:description" content="<?php echo (isset($description)) ?  $description :  'Futbol Ecuador'; ?>"/>
     <meta property="og:image" content="<?php echo (isset($image)) ? base_url($image)   :  base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
-    
+
     <!--SEO TAGS-->
     <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
     <meta name="keywords"
@@ -77,10 +86,10 @@
 
     <!-- Modernizr -->
     <script src="<?php echo base_url('assets/js/modernizr.js') ?>"></script>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <?php 
-    
+    <?php
     if($verMobile=="1"){?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
@@ -94,9 +103,7 @@
         var baseUrl = "<?php echo base_url(); ?>";
         var REFRESH_VIVO = "<?php echo REFRESH_VIVO; ?>";
     </script>
-
 </head>
-
 <body>
 <script type='text/javascript'>
     var googletag = googletag || {};
@@ -144,11 +151,13 @@
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra
         googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-            console.log (event.slot)
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL'){
+
                 if (!event.isEmpty) {
+
                     cargarSplash();
                 } else {
+
                     cleanBlackLayer;
                 }
             }
@@ -234,3 +243,24 @@
          width="1" alt=""/>
 </noscript>
 <!-- End Alexa Certify Javascript -->
+<div id="darkLayer" style="display:none;"></div>
+<div id="FE_LOADING" style="display:none;">
+    <!-- Gestion revistaFE -->
+    <div class="introFE" id="introFE">
+        <div class="redireccionFE">
+            <p id="cambioSitio">Entra a www.futbolecuador.com</p>
+        </div>
+        <div class="deviceFE"></div>
+        <div class="mensajeFE">
+            <p>Descárgate la última edición de Fútbolecuador Magazine</p>
+        </div>
+        <div class="contenedor-btn-FE">
+            <a href="http://goo.gl/76UWV" target='_blank'>
+                <div class="itunesFE" id="itunesFE"></div>
+            </a>
+            <a href="http://goo.gl/jhlPq" target='_blank' );>
+            <div class="googleFE" id="googleFE"></div>
+            </a>
+        </div>
+    </div>
+</div>
