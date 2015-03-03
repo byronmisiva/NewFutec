@@ -2,10 +2,17 @@ var masnoticas = "";
 
 //inicio funciones splash
 function cargarSplash() {
-
-    $('#darkLayer').show();
-    $('#FE_LOADING').show();
-    setTimeout(cleanBlackLayer, 15000);
+    if (verMobile == 1 ) {
+        $('#darkLayer').show();
+        $('#FE_LOADING').show();
+        //funcion enviar encuesta
+            console.log ("carc")
+            $(".redireccionFE, .deviceFE").click(function () {
+                $('#darkLayer').hide();
+                $('#FE_LOADING').hide();
+            })
+        setTimeout(cleanBlackLayer, 10000);
+    }
 };
 
 
@@ -16,6 +23,9 @@ var cleanBlackLayer = function () {
 };
 
 jQuery(document).ready(function () {
+
+
+
     //funcion enviar encuesta
     if ($(".enviar-encuesta").length) {
         $("#enviar-encuesta-boton").click(function () {

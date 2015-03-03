@@ -156,7 +156,7 @@
                 if (!event.isEmpty) {
                     cleanBlackLayer;
                 } else {
-                   // cargarSplash();
+                    cargarSplash();
                 }
             }
             if (event.slot.i == '/1022247/FE_HEADER'){
@@ -178,6 +178,17 @@
 
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
+        <?php
+            if($verMobile=="1"){?>
+                verMobile = 1;
+                <?php
+                }  else { ?>
+                verMobile = 0;
+            <?php
+            }
+        ?>
+
+
     });
 </script>
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>

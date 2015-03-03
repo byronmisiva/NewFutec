@@ -1300,9 +1300,9 @@ div#darkLayer {
 div#FE_LOADING {
     left: 0;
     right: 0;
-    margin: 5% auto;
+    margin: 3% auto;
     position: fixed;
-    top: 50px;
+    top: 10px;
     width: 95%;
     z-index: 1040;
 }
