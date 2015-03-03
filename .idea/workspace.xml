@@ -104,8 +104,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.516696" vertical-offset="22296" max-vertical-offset="24165">
-              <caret line="1506" column="5" selection-start-line="1506" selection-start-column="5" selection-end-line="1506" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.38488576" vertical-offset="22296" max-vertical-offset="24165">
+              <caret line="1501" column="18" selection-start-line="1501" selection-start-column="18" selection-end-line="1501" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -4023,7 +4023,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425400083801</updated>
     </task>
-    <option name="localTasksCounter" value="613" />
+    <task id="LOCAL-00613" summary="incluye tabla de revista">
+      <created>1425400111220</created>
+      <option name="number" value="00613" />
+      <option name="project" value="LOCAL" />
+      <updated>1425400111220</updated>
+    </task>
+    <option name="localTasksCounter" value="614" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4511,8 +4517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.516696" vertical-offset="22296" max-vertical-offset="24165">
-          <caret line="1506" column="5" selection-start-line="1506" selection-start-column="5" selection-end-line="1506" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.38488576" vertical-offset="22296" max-vertical-offset="24165">
+          <caret line="1501" column="18" selection-start-line="1501" selection-start-column="18" selection-end-line="1501" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -1499,7 +1499,7 @@ input[type="checkbox"], input[type="radio"] {
     }
     .deviceFE {
         float: left;
-        height: 280px;
+        height: 250px;
         width: 100%;
         background-size: auto 100%;
         margin: 0 auto;
