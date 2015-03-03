@@ -149,13 +149,26 @@
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
 
         googletag.pubads().enableSingleRequest();
-        // si no existe contenido no muestra
+        // si no existe contenido no muestra para el caso del header y splas
+        //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
         googletag.pubads().addEventListener('slotRenderEnded', function(event) {
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL'){
                 if (!event.isEmpty) {
-                    cargarSplash();
-                } else {
                     cleanBlackLayer;
+                } else {
+                   // cargarSplash();
+                }
+            }
+            if (event.slot.i == '/1022247/FE_HEADER'){
+                if (event.isEmpty) {
+                    //ocultamos el div
+                    document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
+                    var cols =     document.getElementsByClassName('separador10-xs');
+                    for(i=0; i<cols.length; i++) {
+                        cols[i].style.marginTop = '17px';
+                    }
+                } else {
+                    document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'block';
                 }
             }
         });

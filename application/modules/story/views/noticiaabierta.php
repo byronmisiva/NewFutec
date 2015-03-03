@@ -51,9 +51,12 @@
         </div>
         <div class="margen10lados-sx noticia-body">
             <br/>
-            <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
-               target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
-            <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>">  <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
+            <?php if (isset($autor[0]->twitter)){ ?>
+                <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
+                   target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
+            <?php } ?>
+                <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>">  <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
+
         </div>
     </div>
 </div>
