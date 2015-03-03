@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -105,8 +104,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38488576" vertical-offset="22311" max-vertical-offset="24195">
-              <caret line="1502" column="18" selection-start-line="1502" selection-start-column="18" selection-end-line="1502" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.516696" vertical-offset="22296" max-vertical-offset="24165">
+              <caret line="1506" column="5" selection-start-line="1506" selection-start-column="5" selection-end-line="1506" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -4018,7 +4017,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425399912620</updated>
     </task>
-    <option name="localTasksCounter" value="612" />
+    <task id="LOCAL-00612" summary="incluye tabla de revista">
+      <created>1425400083801</created>
+      <option name="number" value="00612" />
+      <option name="project" value="LOCAL" />
+      <updated>1425400083801</updated>
+    </task>
+    <option name="localTasksCounter" value="613" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4506,8 +4511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38488576" vertical-offset="22311" max-vertical-offset="24195">
-          <caret line="1502" column="18" selection-start-line="1502" selection-start-column="18" selection-end-line="1502" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.516696" vertical-offset="22296" max-vertical-offset="24165">
+          <caret line="1506" column="5" selection-start-line="1506" selection-start-column="5" selection-end-line="1506" selection-end-column="5" />
           <folding />
         </state>
       </provider>
