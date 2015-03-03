@@ -92,8 +92,10 @@ img.tituloFuera {
 
 .novisible {
     display: none;
-
 }
+
+
+
 @media (max-width: 767px) {
     .logosGPAS {
         top: inherit;
@@ -117,9 +119,15 @@ img.tituloFuera {
         background-size: 100% auto;
 
     }
+    .thum-fuera {
+        height: 80px;
+    }
 }
 @media (min-width: 767px) {
     .ls-wrapper .liquid-slider {
-        height: 574px !important;
+        height: 500px !important;
+    }
+    .thum-fuera {
+        height: 96px;
     }
 }

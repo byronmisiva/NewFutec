@@ -2,11 +2,12 @@ var masnoticas = "";
 
 //inicio funciones splash
 function cargarSplash() {
-    if (verMobile == 1 ) {
+    console.log (verMobile + " - " + uri)
+    if ((verMobile == 1 ) && (uri == "movil")) {
         $('#darkLayer').show();
         $('#FE_LOADING').show();
         //funcion enviar encuesta
-            console.log ("carc")
+
             $(".redireccionFE, .deviceFE").click(function () {
                 $('#darkLayer').hide();
                 $('#FE_LOADING').hide();
@@ -579,13 +580,14 @@ function igualarancho() {
     }
 }
 
-
+if ((verMobile == 1 ) && (uri == "movil")) {
 //add2home
-var addToHomeConfig = {
-    animationIn: 'bubble',
-    animationOut: 'drop',
-    lifespan:3000,
-    expire:2,
-    touchIcon:true,
-    message:'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
-};
+    var addToHomeConfig = {
+        animationIn: 'bubble',
+        animationOut: 'drop',
+        lifespan: 3000,
+        expire: 2,
+        touchIcon: true,
+        message: 'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
+    };
+}

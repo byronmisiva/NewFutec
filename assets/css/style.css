@@ -1311,12 +1311,12 @@ div#closeBanner {
     background-color: black;
     border: 1px solid #cccccc;
     cursor: pointer;
-    height: 20px;
+    height: 30px;
     opacity: 0.6;
     position: absolute;
     left: 0;
     top: -20px;
-    width: 81px;
+    width: 110px;
 }
 
 div#closeBanner {
@@ -1487,6 +1487,10 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 @media screen and (max-device-width: 320px) {
+
+    #carousel-marcadorenvivo .h6 {
+        margin-bottom: 0;
+    }
     .redireccionFE {
         background-color: rgba(0, 0, 0, 0.7);
         float: right;

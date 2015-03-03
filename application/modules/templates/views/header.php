@@ -45,8 +45,9 @@
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
     <!--Facebook TAGS-->
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
-    <meta property="og:description" content="<?php echo (isset($description)) ?  $description :  'Futbol Ecuador'; ?>"/>
-    <meta property="og:image" content="<?php echo (isset($image)) ? base_url($image)   :  base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
+    <meta property="og:description" content="<?php echo (isset($description)) ? $description : 'Futbol Ecuador'; ?>"/>
+    <meta property="og:image"
+          content="<?php echo (isset($image)) ? base_url($image) : base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
 
     <!--SEO TAGS-->
     <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
@@ -65,9 +66,9 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/sprites.css' ) ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
 
-    <link href="<?php echo base_url('assets/css/add2home.css' ) ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/add2home.css') ?>" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -90,12 +91,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <?php
-    if($verMobile=="1"){?>
+    if ($verMobile == "1") {
+        ?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <?php
-    }  else { ?>
+    } else {
+        ?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
+        <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
     <?php
     }
     ?>
@@ -121,6 +124,16 @@
 </script>
 
 <script type='text/javascript'>
+    <?php
+    if($verMobile=="1"){?>
+        var verMobile = 1;
+        <?php
+    }  else { ?>
+        var verMobile = 0;
+    <?php
+    }
+    ?>
+    var uri = "<?php  echo ($this->uri->segment(2) != "" ) ? $this->uri->segment(2) :"false"; ?>";
     googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());
 
@@ -148,24 +161,30 @@
         // splsh movil
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
 
+        // splsh movil
+        googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
+
+        googletag.defineSlot('/1022247/FE_LOADING', [800, 600], 'div-gpt-ad-1425424774921-0').addService(googletag.pubads());
+
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
-        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-            if (event.slot.i == '/1022247/FE_LOADING_MOVIL'){
+        googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+            if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
                 if (!event.isEmpty) {
                     cleanBlackLayer;
                 } else {
                     cargarSplash();
                 }
             }
-            if (event.slot.i == '/1022247/FE_HEADER'){
+            if (event.slot.i == '/1022247/FE_HEADER') {
                 if (event.isEmpty) {
                     //ocultamos el div
                     document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
-                    var cols =     document.getElementsByClassName('separador10-xs');
-                    for(i=0; i<cols.length; i++) {
-                        cols[i].style.marginTop = '17px';
+                    var cols = document.getElementsByClassName('separador10-xs');
+                    for (i = 0; i < cols.length; i++) {
+                        if (verMobile == 1)
+                            cols[i].style.marginTop = '17px';
                     }
                 } else {
                     document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'block';
@@ -178,18 +197,9 @@
 
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
-        <?php
-            if($verMobile=="1"){?>
-                verMobile = 1;
-                <?php
-                }  else { ?>
-                verMobile = 0;
-            <?php
-            }
-        ?>
-
 
     });
+
 </script>
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>GS_googleAddAdSenseService("ca-pub-2857298972794488");
@@ -223,7 +233,7 @@
 <!-- End Google Tag Manager -->
 
 <!-- Facebook Conversion Code for FE_Visitas -->
-<script>(function() {
+<script>(function () {
         var _fbq = window._fbq || (window._fbq = []);
         if (!_fbq.loaded) {
             var fbds = document.createElement('script');
@@ -235,12 +245,14 @@
         }
     })();
     window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6017525548394', {'value':'0.00','currency':'USD'}]);
+    window._fbq.push(['track', '6017525548394', {'value': '0.00', 'currency': 'USD'}]);
 </script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
 
 <!-- Facebook Conversion Code for futbolecuador.com -->
-<script>(function() {
+<script>(function () {
         var _fbq = window._fbq || (window._fbq = []);
         if (!_fbq.loaded) {
             var fbds = document.createElement('script');
@@ -252,9 +264,11 @@
         }
     })();
     window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6015959317594', {'value':'0.00','currency':'USD'}]);
+    window._fbq.push(['track', '6015959317594', {'value': '0.00', 'currency': 'USD'}]);
 </script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6015959317594&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6015959317594&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
 
 <!-- Start Alexa Certify Javascript -->
 <script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script>
@@ -286,14 +300,3 @@
         </div>
     </div>
 </div>
-<script type='text/javascript'>
-    jQuery(document).ready(function () {
-
-        //funcion splash FE
-        if ($('.redireccionFE').length) {
-            $('.redireccionFE').click(function () {
-                cleanBlackLayer
-            })
-        }
-    })
-</script>

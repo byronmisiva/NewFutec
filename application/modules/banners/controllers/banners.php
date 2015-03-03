@@ -116,6 +116,7 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_smart_bottom', $data, TRUE);
     }
+
     public function fe_smart_top($data = FALSE)
     {
         return $this->load->view('fe_smart_top', $data, TRUE);
@@ -137,5 +138,8 @@ class Banners extends MY_Controller
         return $this->load->view('fe_loading_movil', $data, TRUE);
     }
 
-
+    public function fe_splash($data = FALSE)
+    {
+        return $this->load->view('fe_splash', $data, TRUE);
+    }
 }

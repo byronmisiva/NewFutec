@@ -134,6 +134,8 @@ class Site extends MY_Controller
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
+
+        $data['fe_splash'] = $this->banners->fe_splash();
         $this->templates->_index($data);
 
     }

@@ -208,7 +208,7 @@
 <!-- Push Notifications -->
 <?php
 
-       if ($this->uri->segment(1) == "home")
+       if ($this->uri->segment(1) == "home22222")
        {
            ?>
            <script>
@@ -222,6 +222,9 @@
        <?php
        };
 
+?>
+<?php
+    echo $fe_splash;
 ?>
 </body>
 </html>
