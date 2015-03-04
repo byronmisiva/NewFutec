@@ -173,18 +173,16 @@
                 if (!event.isEmpty) {
                     cleanBlackLayer;
                 } else {
-                    cargarSplash();
+                    cargarSplashFE();
                 }
             }
 
             //para el caso de splash desktop
             //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING') {
-
                 if (event.isEmpty) {
                     cleanBlackLayer;
                 } else {
-                    console.log ("debe cargar");
                     cargarSplash();
                 }
             }
@@ -292,8 +290,8 @@
          width="1" alt=""/>
 </noscript>
 <!-- End Alexa Certify Javascript -->
-<div id="darkLayer" style="display:none;"></div>
-<div id="FE_LOADING" style="display:none;">
+<div id="darkLayerFE" style="display:none;"></div>
+<div id="FE_LOADINGFE" style="display:none;">
     <!-- Gestion revistaFE -->
     <div class="introFE" id="introFE">
         <div class="redireccionFE">

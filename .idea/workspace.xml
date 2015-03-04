@@ -8,6 +8,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_splash.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_splash.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.625" vertical-offset="2463" max-vertical-offset="4815">
-              <caret line="186" column="48" selection-start-line="186" selection-start-column="48" selection-end-line="186" selection-end-column="48" />
+            <state vertical-scroll-proportion="-8.291667" vertical-offset="3476" max-vertical-offset="4785">
+              <caret line="245" column="17" selection-start-line="245" selection-start-column="17" selection-end-line="245" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -53,21 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8955">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="splash.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/splash.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="750">
-              <caret line="27" column="13" selection-start-line="20" selection-start-column="4" selection-end-line="27" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.12653778" vertical-offset="108" max-vertical-offset="9135">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -83,25 +74,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fe_splash.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fe_splash.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_splash.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.028735632" vertical-offset="0" max-vertical-offset="522">
-              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="banners.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/banners/controllers/banners.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.625" vertical-offset="1668" max-vertical-offset="2250">
-              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -129,8 +111,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="19491" max-vertical-offset="24225">
-              <caret line="1318" column="14" selection-start-line="1318" selection-start-column="14" selection-end-line="1318" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="19576" max-vertical-offset="24585">
+              <caret line="1329" column="16" selection-start-line="1329" selection-start-column="16" selection-end-line="1329" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -207,11 +189,11 @@
         <option value="$PROJECT_DIR$/application/modules/banners/controllers/banners.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/splash.html" />
-        <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_splash.php" />
+        <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -222,7 +204,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="63" />
+    <option name="x" value="7" />
     <option name="y" value="23" />
     <option name="width" value="1434" />
     <option name="height" value="1004" />
@@ -4080,7 +4062,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425425541596</updated>
     </task>
-    <option name="localTasksCounter" value="619" />
+    <task id="LOCAL-00619" summary="incluye tabla de revista">
+      <created>1425430223812</created>
+      <option name="number" value="00619" />
+      <option name="project" value="LOCAL" />
+      <updated>1425430223812</updated>
+    </task>
+    <option name="localTasksCounter" value="620" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4104,7 +4092,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="23" width="1434" height="1004" extended-state="0" />
+    <frame x="7" y="23" width="1434" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4444,14 +4432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="330">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_overlaybanner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
@@ -4510,18 +4490,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.958334" vertical-offset="2935" max-vertical-offset="3525">
-          <caret line="226" column="20" selection-start-line="226" selection-start-column="20" selection-end-line="226" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.057471264" vertical-offset="0" max-vertical-offset="522">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/splash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7706422" vertical-offset="45" max-vertical-offset="750">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
+    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2070">
-          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+        <state vertical-scroll-proportion="-18.958334" vertical-offset="2935" max-vertical-offset="3525">
+          <caret line="226" column="20" selection-start-line="226" selection-start-column="20" selection-end-line="226" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -4534,26 +4524,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19491" max-vertical-offset="24225">
-          <caret line="1318" column="14" selection-start-line="1318" selection-start-column="14" selection-end-line="1318" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2070">
+          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/splash.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_splash.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="750">
-          <caret line="27" column="13" selection-start-line="20" selection-start-column="4" selection-end-line="27" selection-end-column="13" />
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.958333" vertical-offset="1672" max-vertical-offset="9450">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.625" vertical-offset="2463" max-vertical-offset="4815">
-          <caret line="186" column="48" selection-start-line="186" selection-start-column="48" selection-end-line="186" selection-end-column="48" />
+        <state vertical-scroll-proportion="-8.291667" vertical-offset="3476" max-vertical-offset="4785">
+          <caret line="245" column="17" selection-start-line="245" selection-start-column="17" selection-end-line="245" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#img#0;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#noscript#0;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -4567,30 +4569,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="19576" max-vertical-offset="24585">
+          <caret line="1329" column="16" selection-start-line="1329" selection-start-column="16" selection-end-line="1329" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8955">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.12653778" vertical-offset="108" max-vertical-offset="9135">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.958333" vertical-offset="1672" max-vertical-offset="9450">
-          <caret line="137" column="54" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_splash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028735632" vertical-offset="0" max-vertical-offset="522">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

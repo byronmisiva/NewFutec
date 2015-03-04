@@ -8,6 +8,6 @@
     </div>
     <div id='closeBanner' onclick='cleanBlackLayer();'>
         <img src='<?= base_url() ?>assets/img/close_banner.png'
-             width='118' height='29'/>
+             width='81' height='20'/>
     </div>
 </div>

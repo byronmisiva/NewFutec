@@ -1282,6 +1282,30 @@ textarea {
 
 /*spalsh*/
 
+div#darkLayerFE {
+    background-color: #000000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1035;
+}
+
+
+
+div#FE_LOADINGFE {
+    left: 0;
+    right: 0;
+    margin: 3% auto;
+    position: fixed;
+    top: 10px;
+    width: 95%;
+    z-index: 1040;
+}
 div#darkLayer {
     background-color: #000000;
     background-position: center center;
@@ -1303,7 +1327,7 @@ div#FE_LOADING {
     margin: 3% auto;
     position: fixed;
     top: 10px;
-    width: 95%;
+    width: 800px;
     z-index: 1040;
 }
 
@@ -1311,12 +1335,12 @@ div#closeBanner {
     background-color: black;
     border: 1px solid #cccccc;
     cursor: pointer;
-    height: 30px;
+    height: 20px;
     opacity: 0.6;
     position: absolute;
     left: 0;
     top: -20px;
-    width: 110px;
+    width: 81px;
 }
 
 div#closeBanner {
