@@ -2,13 +2,11 @@ var masnoticas = "";
 
 //inicio funciones splash
 function cargarSplash() {
-    console.log (verMobile + " - " + uri)
     if ((verMobile == 1 ) && (uri == "movil")) {
         $('#darkLayer').show();
         $('#FE_LOADING').show();
         //funcion enviar encuesta
-
-            $(".redireccionFE, .deviceFE").click(function () {
+            $(".redireccionFE, .deviceFE, #closeBanner").click(function () {
                 $('#darkLayer').hide();
                 $('#FE_LOADING').hide();
             })

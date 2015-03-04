@@ -158,18 +158,17 @@
         googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
 
-        // splsh movil
-        googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-
-        // splsh movil
-        googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/FE_LOADING', [800, 600], 'div-gpt-ad-1425424774921-0').addService(googletag.pubads());
+
+        // splsh movil
+        googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
+
 
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+            //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
                 if (!event.isEmpty) {
                     cleanBlackLayer;
@@ -177,6 +176,20 @@
                     cargarSplash();
                 }
             }
+
+            //para el caso de splash desktop
+            //para el caso de splash movil
+            if (event.slot.i == '/1022247/FE_LOADING') {
+
+                if (event.isEmpty) {
+                    cleanBlackLayer;
+                } else {
+                    console.log ("debe cargar");
+                    cargarSplash();
+                }
+            }
+
+
             if (event.slot.i == '/1022247/FE_HEADER') {
                 if (event.isEmpty) {
                     //ocultamos el div
