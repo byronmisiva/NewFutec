@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="incluye tabla de revista">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/stories.php" afterPath="$PROJECT_DIR$/admin/application/controllers/stories.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" afterPath="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,17 +45,17 @@
       <file leaf-file-name="stories.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/stories/controllers/stories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.46551725" vertical-offset="3933" max-vertical-offset="4665">
-              <caret line="246" column="139" selection-start-line="246" selection-start-column="139" selection-end-line="246" selection-end-column="139" />
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="1191" max-vertical-offset="4665">
+              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
               <folding>
-                <marker date="1425655743000" expanded="true" signature="3218:4048" placeholder="..." />
-                <marker date="1425655743000" expanded="true" signature="3446:4048" placeholder="..." />
-                <marker date="1425655743000" expanded="true" signature="3798:3965" placeholder="..." />
-                <marker date="1425655743000" expanded="true" signature="6579:7317" placeholder="..." />
-                <marker date="1425655743000" expanded="true" signature="6880:7317" placeholder="..." />
-                <marker date="1425655743000" expanded="true" signature="7118:7285" placeholder="..." />
-                <marker date="1425655743000" expanded="true" signature="9761:9816" placeholder="Select * Fro..statistics..." />
-                <marker date="1425655743000" expanded="true" signature="10223:10329" placeholder="Select * Fro..statistics_days..." />
+                <marker date="1425656053000" expanded="true" signature="3218:4048" placeholder="..." />
+                <marker date="1425656053000" expanded="true" signature="3446:4048" placeholder="..." />
+                <marker date="1425656053000" expanded="true" signature="3798:3965" placeholder="..." />
+                <marker date="1425656053000" expanded="true" signature="6561:7299" placeholder="..." />
+                <marker date="1425656053000" expanded="true" signature="6862:7299" placeholder="..." />
+                <marker date="1425656053000" expanded="true" signature="7100:7267" placeholder="..." />
+                <marker date="1425656053000" expanded="true" signature="9743:9798" placeholder="Select * Fro..statistics..." />
+                <marker date="1425656053000" expanded="true" signature="10205:10311" placeholder="Select * Fro..statistics_days..." />
               </folding>
             </state>
           </provider>
@@ -248,7 +246,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="143" />
+    <option name="x" value="434" />
     <option name="y" value="23" />
     <option name="width" value="1434" />
     <option name="height" value="1004" />
@@ -4124,7 +4122,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425600366099</updated>
     </task>
-    <option name="localTasksCounter" value="622" />
+    <task id="LOCAL-00622" summary="incluye tabla de revista">
+      <created>1425655782629</created>
+      <option name="number" value="00622" />
+      <option name="project" value="LOCAL" />
+      <updated>1425655782629</updated>
+    </task>
+    <option name="localTasksCounter" value="623" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4148,7 +4152,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="143" y="23" width="1434" height="1004" extended-state="0" />
+    <frame x="434" y="23" width="1434" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4757,17 +4761,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/stories/controllers/stories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.46551725" vertical-offset="3933" max-vertical-offset="4665">
-          <caret line="246" column="139" selection-start-line="246" selection-start-column="139" selection-end-line="246" selection-end-column="139" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1191" max-vertical-offset="4665">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
           <folding>
-            <marker date="1425655743000" expanded="true" signature="3218:4048" placeholder="..." />
-            <marker date="1425655743000" expanded="true" signature="3446:4048" placeholder="..." />
-            <marker date="1425655743000" expanded="true" signature="3798:3965" placeholder="..." />
-            <marker date="1425655743000" expanded="true" signature="6579:7317" placeholder="..." />
-            <marker date="1425655743000" expanded="true" signature="6880:7317" placeholder="..." />
-            <marker date="1425655743000" expanded="true" signature="7118:7285" placeholder="..." />
-            <marker date="1425655743000" expanded="true" signature="9761:9816" placeholder="Select * Fro..statistics..." />
-            <marker date="1425655743000" expanded="true" signature="10223:10329" placeholder="Select * Fro..statistics_days..." />
+            <marker date="1425656053000" expanded="true" signature="3218:4048" placeholder="..." />
+            <marker date="1425656053000" expanded="true" signature="3446:4048" placeholder="..." />
+            <marker date="1425656053000" expanded="true" signature="3798:3965" placeholder="..." />
+            <marker date="1425656053000" expanded="true" signature="6561:7299" placeholder="..." />
+            <marker date="1425656053000" expanded="true" signature="6862:7299" placeholder="..." />
+            <marker date="1425656053000" expanded="true" signature="7100:7267" placeholder="..." />
+            <marker date="1425656053000" expanded="true" signature="9743:9798" placeholder="Select * Fro..statistics..." />
+            <marker date="1425656053000" expanded="true" signature="10205:10311" placeholder="Select * Fro..statistics_days..." />
           </folding>
         </state>
       </provider>

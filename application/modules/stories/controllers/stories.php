@@ -147,8 +147,8 @@ class Stories extends MY_Controller
             $request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</link>
-	      			  <guid>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</guid>
+ 	      			  <link>http://www.futbolecuador.com/site/noticia/'. $this->_urlFriendly($row->title).'/'.$row->id.'</link>
+	      			  <guid>http://www.futbolecuador.com/site/noticia/'. $this->_urlFriendly($row->title).'/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
 				  	  <author>info@futbolecuador.com</author>
 	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
