@@ -11,7 +11,7 @@ class Seo extends MY_Controller
     }
 
     public function index(){
-        echo "hola";
+
     }
 
     public function sitemap(){
@@ -21,6 +21,8 @@ class Seo extends MY_Controller
 
         // secciones dinamicas de la pagina
         $data['stories']=$this->mdl_seo->get_all_stories();
+       // $this->_urlFriendly($row->title).'/'.$row->id.'
+
         $data['tags']=$this->mdl_seo->get_all_tags();
 
         header("Content-Type: text/xml;charset=iso-8859-1");

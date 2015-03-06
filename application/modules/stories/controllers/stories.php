@@ -117,7 +117,7 @@ class Stories extends MY_Controller
 					<image>
 						<title>futbolecuador.com</title>
 						<link>http://www.futbolecuador.com</link>
-						<url>http://www.futbolecuador.com/images/logo_rss.png</url>
+						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
 					</image>
 					<language>es-ec</language>
 					<pubDate>'.date('r',time()).'</pubDate>
@@ -142,8 +142,6 @@ class Stories extends MY_Controller
                 $texto2=$row->body;
                 $video="";
             }
-
-            /*list($width, $height)=getimagesize($row->thumb400);*/
             $request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
@@ -196,7 +194,7 @@ class Stories extends MY_Controller
 					<image>
 						<title>futbolecuador.com</title>
 						<link>http://www.futbolecuador.com</link>
-						<url>http://www.futbolecuador.com/images/logo_rss.png</url>
+						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
 					</image>
 					<language>es-ec</language>';
 
@@ -206,7 +204,7 @@ class Stories extends MY_Controller
             $news=$this->model->rss(FALSE);
 
         foreach($news->result() as $row):
-            /*list($width, $height)=getimagesize($row->thumb400);*/
+
             $request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>

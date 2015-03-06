@@ -9,16 +9,15 @@
         <tbody>
         <?php if (is_array($jugadores)) {
             foreach ($jugadores as $key => $jugador) {
-
                 ?>
-
                 <tr>
                     <?php if ($key + 1 == 1) { ?>
                         <td colspan="3">
                             <div class="col-md-4 col-xs-4 margen0 img-goleadores">
                                 <?php if ((isset($jugador->thumb220)) and ($jugador->thumb220 != "")) { ?>
                                     <img class="img-responsive"
-                                         src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>">
+                                         src="http://www.futbolecuador.com/<?php echo $jugador->thumb220; ?>" alt="<?php echo $jugador->last_name . " " . $jugador->first_name; ?>"
+                                        title="<?php echo $jugador->last_name . " " . $jugador->first_name . " jugador de " .$jugador->name  ; ?>">
                                 <?php } else { ?>
                                     <img class="img-responsive"
                                          src="http://www.futbolecuador.com/imagenes/players/striker.jpg">
@@ -26,7 +25,7 @@
 
                             </div>
                             <div class="col-md-2 col-xs-2 margen0 text-center">
-                                <img src="http://www.futbolecuador.com/<?php echo $jugador->thumb_shield; ?>">
+                                <img src="http://www.futbolecuador.com/<?php echo $jugador->thumb_shield; ?>" alt="<?php echo $jugador->name; ?>" title="Escudo de <?php echo $jugador->name; ?>">
                             </div>
                             <div class="col-md-6 col-xs-4 margen0">
 

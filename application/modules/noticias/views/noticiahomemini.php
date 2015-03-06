@@ -14,10 +14,10 @@
             <a href="<?php echo $link ?>">
                 <img src="http://www.futbolecuador.com/<?php echo $story->thumbh50; ?>"
                      class="img-responsive visible-xs-block"
-                     alt="<?php echo str_replace('"', '', "$story->title"); ?>">
+                     alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">
                 <img data-original="http://www.futbolecuador.com/<?php echo $story->thumb300; ?>"
                      class="img-responsive lazy hidden-xs"
-                     alt="<?php echo str_replace('"', '', "$story->title"); ?>">
+                     alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">
             </a>
         </div>
     </div>

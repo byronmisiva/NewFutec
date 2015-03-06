@@ -14,7 +14,7 @@
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
                 <div class="col-md-2 ">
-                    <a href="<?php echo $link ?>"><img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" alt="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
+                    <a href="<?php echo $link ?>"><img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" alt="<?php echo str_replace('"', '', "$noticia->title"); ?>" title="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
                 <div class="col-md-10  ">
                     <h2> <a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>

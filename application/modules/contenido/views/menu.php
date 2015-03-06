@@ -1,6 +1,6 @@
 <div class="navbar-header hidden-xs">
     <a href="<?php echo base_url() ?>" class="" onclick="ga('send', 'event', 'menu', 'click', 'home');"><img src="<?= base_url('assets/img/logotipo.png') ?>"
-                                                     alt="FutbolEcuador" class=" media-object">
+                                                     alt="FutbolEcuador" title="Lo mejor del futbol ecuatoriano" class=" media-object">
     </a>
 </div>
 <!-- end navbar-header -->
@@ -93,6 +93,7 @@
                                class="pull-left">
                                 <img src="<?= 'http://www.futbolecuador.com/' . $seriea[0]->thumb3 ?>"
                                      alt="Noticia Serie A"
+                                     title="Lea todo sobre Noticia Serie A"
                                      class="img-thumbnail media-object"
                                      width="61">
                             </a>
@@ -122,6 +123,7 @@
 
                                 <img src="<?= 'http://www.futbolecuador.com/' . $serieb[0]->thumb3 ?>"
                                      alt="Noticia Serie B"
+                                     title="Lea todo sobre Noticia Serie B"
                                      class="img-thumbnail media-object"
                                      width="61">
                             </a>
@@ -154,6 +156,7 @@
                                class="pull-left">
 
                                 <img src="<?= 'http://www.futbolecuador.com/' . $seleccion[0]->thumb3 ?>"
+                                     title="Lea todo sobre la selección"
                                      alt="Noticias Seleccion"
                                      class="img-thumbnail media-object"
                                      width="61">
@@ -202,20 +205,20 @@
                 </div>
                 <div class="col-sm-3  text-center separador-dotted">
                     <a href="<?= base_url('copa-libertadores') ?>" class="pull-left">
-                        <img src="<?= base_url('assets/img/copa-libertadores.png') ?>" alt="Copa Libertadores">
+                        <img src="<?= base_url('assets/img/copa-libertadores.png') ?>" alt="Copa Libertadores" title="Lea todo la Copa Libertadores">
                     </a>
 
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-3 text-center separador-dotted">
                     <a href="<?= base_url('copa-sudamericana') ?>" class="pull-left">
-                        <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana">
+                        <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana" title="Lea todo sobre la Copa Sudamericana">
                     </a>
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-3 text-center hidden">
                     <a href="<?= base_url('copa-america') ?>" class="pull-left">
-                        <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America">
+                        <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America" title="Lea todo sobre la Copa America">
                     </a>
                 </div>
                 <!-- end col-4 -->

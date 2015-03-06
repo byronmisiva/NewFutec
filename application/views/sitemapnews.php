@@ -4,7 +4,8 @@
     <!-- stories -->
     <?php foreach ($stories as $url) { ?>
         <url>
-            <loc><?= base_url() . "stories/publica/" . $url->id ?></loc>
+            <loc><?php $this->load->module('seo');
+                echo base_url() .  $this->seo->_urlFriendly($url->title)  ."/" . $url->id ?></loc>
             <news:news>
                 <news:publication>
                     <news:name><?= $url->title ?></news:name>
@@ -22,3 +23,6 @@
     <?php } ?>
  
 </urlset>
+
+
+  $this->_urlFriendly($row->title).'/'.$row->id.'

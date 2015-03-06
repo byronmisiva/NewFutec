@@ -7,7 +7,7 @@
             <li style="height: 348px;" data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
                 <a href="<?php echo $link ?>">
                     <img class="img" src="http://www.futbolecuador.com/<?php echo $rotativa->thumb500; ?>"
-                         alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>" style="height: 348px;" />
+                         alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>" title="<?php echo str_replace('"', '', "$rotativa->title"); ?>" style="height: 348px;" />
                 </a>
 
                 <div class="content-text-rotativas">

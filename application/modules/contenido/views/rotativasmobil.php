@@ -7,7 +7,8 @@
             <li>
                 <a href="<?php echo $link ?>">
                     <img class="img-responsive" src="http://www.futbolecuador.com/<?php echo $rotativa->thumb300; ?>"
-                         alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>"/>
+                         alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>"
+                         title="<?php echo str_replace('"', '', "$rotativa->title"); ?>"/>
                 </a>
 
                 <div class="content-text-rotativas">

@@ -27,7 +27,7 @@ $this->load->view('header', $data);
                 <div class="col-xs-10 margen0">
                     <a href="<?php echo base_url('site/movil/') ?>" class="navbar-brand"><img
                             src="<?php echo base_url('assets/img/logotipo.png') ?>"
-                            alt="FutbolEcuador" class=" media-object img-responsive">
+                            alt="FutbolEcuador" title="Lo mejor del futbol ecuatoriano" class=" media-object img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-2 margen0">
@@ -151,7 +151,7 @@ $this->load->view('header', $data);
 </div>
 
 <div class="flechaariba">
-    <img src="<?= base_url('assets/img/boton-arriba.png') ?>">
+    <img src="<?= base_url('assets/img/boton-arriba.png') ?>" alt="boton arriba" title="Botón ir arriba">
 </div>
 <?php
 $this->load->view('footerend',$data);
