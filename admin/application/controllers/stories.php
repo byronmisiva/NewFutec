@@ -503,7 +503,7 @@ class Stories extends CI_Controller {
 			$request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>	      
+ 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>
 	      			  <guid>http://www.futbolecuador.com/stories/publica/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
 				  	  <author>info@futbolecuador.com</author>
@@ -566,7 +566,7 @@ class Stories extends CI_Controller {
 			$request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>	      
+ 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>
 	      			  <guid>http://www.futbolecuador.com/stories/publica/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
 				  <author>info@futbolecuador.com</author>

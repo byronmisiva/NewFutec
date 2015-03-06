@@ -147,8 +147,8 @@ class Stories extends MY_Controller
             $request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>
-	      			  <guid>http://www.futbolecuador.com/stories/publica/'.$row->id.'</guid>
+ 	      			  <link>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</link>
+	      			  <guid>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
 				  	  <author>info@futbolecuador.com</author>
 	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
@@ -210,8 +210,8 @@ class Stories extends MY_Controller
             $request=$request.'
 				<item>
 				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/stories/publica/'.$row->id.'</link>
-	      			  <guid>http://www.futbolecuador.com/stories/publica/'.$row->id.'</guid>
+ 	      			  <link>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</link>
+	      			  <guid>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</guid>
 	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
 				  <author>info@futbolecuador.com</author>
 	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
@@ -244,7 +244,7 @@ class Stories extends MY_Controller
             $news=$this->model->rss(FALSE);
         foreach($news->result() as $row):
             $request=$request.'<noticia>
-								<link>'.base_url().'stories/publica/'.$row->id.'</link>
+								<link>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</link>
 								<titulo>'.$row->title.'</titulo>
 								<subtitulo>'.$row->subtitle.'</subtitulo>
 								<imagen>'.$row->thumb300.'</imagen>
