@@ -16,26 +16,26 @@
     </script>
 
     <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
-    <script type='text/javascript'>GS_googleAddAdSenseService("ca-pub-2857298972794488");
+    <script type='text/javascript'>
+        GS_googleAddAdSenseService("ca-pub-2857298972794488");
         GS_googleEnableAllServices();</script>
     <script type='text/javascript'>
-        GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
+        GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
     </script>
     <script type='text/javascript'>GA_googleFetchAds();</script>
-
-
-
-
 </head>
 <body>
-
-
-<div style="float:right">
-    <div id='FE_HP_1' style='margin-top: 5px; width: 300px; height: 250px;'>
+<div style="float:left; ">
+    Esto tambien
+</div>
+<div style="float:left; clear: both">
+    <div id='FE_NEW_HYPERBANNER' style='margin-top: 5px; width: 300px; height: 50px;'>
         <!-- FE_HP_1 -->
-        <script type='text/javascript'>GA_googleFillSlot("FE_HP_1");</script>
+        <script type='text/javascript'>GA_googleFillSlot("FE_NEW_HYPERBANNER");</script>
     </div>
 </div>
-
+<div style="float:left; clear: both">
+    y esto
+</div>
 </body>
 </html>

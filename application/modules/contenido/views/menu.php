@@ -1,5 +1,5 @@
 <div class="navbar-header hidden-xs">
-    <a href="<?php echo base_url() ?>" class=""><img src="<?= base_url('assets/img/logotipo.png') ?>"
+    <a href="<?php echo base_url() ?>" class="" onclick="ga('send', 'event', 'menu', 'click', 'home');"><img src="<?= base_url('assets/img/logotipo.png') ?>"
                                                      alt="FutbolEcuador" class=" media-object">
     </a>
 </div>

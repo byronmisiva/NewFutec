@@ -5,8 +5,8 @@
     <meta http-equiv="content-language" content="es"/>
     <meta name="robots" content="follow,index,nocache"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
+    <meta name="description" content="<?php echo (isset($description)) ? $description : 'Futbol Ecuador: Lo mejor del futbol ecuatoriano. Noticias e información sobre clubes, jugadores, eliminatorias, copa libertadores'; ?>"/>
+    <meta name="author" content="Misiva Corp"/>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
           href="<?php echo base_url('assets/img/apple-touch-icon-144-precomposed.png') ?>"/>
@@ -50,7 +50,7 @@
           content="<?php echo (isset($image)) ? base_url($image) : base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
 
     <!--SEO TAGS-->
-    <meta name="description" content="Futbolecuador.com, Todas las noticias actualizadas.">
+
     <meta name="keywords"
           content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo"/>
 
@@ -213,11 +213,17 @@
 
 </script>
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
-<script type='text/javascript'>GS_googleAddAdSenseService("ca-pub-2857298972794488");
-    GS_googleEnableAllServices();</script>
+<script type='text/javascript'>
+    GS_googleAddAdSenseService("ca-pub-2857298972794488");
+    GS_googleEnableAllServices();
+</script>
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
+
+    GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
+
+
 
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");

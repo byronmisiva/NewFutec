@@ -2,13 +2,14 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <!-- FlexSlider -->
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?refresh=1234567') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js
+') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
 
@@ -224,6 +225,7 @@
 
 ?>
 <?php
+    if (isset($fe_splash))
     echo $fe_splash;
 ?>
 </body>

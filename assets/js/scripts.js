@@ -22,7 +22,7 @@ function cargarSplash() {
             $('#darkLayer').hide();
             $('#FE_LOADING').hide();
         })
-        setTimeout(cleanBlackLayer, 1440000);
+        setTimeout(cleanBlackLayer, 22000);
 
 };
 
@@ -537,6 +537,9 @@ jQuery(document).ready(function () {
 
 function clickMasNoticias() {
     $(".masnoticias").click(function () {
+        // evento analitycs mas noticias
+        ga('send', 'event', 'masnoticias', 'click', 'masnoticias');
+
         var offset = $(this).attr('offset');
         var section = $(this).attr('section');
         var pos = $(this).attr('pos');
@@ -552,7 +555,15 @@ function clickMasNoticias() {
 
             setTimeout(igualarancho(), 2500);
         });
+
+
+
+
     })
+
+
+
+
 }
 function clickVerResultados() {
     $("#ver-resultados").click(function () {

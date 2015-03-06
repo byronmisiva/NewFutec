@@ -106,6 +106,7 @@ class Site extends MY_Controller
 
         $data['footer'] = '';
         $data['bottom'] = $this->contenido->bottom();
+        $data['fe_splash'] = "";
 
         $this->templates->_index($data);
     }
@@ -114,6 +115,9 @@ class Site extends MY_Controller
     public function home()
     {
         // para la final se comentan la llamada a las secciones.
+        if ($this->verificarDispositivo() == "1")
+            redirect('site/movil/');
+
         $this->output->cache(CACHE_DEFAULT);
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
 

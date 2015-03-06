@@ -48,13 +48,7 @@
 </div>
 
 
-<div class="col-md-12  fondoazul  separador10 ">
-    <h4 class="contenidos">Partidos <?php echo $infoEquipo->name; ?></h4>
-</div>
 
-<?php
-echo $fechas;
-?>
 
 
 <!--lsitado de jugadores -->
@@ -148,5 +142,10 @@ echo $fechas;
     </div>
 </div>
 
+<div class="col-md-12  fondoazul  separador10 ">
+    <h4 class="contenidos">Partidos <?php echo $infoEquipo->name; ?></h4>
+</div>
 
-
+<?php
+echo $fechas;
+?>

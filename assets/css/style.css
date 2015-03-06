@@ -1226,6 +1226,9 @@ h4.contenidos {
     }
 }
 @media (max-width: 767px) {
+    .text-news-sub {
+        font-size: 13px;
+    }
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
         padding: 5px 0 5px 60px ;
