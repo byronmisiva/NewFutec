@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/bottom.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/index.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/menu.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" afterPath="$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/mininewssidebar.php" afterPath="$PROJECT_DIR$/application/modules/story/views/mininewssidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticiahomemini.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/rotativas.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/rotativas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/rotativasmobil.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/rotativasmobil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/seo/controllers/seo.php" afterPath="$PROJECT_DIR$/application/modules/seo/controllers/seo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropenshort.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebaropenshort.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sitemapnews.php" afterPath="$PROJECT_DIR$/application/views/sitemapnews.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" afterPath="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" afterPath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -141,8 +124,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.017921148" vertical-offset="825" max-vertical-offset="4860">
-              <caret line="56" column="10" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.8924731" vertical-offset="3858" max-vertical-offset="4695">
+              <caret line="307" column="6" selection-start-line="307" selection-start-column="6" selection-end-line="307" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -261,6 +244,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="NewFutec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -4103,7 +4096,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425656057574</updated>
     </task>
-    <option name="localTasksCounter" value="624" />
+    <task id="LOCAL-00624" summary="incluye tabla de revista">
+      <created>1425680567655</created>
+      <option name="number" value="00624" />
+      <option name="project" value="LOCAL" />
+      <updated>1425680567656</updated>
+    </task>
+    <option name="localTasksCounter" value="625" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4128,8 +4127,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="234" y="23" width="1434" height="1004" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32127193" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -4146,7 +4146,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34539473" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49467456" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -4291,6 +4290,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="546">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4453,6 +4453,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44036698" vertical-offset="240" max-vertical-offset="1770">
           <caret line="32" column="32" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4474,6 +4475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4481,6 +4483,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4580,8 +4583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.017921148" vertical-offset="825" max-vertical-offset="4860">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.8924731" vertical-offset="3858" max-vertical-offset="4695">
+          <caret line="307" column="6" selection-start-line="307" selection-start-column="6" selection-end-line="307" selection-end-column="6" />
           <folding />
         </state>
       </provider>

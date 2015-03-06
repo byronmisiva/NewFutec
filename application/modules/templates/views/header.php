@@ -175,7 +175,6 @@
                     cargarSplashFE();
                 }
             }
-
             //para el caso de splash desktop
             //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING') {
@@ -185,7 +184,6 @@
                     cargarSplash();
                 }
             }
-
 
             if (event.slot.i == '/1022247/FE_HEADER') {
                 if (event.isEmpty) {
@@ -201,13 +199,9 @@
                 }
             }
         });
-
-
         googletag.enableServices();
-
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
-
     });
 
 </script>
@@ -221,14 +215,10 @@
 
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
-
-
-
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");
 </script>
 <script type='text/javascript'>GA_googleFetchAds();</script>
-
 <!-- Google Tag Manager -->
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
