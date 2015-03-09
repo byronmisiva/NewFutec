@@ -5,6 +5,7 @@ RewriteCond $1 !^(index\.php|public|tmp|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L]
 
 
+<IfModule mod_expires.c>
 	ExpiresActive On
 	ExpiresDefault "now"
 	ExpiresByType application/x-shockwave-flash "access plus 1 hour"
@@ -25,5 +26,12 @@ RewriteRule ^(.*)$ index.php/$1 [L]
      ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
 
 
+</IfModule>
+
+
+server {
+gzip on;
+gzip_types text/html text/css application/x-javascript text/plain text/xml image/x-icon;
+}
 
 
