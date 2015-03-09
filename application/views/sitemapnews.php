@@ -23,6 +23,3 @@
     <?php } ?>
  
 </urlset>
-
-
-  $this->_urlFriendly($row->title).'/'.$row->id.'

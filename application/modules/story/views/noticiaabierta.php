@@ -54,7 +54,15 @@
             <?php if (isset($autor[0]->twitter)){ ?>
                 <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
                    target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
-            <?php } ?>
+            <?php }
+            ?>
+
+            <?php if (isset($autor[0]->mail)){ ?>
+                <a href="mailto:<?php echo $autor[0]->mail; ?>"
+                   target="_blank"><?php echo $autor[0]->mail; ?></a><br/>
+            <?php }
+            ?>
+            <br/>
                 <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>">  <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
 
         </div>

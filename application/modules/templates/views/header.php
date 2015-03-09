@@ -48,11 +48,17 @@
     <meta property="og:description" content="<?php echo (isset($description)) ? $description : 'Futbol Ecuador'; ?>"/>
     <meta property="og:image"
           content="<?php echo (isset($image)) ? base_url($image) : base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
-
+<?php $tags = "";
+if (isset($noticia)) {
+foreach ($noticia->tags as $tag){
+    $tags .= ", " . $tag->name;
+}
+}
+?>
     <!--SEO TAGS-->
-
     <meta name="keywords"
-          content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo"/>
+          content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo <?= $tags ?>"/>
+    <meta name="news_keywords" content="futbol, ecuador  <?= $tags ?>, ecuatoriano,  noticias, ecuagol">
 
     <title><?php echo $pageTitle ?></title>
     <!-- Bootstrap core CSS -->
@@ -66,6 +72,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
+
 
     <link href="<?php echo base_url('assets/css/add2home.css') ?>" rel="stylesheet">
 
