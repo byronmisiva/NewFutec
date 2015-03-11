@@ -5,7 +5,14 @@
     <meta http-equiv="content-language" content="es"/>
     <meta name="robots" content="follow,index,nocache"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content="<?php echo (isset($description)) ? $description : 'Futbol Ecuador: Lo mejor del futbol ecuatoriano. Noticias e información sobre clubes, jugadores, eliminatorias, copa libertadores'; ?>"/>
+    <?php $tags = "";
+    if (isset($noticia)) {
+        foreach ($noticia->tags as $tag) {
+            $tags .= $tag->name . ", ";
+        }
+    }
+    ?>
+    <meta name="description" content="<?php echo (isset($description)) ? strip_tags ($description) . "," . $tags : 'Futbol Ecuador: Lo mejor del futbol ecuatoriano. Noticias e información sobre clubes, jugadores, eliminatorias, copa libertadores'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -45,19 +52,12 @@
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
     <!--Facebook TAGS-->
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
-    <meta property="og:description" content="<?php echo (isset($description)) ? $description : 'Futbol Ecuador'; ?>"/>
+    <meta property="og:description" content="<?php echo (isset($description)) ? $description . "," . $tags: 'Futbol Ecuador'; ?>"/>
     <meta property="og:image"
           content="<?php echo (isset($image)) ? base_url($image) : base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
-<?php $tags = "";
-if (isset($noticia)) {
-foreach ($noticia->tags as $tag){
-    $tags .= ", " . $tag->name;
-}
-}
-?>
     <!--SEO TAGS-->
     <meta name="keywords"
-          content="futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014,cristian penilla,futbol ecuatoriano,tabla de posiciones,ecuador vs holanda,el nacional,ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com,ulises de la cruz,campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,martin mandra,michael arroyo,alex colon,armando wila,carlos gruezo,fut,seleccion de ecuador,www.futbolecuador.com,claudio bieler,ecuatorianos en el exterior,felipe caicedo,frickson erazo <?= $tags ?>"/>
+          content="<?= $tags ?> futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014, futbol ecuatoriano,tabla de posiciones, ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com, campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,fut,seleccion de ecuador , ecuatorianos en el exterior"/>
     <meta name="news_keywords" content="futbol, ecuador  <?= $tags ?>, ecuatoriano,  noticias, ecuagol">
 
     <title><?php echo $pageTitle ?></title>

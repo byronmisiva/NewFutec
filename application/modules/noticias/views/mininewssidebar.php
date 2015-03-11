@@ -9,7 +9,11 @@
 
 <div class="row">
     <?php foreach ($noticias as $noticia) {
-        $link = $linkShort . '/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id;
+        $linkbody = $noticia->subtitle;
+        if ($linkbody == "")
+            $linkbody = $noticia->title;
+
+        $link = $linkShort . '/' . $this->contenido->_urlFriendly($linkbody ) . '/' . $noticia->id;
         ?>
         <div class="col-md-12 lineseparador separador10">
             <div class="row">
@@ -19,7 +23,7 @@
                             alt="<?php echo str_replace('"', '', "$noticia->title"); ?>" title="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
                 <div class="col-md-10  col-sm-9">
-                    <h2><a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
+                    <h2><a href="<?php echo $link ?>"><?php echo $linkbody; ?></a></h2>
                     <?php
                     if (strlen(strip_tags($noticia->lead)) == 0) {
                         $num = 100;

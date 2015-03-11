@@ -2,7 +2,10 @@
     <ul class="slides ">
         <?php
         foreach ($rotativasData as &$rotativa) {
-            $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($rotativa->title) . '/' . $rotativa->id;
+            $linkbody = $rotativa->subtitle;
+            if ($linkbody == "")
+                $linkbody = $rotativa->title;
+            $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($linkbody) . '/' . $rotativa->id;
             ?>
             <li>
                 <a href="<?php echo $link ?>">
@@ -10,7 +13,6 @@
                          alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>"
                          title="<?php echo str_replace('"', '', "$rotativa->title"); ?>"/>
                 </a>
-
                 <div class="content-text-rotativas">
                     <a href="<?php echo $link ?>">
                     <div class="text-rotativas">

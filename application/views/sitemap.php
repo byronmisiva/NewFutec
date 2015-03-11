@@ -14,7 +14,7 @@
         </url>
     <?php } ?>
 
-    <!-- tags -->
+    <!-- tags
     <?php //foreach($tags as $url) { ?>
         <url>
             <loc><?php //base_url(). "stories/tags/". str_replace(" ","_",$url->name) ?></loc>
@@ -22,12 +22,18 @@
             <changefreq>daily</changefreq>
             <language>es</language>
         </url>
-    <?php //} ?>
+    <?php //} ?>-->
 
     <!-- stories -->
     <?php foreach($stories as $url) { ?>
     <url>
-            <loc><?= base_url(). "site/noticia/". $this->seo->_urlFriendly($url->title). "/". $url->id ?></loc>
+            <loc><?php
+                $linkbody = $url->subtitle;
+                if ($linkbody == "")  {
+                    $linkbody = $url->title;
+                }
+
+                echo base_url(). "site/noticia/". $this->seo->_urlFriendly($linkbody). "/". $url->id ?></loc>
             <priority>0.5</priority>
             <lastmod><?= $url->created ?></lastmod>
             <language>es</language>

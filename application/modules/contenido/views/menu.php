@@ -78,7 +78,7 @@
 <!-- end list elements -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->title) . '/' . $seriea[0]->id) ?>" data-toggle="dropdown" class="dropdown-toggle">Fútbol Nacional<b
+    <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->subtitle) . '/' . $seriea[0]->id) ?>" data-toggle="dropdown" class="dropdown-toggle">Fútbol Nacional<b
             class="caret"></b></a>
     <ul class="dropdown-menu fullwidth">
         <li class="fhmm-content">
@@ -89,7 +89,7 @@
                     </a>
                     <ul class="media-list">
                         <li class="media">
-                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->title) . '/' . $seriea[0]->id) ?>"
+                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->subtitle) . '/' . $seriea[0]->id) ?>"
                                class="pull-left">
                                 <img src="<?= 'http://www.futbolecuador.com/' . $seriea[0]->thumb3 ?>"
                                      alt="Noticia Serie A"
@@ -99,7 +99,7 @@
                             </a>
 
                             <div class="media-body">
-                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->title) . '/' . $seriea[0]->id) ?>"
+                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seriea[0]->subtitle) . '/' . $seriea[0]->id) ?>"
                                    class="pull-left">
                                     <h4><?= $seriea[0]->title ?></h4>
                                     <p><?= $seriea[0]->subtitle ?></p>
@@ -118,7 +118,7 @@
                     </a>
                     <ul class="media-list">
                         <li class="media">
-                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($serieb[0]->title) . '/' . $serieb[0]->id) ?>"
+                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($serieb[0]->subtitle) . '/' . $serieb[0]->id) ?>"
                                class="pull-left">
 
                                 <img src="<?= 'http://www.futbolecuador.com/' . $serieb[0]->thumb3 ?>"
@@ -129,7 +129,7 @@
                             </a>
 
                             <div class="media-body">
-                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($serieb[0]->title) . '/' . $serieb[0]->id) ?>"
+                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($serieb[0]->subtitle) . '/' . $serieb[0]->id) ?>"
                                    class="pull-left">
                                     <h4><?= $serieb[0]->title ?></h4>
 
@@ -152,7 +152,7 @@
                     </a>
                     <ul class="media-list">
                         <li class="media">
-                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seleccion[0]->title) . '/' . $seleccion[0]->id) ?>"
+                            <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seleccion[0]->subtitle) . '/' . $seleccion[0]->id) ?>"
                                class="pull-left">
 
                                 <img src="<?= 'http://www.futbolecuador.com/' . $seleccion[0]->thumb3 ?>"
@@ -163,7 +163,7 @@
                             </a>
 
                             <div class="media-body">
-                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seleccion[0]->title) . '/' . $seleccion[0]->id) ?>"
+                                <a href="<?= base_url('site/noticia/' . $this->contenido->_urlFriendly($seleccion[0]->subtitle) . '/' . $seleccion[0]->id) ?>"
                                    class="pull-left">
                                     <h4><?= $seleccion[0]->title ?></h4>
                                     <p><?= $seleccion[0]->subtitle ?></p>

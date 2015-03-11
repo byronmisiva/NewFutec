@@ -5,7 +5,10 @@
     <?php foreach ($stories as $url) { ?>
         <url>
             <loc><?php $this->load->module('seo');
-                echo base_url() .  $this->seo->_urlFriendly($url->title)  ."/" . $url->id ?></loc>
+                $linkbody = $url->subtitle;
+                if ($linkbody == "")
+                    $linkbody = $url->title;
+                echo base_url() .  $this->seo->_urlFriendly($linkbody)  ."/" . $url->id ?></loc>
             <news:news>
                 <news:publication>
                     <news:name><?= $url->title ?></news:name>

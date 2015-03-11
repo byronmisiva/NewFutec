@@ -232,6 +232,12 @@ class Site extends MY_Controller
         $this->load->module('story');
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
+        if (!$idNoticia){
+            $idNoticia = $this->uri->segment(3);
+        }
+        if ($idNoticia < 32929)
+            redirect('home');
+
         $storia = $this->story->get_complete($idNoticia);
 
         $aux = $this->mdl_story->get_story($idNoticia);
@@ -439,9 +445,8 @@ class Site extends MY_Controller
 
         $match = $this->matches->getMatch($id);
         $title = $this->matches->getMatchName($id);
-
-
-        $this->singleConten($title, $match);
+        $description = "Sigue el partido en vivo, $title";
+        $this->singleConten($title, $match, $description);
     }
 
 
@@ -453,7 +458,7 @@ class Site extends MY_Controller
         $this->singleConten("Fuera de Juego", $fueradejuego);
     }
 
-    public function singleConten($nameSeccion, $contenSeccion)
+    public function singleConten($nameSeccion, $contenSeccion, $description = "")
     {
         // para la final se comentan la llamada a las secciones.
 
@@ -483,6 +488,7 @@ class Site extends MY_Controller
         }
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
+        $data['description'] = $description;
 
         $this->templates->_index($data);
     }

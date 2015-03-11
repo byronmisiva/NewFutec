@@ -1,8 +1,12 @@
 <div class="flexslider preloader " style="height: 348px; overflow: hidden">
     <ul class="slides ">
         <?php
+
         foreach ($rotativasData as &$rotativa) {
-            $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($rotativa->title) . '/' . $rotativa->id;
+            $linkbody = $rotativa->subtitle;
+            if ($linkbody == "")
+                $linkbody = $rotativa->title;
+            $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($linkbody) . '/' . $rotativa->id;
             ?>
             <li style="height: 348px;" data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
                 <a href="<?php echo $link ?>">

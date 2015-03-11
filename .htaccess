@@ -27,11 +27,3 @@ RewriteRule ^(.*)$ index.php/$1 [L]
 
 
 </IfModule>
-
-
-server {
-gzip on;
-gzip_types text/html text/css application/x-javascript text/plain text/xml image/x-icon;
-}
-
-

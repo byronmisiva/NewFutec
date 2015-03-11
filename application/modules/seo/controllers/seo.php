@@ -52,7 +52,7 @@ class Seo extends MY_Controller
                 "¿", "[", "^", "`", "]",
                 "+", "}", "{", "¨", "´",
                 ">", "< ", ";", ",", ":",
-                ".", '"', '“', '”'  ),
+                ".", '"', '“', '”', ' '  ),
             '',
             $tempSting
         );
@@ -67,8 +67,8 @@ class Seo extends MY_Controller
 
         $string = trim($string);
         $string = str_replace(
-            array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
-            array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+            array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä', 'ã'),
+            array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A', 'a'),
             $string
         );
 
@@ -85,8 +85,8 @@ class Seo extends MY_Controller
         );
 
         $string = str_replace(
-            array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
-            array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+            array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô', 'õ', 'ø'),
+            array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O', 'o', 'o'),
             $string
         );
 
