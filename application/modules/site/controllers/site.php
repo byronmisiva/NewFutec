@@ -235,7 +235,10 @@ class Site extends MY_Controller
         if (!$idNoticia){
             $idNoticia = $this->uri->segment(3);
         }
-        if ($idNoticia < 32929)
+        if (is_numeric($idNoticia))
+            if ($idNoticia< 39898)
+                redirect('home');
+        if ( $idNoticia == 'ref.outcontrol'  )
             redirect('home');
 
         $storia = $this->story->get_complete($idNoticia);
@@ -356,6 +359,12 @@ class Site extends MY_Controller
 
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
+        //validamos las noticias
+        /*if ($idNoticia < 39898)
+            redirect('home');*/
+        if ( $idNoticia == 'ref.outcontrol'  )
+            redirect('home');
+
         if ($idNoticia) {
             $storia = $this->story->get_complete($idNoticia);
             $aux = $this->mdl_story->get_story($idNoticia);
@@ -390,10 +399,13 @@ class Site extends MY_Controller
 
     public function goleadores($serie = SERIE_A)
     {
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
+
         $id = $this->uri->segment(3);
         if ($id) {
             $serie = $id;
+            //validate
+            if (!is_numeric ( $serie )) $serie = SERIE_A;
         }
 
         $this->load->module('strikes');
@@ -443,9 +455,13 @@ class Site extends MY_Controller
         $this->load->module('matches');
         $id = $this->uri->segment(4);
 
+        if ( $id == "ref.outcontrol"  )
+            redirect('home');
+
+
         $match = $this->matches->getMatch($id);
         $title = $this->matches->getMatchName($id);
-        $description = "Sigue el partido en vivo, $title";
+        $description = "Sigue el partido en vivo, " .  $this->matches->getMatchNameLong($id);
         $this->singleConten($title, $match, $description);
     }
 
@@ -540,6 +556,10 @@ class Site extends MY_Controller
         //$this->output->cache(CACHE_DEFAULT);
         // Informacion de equipo
         $idNoticia = $this->uri->segment(6);
+        // para validacion
+
+        if ( $idNoticia == "ref.outcontrol"  )
+              redirect('home');
 
         $nombreNoticia = $this->uri->segment(5);
         if ($nombreNoticia === "0") {

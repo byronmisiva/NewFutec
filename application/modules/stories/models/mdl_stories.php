@@ -49,25 +49,25 @@ class Mdl_stories extends MY_Model
     }
 
 
-    function rss($sec){
-        if($sec==FALSE){
-            $query=$this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
+    function rss($sec)
+    {
+        if ($sec == FALSE) {
+            $query = $this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
 									 From (Select s.id, s.title, s.subtitle, s.lead, s.body, s.modified, s.image_id
 									  	   From stories as s
 									  	   Where s.invisible=0 AND s.position<10
 									  	   Order By s.created DESC
 									  	   Limit 0 , 20) as s
 									 LEFT JOIN images as i ON s.image_id=i.id');
-        }
-        else{
-            $cat=$this->db->query('Select category_id
+        } else {
+            $cat = $this->db->query('Select category_id
 							  	   From sections
-							  	   Where id='.$sec)->result();
+							  	   Where id=' . $sec)->result();
 
-            $query=$this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
+            $query = $this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
 									 From (Select s.id, s.title, s.subtitle, s.lead, s.body, s.modified, s.image_id
 									  	   From stories as s
-									  	   Where s.category_id='.$cat[0]->category_id.' AND s.invisible=0  AND s.position<10
+									  	   Where s.category_id=' . $cat[0]->category_id . ' AND s.invisible=0  AND s.position<10
 									  	   Order By s.created DESC
 									  	   Limit 0 , 20) as s
 									 LEFT JOIN images as i ON s.image_id=i.id');
@@ -76,30 +76,41 @@ class Mdl_stories extends MY_Model
         return $query;
     }
 
-    function rssNotifificacion($sec){
-        if($sec==FALSE){
-            $query=$this->db->query('
+    function rssmarcador()
+    {
+        $query = $this->db->query('Select * From imagenesmarcador ORDER BY creado DESC ');
+        return $query;
+    }
+    function rssmarcadorprueba()
+    {
+        $query = $this->db->query('Select * From imagenesmarcador ORDER BY creado DESC ');
+        return $query;
+    }
+
+    function rssNotifificacion($sec)
+    {
+        if ($sec == FALSE) {
+            $query = $this->db->query('
 			Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
 			From (Select s.id, s.title, s.subtitle, s.lead, s.body,s.created, s.modified, s.image_id
 			  	  From stories as s
 				  Where s.invisible=0 AND s.position<10
 				  Order By s.created DESC
 				  Limit 0 , 20) as s
-				  LEFT JOIN images as i ON s.image_id=i.id ORDER BY s.modified') ;
-        }
-        else{
-            $cat=$this->db->query('
+				  LEFT JOIN images as i ON s.image_id=i.id ORDER BY s.modified');
+        } else {
+            $cat = $this->db->query('
 				Select category_id
 				From sections
-				Where id='.$sec)->result();
+				Where id=' . $sec)->result();
 
-            $query=$this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
+            $query = $this->db->query('Select s.*, UNIX_TIMESTAMP(s.modified) as ntime, i.thumb640, i.thumb400, i.thumb500, i.thumb300, i.thumb150, i.thumb100, i.thumbh160, i.thumbh120, i.thumbh80, i.thumbh50
 									 From (Select s.id, s.title, s.subtitle, s.lead, s.body, s.modified,s.created, s.image_id
 									  	   From stories as s
-									  	   Where s.category_id='.$cat[0]->category_id.' AND s.invisible=0  AND s.position<10
+									  	   Where s.category_id=' . $cat[0]->category_id . ' AND s.invisible=0  AND s.position<10
 									  	   Order By s.created DESC
 									  	   Limit 0 , 20) as s
-									 LEFT JOIN images as i ON s.image_id=i.id ORDER BY s.modified' );
+									 LEFT JOIN images as i ON s.image_id=i.id ORDER BY s.modified');
         }
 
         return $query->result();

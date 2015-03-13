@@ -17,6 +17,7 @@ if (isset($tipoLink)) {
     <div class="col-md-12 col-xs-12 col-sm-12  margen0 col-xs-2">
         <div class="noticia-img">
             <a href="<?php echo $link ?>">
+                <img width="100%" height="100%" src="http://www.futbolecuador.com/imagenes/000295a9fc4f680acd3abcf5cc9a278e.png" style="position: absolute;">
                 <img src="http://www.futbolecuador.com/<?php echo $story->thumbh50; ?>"
                      class="img-responsive visible-xs-block"
                      alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">

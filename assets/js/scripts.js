@@ -256,6 +256,14 @@ if (cronometro.length > 0) {
 }
 
 //matchdetailestado
+var resultadoteporal = "";
+var resultadotemporalOld = "";
+
+var localscore = 0;
+var localscoreOld = 0;
+var visitantescore = 0;
+var visitantescoreOld = 0;
+
 
 machDetail = $('.matchdetail');
 if (machDetail.length > 0) {
@@ -263,16 +271,38 @@ if (machDetail.length > 0) {
 
     if (estado.replace(/\s/g, '') != 'FindelPartido') {
         //recargar marcador en vivo REFRESH_VIVO
+        resultadotemporalOld = $.trim($('.resultado-equipo').text());
+
         setInterval(function () {
             $.post(baseUrl + "site/MarcadorVivoDetail/" + idEquipo + "/" + Math.floor((Math.random() * 1000000) + 1), function (data) {
                 $(".matchdetail").html(data);
                 $(".matchdetail .comentariosC").remove();
                 $(".matchdetail .comentariosB").remove();
+
+                //evento de cambio de marcador
+                resultadoteporal = $.trim($('.resultado-equipo').text());
+                if (resultadoteporal != "vs" ) {
+                    if (resultadoteporal != resultadotemporalOld){
+                        resultadotemporalOld = resultadoteporal;
+
+                        //ver si es local o visitante
+                        marcador = resultadoteporal.split(" ");
+                        localscore = marcador [0];
+                        visitantescore = marcador [2];
+
+                        if (localscore != localscoreOld){
+                            console.log ("gol local")
+                        }
+                        if (localscore != localscoreOld){
+                            console.log ("gol vistante ")
+                        }
+
+                    }
+                }
             });
         }, REFRESH_VIVO * 1000)
     }
 }
-
 
 $(window).resize(function () {
     alto = $('.flexslider  .flex-viewport').height();
@@ -284,10 +314,7 @@ $(window).resize(function () {
 
 // rotativas
 $(window).load(function () {
-
-
 //ajustes resultados
-
     var bloqueAcordio = true;
     /*  $('#accordion1').on('shown.bs.collapse', function () {
      if (bloqueAcordio) {

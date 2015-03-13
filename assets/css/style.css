@@ -1635,3 +1635,7 @@ input[type="checkbox"], input[type="radio"] {
     }
 }
 /*Fin Revista FE Magazine*/
+
+h2.h2noticiaabierta, h2.h2noticiaabierta:hover {
+    font-size: 20px;
+}

@@ -10,6 +10,7 @@
             ?>
             <li style="height: 348px;" data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
                 <a href="<?php echo $link ?>">
+                    <img width="100%" height="100%" src="http://www.futbolecuador.com/imagenes/000295a9fc4f680acd3abcf5cc9a278e.png" style="position: absolute;">
                     <img class="img" src="http://www.futbolecuador.com/<?php echo $rotativa->thumb500; ?>"
                          alt="<?php echo str_replace('"', '', "$rotativa->title"); ?>" title="<?php echo str_replace('"', '', "$rotativa->title"); ?>" style="height: 348px;" />
                 </a>

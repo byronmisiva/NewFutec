@@ -10,39 +10,49 @@ class Stories extends MY_Controller
         parent::__construct();
     }
 
-    public function index(){
-        echo "holaaa";
+    public function index()
+    {
+        redirect('home');
     }
-    public function publica(){
+
+    public function tags()
+    {
+        redirect('home');
+    }
+
+    public function publica()
+    {
         $this->db->select('s.*', FALSE);
         $this->db->where('s.id', $this->uri->segment(3));
         $aux = current($this->db->get('stories s')->result());
 
         $nombre = $this->_urlFriendly($aux->title);
-        redirect(base_url() . 'site/noticia/'.$nombre.'/' . $offset = $this->uri->segment(3));
+        redirect(base_url() . 'site/noticia/' . $nombre . '/' . $offset = $this->uri->segment(3));
     }
 
-    function _clearStringGion($string) {
-        $tempSting = str_replace(' ','-',$this->_clearString($string) );
+    function _clearStringGion($string)
+    {
+        $tempSting = str_replace(' ', '-', $this->_clearString($string));
 
         $tempSting = str_replace(
-            array("\\", "¨", "º",  "~",
+            array("\\", "¨", "º", "~",
                 "#", "@", "|", "!", "\"",
                 "·", "$", "%", "&", "/",
                 "(", ")", "?", "'", "¡",
                 "¿", "[", "^", "`", "]",
                 "+", "}", "{", "¨", "´",
                 ">", "< ", ";", ",", ":",
-                ".", '"', '“', '”', ' '  ),
+                ".", '"', '“', '”', ' '),
             '',
             $tempSting
         );
 
-        $tempSting = str_replace('---','-',$tempSting );
-        $tempSting = str_replace('--','-',$tempSting );
+        $tempSting = str_replace('---', '-', $tempSting);
+        $tempSting = str_replace('--', '-', $tempSting);
 
         return $tempSting;
     }
+
     function _clearString($string)
     {
 
@@ -88,20 +98,20 @@ class Stories extends MY_Controller
         return $string;
     }
 
-    function _urlFriendly ($string){
-        return strtolower($this->_clearStringGion ($string)) ;
+    function _urlFriendly($string)
+    {
+        return strtolower($this->_clearStringGion($string));
     }
 
 
-
-
-    function rss(){
+    function rssmarcador()
+    {
         $this->config->set_item('compress_output', 'FALSE');
-        $data['name']='XML RSS';
-        $data['views']=1;
+        $data['name'] = 'XML RSS';
+        $data['views'] = 1;
         $this->sum($data);
         header('Content-type: text/xml; charset=utf-8');
-        $request='<?xml version="1.0" encoding="UTF-8"?>
+        $request = '<?xml version="1.0" encoding="UTF-8"?>
 			  <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
 			  <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
 					     xmlns:atom="http://www.w3.org/2005/Atom"
@@ -120,69 +130,190 @@ class Stories extends MY_Controller
 						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
 					</image>
 					<language>es-ec</language>
-					<pubDate>'.date('r',time()).'</pubDate>
+					<pubDate>' . date('r', time()) . '</pubDate>
 				 ';
-        if($this->uri->segment(3)!=3)
-            $news=$this->mdl_stories->rss($this->uri->segment(3));
+        if ($this->uri->segment(3) != 3)
+            $news = $this->mdl_stories->rssmarcador($this->uri->segment(3));
         else
-            $news=$this->mdl_stories->rss(FALSE);
+            $news = $this->mdl_stories->rssmarcador(FALSE);
 
-        foreach($news->result() as $row):
-            $posicionInicio=0;
-            $texto = strip_tags ($row->body);
-            $texto = (string)$texto;
-            $total= strlen($texto);
-            $posicionInicio=strpos($texto , "iframe");
-            if ($posicionInicio>0){
-                $video = substr($texto,$posicionInicio,$total);
-                $posicionInicio=(int)$posicionInicio-4;
-                $texto2 = substr($texto,0,$posicionInicio);
-                $video="<figure><".$video."</figure>";
-            }else{
-                $texto2=$row->body;
-                $video="";
-            }
+        foreach ($news->result() as $row):
 
-            $linkbody = $row->subtitle;
-            if ($linkbody == "")  {
-                $linkbody = $row->title;
-            }
-
-            $request=$request.'
+            $request = $request . '
 				<item>
-				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/site/noticia/'. $this->_urlFriendly($linkbody).'/'.$row->id.'</link>
-	      			  <guid>http://www.futbolecuador.com/site/noticia/'. $this->_urlFriendly($linkbody).'/'.$row->id.'</guid>
-	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
+				  <title>' . $row->texto . '</title>
+ 	      			  <link>' . $row->link . '</link>
+	      			  <guid>' . $row->link . '</guid>
+	      			  <pubDate>' .   $row->creado  . '</pubDate>
 				  	  <author>info@futbolecuador.com</author>
-	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
+	      			  <description><![CDATA[<img src="http://new.futbolecuador.com/getmarcador/' .  $row->imagen . '"/><br>' . $row->texto . '<span>&nbsp;</span>]]></description>
 	      			  <content:encoded><![CDATA[
 				        <figure>
-				          <img src="http://www.futbolecuador.com/'.$row->thumb640.'"  />
+				          <img src="http://new.futbolecuador.com/getmarcador/' . $row->imagen . '"  />
 				          <figcaption>
 
 				          </figcaption>
 				        </figure>
-				        <p>'.$texto2.'</p>
-					  '.$video.'
+				        <p>' . $row->texto . '</p>
 					]]>
 				  </content:encoded>
 				</item>';
         endforeach;
-        $request=$request.'
+        $request = $request . '
+			</channel></rss>';
+        print $request;
+    }
+
+    function rssmarcadorprueba()
+    {
+        $this->config->set_item('compress_output', 'FALSE');
+        $data['name'] = 'XML RSS';
+        $data['views'] = 1;
+        $this->sum($data);
+        header('Content-type: text/xml; charset=utf-8');
+        $request = '<?xml version="1.0" encoding="UTF-8"?>
+			  <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+			  <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+					     xmlns:atom="http://www.w3.org/2005/Atom"
+					     xmlns:media="http://search.yahoo.com/mrss/"
+					     xmlns:dc="http://purl.org/dc/elements/1.1/"
+					     xmlns:georss="http://www.georss.org/georss">
+					<channel>
+					<atom:link rel="hub" href="http://www.futbolecuador.com" />
+					<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+					<title>futbolecuador.com</title>
+					<link>http://www.futbolecuador.com</link>
+					<description><![CDATA[Futbol del Ecuador y del mundo]]></description>
+					<image>
+						<title>futbolecuador.com</title>
+						<link>http://www.futbolecuador.com</link>
+						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
+					</image>
+					<language>es-ec</language>
+					<pubDate>' . date('r', time()) . '</pubDate>
+				 ';
+        if ($this->uri->segment(3) != 3)
+            $news = $this->mdl_stories->rssmarcadorprueba($this->uri->segment(3));
+        else
+            $news = $this->mdl_stories->rssmarcadorprueba(FALSE);
+
+        foreach ($news->result() as $row):
+
+            $request = $request . '
+				<item>
+				  <title>' . $row->texto . '</title>
+ 	      			  <link>' . $row->link . '</link>
+	      			  <guid>' . $row->link . '</guid>
+	      			  <pubDate>' .   $row->creado  . '</pubDate>
+				  	  <author>info@futbolecuador.com</author>
+	      			  <description><![CDATA[<img src="http://new.futbolecuador.com/getmarcador/' .  $row->imagen . '"/><br>' . $row->texto . '<span>&nbsp;</span>]]></description>
+	      			  <content:encoded><![CDATA[
+				        <figure>
+				          <img src="http://new.futbolecuador.com/getmarcador/' . $row->imagen . '"  />
+				          <figcaption>
+
+				          </figcaption>
+				        </figure>
+				        <p>' . $row->texto . '</p>
+					]]>
+				  </content:encoded>
+				</item>';
+        endforeach;
+        $request = $request . '
+			</channel></rss>';
+        print $request;
+    }
+
+    function rss()
+    {
+        $this->config->set_item('compress_output', 'FALSE');
+        $data['name'] = 'XML RSS';
+        $data['views'] = 1;
+        $this->sum($data);
+        header('Content-type: text/xml; charset=utf-8');
+        $request = '<?xml version="1.0" encoding="UTF-8"?>
+			  <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+			  <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+					     xmlns:atom="http://www.w3.org/2005/Atom"
+					     xmlns:media="http://search.yahoo.com/mrss/"
+					     xmlns:dc="http://purl.org/dc/elements/1.1/"
+					     xmlns:georss="http://www.georss.org/georss">
+					<channel>
+					<atom:link rel="hub" href="http://www.futbolecuador.com" />
+					<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+					<title>futbolecuador.com</title>
+					<link>http://www.futbolecuador.com</link>
+					<description><![CDATA[Futbol del Ecuador y del mundo]]></description>
+					<image>
+						<title>futbolecuador.com</title>
+						<link>http://www.futbolecuador.com</link>
+						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
+					</image>
+					<language>es-ec</language>
+					<pubDate>' . date('r', time()) . '</pubDate>
+				 ';
+        if ($this->uri->segment(3) != 3)
+            $news = $this->mdl_stories->rss($this->uri->segment(3));
+        else
+            $news = $this->mdl_stories->rss(FALSE);
+
+        foreach ($news->result() as $row):
+            $posicionInicio = 0;
+            $texto = strip_tags($row->body);
+            $texto = (string)$texto;
+            $total = strlen($texto);
+            $posicionInicio = strpos($texto, "iframe");
+            if ($posicionInicio > 0) {
+                $video = substr($texto, $posicionInicio, $total);
+                $posicionInicio = (int)$posicionInicio - 4;
+                $texto2 = substr($texto, 0, $posicionInicio);
+                $video = "<figure><" . $video . "</figure>";
+            } else {
+                $texto2 = $row->body;
+                $video = "";
+            }
+
+            $linkbody = $row->subtitle;
+            if ($linkbody == "") {
+                $linkbody = $row->title;
+            }
+
+            $request = $request . '
+				<item>
+				  <title>' . $row->title . '</title>
+ 	      			  <link>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</link>
+	      			  <guid>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</guid>
+	      			  <pubDate>' . date('r', $row->ntime) . '</pubDate>
+				  	  <author>info@futbolecuador.com</author>
+	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/' . $row->thumb640 . '"/><br>' . $row->lead . '<span>&nbsp;</span>]]></description>
+	      			  <content:encoded><![CDATA[
+				        <figure>
+				          <img src="http://www.futbolecuador.com/' . $row->thumb640 . '"  />
+				          <figcaption>
+
+				          </figcaption>
+				        </figure>
+				        <p>' . $texto2 . '</p>
+					  ' . $video . '
+					]]>
+				  </content:encoded>
+				</item>';
+        endforeach;
+        $request = $request . '
 			</channel></rss>';
         print $request;
     }
 
 
-    function rss2(){
+    function rss2()
+    {
         $this->config->set_item('compress_output', 'FALSE');
         $this->output->cache(CACHE_DEFAULT);
-        $data['name']='XML RSS';
-        $data['views']=1;
+        $data['name'] = 'XML RSS';
+        $data['views'] = 1;
         $this->statistic->sum($data);
         header('Content-type: text/xml; charset=utf-8');
-        $request='<?xml version="1.0" encoding="UTF-8"?>
+        $request = '<?xml version="1.0" encoding="UTF-8"?>
 			  <?xml-stylesheet type="text/xsl" media="screen"
 			  href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen"
 			  href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
@@ -204,93 +335,94 @@ class Stories extends MY_Controller
 					</image>
 					<language>es-ec</language>';
 
-        if($this->uri->segment(3)!=3)
-            $news=$this->model->rss($this->uri->segment(3));
+        if ($this->uri->segment(3) != 3)
+            $news = $this->model->rss($this->uri->segment(3));
         else
-            $news=$this->model->rss(FALSE);
+            $news = $this->model->rss(FALSE);
 
-        foreach($news->result() as $row):
+        foreach ($news->result() as $row):
 
-            $request=$request.'
+            $request = $request . '
 				<item>
-				  <title>'.$row->title.'</title>
- 	      			  <link>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</link>
-	      			  <guid>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</guid>
-	      			  <pubDate>'.date('r',$row->ntime).'</pubDate>
+				  <title>' . $row->title . '</title>
+ 	      			  <link>http://www.futbolecuador.com/site/noticia/' . $this->stories->_urlFriendly($row->title) . '/' . $row->id . '</link>
+	      			  <guid>http://www.futbolecuador.com/site/noticia/' . $this->stories->_urlFriendly($row->title) . '/' . $row->id . '</guid>
+	      			  <pubDate>' . date('r', $row->ntime) . '</pubDate>
 				  <author>info@futbolecuador.com</author>
-	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/><br>'.$row->lead.'<span>&nbsp;</span>]]></description>
+	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/' . $row->thumb640 . '"/><br>' . $row->lead . '<span>&nbsp;</span>]]></description>
 	      			  <content:encoded><![CDATA[
-				        <p class="fl-title">'.$row->title.'</p>
+				        <p class="fl-title">' . $row->title . '</p>
 				        <figure>
-				          <img src="http://www.futbolecuador.com/'.$row->thumb640.'"  />
+				          <img src="http://www.futbolecuador.com/' . $row->thumb640 . '"  />
 				          <figcaption>
-				           <strong>'.$row->title.'</strong>
+				           <strong>' . $row->title . '</strong>
 				          </figcaption>
 				        </figure>
-				         '.$row->body.']]>
+				         ' . $row->body . ']]>
 				  </content:encoded>
 				</item>';
         endforeach;
-        $request=$request.'
+        $request = $request . '
 		</channel></rss>';
         print $request;
     }
 
-    function news_section(){
-        $data['name']='XML RSS';
-        $data['views']=1;
+    function news_section()
+    {
+        $data['name'] = 'XML RSS';
+        $data['views'] = 1;
         $this->statistic->sum($data);
-        $request='<?xml version="1.0" encoding="UTF-8"?>
+        $request = '<?xml version="1.0" encoding="UTF-8"?>
 				  <rotativa>';
-        if($this->uri->segment(3)!=3)
-            $news=$this->model->rss($this->uri->segment(3));
+        if ($this->uri->segment(3) != 3)
+            $news = $this->model->rss($this->uri->segment(3));
         else
-            $news=$this->model->rss(FALSE);
-        foreach($news->result() as $row):
-            $request=$request.'<noticia>
-								<link>http://www.futbolecuador.com/site/noticia/'. $this->stories->_urlFriendly($row->title).'/'.$row->id.'</link>
-								<titulo>'.$row->title.'</titulo>
-								<subtitulo>'.$row->subtitle.'</subtitulo>
-								<imagen>'.$row->thumb300.'</imagen>
-								<thumb>'.$row->thumbh50.'</thumb>
-								<noticia><![CDATA['.mb_convert_encoding($row->lead, 'UTF-8','HTML-ENTITIES').']]></noticia>
-								<id>'.$row->id.'</id>
+            $news = $this->model->rss(FALSE);
+        foreach ($news->result() as $row):
+            $request = $request . '<noticia>
+								<link>http://www.futbolecuador.com/site/noticia/' . $this->stories->_urlFriendly($row->title) . '/' . $row->id . '</link>
+								<titulo>' . $row->title . '</titulo>
+								<subtitulo>' . $row->subtitle . '</subtitulo>
+								<imagen>' . $row->thumb300 . '</imagen>
+								<thumb>' . $row->thumbh50 . '</thumb>
+								<noticia><![CDATA[' . mb_convert_encoding($row->lead, 'UTF-8', 'HTML-ENTITIES') . ']]></noticia>
+								<id>' . $row->id . '</id>
 							   </noticia>';
         endforeach;
-        $request=$request.'</rotativa>';
+        $request = $request . '</rotativa>';
         header('Content-type: text/xml; charset=utf-8');
         print $request;
     }
-    function sum($data){
 
-        $query=$this->db->query('Select * From statistics Where name="'.$data['name'].'"');
+    function sum($data)
+    {
 
-        if($query->num_rows()==0){
-            $this->db->insert('statistics',$data);
-            $last=$this->db->insert_id();
+        $query = $this->db->query('Select * From statistics Where name="' . $data['name'] . '"');
+
+        if ($query->num_rows() == 0) {
+            $this->db->insert('statistics', $data);
+            $last = $this->db->insert_id();
+        } else {
+            $q = $query->result();
+            $data['views'] = $q[0]->views + 1;
+            $this->db->where('name', $q[0]->name);
+            $this->db->update('statistics', $data);
+            $last = $q[0]->id;
         }
-        else{
-            $q=$query->result();
-            $data['views']=$q[0]->views+1;
-            $this->db->where('name',$q[0]->name);
-            $this->db->update('statistics',$data);
-            $last=$q[0]->id;
-        }
 
-        $query=$this->db->query('Select * From statistics_days Where statistic_id='.$last.' AND date="'. $this->mdate('%Y-%m-%d',time()).'"');
+        $query = $this->db->query('Select * From statistics_days Where statistic_id=' . $last . ' AND date="' . $this->mdate('%Y-%m-%d', time()) . '"');
 
         unset($data['name']);
-        $data['statistic_id']=$last;
-        $data['views']=1;
-        if($query->num_rows()==0){
-            $data['date']=$this->mdate('%Y-%m-%d',time());
-            $this->db->insert('statistics_days',$data);
-        }
-        else{
-            $q=$query->result();
-            $data['views']=$q[0]->views+1;
-            $this->db->where('id',$q[0]->id);
-            $this->db->update('statistics_days',$data);
+        $data['statistic_id'] = $last;
+        $data['views'] = 1;
+        if ($query->num_rows() == 0) {
+            $data['date'] = $this->mdate('%Y-%m-%d', time());
+            $this->db->insert('statistics_days', $data);
+        } else {
+            $q = $query->result();
+            $data['views'] = $q[0]->views + 1;
+            $this->db->where('id', $q[0]->id);
+            $this->db->update('statistics_days', $data);
         }
 
 

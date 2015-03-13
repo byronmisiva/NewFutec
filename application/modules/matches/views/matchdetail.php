@@ -33,7 +33,8 @@ $estado['8'] = 'Fin del Partido';?>
 
                         <div class="col-md-2 col-xs-1 margen0 text-center ">
                             <img class="img-responsive-xs"
-                                 src="http://www.futbolecuador.com/<?= $teams_pics['shield'][$team->hid]; ?>">
+                                 src="http://www.futbolecuador.com/<?= $teams_pics['shield'][$team->hid]; ?>"
+                                alt = "<?= $team->hname ?>" title = "<?= $team->hname  ?>">
                         </div>
                         <div class="col-md-8 col-xs-10   margen0    ">
                             <div class="col-md-12 col-xs-12   margen0    ">
@@ -72,7 +73,7 @@ $estado['8'] = 'Fin del Partido';?>
                                      echo $teams_pics['shield'][$team->aid];
                                  } else {
                                      echo "/imagenes/teams/shield/default.png";
-                                 } ?>">
+                                 } ?>" alt = "<?= $team->aname ?>" title = "<?= $team->aname  ?>">
                         </div>
                     </a>
                 </div>
@@ -92,7 +93,7 @@ $estado['8'] = 'Fin del Partido';?>
                          echo $infoLocal->shirt;
                      } else {
                          echo "imagenes/teams/shirt/uniforme.jpg";
-                     } ?>" alt="<?php echo $infoLocal->name ?>">
+                     } ?>" alt="<?php echo $infoLocal->name ?>" title="<?php echo "Camiseta de " . $infoLocal->name ?>">
             </div>
             <div class="col-md-6   col-xs-6 margen0">
                 <div class="col-md-12 col-xs-12 text-right separador10 nombre-equipo margen5l">
@@ -147,7 +148,7 @@ $estado['8'] = 'Fin del Partido';?>
                      } else {
                          echo "imagenes/teams/shirt/uniforme.jpg";
                      } ?>"
-                     alt="<?php echo $infoVisitante->name ?>">
+                     alt="<?php echo $infoVisitante->name ?>" title="<?php echo "Camiseta de " . $infoVisitante->name ?>">
             </div>
         </div>
     </div>
@@ -221,7 +222,7 @@ $estado['8'] = 'Fin del Partido';?>
                     <div class="col-md-12 col-xs-12 separador5   lineseparador-dot">
                         <div class="col-md-2 col-xs-2">
                             <div class="col-md-6 col-xs-6">
-                                <img src="<?php echo $action['tipo']; ?>">
+                                <img src="<?php echo $action['tipo']; ?>" alt = "Acción partido"  title = "Acción partido">
                             </div>
                             <div class="col-md-6 col-xs-6 nombre-equipo">
                                 <?php echo $action['minuto'];

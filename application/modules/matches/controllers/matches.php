@@ -24,9 +24,27 @@ class Matches extends MY_Controller
         $match = $query->result();
         $team_id_home = $match[0]->team_id_home;
         $team_id_away = $match[0]->team_id_away;
-        return $this->getTeamName($team_id_home) . "-" . $this->getTeamName($team_id_away);
+        return $this->getTeamName($team_id_home) . " - " . $this->getTeamName($team_id_away)  ;
+    }
+    public function getMatchNameLong($id)
+    {
+        //recuperamos id equipos del partido
+        $this->db->where('match_id', $id);
+        $query = $this->db->get('matches_teams');
+        $match = $query->result();
+        $team_id_home = $match[0]->team_id_home;
+        $team_id_away = $match[0]->team_id_away;
 
-
+        $this->db->where('id', $id);
+        $query = $this->db->get('matches');
+        $matchdetail = $query->result();
+        if ($matchdetail[0]->state = "0")
+            $resultado = ". Resultado: ". $matchdetail[0]->result;
+        else
+            $resultado = ".";
+        setlocale(LC_ALL, "es_ES");
+        $fecha = ucwords(utf8_encode(strftime("%A, %d %B %Y, %HH%M", strtotime($matchdetail[0]->date_match))));
+        return $this->getTeamName($team_id_home) . " - " . $this->getTeamName($team_id_away) . ", fecha: " . $fecha . $resultado;
     }
 
     public function getTeamName($id)

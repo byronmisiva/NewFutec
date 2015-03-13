@@ -25,6 +25,9 @@
   <tr>
     <td width="100%"><div align="right"><a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 15);?>'><img src="<?=$path?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /></a></div></td>
   </tr>
+    <tr>
+        <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarImagen' target="_blank"><span style="color: #fff; font-size:11px;font-family:  Arial, Verdana">Generar Marcador</span> </a></div></td>
+    </tr>
   <tr>
     <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>

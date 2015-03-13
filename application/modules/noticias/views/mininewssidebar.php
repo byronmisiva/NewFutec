@@ -23,7 +23,7 @@
                             alt="<?php echo str_replace('"', '', "$noticia->title"); ?>" title="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
                 <div class="col-md-10  col-sm-9">
-                    <h2><a href="<?php echo $link ?>"><?php echo $linkbody; ?></a></h2>
+                    <h2><a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
                     <?php
                     if (strlen(strip_tags($noticia->lead)) == 0) {
                         $num = 100;
