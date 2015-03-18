@@ -193,16 +193,21 @@ class Site extends MY_Controller
 
         $idsection = $this->uri->segment(4);
         $posSection = $this->uri->segment(5);
+        $urlSeccion = $this->uri->segment(6);
+
+        if ($urlSeccion = "equipo") {
+            $urlSeccion .= "/". $this->uri->segment(7) ."/". $this->uri->segment(8);
+        }
 
         if (!$idsection) {
             $masnoticias = $this->noticias->viewNoticiasHome(false, RESULT_PAGE - 1, $offset);
             if (count($masnoticias) > 0) {
                 echo $masnoticias;
             } else {
-                echo "mal";
+                echo "error";
             }
         } else {
-            echo $this->noticias->viewSeccions("", $idsection, $posSection, "", RESULT_PAGE - 1, $offset, false);
+            echo $this->noticias->viewSeccions("", $idsection, $posSection, $urlSeccion, RESULT_PAGE - 1, $offset, false);
         }
     }
 

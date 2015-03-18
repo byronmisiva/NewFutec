@@ -54,6 +54,6 @@ foreach ($noticias as $noticia) {
 </div>
 
 <div class="col-md-12 text-right fondoazul separador10 masnoticias" offset="<?php echo rand() . "-" . $offset; ?>"
-     section="<?php echo $idsection; ?>" pos="<?php echo $posSection; ?>">
+     urlSeccion="<?php echo (isset($urlsecction))? $urlsecction: ""; ?>" section="<?php echo $idsection; ?>" pos="<?php echo $posSection; ?>">
     Más Noticias
 </div>
