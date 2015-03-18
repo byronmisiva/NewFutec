@@ -208,7 +208,7 @@ class Noticias extends MY_Controller
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
 
-        $data['offset'] = $totalMiniNews;
+        $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = trim($idsection);
         $data['posSection'] = $posSection;
 
