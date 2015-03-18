@@ -622,9 +622,9 @@ function igualarancho() {
         zonasidebar = $(".zonasidebar").height();
 
         if (zonacontenido >= zonasidebar) {
-            // $(".zonasidebar").height(zonacontenido);
+             $(".zonasidebar").height(zonacontenido);
         } else {
-            //  $(".zonacontenido").height(zonasidebar);
+              $(".zonacontenido").height(zonasidebar);
         }
     }
 }

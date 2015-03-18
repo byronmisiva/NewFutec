@@ -1575,6 +1575,13 @@ input[type="checkbox"], input[type="radio"] {
     }
 }
 
+
+@media screen and (min-width: 728px) {
+    .noticia-img {
+        height: 160px;
+    }
+}
+
 @media screen and (max-device-width: 300px) {
     .redireccionFE {
         background-color: rgba(0, 0, 0, 0.7);
