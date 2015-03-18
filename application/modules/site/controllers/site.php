@@ -13,7 +13,7 @@ class Site extends MY_Controller
     function verificarDispositivo()
     {
         $this->load->library('user_agent');
-        $mobiles = array('Sony Ericsson', 'Apple iPhone', 'Ipad', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia");
+        $mobiles = array('Sony Ericsson', 'Apple iPhone', 'Ipad', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia", "BlackBerry");
         $isMobile = "0";
         if ($this->agent->is_mobile()) {
             $m = $this->agent->mobile();
