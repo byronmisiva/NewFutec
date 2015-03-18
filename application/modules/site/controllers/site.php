@@ -195,7 +195,7 @@ class Site extends MY_Controller
         $posSection = $this->uri->segment(5);
         $urlSeccion = $this->uri->segment(6);
 
-        if ($urlSeccion = "equipo") {
+        if ("equipo" == $urlSeccion  ) {
             $urlSeccion .= "/". $this->uri->segment(7) ."/". $this->uri->segment(8);
         }
 
