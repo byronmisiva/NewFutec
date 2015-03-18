@@ -101,7 +101,11 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-        $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones;
+        $outbrain  = '<!--Inicio ejemplo -->
+                        <div data-src="futbolecuador" class="OUTBRAIN" ></div>
+                        <script type="text/javascript">(function(){window.OB_platformType=8;window.OB_langJS="http://widgets.outbrain.com/lang_es.js";window.OBITm="1426714580680";window.OB_recMode="brn_strip";var ob=document.createElement("script");ob.type="text/javascript";ob.async=true;ob.src="http"+("https:"===document.location.protocol?"s":"")+"://widgets.outbrain.com/outbrainLT.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(ob,h);})();</script>
+                        <!--Fin ejemplo -->';
+        $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $outbrain.  $tablaposiciones ;
         $data['sidebar'] = "";
 
         $data['footer'] = '';
