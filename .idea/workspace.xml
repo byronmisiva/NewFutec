@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.84313726" vertical-offset="1304" max-vertical-offset="10035">
-              <caret line="107" column="163" selection-start-line="107" selection-start-column="163" selection-end-line="107" selection-end-column="163" />
+              <caret line="107" column="162" selection-start-line="107" selection-start-column="162" selection-end-line="107" selection-end-column="162" />
               <folding />
             </state>
           </provider>
@@ -4105,7 +4105,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426715479113</updated>
     </task>
-    <option name="localTasksCounter" value="637" />
+    <task id="LOCAL-00637" summary="e">
+      <created>1426716556426</created>
+      <option name="number" value="00637" />
+      <option name="project" value="LOCAL" />
+      <updated>1426716556426</updated>
+    </task>
+    <option name="localTasksCounter" value="638" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4520,7 +4526,7 @@
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84313726" vertical-offset="1304" max-vertical-offset="10035">
-          <caret line="107" column="163" selection-start-line="107" selection-start-column="163" selection-end-line="107" selection-end-column="163" />
+          <caret line="107" column="162" selection-start-line="107" selection-start-column="162" selection-end-line="107" selection-end-column="162" />
           <folding />
         </state>
       </provider>
