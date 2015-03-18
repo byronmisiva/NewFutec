@@ -189,7 +189,7 @@ class Site extends MY_Controller
         $this->load->module('noticias');
         $offset = $this->uri->segment(3);
         $porciones = explode("-", $offset);
-        $offset = $porciones[1];
+        $offset = $porciones[1] + RESULT_PAGE;
 
         $idsection = $this->uri->segment(4);
         $posSection = $this->uri->segment(5);
