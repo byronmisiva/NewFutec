@@ -44,6 +44,18 @@ class Mdl_story extends MY_Model
 
         return $aux;
     }
+    function news_by_tags($tag, $limit= "", $offset = 0){
+        if ("" != $limit ){
+            $limit = "limit " . $limit;
+        }
+        $data =  $this->db->query('SELECT s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, s.modified, UNIX_TIMESTAMP(s.modified) AS datem, i.thumb300, i.thumbh120, i.thumbh80, i.thumbh50
+                                    FROM stories_tags st INNER JOIN tags t ON st.tag_id = t.id
+                                    INNER JOIN stories s ON s.id = st.story_id
+                                    INNER JOIN images i ON s.image_id = i.id
+                                    WHERE lower(t. NAME) IN (lower("'.$tag.'")) AND s.position != 10
+                                    ORDER BY s.modified DESC '.$limit);
+        return $data->result();
+    }
 
     function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '', $offset = 0)
     {
@@ -67,7 +79,7 @@ class Mdl_story extends MY_Model
             $this->db->where_not_in('s.id', $exclude);
 
         $aux = $this->db->get()->result();
-
+        $temp = $this->db->last_query();
         if ($offset == 0) {
             $aux = array_reverse($aux);
             $aux = array_splice($aux, 0, $limit);

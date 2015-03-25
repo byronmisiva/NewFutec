@@ -1,19 +1,15 @@
 <!--Tabla de Posiciones-->
 <div class="col-md-12 separador10-xs margen0r">
     <div class="panel-heading backcuadros">
-        <h4 class="panel-title">
+        <h1 class="tabla">
             Tabla de Posiciones
-        </h4>
+        </h1>
     </div>
-
     <? echo $scroreBoardSingle; ?>
-
     <div class="panel-heading backcuadros">
-        <h4 class="panel-title">
+        <h2 class="tabla">
             Tabla de Posiciones Acumulada
-        </h4>
+        </h2>
     </div>
-
     <? echo $scroreBoardAcumulative; ?>
-
 </div>

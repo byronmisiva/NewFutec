@@ -9,7 +9,13 @@
         <div class="containerfueradejuego galeria18content">
             <div class="liquid-slider" id="main-slider18">
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1a.jpg" alt="Karen"/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1a.jpg" alt="Karen"/>
+                    <div class="socialesFueradeJuego">
+                        Nombre
+                        twiter
+                        facebook
+                    </div>
+                </div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/2b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/2a.jpg" alt="Karen"/></div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/3b.jpg" alt=" "/></div>

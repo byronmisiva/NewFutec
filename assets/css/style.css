@@ -49,6 +49,7 @@ footer {
     padding: 0 20px 12px 0;
 }
 
+
 .jumbotron.intro {
     margin-top: 0;
 }
@@ -1645,4 +1646,12 @@ input[type="checkbox"], input[type="radio"] {
 
 h2.h2noticiaabierta, h2.h2noticiaabierta:hover {
     font-size: 20px;
+}
+
+
+h1.tabla, h2.tabla {
+    font-size: 14px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: normal;
 }

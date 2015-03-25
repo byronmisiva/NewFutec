@@ -13,9 +13,7 @@ $estado['8'] = 'Fin del Partido';?>
     <div class="matchdetail col-md-12 separador10-xs margen0 margen0-xs">
     <div class="col-md-12   margen0">
         <div class="panel-heading backcuadros">
-            <h4 class="panel-title">
-                <? echo $title; ?>
-            </h4>
+            <h1 class="tabla textomarcadorenvivo"><? echo $title; ?></h1>
         </div>
     </div>
     <!--El marcador-->
@@ -34,7 +32,7 @@ $estado['8'] = 'Fin del Partido';?>
                         <div class="col-md-2 col-xs-1 margen0 text-center ">
                             <img class="img-responsive-xs"
                                  src="http://www.futbolecuador.com/<?= $teams_pics['shield'][$team->hid]; ?>"
-                                alt = "<?= $team->hname ?>" title = "<?= $team->hname  ?>">
+                                 alt="<?= $team->hname ?>" title="<?= $team->hname ?>">
                         </div>
                         <div class="col-md-8 col-xs-10   margen0    ">
                             <div class="col-md-12 col-xs-12   margen0    ">
@@ -52,11 +50,11 @@ $estado['8'] = 'Fin del Partido';?>
                                 </div>
                             </div>
                             <div class="matchdetailestado col-md-12 col-xs-12 text-center textos-equipo clearfix">
-                                <?php if (($cronometro['estado']== 1)||($cronometro['estado']== 3)||($cronometro['estado']== 5)||($cronometro['estado']== 6)) {
-                                        echo '<div class = "cronometro">'. $cronometro['minuto'] . ":" . $cronometro['segundo'] . " - " . $cronometro['tiempo'] ."</div>";
+                                <?php if (($cronometro['estado'] == 1) || ($cronometro['estado'] == 3) || ($cronometro['estado'] == 5) || ($cronometro['estado'] == 6)) {
+                                    echo '<div class = "cronometro">' . $cronometro['minuto'] . ":" . $cronometro['segundo'] . " - " . $cronometro['tiempo'] . "</div>";
 
                                 } else {
-                                        echo  $estado[$team->state] ;
+                                    echo $estado[$team->state];
                                 }
                                 ?>
                             </div>
@@ -73,7 +71,7 @@ $estado['8'] = 'Fin del Partido';?>
                                      echo $teams_pics['shield'][$team->aid];
                                  } else {
                                      echo "/imagenes/teams/shield/default.png";
-                                 } ?>" alt = "<?= $team->aname ?>" title = "<?= $team->aname  ?>">
+                                 } ?>" alt="<?= $team->aname ?>" title="<?= $team->aname ?>">
                         </div>
                     </a>
                 </div>
@@ -148,7 +146,8 @@ $estado['8'] = 'Fin del Partido';?>
                      } else {
                          echo "imagenes/teams/shirt/uniforme.jpg";
                      } ?>"
-                     alt="<?php echo $infoVisitante->name ?>" title="<?php echo "Camiseta de " . $infoVisitante->name ?>">
+                     alt="<?php echo $infoVisitante->name ?>"
+                     title="<?php echo "Camiseta de " . $infoVisitante->name ?>">
             </div>
         </div>
     </div>
@@ -222,7 +221,7 @@ $estado['8'] = 'Fin del Partido';?>
                     <div class="col-md-12 col-xs-12 separador5   lineseparador-dot">
                         <div class="col-md-2 col-xs-2">
                             <div class="col-md-6 col-xs-6">
-                                <img src="<?php echo $action['tipo']; ?>" alt = "Acción partido"  title = "Acción partido">
+                                <img src="<?php echo $action['tipo']; ?>" alt="Acción partido" title="Acción partido">
                             </div>
                             <div class="col-md-6 col-xs-6 nombre-equipo">
                                 <?php echo $action['minuto'];
@@ -288,7 +287,7 @@ $estado['8'] = 'Fin del Partido';?>
                                 $accionesJugador = accionJugador($titular);
                                 ?>
                                 <div
-                                    class="col-md-12 col-xs-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name .$accionesJugador; ?></div>
+                                    class="col-md-12 col-xs-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name . $accionesJugador; ?></div>
                             <?php
                             }
                         }
@@ -344,7 +343,7 @@ $estado['8'] = 'Fin del Partido';?>
                                 $accionesJugador = accionJugador($titular);
                                 ?>
                                 <div
-                                    class="col-md-12 col-xs-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name .$accionesJugador; ?></div>
+                                    class="col-md-12 col-xs-12 separador5   lineseparador-dot"> <?php echo $titular->last_name . " " . $titular->first_name . $accionesJugador; ?></div>
                             <?php
                             }
                         }
@@ -358,8 +357,8 @@ $estado['8'] = 'Fin del Partido';?>
     <div class="col-md-12 col-xs-12 separador10-xs margen0l">
         <div class="panel-heading fondoazul">
             <h4 class="panel-title">
-                <a href="<?= base_url('site/marcadorenvivo') ?>" >
-                Ir Listado Marcador en Vivo
+                <a href="<?= base_url('site/marcadorenvivo') ?>">
+                    Ir Listado Marcador en Vivo
                 </a>
 
             </h4>
@@ -397,8 +396,10 @@ $estado['8'] = 'Fin del Partido';?>
         <h4 class="panel-title">Comentarios </h4>
     </div>
 
-    <div  class=" comentariosB separador10 col-xs-12 col-md-12 center-block" data-href="<?php //echo $url?>">
-        <div class="fb-comments" data-href="<?php echo base_url(). "site/partido/". $this->matches->_urlFriendly( $teams[0]->hname) . "-" . $this->matches->_urlFriendly($teams[0]->aname) . "/" . $teams[0]->id ?>" data-width="100%" data-numposts="5"
+    <div class=" comentariosB separador10 col-xs-12 col-md-12 center-block" data-href="<?php //echo $url?>">
+        <div class="fb-comments"
+             data-href="<?php echo base_url() . "site/partido/" . $this->matches->_urlFriendly($teams[0]->hname) . "-" . $this->matches->_urlFriendly($teams[0]->aname) . "/" . $teams[0]->id ?>"
+             data-width="100%" data-numposts="5"
              data-colorscheme="light"></div>
     </div>
 
@@ -414,19 +415,19 @@ function accionJugador($titular)
     if (isset($titular->cambios)) {
         foreach ($titular->cambios as $cambio) {
             if ($titular->id == $cambio->in) {
-                $accionesJugador .= ' <img  alt="Cambio - '.$cambio->minute.'\'" src="http://www.futbolecuador.com/imagenes/icons/mccambio.png" title="Cambio - '.$cambio->minute.'\'"> (' . $cambio->minute.'\')';
+                $accionesJugador .= ' <img  alt="Cambio - ' . $cambio->minute . '\'" src="http://www.futbolecuador.com/imagenes/icons/mccambio.png" title="Cambio - ' . $cambio->minute . '\'"> (' . $cambio->minute . '\')';
             }
             if ($titular->id == $cambio->out) {
-                $accionesJugador .= ' <img  alt="Cambio - '.$cambio->minute.'\'" src="http://www.futbolecuador.com/imagenes/icons/mccambio.png" title="Cambio - '.$cambio->minute.'\'"> (' . $cambio->minute.'\')';
+                $accionesJugador .= ' <img  alt="Cambio - ' . $cambio->minute . '\'" src="http://www.futbolecuador.com/imagenes/icons/mccambio.png" title="Cambio - ' . $cambio->minute . '\'"> (' . $cambio->minute . '\')';
             }
         }
     }
     if (isset($titular->tarjetas)) {
         foreach ($titular->tarjetas as $tarjeta) {
             if ($tarjeta->type == 1)
-                $accionesJugador .= ' <img  alt="Tarjeta Amarilla - '.$tarjeta->minute.'\'" src="http://www.futbolecuador.com/imagenes/icons/tarjeta_amarilla2.png" title="Tarjeta Amarilla - '.$tarjeta->minute.'\'"> (' . $tarjeta->minute.'\')';
+                $accionesJugador .= ' <img  alt="Tarjeta Amarilla - ' . $tarjeta->minute . '\'" src="http://www.futbolecuador.com/imagenes/icons/tarjeta_amarilla2.png" title="Tarjeta Amarilla - ' . $tarjeta->minute . '\'"> (' . $tarjeta->minute . '\')';
             else
-                $accionesJugador .= ' <img  alt="Tarjeta Roja - '.$tarjeta->minute.'\'" src="http://www.futbolecuador.com/imagenes/icons/tarjeta_roja2.png" title="Tarjeta Roja - '.$tarjeta->minute.'\'"> (' . $tarjeta->minute.'\')';
+                $accionesJugador .= ' <img  alt="Tarjeta Roja - ' . $tarjeta->minute . '\'" src="http://www.futbolecuador.com/imagenes/icons/tarjeta_roja2.png" title="Tarjeta Roja - ' . $tarjeta->minute . '\'"> (' . $tarjeta->minute . '\')';
         }
     }
     return $accionesJugador;

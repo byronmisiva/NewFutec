@@ -101,10 +101,14 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-        $outbrain  = '<!--Inicio ejemplo -->
-                        <div data-src="www.futbolecuador.com" class="OUTBRAIN" ></div>
-                        <script type="text/javascript">(function(){window.OB_platformType=8;window.OB_langJS="http://widgets.outbrain.com/lang_es.js";window.OBITm="1426714580680";window.OB_recMode="brn_strip";var ob=document.createElement("script");ob.type="text/javascript";ob.async=true;ob.src="http"+("https:"===document.location.protocol?"s":"")+"://widgets.outbrain.com/outbrainLT.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(ob,h);})();</script>
-                        <!--Fin ejemplo -->';
+      // $outbrain  = '<!--Inicio ejemplo -->
+      //                  <div data-src="www.futbolecuador.com" class="OUTBRAIN" ></div>
+      //                  <script type="text/javascript">(function(){window.OB_platformType=8;window.OB_langJS="http://widgets.outbrain.com/lang_es.js";window.OBITm="1426714580680";window.OB_recMode="brn_strip";var ob=document.createElement("script");ob.type="text/javascript";ob.async=true;ob.src="http"+("https:"===document.location.protocol?"s":"")+"://widgets.outbrain.com/outbrainLT.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(ob,h);})();</script>
+      //                  <!--Fin ejemplo -->';
+
+        $outbrain =  '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
+onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
+<iframe id="ccfmPlayer" style="width: 100%; height: 15%;"></iframe>';
         $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones .$outbrain;
         $data['sidebar'] = "";
 
@@ -264,7 +268,7 @@ class Site extends MY_Controller
         $data['ulrfriend'] = $this->_urlFriendly($aux->title);
 
 
-        // fin carga la informacion de la noticia        
+        // fin carga la informacion de la noticia
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
@@ -279,6 +283,30 @@ class Site extends MY_Controller
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
         $this->templates->_index($data);
+    }
+   public function getnewsjson()
+    {
+        header ('Content-type: text/html; charset=utf-8');
+
+        //json de consumo de don balon.
+        $this->load->module('story');
+
+        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
+        $tag = $data[0]->valor;
+        $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON ,"", 0);
+        echo "[";
+        foreach($data as $index=>$noticia){
+            echo "{";
+            echo '"id": "'. $noticia->id.'",';
+            echo '"titulo": "'.str_replace('"','\"',strip_tags (trim($noticia->subtitle))).'",';
+            echo '"resumen": "'.str_replace('"','\"',strip_tags (trim($noticia->lead))).'",';
+            echo '"foto": "'."http://www.futbolecuador.com/".$noticia->thumb300.'",';
+            echo '"link": "'."http://www.futbolecuador.com/site/noticia/".$this->story->_urlFriendly($noticia->subtitle)."/".$noticia->id.'",';
+            echo '"fecha_creacion": "'.$noticia->created.'"';
+            echo "}";
+            echo  ($index < count($data) - 1) ? ",":"";;
+        }
+        echo "]";
     }
 
     public function zonafe()
@@ -432,7 +460,8 @@ class Site extends MY_Controller
 
         $this->load->module('scoreboards');
         $tablapocisiones = $this->scoreboards->scoreboardFull($serie);
-        $this->singleConten("Tabla de Posiciones", $tablapocisiones);
+        $descriptio = "Tabla de posiciones, campeonato nacional de fútbol, campeonato nacional de fútbol serie b, actualizado minuto a minuto con los resultados del futbol ecuatoriano";
+        $this->singleConten("Tabla de Posiciones", $tablapocisiones, $descriptio);
     }
 
     public function resultados()

@@ -12,7 +12,7 @@
         }
     }
     ?>
-    <meta name="description" content="<?php echo (isset($description)) ? strip_tags ($description) . "," . $tags : 'Futbol Ecuador: Lo mejor del futbol ecuatoriano. Noticias e información sobre clubes, jugadores, eliminatorias, copa libertadores'; ?>"/>
+    <meta name="description" content="<?php echo (isset($description)) ? strip_tags ($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias, copa libertadores.'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -58,7 +58,7 @@
     <!--SEO TAGS-->
     <meta name="keywords"
           content="<?= $tags ?> futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014, futbol ecuatoriano,tabla de posiciones, ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com, campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,fut,seleccion de ecuador , ecuatorianos en el exterior"/>
-    <meta name="news_keywords" content="futbol, ecuador  <?= $tags ?>, ecuatoriano,  noticias, ecuagol">
+    <meta name="news_keywords" content="futbol, ecuador,  <?= $tags ?> ecuatoriano,  noticias">
 
     <title><?php echo $pageTitle ?></title>
     <!-- Bootstrap core CSS -->

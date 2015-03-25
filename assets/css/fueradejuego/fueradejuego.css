@@ -74,6 +74,16 @@ img.tituloFuera {
     left: 114px;
     position: absolute;
 }
+.socialesFueradeJuego {
+    bottom: 160px;
+    float: left;
+    left: 114px;
+    position: absolute;
+    background-color: transparent;
+    background-image: url("../../img/title-rotativas.png");
+    padding: 15px 10px;
+    color: #ffffff;
+}
 
 .logosGPAS2 {
     float: left;
