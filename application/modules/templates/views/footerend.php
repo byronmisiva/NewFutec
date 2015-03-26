@@ -8,8 +8,10 @@
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js
-') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/notificacion.js') ?>"></script>
+
+
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
 

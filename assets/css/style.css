@@ -1075,8 +1075,9 @@ h4.contenidos {
 
     .separador10-xs-bot {
         margin-top: 10px;
-        margin-left: -10px;
+        margin-left: 0px;
         margin-right: 0;
+        padding-left: 0;
     }
     .margen0r-xs {
         margin-right: 10px;
@@ -1654,4 +1655,29 @@ h1.tabla, h2.tabla {
     margin: 0;
     color: #ffffff;
     font-weight: normal;
+}
+
+/*notificaciones google */
+
+.fondo-notificaciones{
+    background-color: #143e5f;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    cursor:pointer;
+}
+.texto-notificacion{
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 700px;
+    height: 35px;
+}
+
+.logochr{
+    display:none;
 }

@@ -4,6 +4,12 @@ $this->load->view('header', $data);
 ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="page-header top1 hidden-xs arriba">
+        <div class="fondo-notificaciones" onclick="instalarExtension()">
+            <div class="texto-notificacion">
+                ¿La actualidad del fútbol en tiempo real? Acepta las notificaciones de Google Chrome <img class="logochr"
+                                                                                                          src="<?php echo base_url('imagenes/icono-notificaciones.png') ?>"/>
+            </div>
+        </div>
     <div class="container margen0">
         <div class="row clearfix separador10 separador10bot">
             <?php echo $top1; ?>

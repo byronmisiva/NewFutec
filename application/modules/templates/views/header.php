@@ -12,7 +12,7 @@
         }
     }
     ?>
-    <meta name="description" content="<?php echo (isset($description)) ? strip_tags ($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias, copa libertadores.'; ?>"/>
+    <meta name="description" content="<?php echo (isset($description)) ? strip_tags ($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del ftbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias, copa libertadores.'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -99,6 +99,7 @@
     <?php
     if ($verMobile == "1") {
         ?>
+
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <script type="text/javascript" async defer
                 src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
@@ -106,6 +107,7 @@
     <?php
     } else {
         ?>
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/cjkoikfgconobaeikllfnkpnjihcfnil">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
     <?php
@@ -117,6 +119,8 @@
     </script>
 </head>
 <body>
+
+
 
 <input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/> <script LANGUAGE="JavaScript">var OBCTm='1426714580701'; </script><script LANGUAGE="JavaScript" src="http://widgets.outbrain.com/claim.js"></script>
 <script type='text/javascript'>
@@ -184,7 +188,7 @@
                 if (!event.isEmpty) {
                     cleanBlackLayer;
                 } else {
-                    cargarSplashFE();
+                    //cargarSplashFE();
                 }
             }
             //para el caso de splash desktop

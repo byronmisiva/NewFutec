@@ -108,7 +108,8 @@ class Site extends MY_Controller
 
         $outbrain =  '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
-<iframe id="ccfmPlayer" style="width: 100%; height: 15%;"></iframe>';
+<div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
+<div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
         $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones .$outbrain;
         $data['sidebar'] = "";
 
