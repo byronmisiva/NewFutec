@@ -164,7 +164,7 @@ footer {
 .separador5 {
     margin-top: 5px;
 }
-.separador10 {
+.separador10, .separador10sec {
     margin-top: 10px;
 }
 .separador10-xs {
@@ -1059,6 +1059,12 @@ h4.contenidos {
     .separador10 {
         padding-right: 5px;
         padding-left: 0;
+
+    }
+    .separador10sec {
+        padding-right: 5px;
+        padding-left: 0;
+        margin-top: 0;
     }
     .separador10-xs {
         margin-top: 95px;
@@ -1074,7 +1080,7 @@ h4.contenidos {
     }
 
     .separador10-xs-bot {
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: 0px;
         margin-right: 0;
         padding-left: 0;
@@ -1685,3 +1691,4 @@ h1.tabla, h2.tabla {
 /* iframe responsive adserver*/
 .respiframe {width:100%;}
 .respiframe iframe {width:100%;}
+.azulmovistar {background-color: #005c84}

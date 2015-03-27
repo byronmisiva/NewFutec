@@ -21,7 +21,7 @@ $this->load->view('header', $data);
 
     <nav class="navbar navbar-futec navbar-fixed-top">
         <!-- FE_HEADER -->
-        <div id='div-gpt-ad-1383593619381-0' style='width:320px; height:auto;margin:0 auto;'>
+        <div id='div-gpt-ad-1383593619381-0' class="respiframe azulmovistar" >
             <script type='text/javascript'>
                 googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-0'); });
             </script>
@@ -122,13 +122,13 @@ $this->load->view('header', $data);
         </div>
     <?php } ?>
     <?php if (isset($top2)) { ?>
-        <div class="row separador10">
+        <div class="row separador10sec">
             <div class="col-md-12 margen0">
                 <?php echo $top2; ?>
             </div>
         </div>
     <?php } ?>
-    <div class="row ">
+    <div class="row ccc">
         <div class="col-md-8  col-sm-8 zonacontenido">
             <div class="row margen0  content ">
                 <?php
@@ -143,11 +143,8 @@ $this->load->view('header', $data);
         </div>
     </div>
 </div>
-
-
 <!-- footer -->
-<div class="top1 separador10">
-
+<div class="top1 separador10sec">
     <div class="container">
         <?php
         echo $footer;
