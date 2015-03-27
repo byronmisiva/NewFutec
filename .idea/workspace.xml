@@ -4,8 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google03175d5a14c875d5.html" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/notificacion.js" afterPath="$PROJECT_DIR$/assets/js/notificacion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9" vertical-offset="1620" max-vertical-offset="4935">
-              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state vertical-scroll-proportion="18.6" vertical-offset="2580" max-vertical-offset="4935">
+              <caret line="110" column="94" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -45,52 +47,9 @@
       <file leaf-file-name="footerend.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="3585">
+            <state vertical-scroll-proportion="121.375" vertical-offset="3078" max-vertical-offset="3585">
               <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notificacion.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/notificacion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5687382" vertical-offset="448" max-vertical-offset="1005">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2295">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="24804" max-vertical-offset="25335">
-              <caret line="1665" column="21" selection-start-line="1665" selection-start-column="21" selection-end-line="1665" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/banners/views/top1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1427412948000" expanded="true" signature="36:38" placeholder="..." />
-                <marker date="1427412948000" expanded="true" signature="38:76" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +59,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="2550">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="24532" max-vertical-offset="25380">
+              <caret line="1685" column="11" selection-start-line="1685" selection-start-column="1" selection-end-line="1685" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fe_smart_top.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0295858" vertical-offset="0" max-vertical-offset="507">
+              <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -164,13 +143,13 @@
         <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/top1.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/js/notificacion.js" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php" />
       </list>
     </option>
   </component>
@@ -4242,7 +4221,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427413635463</updated>
     </task>
-    <option name="localTasksCounter" value="645" />
+    <task id="LOCAL-00645" summary="e">
+      <created>1427413996280</created>
+      <option name="number" value="00645" />
+      <option name="project" value="LOCAL" />
+      <updated>1427413996281</updated>
+    </task>
+    <option name="localTasksCounter" value="646" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4267,7 +4252,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="93" y="26" width="1682" height="968" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -4282,7 +4267,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25559106" sideWeight="0.49503312" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31829268" sideWeight="0.65652955" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31829268" sideWeight="0.65652955" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4743,14 +4728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52717394" vertical-offset="1374" max-vertical-offset="10485">
@@ -4766,38 +4743,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/top1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="3585">
-          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+        <state vertical-scroll-proportion="-1.7751479" vertical-offset="900" max-vertical-offset="2295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/notificacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31073445" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9" vertical-offset="1620" max-vertical-offset="4935">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state vertical-scroll-proportion="18.6" vertical-offset="2580" max-vertical-offset="4935">
+          <caret line="110" column="94" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/top1.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1427412948000" expanded="true" signature="36:38" placeholder="..." />
-            <marker date="1427412948000" expanded="true" signature="38:76" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="121.375" vertical-offset="3078" max-vertical-offset="3585">
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4811,16 +4793,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="24804" max-vertical-offset="25335">
-          <caret line="1665" column="21" selection-start-line="1665" selection-start-column="21" selection-end-line="1665" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="24532" max-vertical-offset="25380">
+          <caret line="1685" column="11" selection-start-line="1685" selection-start-column="1" selection-end-line="1685" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/notificacion.js">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5687382" vertical-offset="448" max-vertical-offset="1005">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0295858" vertical-offset="0" max-vertical-offset="507">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
           <folding />
         </state>
       </provider>

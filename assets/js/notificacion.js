@@ -25,7 +25,7 @@ $(function () {
         $this.toggleClass('chrome_install_button disabled').off('.chrome');
 	$( ".fondo-notificaciones" ).animate({
 	    height: "0"
-	  }, 1000, "linear", function() {    
+	  }, 1000, "linear", function() {
    		    $(".logochr").show();
 	  });
       });
@@ -57,5 +57,5 @@ var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
       }
 }
 
-setTimeout(function(){ verificarInstlacion(); }, 3000);
+setTimeout(function(){ verificarInstlacion(); }, 5000);
 

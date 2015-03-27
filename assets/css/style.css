@@ -1681,3 +1681,7 @@ h1.tabla, h2.tabla {
 .logochr{
     display:none;
 }
+
+/* iframe responsive adserver*/
+.respiframe {width:100%;}
+.respiframe iframe {width:100%;}
