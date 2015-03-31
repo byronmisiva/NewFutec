@@ -193,7 +193,7 @@
 <!-- mega menu -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('don-balon') ?>" class="pull-left"><div class="logodonbalon"></div></a>
+    <a href="<?= base_url('en-el-exterior') ?>" class="pull-left">En el Exterior</a>
 </li>
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
@@ -233,7 +233,7 @@
 <!-- list elements -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('futbol-internacional') ?>" class="pull-left">Fútbol Internacional</a>
+    <a href="<?= base_url('don-balon') ?>" class="pull-left"><div class="logodonbalon"></div></a>
     <!-- dropdown-menu -->
 </li>
 <!-- mega menu -->

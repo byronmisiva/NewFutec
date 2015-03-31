@@ -293,6 +293,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
         // recuperar codigo de don balos
         $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
+        $tag = $data[0]->valor;$this->load->module('story');
+        // recuperar codigo de don balos
+        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
         $tag = $data[0]->valor;
         $rotativasData = $this->mdl_story->get_banner_tag(4, 44, $tag);
         echo "[";
@@ -380,10 +383,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function donbalon()
     {
         // recuperar codigo de don balos
-        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
-        $tag = $data[0]->valor;
+        $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Don Balón", "futbolinternacional", "futbolinternacional");
 
-        $this->tag(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Don Balón", "donbalon", "donbalon");
+//        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
+//        $tag = $data[0]->valor;
+
+//        $this->tag(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Don Balón", "donbalon", "donbalon");
     }
 
     public function copalibertadores()
