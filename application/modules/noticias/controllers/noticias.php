@@ -160,6 +160,68 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
+    public function viewTags($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
+    {
+        //$this->output->cache(CACHE_DEFAULT);
+        setlocale(LC_ALL, "es_ES");
+        $noticias = array();
+
+        $data['idsection'] = $idsection;
+        //$storysOld = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset);
+
+        $this->load->module('story');
+        // recuperar codigo de don balos
+        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
+        $tag = $data[0]->valor;
+
+        $storys = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON , 0);
+
+
+        $dataStory['tipoLink'] = "secction";
+
+        $dataStory['urlsecction'] = $urlSeccion;
+
+        foreach ($storys as $story) {
+            $dataStory['story'] = $story;
+            $noticias[] = $this->viewNoticia($dataStory);
+        }
+        if ($mostrarBanner) {
+            //intercalar banners
+            $this->load->module('banners');
+            $banners = array();
+            $banners[] = $this->banners->FE_Bigboxnews1();
+            $banners[] = $this->banners->FE_Bigboxnews2();
+            $banners[] = $this->banners->FE_Bigboxnews3();
+            $banners[] = $this->banners->FE_Bigboxnews4();
+            $banners[] = $this->banners->FE_Bigboxnews5();
+            //intercalo entre las noticias los banners.
+            if ($totalMiniNews > 10) {
+                array_splice($noticias, 5, 0, $banners[0]);
+                array_splice($noticias, 10, 0, $banners[1]);
+                array_splice($noticias, 17, 0, $banners[2]);
+                array_splice($noticias, 22, 0, $banners[3]);
+                array_splice($noticias, 29, 0, $banners[4]);
+            } else {
+                if ($totalMiniNews > 2) {
+                    array_splice($noticias, 5, 0, $banners[0]);
+                }
+                if ($totalMiniNews > 10) {
+
+                    array_splice($noticias, 12, 0, $banners[1]);
+                }
+            }
+            //fin intercalar banners
+        }
+        $data ['namesection'] = $namesection;
+        $data['noticias'] = $noticias;
+
+        $data['offset'] = $totalMiniNews + $offset;
+        $data['idsection'] = trim($idsection);
+        $data['posSection'] = $posSection;
+
+        return $this->load->view('noticiashome', $data, TRUE);
+    }
+
     public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
     {
         //$this->output->cache(CACHE_DEFAULT);
@@ -211,8 +273,6 @@ class Noticias extends MY_Controller
         $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = trim($idsection);
         $data['posSection'] = $posSection;
-
-        //$data['offset'] = $totalMiniNews + $offset;
 
         return $this->load->view('noticiashome', $data, TRUE);
     }

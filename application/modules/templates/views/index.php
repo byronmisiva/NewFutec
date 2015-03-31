@@ -79,7 +79,7 @@ $this->load->view('header', $data);
                         </ul>
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('futbol-internacional') ?>">Fútbol Internacional</a></li>
-                    <li><a class="clickmenu" href="<?= base_url('en-el-exterior') ?>">En el Exterior</a></li>
+                    <li><a class="clickmenu" href="<?= base_url('en-el-exterior') ?>">aEn el Exterior</a></li>
                     <li><a class="clickmenu" href="<?= base_url('site/lavoz') ?>">La Voz de las Tribunas</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copas

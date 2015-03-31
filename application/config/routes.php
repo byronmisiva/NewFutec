@@ -49,6 +49,7 @@ $route['zona-fe'] = "site/zonafe";
 $route['la-voz-de-las-tribunas'] = "site/lavoz";
 $route['lo-mas-leido'] = "site/masleido";
 $route['en-el-exterior'] = "site/nuestrosembajadores";
+$route['don-balon'] = "site/donbalon";
 $route['marcador-en-vivo'] = "site/marcadorenvivo";
 
 $route['copa-libertadores'] = "site/copalibertadores";

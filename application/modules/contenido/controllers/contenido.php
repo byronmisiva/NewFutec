@@ -78,16 +78,18 @@ class Contenido extends MY_Controller
 
     }
 
-    public function marcadorVivo () {
+    public function marcadorVivo()
+    {
         $this->load->module('scoreboards');
         $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
         if ($datamarcador['scores'] == false) {
             $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             //$data['title'] = "Ultima Fecha";
         }
-        return  $this->load->view('marcadorvivo', $datamarcador, TRUE);
+        return $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
-    public function header2mobile ($data = FALSE)
+
+    public function header2mobile($data = FALSE)
     {
         $this->load->module('story');
         $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
@@ -111,7 +113,7 @@ class Contenido extends MY_Controller
         $dataRotativas['check'] = 0;
         $data['rotativas'] = $this->load->view('rotativasmobil', $dataRotativas, TRUE);
 
-        $bannerMedio = $this->banners->fe_smart_bottom ();
+        $bannerMedio = $this->banners->fe_smart_bottom();
         //cargamos partidos
         $this->load->module('scoreboards');
 
@@ -180,23 +182,26 @@ class Contenido extends MY_Controller
         return $this->load->view('fueradejuegomod', $data, TRUE);
 
     }
-         public function view_fuera_de_juego($data = FALSE)
+
+    public function view_fuera_de_juego($data = FALSE)
     {
         return $this->load->view('fueradejuego', $data, TRUE);
 
     }
+
     public function femagazine($data = FALSE)
     {
         return $this->load->view('femagazine', $data, TRUE);
 
     }
+
     public function search($data = FALSE)
     {
         return $this->load->view('search', $data, TRUE);
     }
 
 
-    public function sidebar($data = FALSE, $serie = SERIE_A )
+    public function sidebar($data = FALSE, $serie = SERIE_A)
     {
 
         //carga Banners
@@ -254,25 +259,24 @@ class Contenido extends MY_Controller
         //Lo más leído
 
         $this->load->module('story');
-        $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
+        $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
 
         //La Voz de las Tribunas
         $this->load->module('noticias');
-        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
+        $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
         //Zona Fe
-        $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
+        $data['zonaFe'] = $this->noticias->viewmininewssidebar("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
 
         //Encuestas
-        $data['encuesta'] = $this->surveys->encuesta_formulario ();
-
+        $data['encuesta'] = $this->surveys->encuesta_formulario();
 
 
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda
     }
 
-    public function sidebarOpenNews($data = FALSE, $serie = SERIE_A, $tipo = "large" )
+    public function sidebarOpenNews($data = FALSE, $serie = SERIE_A, $tipo = "large")
     {
 
         //carga Banners
@@ -283,7 +287,7 @@ class Contenido extends MY_Controller
         $bannersSidebar[] = $this->banners->FE_Bigboxbanner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
-       // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
+        // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
         $bannersSidebar[] = $this->banners->fe_cocafm();
         $data['bannersSidebar'] = $bannersSidebar;
         //fin carga banners
@@ -315,7 +319,7 @@ class Contenido extends MY_Controller
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
 
-        if ($tipo== "large"){
+        if ($tipo == "large") {
             //Resultados tabla de posiciones
             $this->load->module('scoreboards');
             $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
@@ -327,14 +331,14 @@ class Contenido extends MY_Controller
 
             //Lo más leído
             $this->load->module('story');
-            $data['loMasLeido'] = $this->story->viewget_plus ("Lo más Leído", LOMASLEIDO, "masleido");
+            $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
 
             //La Voz de las Tribunas
             $this->load->module('noticias');
-            $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar ("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
+            $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
 
             //Zona Fe
-            $data['zonaFe'] = $this->noticias->viewmininewssidebar ("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
+            $data['zonaFe'] = $this->noticias->viewmininewssidebar("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
             return $this->load->view('sidebaropennews', $data, TRUE);
         } else {
             //Resultados tabla de posiciones
@@ -353,6 +357,90 @@ class Contenido extends MY_Controller
             $data['zonaFe'] = "";
 
             return $this->load->view('sidebaropenshort', $data, TRUE);
+        }
+    }
+
+    public function sidebarDonBalon($data = FALSE, $serie = SERIE_A, $tipo = "large")
+    {
+
+        //carga Banners
+        $this->load->module('banners');
+        $this->load->module('scoreboards');
+        $bannersSidebar = array();
+
+        $bannersSidebar[] = $this->banners->FE_Bigboxbanner();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
+        // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
+        $bannersSidebar[] = $this->banners->fe_cocafm();
+        $data['bannersSidebar'] = $bannersSidebar;
+        //fin carga banners
+
+        //Proxima Fecha
+        $listCampeonatos = $this->mdl_scoreboards->active_schedules(false, false);
+        $campeonatos = array();
+        foreach ($listCampeonatos as $listcampeonato) {
+            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_week($listcampeonato->champ);
+            $listcampeonato->shortname = strtolower($this->_clearStringGion($listcampeonato->name));
+
+            $campeonatos[] = $listcampeonato;
+        }
+        $data['campeonatos'] = $campeonatos;
+        //Fin Proxima Fecha
+
+        //Resultados fecha ultima
+        $listCampeonatosResultados = $this->mdl_scoreboards->active_schedules(false, false);
+        $campeonatosResultados = array();
+        foreach ($listCampeonatosResultados as $listcampeonato) {
+            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_results($listcampeonato->champ);
+            $listcampeonato->shortname = strtolower($this->_clearStringGion($listcampeonato->name));
+
+            $campeonatosResultados[] = $listcampeonato;
+        }
+        $data['campeonatosResultados'] = $campeonatosResultados;
+
+
+        //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
+        $data['serie'] = $serie;
+
+        if ($tipo == "large") {
+            //Resultados tabla de posiciones
+            $this->load->module('scoreboards');
+            $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
+
+            //Resultados goleadores
+            $this->load->module('strikes');
+            $data['strikes'] = $this->strikes->goleadores($serie);
+
+
+            //Lo más leído
+            $this->load->module('story');
+            $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
+
+            //La Voz de las Tribunas
+            $this->load->module('noticias');
+            $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
+
+            //Zona Fe
+            $data['zonaFe'] = $this->noticias->viewmininewssidebar("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
+            return $this->load->view('sidebardonbalon', $data, TRUE);
+        } else {
+            //Resultados tabla de posiciones
+            $data['tablaposiciones'] = "";
+
+            //Resultados goleadores
+            $data['strikes'] = "";
+
+            //Lo más leído
+            $data['loMasLeido'] = "";
+
+            //La Voz de las Tribunas
+            $data['laVozDeLasTribunas'] = "";
+
+            //Zona Fe
+            $data['zonaFe'] = "";
+
+            return $this->load->view('sidebardonbalon', $data, TRUE);
         }
     }
 }

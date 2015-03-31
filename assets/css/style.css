@@ -1692,3 +1692,11 @@ h1.tabla, h2.tabla {
 .respiframe {width:100%;}
 .respiframe iframe {width:100%;}
 .azulmovistar {background-color: #005c84}
+
+.logodonbalon {
+    background-color: transparent;
+    background-image: url("../img/logo-don-balon.png");
+    width: 73px;
+    height: 14px;
+    margin-top: 1px;
+}

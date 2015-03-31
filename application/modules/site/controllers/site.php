@@ -291,24 +291,57 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         //json de consumo de don balon.
         $this->load->module('story');
-
+        // recuperar codigo de don balos
         $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
         $tag = $data[0]->valor;
-        $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON ,"", 0);
+        $rotativasData = $this->mdl_story->get_banner_tag(4, 44, $tag);
         echo "[";
-        foreach($data as $index=>$noticia){
+        $rotativasListado = array();
+        foreach($rotativasData as $index=>$noticia){
+            $rotativasListado [] = $noticia->id;
             echo "{";
             echo '"id": "'. $noticia->id.'",';
             echo '"titulo": "'.str_replace('"','\"',strip_tags (trim($noticia->subtitle))).'",';
             echo '"resumen": "'.str_replace('"','\"',strip_tags (trim($noticia->lead))).'",';
             echo '"foto": "'."http://www.futbolecuador.com/".$noticia->thumb300.'",';
+            echo '"foto_carrusel": "'."http://www.futbolecuador.com/".$noticia->thumb500.'",';
             echo '"link": "'."http://www.futbolecuador.com/site/noticia/".$this->story->_urlFriendly($noticia->subtitle)."/".$noticia->id.'",';
+            echo '"mostrar_carrusel": "s",';
             echo '"fecha_creacion": "'.$noticia->created.'"';
-            echo "}";
-            echo  ($index < count($data) - 1) ? ",":"";;
+            echo "},";
+
+        }
+
+
+
+        $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON , 0);
+
+        foreach($data as $index=>$noticia){
+            if (!in_array($noticia->id, $rotativasListado)) {
+                echo "{";
+                echo '"id": "'. $noticia->id.'",';
+                echo '"titulo": "'.str_replace('"','\"',strip_tags (trim($noticia->subtitle))).'",';
+                echo '"resumen": "'.str_replace('"','\"',strip_tags (trim($noticia->lead))).'",';
+                echo '"foto": "'."http://www.futbolecuador.com/".$noticia->thumb300.'",';
+                echo '"link": "'."http://www.futbolecuador.com/site/noticia/".$this->story->_urlFriendly($noticia->subtitle)."/".$noticia->id.'",';
+                echo '"fecha_creacion": "'.$noticia->created.'"';
+                echo "}";
+                echo  ($index < count($data) - 1) ? ",":"";
+            }
         }
         echo "]";
     }
+
+    public function sidebardonbalon()
+    {
+        $this->load->module('contenido');
+        $this->load->module('templates');
+
+        $data['sidebar'] = $this->contenido->sidebarDonBalon(false, SERIE_A);
+       // $this->templates->_index($data);
+
+        echo $this->contenido->sidebarDonBalon(false, SERIE_A);
+     }
 
     public function zonafe()
     {
@@ -343,6 +376,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function nuestrosembajadores()
     {
         $this->seccion(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "En el Exterior", "nuestrosembajadores", "nuestrosembajadores");
+    }
+    public function donbalon()
+    {
+        // recuperar codigo de don balos
+        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
+        $tag = $data[0]->valor;
+
+        $this->tag(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Don Balón", "donbalon", "donbalon");
     }
 
     public function copalibertadores()
@@ -391,6 +432,52 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         } else {
             $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
         }
+
+        $storia = "";
+        $bodytag = $nameSeccion;
+
+        // carga la informacion de la noticia
+        $idNoticia = $this->uri->segment(4);
+        //validamos las noticias
+        /*if ($idNoticia < 39898)
+            redirect('home');*/
+        if ( $idNoticia == 'ref.outcontrol'  )
+            redirect('home');
+
+        if ($idNoticia) {
+            $storia = $this->story->get_complete($idNoticia);
+            $aux = $this->mdl_story->get_story($idNoticia);
+            $bodytag = str_replace('"', '', strip_tags($aux->title));
+        }
+
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+        // fin carga la informacion de la noticia
+
+        $data['content'] = $storia . $noticiasCuerpo;
+        $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie);
+
+        $data['footer'] = $this->contenido->footer();
+        $data['bottom'] = $this->contenido->bottom();
+        $this->templates->_index($data);
+    }
+    public function tag($tag, $seccionpos,  $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = SERIE_A)
+    {
+        // para la final se comentan la llamada a las secciones.
+        $this->output->cache(CACHE_DEFAULT);
+
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $this->load->library('user_agent');
+        $this->load->module('story');
+        $data['verMobile'] = $this->verificarDispositivo();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['header1'] = $this->contenido->menu();
+
+        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+
+        $noticiasCuerpo = $this->noticias->viewTags($nameSeccion, $tag, $seccionpos, $urlSeccion);
 
         $storia = "";
         $bodytag = $nameSeccion;

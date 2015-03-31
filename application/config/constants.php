@@ -42,7 +42,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 define('RESULT_PAGE', 25);
 define('RESULT_PAGE_LITE', 10);
 define('TOTALNEWSINOPENNEWS',7); //
-define('TOTALNEWSINDONBALON',100); //
+define('TOTALNEWSINDONBALON',25); //
 
 
 //Secciones
