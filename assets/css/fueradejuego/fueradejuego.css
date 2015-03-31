@@ -16,7 +16,7 @@
 }
 
 .otrasmodelos li {
-    height: 163px;
+    height: 115px;
 }
 
 img.tituloFuera {
@@ -135,9 +135,9 @@ img.tituloFuera {
 }
 @media (min-width: 767px) {
     .ls-wrapper .liquid-slider {
-        height: 500px !important;
+        height: 550px !important;
     }
     .thum-fuera {
-        height: 96px;
+        height: 106px;
     }
 }

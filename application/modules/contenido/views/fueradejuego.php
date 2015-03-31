@@ -855,7 +855,7 @@
         <div class="linksFueraJuego col-md-12">
             <div class="controlfueraJuego"><img class="prev"
                                                 src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/left-fuera.jpg"
-                                                width="18" heigth="163"/></div>
+                                                width="18" heigth="115"/></div>
             <div class="otrasmodelos">
                 <ul>
                     <li class="galeria18"><img id="galeria18" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1b.jpg"
@@ -899,7 +899,7 @@
             <div class="controlfueraJuego">
                 <img class="next"
                      src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/right-fuera.jpg"
-                     width="18" heigth="163"/>
+                     width="18" heigth="115"/>
             </div>
             <!-- Feel free to load scripts in the footer -->
             <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css?refresh=' . rand(1, 2000)  ) ?>"/>
