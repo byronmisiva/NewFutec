@@ -74,6 +74,7 @@ img.tituloFuera {
 
     position: absolute;
 }
+
 .contenidoexclusivo {
     top: 0px;
     float: left;
@@ -82,11 +83,12 @@ img.tituloFuera {
     background-image: url("../../img/contenido-exclusivo.png");
     background-repeat: no-repeat;
 
-    width: 70%;
+    width: 60%;
     height: 70%;
     background-size: 100% auto;
-    margin-left: 15%;
+    margin-left: 20%;
 }
+
 .socialesFueradeJuego {
     bottom: 160px;
     float: left;
@@ -118,8 +120,6 @@ img.tituloFuera {
     display: none;
 }
 
-
-
 @media (max-width: 767px) {
     .logosGPAS {
         top: inherit;
@@ -128,8 +128,8 @@ img.tituloFuera {
     }
 
     .ls-wrapper .ls-nav {
-         width: 17%;
-     }
+        width: 17%;
+    }
 
     .ls-responsive .liquid-slider {
         width: 83%;
@@ -138,19 +138,29 @@ img.tituloFuera {
     .logosGPAS {
         left: 0;
     }
+
     .logoGP, .logoAS {
         width: 50%;
         background-size: 100% auto;
 
     }
+
     .thum-fuera {
         height: 80px;
     }
 }
+
+@media (max-width: 320px) {
+    .thum-fuera {
+        height: 61px;
+    }
+}
+
 @media (min-width: 767px) {
     .ls-wrapper .liquid-slider {
         height: 550px !important;
     }
+
     .thum-fuera {
         height: 106px;
     }
@@ -162,7 +172,6 @@ img.tituloFuera {
         margin-left: 20%;
         margin-top: 100px;
     }
-
 
     .logosGPAS {
         width: 68%;

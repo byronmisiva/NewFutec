@@ -4,9 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" afterPath="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/index.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -98,8 +97,8 @@
       <file leaf-file-name="fueradejuego.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4087137" vertical-offset="2173" max-vertical-offset="2655">
-              <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.25311205" vertical-offset="2203" max-vertical-offset="2790">
+              <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -4391,7 +4390,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427851100132</updated>
     </task>
-    <option name="localTasksCounter" value="656" />
+    <task id="LOCAL-00656" summary="e">
+      <created>1427852007654</created>
+      <option name="number" value="00656" />
+      <option name="project" value="LOCAL" />
+      <updated>1427852007654</updated>
+    </task>
+    <option name="localTasksCounter" value="657" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4962,8 +4967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4087137" vertical-offset="2173" max-vertical-offset="2655">
-          <caret line="158" column="16" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.25311205" vertical-offset="2203" max-vertical-offset="2790">
+          <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
           <folding />
         </state>
       </provider>
