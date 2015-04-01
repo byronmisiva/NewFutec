@@ -82,10 +82,10 @@ img.tituloFuera {
     background-image: url("../../img/contenido-exclusivo.png");
     background-repeat: no-repeat;
 
-    width: 90%;
+    width: 70%;
     height: 70%;
     background-size: 100% auto;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 .socialesFueradeJuego {
     bottom: 160px;
