@@ -10,11 +10,11 @@
             <div class="liquid-slider" id="main-slider18">
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1a.jpg" alt="Karen"/>
-                    <div class="socialesFueradeJuego">
+                       <!-- <div class="socialesFueradeJuego">
                         Nombre
                         twiter
                         facebook
-                    </div>
+                    </div>-->
                 </div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/2b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/2a.jpg" alt="Karen"/></div>
@@ -23,7 +23,8 @@
                 </div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/4a.jpg" alt="Karen"/>
-
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -36,6 +37,8 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -62,6 +65,8 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/4a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -74,6 +79,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -99,6 +105,8 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/4a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -111,6 +119,8 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -134,11 +144,21 @@
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/2a.jpg" alt="Karen"/></div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/3a.jpg" alt="Karen"/>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="logosGPAS">
+                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
+                                <div></div>
+                            </a></div>
+                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
+                                <div></div>
+                            </a></div>
+                    </div>
 
                 </div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/4a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -151,6 +171,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -175,6 +196,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/3a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -187,6 +209,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/4a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -199,6 +222,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -222,6 +246,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/3a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -234,6 +259,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/4a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -246,6 +272,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -269,6 +296,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/3a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -281,6 +309,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/4a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -293,6 +322,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/5a.jpg" alt="Karen"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -316,6 +346,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/3a.jpg" alt="Paulina"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -328,6 +359,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/4a.jpg" alt="Paulina"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -340,6 +372,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/5a.jpg" alt="Pualina"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -365,6 +398,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/3a.jpg" alt="Alisson Hidalgo"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -377,6 +411,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/4a.jpg" alt="Alisson Hidalgo"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -389,6 +424,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/5a.jpg" alt="Alisson Hidalgo"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -414,6 +450,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/3a.jpg" alt="Angeles azules"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -426,6 +463,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/4a.jpg" alt="Angeles azules"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -438,6 +476,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/5a.jpg" alt="Angeles azules"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -463,6 +502,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/3a.jpg" alt="Michelle López"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -475,6 +515,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/4a.jpg" alt="Michelle López"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -487,6 +528,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/5a.jpg" alt="Michelle López"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -512,6 +554,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/3a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -524,6 +567,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/4a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -536,6 +580,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/5a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -561,6 +606,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/3a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -573,6 +619,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/4a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -585,6 +632,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/5a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -610,6 +658,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/3a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -622,6 +671,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/4a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -634,6 +684,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/5a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -659,6 +710,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/3a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -671,6 +723,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/4a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -683,6 +736,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/5a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -708,6 +762,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/3a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -720,6 +775,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/4a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -732,6 +788,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/5a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -757,6 +814,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/3a.jpg" alt="Marcela Recalde"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -769,6 +827,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/4a.jpg" alt="Marcela Recalde"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -781,6 +840,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/5a.jpg" alt="Marcela Recalde"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -806,6 +866,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/3b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/3a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -818,6 +879,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/4b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/4a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
@@ -830,6 +892,7 @@
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/5b.jpg" alt=" "/></div>
                     </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/5a.jpg" alt="Diana Bastidas"/>
 
+                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
                                 <div></div>
