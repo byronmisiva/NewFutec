@@ -233,7 +233,7 @@
 <!-- list elements -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
-    <a href="<?= base_url('don-balon') ?>" class="pull-left"><div class="logodonbalon"><img src="<?= base_url('assets/img/logo-don-balon.svg') ?>"></div></a>
+    <a href="<?= base_url('don-balon') ?>" class="pull-left"><div class="logodonbalon"></div></a>
     <!-- dropdown-menu -->
 </li>
 <!-- mega menu -->
