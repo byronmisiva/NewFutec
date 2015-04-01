@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logo-don-balon.png" afterPath="$PROJECT_DIR$/assets/img/logo-don-balon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/menu.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/menu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61771846" vertical-offset="3016" max-vertical-offset="3840">
+            <state vertical-scroll-proportion="-21.208334" vertical-offset="3016" max-vertical-offset="3840">
               <caret line="235" column="87" selection-start-line="235" selection-start-column="87" selection-end-line="235" selection-end-column="87" />
               <folding />
             </state>
@@ -86,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="24772" max-vertical-offset="25635">
-              <caret line="1697" column="0" selection-start-line="1697" selection-start-column="0" selection-end-line="1698" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.8054245" vertical-offset="24772" max-vertical-offset="25635">
+              <caret line="1697" column="52" selection-start-line="1697" selection-start-column="52" selection-end-line="1697" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -170,8 +168,8 @@
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
         <option value="$PROJECT_DIR$/assets/css/fueradejuego/fueradejuego.css" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/menu.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -4331,7 +4329,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427901713051</updated>
     </task>
-    <option name="localTasksCounter" value="662" />
+    <task id="LOCAL-00662" summary="e">
+      <created>1427901990355</created>
+      <option name="number" value="00662" />
+      <option name="project" value="LOCAL" />
+      <updated>1427901990355</updated>
+    </task>
+    <option name="localTasksCounter" value="663" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4812,18 +4816,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="24772" max-vertical-offset="25635">
-          <caret line="1697" column="0" selection-start-line="1697" selection-start-column="0" selection-end-line="1698" selection-end-column="31" />
+        <state vertical-scroll-proportion="-21.208334" vertical-offset="3016" max-vertical-offset="3840">
+          <caret line="235" column="87" selection-start-line="235" selection-start-column="87" selection-end-line="235" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/menu.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61771846" vertical-offset="3016" max-vertical-offset="3840">
-          <caret line="235" column="87" selection-start-line="235" selection-start-column="87" selection-end-line="235" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.8054245" vertical-offset="24772" max-vertical-offset="25635">
+          <caret line="1697" column="52" selection-start-line="1697" selection-start-column="52" selection-end-line="1697" selection-end-column="52" />
           <folding />
         </state>
       </provider>
