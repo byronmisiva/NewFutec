@@ -12,7 +12,6 @@
 <?php
 $indice = 0;
 foreach ($noticias as $noticia) {
-
     $findme = '<div class="noticia-img">';
     $pos = strpos($noticia, $findme);
     $paraTable = "6";
@@ -38,8 +37,6 @@ foreach ($noticias as $noticia) {
         else
             $paraTable = "6";
     }
-
-
     ?>
     <div
         class="col-md-6 col-sm-<?= $paraTable ?> separador10 clearfix noti <?php if ($pos == 1) echo "noticia" ?> lineseparador">
@@ -49,7 +46,10 @@ foreach ($noticias as $noticia) {
     if ($indice % 2 == 1) echo '</div>';
     $indice++;
 }
+//importante cuando no son par + 1 las noticias  se le cierra el div
+if ($indice % 2 == 1) echo '</div>';
 ?>
+
 <div class="noticiasextras">
 </div>
 

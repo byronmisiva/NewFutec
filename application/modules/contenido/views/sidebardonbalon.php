@@ -1,5 +1,7 @@
+<link href="<?php echo base_url() ?>assets/css/style.css?ser=1" rel="stylesheet">
 <!--Calendario-->
-<div class="col-md-12 separador10  margen0r lateral">
+<div class="sidebar">
+<div class="col-md-12 separador10  margen0 lateral">
 
 <div id="collapseTwo" class="panel-collapse collapse in">
 <div class="panel-body panel-body-clear-margin">
@@ -58,36 +60,42 @@
                                                 <li class="list-group-item">
                                                     <div class="col-md-10 col-xs-10 margen0">
                                                         <div class="col-md-12 col-xs-12 margen0   bordeabajo" >
-                                                            <div class="col-md-1 col-xs-1 text-center">
+                                                            <div class="col-md-1 col-xs-1 col-lg-1 text-center">
                                                                 <?php if (count($resultado) >= 2) echo $resultado[0]; ?>
                                                             </div>
-                                                            <div class="col-md-1 col-xs-1 text-right ">
+                                                            <div class="col-md-1 col-xs-1 col-lg-1 text-right ">
                                                                 <img
                                                                     src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"
-                                                                    alt="<?php echo $partido->hname; ?>" title="<?php echo $partido->hname; ?>">
+                                                                    alt="<?php echo $partido->hname; ?>" title="<?php
+                                                                if ( "Universidad Católica de Quito" == $partido->hname) $partido->hname = "U.C. de  Quito";
+                                                                if ( "Independiente del Valle" == $partido->hname) $partido->hname = "I. del Valle";
+                                                                echo $partido->hname; ?>">
                                                             </div>
-                                                            <div class="col-md-10 col-xs-9  ">
+                                                            <div class="col-md-10 col-xs-9 col-lg-8  ">
                                                                 <?php echo $partido->hname; ?>
                                                             </div>
 
                                                         </div>
-                                                        <div class="col-md-12 col-xs-12 margen0   separador5">
-                                                            <div class=" col-md-1  col-xs-1 text-center">
+                                                        <div class="col-md-12 col-xs-12 col-lg-12 margen0   separador5">
+                                                            <div class=" col-md-1  col-xs-1 col-lg-1 text-center">
                                                                 <?php if (count($resultado) >= 2) echo $resultado[1]; ?>
                                                             </div>
-                                                            <div class="col-md-1 col-xs-1  text-right">
+                                                            <div class="col-md-1 col-xs-1 col-lg-1  text-right">
                                                                 <img
                                                                     src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"
                                                                     alt="<?php echo $partido->aname; ?>"
                                                                     title="<?php echo $partido->aname; ?>">
                                                             </div>
-                                                            <div class="col-md-10 col-xs-9  ">
-                                                                <?php echo $partido->aname; ?>
+                                                            <div class="col-md-10 col-xs-9 col-lg-8  ">
+                                                                <?php
+                                                                if ( "Universidad Católica de Quito" == $partido->aname) $partido->aname = "U.C. de  Quito";
+                                                                if ( "Independiente del Valle" == $partido->aname) $partido->aname = "I. del Valle";
+                                                                echo $partido->aname; ?>
                                                             </div>
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-2 col-xs-2 margen0 text-center bordeizquierda">
+                                                    <div class="col-md-2 col-xs-2 col-lg-2 margen0 text-center bordeizquierda">
                                                         <div style="font-size: 11px">
                                                             <?php echo ucwords(utf8_encode(strftime("%d %b", strtotime($partido->date_match)))); ?>
                                                             <?php echo ucwords(utf8_encode(strftime("%HH%M", strtotime($partido->date_match)))); ?>
@@ -153,39 +161,44 @@
                                            href="<?= base_url('site/partido/' . $this->contenido->_urlFriendly($partido->hname) . '-' . $this->contenido->_urlFriendly($partido->aname) . '/' . $partido->id) ?>">
                                             <ul class="list-group">
                                                 <li class="list-group-item">
-                                                    <div class="col-md-10 col-xs-10 margen0">
-                                                        <div class="col-md-12 col-xs-12 margen0   bordeabajo" >
-                                                            <div class="col-md-1 col-xs-1 text-center">
+                                                    <div class="col-md-10 col-xs-10 col-lg-10 margen0">
+                                                        <div class="col-md-12 col-xs-12 col-lg-12 margen0   bordeabajo" >
+                                                            <div class="col-md-1 col-xs-1 col-lg-1 text-center">
 
                                                             </div>
-                                                            <div class="col-md-1 col-xs-1 text-right ">
+                                                            <div class="col-md-1 col-xs-1 col-lg-1 text-right ">
                                                                 <img
                                                                     src="http://www.futbolecuador.com/<?php echo $partido->hshield; ?>"
                                                                     alt="<?php echo $partido->hname; ?>"
                                                                     title="<?php echo $partido->hname; ?>">
                                                             </div>
-                                                            <div class="col-md-10  col-xs-9">
-                                                                <?php echo $partido->hname; ?>
+                                                            <div class="col-md-10  col-xs-9 col-lg-8">
+                                                                <?php
+                                                                if ( "Universidad Católica de Quito" == $partido->hname) $partido->hname = "U.C. de  Quito";
+                                                                if ( "Independiente del Valle" == $partido->hname) $partido->hname = "I. del Valle";
+                                                                echo $partido->hname; ?>
                                                             </div>
 
                                                         </div>
-                                                        <div class="col-md-12 col-xs-12 margen0   separador5">
-                                                            <div class=" col-md-1 col-xs-1 text-center">
+                                                        <div class="col-md-12 col-xs-12 col-lg-12 margen0   separador5">
+                                                            <div class=" col-md-1 col-xs-1 col-lg-1 text-center">
 
                                                             </div>
-                                                            <div class="col-md-1 col-xs-1 text-right">
+                                                            <div class="col-md-1 col-xs-1 col-lg-1 text-right">
                                                                 <img
                                                                     src="http://www.futbolecuador.com/<?php echo $partido->ashield; ?>"
                                                                     alt="<?php echo $partido->aname; ?>"
                                                                     title="<?php echo $partido->aname; ?>">
                                                             </div>
-                                                            <div class="col-md-10 col-xs-9">
-                                                                <?php echo $partido->aname; ?>
+                                                            <div class="col-md-10 col-xs-9 col-lg-8">
+                                                                <?php
+                                                                if ( "Universidad Católica de Quito" == $partido->aname) $partido->aname = "U.C. de  Quito";
+                                                                if ( "Independiente del Valle" == $partido->aname) $partido->aname = "I. del Valle";
+                                                                echo $partido->aname; ?>
                                                             </div>
-
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-2 col-xs-2 margen0 text-center bordeizquierda">
+                                                    <div class="col-md-2 col-xs-2 col-lg-2 margen0 text-center bordeizquierda">
                                                         <div style="font-size: 11px">
                                                             <?php echo ucwords(utf8_encode(strftime("%d %b", strtotime($partido->date_match)))); ?>
                                                             <?php echo ucwords(utf8_encode(strftime("%HH%M", strtotime($partido->date_match)))); ?>
@@ -210,8 +223,6 @@
             </div>
         </div>
     </div>
-
-
 </div>
 </div>
 </div>
@@ -224,11 +235,12 @@
 <!--Tabla de Posiciones-->
 <? echo $tablaposiciones; ?>
 <!--Goleadores-->
-<div class="col-md-12 col-xs-12 separador10 margen0r">
+<div class="col-md-12 col-xs-12 separador10 margen0">
     <? echo $strikes; ?>
 </div>
 <!--Fin Goleadores -->
 <!--La Voz de las Tribunas-->
-<div class="col-md-12 col-xs-12 separador10 margen0r">
+<div class="col-md-12 col-xs-12 separador10 margen0">
     <? echo $laVozDeLasTribunas; ?>
+</div>
 </div>

@@ -12,7 +12,8 @@
         }
     }
     ?>
-    <meta name="description" content="<?php echo (isset($description)) ? strip_tags ($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del ftbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias, copa libertadores.'; ?>"/>
+    <meta name="description"
+          content="<?php echo (isset($description)) ? strip_tags($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del ftbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias, copa libertadores.'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -52,7 +53,8 @@
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
     <!--Facebook TAGS-->
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
-    <meta property="og:description" content="<?php echo (isset($description)) ? $description . "," . $tags: 'Futbol Ecuador'; ?>"/>
+    <meta property="og:description"
+          content="<?php echo (isset($description)) ? $description . "," . $tags : 'Futbol Ecuador'; ?>"/>
     <meta property="og:image"
           content="<?php echo (isset($image)) ? base_url($image) : base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
     <!--SEO TAGS-->
@@ -106,11 +108,19 @@
         </script>
     <?php
     } else {
-        ?>
-        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/cjkoikfgconobaeikllfnkpnjihcfnil">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
-    <?php
+        if ($verMobile == "2") {
+            ?>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+            <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
+        <?php
+        } else {
+            ?>
+            <link rel="chrome-webstore-item"
+                  href="https://chrome.google.com/webstore/detail/cjkoikfgconobaeikllfnkpnjihcfnil">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+            <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
+        <?php
+        }
     }
     ?>
     <script>
@@ -121,8 +131,9 @@
 <body>
 
 
-
-<input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/> <script LANGUAGE="JavaScript">var OBCTm='1426714580701'; </script><script LANGUAGE="JavaScript" src="http://widgets.outbrain.com/claim.js"></script>
+<input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/>
+<script LANGUAGE="JavaScript">var OBCTm = '1426714580701'; </script>
+<script LANGUAGE="JavaScript" src="http://widgets.outbrain.com/claim.js"></script>
 <script type='text/javascript'>
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
@@ -139,15 +150,7 @@
 </script>
 
 <script type='text/javascript'>
-    <?php
-    if($verMobile=="1"){?>
-        var verMobile = 1;
-        <?php
-    }  else { ?>
-        var verMobile = 0;
-    <?php
-    }
-    ?>
+    var verMobile = <?php echo $verMobile ?>;
     var uri = "<?php  echo ($this->uri->segment(2) != "" ) ? $this->uri->segment(2) :"false"; ?>";
     googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());

@@ -21,41 +21,17 @@ class Site extends MY_Controller
                 $m = "Android Tablet";
             switch ($m) {
                 case 'Apple iPad':
-                    $isMobile = "0";
+                    $isMobile = "2";
                     break;
                 case 'Android Tablet':
-                    $isMobile = "0";
+                    $isMobile = "2";
                     break;
                 case in_array($m, $mobiles):
                     $isMobile = "1";
                     break;
             }
         }
-
         return $isMobile;
-        /*
-        $this->load->library('user_agent');
-        $mobiles=array('iPad','Android','Windows CE','Symbian S60','Apple iPad');
-        $movil="0";
-        if ($this->agent->is_mobile()){
-            $movil="1";
-            $m=$this->agent->mobile();
-            if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
-                $m = "Android Tablet";
-            switch($m){
-                case 'Apple iPad':
-                    $movil="0";
-                    break;
-                case 'Android Tablet':
-                    $movil="0";
-                    break;
-                case in_array($m,$mobiles):
-                    $movil="0";
-                    break;
-            }
-        }
-        return $movil;*/
-
     }
 
     public function index()
@@ -63,10 +39,8 @@ class Site extends MY_Controller
         if ($this->verificarDispositivo() == "1")
             redirect('site/movil/');
         else
-
             redirect('home');
 
-        //$this->home();
     }
 
 
@@ -293,9 +267,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
         // recuperar codigo de don balos
         $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
-        $tag = $data[0]->valor;$this->load->module('story');
-        // recuperar codigo de don balos
-        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
         $tag = $data[0]->valor;
         $rotativasData = $this->mdl_story->get_banner_tag(4, 44, $tag);
         echo "[";
@@ -338,9 +309,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function sidebardonbalon()
     {
         $this->load->module('contenido');
-        $this->load->module('templates');
+        //$this->load->module('templates');
 
-        $data['sidebar'] = $this->contenido->sidebarDonBalon(false, SERIE_A);
        // $this->templates->_index($data);
 
         echo $this->contenido->sidebarDonBalon(false, SERIE_A);

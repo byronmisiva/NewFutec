@@ -420,8 +420,8 @@ footer {
     outline: none;
 }
 
-  .sidebar h2, .sidebar .h2 ,
- .sidebar h2:hover, .sidebar .h2:hover  {
+  .sidebar h2, .sidebar .h2 , .sidebar h2:hover, .sidebar .h2:hover
+  {
     font-family: "Oxygen", Arial;;
     font-size: 13px;
     margin: 0;
