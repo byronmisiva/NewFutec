@@ -363,6 +363,11 @@ class Contenido extends MY_Controller
     public function sidebarDonBalon($data = FALSE, $serie = SERIE_A, $tipo = "large")
     {
 
+//        header('Access-Control-Allow-Origin: *');
+//        header('Access-Control-Allow-Origin: www.tudeloo.com');
+//        header( 'Access-Control-Allow-Origin: www.donbalon.com/');
+
+        header("access-control-allow-origin: *");
         //carga Banners
         $this->load->module('banners');
         $this->load->module('scoreboards');

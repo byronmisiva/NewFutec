@@ -159,7 +159,16 @@ class Stories extends CI_Controller {
 		$json = json_encode( array( 'request' => $data ) );
 		$res = $this->doPostRequest( $url, $json, 'Content-Type: application/json' );
 	}
-	/*********** End Push Notifications *******/
+
+
+    function pwCallMobile( $action, $data = array() ) {
+        $url = 'https://cp.pushwoosh.com/json/1.3/' . $action;
+        $json = json_encode( array( 'request' => $data ) );
+        $res = $this->doPostRequest( $url, $json, 'Content-Type: application/json' );
+        $tets = "a";
+    }
+
+    /*********** End Push Notifications *******/
 	
 	function insert(){
 		$this->load->model('story_stat');
@@ -234,7 +243,24 @@ class Stories extends CI_Controller {
 //				)
 //				);
 
-				redirect($previous_url);	
+                /*******NOTIFICACION MOBILE************/
+                $this->pwCallMobile( 'createMessage', array(
+                        'application' => PW_APP_MOBILE,
+                        'auth' => PW_AUTH,
+                        'notifications' => array(
+                            array(
+                                'send_date' => 'now',
+                                'content' => $_POST['subtitle'],
+                                'link' => 'http://www.futbolecuador.com/noticia/',
+                                "android_icon"=> "icon",
+                                "android_vibration"=> 0
+                            )
+                        )
+                    )
+                );
+                /*************************/
+
+				//redirect($previous_url);
 	    	}	
 		}
 		if (isset ($_SERVER['HTTP_REFERER'])) {

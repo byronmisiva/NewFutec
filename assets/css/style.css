@@ -1057,9 +1057,13 @@ h4.contenidos {
 
 
     .separador10 {
-        padding-right: 5px;
+        padding-right: 0;
         padding-left: 0;
 
+    }
+
+    .fondoazul  a, .fondoazul {
+        padding-right: 5px;
     }
     .separador10sec {
         padding-right: 5px;
@@ -1133,6 +1137,7 @@ h4.contenidos {
 
     .margen0-xs {
         padding: 0;
+        padding-right: 5px;
     }
 
     .masnoticias, .masnoticiasequipos {
@@ -1147,9 +1152,7 @@ h4.contenidos {
     .content h1,
     .content h2, .content .h2 ,
     .content h2:hover, .content .h2:hover   {
-
-        margin: 0 0 5px;
-
+        margin: 0 0 0px;
     }
     .altofema {
         min-height: auto;
@@ -1236,6 +1239,7 @@ h4.contenidos {
 @media (max-width: 767px) {
     .text-news-sub {
         font-size: 13px;
+        line-height: 13px;
     }
     .navbar-futec .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
@@ -1329,16 +1333,13 @@ div#darkLayer {
     width: 100%;
     z-index: 1035;
 }
-
-
-
 div#FE_LOADING {
     left: 0;
     right: 0;
     margin: 3% auto;
     position: fixed;
     top: 10px;
-    width: 800px;
+    width: 100%;
     z-index: 1040;
 }
 
@@ -1348,7 +1349,6 @@ div#closeBanner {
     cursor: pointer;
     height: 20px;
     opacity: 0.6;
-    position: absolute;
     left: 0;
     top: -20px;
     width: 81px;
@@ -1589,6 +1589,15 @@ input[type="checkbox"], input[type="radio"] {
         height: 160px;
     }
 }
+@media screen and (min-width: 400px)  and (max-device-width: 728px)  {
+    .flexslidermobile {
+        height: 235px !important;
+    }
+    .flexslidermobile .content-text-rotativas {
+        top: 175px;
+    }
+}
+
 
 @media screen and (max-device-width: 300px) {
     .redireccionFE {
@@ -1696,9 +1705,9 @@ h1.tabla, h2.tabla {
 .logodonbalon {
     background-color: transparent;
     background-image: url("../img/logo-don-balon.png");
-    background-size: 73px 14px;
-    width: 73px;
-    height: 14px;
-    margin-top: 1px;
+    background-size: 68px 11px;
+    width: 68px;
+    height: 11px;
+    margin-top: 3px;
     margin-bottom: 3px;
 }

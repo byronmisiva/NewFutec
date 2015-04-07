@@ -60,7 +60,7 @@
             <div class="panel-group" id="accordion2">
                 <?php
                 foreach ($campeonatosResultados as $campeonato) {
-                    if (CHAMP_DEFAULT == $campeonato->champ) {
+                    if ($serie == $campeonato->champ) {
                         $active = "in";
                     } else {
                         $active = "";
@@ -161,7 +161,7 @@
 
                 foreach ($campeonatos as $campeonato) {
                     $name_champ_default = "";
-                    if (CHAMP_DEFAULT == $campeonato->champ) {
+                    if ($serie == $campeonato->champ) {
                         $name_champ_default = $campeonato->shortname;
                         $active = "in";
                     } else {
@@ -258,7 +258,7 @@
 </div>
 </div>
 <div class="col-xs-12 text-right fondoazul separador10">
-    <a class="result-link" href="<?= base_url('site/resultados/' . CHAMP_DEFAULT . '/' . $name_champ_default) ?>">Calendario
+    <a class="result-link" href="<?= base_url('site/resultados/' . $serie . '/' . $name_champ_default) ?>">Calendario
         Completo</a>
 
 </div>

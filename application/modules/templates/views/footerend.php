@@ -117,6 +117,7 @@
     var APP_CODE = '0E44F-5F59B';          // Your Pushwoosh application code from the Control Panel
     var WEB_SITE_PUSH_ID = 'web.futbolecuador.pushwoosh.2015';        // Your unique reverse-domain Website Push ID from the Developer Center, starts with "web."
     var pushwooshUrl = 'https://cp.pushwoosh.com/json/1.3/';
+    var isFirstRegister = false;
 
     var checkRemotePermission = function (permissionData) {
         console.log(permissionData);
@@ -128,14 +129,20 @@
                 { application: APP_CODE },
                 checkRemotePermission    // The callback function.
             );
+            isFirstRegister = true;
         } else if (permissionData.permission === 'denied') {
             console.log('The user said no.');
         } else if (permissionData.permission === 'granted') {
             console.log('The web service URL is a valid push provider, and the user said yes.');
             console.log('You deviceToken is ' + permissionData.deviceToken);
-            // setTags call
-            //var tags = {"Alias": "SafariValue", "FavNumber": "98"};
-            //pushwooshSetTags(permissionData.deviceToken, tags);
+            // set system tags
+            if (isFirstRegister == true) {
+                var tags = {
+                    "Language": window.navigator.language || 'en',
+                    "Device Model": get_browser_version()
+                };
+                pushwooshSetTags(permissionData.deviceToken, tags);
+            }
         }
     };
 
@@ -147,6 +154,7 @@
             console.log('Push Notifications are available for Safari browser only');
         }
 
+        // send to Pushwoosh push open statistics
         try {
             if (navigator.userAgent.indexOf('Safari') > -1) {
                 var hashReg = /#P(.*)/,
@@ -183,7 +191,7 @@
                 params = {
                     request:{
                         application: APP_CODE,
-                        hwid: hwid,
+                        hwid: hwid.toLowerCase(),
                         tags: tags
                     }
                 };
@@ -206,7 +214,22 @@
             return;
         }
     }
-
+    function get_browser_version() {
+        var ua = navigator.userAgent, tem,
+            M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+        if (/trident/i.test(M[1])) {
+            tem =  /\brv[ :]+(\d+)/g.exec(ua) || [];
+            return 'IE '+(tem[1] || '');
+        }
+        if (M[1] === 'Chrome') {
+            tem = ua.match(/\bOPR\/(\d+)/)
+            if(tem!= null) return 'Opera '+tem[1];
+        }
+        M = M[2] ? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+        if((tem= ua.match(/version\/([.\d]+)/i))!= null)
+            M.splice(1, 1, tem[1]);
+        return M.join(' ');
+    }
 </script>
 <!-- Push Notifications -->
 <?php

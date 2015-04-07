@@ -84,7 +84,7 @@ class Site extends MY_Controller
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
 <div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
-        $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . "</div>" . $fe_loading_movil . $bannerBottom . $tablaposiciones .$outbrain;
+        $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
 
         $data['footer'] = '';
@@ -233,7 +233,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $aux = $this->mdl_story->get_story($idNoticia);
         $image = $aux->thumb150;
-        $description = $aux->lead;
+        $description = strip_tags ($aux->lead);
         $bodytag = str_replace('"', '', strip_tags($aux->title));
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;

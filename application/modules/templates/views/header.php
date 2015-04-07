@@ -188,10 +188,12 @@
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
             //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
-                if (!event.isEmpty) {
+                if (event.isEmpty) {
+                    //cargarSplashFE();
+                    //
                     cleanBlackLayer;
                 } else {
-                    //cargarSplashFE();
+                    mostrarBlackLayer;
                 }
             }
             //para el caso de splash desktop
@@ -200,7 +202,9 @@
                 if (event.isEmpty) {
                     cleanBlackLayer;
                 } else {
+                    <?php if ($verMobile != "1"){ ?>
                     cargarSplash();
+                    <?php } ?>
                 }
             }
 

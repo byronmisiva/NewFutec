@@ -1,5 +1,5 @@
 <!-- social y buscar -->
-<div class="col-md-3 separador10">
+<div class="col-md-3 col-xs-3 separador10">
     <span class="social-pos">
 
         <script>!function (d, s, id) {
@@ -16,7 +16,7 @@
            data-show-screen-name="false">Seguir a @futbolecuador</a>
     </span>
 </div>
-<div class="col-md-3 separador10">
+<div class="col-md-3 col-xs-3 separador10">
     <span class="social-pos">
         <iframe
             src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Ffutbolecuador&amp;locale=es_ES&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true&amp;appId=1396413573964675"
@@ -24,7 +24,7 @@
     </span>
 </div>
 
-<div class="col-md-6 separador10 pull-right margen0">
+<div class="col-md-6 col-xs-6 separador10 pull-right margen0">
     <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cx" value="004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cof" value="FORID:11">
@@ -35,7 +35,7 @@
 </div>
 
 <!--Calendario-->
-<div class="col-md-12 separador10  margen0r lateral">
+<div class="col-md-12 col-xs-12 separador10  margen0r lateral">
 
 <div id="collapseTwo" class="panel-collapse collapse in">
 <div class="panel-body panel-body-clear-margin">

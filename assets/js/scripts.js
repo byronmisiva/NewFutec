@@ -5,12 +5,12 @@ function cargarSplashFE() {
     if ((verMobile == 1 ) && (uri == "movil")) {
         $('#darkLayerFE').show();
         $('#FE_LOADINGFE').show();
-        //funcion enviar encuesta
+        //funcion spalsh movil
             $(".redireccionFE, .deviceFE, #closeBanner").click(function () {
                 $('#darkLayerFE').hide();
                 $('#FE_LOADINGFE').hide();
             })
-        setTimeout(cleanBlackLayer, 100000);
+        //cleanBlackLayer;
     }
 };
 
@@ -22,7 +22,7 @@ function cargarSplash() {
             $('#darkLayer').hide();
             $('#FE_LOADING').hide();
         })
-        setTimeout(cleanBlackLayer, 22000);
+        setTimeout(cleanBlackLayer, 70000);
 
 };
 
@@ -33,10 +33,13 @@ var cleanBlackLayer = function () {
     //si no existe cargar splash de fe
 };
 
+var mostrarBlackLayer = function () {
+    $('#darkLayer').show();
+    $('#FE_LOADING').show();
+    //si no existe cargar splash de fe
+};
+
 jQuery(document).ready(function () {
-
-
-
     //funcion enviar encuesta
     if ($(".enviar-encuesta").length) {
         $("#enviar-encuesta-boton").click(function () {
@@ -441,19 +444,15 @@ jQuery(function () {
                 }, 1000);
             });
         },
-
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
             $("img.next").click()
         },
         swipeRight: function() {
             $("img.prev").click()
         },
-
         //Default is 75px, set to 0 for demo so any distance triggers swipe
         threshold:0
     });
-
-
     //menuchicas
     jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18").click(function () {
         for (var i = 1; i <= 18; i++)
@@ -580,18 +579,9 @@ function clickMasNoticias() {
             $(".noticiasextras").html(noticiasExtras + data);
             $("img.lazy").lazyload();
             clickMasNoticias();
-
             setTimeout(igualarancho(), 2500);
         });
-
-
-
-
     })
-
-
-
-
 }
 function clickVerResultados() {
     $("#ver-resultados").click(function () {
