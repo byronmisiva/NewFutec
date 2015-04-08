@@ -20,3 +20,5 @@ application/config/config.php
 */admin/.idea/*
 */.idea/*
 */.idea/workspace.xml
+.idea/*
+.idea/workspace.xml
