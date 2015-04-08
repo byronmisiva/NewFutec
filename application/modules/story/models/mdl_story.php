@@ -46,9 +46,9 @@ class Mdl_story extends MY_Model
     }
     function news_by_tags($tag, $limit= "", $offset = 0){
         if ("" != $limit ){
-            $limit = "limit " . $limit;
+            $limit = "limit " . $limit ;
         }
-        $data =  $this->db->query('SELECT s.id, s.category_id, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category, s.title, s.subtitle, s.lead, s.body, s.created, s.modified, UNIX_TIMESTAMP(s.modified) AS datem, i.thumb300, i.thumbh120, i.thumbh80, i.thumbh50
+        $data =  $this->db->query('SELECT s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, s.modified, UNIX_TIMESTAMP(s.modified) AS datem, i.thumb300, i.thumbh120, i.thumbh80, i.thumbh50
                                     FROM stories_tags st INNER JOIN tags t ON st.tag_id = t.id
                                     INNER JOIN stories s ON s.id = st.story_id
                                     INNER JOIN images i ON s.image_id = i.id
@@ -151,7 +151,8 @@ class Mdl_story extends MY_Model
 				i.thumbh50,
 				i.thumbh80,
 				i.thumb300,
-				i.thumb500", FALSE);
+				i.thumb500,
+				i.thumb990", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
 

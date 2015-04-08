@@ -278,7 +278,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             echo '"titulo": "'.str_replace('"','\"',strip_tags (trim($noticia->subtitle))).'",';
             echo '"resumen": "'.str_replace('"','\"',strip_tags (trim($noticia->lead))).'",';
             echo '"foto": "'."http://www.futbolecuador.com/".$noticia->thumb300.'",';
-            echo '"foto_carrusel": "'."http://www.futbolecuador.com/".$noticia->thumb500.'",';
+            echo '"foto_carrusel": "'."http://www.futbolecuador.com/".$noticia->thumb990.'",';
             echo '"link": "'."http://www.futbolecuador.com/site/noticia/".$this->story->_urlFriendly($noticia->subtitle)."/".$noticia->id.'",';
             echo '"mostrar_carrusel": "s",';
             echo '"fecha_creacion": "'.$noticia->created.'"';
@@ -288,7 +288,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
 
-        $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON , 0);
+
+        $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON);
 
         foreach($data as $index=>$noticia){
             if (!in_array($noticia->id, $rotativasListado)) {
