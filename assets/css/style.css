@@ -1705,8 +1705,9 @@ h1.tabla, h2.tabla {
 .logodonbalon {
     background-color: transparent;
     background-image: url("../img/logo-don-balon.png");
-    background-size: 68px 11px;
-    width: 68px;
+    background-repeat: no-repeat;
+    background-size: 63px 11px;
+    width: 63px;
     height: 11px;
     margin-top: 3px;
     margin-bottom: 3px;

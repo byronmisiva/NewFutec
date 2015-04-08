@@ -16,5 +16,7 @@
 */cache/!index.html
 */cache/!.htaccess
 
-
 application/config/config.php
+*/admin/.idea/*
+*/.idea/*
+*/.idea/workspace.xml
