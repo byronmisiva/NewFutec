@@ -1,4 +1,11 @@
-<link href="<?php echo base_url() ?>assets/css/style.css?ser=1" rel="stylesheet">
+<link href="<?php echo base_url() ?>assets/css/styledonbalon.css" rel="stylesheet">
+<link href="<?php echo base_url() ?>assets/css/sprites.css" rel="stylesheet">
+<div id='FE_HP_1' style='margin-top: 5px; width: 300px; height: 250px;'>
+    <!-- FE_HP_1 -->
+    <script type='text/javascript'>GA_googleFillSlot("FE_HP_1");</script>
+</div>
+
+
 <!--Calendario-->
 <div class="sidebar">
 <div class="col-md-12 separador10  margen0 lateral">
@@ -244,3 +251,4 @@
     <? echo $laVozDeLasTribunas; ?>
 </div>
 </div>
+

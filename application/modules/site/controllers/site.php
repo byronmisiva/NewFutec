@@ -259,7 +259,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
         $this->templates->_index($data);
     }
-   public function getnewsjson()
+       public function getnewsjson()
     {
         header ('Content-type: text/html; charset=utf-8');
 
@@ -285,10 +285,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             echo "},";
 
         }
-
-
-
-
         $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON);
 
         foreach($data as $index=>$noticia){

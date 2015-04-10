@@ -360,9 +360,9 @@ class Mdl_matches extends MY_Model
             $partidos[$key]->ashield = 'imagenes/teams/shield/default.png';
             $partidos[$key]->athumb = 'imagenes/teams/thumb_shield/default.png';
             if ($team_away->shield2 != '')
-                $partidos[$key]->ashield = $team_away->shield2;
+                $partidos[$key]->ashield = $team_away->shield;
             if ($team_away->thumb_shield2 != '') {
-                $partidos[$key]->athumb = $team_away->thumb_shield2;
+                $partidos[$key]->athumb = $team_away->thumb_shield;
                 $partidos[$key]->mathumb = $team_away->mini_shield;
             }
         }
