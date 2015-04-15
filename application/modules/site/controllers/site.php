@@ -350,7 +350,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function donbalon()
     {
         // recuperar codigo de don balos
-        $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Don Balón", "futbolinternacional", "futbolinternacional");
+        $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Don Balon", "futbolinternacional", "futbolinternacional");
 
 //        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
 //        $tag = $data[0]->valor;

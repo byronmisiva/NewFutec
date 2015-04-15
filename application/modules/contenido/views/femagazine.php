@@ -141,7 +141,7 @@
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Internacional</h2>
 
-                    <p> En colaboración con Don Balón te presentamos el espectacular momento que vive Neymar Junior, que a puro gol y buenas actuaciones, ha confirmado su nivel de estrella mundial. Además, el difícil presente que atraviesa Falcao
+                    <p> En colaboración con Don Balon te presentamos el espectacular momento que vive Neymar Junior, que a puro gol y buenas actuaciones, ha confirmado su nivel de estrella mundial. Además, el difícil presente que atraviesa Falcao
 
                     </p>
                 </div>

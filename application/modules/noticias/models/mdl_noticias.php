@@ -174,7 +174,7 @@ LIMIT 8";
                 //para ercuperar y luego  filtrar los repetidos por codigo
                 if ($limit == 1) $limitNew = $limit;
                 else
-                $limitNew = $limit * 4;
+                $limitNew = $limit * 6;
             }
             $this->db->limit($limitNew, $offset);
         }
@@ -185,6 +185,7 @@ LIMIT 8";
         // por optimizacion
         $aux = $this->ajustaArray($aux, $limit);
 
+        $test = $this->db->last_query();
         $test = $this->db->last_query();
 
         foreach ($aux as $key => $row) {

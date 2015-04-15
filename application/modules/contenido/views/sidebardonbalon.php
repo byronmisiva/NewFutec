@@ -1,8 +1,35 @@
 <link href="<?php echo base_url() ?>assets/css/styledonbalon.css" rel="stylesheet">
 <link href="<?php echo base_url() ?>assets/css/sprites.css" rel="stylesheet">
-<div id='FE_HP_1' style='margin-top: 5px; width: 300px; height: 250px;'>
-    <!-- FE_HP_1 -->
-    <script type='text/javascript'>GA_googleFillSlot("FE_HP_1");</script>
+
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type='text/javascript'>
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/1022247/Don_Balon', [300, 250], 'div-gpt-ad-1429047683115-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+</script>
+
+
+<!-- /1022247/Don_Balon -->
+<div id='div-gpt-ad-1429047683115-0' style='height:250px; width:300px;'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429047683115-0'); });
+    </script>
 </div>
 
 
@@ -239,8 +266,24 @@
 </div>
 </div>
 <!--Fin calendario -->
+
+<!-- /1022247/Don_Balon -->
+<div id='div-gpt-ad-1429047683115-0' style='height:250px; width:300px;'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429047683115-0'); });
+    </script>
+</div>
+
 <!--Tabla de Posiciones-->
 <? echo $tablaposiciones; ?>
+
+<!-- /1022247/Don_Balon -->
+<div id='div-gpt-ad-1429047683115-0' style='height:250px; width:300px;'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429047683115-0'); });
+    </script>
+</div>
+
 <!--Goleadores-->
 <div class="col-md-12 col-xs-12 separador10 margen0">
     <? echo $strikes; ?>
@@ -248,7 +291,24 @@
 <!--Fin Goleadores -->
 <!--La Voz de las Tribunas-->
 <div class="col-md-12 col-xs-12 separador10 margen0">
-    <? echo $laVozDeLasTribunas; ?>
+    <? //echo $laVozDeLasTribunas; ?>
 </div>
 </div>
-
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');</script>
+<!-- End Google Tag Manager -->

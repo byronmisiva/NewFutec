@@ -150,6 +150,7 @@ jQuery(document).ready(function () {
     }, 5000);
     setTimeout(function () {
         igualarancho();
+        console.log ("altos")
     }, 7000);
 
     $("#enviarcontacto").click(function () {
@@ -607,14 +608,19 @@ function ajustesRotativas() {
 }
 
 function igualarancho() {
+
     if ($("body").width() > 600) {
         zonacontenido = $(".zonacontenido").height()
         zonasidebar = $(".zonasidebar").height();
 
         if (zonacontenido >= zonasidebar) {
-             $(".zonasidebar").height(zonacontenido);
+           //  $(".zonasidebar").height(zonacontenido);
+             $(".zonasidebar").css("min-height: ", zonacontenido);
+
         } else {
-              $(".zonacontenido").height(zonasidebar);
+            //  $(".zonacontenido").height(zonasidebar);
+
+            $(".zonacontenido").css("min-height: ", zonasidebar);
         }
     }
 }
