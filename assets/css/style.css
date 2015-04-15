@@ -1706,9 +1706,9 @@ h1.tabla, h2.tabla {
     background-color: transparent;
     background-image: url("../img/logo-don-balon.png");
     background-repeat: no-repeat;
-    background-size: 63px 11px;
+    background-size: 63px 12px;
     width: 63px;
-    height: 11px;
-    margin-top: 3px;
+    height: 12px;
+    margin-top: 4px;
     margin-bottom: 3px;
 }
