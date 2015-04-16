@@ -18,7 +18,9 @@
 
 <script type='text/javascript'>
     googletag.cmd.push(function() {
-        googletag.defineSlot('/1022247/Don_Balon', [300, 250], 'div-gpt-ad-1429047683115-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/Don_Balon', [300, 250], 'div-gpt-ad-1429195954202-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/Don_Balon_2', [300, 250], 'div-gpt-ad-1429195954202-1').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/Don_Balon_3', [300, 250], 'div-gpt-ad-1429195954202-2').addService(googletag.pubads());
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
@@ -26,12 +28,11 @@
 
 
 <!-- /1022247/Don_Balon -->
-<div id='div-gpt-ad-1429047683115-0' style='height:250px; width:300px;'>
+<div id='div-gpt-ad-1429195954202-0' style='height:250px; width:300px;'>
     <script type='text/javascript'>
-        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429047683115-0'); });
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429195954202-0'); });
     </script>
 </div>
-
 
 <!--Calendario-->
 <div class="sidebar">
@@ -267,22 +268,26 @@
 </div>
 <!--Fin calendario -->
 
-<!-- /1022247/Don_Balon -->
-<div id='div-gpt-ad-1429047683115-0' style='height:250px; width:300px;'>
+<div class="col-md-12 col-xs-12 separador10 margen0">
+<!-- /1022247/Don_Balon_2 -->
+<div id='div-gpt-ad-1429195954202-1' style='height:250px; width:300px;'>
     <script type='text/javascript'>
-        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429047683115-0'); });
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429195954202-1'); });
     </script>
+</div>
 </div>
 
 <!--Tabla de Posiciones-->
 <? echo $tablaposiciones; ?>
-
-<!-- /1022247/Don_Balon -->
-<div id='div-gpt-ad-1429047683115-0' style='height:250px; width:300px;'>
+<div class="col-md-12 col-xs-12 separador10 margen0">
+<!-- /1022247/Don_Balon_3 -->
+<div id='div-gpt-ad-1429195954202-2' style='height:250px; width:300px;'>
     <script type='text/javascript'>
-        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429047683115-0'); });
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1429195954202-2'); });
     </script>
 </div>
+</div>
+
 
 <!--Goleadores-->
 <div class="col-md-12 col-xs-12 separador10 margen0">

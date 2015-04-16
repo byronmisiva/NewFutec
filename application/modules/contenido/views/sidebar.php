@@ -283,9 +283,9 @@
 
 <!--Fin Goleadores -->
 <!--fuera de juego -->
-<div class="col-md-12 col-xs-12 separador10 margen0r">
-    <? echo $fueradejuego; ?>
-</div>
+<!--<div class="col-md-12 col-xs-12 separador10 margen0r">-->
+<!--    --><?// echo $fueradejuego; ?>
+<!--</div>-->
 
 <!--Lo más leído-->
 <div class="col-md-12 col-xs-12 separador10 margen0r">
