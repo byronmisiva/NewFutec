@@ -90,7 +90,6 @@
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2><a href="http://www.futbolecuador.com/fuera-de-juego"> Fuera de juego</a></h2>
-
                     <p><a href="http://www.futbolecuador.com/fuera-de-juego">Vanessa Vergara, en una sesión de infarto, prueba que la hinchada del Quito no abandona.
                         </a>
                     </p>
