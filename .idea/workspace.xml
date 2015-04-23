@@ -78,15 +78,15 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.38" vertical-offset="5801" max-vertical-offset="11565">
-              <caret line="428" column="98" selection-start-line="428" selection-start-column="98" selection-end-line="428" selection-end-column="98" />
+            <state vertical-scroll-proportion="-13.58" vertical-offset="5801" max-vertical-offset="11580">
+              <caret line="432" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
               <folding>
-                <marker date="1429810544000" expanded="true" signature="3199:3251" placeholder="..." />
-                <marker date="1429810544000" expanded="true" signature="3303:3343" placeholder="..." />
-                <marker date="1429810544000" expanded="true" signature="3344:3469" placeholder="..." />
-                <marker date="1429810544000" expanded="true" signature="3358:3388" placeholder="..." />
-                <marker date="1429810544000" expanded="true" signature="3421:3447" placeholder="..." />
-                <marker date="1429810544000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
+                <marker date="1429811656000" expanded="true" signature="3199:3251" placeholder="..." />
+                <marker date="1429811656000" expanded="true" signature="3303:3343" placeholder="..." />
+                <marker date="1429811656000" expanded="true" signature="3344:3469" placeholder="..." />
+                <marker date="1429811656000" expanded="true" signature="3358:3388" placeholder="..." />
+                <marker date="1429811656000" expanded="true" signature="3421:3447" placeholder="..." />
+                <marker date="1429811656000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
               </folding>
             </state>
           </provider>
@@ -95,8 +95,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8181818" vertical-offset="25140" max-vertical-offset="25995">
-              <caret line="1721" column="28" selection-start-line="1721" selection-start-column="28" selection-end-line="1721" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.8545455" vertical-offset="25140" max-vertical-offset="25995">
+              <caret line="1723" column="18" selection-start-line="1723" selection-start-column="18" selection-end-line="1723" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -4503,7 +4503,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429810429111</updated>
     </task>
-    <option name="localTasksCounter" value="684" />
+    <task id="LOCAL-00684" summary="e">
+      <created>1429811541321</created>
+      <option name="number" value="00684" />
+      <option name="project" value="LOCAL" />
+      <updated>1429811541322</updated>
+    </task>
+    <option name="localTasksCounter" value="685" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -5003,21 +5009,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.38" vertical-offset="5801" max-vertical-offset="11565">
-          <caret line="428" column="98" selection-start-line="428" selection-start-column="98" selection-end-line="428" selection-end-column="98" />
-          <folding>
-            <marker date="1429810544000" expanded="true" signature="3199:3251" placeholder="..." />
-            <marker date="1429810544000" expanded="true" signature="3303:3343" placeholder="..." />
-            <marker date="1429810544000" expanded="true" signature="3344:3469" placeholder="..." />
-            <marker date="1429810544000" expanded="true" signature="3358:3388" placeholder="..." />
-            <marker date="1429810544000" expanded="true" signature="3421:3447" placeholder="..." />
-            <marker date="1429810544000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getmarcador/application/modules/templates/views/header-tabla.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.0" vertical-offset="4074" max-vertical-offset="4875">
@@ -5026,10 +5017,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.58" vertical-offset="5801" max-vertical-offset="11580">
+          <caret line="432" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
+          <folding>
+            <marker date="1429811656000" expanded="true" signature="3199:3251" placeholder="..." />
+            <marker date="1429811656000" expanded="true" signature="3303:3343" placeholder="..." />
+            <marker date="1429811656000" expanded="true" signature="3344:3469" placeholder="..." />
+            <marker date="1429811656000" expanded="true" signature="3358:3388" placeholder="..." />
+            <marker date="1429811656000" expanded="true" signature="3421:3447" placeholder="..." />
+            <marker date="1429811656000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8181818" vertical-offset="25140" max-vertical-offset="25995">
-          <caret line="1721" column="28" selection-start-line="1721" selection-start-column="28" selection-end-line="1721" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.8545455" vertical-offset="25140" max-vertical-offset="25995">
+          <caret line="1723" column="18" selection-start-line="1723" selection-start-column="18" selection-end-line="1723" selection-end-column="18" />
           <folding />
         </state>
       </provider>
