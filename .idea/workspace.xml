@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/logo-don-balon-red.png" afterPath="$PROJECT_DIR$/assets/img/logo-don-balon-red.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -75,28 +73,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.58" vertical-offset="5801" max-vertical-offset="11580">
-              <caret line="432" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.72129035" vertical-offset="5801" max-vertical-offset="11580">
+              <caret line="424" column="41" selection-start-line="424" selection-start-column="41" selection-end-line="424" selection-end-column="41" />
               <folding>
-                <marker date="1429811656000" expanded="true" signature="3199:3251" placeholder="..." />
-                <marker date="1429811656000" expanded="true" signature="3303:3343" placeholder="..." />
-                <marker date="1429811656000" expanded="true" signature="3344:3469" placeholder="..." />
-                <marker date="1429811656000" expanded="true" signature="3358:3388" placeholder="..." />
-                <marker date="1429811656000" expanded="true" signature="3421:3447" placeholder="..." />
-                <marker date="1429811656000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
+                <marker date="1429812401000" expanded="true" signature="3199:3251" placeholder="..." />
+                <marker date="1429812401000" expanded="true" signature="3303:3343" placeholder="..." />
+                <marker date="1429812401000" expanded="true" signature="3344:3469" placeholder="..." />
+                <marker date="1429812401000" expanded="true" signature="3358:3388" placeholder="..." />
+                <marker date="1429812401000" expanded="true" signature="3421:3447" placeholder="..." />
+                <marker date="1429812401000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8545455" vertical-offset="25140" max-vertical-offset="25995">
-              <caret line="1723" column="18" selection-start-line="1723" selection-start-column="18" selection-end-line="1723" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="25140" max-vertical-offset="26010">
+              <caret line="1728" column="0" selection-start-line="1728" selection-start-column="0" selection-end-line="1728" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -196,8 +194,8 @@
         <option value="$PROJECT_DIR$/getmarcadorRespaldo/application/modules/templates/views/header-generador.php" />
         <option value="$PROJECT_DIR$/getmarcador/application/modules/templates/views/view-previo-tabla.php" />
         <option value="$PROJECT_DIR$/admin/application/views/templates/admin.php" />
-        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
       </list>
     </option>
   </component>
@@ -4509,7 +4507,19 @@
       <option name="project" value="LOCAL" />
       <updated>1429811541322</updated>
     </task>
-    <option name="localTasksCounter" value="685" />
+    <task id="LOCAL-00685" summary="e">
+      <created>1429811881203</created>
+      <option name="number" value="00685" />
+      <option name="project" value="LOCAL" />
+      <updated>1429811881203</updated>
+    </task>
+    <task id="LOCAL-00686" summary="e">
+      <created>1429811962803</created>
+      <option name="number" value="00686" />
+      <option name="project" value="LOCAL" />
+      <updated>1429811962803</updated>
+    </task>
+    <option name="localTasksCounter" value="687" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -5017,26 +5027,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.58" vertical-offset="5801" max-vertical-offset="11580">
-          <caret line="432" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
-          <folding>
-            <marker date="1429811656000" expanded="true" signature="3199:3251" placeholder="..." />
-            <marker date="1429811656000" expanded="true" signature="3303:3343" placeholder="..." />
-            <marker date="1429811656000" expanded="true" signature="3344:3469" placeholder="..." />
-            <marker date="1429811656000" expanded="true" signature="3358:3388" placeholder="..." />
-            <marker date="1429811656000" expanded="true" signature="3421:3447" placeholder="..." />
-            <marker date="1429811656000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="25140" max-vertical-offset="26010">
+          <caret line="1728" column="0" selection-start-line="1728" selection-start-column="0" selection-end-line="1728" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8545455" vertical-offset="25140" max-vertical-offset="25995">
-          <caret line="1723" column="18" selection-start-line="1723" selection-start-column="18" selection-end-line="1723" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.72129035" vertical-offset="5801" max-vertical-offset="11580">
+          <caret line="424" column="41" selection-start-line="424" selection-start-column="41" selection-end-line="424" selection-end-column="41" />
+          <folding>
+            <marker date="1429812401000" expanded="true" signature="3199:3251" placeholder="..." />
+            <marker date="1429812401000" expanded="true" signature="3303:3343" placeholder="..." />
+            <marker date="1429812401000" expanded="true" signature="3344:3469" placeholder="..." />
+            <marker date="1429812401000" expanded="true" signature="3358:3388" placeholder="..." />
+            <marker date="1429812401000" expanded="true" signature="3421:3447" placeholder="..." />
+            <marker date="1429812401000" expanded="true" signature="10139:10199" placeholder="SELECT valor..parametros..." />
+          </folding>
         </state>
       </provider>
     </entry>

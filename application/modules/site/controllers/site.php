@@ -422,7 +422,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             //para el caso de don balon se cambia el texto donbalon por el logo de don balon
             if (ZONAINTERNACIONAL == $seccion) {
                 $storia = str_replace( "en www.donbalon.com", "", $storia);
-                $storia = str_replace( "donbalon"," <span class='donbalonlogo'></span>", $storia);
+                $storia = str_replace( " donbalon"," <span class='donbalonlogo'></span>", $storia);
                 $storia = str_replace( "Mira la noticia completa", "Lee la noticia completa en ", $storia);
                 $storia = str_replace( "Mira la nota completa", "Lee la noticia completa en ", $storia);
                 $storia = str_replace( "La nota completa", "Lee la noticia completa en", $storia);
