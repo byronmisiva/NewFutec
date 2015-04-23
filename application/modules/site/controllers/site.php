@@ -417,7 +417,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($idNoticia) {
+
             $storia = $this->story->get_complete($idNoticia);
+            //para el caso de don balon se cambia el texto donbalon por el logo de don balon
+            if (ZONAINTERNACIONAL == $seccion) {
+                $storia = str_replace( "(AQUÍ).", " <span class='donbalonlogo'></span>", $storia);
+                $storia = str_replace( "(AQUÍ)", " <span class='donbalonlogo'></span>", $storia);
+                $storia = str_replace( "AQUÍ:", " <span class='donbalonlogo'></span>", $storia);
+                $storia = str_replace( "Mira la noticia completa", "Lee la noticia completa en ", $storia);
+            }
             $aux = $this->mdl_story->get_story($idNoticia);
             $bodytag = str_replace('"', '', strip_tags($aux->title));
         }

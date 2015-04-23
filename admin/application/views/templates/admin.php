@@ -28,6 +28,9 @@
     <tr>
         <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarImagen' target="_blank"><span style="color: #fff; font-size:11px;font-family:  Arial, Verdana">Generar Marcador</span> </a></div></td>
     </tr>
+    <tr>
+        <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarTabla' target="_blank"><span style="color: #fff; font-size:11px;font-family:  Arial, Verdana">Generar Tabla Posiciones A</span> </a></div></td>
+    </tr>
   <tr>
     <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
