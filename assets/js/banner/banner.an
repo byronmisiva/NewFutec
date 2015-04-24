@@ -25,7 +25,7 @@
 }",
 	"PreloadAudio":"auto",
 	"replegado-Default Timeline_mark_ms":"-1",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/5.png":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/5.png":"nil",
 	"symbol_replegado":{
 		"element_${__3}":{
 			"timelineColor2":"0x5a558a",
@@ -171,17 +171,17 @@
 	"TransitionIdCounter":"54",
 	"viewStartMs":"-25",
 	"pref__general__AutoKeyframePropertiesArmed":"false",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/3.png":"nil",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/4.png":"nil",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/6.png":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/3.png":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/4.png":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/6.png":"nil",
 	"CompZoomFactor":"100",
 	"viewStartY":"0",
 	"pixelsPerMs":"0.2",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/1.png":"nil",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/7.png":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/1.png":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/7.png":"nil",
 	"stage-Default Timeline_mark_ms":"-1",
 	"nextElementColorIndex":"2",
 	"pref__general__GenerateSmoothTransitions":"true",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/8.jpg":"nil",
+	"expanded:http://new.futbolecuador.com/futec/images/8.jpg":"nil",
 	"replegado-Default Timeline_playhead_ms":"0",
-	"expanded:'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/2.png":"nil"}
+	"expanded:http://new.futbolecuador.com/futec/images/2.png":"nil"}
