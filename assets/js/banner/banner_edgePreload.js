@@ -56,6 +56,7 @@ if(document.addEventListener ){
        { load: "http://new.futbolecuador.com/futec/assets/js/banner/banner_edgeActions.js"}];
 
 
+
 if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResources=doLoadResources; AdobeEdge.playWhenReady=playWhenReady; }
 
 loadResources(aLoader, doDelayLoad);
