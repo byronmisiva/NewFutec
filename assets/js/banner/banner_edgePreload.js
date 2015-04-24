@@ -51,9 +51,9 @@ if(document.addEventListener ){
 
    aLoader = [
        
-       { load: "http://localhost:10088/newFutbolEcuador/site/NewFutec/assets/js/banner/edge_includes/edge.4.0.0.min.js"},
-       { load: "http://localhost:10088/newFutbolEcuador/site/NewFutec/assets/js/banner/banner_edge.js"},
-       { load: "http://localhost:10088/newFutbolEcuador/site/NewFutec/assets/js/banner/banner_edgeActions.js"}];
+       { load: "http://new.futbolecuador.com/futec/assets/js/banner/edge_includes/edge.4.0.0.min.js"},
+       { load: "http://new.futbolecuador.com/futec/assets/js/banner/banner_edge.js"},
+       { load: "http://new.futbolecuador.com/futec/assets/js/banner/banner_edgeActions.js"}];
 
 
 if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResources=doLoadResources; AdobeEdge.playWhenReady=playWhenReady; }
