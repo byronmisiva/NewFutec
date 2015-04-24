@@ -1726,3 +1726,9 @@ h1.tabla, h2.tabla {
     position: absolute;
 }
 
+/* banner galeano */
+.publicidadFlotante #Stage {
+    overflow: visible !important;
+    height: 50px !important;
+    z-index: 100 ;
+}

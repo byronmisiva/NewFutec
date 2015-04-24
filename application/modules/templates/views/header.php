@@ -33,6 +33,9 @@
     <meta name="twitter:app:id:googleplay" content="com.futbolecuador.femagazine">
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
+
+    <meta name="apple-itunes-app" content="app-id=622931242"/>
+
     <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">
         twttr.conversion.trackPid('l4vk1');

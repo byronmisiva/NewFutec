@@ -84,7 +84,12 @@ class Site extends MY_Controller
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
 <div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
-        $data['content'] = $marcadorenvivo . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
+
+        $publicidadFlotante = '<div class="publicidadFlotante">
+	<div id="Stage" class="EDGE-3751729">
+	</div></div>';
+
+        $data['content'] = $marcadorenvivo .$publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
 
         $data['footer'] = '';

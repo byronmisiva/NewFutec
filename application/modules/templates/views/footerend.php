@@ -30,6 +30,14 @@
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/add2home.js?v1"></script>
 
+<?php
+if ($verMobile == "1") {
+?>
+    <script type="text/javascript" src="<?= base_url() ?>assets/js/banner/banner_edgePreload.js"></script>
+<?php
+} ?>
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('.hidden-menu').css('display', 'none');
