@@ -13,14 +13,14 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
    (function(symbolName) {
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 250, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
          // introducir código aquí
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1313, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2063, function(sym, e) {
          // introducir código aquí
          sym.stop();
 
@@ -43,14 +43,29 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // los alias más comu
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3062, function(sym, e) {
          // introducir código aquí
-         sym.play();
+         sym.play("inicio");
 
       });
       //Edge binding end
 
    })("stage");
    //Edge symbol end:'stage'
+
+   //=========================================================
+   
+   //Edge symbol: 'replegado'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9034, function(sym, e) {
+         // introducir código aquí
+         sym.play();
+
+      });
+      //Edge binding end
+
+   })("replegado");
+   //Edge symbol end:'replegado'
 
 })(jQuery, AdobeEdge, "EDGE-3751729");
