@@ -3,7 +3,7 @@
  */
 (function($, Edge, compId){
 //images folder
-var im='http://localhost:10088/newFutbolEcuador/site/NewFutec/images/';
+var im='http://new.futbolecuador.com/futec/images/';
 
 var fonts = {};
 var opts = {
@@ -145,43 +145,43 @@ var symbols = {
                     id: '_7',
                     type: 'image',
                     rect: ['0px', '0px', '320px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/7.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/7.png', '0px', '0px']
                 },
                 {
                     id: '_6',
                     type: 'image',
                     rect: ['0px', '0px', '320px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/6.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/6.png', '0px', '0px']
                 },
                 {
                     id: '_5',
                     type: 'image',
                     rect: ['246px', '0px', '55px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/5.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/5.png', '0px', '0px']
                 },
                 {
                     id: '_4',
                     type: 'image',
                     rect: ['27px', '0px', '136px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/4.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/4.png', '0px', '0px']
                 },
                 {
                     id: '_3',
                     type: 'image',
                     rect: ['281px', '0px', '39px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/3.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/3.png', '0px', '0px']
                 },
                 {
                     id: '_2',
                     type: 'image',
                     rect: ['114px', '0px', '141px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/2.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/2.png', '0px', '0px']
                 },
                 {
                     id: '_1',
                     type: 'image',
                     rect: ['0px', '0px', '95px', '50px', 'auto', 'auto'],
-                    fill: ['rgba(0,0,0,0)', 'http://localhost:10088/newFutbolEcuador/site/NewFutec/images/1.png', '0px', '0px']
+                    fill: ['rgba(0,0,0,0)', 'http://new.futbolecuador.com/futec/images/1.png', '0px', '0px']
                 }
             ],
             symbolInstances: [

@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/images/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/banner/banner_edge.js" afterPath="$PROJECT_DIR$/assets/js/banner/banner_edge.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -90,8 +75,8 @@
       <file leaf-file-name="banner_edge.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/banner/banner_edge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82718897" vertical-offset="2386" max-vertical-offset="4110">
-              <caret line="183" column="106" selection-start-line="183" selection-start-column="106" selection-end-line="183" selection-end-column="106" />
+            <state vertical-scroll-proportion="5.625" vertical-offset="0" max-vertical-offset="4110">
+              <caret line="183" column="98" selection-start-line="183" selection-start-column="98" selection-end-line="183" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -4558,7 +4543,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429905475837</updated>
     </task>
-    <option name="localTasksCounter" value="694" />
+    <task id="LOCAL-00694" summary="e">
+      <created>1429905676143</created>
+      <option name="number" value="00694" />
+      <option name="project" value="LOCAL" />
+      <updated>1429905676143</updated>
+    </task>
+    <option name="localTasksCounter" value="695" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4583,7 +4574,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="211" y="23" width="1682" height="968" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -4597,7 +4588,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2554878" sideWeight="0.49238577" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22682928" sideWeight="0.6511628" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22682928" sideWeight="0.6511628" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -5063,14 +5054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/banner/banner.an">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2392" max-vertical-offset="2880">
-          <caret line="186" column="22" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.8703704" vertical-offset="601" max-vertical-offset="1110">
@@ -5079,10 +5062,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/banner/banner.an">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2392" max-vertical-offset="2880">
+          <caret line="186" column="22" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/banner/banner_edge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82718897" vertical-offset="2386" max-vertical-offset="4110">
-          <caret line="183" column="106" selection-start-line="183" selection-start-column="106" selection-end-line="183" selection-end-column="106" />
+        <state vertical-scroll-proportion="5.625" vertical-offset="0" max-vertical-offset="4110">
+          <caret line="183" column="98" selection-start-line="183" selection-start-column="98" selection-end-line="183" selection-end-column="98" />
           <folding />
         </state>
       </provider>
