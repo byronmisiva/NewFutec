@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/banner.an" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/banner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/banner_edge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/banner_edgeActions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/edge_includes/edge.4.0.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/banner/edge_includes/jquery-2.0.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js" afterPath="$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -58,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="banner_edgePreload.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="banner_edgePreload.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1095">
-              <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.6639151" vertical-offset="247" max-vertical-offset="1095">
+              <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -108,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footerend.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footerend.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4368932" vertical-offset="105" max-vertical-offset="4740">
+            <state vertical-scroll-proportion="-15.0" vertical-offset="105" max-vertical-offset="4740">
               <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -193,9 +187,9 @@
         <option value="$PROJECT_DIR$/assets/js/prueba_desplegable/desplegable_edgePreload.js" />
         <option value="$PROJECT_DIR$/assets/js/prueba_desplegable/banner_edgePreload.js" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-        <option value="$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
+        <option value="$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js" />
       </list>
     </option>
   </component>
@@ -4643,7 +4637,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429888845193</updated>
     </task>
-    <option name="localTasksCounter" value="690" />
+    <task id="LOCAL-00690" summary="e">
+      <created>1429889237818</created>
+      <option name="number" value="00690" />
+      <option name="project" value="LOCAL" />
+      <updated>1429889237818</updated>
+    </task>
+    <option name="localTasksCounter" value="691" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -4668,7 +4668,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="211" y="23" width="1682" height="968" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4678,7 +4678,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2554878" sideWeight="0.49238577" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22682928" sideWeight="0.6518265" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22682928" sideWeight="0.6518265" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22682928" sideWeight="0.34703195" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32687926" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -5081,14 +5081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1095">
-          <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.86" vertical-offset="1077" max-vertical-offset="11655">
@@ -5140,11 +5132,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4368932" vertical-offset="105" max-vertical-offset="4740">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="105" max-vertical-offset="4740">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/banner/banner_edgePreload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6639151" vertical-offset="247" max-vertical-offset="1095">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
