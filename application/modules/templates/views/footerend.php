@@ -38,6 +38,18 @@ if (in_array($idtipo, $tipo)) {?>
     <script type="text/javascript" src="<?= base_url() ?>assets/js/banner/banner_edgePreload.js"></script>
 <?php
 }?>
+
+<?php
+$idtipo = $this->uri->segment(2);
+$tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
+if (in_array($idtipo, $tipo)) {?>
+    <script type="text/javascript"
+            src="http://as.ebz.io/api/choixPubJS.htm?pid=1133761&home=http://www.futbolecuador.com/&screenLayer=1"></script>
+<?php
+}?>
+
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         $('.hidden-menu').css('display', 'none');

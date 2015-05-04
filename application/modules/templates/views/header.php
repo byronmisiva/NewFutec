@@ -131,14 +131,7 @@
         var REFRESH_VIVO = "<?php echo REFRESH_VIVO; ?>";
     </script>
     <!--   script teads  se muestra cuando es noticia abierta-->
-    <?php
-    $idtipo = $this->uri->segment(2);
-    $tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
-    if (in_array($idtipo, $tipo)) {?>
-        <script type="text/javascript"
-                src="http://as.ebz.io/api/choixPubJS.htm?pid=1133761&home=http://www.futbolecuador.com/&screenLayer=1"></script>
-    <?php
-    }?>
+
 </head>
 <body>
 
