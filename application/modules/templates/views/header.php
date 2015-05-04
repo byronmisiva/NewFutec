@@ -191,14 +191,21 @@
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
-            //para el caso de splash movil
+
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
                 if (event.isEmpty) {
-                    cargarSplashFE();
-                    //
+                    //para el caso de splash movil
+                    <?php
+                        if (isset($mostrarSplash)) {
+                        if ($mostrarSplash == "1")
+                            echo "cargarSplashFE();";
+                        } else {
+                            echo "mostrarBlackLayer;";
+                        }
+                    ?>
                     //cleanBlackLayer;
                 } else {
-                    mostrarBlackLayer;
+
                 }
             }
             //para el caso de splash desktop

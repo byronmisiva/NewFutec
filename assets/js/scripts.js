@@ -150,7 +150,7 @@ jQuery(document).ready(function () {
     }, 5000);
     setTimeout(function () {
         igualarancho();
-        console.log ("altos")
+
     }, 7000);
 
     $("#enviarcontacto").click(function () {

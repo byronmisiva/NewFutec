@@ -32,6 +32,10 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxnews1', $data, TRUE);
     }
+    public function FE_desplegable_movil($data = FALSE)
+    {
+        return $this->load->view('fe_desplegable_movil', $data, TRUE);
+    }
 
     public function FE_Bigboxnews2($data = FALSE)
     {
