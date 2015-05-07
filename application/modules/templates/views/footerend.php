@@ -35,12 +35,9 @@
 $idtipo = $this->uri->segment(2);
 $tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
 if (in_array($idtipo, $tipo)) {?>
-    <script type="text/javascript"
-            src="http://as.ebz.io/api/choixPubJS.htm?pid=1133761&home=http://www.futbolecuador.com/&screenLayer=1"></script>
+    <script type="text/javascript" src="http://as.ebz.io/api/choixPubJS.htm?pid=1134009&screenLayer=1&mode=NONE&home=http://www.futbolecuador.com"></script>
 <?php
 }?>
-
-
 
 <script type="text/javascript">
     $(document).ready(function () {
