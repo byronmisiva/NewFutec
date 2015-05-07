@@ -65,8 +65,10 @@ class Site extends MY_Controller
         $data['top1'] = "";
         $data['header1'] = "";
 
+        $publicidadFlotante =  $this->banners->fe_desplegable_movil();
+
         $bannerBottom = $this->banners->fe_smart_bottom();
-        $bannerTop = $this->banners->fe_smart_top();
+        $bannerTop = $this->banners->fe_smart_top() . $publicidadFlotante;
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
 
@@ -79,22 +81,15 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-      // $outbrain  = '<!--Inicio ejemplo -->
-      //                  <div data-src="www.futbolecuador.com" class="OUTBRAIN" ></div>
-      //                  <script type="text/javascript">(function(){window.OB_platformType=8;window.OB_langJS="http://widgets.outbrain.com/lang_es.js";window.OBITm="1426714580680";window.OB_recMode="brn_strip";var ob=document.createElement("script");ob.type="text/javascript";ob.async=true;ob.src="http"+("https:"===document.location.protocol?"s":"")+"://widgets.outbrain.com/outbrainLT.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(ob,h);})();</script>
-      //                  <!--Fin ejemplo -->';
+
 
         $outbrain =  '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
 <div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
 
-        $publicidadFlotante =  $this->banners->fe_desplegable_movil();
 
-   //     $publicidadFlotante = "";
-
-
-        $data['content'] = $marcadorenvivo .$publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
+        $data['content'] = $marcadorenvivo .  $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
 
         $data['footer'] = '';
