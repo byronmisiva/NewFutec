@@ -67,8 +67,8 @@ class Site extends MY_Controller
 
         $publicidadFlotante =  $this->banners->fe_desplegable_movil();
 
-        $bannerBottom = $this->banners->fe_smart_bottom();
-        $bannerTop = $this->banners->fe_smart_top() . $publicidadFlotante;
+        $bannerBottom = $this->banners->fe_smart_bottom() . $publicidadFlotante;
+        $bannerTop = $this->banners->fe_smart_top() ;
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
 
