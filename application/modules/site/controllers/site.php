@@ -49,7 +49,7 @@ class Site extends MY_Controller
     {
         // para la final se comentan la llamada a las secciones.
 
-        //$this->output->cache(CACHE_DEFAULT);
+        $this->output->cache(CACHE_DEFAULT);
         // recupera parametro para mostrar o no el splash
         $data =  $this->db->query("SELECT valor FROM parametros WHERE id = '2'")->result() ;
         $data['mostrarSplash'] = $data[0]->valor;
@@ -65,12 +65,10 @@ class Site extends MY_Controller
         $data['top1'] = "";
         $data['header1'] = "";
 
-        $publicidadFlotante =  $this->banners->fe_desplegable_movil();
-
-        $bannerBottom = $this->banners->fe_smart_bottom() ;
-        $bannerTop = $this->banners->fe_smart_top() ;
+        $bannerBottom = $this->banners->fe_smart_bottom();
+        $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
-        $data['header2'] = $publicidadFlotante . $this->contenido->header2mobile($dataHeader2) . $bannerTop;
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
 
         $marcadorenvivo = $this->contenido->marcadorVivo() ;
 
@@ -81,7 +79,10 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-
+      // $outbrain  = '<!--Inicio ejemplo -->
+      //                  <div data-src="www.futbolecuador.com" class="OUTBRAIN" ></div>
+      //                  <script type="text/javascript">(function(){window.OB_platformType=8;window.OB_langJS="http://widgets.outbrain.com/lang_es.js";window.OBITm="1426714580680";window.OB_recMode="brn_strip";var ob=document.createElement("script");ob.type="text/javascript";ob.async=true;ob.src="http"+("https:"===document.location.protocol?"s":"")+"://widgets.outbrain.com/outbrainLT.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(ob,h);})();</script>
+      //                  <!--Fin ejemplo -->';
 
         $outbrain =  '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
@@ -89,7 +90,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
 
 
-        $data['content'] = $marcadorenvivo .  $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
+
+   //     $publicidadFlotante =  $this->banners->fe_desplegable_movil();
+
+        $publicidadFlotante = "";
+
+
+        $data['content'] = $marcadorenvivo .$publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
 
         $data['footer'] = '';
@@ -366,25 +373,17 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     }
     public function donbalon()
     {
-        // recuperar codigo de don balos
         $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Don Balon", "futbolinternacional", "futbolinternacional");
 
-//        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
-//        $tag = $data[0]->valor;
-
-//        $this->tag(ZONANUESTROSEMBAJADORES, ZONANUESTROSEMBAJADORESPOS, "Don Balón", "donbalon", "donbalon");
     }
 
     public function copalibertadores()
     {
-        $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores");
+        $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores", LIBERTADORES);
         // $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores" , LIBERTADORES);
     }
 
-    public function copaamerica()
-    {
-        $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América", "copaamerica", "copaamerica");
-    }
+
 
     public function copasudamericana()
     {
@@ -395,7 +394,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Fútbol Internacional", "futbolinternacional", "futbolinternacional");
     }
-
 
     public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = SERIE_A)
     {
@@ -543,16 +541,22 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function tabladeposiciones($serie = SERIE_A)
     {
-        //$this->output->cache(CACHE_DEFAULT);
+
         $id = $this->uri->segment(3);
+        $tipotabla  = $this->uri->segment(4);
+
         if ($id) {
             $serie = $id;
         }
+        if (!$tipotabla) {
+            $tipotabla = "acumulada";
+        }
+
 
         $this->load->module('scoreboards');
-        $tablapocisiones = $this->scoreboards->scoreboardFull($serie);
+        $tablapocisiones = $this->scoreboards->scoreboardFull($serie, $tipotabla);
         $descriptio = "Tabla de posiciones, campeonato nacional de fútbol, campeonato nacional de fútbol serie b, actualizado minuto a minuto con los resultados del futbol ecuatoriano";
-        $this->singleConten("Tabla de Posiciones", $tablapocisiones, $descriptio);
+        $this->singleConten("Tabla de Posiciones", $tablapocisiones, $descriptio, $serie, $tipotabla);
     }
 
     public function resultados()
@@ -603,7 +607,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->singleConten("Fuera de Juego", $fueradejuego);
     }
 
-    public function singleConten($nameSeccion, $contenSeccion, $description = "")
+    public function singleConten($nameSeccion, $contenSeccion, $description = "", $serie = SERIE_A , $tipotabla = "acumulada")
     {
         // para la final se comentan la llamada a las secciones.
 
@@ -627,9 +631,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['content'] = $contenSeccion;
 
         if (($nameSeccion != "Magazine") && ($nameSeccion != "Fuera de Juego")) {
-            $data['sidebar'] = $this->contenido->sidebarOpenNews();
+            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
         } else {
-            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, SERIE_A, "short");
+            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "short", $tipotabla );
         }
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
@@ -776,6 +780,127 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
 
+
+        $this->templates->_index($data);
+    }
+
+
+    public function indexcopaamerica()
+    {
+        if ($this->verificarDispositivo() == "1")
+            redirect('copa-america-movil');
+        else
+            redirect('copaamerica');
+    }
+
+    public function copaamerica($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion= "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
+    {
+        $seccionpos = ZONACOPAAMERICAPOS;
+        $seccion = ZONACOPAAMERICA;
+        // para la final se comentan la llamada a las secciones.
+       // $this->output->cache(CACHE_DEFAULT);
+
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $this->load->library('user_agent');
+        $this->load->module('story');
+
+        $data['verMobile'] = $this->verificarDispositivo();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['header1'] = $this->contenido->menu();
+
+
+        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+
+
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+
+
+        $storia = "";
+        $bodytag = $nameSeccion;
+
+        // carga la informacion de la noticia
+        $idNoticia = $this->uri->segment(4);
+        //validamos las noticias
+
+        if ( $idNoticia == 'ref.outcontrol'  )
+            redirect('home');
+
+        if ($idNoticia) {
+            $storia = $this->story->get_complete($idNoticia);
+            $aux = $this->mdl_story->get_story($idNoticia);
+            $bodytag = str_replace('"', '', strip_tags($aux->title));
+        } else {
+            //en caso que es la pagina principal nos muestra la rotativa de imagenes
+            $dataHeader2['FE_Bigboxbanner'] = $this->banners->fe_hp_brand ();
+            $data['header2'] =  $this->contenido->copaamericaheader($dataHeader2);
+            $data['top2'] =  $this->banners->fe_brand_header();
+        }
+
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+        // fin carga la informacion de la noticia
+
+        $data['content'] = $storia . $noticiasCuerpo;
+        $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
+
+        $data['footer'] = $this->contenido->footer();
+        $data['bottom'] = $this->contenido->bottom();
+
+
+        $this->templates->_index($data);
+
+    }
+
+    // para la final se comentan la llamada a las secciones.
+    public function copaamericamovil()
+    {
+        // para la final se comentan la llamada a las secciones.
+
+        $this->output->cache(CACHE_DEFAULT);
+        // recupera parametro para mostrar o no el splash
+        $data =  $this->db->query("SELECT valor FROM parametros WHERE id = '2'")->result() ;
+        $data['mostrarSplash'] = $data[0]->valor;
+
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $data['verMobile'] = $this->verificarDispositivo();
+        $data['pageTitle'] = "Copa america - futbolecuador.com";
+        $this->load->library('user_agent');
+
+        $data['top1'] = "";
+        $data['header1'] = "";
+
+        $bannerBottom = $this->banners->fe_smart_bottom();
+        $bannerTop = $this->banners->fe_smart_top();
+        $dataHeader2['FE_Bigboxbanner'] = "";
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
+
+        $marcadorenvivo = $this->contenido->marcadorVivo() ;
+
+        $data['top2'] = "";
+
+        //Resultados tabla de posiciones
+        $this->load->module('scoreboards');
+        $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
+
+        $fe_loading_movil = $this->banners->fe_loading_movil();
+
+
+        $outbrain =  '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
+onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
+<div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
+<div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
+
+        $data['content'] = $marcadorenvivo .  $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
+        $data['sidebar'] = "";
+
+        $data['footer'] = '';
+        $data['bottom'] = $this->contenido->bottom();
+        $data['fe_splash'] = "";
 
         $this->templates->_index($data);
     }

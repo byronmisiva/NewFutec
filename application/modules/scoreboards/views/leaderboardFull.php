@@ -6,10 +6,15 @@
         </h1>
     </div>
     <? echo $scroreBoardSingle; ?>
-    <div class="panel-heading backcuadros">
-        <h2 class="tabla">
-            Tabla de Posiciones Acumulada
-        </h2>
-    </div>
-    <? echo $scroreBoardAcumulative; ?>
+    <?php if ($tipoCampeonato != "simple" ) {
+        ?>
+        <div class="panel-heading backcuadros">
+            <h2 class="tabla">
+                Tabla de Posiciones Acumulada
+            </h2>
+        </div>
+        <? echo $scroreBoardAcumulative; ?>
+
+    <?php
+    } ?>
 </div>

@@ -54,7 +54,10 @@ $route['marcador-en-vivo'] = "site/marcadorenvivo";
 
 $route['copa-libertadores'] = "site/copalibertadores";
 $route['copa-sudamericana'] = "site/copasudamericana";
-$route['copa-america'] = "site/copaamerica";
+
+$route['copa-america'] = "site/indexcopaamerica";
+$route['copaamerica'] = "site/copaamerica";
+$route['copa-america-movil'] = "site/copaamericamovil";
 
 $route['futbol-internacional'] = "site/futbolinternacional";
 

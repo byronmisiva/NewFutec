@@ -49,16 +49,36 @@ define('TOTALNEWSINDONBALON',30); //
 define('SECTION_PRIN',3);
 define('SECTION_SERIE_A',29);
 define('SECTION_SERIE_B',30);
+
 define('SECTION_SELECCION',26); //Section
 define('SECTION_LIBERTADORES',31);
 define('SECTION_SUDAMERICANA',32);
 
+define('SECTION_AMERICA',71);
+
 //Campeonatos
 define('SERIE_A',53);
+define('SERIE_A_TIPOTABLA',"acumulada");
+
 define('SERIE_B',54);
+define('SERIE_B_TIPOTABLA',"acumulada");
+
 define('MUNDIAL',43);
-define('LIBERTADORES',50);
+define('MUNDIAL_TIPOTABLA',"simple");
+
+define('LIBERTADORES',55);
+define('LIBERTADORES_TIPOTABLA',"simple");
+
 define('SUDAMERICANA',52);
+define('SUDAMERICANA_TIPOTABLA',"simple");
+
+define('AMERICA',56);
+define('AMERICA_TIPOTABLA',"simple");
+
+
+define('URLAMERICA',"copaamerica");
+
+
 
 //Futbolecuador
 define('CHAMP_DEFAULT',53);
@@ -73,6 +93,8 @@ define('CACHE_DEFAULT',3);	//minutos
 //blogs
 define('ZONAFE',63); //ZonaFe
 define('ZONAFEPOS',1); //ZonaFe
+//blogs
+
 
 //blogs
 define('ZONANUESTROSEMBAJADORES'   ,28); //En el Exterior
@@ -86,7 +108,7 @@ define('ZONACOPASUDAMERICANA',32);
 define('ZONACOPASUDAMERICANAPOS',null);
 
 //todo actualizar copa america
-define('ZONACOPAAMERICA'   ,63);
+define('ZONACOPAAMERICA'   ,71);
 define('ZONACOPAAMERICAPOS',2);
 
 //todo actualizar seccion futbol internacion
@@ -100,7 +122,6 @@ define('LOMASLEIDO',63); //
 define('LOMASLEIDOPOS',1); //
 
 define('NUMNEWSSIDE',5); //
-
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

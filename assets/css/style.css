@@ -1712,6 +1712,16 @@ h1.tabla, h2.tabla {
     margin-top: 3px;
     margin-bottom: 3px;
 }
+.logomagazina {
+    background-color: transparent;
+    background-image: url("../img/magazine-menu.png");
+    background-repeat: no-repeat;
+    background-size: 92px 12px;
+    width: 92px;
+    height: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
 .donbalonlogo {
     background-color: transparent;
@@ -1731,4 +1741,8 @@ h1.tabla, h2.tabla {
     overflow: visible !important;
     height: 50px !important;
     z-index: 100 ;
+}
+
+.gsc-above-wrapper-area {
+    display: none;
 }

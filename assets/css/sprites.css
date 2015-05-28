@@ -3,6 +3,7 @@
     width: 30px;
     height: 30px;
     float: left;
+    background-position: 30 0px;
 }
 .sprite-gualaceo-sc-icon{ background-position: 0 -1500px; width: 30px; height: 30px; }
 .sprite-aucas-icon{ background-position: 0 0; width: 30px; height: 30px; }

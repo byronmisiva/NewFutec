@@ -203,8 +203,11 @@
                             echo "mostrarBlackLayer;";
                         }
                     ?>
+
                     //cleanBlackLayer;
                 } else {
+                    cargarSplash();
+
 
                 }
             }
@@ -212,10 +215,12 @@
             //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING') {
                 if (event.isEmpty) {
-                    cleanBlackLayer;
+                    cleanBlackLayer ();
+                    console.log ("caso 3");
                 } else {
                     <?php if ($verMobile != "1"){ ?>
                     cargarSplash();
+
                     <?php } ?>
                 }
             }
@@ -240,6 +245,26 @@
     });
 
 </script>
+<script type='text/javascript'>
+    //espacios copa america
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/1022247/FE_BRAND_HEADER', [980, 50], 'div-gpt-ad-1432051647687-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_BRAND_HALF', [260, 90], 'div-gpt-ad-1432051647687-1').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_BRAND_SKY2', [728, 90], 'div-gpt-ad-1432051647687-2').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_BRAND_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1432051647687-3').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_BRAND_SMART_HEADER', [320, 80], 'div-gpt-ad-1432051647687-4').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_BRAND_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1432051647687-5').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_BRAND_SMART_TOP', [320, 50], 'div-gpt-ad-1432051647687-6').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1432051647687-9').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+    // fin espacios copa america
+
+</script>
+
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");

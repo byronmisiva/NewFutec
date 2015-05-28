@@ -146,4 +146,16 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_splash', $data, TRUE);
     }
+
+    //// copa america banners
+    public function fe_brand_header ($data = FALSE)
+    {
+        return $this->load->view('fe_brand_header', $data, TRUE);
+    }
+    public function fe_hp_brand  ($data = FALSE)
+    {
+        return $this->load->view('fe_hp_brand', $data, TRUE);
+    }
+
+    // fin copa america banners
 }

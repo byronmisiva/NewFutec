@@ -3,9 +3,11 @@
     <table class="table table-striped font12  tablemargin4">
         <thead>
         <tr>
+            <th ></th>
             <th></th>
-            <th></th>
-            <th></th>
+            <th class="azul"><?php if (isset($tipoCampeonato)) if ($tipoCampeonato == "simple") {
+                    echo $tabla[0]['group_name'];
+                } ?></th>
             <th class="azul text-center">PJ</th>
             <th class="azul text-center">PG</th>
             <th class="azul text-center">PE</th>
@@ -20,16 +22,32 @@
                 $sign = ($row['gd'] > 0) ? '+' : '';
                 ?>
                 <tr>
-                    <td ><?php echo $key + 1 ?></td>
-                    <td ><div class="equipos sprite-<?php echo strtolower ($this->contenido->_clearStringGion ($row['name'] )) ?>-icon zoom06 "></div></td>
+                    <td width="20px"><?php echo $key + 1 ?></td>
+                    <td width="40px"><?php if (isset($tipoCampeonato)) {
+                            if ($tipoCampeonato == "simple") {
+                                if ($row['mini_shield'] == "") {
+                                    $row['mini_shield'] = "imagenes/teams/mini_shields/default.png";
+                                } ?>
+                                <img src="http://www.futbolecuador.com/<?php echo $row['mini_shield']; ?>"
+                                     alt="<?php echo $row['name']; ?>">
 
-                    <td><?php echo $row['name'] ?></td>
-                    <td><?php echo $row['pj'] ?></td>
-                    <td><?php echo $row['pg'] ?></td>
-                    <td><?php echo $row['pe'] ?></td>
-                    <td><?php echo $row['pp'] ?></td>
-                    <td><?php echo $row['points'] ?></td>
-                    <td><?php echo $sign . $row['gd'] ?></td>
+                            <?php } else { ?>
+                                <div
+                                    class="equipos sprite-<?php echo strtolower(htmlentities($this->contenido->_clearStringGion($row['name']))) ?>-icon zoom06 "></div>
+                            <?php }
+                        }
+                        else { ?>
+                            <div
+                                class="equipos sprite-<?php echo strtolower(htmlentities($this->contenido->_clearStringGion($row['name']))) ?>-icon zoom06 "></div>
+                        <?php } ?>
+
+                    <td ><?php echo $row['name'] ?></td>
+                    <td width="40px"><?php echo $row['pj'] ?></td>
+                    <td width="40px"><?php echo $row['pg'] ?></td>
+                    <td width="40px"><?php echo $row['pe'] ?></td>
+                    <td width="40px"><?php echo $row['pp'] ?></td>
+                    <td width="40px"><?php echo $row['points'] ?></td>
+                    <td width="40px"><?php echo $sign . $row['gd'] ?></td>
                 </tr>
 
             <?php

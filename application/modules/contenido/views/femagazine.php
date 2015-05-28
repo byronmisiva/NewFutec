@@ -26,7 +26,7 @@
 
             </div>
             <div class="item">
-                <img src="<?= base_url('imagenes/femagazine/zonafe03.jpg'); ?>" class="img-responsive">
+                <img src="<?= base_url('imagenes/femagazine/portada_de_felippe.jpg'); ?>" class="img-responsive">
             </div>
 
         </div>
@@ -69,12 +69,12 @@
         <div class="col-md-6  col-xs-12 margen0l separador10 ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4 margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion01.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/especial.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Especial</h2>
-                    <p> Finalizó la era Gustavo Quinteros al mando de Emelec. Los mejores momentos, títulos logrados y participaciones inolvidables en los torneos internacionales, de un estratega que dejó plasmado su estilo de juego.
+                    <p>El ciclo de Gustavo Quinteros culminó bajo el mando de Emelec, y en su lugar arribó Omar de Felippe. Entérate más de su palmarés como entrenador.
                     </p>
                 </div>
             </div>
@@ -83,12 +83,13 @@
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10 ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <a href="http://www.futbolecuador.com/fuera-de-juego"> <img src="<?= base_url('imagenes/femagazine/seccion11.jpg'); ?>"
+                    <a href="http://www.futbolecuador.com/fuera-de-juego"> <img src="<?= base_url('imagenes/femagazine/fueradejuego.jpg'); ?>"
                          class="img-circle img-responsive separador10 "></a>
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2><a href="http://www.futbolecuador.com/fuera-de-juego"> Fuera de juego</a></h2>
-                    <p><a href="http://www.futbolecuador.com/fuera-de-juego">Maria Paula Triana en una sesión imperdible, festeja, con pasión, la clasificación de la Tricolor Sub 17 al Mundial de Chile 2015.
+                    <p><a href="http://www.futbolecuador.com/fuera-de-juego">Carolina Escobar, en una sesión fantástica e imperdible, y su amor por El Nacional. Lo lleva  impregnado en la piel.
+
                         </a>
                     </p>
                 </div>
@@ -99,12 +100,13 @@
         <div class="clearfix col-md-6  col-xs-12 margen0l separador10   ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4 margen0   ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion04.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/ladetodos.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>La de todos</h2>
-                    <p>La participación de La Tri Sub 17 en Paraguay 2015, y la clasificación al Mundial de la categoría.  Además, el análisis de los amistosos que la Selección Absoluta contra México y Argentina, en el debut de Gustavo Quinteros.
+                    <p>Resumen de cómo Gustavo Quinteros afina detalles del Equipo de Todos para la Copa América. El proceso de preparación de la Selección Femenina, camino a Canadá 2015.  Y lo mejor del Sudamericano de Fútbol Playa Ecuador 2015 realizado en Manta.
+
                     </p>
                 </div>
             </div>
@@ -113,13 +115,13 @@
         <div class="col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion10.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/ascenso.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Ascenso</h2>
+                    <p>Delfín de Manta está sorprendiendo a propios y extraños en la Serie B. Entérate más de su gran campaña, y del destacado momento por el que atraviesa.
 
-                    <p>Empezó el torneo 2015 de la Serie B. Los clubes armaron sus plantillas y se reforzaron en busca del ascenso.  Conoce cómo llegaron para esta temporada, el palmarés que los respalda y las figuras destacadas de cada plantel.
                     </p>
                 </div>
             </div>
@@ -129,13 +131,15 @@
         <div class="col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion08.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/internacional.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Internacional</h2>
+                    <p>En colaboración con Don Balón, te presentamos el espectacular momento del tridente de oro del FC Barcelona: Messi, Neymar y Suárez. Y una nota imperdible con Robert Lewandowski, el triturador de arqueros que tiene el Bayern Múnich
 
-                    <p>En colaboración con Don Balón, te presentamos al técnico holandés del Manchester United, Louis van Gaal.  Además, una nota imperdible de los jugadores en Europa que más presencia tienen con sus selecciones.</p>
+
+                    </p>
                 </div>
             </div>
         </div>
@@ -144,12 +148,12 @@
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
 
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion09.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/lafigura.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>La Figura</h2>
-                    <p>Vanessa Arauz se convirtió en histórica con la Selección Femenina de Ecuador, tras clasificarse al Mundial de Canadá 2015. Resumen de sus inicios y carrera, y el reto que se viene.
+                    <p>María Isabel Vásconez, un guerrera en el mundo del fútbol. Entérate más de su carrera, su paso al balompié Europeo, y las vivencias que la marcaron.
                     </p>
                 </div>
             </div>
@@ -159,13 +163,14 @@
         <div class="col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion02.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/tiempoextra.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
                     <h2>Tiempo extra</h2>
+                    <p>El Mago Salas reveló los buenos y malos momentos de su carrera. Conoce las vivencias de uno de los jugadores ecuatorianos más talentosos, histórico del balompie nacional.
 
-                    <p>Sebastián Abreu, figura histórica del fútbol uruguayo, en una entrevista de colección. Toda su carrera, los momentos que lo marcaron y el futuro de un trotamundos.</p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -173,13 +178,14 @@
         <div class="col-md-6  col-xs-12 margen0l separador10  ">
             <div class="col-md-12 col-xs-12    clearfix altofema borde">
                 <div class="col-md-4  col-xs-4   margen0 ">
-                    <img src="<?= base_url('imagenes/femagazine/seccion05.jpg'); ?>"
+                    <img src="<?= base_url('imagenes/femagazine/deexportacion.jpg'); ?>"
                          class="img-circle img-responsive separador10 ">
                 </div>
                 <div class="col-md-8  col-xs-8   ">
-                    <h2>En el exterior</h2>
+                    <h2>De Exportación</h2>
 
-                    <p>Cada vez son más nuestros embajadores, conoce los nuevos talentos que se sumaron al balompié internacional y que esperan dejar en lo alto el nombre del país.
+                    <p>Jugadores talentosos empiezan a surgir en el fútbol ecuatoriano, su habilidad y calidad sobresale, por lo que se perfilan como objetivos de los torneos internacionales.
+
                     </p>
                 </div>
             </div>

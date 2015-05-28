@@ -11,12 +11,15 @@
                 var gcse = document.createElement('script');
                 gcse.type = 'text/javascript';
                 gcse.async = true;
+                gcse.queryParameterName = 'gaga';
+                gcse.resultSetSize = 'small';
                 gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
                 '//www.google.com/cse/cse.js?cx=' + cx;
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(gcse, s);
             })();
         </script>
-        <gcse:search></gcse:search>
+        <gcse:search sort_by="date"></gcse:search>
+
     </div>
 </div>

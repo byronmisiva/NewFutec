@@ -120,7 +120,7 @@ class Mdl_teams_position extends MY_Model{
 
 
         $query=$this->db->query('Select t.*, if( s.id IS NULL , 0, s.id ) AS sid
-                                 From (Select DISTINCT(t.id), t.name
+                                 From (Select DISTINCT(t.id), t.name, t.mini_shield, g.name as group_name
                                          From groups as g, matches as m, matches_teams as mt, teams as t
                                          Where g.id='.$group.' AND g.id=m.group_id AND m.id=mt.match_id AND m.special=0 AND (mt.team_id_home=t.id or mt.team_id_away=t.id) ) as t
                                   Left Join sections as s ON t.id=s.team_id');
@@ -135,6 +135,8 @@ class Mdl_teams_position extends MY_Model{
         foreach($query->result() as $row):
             $teams[$row->id]['id']=$row->id;
             $teams[$row->id]['name']=$row->name;
+            $teams[$row->id]['group_name']=$row->group_name;
+            $teams[$row->id]['mini_shield']=$row->mini_shield;
             $teams[$row->id]['section']=$row->sid;
             $teams[$row->id]['points']=0;
             $teams[$row->id]['pj']=0;

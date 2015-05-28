@@ -88,7 +88,7 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-    function get_banner($max = 5, $exclude = '')
+    function get_banner($max = 5, $exclude = '' )
     {
         $this->db->select("s.id as sid,
 				s.id,
@@ -119,7 +119,56 @@ class Mdl_story extends MY_Model
             $this->db->where('s.category_id !=', $exclude);
         $aux = $this->db->get()->result();
 
-     //   $sql = $this->db->last_query();
+        foreach ($aux as $key => $row) {
+            if ($this->session->userdata('role') >= 3) {
+                $stat = $this->story_stat->get_story_stat($row->sid);
+                $aux[$key]->rate = $stat->rate;
+                $aux[$key]->reads = $stat->reads;
+                $aux[$key]->sends = $stat->sends;
+                $aux[$key]->votes = $stat->votes;
+
+            }
+        }
+
+        return $aux;
+    }
+
+    function get_banner_seccion($max = 5, $exclude = '', $id_seccion = '' )
+    {
+        $this->db->select("s.id as sid,
+				s.id,
+				s.title,
+				s.lead,
+				s.subtitle,
+				s.sponsored,
+				s.created,
+				s.rate,
+				s.reads,
+				s.sends,
+				s.votes,
+				i.name,
+				i.thumbh50,
+				i.thumbh80,
+				i.thumb300,
+				i.thumb500", FALSE);
+        $this->db->from('stories  s', FALSE);
+        $this->db->join('images i', 's.image_id = i.id', FALSE);
+        $this->db->where('s.invisible', 0, FALSE);
+        $this->db->where('s.position', 1, FALSE);
+        $this->db->where('s.sponsored', 0, FALSE);
+        $this->db->where('s.created >=', '(DATE_SUB(CURRENT_DATE, INTERVAL 120 DAY))', FALSE);
+        $this->db->order_by('s.created', 'desc', FALSE);
+        $this->db->limit($max);
+        //para el caso de que se tenga la noticia 6 y que esta no se muestre
+        if ($exclude != "")
+            $this->db->where('s.category_id !=', $exclude);
+
+        if ($id_seccion != '')
+            $this->db->where('s.category_id =',' (select category_id from sections where id = '.$id_seccion.')', false);
+
+        $aux = $this->db->get()->result();
+
+        // mini_shield$sql = $this->db->last_query();
 
         foreach ($aux as $key => $row) {
             if ($this->session->userdata('role') >= 3) {
@@ -134,6 +183,7 @@ class Mdl_story extends MY_Model
 
         return $aux;
     }
+
     function get_banner_tag($max = 5, $exclude = '', $tag)
     {
         $this->db->select("s.id as sid,
@@ -170,8 +220,6 @@ class Mdl_story extends MY_Model
         if ($exclude != "")
             $this->db->where('s.category_id !=', $exclude);
         $aux = $this->db->get()->result();
-
-        $sql = $this->db->last_query();
 
         foreach ($aux as $key => $row) {
             if ($this->session->userdata('role') >= 3) {

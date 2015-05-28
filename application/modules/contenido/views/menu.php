@@ -203,6 +203,12 @@
             <div class="row">
                 <div class="col-sm-3  ">
                 </div>
+                <!-- end col-4 -->
+                <div class="col-sm-3 text-center separador-dotted">
+                    <a href="<?= base_url('copa-america') ?>" class="pull-left">
+                        <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America" title="Lea todo sobre la Copa America">
+                    </a>
+                </div>
                 <div class="col-sm-3  text-center separador-dotted">
                     <a href="<?= base_url('copa-libertadores') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-libertadores.png') ?>" alt="Copa Libertadores" title="Lea todo la Copa Libertadores">
@@ -210,15 +216,9 @@
 
                 </div>
                 <!-- end col-4 -->
-                <div class="col-sm-3 text-center separador-dotted">
+                <div class="col-sm-3 text-center">
                     <a href="<?= base_url('copa-sudamericana') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana" title="Lea todo sobre la Copa Sudamericana">
-                    </a>
-                </div>
-                <!-- end col-4 -->
-                <div class="col-sm-3 text-center hidden">
-                    <a href="<?= base_url('copa-america') ?>" class="pull-left">
-                        <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America" title="Lea todo sobre la Copa America">
                     </a>
                 </div>
                 <!-- end col-4 -->
@@ -238,11 +238,12 @@
 </li>
 <!-- mega menu -->
 <!-- Mega Menu -->
-<li class="dropdown fhmm-fw">
-    <a href="<?= base_url('fe-magazine') ?>" class="pull-left">Magazine</a>
-</li>
+
 <li class="dropdown fhmm-fw">
     <a href="<?= base_url('fuera-de-juego') ?>" class="pull-left">Fuera de Juego</a>
+</li>
+<li class="dropdown fhmm-fw">
+    <a href="<?= base_url('fe-magazine') ?>" class="pull-left"><div class="logomagazina"></div></a>
 </li>
 </ul>
 <!-- end nav navbar-nav -->
