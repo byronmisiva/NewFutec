@@ -51,6 +51,7 @@ $this->load->view('header', $data);
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+
                     <li><a class="clickmenu" href="<?php echo base_url('site/marcadorenvivo') ?>">Marcador en Vivo</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
@@ -61,6 +62,9 @@ $this->load->view('header', $data);
 
                         </ul>
                     </li>
+
+                    <li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calendario
                             <span class="caret link-menu"></span></a>
@@ -87,7 +91,7 @@ $this->load->view('header', $data);
                         <ul class="dropdown-menu" role="menu">
                             <li><a class="clickmenu" href="<?= base_url('copa-libertadores') ?>">Copa Libertadores</a></li>
                             <li><a class="clickmenu" href="<?= base_url('copa-sudamericana') ?>">Copa Sudamericana</a></li>
-                          <!--<li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>-->
+                            <li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa America 2015</a></li>
                         </ul>
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>

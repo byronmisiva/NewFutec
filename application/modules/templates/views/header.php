@@ -269,13 +269,8 @@
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");
     GS_googleEnableAllServices();
-</script>
-<script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
-
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
-</script>
-<script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");
 </script>
 <script type='text/javascript'>GA_googleFetchAds();</script>

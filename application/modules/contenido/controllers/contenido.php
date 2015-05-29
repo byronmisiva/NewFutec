@@ -89,10 +89,15 @@ class Contenido extends MY_Controller
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
 
-    public function header2mobile($data = FALSE)
+    public function header2mobile($data = FALSE, $seccion = "" )
     {
         $this->load->module('story');
-        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
+        if ($seccion == "") {
+            $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
+        } else {
+            $dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", $seccion);
+        }
+
         $excluded = array();
         foreach ($dataRotativas['rotativasData'] as $key => $row) {
             $excluded[] = $row->id;

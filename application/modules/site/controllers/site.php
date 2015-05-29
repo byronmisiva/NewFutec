@@ -58,6 +58,7 @@ class Site extends MY_Controller
         $this->load->module('templates');
         $this->load->module('contenido');
         $this->load->module('banners');
+        $this->load->module('teams_position');
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
@@ -76,7 +77,7 @@ class Site extends MY_Controller
 
         //Resultados tabla de posiciones
         $this->load->module('scoreboards');
-        $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
+        $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A, SERIE_A_TIPOTABLA);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
       // $outbrain  = '<!--Inicio ejemplo -->
@@ -854,7 +855,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     }
 
     // para la final se comentan la llamada a las secciones.
-    public function copaamericamovil()
+    public function copaamericamovil($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion= "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
     {
         // para la final se comentan la llamada a las secciones.
 
@@ -867,8 +868,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('templates');
         $this->load->module('contenido');
         $this->load->module('banners');
+        $this->load->module('teams_position');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['pageTitle'] = "Copa america - futbolecuador.com";
+        $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
 
         $data['top1'] = "";
@@ -877,7 +879,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $bannerBottom = $this->banners->fe_smart_bottom();
         $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
-        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2, ZONACOPAAMERICA) . $bannerTop;
 
         $marcadorenvivo = $this->contenido->marcadorVivo() ;
 
@@ -885,17 +887,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         //Resultados tabla de posiciones
         $this->load->module('scoreboards');
-        $tablaposiciones = $this->scoreboards->tablaposiciones(SERIE_A);
+        $tablaposiciones = $this->scoreboards->tablaposiciones(AMERICA, AMERICA_TIPOTABLA);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
+        $outbrain =  ' ';
+        $publicidadFlotante = "";
 
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
 
-        $outbrain =  '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
-onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
-<div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
-<div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
-
-        $data['content'] = $marcadorenvivo .  $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE)   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
+        $data['content'] = $marcadorenvivo .$publicidadFlotante .  $noticiasCuerpo   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
 
         $data['footer'] = '';
@@ -904,6 +904,4 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $this->templates->_index($data);
     }
-
-
 }
