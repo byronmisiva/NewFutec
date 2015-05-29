@@ -131,6 +131,7 @@ class Banners extends MY_Controller
         return $this->load->view('fe_skin', $data, TRUE);
     }
 
+
     public function fe_cocafm($data = FALSE)
     {
         return "";
@@ -156,6 +157,21 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_hp_brand', $data, TRUE);
     }
+
+    public function top_copaamerica($data = FALSE)
+    {
+        $data['FE_Halfbanner'] = $this->load->view('fe_cocafm', $data, TRUE);
+        //$data['FE_Halfbanner'] = $this->load->view('fe_halfbanner', $data, TRUE);
+        $data['FE_Superbanner'] = $this->load->view('fe_superbanner_copaamerica', $data, TRUE);
+        return $this->load->view('top1', $data, TRUE);
+    }
+
+    public function fe_skin_copaamerica($data = FALSE)
+    {
+        return $this->load->view('fe_skin_copaamerica', $data, TRUE);
+    }
+
+
 
     // fin copa america banners
 }
