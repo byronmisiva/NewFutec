@@ -809,7 +809,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
 
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top_copaamerica() . "dddddd". $this->banners->fe_skin_copaamerica();
+        $data['top1'] = $this->banners->top_copaamerica() .  $this->banners->fe_skin_copaamerica();
         $data['header1'] = $this->contenido->menu();
 
 
@@ -893,7 +893,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $outbrain =  ' ';
         $publicidadFlotante = "";
 
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+        $data["extraheader"] = "no";
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data);
 
         $data['content'] = $marcadorenvivo .$publicidadFlotante .  $noticiasCuerpo   . $bannerBottom . $tablaposiciones .$outbrain. $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
