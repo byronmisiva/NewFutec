@@ -170,8 +170,10 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_skin_copaamerica', $data, TRUE);
     }
-
-
+    public function FE_BigboxSidebar1_copaamerica($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar1_copaamerica', $data, TRUE);
+    }
 
     // fin copa america banners
 }
