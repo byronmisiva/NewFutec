@@ -673,6 +673,8 @@ sub {
     font-family: oxygen;
 }
 
+
+
 .nav-tabs > li > a {
     color: #000000;
     background-image: url("../img/fondo-subtitulos-white.png");

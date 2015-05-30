@@ -12,6 +12,18 @@ a {
 .separador10-xs {
     margin-top: 0;
 }
+.separador10-xs  .backcuadros {
+    margin: 0 10px;
+}
+
+.separador10-xs-bot {
+    margin-top: 20px;
+}
+
+
+table {
+    font-family: oxygen;
+}
 
 a {
     color: #ffffff;
