@@ -350,7 +350,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('matches');
 
         $title = "Marcador En Vivo";
-        echo  $this->matches->matchesLive($title);
+        $data['partidos'] =  $this->matches->matchesLive($title);
 
         if (!$serie)
             echo $this->contenido->tabladeposiciones();

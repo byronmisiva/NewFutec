@@ -1,7 +1,84 @@
+body {
+    background-color: #003979;
+}
+
 .tablacompleta {
     display: none;
 }
 
 .separador10-xs {
     margin-top: 0;
+}
+
+a {
+    color: #ffffff;
+}
+
+table,  .textos-equipo, .azul {
+    color: #ffffff;
+}
+
+.table-striped {
+    background-color: transparent;
+}
+
+.tablemargin4 tbody {
+    border: none
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    border-top: transparent;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: transparent;
+}
+.table {
+    border : none
+}
+.backcuadros {
+    background-image: none;
+    background-color: #ed1b24;
+}
+
+.panel-title {
+    font-size: 20px;
+}
+
+.backcuadros {
+    height: 34px;
+}
+
+
+.backcuadros {
+
+    border-bottom: none;
+}
+
+.cabeceraequipo {
+    border-bottom: 1px solid #fff;
+}
+
+.cabeceraequipo {
+    background-color: transparent;
+    padding: 2px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.table-responsive {
+     border:none;
+}
+@media screen and (max-device-width: 750px) {
+    a {
+        font-size: 18px;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+    .backcuadros {
+        height: 24px;
+    }
+
 }
