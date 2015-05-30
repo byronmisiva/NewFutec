@@ -331,11 +331,22 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function sidebardonbalon()
     {
         $this->load->module('contenido');
+        $this->load->module('teams_position');
         //$this->load->module('templates');
 
        // $this->templates->_index($data);
 
         echo $this->contenido->sidebarDonBalon(false, SERIE_A);
+     }
+    public function tablaposicionesalone()
+    {
+        $this->load->module('contenido');
+        $this->load->module('teams_position');
+        //$this->load->module('templates');
+
+       // $this->templates->_index($data);
+
+        echo $this->contenido->tabladeposiciones(false, SERIE_A);
      }
 
     public function zonafe()
