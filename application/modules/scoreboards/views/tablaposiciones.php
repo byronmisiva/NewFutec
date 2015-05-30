@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 col-xs-12 text-right fondoazul separador10">
+    <div class="col-md-12 col-xs-12 text-right fondoazul separador10 tablacompleta">
         <?php if ($champ == CHAMP_DEFAULT) { ?>
             <a href="<?= base_url('tabla-de-posiciones') ?>">Tabla Completa</a>
         <?php } else { ?>

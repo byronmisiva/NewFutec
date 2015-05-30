@@ -10,23 +10,23 @@ class Scoreboards extends MY_Controller
         parent::__construct();
     }
 
-    public function tablaposiciones($temporada, $tipoCampeonato = 'acumulada')
+    public function tablaposiciones($temporada, $tipoChamp = 'acumulada')
     {
-        $data['tipoCampeonato'] = $tipoCampeonato;
-        if ($tipoCampeonato == 'acumulada') {
+        $data['tipoCampeonato'] = $tipoChamp;
+        if ($tipoChamp == 'acumulada') {
             $data['scroreBoardAcumulative'] = $this->leaderboard_cumulative($temporada);
             $data['scroreBoardSingle'] = $this->leaderboard($temporada);
             $data['champ'] = $temporada;
-            $data['tipoCampeonato'] = $tipoCampeonato;
+            $data['tipoCampeonato'] = $tipoChamp;
             $conten = strip_tags(trim($data['scroreBoardSingle']));
             if ($conten == "Tabla vacía") {
                 $data['scroreBoardSingle'] = $data['scroreBoardAcumulative'];
             }
             return $this->load->view('tablaposiciones', $data, TRUE);
         } else {
-            $data['scroreBoardSingle'] = $this->leaderboard($temporada, 'leaderboard', $tipoCampeonato);
+            $data['scroreBoardSingle'] = $this->leaderboard($temporada, 'leaderboard', $tipoChamp);
             $data['champ'] = $temporada;
-            $data['tipoCampeonato'] = $tipoCampeonato;
+            $data['tipoCampeonato'] = $tipoChamp;
             return $this->load->view('tablaposicionessimple', $data, TRUE);
         }
     }

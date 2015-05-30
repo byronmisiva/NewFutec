@@ -13,7 +13,7 @@
             <th class="azul text-center">PE</th>
             <th class="azul text-center">PP</th>
             <th class="azul text-center">Pts</th>
-            <th class="azul">GD</th>
+            <th class="azul text-center">GD</th>
         </tr>
         </thead>
         <tbody>
@@ -42,12 +42,12 @@
                         <?php } ?>
 
                     <td ><?php echo $row['name'] ?></td>
-                    <td width="40px"><?php echo $row['pj'] ?></td>
-                    <td width="40px"><?php echo $row['pg'] ?></td>
-                    <td width="40px"><?php echo $row['pe'] ?></td>
-                    <td width="40px"><?php echo $row['pp'] ?></td>
-                    <td width="40px"><?php echo $row['points'] ?></td>
-                    <td width="40px"><?php echo $sign . $row['gd'] ?></td>
+                    <td width="40px" class="text-center"><?php echo $row['pj'] ?></td>
+                    <td width="40px" class="text-center"><?php echo $row['pg'] ?></td>
+                    <td width="40px" class="text-center"><?php echo $row['pe'] ?></td>
+                    <td width="40px" class="text-center"><?php echo $row['pp'] ?></td>
+                    <td width="40px" class="text-center"><?php echo $row['points'] ?></td>
+                    <td width="40px" class="text-center"><?php echo $sign . $row['gd'] ?></td>
                 </tr>
 
             <?php

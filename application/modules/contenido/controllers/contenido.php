@@ -89,7 +89,7 @@ class Contenido extends MY_Controller
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
 
-    public function header2mobile($data = FALSE, $seccion = "" )
+    public function header2mobile($data = FALSE, $seccion = "")
     {
         $this->load->module('story');
         if ($seccion == "") {
@@ -456,91 +456,14 @@ class Contenido extends MY_Controller
     }
 
 
-
-    public function tabladeposiciones($data = FALSE, $serie = SERIE_A, $tipo = "large")
+    public function tabladeposiciones($data = FALSE, $serie = SERIE_A, $tipotabla = "acumulada")
     {
-
-
-
-        header("access-control-allow-origin: *");
-        //carga Banners
-        $this->load->module('banners');
-        $this->load->module('scoreboards');
-
-        $bannersSidebar = array();
-
-
-        $data['bannersSidebar'] = $bannersSidebar;
-        //fin carga banners
-
-        //Proxima Fecha
-        $listCampeonatos = $this->mdl_scoreboards->active_schedules(false, false);
-        $campeonatos = array();
-        foreach ($listCampeonatos as $listcampeonato) {
-            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_week($listcampeonato->champ);
-            $listcampeonato->shortname = strtolower($this->_clearStringGion($listcampeonato->name));
-
-            $campeonatos[] = $listcampeonato;
-        }
-        $data['campeonatos'] = $campeonatos;
-        //Fin Proxima Fecha
-
-        //Resultados fecha ultima
-        $listCampeonatosResultados = $this->mdl_scoreboards->active_schedules(false, false);
-        $campeonatosResultados = array();
-        foreach ($listCampeonatosResultados as $listcampeonato) {
-            $listcampeonato->partidos = $this->mdl_scoreboards->list_mwatch_results($listcampeonato->champ);
-            $listcampeonato->shortname = strtolower($this->_clearStringGion($listcampeonato->name));
-
-            $campeonatosResultados[] = $listcampeonato;
-        }
-        $data['campeonatosResultados'] = $campeonatosResultados;
-
-
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
+        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipotabla);
+        return $this->load->view('tabladeposiciones', $data, TRUE);
 
-        if ($tipo == "large") {
-            //Resultados tabla de posiciones
-            $this->load->module('scoreboards');
-            $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
-
-            //Resultados goleadores
-            $this->load->module('strikes');
-            $data['strikes'] = $this->strikes->goleadores($serie);
-
-
-            //Lo más leído
-            $this->load->module('story');
-            $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
-
-            //La Voz de las Tribunas
-            $this->load->module('noticias');
-            $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
-
-            //Zona Fe
-            $data['zonaFe'] = $this->noticias->viewmininewssidebar("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
-            return $this->load->view('tabladeposiciones', $data, TRUE);
-        } else {
-            //Resultados tabla de posiciones
-            $data['tablaposiciones'] = "";
-
-            //Resultados goleadores
-            $data['strikes'] = "";
-
-            //Lo más leído
-            $data['loMasLeido'] = "";
-
-            //La Voz de las Tribunas
-            $data['laVozDeLasTribunas'] = "";
-
-            //Zona Fe
-            $data['zonaFe'] = "";
-
-            return $this->load->view('tabladeposiciones', $data, TRUE);
-        }
     }
-
 
 
     public function copaamericasidebar($data = FALSE, $serie = SERIE_A, $tipoCampeonato = AMERICA_TIPOTABLA)
