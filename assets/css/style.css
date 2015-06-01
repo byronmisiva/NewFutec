@@ -1748,3 +1748,21 @@ h1.tabla, h2.tabla {
 .gsc-above-wrapper-area {
     display: none;
 }
+
+
+.flotante {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    z-index: 100;
+    margin: 0 calc(22%);
+    background-color: #ffffff;
+}
+
+#dpasportsliveover {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 101;
+}

@@ -6,23 +6,23 @@ function cargarSplashFE() {
         $('#darkLayerFE').show();
         $('#FE_LOADINGFE').show();
         //funcion spalsh movil
-            $(".redireccionFE, .deviceFE, #closeBanner").click(function () {
-                $('#darkLayerFE').hide();
-                $('#FE_LOADINGFE').hide();
-            })
+        $(".redireccionFE, .deviceFE, #closeBanner").click(function () {
+            $('#darkLayerFE').hide();
+            $('#FE_LOADINGFE').hide();
+        })
         //cleanBlackLayer;
     }
 };
 
 function cargarSplash() {
-        $('#darkLayer').show();
-        $('#FE_LOADING').show();
-        //funcion enviar encuesta
-        $("#closeBanner").click(function () {
-            $('#darkLayer').hide();
-            $('#FE_LOADING').hide();
-        })
-        setTimeout(cleanBlackLayer, 70000);
+    $('#darkLayer').show();
+    $('#FE_LOADING').show();
+    //funcion enviar encuesta
+    $("#closeBanner").click(function () {
+        $('#darkLayer').hide();
+        $('#FE_LOADING').hide();
+    })
+    setTimeout(cleanBlackLayer, 70000);
 
 };
 
@@ -285,8 +285,8 @@ if (machDetail.length > 0) {
 
                 //evento de cambio de marcador
                 resultadoteporal = $.trim($('.resultado-equipo').text());
-                if (resultadoteporal != "vs" ) {
-                    if (resultadoteporal != resultadotemporalOld){
+                if (resultadoteporal != "vs") {
+                    if (resultadoteporal != resultadotemporalOld) {
                         resultadotemporalOld = resultadoteporal;
 
                         //ver si es local o visitante
@@ -294,11 +294,11 @@ if (machDetail.length > 0) {
                         localscore = marcador [0];
                         visitantescore = marcador [2];
 
-                        if (localscore != localscoreOld){
-                            console.log ("gol local")
+                        if (localscore != localscoreOld) {
+                            console.log("gol local")
                         }
-                        if (localscore != localscoreOld){
-                            console.log ("gol vistante ")
+                        if (localscore != localscoreOld) {
+                            console.log("gol vistante ")
                         }
 
                     }
@@ -372,20 +372,20 @@ function altoshome() {
 jQuery(function () {
 
 // funcion movile marcador en vivo
-    jQuery("#carousel-marcadorenvivo").swipe( {
-        tap:function(event, target) {
-             // click al partido
+    jQuery("#carousel-marcadorenvivo").swipe({
+        tap: function (event, target) {
+            // click al partido
         },
 
-        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+        swipeLeft: function (event, direction, distance, duration, fingerCount) {
             $("a.right").click()
         },
-        swipeRight: function() {
+        swipeRight: function () {
             $("a.left").click()
         },
 
         //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold:0
+        threshold: 0
     });
 
     jQuery(".contenidoexclusivo").show();
@@ -428,8 +428,8 @@ jQuery(function () {
 
 
     // funcion swipe menu inferior
-    jQuery(".otrasmodelos").swipe( {
-        tap:function(event, target) {
+    jQuery(".otrasmodelos").swipe({
+        tap: function (event, target) {
             for (var i = 1; i <= 20; i++)
                 jQuery(".galeria" + i + "content").hide();
             thisLocal = target;
@@ -445,14 +445,14 @@ jQuery(function () {
                 }, 1000);
             });
         },
-        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+        swipeLeft: function (event, direction, distance, duration, fingerCount) {
             $("img.next").click()
         },
-        swipeRight: function() {
+        swipeRight: function () {
             $("img.prev").click()
         },
         //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold:0
+        threshold: 0
     });
     //menuchicas
     jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20").click(function () {
@@ -469,7 +469,6 @@ jQuery(function () {
             }, 1000);
         });
     })
-
 
 
 });
@@ -573,7 +572,7 @@ function clickMasNoticias() {
         var urlSeccion = $(this).attr('urlSeccion');
         $(this).html("Cargando...");
         masnoticas = this;
-        $.post(baseUrl + "site/masnoticias/" + offset + "/" + section + "/" + pos + "/"+ urlSeccion + "/", function (data) {
+        $.post(baseUrl + "site/masnoticias/" + offset + "/" + section + "/" + pos + "/" + urlSeccion + "/", function (data) {
             $(masnoticas).remove();
             noticiasExtras = $(".noticiasextras").html();
 
@@ -614,8 +613,8 @@ function igualarancho() {
         zonasidebar = $(".zonasidebar").height();
 
         if (zonacontenido >= zonasidebar) {
-           //  $(".zonasidebar").height(zonacontenido);
-             $(".zonasidebar").css("min-height: ", zonacontenido);
+            //  $(".zonasidebar").height(zonacontenido);
+            $(".zonasidebar").css("min-height: ", zonacontenido);
 
         } else {
             //  $(".zonacontenido").height(zonasidebar);
@@ -636,3 +635,12 @@ if ((verMobile == 1 ) && (uri == "movil")) {
         message: 'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
     };
 }
+
+$(document).ready(function () {
+    $("#dpasportsliveover").click(function () {
+        $(".flotante").removeClass("hidden");
+        $(".flotante").html('<iframe frameborder="0" height="640" width="800" marginheight="0" marginwidth="0" frameborder="no"' +
+        'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/index.html#/live-e800865-ticker"></iframe>');
+
+    });
+});

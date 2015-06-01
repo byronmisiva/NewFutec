@@ -52,7 +52,6 @@ class Contenido extends MY_Controller
 
         //recupera  y cambia por la ultima noticia
         $sponsor = current($this->mdl_story->get_zonafe($excluded));
-        // todo por que se genera esto mal
         $sponsor->id = $sponsor->sid;
 
         if ($sponsor !== FALSE) {
@@ -72,10 +71,22 @@ class Contenido extends MY_Controller
             $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             //$data['title'] = "Ultima Fecha";
         }
-        $data['marcadorvivo'] = $this->marcadorVivo();
+
+
+        // recuperar codigo de don balos
+        $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'")->result();
+        $dpasportslive = $query[0]->valor;
+
+        if (isset ($dpasportslive)) {
+            if ($dpasportslive == 1)
+                $data['marcadorvivo'] = $this->banners->dpasportslive();
+            else
+                $data['marcadorvivo'] = $this->marcadorVivo();
+        } else {
+            $data['marcadorvivo'] = $this->marcadorVivo();
+        }
 
         return $this->load->view('header2', $data, TRUE);
-
     }
 
     public function marcadorVivo()
@@ -460,7 +471,10 @@ class Contenido extends MY_Controller
     {
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
+
         $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipotabla);
+
+
         return $this->load->view('tabladeposiciones', $data, TRUE);
 
     }

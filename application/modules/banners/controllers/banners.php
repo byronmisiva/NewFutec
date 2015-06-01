@@ -176,4 +176,10 @@ class Banners extends MY_Controller
     }
 
     // fin copa america banners
+
+
+    public function dpaSportsLive($data = FALSE)
+    {
+        return $this->load->view('dpaSportsLive', $data, TRUE);
+    }
 }
