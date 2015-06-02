@@ -358,6 +358,24 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         else
             echo $this->contenido->tabladeposiciones($data, $serie, $tipotabla  );
     }
+    public function noticasalone()
+    {
+        $data['verMobile'] = $this->verificarDispositivo();
+        $serie = $this->uri->segment(3);
+        $seccion = $this->uri->segment(4);
+        $this->load->module('contenido');
+        $this->load->module('teams_position');
+        $this->load->module('scoreboards');
+        $this->load->module('matches');
+
+        $title = "Noticias";
+        $data['partidos'] =  $this->matches->matchesLive($title);
+
+        if (!$serie)
+            echo $this->contenido->tabladeposiciones();
+        else
+            echo $this->contenido->tabladeposiciones($data, $serie, $tipotabla  );
+    }
 
     public function zonafe()
     {
@@ -878,6 +896,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     // para la final se comentan la llamada a las secciones.
     public function copaamericamovil($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion = "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
+
     {
         // para la final se comentan la llamada a las secciones.
 
