@@ -26,7 +26,7 @@ tinyMCE.init({
 	external_image_list_url : "lists/image_list.js",
 	media_external_list_url : "lists/media_list.js",
 	
-	extended_valid_elements : "iframe[src|width|height|name|align|frameborder|allowfullscreen]",
+	extended_valid_elements : "iframe[src|width|height|name|align|frameborder|allowfullscreen], blockquote,script[async|src|charset]",
 	
 	editor_deselector: "tinyNoEditor",
 	
