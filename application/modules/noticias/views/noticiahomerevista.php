@@ -13,16 +13,19 @@ if (isset($tipoLink)) {
     $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($linkbody) . '/' . $story->id;
 }
 ?>
-<div class="margen0-xs clearfix news-detail">
-    <div class="col-md-12 col-xs-12 col-sm-12  margen0 col-xs-12">
-        <div class="noticia-img">
-            <a href="<?php echo $link ?>">
-                <img src="http://www.futbolecuador.com/<?php echo $story->thumb300; ?>"
-                     class="img-responsive lazy  "
-                     alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">
-            </a>
-        </div>
+<div class="col-md-12 col-xs-12 col-sm-12  margen0 col-xs-12">
+    <div class="noticia-img">
+        <a href="<?php echo $link ?>">
+            <img src="http://www.futbolecuador.com/<?php echo $story->thumb300; ?>"
+                 class="img-responsive lazy  "
+                 alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">
+        </a>
     </div>
+</div>
+
+<div class="col-md-11 col-xs-11 col-sm-11 margen0-xs  news-detail">
+
+
     <div class="col-md-12 col-xs-12 margen0-noti column text-news-date  ">
         <a href="<?php echo $link ?>">
             <?php setlocale(LC_ALL, "es_ES");
@@ -55,3 +58,6 @@ if (isset($tipoLink)) {
     }?>
 </div>
 
+<div class="col-md-1 col-xs-1 col-sm-1 ">
+    <div class="noticias-mas"></div>
+</div>
