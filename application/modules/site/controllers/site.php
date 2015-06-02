@@ -10,6 +10,7 @@ class Site extends MY_Controller
         parent::__construct();
     }
 
+
     function verificarDispositivo()
     {
         $this->load->library('user_agent');
