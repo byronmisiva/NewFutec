@@ -9,6 +9,7 @@ a {
     display: none;
 }
 
+
 .separador10-xs {
     margin-top: 0;
 }
@@ -96,4 +97,24 @@ table,  .textos-equipo, .azul {
         height: 24px;
     }
 
+}
+
+
+.noticia-content  a{
+    color: #444444;
+}
+
+   h2,  h2:hover {
+    color: #000;
+    font-family: "Oxygen",Arial;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
+    outline: medium none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.noticias-mas {
+    ba
 }

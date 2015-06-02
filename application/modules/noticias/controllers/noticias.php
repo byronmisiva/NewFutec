@@ -293,7 +293,7 @@ class Noticias extends MY_Controller
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
-            $noticias[] = $this->viewNoticiaNano($dataStory);
+
             $noticias[] = $this->viewNoticiaRevista($dataStory);
 
         }
@@ -305,7 +305,7 @@ class Noticias extends MY_Controller
         $data['idsection'] = trim($idsection);
         $data['posSection'] = $posSection;
 
-        return $this->load->view('noticiashome', $data, TRUE);
+        return $this->load->view('noticiasrevista', $data, TRUE);
     }
 
     public function viewSeccionsEquipo($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $data = FALSE)

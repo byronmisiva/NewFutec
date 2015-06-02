@@ -366,7 +366,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('noticias');
 
-        $data['contenido'] =   $this->noticias->viewSeccionsSingle("Copa América", ZONACOPAAMERICA, ZONACOPAAMERICAPOS, URLAMERICA, RESULT_PAGE_LITE, 0, true, $data);
+        $data['contenido'] =   $this->noticias->viewSeccionsSingle("", ZONACOPAAMERICA, ZONACOPAAMERICAPOS, URLAMERICA, 6, 0, true, $data);
         echo $this->contenido->noticiasonly($data );
     }
 
