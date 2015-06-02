@@ -74,10 +74,12 @@ class Contenido extends MY_Controller
 
 
         // recuperar codigo de don balos
-        $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'")->result();
-        $dpasportslive = $query[0]->valor;
+        $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'");
 
-        if (isset ($dpasportslive)) {
+        if ($query->num_rows() > 0)
+        {
+            $query = $query->result();
+            $dpasportslive = $query[0]->valor;
             if ($dpasportslive == 1)
                 $data['marcadorvivo'] = $this->banners->dpasportslive();
             else
