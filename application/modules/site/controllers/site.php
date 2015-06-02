@@ -358,7 +358,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         else
             echo $this->contenido->tabladeposiciones($data, $serie, $tipotabla  );
     }
-    public function noticasalone()
+    public function noticiasalone()
     {
         $data['verMobile'] = $this->verificarDispositivo();
 
