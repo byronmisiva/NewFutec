@@ -35,7 +35,7 @@ class Noticias extends MY_Controller
 
         $rotativasData = array();
 
-        if ((!$this->uri->segment(1)) or ($this->uri->segment(2)!="mobil")) {
+        if ((!$this->uri->segment(1)) or ($this->uri->segment(2) != "mobil")) {
             $rotativasData = $this->mdl_story->get_banner(6, 44);
             $excluded = array();
             foreach ($rotativasData as $key => $row) {
@@ -171,10 +171,10 @@ class Noticias extends MY_Controller
 
         $this->load->module('story');
         // recuperar codigo de don balos
-        $data =  $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result() ;
+        $data = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result();
         $tag = $data[0]->valor;
 
-        $storys = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON , 0);
+        $storys = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON, 0);
 
 
         $dataStory['tipoLink'] = "secction";
@@ -225,7 +225,7 @@ class Noticias extends MY_Controller
     public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
     {
         //$this->output->cache(CACHE_DEFAULT);
-         setlocale(LC_ALL, "es_ES");
+        setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
         $data['idsection'] = $idsection;
@@ -267,6 +267,37 @@ class Noticias extends MY_Controller
             }
             //fin intercalar banners
         }
+        $data ['namesection'] = $namesection;
+        $data['noticias'] = $noticias;
+
+        $data['offset'] = $totalMiniNews + $offset;
+        $data['idsection'] = trim($idsection);
+        $data['posSection'] = $posSection;
+
+        return $this->load->view('noticiashome', $data, TRUE);
+    }
+
+    public function viewSeccionsSingle($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
+    {
+        //$this->output->cache(CACHE_DEFAULT);
+        setlocale(LC_ALL, "es_ES");
+        $noticias = array();
+
+        $data['idsection'] = $idsection;
+        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset);
+
+
+        $dataStory['tipoLink'] = "secction";
+
+        $dataStory['urlsecction'] = $urlSeccion;
+
+        foreach ($storys as $story) {
+            $dataStory['story'] = $story;
+            $noticias[] = $this->viewNoticiaNano($dataStory);
+            $noticias[] = $this->viewNoticiaRevista($dataStory);
+
+        }
+
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
 
@@ -387,6 +418,18 @@ class Noticias extends MY_Controller
                 $data['isMobile'] = true;
         }
         return $this->load->view('noticiahomenano', $data, TRUE);
+    }
+    public function viewNoticiaRevista($data = FALSE)
+    {
+        //$this->output->cache(CACHE_DEFAULT);
+        $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
+        $data['isMobile'] = false;
+        if ($this->agent->is_mobile()) {
+            $m = $this->agent->mobile();
+            if (in_array($m, $mobiles))
+                $data['isMobile'] = true;
+        }
+        return $this->load->view('noticiahomerevista', $data, TRUE);
     }
 
 

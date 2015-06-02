@@ -483,6 +483,11 @@ class Contenido extends MY_Controller
         return $this->load->view('tabladeposiciones', $data, TRUE);
 
     }
+    public function noticiasonly($data = FALSE)
+    {
+        return $this->load->view('noticiasonly', $data, TRUE);
+
+    }
 
 
     public function copaamericasidebar($data = FALSE, $serie = SERIE_A, $tipoCampeonato = AMERICA_TIPOTABLA)
