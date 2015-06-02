@@ -79,6 +79,13 @@ $route['sitemap_news\.xml'] = "seo/sitemap_news";
 $route['welcome/movil'] = "site/movil";
 
 
+//revista copa america
+$route['tablaposicionescopaamerica'] = "site/tablaposicionesalone/56/simple";
+$route['noticiascopaamerica'] = "site/noticiasalone/71";
+
+$route['tablacopaamerica/(:num)/{:any}'] = 'site/tablaposicionesalone/$1/$2';
+$route['noticiascopaamerica/(:num)/{:any}'] = 'site/noticiasalone/$1';
+
 
 
 //$route['contactos'] =  "sections/publica/67";
