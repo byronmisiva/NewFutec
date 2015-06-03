@@ -6,8 +6,12 @@
             src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/indexSAScoreboard.html"></iframe>
 </div>
 <!--dpasportslivepopup-->
-<div class="flotante hidden-xs hidden ">
-        <div class="contenedor">
+<div class="flotante hidden-xs">
+    <div id="closeBanner">
+        <img src="<?php echo base_url('assets/img/close_banner.png') ?>" width="81"
+             height="20">
+    </div>
+    <div class="contenedor">
 
     </div>
 </div>
