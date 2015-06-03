@@ -88,6 +88,9 @@ class Contenido extends MY_Controller
             $data['marcadorvivo'] = $this->marcadorVivo();
         }
 
+        //todo pruebas
+        //$data['marcadorvivo'] = $this->marcadorVivo();
+
         return $this->load->view('header2', $data, TRUE);
     }
 
@@ -473,10 +476,8 @@ class Contenido extends MY_Controller
     {
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
-
-        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipotabla);
-
-
+        $data['tablaposiciones'] =  $this->scoreboards->leaderboard($serie,'leaderboard', $tipotabla  );;
+     //   $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipotabla);
         return $this->load->view('tabladeposiciones', $data, TRUE);
 
     }

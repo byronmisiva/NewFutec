@@ -139,6 +139,18 @@ class Matches extends MY_Controller
 
         return $this->load->view('matcheslive', $data, true);
     }
+    public function matchesrevista( $title)
+    {
+        $data['title'] = $title;
+
+        $this->load->module('scoreboards');
+        $data['fechas'] = $this->mdl_scoreboards->today_matches();
+        if ($data['fechas'] == false) {
+            $data['fechas'] = $this->mdl_scoreboards->last_matches();
+        }
+
+        return $this->load->view('matchesrevista', $data, true);
+    }
 
     public function matchesperteam($idEquipo, $idSerie)
     {

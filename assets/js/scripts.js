@@ -639,7 +639,7 @@ if ((verMobile == 1 ) && (uri == "movil")) {
 $(document).ready(function () {
     $("#dpasportsliveover").click(function () {
         $(".flotante").show();
-        $(".flotante .contenedor").html('<iframe frameborder="0" height="640" width="700" marginheight="0" marginwidth="0" frameborder="no"' +
+        $(".flotante .contenedor").html('<iframe frameborder="0" height="720" width="700" marginheight="0" marginwidth="0" frameborder="no"' +
         'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/index.html#/live-e800865-ticker"></iframe>');
 
     });

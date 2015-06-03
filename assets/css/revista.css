@@ -1,5 +1,6 @@
 body {
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: blue;
 }
 a {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -97,6 +98,11 @@ table,  .textos-equipo, .azul {
         height: 24px;
     }
 
+    .zona-partidos {
+        height: 400px;
+        overflow: scroll;
+    }
+
 }
 
 
@@ -155,5 +161,21 @@ table,  .textos-equipo, .azul {
     top: 0;
     width: 100%;
     z-index: 90;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: transparent;
+}
+
+.panel-default > .panel-heading {
+    background-color: #ed1b24;
+}
+
+.panel-default {
+    background-color: transparent;
+}
+
+.panel {
+    border: none;
 }
 
