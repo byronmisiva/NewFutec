@@ -51,7 +51,8 @@ $link = "noticialink-" . $story->id;
     <div class="noticias-mas"></div>
 </div>
 
-<div id="noticia<?php echo $story->id ?>" class="contnoticiarevista">
+<div id="noticia-<?php echo $story->id ?>"  class="noticiafondo">
+<div class="contnoticiarevista">
     <div class=""><h2><?php echo $story->title ?></h2></div>
     <?php setlocale(LC_ALL, "es_ES");
     echo ucfirst(strftime("%B %d %Y", strtotime($story->created))); ?>
@@ -66,16 +67,17 @@ $link = "noticialink-" . $story->id;
 
     <div class=""><?php echo $story->body ?></div>
 </div>
+</div>
 
 <script type="text/javascript">
     $(document).ready(function () {
-         $('.<?php echo $link; ?>').click (function(valor){
-             var myClass = this.className;
-             var clases = str.split(" ");
-             for each (clase in clases) {
-                 console.log (clase)
-             }
-         })
+        $('.<?php echo $link; ?>').click(function (valor) {
+            var myClass = this.className;
+            var clases = myClass.split(" ");
+            idnoticia = "noticia-" + clases[6].split("-")[1];
+            console.log(idnoticia);
+            $("#" +idnoticia).show();
+        })
     });
 
 </script>
