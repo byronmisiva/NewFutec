@@ -130,3 +130,18 @@ table,  .textos-equipo, .azul {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+.contnoticiarevista {
+    background-color: #ffffff;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 20px;
+    z-index: 100;
+    margin: 0px calc(10%);
+    height: 95%;
+    overflow: scroll;
+}
+
+
+

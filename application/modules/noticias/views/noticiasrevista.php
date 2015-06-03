@@ -31,6 +31,7 @@ foreach ($noticias as $noticia) {
         class="col-md-6 col-sm-<?= $paraTable ?> separador10 clearfix noti <?php if ($pos == 1) echo "noticia" ?>  ">
         <?php echo $noticia ?>
     </div>
+
     <?php
     if ($indice % 2 == 1) echo '</div>';
     $indice++;
@@ -38,5 +39,6 @@ foreach ($noticias as $noticia) {
 //importante cuando no son par + 1 las noticias  se le cierra el div
 if ($indice % 2 == 1) echo '</div>';
 ?>
+
 
 
