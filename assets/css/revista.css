@@ -182,3 +182,7 @@ table,  .textos-equipo, .azul {
 .partidoblanco {
     color: #ffffff;
 }
+
+.detallepartido {
+    display: none;
+}
