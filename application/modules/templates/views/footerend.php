@@ -31,9 +31,6 @@
 <script type="text/javascript" src="<?= base_url() ?>assets/js/add2home.js?v1"></script>
 
 <script src="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.js') ?>"></script>
-<script type="text/javascript">
-    $().smartbanner();
-</script>
 
 <?php
 $idtipo = $this->uri->segment(2);
