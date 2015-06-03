@@ -102,6 +102,51 @@ class Matches extends MY_Controller
 
         return $this->load->view('matchdetail', $data, true);
     }
+    public function getMatchRevista($id)
+    {
+        $this->output->cache(CACHE_PARTIDOS);
+
+        $data['title'] = "Marcador en Vivo";
+        $data['teamsFecha'] = $this->mdl_matches->matches_id($id);
+
+        $equipos = $this->mdl_matches->get_match_teams($id);
+        //todo  arreglar esta funcion
+
+        $Serie = $this->getSerie($id);
+        if (isset($Serie->id)){
+            $idSerie = $Serie->id;
+            $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
+        } else {
+            $data['teams_pics'] = $this->mdl_matches->get_pics_teams_by_id($equipos[0]->team_id_home,$equipos[0]->team_id_away );
+        }
+
+
+        $data['idEquipo']= $id;
+
+        $data['infoLocal'] = $this->mdl_matches->get_info_team($equipos[0]->team_id_home);
+        $data['infoVisitante'] = $this->mdl_matches->get_info_team($equipos[0]->team_id_away);
+
+        $data['golesLocal'] = $this->mdl_matches->get_goals_team($id, $equipos[0]->team_id_home);
+        $data['golesVisitante'] = $this->mdl_matches->get_goals_team($id, $equipos[0]->team_id_away);
+
+        $data['estrategiaLocal'] = $this->mdl_matches->get_estrategia_team($id, $equipos[0]->team_id_home);
+        $data['estrategiaVisitante'] = $this->mdl_matches->get_estrategia_team($id, $equipos[0]->team_id_away);
+
+        $data['titularesLocal'] = $this->mdl_matches->get_titulares_team($id, $equipos[0]->team_id_home);
+        $data['titularesVisitante'] = $this->mdl_matches->get_titulares_team($id, $equipos[0]->team_id_away);
+
+        $data['actions'] = $this->mdl_matches->get_actions_team($id);
+
+
+        $data['comentarios'] = $this->mdl_matches->get_info_team($id);
+
+        $data ['cronometro'] = $this->mdl_matches->cal_time($id);
+
+        //todo se debe poner con la fecha
+//        $data['otrospartidos']= $this->mdl_matches->get_info_team($id);
+
+        return $this->load->view('matchdetailrevista', $data, true);
+    }
 
     public function getSerie($id)
     {

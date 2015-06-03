@@ -638,7 +638,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('matches');
         $id = $this->uri->segment(4);
 
-        echo $this->matches->getMatch($id);
+        echo $this->matches->getMatchRevista($id);
      }
 
     public function fueradejuego()
