@@ -88,9 +88,6 @@ class Contenido extends MY_Controller
             $data['marcadorvivo'] = $this->marcadorVivo();
         }
 
-        //todo pruebas
-        $data['marcadorvivo'] = $this->marcadorVivo();
-
         return $this->load->view('header2', $data, TRUE);
     }
 
