@@ -180,6 +180,6 @@ class Banners extends MY_Controller
 
     public function dpaSportsLive($data = FALSE)
     {
-        return $this->load->view('dpaSportsLive', $data, TRUE);
+        return $this->load->view('dpasportslive', $data, TRUE);
     }
 }
