@@ -629,7 +629,7 @@ if ((verMobile == 1 ) && (uri == "movil")) {
     var addToHomeConfig = {
         animationIn: 'bubble',
         animationOut: 'drop',
-        lifespan: 3000,
+        lifespan: 1000,
         expire: 2,
         touchIcon: true,
         message: 'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
@@ -639,7 +639,7 @@ if ((verMobile == 1 ) && (uri == "movil")) {
 $(document).ready(function () {
     $("#dpasportsliveover").click(function () {
         $(".flotante").removeClass("hidden");
-        $(".flotante").html('<iframe frameborder="0" height="640" width="800" marginheight="0" marginwidth="0" frameborder="no"' +
+        $(".flotante .contenedor").html('<iframe frameborder="0" height="640" width="800" marginheight="0" marginwidth="0" frameborder="no"' +
         'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/index.html#/live-e800865-ticker"></iframe>');
 
     });
