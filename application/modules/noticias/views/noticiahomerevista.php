@@ -77,6 +77,7 @@ $link = "noticialink-" . $story->id;
              }
          })
     });
+
 </script>
 
 
