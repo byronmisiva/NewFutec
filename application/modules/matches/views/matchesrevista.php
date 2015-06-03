@@ -20,9 +20,7 @@ $estado['8'] = 'Fin del Partido';?>
                 if ($team->hshield == "") $team->hshield = "imagenes/teams/shield/default.png";
                 if ($team->ashield == "") $team->ashield = "imagenes/teams/shield/default.png";
                 ?>
-                <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix">
-                    <a class="sidebarlink"
-                       href="<?= base_url('site/partido/' . $this->matches->_urlFriendly($team->hname) . '-' . $this->matches->_urlFriendly($team->aname) . '/' . $team->id) ?>">
+                <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix partidoblanco" id="partido-<?= $team->id; ?>">
 
                         <div class="col-md-2 col-xs-1 margen0 text-center ">
                             <img class="img-responsive-xs"
@@ -55,7 +53,6 @@ $estado['8'] = 'Fin del Partido';?>
                             <img class="img-responsive-xs"
                             src="http://www.futbolecuador.com/<?= $team->ashield; ?>">
                         </div>
-                    </a>
                 </div>
             <?php
             }

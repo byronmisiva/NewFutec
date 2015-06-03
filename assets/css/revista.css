@@ -1,5 +1,6 @@
 body {
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: blue;
 }
 a {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -178,3 +179,6 @@ table,  .textos-equipo, .azul {
     border: none;
 }
 
+.partidoblanco {
+    color: #ffffff;
+}

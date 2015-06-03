@@ -77,3 +77,5 @@ $estado['8'] = 'Fin del Partido';?>
 
 </div>
 
+<?php
+

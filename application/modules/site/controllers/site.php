@@ -633,6 +633,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->singleConten($title, $match, $description);
     }
 
+    public function partidodata()
+    {
+        $this->load->module('matches');
+        $id = $this->uri->segment(4);
+
+        echo $this->matches->getMatch($id);
+     }
 
     public function fueradejuego()
     {
