@@ -34,7 +34,7 @@
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
 
-    <meta name="apple-itunes-app" content="app-id=622931242"/>
+    <meta name="apple-itunes-app" content="app-id=622931242, app-argument=//www.futbolecuador.com/">
     <meta name="google-play-app" content="app-id=com.futbolecuador.femagazine">
 
     <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
@@ -79,6 +79,7 @@
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css" media="screen">
+
 
     <link href="<?php echo base_url('assets/css/add2home.css') ?>" rel="stylesheet">
 
@@ -133,10 +134,33 @@
     </script>
     <!--   script teads  se muestra cuando es noticia abierta-->
 
+
+    <!-- Tapstream tracking-->
+    <script type="text/javascript">
+
+        var _tsq = _tsq || [];
+        _tsq.push(["setAccountName", "futbolecuador"]);
+        _tsq.push(["trackPage"]);
+
+        (function() {
+            function z(){
+                var s = document.createElement("script");
+                s.type = "text/javascript";
+                s.async = "async";
+                s.src = window.location.protocol + "//cdn.tapstream.com/static/js/tapstream.js";
+                var x = document.getElementsByTagName("script")[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (window.attachEvent)
+                window.attachEvent("onload", z);
+            else
+                window.addEventListener("load", z, false);
+        })();
+
+    </script>
+    <!-- End Tapstream tracking-->
 </head>
 <body>
-
-
 <input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/>
 <script LANGUAGE="JavaScript">var OBCTm = '1426714580701'; </script>
 <script LANGUAGE="JavaScript" src="http://widgets.outbrain.com/claim.js"></script>
@@ -270,12 +294,45 @@
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");
     GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
+
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
+</script>
+<script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");
 </script>
+
 <script type='text/javascript'>GA_googleFetchAds();</script>
 <!-- Google Tag Manager -->
+
+<!-- Tapstream tracking-->
+<script type="text/javascript">
+
+    var _tsq = _tsq || [];
+    _tsq.push(["setAccountName", "futbolecuador"]);
+    _tsq.push(["trackPage"]);
+
+    (function() {
+        function z(){
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = "async";
+            s.src = window.location.protocol + "//cdn.tapstream.com/static/js/tapstream.js";
+            var x = document.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+        }
+        if (window.attachEvent)
+            window.attachEvent("onload", z);
+        else
+            window.addEventListener("load", z, false);
+    })();
+
+</script>
+<!-- End Tapstream tracking-->
+
+
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
