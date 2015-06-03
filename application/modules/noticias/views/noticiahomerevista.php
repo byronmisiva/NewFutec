@@ -72,7 +72,7 @@ $link = "noticialink-" . $story->id;
 <script type="text/javascript">
     $(document).ready(function () {
         $('.<?php echo $link; ?>').click(function (valor) {
-            alert ("<?php echo $link; ?>");
+
             var myClass = this.className;
             var clases = myClass.split(" ");
             idnoticia = "noticia-" + clases[6].split("-")[1];

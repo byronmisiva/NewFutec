@@ -643,6 +643,12 @@ $(document).ready(function () {
         'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/index.html#/live-e800865-ticker"></iframe>');
 
     });
+    $("#closeBannerdpa").click(function () {
+        $(".flotante").hide();
+        $(".flotante .contenedor").html('');
+
+    });
+
 });
 
 $(document).ready(function () {

@@ -7,7 +7,7 @@
 </div>
 <!--dpasportslivepopup-->
 <div class="flotante hidden-xs">
-    <div id="closeBanner">
+    <div id="closeBannerdpa">
         <img src="<?php echo base_url('assets/img/close_banner.png') ?>" width="81"
              height="20">
     </div>
