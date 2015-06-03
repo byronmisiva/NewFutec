@@ -35,6 +35,7 @@
     <meta name="twitter:app:country" content="US">
 
     <meta name="apple-itunes-app" content="app-id=622931242"/>
+    <meta name="google-play-app" content="app-id=com.futbolecuador.femagazine">
 
     <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">
