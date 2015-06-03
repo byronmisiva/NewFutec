@@ -53,11 +53,11 @@ $link = "noticialink-" . $story->id;
 
 <div id="noticia-<?php echo $story->id ?>"  class="noticiafondo">
 <div class="contnoticiarevista">
-    <div class=""><h2><?php echo $story->title ?></h2></div>
+    <div class=""><h3><?php echo $story->title ?></h3></div>
     <?php setlocale(LC_ALL, "es_ES");
     echo ucfirst(strftime("%B %d %Y", strtotime($story->created))); ?>
 
-    <div class=""><?php echo $story->subtitle ?></div>
+    <div class=""><h2><?php echo $story->subtitle ?></h2></div>
     <div class=""><?php echo $story->title ?></div>
     <div class=""><?php echo $story->lead ?></div>
     <img src="http://www.futbolecuador.com/<?php echo $story->thumb300; ?>"
@@ -75,11 +75,12 @@ $link = "noticialink-" . $story->id;
             var myClass = this.className;
             var clases = myClass.split(" ");
             idnoticia = "noticia-" + clases[6].split("-")[1];
-            console.log(idnoticia);
             $("#" +idnoticia).show();
         })
+        $("#noticia-" + <?php echo  $story->id;?>).click (function(){
+            $("#noticia-" + <?php echo  $story->id;?>).hide();
+        })
     });
-
 </script>
 
 
