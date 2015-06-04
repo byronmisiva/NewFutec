@@ -4,11 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="content-language" content="es"/>
     <meta name="robots" content="follow,index,nocache"/>
-    <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/revista.css') ?>" rel="stylesheet">
-    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
+    <link href="<?php echo base_url('assets/css/bootstrap.min.css?rand' . rand(1, 1000) ) ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/style.css' . rand(1, 1000)) ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/revista.css' . rand(1, 1000)) ?>" rel="stylesheet">
+    <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js' . rand(1, 1000)) ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js' . rand(1, 1000)) ?>"></script>
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
     <?php
