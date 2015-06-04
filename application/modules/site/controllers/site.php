@@ -72,7 +72,23 @@ class Site extends MY_Controller
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
 
-        $marcadorenvivo = $this->contenido->marcadorVivo();
+
+        // recuperar codigo dpa-sportslive
+        $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'");
+
+        if ($query->num_rows() > 0)
+        {
+            $query = $query->result();
+            $dpasportslive = $query[0]->valor;
+            if ($dpasportslive == 1)
+                $marcadorenvivo = $this->banners->dpasportslivemovil();
+            else
+                $marcadorenvivo = $this->contenido->marcadorVivo();
+        } else {
+            $marcadorenvivo = $this->contenido->marcadorVivo();
+        }
+
+      // $marcadorenvivo = $this->contenido->marcadorVivo();
 
         $data['top2'] = "";
 

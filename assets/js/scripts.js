@@ -637,6 +637,9 @@ if ((verMobile == 1 ) && (uri == "movil")) {
 }
 
 $(document).ready(function () {
+    //20150601
+    //solicitado Jf
+    //caso desktop
     $("#dpasportsliveover").click(function () {
         $(".flotante").show();
         $(".flotante .contenedor").html('<iframe frameborder="0" height="720" width="700" marginheight="0" marginwidth="0" frameborder="no"' +
@@ -648,6 +651,17 @@ $(document).ready(function () {
         $(".flotante .contenedor").html('');
 
     });
+
+    //20150601
+    //solicitado Jf
+    //caso desktop
+    $("#dpasportsliveovermovil").click(function () {
+        $("#dpasportslivemovil").fadeOut();
+        $(".contenedordpa").html('<iframe frameborder="0" height="740" width="100%" marginheight="0" marginwidth="0" frameborder="no"' +
+        'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/indexMobile.html"></iframe>');
+    });
+
+
 
 });
 
