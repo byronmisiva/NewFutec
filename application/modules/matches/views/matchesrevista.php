@@ -21,6 +21,7 @@ $estado['8'] = 'Fin del Partido';?>
             if ($team->ashield == "") $team->ashield = "imagenes/teams/shield/default.png";
             ?>
             <script type="text/javascript">
+                alert ("ddd");
                 var cargamarcador;
                 $(document).ready(function () {
                     $('#partido-<?= $team->id; ?>').click(function (valor) {
