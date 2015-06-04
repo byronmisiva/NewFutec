@@ -83,6 +83,7 @@ $estado['8'] = 'Fin del Partido';?>
 
                 });
             </script>
+
         <?php
         }
         ?>
