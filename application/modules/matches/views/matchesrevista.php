@@ -64,7 +64,7 @@ $estado['8'] = 'Fin del Partido';?>
                 var cargamarcador;
                 $(document).ready(function () {
                     $('#partido-<?= $team->id; ?>').click(function (valor) {
-                        $('.detallepartido').html("Cargando");
+
                         $.post(baseUrl + "site/partidodata/partido/<?= $team->id; ?>", function (data) {
                             $('.detallepartido').hide();
                             $('.detallepartido').html("");

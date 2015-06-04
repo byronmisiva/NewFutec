@@ -104,7 +104,7 @@ class Matches extends MY_Controller
     }
     public function getMatchRevista($id)
     {
-        $this->output->cache(CACHE_PARTIDOS);
+
 
         $data['title'] = "Marcador en Vivo";
         $data['teamsFecha'] = $this->mdl_matches->matches_id($id);
