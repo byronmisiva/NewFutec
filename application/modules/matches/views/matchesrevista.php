@@ -20,30 +20,7 @@ $estado['8'] = 'Fin del Partido';?>
             if ($team->hshield == "") $team->hshield = "imagenes/teams/shield/default.png";
             if ($team->ashield == "") $team->ashield = "imagenes/teams/shield/default.png";
             ?>
-            <script type="text/javascript">
-                alert ("ddd");
-                var cargamarcador;
-                $(document).ready(function () {
-                    $('#partido-<?= $team->id; ?>').click(function (valor) {
-                        $('.detallepartido').hide();
-                        $('.detallepartido').html("");
-                        clearInterval(cargamarcador);
 
-                        $('#partido-detalle-<?= $team->id; ?>').show();
-                        $.post(baseUrl + "site/partidodata/partido/<?= $team->id; ?>", function (data) {
-                            $('#partido-detalle-<?= $team->id; ?>').html(data);
-                        });
-
-                        cargamarcador = setInterval(function () {
-                            $.post(baseUrl + "site/partidodata/partido/<?= $team->id; ?>", function (data) {
-                                $('#partido-detalle-<?= $team->id; ?>').html(data);
-                            });
-                        }, REFRESH_VIVO * 10000)
-
-                    });
-
-                });
-            </script>
             <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix partidoblanco"
                  id="partido-<?= $team->id; ?>">
 
@@ -82,6 +59,30 @@ $estado['8'] = 'Fin del Partido';?>
             <div class="col-md-12 separador10 margen0  cabeceraequipo  fa-border clearfix partidoblanco detallepartido"
                  id="partido-detalle-<?= $team->id; ?>">
             </div>
+            <script type="text/javascript">
+
+                var cargamarcador;
+                $(document).ready(function () {
+                    $('#partido-<?= $team->id; ?>').click(function (valor) {
+                        $('.detallepartido').hide();
+                        $('.detallepartido').html("");
+                        clearInterval(cargamarcador);
+
+                        $('#partido-detalle-<?= $team->id; ?>').show();
+                        $.post(baseUrl + "site/partidodata/partido/<?= $team->id; ?>", function (data) {
+                            $('#partido-detalle-<?= $team->id; ?>').html(data);
+                        });
+
+                        cargamarcador = setInterval(function () {
+                            $.post(baseUrl + "site/partidodata/partido/<?= $team->id; ?>", function (data) {
+                                $('#partido-detalle-<?= $team->id; ?>').html(data);
+                            });
+                        }, REFRESH_VIVO * 10000)
+
+                    });
+
+                });
+            </script>
         <?php
         }
         ?>
