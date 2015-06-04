@@ -111,10 +111,11 @@ class Contenido extends MY_Controller
         return $this->banners->dpaSportsLive() ;
     }
 
-    public function dpaSportsLiveFrame()
+    public function dpaSportsLiveFrame($dispositivo)
     {
         $this->load->module('banners');
-        return $this->banners->dpaSportsLiveFrame() ;
+        $data['dispositivo'] = $dispositivo;
+        return $this->banners->dpaSportsLiveFrame($data) ;
     }
 
     public function header2mobile($data = FALSE, $seccion = "")

@@ -570,8 +570,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $this->output->cache(CACHE_DEFAULT);
         $this->load->module('contenido');
-        $this->verificarDispositivo()
-        $dpaSportsLive = $this->contenido->dpaSportsLiveFrame();
+
+        $dpaSportsLive = $this->contenido->dpaSportsLiveFrame($this->verificarDispositivo());
         $this->singleConten("dpa-SportsLive", $dpaSportsLive);
     }
 
