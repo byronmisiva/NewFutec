@@ -98,7 +98,7 @@ table,  .textos-equipo, .azul {
     }
 
     .zona-partidos {
-        height: 400px;
+        height: 350px;
         overflow: scroll;
     }
 
