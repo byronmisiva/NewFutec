@@ -1784,6 +1784,7 @@ h1.tabla, h2.tabla {
     height: 100px;
     position: absolute;
     z-index: 90;
+    cursor: pointer;
 }
 div#closeBannerdpa {
     position: fixed;
