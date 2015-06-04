@@ -15,6 +15,9 @@
     if ($verMobile == "1") {
         ?>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <script type="text/javascript" async defer
+                src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
+        </script>
     <?php
     } else {
         if ($verMobile == "2") {
@@ -23,6 +26,8 @@
         <?php
         } else {
             ?>
+            <link rel="chrome-webstore-item"
+                  href="https://chrome.google.com/webstore/detail/cjkoikfgconobaeikllfnkpnjihcfnil">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <?php
         }
