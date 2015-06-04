@@ -1778,19 +1778,16 @@ h1.tabla, h2.tabla {
     position: absolute;
     z-index: 101;
 }
-
 div#closeBannerdpa {
     position: fixed;
     left: 0;
     top: 60px;
     z-index: 100;
     margin: 0 calc(22%);
-
-    background-color: black;
+   background-color: black;
     border: 1px solid #cccccc;
     cursor: pointer;
     height: 20px;
     opacity: 0.6;
-
     width: 81px;
 }

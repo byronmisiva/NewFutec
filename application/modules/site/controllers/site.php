@@ -566,6 +566,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $femagazine = $this->contenido->femagazine();
         $this->singleConten("Magazine", $femagazine);
     }
+    public function dpasportslive()
+    {
+        $this->output->cache(CACHE_DEFAULT);
+        $this->load->module('contenido');
+        $this->verificarDispositivo()
+        $dpaSportsLive = $this->contenido->dpaSportsLiveFrame();
+        $this->singleConten("dpa-SportsLive", $dpaSportsLive);
+    }
 
     public function search()
     {

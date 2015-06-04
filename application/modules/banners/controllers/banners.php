@@ -186,4 +186,12 @@ class Banners extends MY_Controller
     {
         return $this->load->view('dpasportslivemovil', $data, TRUE);
     }
+    public function dpaSportsLiveFrame($data = FALSE)
+    {
+        return $this->load->view('dpasportsliveiframe', $data, TRUE);
+    }
+    public function dpaSportsLiveFrameMovil($data = FALSE)
+    {
+        return $this->load->view('dpasportsliveframemovil', $data, TRUE);
+    }
 }

@@ -105,6 +105,18 @@ class Contenido extends MY_Controller
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
 
+    public function dpasportslive()
+    {
+        $this->load->module('banners');
+        return $this->banners->dpaSportsLive() ;
+    }
+
+    public function dpaSportsLiveFrame()
+    {
+        $this->load->module('banners');
+        return $this->banners->dpaSportsLiveFrame() ;
+    }
+
     public function header2mobile($data = FALSE, $seccion = "")
     {
         $this->load->module('story');
