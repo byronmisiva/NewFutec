@@ -342,6 +342,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function tablaposicionesalone()
     {
+        $this->output->cache(CACHE_DEFAULT);
         $data['verMobile'] = $this->verificarDispositivo();
         $serie = $this->uri->segment(3);
         $tipotabla = $this->uri->segment(4);
