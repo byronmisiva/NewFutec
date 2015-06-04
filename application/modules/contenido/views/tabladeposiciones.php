@@ -34,7 +34,6 @@
 
     <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>assets/css/sprites.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/revista.css" rel="stylesheet">
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
@@ -47,7 +46,7 @@
         <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Marcador En Vivocc
+                    Marcador En Vivo
                 </a>
             </h4>
         </div>
