@@ -1766,7 +1766,7 @@ h1.tabla, h2.tabla {
     position: fixed;
     left: 0;
     top: 80px;
-    z-index: 100;
+    z-index: 1001;
     margin: 0 calc(22%);
     background-color: #ffffff;
 }
