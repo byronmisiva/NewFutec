@@ -111,6 +111,8 @@ footer {
 
 .header1 {
     background-image: url("../img/header-back.png");
+    position: relative;
+    z-index: 1001;
 }
 
 .margen0 {padding: 0;}
@@ -1759,14 +1761,14 @@ h1.tabla, h2.tabla {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 1001;
     display: none;
 }
 .flotante .contenedor {
     position: fixed;
     left: 0;
     top: 80px;
-    z-index: 1001;
+    z-index: 1002;
     margin: 0 calc(22%);
     background-color: #ffffff;
 }
@@ -1776,7 +1778,7 @@ h1.tabla, h2.tabla {
     width: 100%;
     height: 100px;
     position: absolute;
-    z-index: 101;
+    z-index: 1003;
 }
 #dpasportsliveover {
     background-color: transparent;

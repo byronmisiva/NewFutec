@@ -109,7 +109,7 @@ define('ZONACOPASUDAMERICANAPOS',null);
 
 //todo actualizar copa america
 define('ZONACOPAAMERICA'   ,71);
-define('ZONACOPAAMERICAPOS',2);
+define('ZONACOPAAMERICAPOS',null);
 
 //todo actualizar seccion futbol internacion
 define('ZONAINTERNACIONAL'   ,66);
