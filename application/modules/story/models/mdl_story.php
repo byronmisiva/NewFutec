@@ -168,7 +168,7 @@ class Mdl_story extends MY_Model
 
         $aux = $this->db->get()->result();
 
-        // mini_shield$sql = $this->db->last_query();
+        $test = $this->db->last_query();
 
         foreach ($aux as $key => $row) {
             if ($this->session->userdata('role') >= 3) {
