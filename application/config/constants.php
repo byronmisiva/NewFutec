@@ -125,3 +125,5 @@ define('NUMNEWSSIDE',5); //
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
+
+define('FEAPPMAXSECCION',3); //

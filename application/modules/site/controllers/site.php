@@ -76,8 +76,7 @@ class Site extends MY_Controller
         // recuperar codigo dpa-sportslive
         $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'");
 
-        if ($query->num_rows() > 0)
-        {
+        if ($query->num_rows() > 0) {
             $query = $query->result();
             $dpasportslive = $query[0]->valor;
             if ($dpasportslive == 1)
@@ -88,7 +87,7 @@ class Site extends MY_Controller
             $marcadorenvivo = $this->contenido->marcadorVivo();
         }
 
-      // $marcadorenvivo = $this->contenido->marcadorVivo();
+        // $marcadorenvivo = $this->contenido->marcadorVivo();
 
         $data['top2'] = "";
 
@@ -301,6 +300,46 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->templates->_index($data);
     }
 
+    public function getnewsjsonapp()
+    {
+        header('Content-type: text/html; charset=utf-8');
+//informacion para app y para don balon
+
+
+        //json de consumo de don balon.
+        $this->load->module('story');
+        // recuperar codigo de don balos
+        if (isset($_GET["secciones"])) {
+            $secciones = $_GET["secciones"];
+            $totalsecciones = explode(",", $secciones);
+
+            echo "[";
+            foreach ($totalsecciones as $index1 =>  $seccion) {
+                $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION  , '', $seccion);
+                foreach ($data as $index => $noticia) {
+                    if (!in_array($noticia->id, $data)) {
+                        echo "{";
+                        echo '"id": "' . $noticia->id . '",';
+                        echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
+                        echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->lead))) . '",';
+                        echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
+                        echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
+                        echo '"fecha_creacion": "' . $noticia->created . '",';
+                        echo '"seccion": "' . $noticia->seccion . '"';
+                        echo "}";
+                        echo ($index < count($data) - 1) ? "," : "";
+                    }
+                }
+                if (count($totalsecciones) >0)
+                echo ($index1 < count($totalsecciones) - 1) ? "," : "";
+            }
+            echo "]";
+        } else {
+            echo "[]";
+        }
+    }
+
+
     public function getnewsjson()
     {
         header('Content-type: text/html; charset=utf-8');
@@ -367,14 +406,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('matches');
 
         $title = "Marcador En Vivo";
-        $data['partidos'] =  $this->matches->matchesrevista($title);
+        $data['partidos'] = $this->matches->matchesrevista($title);
 
 
         if (!$serie)
             echo $this->contenido->tabladeposiciones();
         else
-            echo $this->contenido->tabladeposiciones($data, $serie, $tipotabla  );
+            echo $this->contenido->tabladeposiciones($data, $serie, $tipotabla);
     }
+
     public function noticiasalone()
     {
         $data['verMobile'] = $this->verificarDispositivo();
@@ -383,8 +423,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('noticias');
 
-        $data['contenido'] =   $this->noticias->viewSeccionsSingle("", ZONACOPAAMERICA, ZONACOPAAMERICAPOS, URLAMERICA, 6, 0, true, $data);
-        echo $this->contenido->noticiasonly($data );
+        $data['contenido'] = $this->noticias->viewSeccionsSingle("", ZONACOPAAMERICA, ZONACOPAAMERICAPOS, URLAMERICA, 6, 0, true, $data);
+        echo $this->contenido->noticiasonly($data);
     }
 
     public function zonafe()
@@ -566,6 +606,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $femagazine = $this->contenido->femagazine();
         $this->singleConten("Magazine", $femagazine);
     }
+
     public function dpasportslive()
     {
         $this->output->cache(CACHE_DEFAULT);
@@ -663,7 +704,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $id = $this->uri->segment(4);
 
         echo $this->matches->getMatchRevista($id);
-     }
+    }
 
     public function fueradejuego()
     {

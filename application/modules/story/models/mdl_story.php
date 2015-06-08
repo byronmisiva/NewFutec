@@ -149,7 +149,7 @@ class Mdl_story extends MY_Model
 				i.name,
 				i.thumbh50,
 				i.thumbh80,
-				i.thumb300,
+				i.thumb300, (select name from sections where category_id = s.category_id) AS seccion,
 				i.thumb500", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
@@ -164,7 +164,7 @@ class Mdl_story extends MY_Model
             $this->db->where('s.category_id !=', $exclude);
 
         if ($id_seccion != '')
-            $this->db->where('s.category_id =',' (select category_id from sections where id = '.$id_seccion.')', false);
+            $this->db->where('s.category_id =  ',' (select category_id from sections where id = ('.$id_seccion.'))', false);
 
         $aux = $this->db->get()->result();
 

@@ -1717,6 +1717,16 @@ h1.tabla, h2.tabla {
     margin-top: 3px;
     margin-bottom: 3px;
 }
+.logocopaamericamini {
+    background-color: transparent;
+    background-image: url("../img/logo-copa-america-mini.png");
+    background-repeat: no-repeat;
+    background-size: 78px 12px;
+    width: 78px;
+    height: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 .logomagazina {
     background-color: transparent;
     background-image: url("../img/magazine-menu.png");
