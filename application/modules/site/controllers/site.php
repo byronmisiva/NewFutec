@@ -341,7 +341,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                         echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumbh50 . '",';
                         echo '"fotoh": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
                         echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
-                        echo '"fecha_creacion": "' . $date->format('m/d H:i') . '",';
+                        echo '"fecha_creacion": "' . $date->format('m/d H:i') . '"';
                         //echo '"seccion": "' . $noticia->seccion . '"';
                         echo "}";
                         echo ($index < count($data) - 1) ? "," : "";
@@ -796,7 +796,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
-        $this->section_equipo($idEquipo, 2, $shortEquipo);
+        $campeonatoEquipo = $this->uri->segment(5);
+
+        $this->section_equipo($idEquipo, 2, $shortEquipo, $campeonatoEquipo);
     }
 
     public function setloc()
@@ -807,7 +809,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->mdl_story->cuentaVisita($id);
     }
 
-    public function section_equipo($seccion, $seccionpos, $urlSeccion)
+    public function section_equipo($seccion, $seccionpos, $urlSeccion, $campeonatoEquipo)
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(CACHE_DEFAULT);
@@ -900,7 +902,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['content'] = $storia . $noticiasCuerpo;
         }
 
-        $data['sidebar'] = $this->contenido->sidebarOpenNews();
+
+        // todo es caso copa america pero se puede generalizar
+        if ($campeonatoEquipo) {
+            $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
+
+        } else  {
+            $data['sidebar'] = $this->contenido->sidebarOpenNews();
+        }
+
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();

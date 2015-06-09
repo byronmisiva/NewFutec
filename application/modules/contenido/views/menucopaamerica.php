@@ -29,7 +29,7 @@
                     <div class="col-sm-3 <?php echo $separador ?>">
                         <ul class="menu-option">
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) . "/" . $teams[$i * $desp]['section']) ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) . "/" . $teams[$i * $desp]['section']) .'/' . $campeonato ?>">
                                     <div style="float: left">
                                         <img src="http://www.futbolecuador.com/<?php echo $teams[$i * $desp]['thumb_shield']; ?>"
                                              alt="<?php $teams[$i * $desp]['thumb_shield']; ?>">
@@ -43,7 +43,7 @@
                                     </div>
                                 </a></li>
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name'])) . "/" . $teams[$i * $desp + 1]['section']) ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name'])) . "/" . $teams[$i * $desp + 1]['section']) .'/' . $campeonato?>">
                                     <div style="float: left">
                                         <img src="http://www.futbolecuador.com/<?php echo $teams[$i * $desp +1]['thumb_shield']; ?>"
                                              alt="<?php $teams[$i * $desp +1 ]['thumb_shield']; ?>">
@@ -55,7 +55,7 @@
                                 </a>
                             </li>
                             <li class="clearfix">
-                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) . "/" . $teams[$i * $desp + 2]['section']) ?>">
+                                <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) . "/" . $teams[$i * $desp + 2]['section']) .'/' . $campeonato?>">
                                     <div style="float: left">
                                         <img src="http://www.futbolecuador.com/<?php echo $teams[$i * $desp+2]['thumb_shield']; ?>"
                                              alt="<?php $teams[$i * $desp+2]['thumb_shield']; ?>">

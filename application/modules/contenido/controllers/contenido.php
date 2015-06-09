@@ -61,6 +61,7 @@ class Contenido extends MY_Controller
         $data['teams'] = $positions;
         $data['teams'] = $positions;
         $data['tipoCampeonato'] = "simple";
+        $data['campeonato'] = AMERICA;
 
         return $this->load->view('menucopaamerica', $data, TRUE);
     }
