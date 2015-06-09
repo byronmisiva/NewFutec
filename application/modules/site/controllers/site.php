@@ -947,7 +947,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         }
 
 
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion,RESULT_PAGE,   0,   true,   FALSE, "" );
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion,RESULT_PAGE,   0,   true,   FALSE, $excluded );
 
 
         $storia = "";

@@ -182,9 +182,8 @@ LIMIT 8";
         $this->db->order_by('s.created', "desc");
 
         if ($excluded != ""){
-            $excluir  = preg_split('/(,{1}[\s]?|\sand\s)+/', $excluded);
 
-            $this->db->where_not_in('username', $excluir);
+            $this->db->where_not_in('s.id', $excluded);
         }
 
         $aux = $this->db->get()->result();

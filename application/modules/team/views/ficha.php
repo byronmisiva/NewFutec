@@ -14,21 +14,24 @@
     </div>
 
     <div class="col-md-6 separador10     ">
+        <?php if (isset($infoEquipo->histories[0]->palmares)) { ?>
         <div class="col-md-12 separador5   h3">
             <strong>PALMARÉS</strong>
         </div>
         <div class="col-md-12       ">
-            <?php if (isset($infoEquipo->histories[0]->palmares)) { ?>
+
                 <?php echo $infoEquipo->histories[0]->palmares; ?>
-            <?php } ?>
+
         </div>
+        <?php } ?>
+        <?php if (isset($infoEquipo->stadia[0]->name)) { ?>
         <div class="col-md-12 separador5   h3 ">
             <strong>ESTADIO</strong>
         </div>
         <div class="col-md-12">
-            <?php if (isset($infoEquipo->stadia[0]->name))
-            echo $infoEquipo->stadia[0]->name; ?>
+            <?php echo $infoEquipo->stadia[0]->name; ?>
         </div>
+        <?php } ?>
         <div class="col-md-12 separador5   h3 ">
             <strong>PRESIDENTE</strong>
         </div>
