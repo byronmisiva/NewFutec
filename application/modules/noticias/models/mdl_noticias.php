@@ -101,10 +101,10 @@ LIMIT 8";
             if (count($tags) > 0) {
                 if (isset($position)) {
                     $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
-                                      AND invisible =  '0'   ORDER BY created desc LIMIT $limit")->result(0);
+                                      AND invisible =  '0' ORDER BY created desc LIMIT $limit")->result(0);
                 } else
                     $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
-                                      AND invisible =  '0'  ORDER BY created desc LIMIT $limit")->result(0);
+                                      AND invisible =  '0' ORDER BY created desc LIMIT $limit")->result(0);
 
                 $str_ids = "";
                 foreach ($res as $row) {
@@ -174,19 +174,18 @@ LIMIT 8";
                 //para ercuperar y luego  filtrar los repetidos por codigo
                 if ($limit == 1) $limitNew = $limit;
                 else
-                $limitNew = $limit * 6;
+                    $limitNew = $limit * 6;
             }
             $this->db->limit($limitNew, $offset);
         }
 
         $this->db->order_by('s.created', "desc");
-        
+
         $aux = $this->db->get()->result();
         // por optimizacion
         $aux = $this->ajustaArray($aux, $limit);
 
-        $test = $this->db->last_query();
-        $test = $this->db->last_query();
+
 
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);

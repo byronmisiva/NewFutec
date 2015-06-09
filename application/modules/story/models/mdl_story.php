@@ -44,16 +44,18 @@ class Mdl_story extends MY_Model
 
         return $aux;
     }
-    function news_by_tags($tag, $limit= "", $offset = 0){
-        if ("" != $limit ){
-            $limit = "limit " . $limit ;
+
+    function news_by_tags($tag, $limit = "", $offset = 0)
+    {
+        if ("" != $limit) {
+            $limit = "limit " . $limit;
         }
-        $data =  $this->db->query('SELECT s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, s.modified, UNIX_TIMESTAMP(s.modified) AS datem, i.thumb300, i.thumbh120, i.thumbh80, i.thumbh50
+        $data = $this->db->query('SELECT s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, s.modified, UNIX_TIMESTAMP(s.modified) AS datem, i.thumb300, i.thumbh120, i.thumbh80, i.thumbh50
                                     FROM stories_tags st INNER JOIN tags t ON st.tag_id = t.id
                                     INNER JOIN stories s ON s.id = st.story_id
                                     INNER JOIN images i ON s.image_id = i.id
-                                    WHERE lower(t. NAME) IN (lower("'.$tag.'")) AND s.position != 10
-                                    ORDER BY s.modified DESC '.$limit);
+                                    WHERE lower(t. NAME) IN (lower("' . $tag . '")) AND s.position != 10
+                                    ORDER BY s.modified DESC ' . $limit);
         return $data->result();
     }
 
@@ -88,7 +90,7 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-    function get_banner($max = 5, $exclude = '' )
+    function get_banner($max = 5, $exclude = '')
     {
         $this->db->select("s.id as sid,
 				s.id,
@@ -133,9 +135,115 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-    function get_banner_seccion($max = 5, $exclude = '', $id_seccion = '' )
+    function get_tag_list($id)
     {
-        $this->db->select("s.id as sid,
+        $this->db->where('section_id', $id);
+
+        $data = $this->db->get('sections_tags')->result();
+        return $data;
+
+        $base = "SELECT st.tag_id
+            FROM (`stories` s)
+            JOIN  `stories_tags`  st ON `s`.`id` = `st`.`story_id`
+            WHERE (category_id =41 OR st.tag_id IN(\"212\") )
+            AND `s`.`invisible` =  '0'
+            AND `s`.`position` < 10
+            GROUP BY `s`.`id`
+            ORDER BY `s`.`created` desc
+            LIMIT 8";
+    }
+
+
+
+    public function get_banner_seccion($limit = 5, $exclude = '', $seccion = '')
+    {
+        if ($seccion != "") {
+            $sec = $this->mdl_noticias->get($seccion);
+            $res = $this->mdl_noticias->get_tag_list($seccion);
+            $tags = array();
+            $str_tags = "";
+            foreach ($res as $row) {
+                $tags[] = $row->tag_id;
+                $str_tags .= '"' . $row->tag_id . '"' . ',';
+            }
+            $str_tags = trim($str_tags, ',');
+            if (count($tags) > 0) {
+                if (isset($position)) {
+                    $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                                      AND invisible =  '0' ORDER BY created desc LIMIT $limit")->result(0);
+                } else
+                    $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                                      AND invisible =  '0' ORDER BY created desc LIMIT $limit")->result(0);
+
+                $str_ids = "";
+                foreach ($res as $row) {
+                    $str_ids .= '"' . $row['image_id'] . '"' . ',';
+                }
+                $str_ids = trim($str_ids, ',');
+
+                $this->db->from('stories s', false);
+                //$this->db->join('(select * from images where  id IN(' . $str_ids . ')) i', 'i.id = s.image_id');
+                $this->db->join('images i', 'i.id = s.image_id');
+
+                if ($this->mdl_noticias->validarquery($str_ids, $str_tags, $sec->category_id, 0, $limit)) {
+                    $this->db->join('`stories_tags` st', 's.id = st.story_id');
+                    $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
+                } else {
+                    $this->db->join('`stories_tags`  st', 's.id = st.story_id');
+                    $where = "(category_id  =$sec->category_id OR st.tag_id IN($str_tags) )";
+                }
+
+
+                //  $this->db->where('s.position <', 10);
+
+
+                $this->db->where($where);
+
+            } else {
+                $this->db->join('images i', 'i.id = s.image_id');
+                $this->db->from('stories s');
+            }
+        } else {
+            $this->db->from('stories s');
+            $this->db->join('images i', 'i.id = s.image_id');
+            $this->db->order_by('s.created', "desc");
+
+            //$this->db->where('s.position <', 10);
+
+            //if ($position > 0)
+            //    $this->db->where('s.position', $position);
+        }
+
+        $this->db->select('s.*,i.thumb500, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
+        $this->db->where('s.invisible', '0');
+
+
+        $this->db->where('s.position <', 10);
+
+
+        $l = explode(',', $limit);
+        if (count($l) > 1)
+            $this->db->limit($l[0], $l[1]);
+        else {
+            $limitNew = $limit;
+
+
+        }
+
+        $this->db->order_by('s.created', "desc");
+
+        $aux = $this->db->get()->result();
+        // por optimizacion
+        $aux = $this->mdl_noticias->ajustaArray($aux, $limit);
+
+        $test = $this->db->last_query();
+        return $aux;
+    }
+
+
+    function get_banner_seccion2($max = 5, $exclude = '', $id_seccion = '')
+    {
+        $this->db->select("
 				s.id,
 				s.title,
 				s.lead,
@@ -164,22 +272,11 @@ class Mdl_story extends MY_Model
             $this->db->where('s.category_id !=', $exclude);
 
         if ($id_seccion != '')
-            $this->db->where('s.category_id =  ',' (select category_id from sections where id = ('.$id_seccion.'))', false);
+            $this->db->where('s.category_id =  ', ' (select category_id from sections where id = (' . $id_seccion . '))', false);
 
         $aux = $this->db->get()->result();
 
         $test = $this->db->last_query();
-
-        foreach ($aux as $key => $row) {
-            if ($this->session->userdata('role') >= 3) {
-                $stat = $this->story_stat->get_story_stat($row->sid);
-                $aux[$key]->rate = $stat->rate;
-                $aux[$key]->reads = $stat->reads;
-                $aux[$key]->sends = $stat->sends;
-                $aux[$key]->votes = $stat->votes;
-
-            }
-        }
 
         return $aux;
     }
@@ -252,7 +349,7 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-        function cuentaVisita($id)
+    function cuentaVisita($id)
     {
         $sql = 'select `reads` from stories_stats  where story_id=' . $id;
         $aux = $this->db->query($sql)->result();

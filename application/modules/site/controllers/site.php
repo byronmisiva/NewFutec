@@ -836,6 +836,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                 $stadia_id = $infoEquipo[0]->stadia_id;
             else
                 $stadia_id = "";
+
             $idEquipo = $infoEquipo[0]->id;
             $infoEquipo[0]->stadia = $this->mdl_site->getNameStadia($stadia_id);
             $infoEquipo[0]->histories = $this->mdl_site->getHistories($idEquipo);
@@ -936,6 +937,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+
+
+        //$this->load->module('story');
+        //$dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
 
 
         $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
