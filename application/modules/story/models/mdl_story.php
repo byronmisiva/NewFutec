@@ -149,7 +149,7 @@ class Mdl_story extends MY_Model
 				i.name,
 				i.thumbh50,
 				i.thumbh80,
-				i.thumb300, (select name from sections where category_id = s.category_id) AS seccion,
+				i.thumb300, (select name from sections where category_id = s.category_id LIMIT 1) AS seccion,
 				i.thumb500", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
