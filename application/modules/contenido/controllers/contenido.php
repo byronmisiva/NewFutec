@@ -610,7 +610,7 @@ class Contenido extends MY_Controller
     public function copaamericaheader($data = FALSE)
     {
         $this->load->module('story');
-        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA , 24 );
+        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
         $excluded = array();
         foreach ($dataRotativas['rotativasData'] as $key => $row) {
             $excluded[] = $row->id;
