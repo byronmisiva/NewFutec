@@ -939,11 +939,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
 
-        //$this->load->module('story');
-        //$dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
+
+        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
+        $excluded = array();
+        foreach ($listadoRotativas as  $row) {
+            $excluded[] = $row->id;
+        }
 
 
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion,RESULT_PAGE,   0,   true,   FALSE, "" );
 
 
         $storia = "";

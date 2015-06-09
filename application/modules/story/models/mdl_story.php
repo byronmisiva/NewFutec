@@ -194,8 +194,6 @@ class Mdl_story extends MY_Model
                 }
 
 
-                //  $this->db->where('s.position <', 10);
-
 
                 $this->db->where($where);
 
@@ -208,10 +206,6 @@ class Mdl_story extends MY_Model
             $this->db->join('images i', 'i.id = s.image_id');
             $this->db->order_by('s.created', "desc");
 
-            //$this->db->where('s.position <', 10);
-
-            //if ($position > 0)
-            //    $this->db->where('s.position', $position);
         }
 
         $this->db->select('s.*,i.thumb500,,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);

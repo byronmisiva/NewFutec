@@ -222,14 +222,14 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
+    public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE, $excluded = "")
     {
         //$this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
         $data['idsection'] = $idsection;
-        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset);
+        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset,$excluded );
 
 
         $dataStory['tipoLink'] = "secction";

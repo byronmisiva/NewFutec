@@ -85,7 +85,7 @@ LIMIT 8";
     //end from secction
 
 
-    public function get_by_position($limit, $seccion = "", $position, $offset = 0)
+    public function get_by_position($limit, $seccion = "", $position, $offset = 0, $excluded = "")
     {
         if ($seccion != "") {
 
@@ -180,6 +180,12 @@ LIMIT 8";
         }
 
         $this->db->order_by('s.created', "desc");
+
+        if ($excluded != ""){
+            $excluir  = preg_split('/(,{1}[\s]?|\sand\s)+/', $excluded);
+
+            $this->db->where_not_in('username', $excluir);
+        }
 
         $aux = $this->db->get()->result();
         // por optimizacion
