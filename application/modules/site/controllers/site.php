@@ -342,7 +342,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                         echo '"fotoh": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
                         echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
                         echo '"fecha_creacion": "' . $date->format('m/d H:i') . '",';
-                        echo '"seccion": "' . $noticia->seccion . '"';
+                        //echo '"seccion": "' . $noticia->seccion . '"';
                         echo "}";
                         echo ($index < count($data) - 1) ? "," : "";
                     }
