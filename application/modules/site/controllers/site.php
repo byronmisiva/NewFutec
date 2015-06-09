@@ -322,6 +322,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         //json de consumo de don balon.
         $this->load->module('story');
+        $this->load->module('noticias');
         // recuperar codigo de don balos
         if (isset($_GET["secciones"])) {
             $secciones = $_GET["secciones"];
