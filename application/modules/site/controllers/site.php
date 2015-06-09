@@ -1025,7 +1025,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $publicidadFlotante = "";
 
         $data["extraheader"] = "no";
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data);
+
+        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
+        $excluded = array();
+        foreach ($listadoRotativas as  $row) {
+            $excluded[] = $row->id;
+        }
+
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data, $excluded);
 
         $data['content'] = $marcadorenvivo . $publicidadFlotante . $noticiasCuerpo . $bannerBottom . $tablaposiciones . $outbrain . $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
