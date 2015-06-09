@@ -39,6 +39,32 @@ class Contenido extends MY_Controller
         return $this->load->view('menu', $data, TRUE);
     }
 
+    public function menucopaamerica($data = FALSE)
+    {
+
+        //  $this->load->model('teams_position');
+        //  $this->load->model('team');
+        //$this->output->cache(CACHE_DEFAULT);
+
+        $this->load->module('teams_position');
+        $positions = $this->mdl_teams_position->get_table_by_champ(AMERICA);
+        $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 2);
+        $data['serieb'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_B, 2);
+        $data['seleccion'] = $this->mdl_noticias->get_by_position(1, SECTION_SELECCION, 2);
+
+        /*  $teams=array();
+          foreach($positions as $key=>$pos){
+
+              $teams[$key]=current($this->mdl_team->get($pos['id'])->result());
+              $teams[$key]->seccion=$pos['section'];
+          }*/
+        $data['teams'] = $positions;
+        $data['teams'] = $positions;
+        $data['tipoCampeonato'] = "simple";
+
+        return $this->load->view('menucopaamerica', $data, TRUE);
+    }
+
     public function header2($data = FALSE)
     {
         $this->load->module('story');
@@ -584,7 +610,7 @@ class Contenido extends MY_Controller
     public function copaamericaheader($data = FALSE)
     {
         $this->load->module('story');
-        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
+        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA , 24 );
         $excluded = array();
         foreach ($dataRotativas['rotativasData'] as $key => $row) {
             $excluded[] = $row->id;

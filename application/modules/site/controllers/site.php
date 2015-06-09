@@ -1,4 +1,19 @@
 <?php
+if (isset($_SERVER['HTTP_ORIGIN'])) {
+    header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+    header('Access-Control-Allow-Credentials: true');
+    header('Access-Control-Max-Age: 86400');
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+
+    if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))
+        header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+
+    if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))
+        header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
+}
+
 
 class Site extends MY_Controller
 {
@@ -305,7 +320,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         header('Content-type: text/html; charset=utf-8');
 //informacion para app y para don balon
 
-
         //json de consumo de don balon.
         $this->load->module('story');
         // recuperar codigo de don balos
@@ -317,14 +331,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             foreach ($totalsecciones as $index1 =>  $seccion) {
                 $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION  , '', $seccion);
                 foreach ($data as $index => $noticia) {
+                    $date = new DateTime($noticia->created);
                     if (!in_array($noticia->id, $data)) {
                         echo "{";
                         echo '"id": "' . $noticia->id . '",';
-                        echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
-                        echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->lead))) . '",';
-                        echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
+                        echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->title))) . '",';
+                        echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
+                        echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumbh50 . '",';
+                        echo '"fotoh": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
                         echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
-                        echo '"fecha_creacion": "' . $noticia->created . '",';
+                        echo '"fecha_creacion": "' . $date->format('m/d H:i') . '",';
                         echo '"seccion": "' . $noticia->seccion . '"';
                         echo "}";
                         echo ($index < count($data) - 1) ? "," : "";
@@ -916,7 +932,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top_copaamerica() . $this->banners->fe_skin_copaamerica();
-        $data['header1'] = $this->contenido->menu();
+        $data['header1'] =  $this->contenido->menucopaamerica()  ;
 
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();

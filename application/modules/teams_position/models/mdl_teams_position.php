@@ -73,7 +73,7 @@ class Mdl_teams_position extends MY_Model{
     }
 
     function get_teams_total($championship){
-        $this->db->select('t.id,t.name,s.id as section, t.short_name');
+        $this->db->select('t.id,t.name,s.id as section, t.short_name, t.thumb_shield');
         $this->db->from('championships as c, championships_teams as ct, teams as t');
         $this->db->join('sections s', 't.id = s.team_id', 'left');
         $this->db->where('c.id','ct.championship_id',FALSE);
@@ -437,7 +437,7 @@ class Mdl_teams_position extends MY_Model{
         $table=array();
 
         foreach($teams as $row){
-            $table[$row->id]=array('id'=>$row->id,'name'=>$row->name,'short_name'=>$row->short_name,'section'=>$row->section);
+            $table[$row->id]=array('id'=>$row->id,'name'=>$row->name,'thumb_shield'=>$row->thumb_shield,'short_name'=>$row->short_name,'section'=>$row->section);
             $table[$row->id]['points']=0;
             $table[$row->id]['pj']=0;
             $table[$row->id]['pg']=0;

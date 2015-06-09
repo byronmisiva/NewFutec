@@ -33,6 +33,12 @@ class Mdl_site extends MY_Model
         $this->db->from('teams');
         return $this->db->get()->result();
     }
+    function getNameTeamId($name)
+    {
+        $this->db->where('name', $name);
+        $this->db->from('teams');
+        return $this->db->get()->result();
+    }
 
     function getNameStadia($id)
     {

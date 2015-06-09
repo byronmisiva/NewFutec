@@ -133,7 +133,7 @@ class Mdl_story extends MY_Model
         return $aux;
     }
 
-    function get_banner_seccion($max = 5, $exclude = '', $id_seccion = '' )
+    function get_banner_seccion($max = 5, $exclude = '', $id_seccion = '', $tag = "" )
     {
         $this->db->select("s.id as sid,
 				s.id,
@@ -153,6 +153,7 @@ class Mdl_story extends MY_Model
 				i.thumb500", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
+        $this->db->join('stories_tags t', 't.id = s.story_id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
         $this->db->where('s.position', 1, FALSE);
         $this->db->where('s.sponsored', 0, FALSE);
@@ -164,7 +165,9 @@ class Mdl_story extends MY_Model
             $this->db->where('s.category_id !=', $exclude);
 
         if ($id_seccion != '')
-            $this->db->where('s.category_id =  ',' (select category_id from sections where id = ('.$id_seccion.'))', false);
+            $this->db->where('s.category_id',' (select category_id from sections where id = ('.$id_seccion.'))', false);
+        if ($tag != '')
+            $this->db->where('t.id', $tag, false);
 
         $aux = $this->db->get()->result();
 
