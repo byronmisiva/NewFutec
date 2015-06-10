@@ -83,62 +83,112 @@
 
         <div id="collapseOne" class="panel-collapse collapse in tablaposiciones">
             <div class="panel-body panel-body-clear-margin margen0">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
+                <?php if ($modeloficha == 'completa') {
+                    ?>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active quarter  text-center">
+                            <a href="#arqueros" role="tab" data-toggle="tab">Arqueros</a></li>
+                        <li class="quarter  text-center">
+                            <a href="#defensas" role="tab" data-toggle="tab">Defensas</a></li>
+                        <li class="quarter  text-center">
+                            <a href="#volantes" role="tab" data-toggle="tab">Volantes</a></li>
+                        <li class="quarter    text-center">
+                            <a href="#delanteros" role="tab" data-toggle="tab">Delanteros</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active panel-no-border" id="arqueros">
+                            <?php
+                            foreach ($infoJugadoresEquipo['arqueros'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5  margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="tab-pane" id="defensas">
+                            <?php
+                            foreach ($infoJugadoresEquipo['defensas'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="tab-pane panel-no-border" id="volantes">
+                            <?php
+                            foreach ($infoJugadoresEquipo['volantes'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="tab-pane" id="delanteros">
+                            <?php
+                            foreach ($infoJugadoresEquipo['delanteros'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php
+                } else {?>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active    text-right" style="width: 100%;text-align: right;">
+                            <a href="#jugadores" role="tab" data-toggle="tab">Jugadores</a></li>
 
-                    <li class="active quarter  text-center">
-                        <a href="#arqueros" role="tab" data-toggle="tab">Arqueros</a></li>
-                    <li class="quarter  text-center">
-                        <a href="#defensas" role="tab" data-toggle="tab">Defensas</a></li>
-                    <li class="quarter  text-center">
-                        <a href="#volantes" role="tab" data-toggle="tab">Volantes</a></li>
-                    <li class="quarter    text-center">
-                        <a href="#delanteros" role="tab" data-toggle="tab">Delanteros</a></li>
-                </ul>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active panel-no-border" id="jugadores">
+                            <?php
+                            foreach ($infoJugadoresEquipo['arqueros'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5  margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                            <?php
+                            foreach ($infoJugadoresEquipo['defensas'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                            <?php
+                            foreach ($infoJugadoresEquipo['volantes'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                            <?php
+                            foreach ($infoJugadoresEquipo['delanteros'] as $jugador) {
+                                ?>
+                                <div class="col-md-12 separador5 margen0 lineseparador-dot">
+                                    <?php
+                                    echo $jugador->last_name . ", " . $jugador->first_name; ?>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active panel-no-border" id="arqueros">
-                        <?php
-                        foreach ($infoJugadoresEquipo['arqueros'] as $jugador) {
-                            ?>
-                            <div class="col-md-12 separador5  margen0 lineseparador-dot">
-                                <?php
-                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                    <div class="tab-pane" id="defensas">
-                        <?php
-                        foreach ($infoJugadoresEquipo['defensas'] as $jugador) {
-                            ?>
-                            <div class="col-md-12 separador5 margen0 lineseparador-dot">
-                                <?php
-                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                    <div class="tab-pane panel-no-border" id="volantes">
-                        <?php
-                        foreach ($infoJugadoresEquipo['volantes'] as $jugador) {
-                            ?>
-                            <div class="col-md-12 separador5 margen0 lineseparador-dot">
-                                <?php
-                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                    <div class="tab-pane" id="delanteros">
-                        <?php
-                        foreach ($infoJugadoresEquipo['delanteros'] as $jugador) {
-                            ?>
-                            <div class="col-md-12 separador5 margen0 lineseparador-dot">
-                                <?php
-                                echo $jugador->last_name . ", " . $jugador->first_name; ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </div>
+                <?php } ?>
+
+
+
             </div>
         </div>
 

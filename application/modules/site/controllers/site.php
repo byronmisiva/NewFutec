@@ -329,8 +329,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $totalsecciones = explode(",", $secciones);
 
             echo "[";
-            foreach ($totalsecciones as $index1 =>  $seccion) {
-                $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION  , '', $seccion);
+            foreach ($totalsecciones as $index1 => $seccion) {
+                $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION, '', $seccion);
                 foreach ($data as $index => $noticia) {
                     $date = new DateTime($noticia->created);
                     if (!in_array($noticia->id, $data)) {
@@ -347,8 +347,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                         echo ($index < count($data) - 1) ? "," : "";
                     }
                 }
-                if (count($totalsecciones) >0)
-                echo ($index1 < count($totalsecciones) - 1) ? "," : "";
+                if (count($totalsecciones) > 0)
+                    echo ($index1 < count($totalsecciones) - 1) ? "," : "";
             }
             echo "]";
         } else {
@@ -847,6 +847,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
             $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, SERIE_A);
+            if ($campeonatoEquipo)
+                $dataTeam ['modeloficha'] = "simple";
+            else
+                $dataTeam ['modeloficha'] = "completa";
+
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
 
             $cabeceraEquipo = $this->team->getCabeceraEquipo($dataTeam);
@@ -904,10 +909,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         // todo es caso copa america pero se puede generalizar
-        if ($campeonatoEquipo) {
-            $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
+        if ($campeonatoEquipo == "56") {
+             $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
 
-        } else  {
+        } else {
             $data['sidebar'] = $this->contenido->sidebarOpenNews();
         }
 
@@ -944,21 +949,20 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top_copaamerica() . $this->banners->fe_skin_copaamerica();
-        $data['header1'] =  $this->contenido->menucopaamerica()  ;
+        $data['header1'] = $this->contenido->menucopaamerica();
 
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
 
-
-        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
+        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
         $excluded = array();
-        foreach ($listadoRotativas as  $row) {
+        foreach ($listadoRotativas as $row) {
             $excluded[] = $row->id;
         }
 
 
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion,RESULT_PAGE,   0,   true,   FALSE, $excluded );
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE, 0, true, FALSE, $excluded);
 
 
         $storia = "";
@@ -1037,9 +1041,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data["extraheader"] = "no";
 
-        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA  );
+        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
         $excluded = array();
-        foreach ($listadoRotativas as  $row) {
+        foreach ($listadoRotativas as $row) {
             $excluded[] = $row->id;
         }
 

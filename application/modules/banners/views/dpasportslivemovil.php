@@ -1,4 +1,4 @@
-<a href="<?php echo base_url('site/dpasportslive') ?>"> <img class="img-responsive" src="<?php echo base_url('imagenes/febanners/mobile.jpg') ?>"></a>
+<a href="<?php echo base_url('copa-america') ?>"> <img class="img-responsive" src="<?php echo base_url('imagenes/febanners/mobilecopaamerica.png') ?>"></a>
 
 <!--dpasportslive-->
 <!--<div id="dpasportslivemovil" >
