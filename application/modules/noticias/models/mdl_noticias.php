@@ -235,7 +235,8 @@ LIMIT 8";
                 $positioQuery = " < 10";
             else
                 $positioQuery = " = " . $position;
-            $query = 'SELECT s.*
+            if ($images!="") {
+                $query = 'SELECT s.*
                     FROM (`stories` s)
                     JOIN (select * from images where id IN(' . $images . ')) i ON `i`.`id` = `s`.`image_id`
                     JOIN (select * from `stories_tags` where tag_id IN( ' . $tags . ' ) ) st ON `s`.`id` = `st`.`story_id`
@@ -243,6 +244,18 @@ LIMIT 8";
                     AND `s`.`invisible` =  "0"
                     AND `s`.`position` ' . $positioQuery . '
                     LIMIT ' . $limit;
+
+            } else {
+                $query = 'SELECT s.*
+                    FROM (`stories` s)
+
+                    JOIN (select * from `stories_tags` where tag_id IN( ' . $tags . ' ) ) st ON `s`.`id` = `st`.`story_id`
+                    WHERE (category_id =' . $categoria . ' OR st.tag_id IN(' . $tags . ') )
+                    AND `s`.`invisible` =  "0"
+                    AND `s`.`position` ' . $positioQuery . '
+                    LIMIT ' . $limit;
+
+            }
         } else
             $query = 'SELECT s.*
                     FROM (`stories` s)
