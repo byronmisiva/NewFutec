@@ -741,11 +741,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $title = $name->name;
         //$title = "Calendario - Campeonato Serie B 2014";
-        echo $id ;
 
-        //$fechas = $this->matches->matches($id, $title);
 
-//        $this->singleConten($title, $fechas, "Resultados", $id);
+        $fechas = $this->matches->matches($id, $title);
+        echo $fechas ;
+
+        //$this->singleConten($title, $fechas, "Resultados", $id);
     }
 
     public function marcadorenvivo()
