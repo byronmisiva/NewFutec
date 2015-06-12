@@ -812,17 +812,17 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         // fin carga la informacion de la noticia
         $data['content'] = $contenSeccion;
-
-        if (($nameSeccion != "Magazine") && ($nameSeccion != "Fuera de Juego")) {
-            if ($serie != 56) {
-                $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
-            }
-            else {
-                $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
-            }
-        } else {
-            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "short", $tipotabla);
-        }
+        $data['sidebar'] = "";
+//        if (($nameSeccion != "Magazine") && ($nameSeccion != "Fuera de Juego")) {
+//            if ($serie != 56) {
+//                $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
+//            }
+//            else {
+//                $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
+//            }
+//        } else {
+//            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "short", $tipotabla);
+//        }
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
