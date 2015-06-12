@@ -804,7 +804,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
-        $dataHeader2['FE_Bigboxbanner'] = "1" .$this->banners->FE_Bigboxbanner();
+        $dataHeader2['FE_Bigboxbanner'] = "1"  ;
 
         $bodytag = $nameSeccion;
 
