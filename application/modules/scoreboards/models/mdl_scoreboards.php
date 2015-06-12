@@ -33,7 +33,7 @@ class Mdl_scoreboards extends MY_Model
         $this->db->order_by('date_match', 'desc');
         $matches = $this->db->get();
 
-        //Chequeo si existen partidos
+
         if ($matches->num_rows() > 0)
             $partidos = $this->data_matches($matches);
         else

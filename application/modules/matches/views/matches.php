@@ -52,7 +52,8 @@ $estado['8'] = 'Fin del Partido';?>
             </div>
             <div class="col-md-12  fondoazul  separador30"  >
                  <h4 class="contenidos">
-             <?= $key ?></h4>
+            <?php $esfecha = explode(" ", $key);
+            if ($esfecha[0] != "Fecha") echo "Fecha";  ?> <?= $key ?></h4>
             </div>
             <?php
             foreach ($teams as $key => $team) {

@@ -1,3 +1,10 @@
+<?php if ($FE_Bigboxbanner != "") {
+?>
+    <div class="col-md-12 col-xs-12 separador10 margen0r">
+        <? echo $FE_Bigboxbanner; ?>
+    </div>
+<?php
+} ?>
 <!-- social y buscar -->
 <div class="col-md-3 col-xs-3 separador10">
     <span class="social-pos">

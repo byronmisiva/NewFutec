@@ -586,6 +586,15 @@ class Contenido extends MY_Controller
         //Encuestas
         $data['encuesta'] = $this->surveys->encuesta_formulario();
 
+        if ( $this->uri->segment(1) != "copaamerica" ) {
+
+            $data['FE_Bigboxbanner'] = $this->banners->fe_hp_brand();
+        }  else {
+
+            $data['FE_Bigboxbanner'] = "";
+        }
+
+
 
         return $this->load->view('sidebaramerica', $data, TRUE);
         // todo validar si se queda
