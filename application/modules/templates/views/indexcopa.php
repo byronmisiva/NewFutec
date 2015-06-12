@@ -3,7 +3,7 @@
 $this->load->view('header', $data);
 ?>
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="page-header top1 hidden-xs arriba ">
+<div class="page-header top1 hidden-xs arriba fondocopa">
         <div class="fondo-notificaciones" onclick="instalarExtension()">
             <div class="texto-notificacion">
                 ¿La actualidad del fútbol en tiempo real? Acepta las notificaciones de Google Chrome <img class="logochr"
@@ -103,7 +103,7 @@ $this->load->view('header', $data);
     </nav>
 </div>
 
-<div class="page-header header1 ">
+<div class="page-header header1 fondocopa fondomove">
     <div class="container">
         <div class="row clearfix">
             <nav class="navbar  fhmm  menutype " role="navigation">

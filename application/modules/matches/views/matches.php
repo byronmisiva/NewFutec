@@ -28,6 +28,7 @@ $estado['8'] = 'Fin del Partido';?>
 
                     <div class="fondogris borde separador10 text-center miniletra fechalista <?php echo $fondogris; $fondogris = "texto-gris"; ?>"
                          style="width: <?= 100 / $totalTeams ?>%; float: left">
+
                         Fecha<br>
 
                         <div class="valor" style="font-size: 13px"><?= $key ?></div>
@@ -50,7 +51,8 @@ $estado['8'] = 'Fin del Partido';?>
 
             </div>
             <div class="col-md-12  fondoazul  separador30"  >
-                 <h4 class="contenidos">Fecha <?= $key ?></h4>
+                 <h4 class="contenidos">
+            <?php if (explode(" ", $key)[0] != "Fecha") echo "Fecha";  ?> <?= $key ?></h4>
             </div>
             <?php
             foreach ($teams as $key => $team) {

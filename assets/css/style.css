@@ -1722,7 +1722,7 @@ h1.tabla, h2.tabla {
     background-image: url("../img/logo-copa-america-mini.png");
     background-repeat: no-repeat;
     background-size: 78px 12px;
-    width: 78px;
+    width: 68px;
     height: 12px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -1811,3 +1811,13 @@ div#closeBannerdpa {
     opacity: 0.6;
     width: 81px;
 }
+
+.fondocopa, .fondomove {
+    background-color: transparent;
+    background-image: url("../img/fondo_header_copa.png");;
+}
+
+.fondomove {
+    background-position: 0px 140px;
+}
+

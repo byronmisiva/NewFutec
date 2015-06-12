@@ -170,12 +170,17 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_skin_copaamerica', $data, TRUE);
     }
-    public function FE_BigboxSidebar1_copaamerica($data = FALSE)
+    public function fe_header($data = FALSE)
     {
-        return $this->load->view('fe_bigboxsidebar1_copaamerica', $data, TRUE);
+        return $this->load->view('fe_header', $data, TRUE);
     }
 
     // fin copa america banners
+
+    public function fe_header_copa_america($data = FALSE)
+    {
+        return $this->load->view('fe_header_copa_america', $data, TRUE);
+    }
 
 
     public function dpaSportsLive($data = FALSE)
@@ -194,4 +199,31 @@ class Banners extends MY_Controller
     {
         return $this->load->view('dpasportsliveframemovil', $data, TRUE);
     }
+
+    public function fe_smart_bottom_copa_america($data = FALSE)
+    {
+        return $this->load->view('fe_smart_bottom_copa_america', $data, TRUE);
+    }
+
+    public function fe_smart_top_copa_america($data = FALSE)
+    {
+        return $this->load->view('fe_smart_top_copa_america', $data, TRUE);
+    }
+
+    public function fe_loading_movil_copa_america($data = FALSE)
+    {
+        return $this->load->view('fe_loading_movil_copa_america', $data, TRUE);
+    }
+
+    public function FE_Bigboxnews1_copa_america($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxnews1_copa_america', $data, TRUE);
+    }
+
+    public function FE_BigboxSidebar1_copaamerica($data = FALSE)
+    {
+        return $this->load->view('fe_bigboxsidebar1_copaamerica', $data, TRUE);
+    }
+
+
 }

@@ -244,7 +244,13 @@ class Noticias extends MY_Controller
             //intercalar banners
             $this->load->module('banners');
             $banners = array();
-            $banners[] = $this->banners->FE_Bigboxnews1();
+
+            //todo cambio copa america
+            if ($urlSeccion != "copaamerica")
+                $banners[] = $this->banners->FE_Bigboxnews1();
+            else
+                $banners[] = $this->banners->FE_Bigboxnews1();
+                //$banners[] = $this->banners->FE_Bigboxnews1_copa_america();
             $banners[] = $this->banners->FE_Bigboxnews2();
             $banners[] = $this->banners->FE_Bigboxnews3();
             $banners[] = $this->banners->FE_Bigboxnews4();

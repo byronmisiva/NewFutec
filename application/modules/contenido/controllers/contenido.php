@@ -191,27 +191,6 @@ class Contenido extends MY_Controller
 
     }
 
-    /* function verificaDispositivo(){
-         $this->load->library('user_agent');
-         $mobiles=array( 'Android','Windows CE','Symbian S60' );
-         $movil="0";
-         if ($this->agent->is_mobile()){
-             $movil="1";
-             $m=$this->agent->mobile();
-             if($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i',$this->agent->agent) == 0)
-                 $m = "Android Tablet";
-             switch($m){
-
-                 case 'Android Tablet':
-                     $movil="0";
-                     break;
-                 case in_array($m,$mobiles):
-                     $movil="0";
-                     break;
-             }
-         }
-         return $movil;
-     }*/
 
 
     public function footer($data = FALSE)
@@ -536,7 +515,11 @@ class Contenido extends MY_Controller
         $this->load->module('scoreboards');
         $this->load->module('surveys');
         $bannersSidebar = array();
+        if ($serie == 56)
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar1_copaamerica();
+        else
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
+
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();

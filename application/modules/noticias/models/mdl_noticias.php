@@ -190,7 +190,7 @@ LIMIT 8";
         // por optimizacion
         $aux = $this->ajustaArray($aux, $limit);
 
-
+        $test = $this->db->last_query();
 
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);
@@ -209,6 +209,7 @@ LIMIT 8";
                 $aux[$key]->votes = $stat->votes;
             }
         }
+
         return $aux;
     }
 

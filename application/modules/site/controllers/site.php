@@ -52,10 +52,15 @@ class Site extends MY_Controller
 
     public function index()
     {
-        if ($this->verificarDispositivo() == "1")
+        /*if ($this->verificarDispositivo() == "1")
             redirect('site/movil/');
         else
-            redirect('home');
+            redirect('home');*/
+
+        if ($this->verificarDispositivo() == "1")
+            redirect('copa-america-movil');
+        else
+            redirect('copaamerica');
 
     }
 
@@ -134,6 +139,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
         $data['fe_splash'] = "";
 
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
@@ -166,6 +172,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
 
         $data['fe_splash'] = $this->banners->fe_splash();
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
 
     }
@@ -312,13 +319,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
     public function getnewsjsonapp()
     {
+
         header('Content-type: text/html; charset=utf-8');
-//informacion para app y para don balon
+        //informacion para app y para don balon
 
         //json de consumo de don balon.
         $this->load->module('story');
@@ -328,28 +337,75 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $secciones = $_GET["secciones"];
             $totalsecciones = explode(",", $secciones);
 
-            echo "[";
+            /// Recupera y ordena datos de cada seccion
+            $noticiasOrden = array();
             foreach ($totalsecciones as $index1 => $seccion) {
-                $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION, '', $seccion);
-                foreach ($data as $index => $noticia) {
-                    $date = new DateTime($noticia->created);
-                    if (!in_array($noticia->id, $data)) {
-                        echo "{";
-                        echo '"id": "' . $noticia->id . '",';
-                        echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->title))) . '",';
-                        echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
-                        echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumbh50 . '",';
-                        echo '"fotoh": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
-                        echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
-                        echo '"fecha_creacion": "' . $date->format('m/d H:i') . '"';
-                        //echo '"seccion": "' . $noticia->seccion . '"';
-                        echo "}";
-                        echo ($index < count($data) - 1) ? "," : "";
+                if ($seccion != 3) {
+                    if ($seccion != 28) {
+                        $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION, '', $seccion);
+                        foreach ($data as $index => $noticia) {
+                            if (!in_array($noticia->id, $data)) {
+                                $noticia->seccion = $seccion;
+                                $noticiasOrden[] = $noticia;
+                            }
+                        }
+                    } else {
+                        // para el caso de en jugadores en el exterior
+                        $data = $this->mdl_story->get_banner_seccion2(FEAPPMAXSECCION, '', $seccion);
+                        foreach ($data as $index => $noticia) {
+                            if (!in_array($noticia->id, $data)) {
+                                $noticia->seccion = $seccion;
+                                $noticiasOrden[] = $noticia;
+                            }
+                        }
+                    }
+                } else {
+                    //para el caso de rotativas
+                    $data = $this->mdl_story->get_banner(3, 44);
+                    foreach ($data as $noticia) {
+                        $noticia->seccion = $seccion;
+                        $noticiasOrden[] = $noticia;
                     }
                 }
-                if (count($totalsecciones) > 0)
-                    echo ($index1 < count($totalsecciones) - 1) ? "," : "";
             }
+
+            $dateTime = array();
+
+            foreach ($noticiasOrden as $key) {
+                $dateTime[] = $key->created;
+            }
+
+            array_multisort($dateTime, SORT_DESC, SORT_STRING, $noticiasOrden);
+
+            //// genera json
+
+            echo "[";
+            $idOld = "";
+            foreach ($noticiasOrden as $index => $noticia) {
+                $today = date("m/d");
+                $date = new DateTime($noticia->created);
+
+                if ($today == $date->format('m/d'))
+                    $date = $date->format('H:i');
+                else
+                    $date = $date->format('m/d H:i');
+
+                if ($idOld != $noticia->id) {
+                    echo "{";
+                    echo '"id": "' . $noticia->id . '",';
+                    echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->title))) . '",';
+                    echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
+                    echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumbh50 . '",';
+                    echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
+                    echo '"seccion": "' . $noticia->seccion . '",';
+                    echo '"fecha_creacion": "' . $date . '"';
+                    //echo '"seccion": "' . $noticia->seccion . '"';
+                    echo "}";
+                    echo ($index < count($noticiasOrden) - 1) ? "," : "";
+                }
+                $idOld = $noticia->id;
+            }
+
             echo "]";
         } else {
             echo "[]";
@@ -405,9 +461,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $this->load->module('contenido');
         $this->load->module('teams_position');
-        //$this->load->module('templates');
-
-        // $this->templates->_index($data);
 
         echo $this->contenido->sidebarDonBalon(false, SERIE_A);
     }
@@ -566,6 +619,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
@@ -613,6 +667,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
@@ -653,7 +708,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $this->load->module('strikes');
         $goleadores = $this->strikes->goleadoresFull($serie);
-        $this->singleConten("Goleadores", $goleadores);
+        $this->singleConten("Goleadores", $goleadores, "", $serie);
     }
 
     public function tabladeposiciones($serie = SERIE_A)
@@ -687,7 +742,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $title = $name->name;
         //$title = "Calendario - Campeonato Serie B 2014";
         $fechas = $this->matches->matches($id, $title);
-        $this->singleConten($title, $fechas);
+        $this->singleConten($title, $fechas, "Resultados", $id);
     }
 
     public function marcadorenvivo()
@@ -712,7 +767,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $match = $this->matches->getMatch($id);
         $title = $this->matches->getMatchName($id);
         $description = "Sigue el partido en vivo, " . $this->matches->getMatchNameLong($id);
-        $this->singleConten($title, $match, $description);
+        $champ = $this->uri->segment(5);
+        if (!$champ)
+            $this->singleConten($title, $match, $description);
+        else
+            $this->singleConten($title, $match, $description, $this->uri->segment(5));
     }
 
     public function partidodata()
@@ -755,14 +814,20 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['content'] = $contenSeccion;
 
         if (($nameSeccion != "Magazine") && ($nameSeccion != "Fuera de Juego")) {
-            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
+            if ($serie != 56) {
+                $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
+            }
+            else {
+                $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
+            }
         } else {
             $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "short", $tipotabla);
         }
+
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
         $data['description'] = $description;
-
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
@@ -787,7 +852,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['sidebar'] = "";
         $data['footer'] = "";
         $data['bottom'] = "";
-
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
@@ -798,7 +863,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $shortEquipo = $this->uri->segment(3);
         $campeonatoEquipo = $this->uri->segment(5);
 
-        $this->section_equipo($idEquipo, 2, $shortEquipo, $campeonatoEquipo);
+        if ($campeonatoEquipo)
+            $this->section_equipo($idEquipo, 2, $shortEquipo, $campeonatoEquipo);
+        else
+            $this->section_equipo($idEquipo, 2, $shortEquipo);
+
+
     }
 
     public function setloc()
@@ -809,7 +879,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->mdl_story->cuentaVisita($id);
     }
 
-    public function section_equipo($seccion, $seccionpos, $urlSeccion, $campeonatoEquipo)
+    public function section_equipo($seccion, $seccionpos, $urlSeccion, $campeonatoEquipo = SERIE_A)
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(CACHE_DEFAULT);
@@ -846,7 +916,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
-            $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, SERIE_A);
+            $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, $campeonatoEquipo);
             if ($campeonatoEquipo)
                 $dataTeam ['modeloficha'] = "simple";
             else
@@ -910,7 +980,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         // todo es caso copa america pero se puede generalizar
         if ($campeonatoEquipo == "56") {
-             $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
+            $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
 
         } else {
             $data['sidebar'] = $this->contenido->sidebarOpenNews();
@@ -920,7 +990,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
 
-
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 
@@ -995,8 +1065,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
 
-
-        $this->templates->_index($data);
+        $data['fe_header'] = $this->banners->fe_header();
+        $this->templates->_indexcopa($data);
 
     }
 
@@ -1022,7 +1092,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['top1'] = "";
         $data['header1'] = "";
 
+        //$bannerBottom = $this->banners->fe_smart_bottom_copa_america();
         $bannerBottom = $this->banners->fe_smart_bottom();
+        //$bannerTop = $this->banners->fe_smart_top_copa_america();
         $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2, ZONACOPAAMERICA) . $bannerTop;
@@ -1035,7 +1107,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('scoreboards');
         $tablaposiciones = $this->scoreboards->tablaposiciones(AMERICA, AMERICA_TIPOTABLA);
 
+        //$fe_loading_movil = $this->banners->fe_loading_movil_copa_america();
         $fe_loading_movil = $this->banners->fe_loading_movil();
+        $data['fe_header'] = $this->banners->fe_header();
         $outbrain = ' ';
         $publicidadFlotante = "";
 
@@ -1056,6 +1130,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
         $data['fe_splash'] = "";
 
+        //$data['fe_header'] = $this->banners->fe_header_copa_america();
+        $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
 }

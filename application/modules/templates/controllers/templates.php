@@ -8,6 +8,9 @@ class Templates extends MX_Controller{
 	public function _index( $data = FALSE ){		
 		$this->load->view( 'index', $data );
 	}
+	public function _indexcopa( $data = FALSE ){
+		$this->load->view( 'indexcopa', $data );
+	}
 
 	public function _movil( $data = FALSE ){
 

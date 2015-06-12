@@ -2,7 +2,7 @@
 $separador10 = "separador10-xs ";
 if (isset($extraheader)) {
     if ($extraheader == "no") {
-        $separador = "";
+        $separador10 = "";
     }
 }
 ?>

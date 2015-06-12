@@ -87,7 +87,7 @@
                                     ?>
                                     <div class="panel panel-default">
                                         <a class="sidebarlink"
-                                           href="<?= base_url('site/partido/' . $this->contenido->_urlFriendly($partido->hname) . '-' . $this->contenido->_urlFriendly($partido->aname) . '/' . $partido->id) ?>">
+                                           href="<?= base_url('site/partido/' . $this->contenido->_urlFriendly($partido->hname) . '-' . $this->contenido->_urlFriendly($partido->aname) . '/' . $partido->id . '/' . $champ)  ?>">
 
                                             <ul class="list-group">
                                                 <li class="list-group-item">
