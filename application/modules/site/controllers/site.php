@@ -826,7 +826,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['footer'] ="2" . $this->contenido->footer();
         $data['bottom'] ="3" . $this->contenido->bottom();
-        $data['description'] = "4" . $description;
+        $data['description'] = "4"  ;
         $data['fe_header'] = "5"  ;
         $this->templates->_index($data);
     }
