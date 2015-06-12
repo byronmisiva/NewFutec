@@ -804,7 +804,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
-        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+        $dataHeader2['FE_Bigboxbanner'] = "1" .$this->banners->FE_Bigboxbanner();
 
         $bodytag = $nameSeccion;
 
@@ -824,10 +824,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 //            $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "short", $tipotabla);
 //        }
 
-        $data['footer'] = $this->contenido->footer();
-        $data['bottom'] = $this->contenido->bottom();
-        $data['description'] = $description;
-        $data['fe_header'] = $this->banners->fe_header();
+        $data['footer'] ="2" . $this->contenido->footer();
+        $data['bottom'] ="3" . $this->contenido->bottom();
+        $data['description'] = "4" . $description;
+        $data['fe_header'] = "5"  ;
         $this->templates->_index($data);
     }
 
