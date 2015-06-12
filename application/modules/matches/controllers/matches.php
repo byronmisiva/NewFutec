@@ -170,7 +170,7 @@ class Matches extends MY_Controller
         $data['teamsFecha'] = $this->mdl_matches->matches_all($idSerie);
         $data['teams_pics'] = $this->mdl_matches->get_pics_teams($idSerie);
 
-        return "xx";
+        return $this->load->view('matches', $data, true);
     }
     //listado con partidos en vivo
     public function matchesLive( $title)
