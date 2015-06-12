@@ -743,8 +743,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         //$title = "Calendario - Campeonato Serie B 2014";
 
 
-//        $fechas = $this->matches->matches($id, $title);
-        $fechas = "ss";
+        $fechas = $this->matches->matches($id, $title);
+
 
         $this->singleConten($title, $fechas, "Resultados", $id);
     }
