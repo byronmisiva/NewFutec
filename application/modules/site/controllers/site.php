@@ -573,7 +573,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
         if ($tipoSeccion == "masleido") {
-            $noticiasCuerpo = $this->noticias->viewseccion_plus($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+            $noticiasCuerpo = $this->noticias->viewplus($nameSeccion, $seccion, $seccionpos, $urlSeccion);
 
 
         } else {
@@ -775,7 +775,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (!$champ)
             $this->singleConten($title, $match, $description);
         else
-            $this->singleConten($title, $match, $description, $this->uri->segment(5));
+            $this->singleConten($title, $match, $description, $champ);
     }
 
     public function partidodata()
@@ -804,10 +804,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
+        $this->load->module('teams_position');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
-        $data['header1'] = $this->contenido->menu();
-
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
         $bodytag = $nameSeccion;
@@ -831,8 +829,21 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
         $data['description'] = $description;
         $data['fe_header'] = $this->banners->fe_header();
-        $this->templates->_index($data);
-    }
+
+
+        if ($serie == 56) {
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
+            $data['header1'] = $this->contenido->menucopaamerica();
+            $this->templates->_indexcopa($data);
+        }
+        else {
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+            $data['header1'] = $this->contenido->menu();
+            $this->templates->_index($data);
+
+        }
+
+     }
 
     public function pruebas()
     {
@@ -940,9 +951,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
+        $this->load->module('teams_position');
 
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
-        $data['header1'] = $this->contenido->menu();
+     //   $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+     //   $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
@@ -994,7 +1006,21 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
 
         $data['fe_header'] = $this->banners->fe_header();
-        $this->templates->_index($data);
+
+
+
+
+        if ($campeonatoEquipo == 56) {
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
+            $data['header1'] = $this->contenido->menucopaamerica();
+            $this->templates->_indexcopa($data);
+        }
+        else {
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+            $data['header1'] = $this->contenido->menu();
+            $this->templates->_index($data);
+
+        }
     }
 
 
@@ -1101,8 +1127,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2, ZONACOPAAMERICA) . $bannerTop;
-
-        $marcadorenvivo = $this->contenido->marcadorVivo();
+        $campeonato = AMERICA;
+        $marcadorenvivo = $this->contenido->marcadorVivo($campeonato);
 
         $data['top2'] = "";
 

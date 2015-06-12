@@ -104,11 +104,13 @@ class Mdl_scoreboards extends MY_Model
             $this->db->where('groups.id', $match->group_id);
             $championship = current($this->db->get()->result());
             $partidos[$key]->championship = $championship->name;
+            $partidos[$key]->championship_id = $championship->id;
             $partidos[$key]->group_id = $championship->gid;
 
             //Equipo Local
             $this->db->where('id', $partidos[$key]->hid);
             $team_home = current($this->db->get('teams')->result());
+            $partidos[$key]->hname = $team_home->name;
             $partidos[$key]->hname = $team_home->name;
             $partidos[$key]->hsname = $team_home->short_name;
             $partidos[$key]->hshield = 'imagenes/teams/shield/default.png';

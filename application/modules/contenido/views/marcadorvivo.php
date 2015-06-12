@@ -2,12 +2,13 @@
     <div class="carousel-inner">
         <?php
         $active = " active";
+
         foreach ($scores as $score) {
             ?>
 
             <div class="item <?php echo $active;
             $active = ""; ?>">
-                <a href="<?= base_url() ?>site/partido/<?php echo  $this->contenido->_urlFriendly($score->hname) . "-" . $this->contenido->_urlFriendly($score->aname) . "/" . $score->id . "/" . $campeonato; ?>">
+                <a href="<?= base_url() ?>site/partido/<?php echo  $this->contenido->_urlFriendly($score->hname) . "-" . $this->contenido->_urlFriendly($score->aname) . "/" . $score->id . "/" . $score->championship_id; ?>">
                     <div class="  text-white">
                         <div class="col-md-12 col-sm-12 col-xs-12 margen0l margen0r   h5">
                             <div class="col-md-1 col-sm-1 col-xs-1 col-xs-1text-center  margen0">

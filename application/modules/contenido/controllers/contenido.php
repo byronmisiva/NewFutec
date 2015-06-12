@@ -121,7 +121,7 @@ class Contenido extends MY_Controller
         return $this->load->view('header2', $data, TRUE);
     }
 
-    public function marcadorVivo()
+    public function marcadorVivo($campeonato = CHAMP_DEFAULT )
     {
         $this->load->module('scoreboards');
         $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
@@ -129,6 +129,8 @@ class Contenido extends MY_Controller
             $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             //$data['title'] = "Ultima Fecha";
         }
+
+        $datamarcador['campeonato'] = $campeonato;
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
 
@@ -615,6 +617,7 @@ class Contenido extends MY_Controller
         //fin poner en caso de existir la ZONE FE
 
         $dataRotativas['check'] = 0;
+        $dataRotativas['linkseccion'] = "copaamerica";
         $data['rotativas'] = $this->load->view('rotativas', $dataRotativas, TRUE);
         //cargamos partidos
         $this->load->module('scoreboards');

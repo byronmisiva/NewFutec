@@ -212,7 +212,8 @@
 
         // splsh movil
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-
+        googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1434137569309-1').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
 
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
@@ -284,7 +285,10 @@
         googletag.defineSlot('/1022247/FE_BRAND_SMART_TOP', [320, 50], 'div-gpt-ad-1432051647687-6').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1432051647687-9').addService(googletag.pubads());
+
+
+
+
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
@@ -302,9 +306,7 @@
 
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
-<script type='text/javascript'>
-    GA_googleAddSlot("ca-pub-2857298972794488", "FE_SKIN");
-</script>
+
 
 <script type='text/javascript'>GA_googleFetchAds();</script>
 <!-- Google Tag Manager -->

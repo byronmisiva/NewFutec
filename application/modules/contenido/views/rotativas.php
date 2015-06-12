@@ -6,6 +6,10 @@
             $linkbody = $rotativa->subtitle;
             if ($linkbody == "")
                 $linkbody = $rotativa->title;
+
+            if (isset($linkseccion))
+            $link = base_url() . 'site/'.$linkseccion.'/' . $this->contenido->_urlFriendly($linkbody) . '/' . $rotativa->id;
+            else
             $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($linkbody) . '/' . $rotativa->id;
             ?>
             <li style="height: 348px;" data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
