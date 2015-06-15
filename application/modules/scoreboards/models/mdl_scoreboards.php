@@ -21,6 +21,27 @@ class Mdl_scoreboards extends MY_Model
         parent::__construct();
     }
 
+    function today_matches_app()
+    {   //Todo partido q se juega hoy
+
+        $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
+        $this->db->from('matches');
+        $this->db->where('DATE(date_match)', 'CURDATE()', false);
+        $this->db->order_by("date_match", "desc");
+
+
+
+            $this->db->order_by('date_match', 'desc');
+        $matches = $this->db->get();
+
+
+        if ($matches->num_rows() > 0)
+            $partidos = $this->data_matches($matches);
+        else
+            $partidos = false;
+
+        return $partidos;
+    }
 
     function today_matches($live = 'live')
     {   //Todo partido q se juega hoy
@@ -28,8 +49,15 @@ class Mdl_scoreboards extends MY_Model
         $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
         $this->db->from('matches');
         $this->db->where('DATE(date_match)', 'CURDATE()', false);
+        $this->db->order_by("date_match", "desc");
+
+
+
         if ($live == 'live')
-            $this->db->where('live', '1');
+  //          $this->db->where('live', '1');
+
+
+
         $this->db->order_by('date_match', 'desc');
         $matches = $this->db->get();
 

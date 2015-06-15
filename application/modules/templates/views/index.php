@@ -53,8 +53,9 @@ $this->load->view('header', $data);
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
                             <span class="caret  link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a class="clickmenu" href="<?php echo base_url('tabla-de-posiciones') ?>">Posiciones Serie A</a></li>
-                            <li><a class="clickmenu" href="<?php echo base_url('site/tabladeposiciones/' . SERIE_B) ?>">Posiciones Serie B</a></li>
+                            <li><a class="clickmenu" href="<?php echo base_url('site/tabladeposiciones/' . AMERICA . "/simple") ?>">Copa America 2015</a></li>
+                            <li><a class="clickmenu" href="<?php echo base_url('tabla-de-posiciones') ?>">Serie A</a></li>
+                            <li><a class="clickmenu" href="<?php echo base_url('site/tabladeposiciones/' . SERIE_B) ?>">Serie B</a></li>
 
                         </ul>
                     </li>
@@ -65,7 +66,8 @@ $this->load->view('header', $data);
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calendario
                             <span class="caret link-menu"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                                <li><a class="clickmenu" href="<?= base_url() ?>site/resultados/<?php echo SERIE_A; ?>/campeonato-serie-a">Serie A</a></li>
+                            <li><a class="clickmenu" href="<?= base_url() ?>site/resultados/<?php echo AMERICA; ?>/copa-america">Copa America 2015</a></li>
+                            <li><a class="clickmenu" href="<?= base_url() ?>site/resultados/<?php echo SERIE_A; ?>/campeonato-serie-a">Serie A</a></li>
                             <li><a class="clickmenu" href="<?= base_url() ?>site/resultados/<?php echo SERIE_B; ?>/campeonato-serie-b">Serie B</a></li>
                         </ul>
                     </li>

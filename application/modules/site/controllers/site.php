@@ -197,6 +197,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         echo "Mensaje Enviado";
     }
 
+
     public function publicidad()
     {
         $this->load->library('email');
@@ -321,6 +322,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
+    }
+    public function recordatorioApp() {
+
+        $this->load->module('scoreboards');
+        $partidos = $this->mdl_scoreboards->today_matches_app();
+
+        if ($partidos ) {
+
+        }
+
     }
 
     public function getnewsjsonapp()
@@ -566,6 +577,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
+
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
@@ -573,7 +585,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
         if ($tipoSeccion == "masleido") {
-            $noticiasCuerpo = $this->noticias->viewplus($nameSeccion, $seccion, $seccionpos, $urlSeccion);
+            $noticiasCuerpo = $this->noticias->viewseccion_plus($nameSeccion, $seccion, $seccionpos, $urlSeccion);
 
 
         } else {
@@ -1114,6 +1126,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('banners');
         $this->load->module('teams_position');
+        $this->load->module('matches');
+
+
+        $fechas = '<div class="col-md-12 col-xs-12 separador10-xs-bot margen0r home ">'.$this->matches->matches($serie, "Copa América 2015").'</div>' ;
+
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
@@ -1128,7 +1145,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2, ZONACOPAAMERICA) . $bannerTop;
         $campeonato = AMERICA;
-        $marcadorenvivo = $this->contenido->marcadorVivo($campeonato);
+        $marcadorenvivo = $this->contenido->marcadorVivo($campeonato, "todos");
 
         $data['top2'] = "";
 
@@ -1152,7 +1169,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data, $excluded);
 
-        $data['content'] = $marcadorenvivo . $publicidadFlotante . $noticiasCuerpo . $bannerBottom . $tablaposiciones . $outbrain . $fe_loading_movil . "</div>";
+        $data['content'] = $marcadorenvivo . $publicidadFlotante . $noticiasCuerpo . $bannerBottom . $tablaposiciones . $fechas. $outbrain . $fe_loading_movil . "</div>";
         $data['sidebar'] = "";
 
         $data['footer'] = '';

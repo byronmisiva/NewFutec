@@ -121,13 +121,16 @@ class Contenido extends MY_Controller
         return $this->load->view('header2', $data, TRUE);
     }
 
-    public function marcadorVivo($campeonato = CHAMP_DEFAULT )
+    public function marcadorVivo($campeonato = CHAMP_DEFAULT  )
     {
         $this->load->module('scoreboards');
-        $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
+        if ($campeonato != AMERICA)
+            $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
+        else
+            $datamarcador['scores'] = $this->mdl_scoreboards->today_matches("todos");
+
         if ($datamarcador['scores'] == false) {
             $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
-            //$data['title'] = "Ultima Fecha";
         }
 
         $datamarcador['campeonato'] = $campeonato;
