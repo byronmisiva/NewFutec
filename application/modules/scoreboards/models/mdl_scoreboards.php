@@ -22,25 +22,21 @@ class Mdl_scoreboards extends MY_Model
     }
 
     function today_matches_app()
-    {   //Todo partido q se juega hoy
+    {
+        // recupero los partidos que se vayan a ejecutar dentro de las dos horas siguientes a realizar la consulta
 
-        $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
-        $this->db->from('matches');
-        $this->db->where('DATE(date_match)', 'CURDATE()', false);
-        $this->db->order_by("date_match", "desc");
-
-
-
-            $this->db->order_by('date_match', 'desc');
-        $matches = $this->db->get();
-
-
-        if ($matches->num_rows() > 0)
-            $partidos = $this->data_matches($matches);
+        $matches = $this->db->query(' SELECT *,
+                                matches_teams.team_id_home,
+                            (SELECT name FROM teams WHERE id = matches_teams.team_id_home) AS name_home,
+                            (select sections.id from sections WHERE  team_id =  matches_teams.team_id_home) as seccion_home,
+                                matches_teams.team_id_away, (SELECT name FROM teams WHERE id = matches_teams.team_id_away) AS name_away,
+                            (select sections.id from sections WHERE  team_id =  matches_teams.team_id_away) as seccion_away
+                            FROM matches INNER JOIN matches_teams ON matches.id = matches_teams.match_id
+                            WHERE NOW()   between DATE_ADD( date_match , INTERVAL -120 MINUTE ) and  DATE_ADD( date_match , INTERVAL -115 MINUTE )')->result();
+        if (count($matches) > 0)
+            return $matches;
         else
-            $partidos = false;
-
-        return $partidos;
+            return false;
     }
 
     function today_matches($live = 'live')
@@ -52,13 +48,11 @@ class Mdl_scoreboards extends MY_Model
         $this->db->order_by("date_match", "desc");
 
 
-
         if ($live == 'live')
-  //          $this->db->where('live', '1');
+            //          $this->db->where('live', '1');
 
 
-
-        $this->db->order_by('date_match', 'desc');
+            $this->db->order_by('date_match', 'desc');
         $matches = $this->db->get();
 
 
@@ -98,7 +92,7 @@ class Mdl_scoreboards extends MY_Model
         //Saco todos los partidos en vivo de las fechas
         $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
         $this->db->where('live', '1');
-        $this->db->where('date_match >', 'ADDDATE(NOW(), INTERVAL -60 DAY)' , false);
+        $this->db->where('date_match >', 'ADDDATE(NOW(), INTERVAL -60 DAY)', false);
         $this->db->where_in('state', array('0', '8'));
         $this->db->where_in('schedule_id', $fechas);
         $this->db->order_by('date_match', 'asc');
@@ -111,6 +105,7 @@ class Mdl_scoreboards extends MY_Model
 
         return $partidos;
     }
+
     /* Extraigo los datos básicos del partido */
 
     function data_matches($matches)
@@ -158,7 +153,7 @@ class Mdl_scoreboards extends MY_Model
             $partidos[$key]->athumb = 'imagenes/teams/thumb_shield/default.png';
             if ($team_away->shield2 != '')
                 $partidos[$key]->ashield = $team_away->shield2;
-            if ($team_away->thumb_shield2 != ''){
+            if ($team_away->thumb_shield2 != '') {
                 $partidos[$key]->athumb = $team_away->thumb_shield2;
                 $partidos[$key]->mathumb = $team_away->mini_shield;
             }
@@ -216,7 +211,7 @@ class Mdl_scoreboards extends MY_Model
             $i++;
         }
         if (isset ($champ))
-        array_multisort($champ, SORT_ASC, $dates, SORT_ASC, $data);
+            array_multisort($champ, SORT_ASC, $dates, SORT_ASC, $data);
 
         return $data;
 

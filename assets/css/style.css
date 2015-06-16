@@ -1727,6 +1727,17 @@ h1.tabla, h2.tabla {
     margin-top: 3px;
     margin-bottom: 3px;
 }
+
+.logofutbolecuadormini {
+    background-color: transparent;
+    background-image: url("../img/logotipo.png");
+    background-repeat: no-repeat;
+    background-size: 134px 15px;
+    width: 134px;
+    height: 15px;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
 .logomagazina {
     background-color: transparent;
     background-image: url("../img/magazine-menu.png");

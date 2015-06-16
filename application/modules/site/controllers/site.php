@@ -324,14 +324,15 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->templates->_index($data);
     }
     public function recordatorioApp() {
-
+        // generamos recordatorios de los partidos dentro de las siguientes dos horas
         $this->load->module('scoreboards');
         $partidos = $this->mdl_scoreboards->today_matches_app();
 
         if ($partidos ) {
-
+            foreach ($partidos as $partido) {
+                $this->notificacionRecordatorio ($partido);
+            }
         }
-
     }
 
     public function getnewsjsonapp()
@@ -1180,4 +1181,80 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
+
+
+
+    function notificacionRecordatorio($data)
+    {
+
+        $date = date_create($data->date_match);
+        $fecha = date_format($date, 'H:i');
+
+        $contenido = $fecha . " - " . $data->name_home . " vs " .  $data->name_away;
+
+        // pruebas de notificacion se generan eventos para todos los partidos
+        $equiposCopaAmerica = array (26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 72, 73);
+        $home = $data->seccion_home;
+        $visita = $data->seccion_away;
+
+
+        if (in_array($home, $equiposCopaAmerica))
+            $data->seccion_home = 26;
+        if (in_array($visita, $equiposCopaAmerica))
+            $data->seccion_away = 26;
+        //fin pruebas
+
+        $envios = array();
+        $envios[] = $data->seccion_home . "-IN3";
+        $envios[] = $data->seccion_away . "-IN3";
+
+        $this->pwCallMobile('createMessage', array(
+                'application' => PW_APP_MOBILE,
+                'auth' => PW_AUTH,
+                'notifications' => array(
+                    array(
+                        'send_date' => 'now',
+                        'content' => $contenido,
+                        'link' => 'http://www.futbolecuador.com/site/partido/pushapp/' . $data->id,
+                        "android_icon" => "icon",
+                        "android_vibration" => 0,
+                        "android_sound" => "res/sound/inicio.wav",
+                        "ios_sound" => "res/sound/inicio.wav",
+                        'filter' => 'seccion',
+                        'conditions' => array(array("informacion", "IN", $envios))
+                    )
+                )
+            )
+        );
+    }
+
+    function pwCallMobile($action, $data = array())
+    {
+        $url = 'https://cp.pushwoosh.com/json/1.3/' . $action;
+        $json = json_encode(array('request' => $data));
+        $this->doPostRequest($url, $json, 'Content-Type: application/json');
+    }
+
+    function doPostRequest($url, $data, $optional_headers = null)
+    {
+        $params = array(
+            'http' => array(
+                'method' => 'POST',
+                'content' => $data
+            ));
+        if ($optional_headers !== null)
+            $params['http']['header'] = $optional_headers;
+
+        $ctx = stream_context_create($params);
+        $fp = fopen($url, 'rb', false, $ctx);
+        if (!$fp)
+            echo "Problem with $url";
+
+        $response = @stream_get_contents($fp);
+        if ($response === false)
+            return false;
+        return $response;
+    }
+
+
 }
