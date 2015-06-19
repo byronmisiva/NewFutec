@@ -32,11 +32,31 @@ class Mdl_scoreboards extends MY_Model
                                 matches_teams.team_id_away, (SELECT name FROM teams WHERE id = matches_teams.team_id_away) AS name_away,
                             (select sections.id from sections WHERE  team_id =  matches_teams.team_id_away) as seccion_away
                             FROM matches INNER JOIN matches_teams ON matches.id = matches_teams.match_id
-                            WHERE NOW()   between DATE_ADD( date_match , INTERVAL -120 MINUTE ) and  DATE_ADD( date_match , INTERVAL -115 MINUTE )')->result();
+                            WHERE NOW()   between DATE_ADD( date_match , INTERVAL -240 MINUTE ) and  DATE_ADD( date_match , INTERVAL -235 MINUTE )')->result();
         if (count($matches) > 0)
             return $matches;
         else
             return false;
+    }
+
+    function today_matches_app_9pm()
+    {
+        // recupero los partidos que se vayan a ejecutar dentro de las dos horas siguientes a realizar la consulta
+
+        $matches = $this->db->query(' SELECT *,
+                                matches_teams.team_id_home,
+                            (SELECT name FROM teams WHERE id = matches_teams.team_id_home) AS name_home,
+                            (select sections.id from sections WHERE  team_id =  matches_teams.team_id_home) as seccion_home,
+                                matches_teams.team_id_away, (SELECT name FROM teams WHERE id = matches_teams.team_id_away) AS name_away,
+                            (select sections.id from sections WHERE  team_id =  matches_teams.team_id_away) as seccion_away
+                            FROM matches INNER JOIN matches_teams ON matches.id = matches_teams.match_id
+                            WHERE DATE_FORMAT(NOW(), "%Y-%m-%d") =  DATE_ADD( DATE_FORMAT(date_match, "%Y-%m-%d")  , INTERVAL -1 DAY  ) ')->result();
+        if (count($matches) > 0)
+            return $matches;
+        else
+            return false;
+
+
     }
 
     function today_matches($live = 'live')
@@ -45,16 +65,14 @@ class Mdl_scoreboards extends MY_Model
         $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
         $this->db->from('matches');
         $this->db->where('DATE(date_match)', 'CURDATE()', false);
-        $this->db->order_by("date_match", "desc");
+        $this->db->order_by("date_match", "ASC");
 
-
+        //para el caso de copa america
+        $copa = "(live =  '1' OR group_id in (252,253,255,256,257,254))";
         if ($live == 'live')
-            //          $this->db->where('live', '1');
+            $this->db->where($copa);
 
-
-            $this->db->order_by('date_match', 'desc');
         $matches = $this->db->get();
-
 
         if ($matches->num_rows() > 0)
             $partidos = $this->data_matches($matches);

@@ -1,4 +1,4 @@
-<div class="navbar-header hidden-xs" style="padding-left: 50px;">
+<div class="navbar-header hidden-xs" style="padding-left: 60px;">
     <a href="<?php echo base_url('copa-america') ?>" class=""
        onclick="ga('send', 'event', 'menu', 'click', 'home');"><img src="<?= base_url('assets//img/logo-copa-america-mini.png') ?>"
                                                                     alt="FutbolEcuador"

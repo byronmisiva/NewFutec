@@ -1,3 +1,4 @@
+
 <?php
 $separador10 = "separador10-xs ";
 if (isset($extraheader)) {
@@ -62,6 +63,6 @@ if ($indice % 2 == 1) echo '</div>';
 </div>
 
 <div class="col-md-12 text-right fondoazul separador10 masnoticias" offset="<?php echo rand() . "-" . $offset; ?>"
-     urlSeccion="<?php echo (isset($urlsecction))? $urlsecction: ""; ?>" section="<?php echo $idsection; ?>" pos="<?php echo $posSection; ?>">
+     urlSeccion="<?php echo (isset($urlsecction))? $urlsecction: ""; ?>" section="<?php echo (isset($idsection))? $idsection: "";   ?>" pos="<?php echo (isset($posSection))? $posSection: "1"; ?>">
     Más Noticias
 </div>

@@ -323,16 +323,37 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
-    public function recordatorioApp() {
+
+    public function recordatorioApp()
+    {
         // generamos recordatorios de los partidos dentro de las siguientes dos horas
         $this->load->module('scoreboards');
         $partidos = $this->mdl_scoreboards->today_matches_app();
 
-        if ($partidos ) {
+        if ($partidos) {
             foreach ($partidos as $partido) {
-                $this->notificacionRecordatorio ($partido);
+                $this->notificacionRecordatorio($partido, "Hoy ");
+            }
+            echo count($partidos);
+        } else {
+            echo "no existen partidos";
+        }
+
+
+    }
+
+    public function recordatorioAppDiaAntes()
+    {
+        // generamos recordatorios de los partidos dentro de las siguientes dos horas
+        $this->load->module('scoreboards');
+        $partidos = $this->mdl_scoreboards->today_matches_app_9pm();
+
+        if ($partidos) {
+            foreach ($partidos as $partido) {
+                $this->notificacionRecordatorio($partido, "Mañana ");
             }
         }
+        echo "OK";
     }
 
     public function getnewsjsonapp()
@@ -408,6 +429,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                     echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->title))) . '",';
                     echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
                     echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumbh50 . '",';
+                    echo '"foto_table": "' . "http://www.futbolecuador.com/" . $noticia->thumbh120 . '",';
                     echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
                     echo '"seccion": "' . $noticia->seccion . '",';
                     echo '"fecha_creacion": "' . $date . '"';
@@ -831,8 +853,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (($nameSeccion != "Magazine") && ($nameSeccion != "Fuera de Juego")) {
             if ($serie != 56) {
                 $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
-            }
-            else {
+            } else {
                 $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
             }
         } else {
@@ -848,15 +869,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
-        }
-        else {
+        } else {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
 
         }
 
-     }
+    }
 
     public function pruebas()
     {
@@ -888,12 +908,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $idEquipo = $this->uri->segment(4);
         $shortEquipo = $this->uri->segment(3);
-        $campeonatoEquipo = $this->uri->segment(5);
 
-        if ($campeonatoEquipo)
-            $this->section_equipo($idEquipo, 2, $shortEquipo, $campeonatoEquipo);
-        else
-            $this->section_equipo($idEquipo, 2, $shortEquipo);
+
+        $this->section_equipo($idEquipo, 2, $shortEquipo);
 
 
     }
@@ -906,7 +923,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->mdl_story->cuentaVisita($id);
     }
 
-    public function section_equipo($seccion, $seccionpos, $urlSeccion, $campeonatoEquipo = SERIE_A)
+    public function section_equipo($seccion, $seccionpos, $urlSeccion)
     {
         // para la final se comentan la llamada a las secciones.
         //$this->output->cache(CACHE_DEFAULT);
@@ -943,11 +960,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
             $dataTeam ['infoEquipo'] = $infoEquipo[0];
             $dataTeam ['infoJugadoresEquipo'] = $this->mdl_team->getJugadoresEquipo($idEquipo);
-            $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, $campeonatoEquipo);
-            if ($campeonatoEquipo)
+
+            $campeonatoEquipo = $this->uri->segment(5);
+
+            if ($campeonatoEquipo == 56) {
+                $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, $campeonatoEquipo);
                 $dataTeam ['modeloficha'] = "simple";
-            else
+            } else {
+                $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, CHAMP_DEFAULT);
                 $dataTeam ['modeloficha'] = "completa";
+            }
 
             $infoEquipo = $this->team->getFichaEquipo($dataTeam);
 
@@ -966,8 +988,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
         $this->load->module('teams_position');
 
-     //   $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
-     //   $data['header1'] = $this->contenido->menu();
+        //   $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        //   $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         //en caso
@@ -1005,7 +1027,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['content'] = $storia . $noticiasCuerpo;
         }
 
-
+        $campeonatoEquipo = $this->uri->segment(5);
         // todo es caso copa america pero se puede generalizar
         if ($campeonatoEquipo == "56") {
             $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
@@ -1020,15 +1042,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['fe_header'] = $this->banners->fe_header();
 
-
-
-
         if ($campeonatoEquipo == 56) {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
-        }
-        else {
+        } else {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
@@ -1036,164 +1054,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         }
     }
 
-
-    public function indexcopaamerica()
-    {
-        if ($this->verificarDispositivo() == "1")
-            redirect('copa-america-movil');
-        else
-            redirect('copaamerica');
-    }
-
-    public function copaamerica($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion = "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
-    {
-        $seccionpos = ZONACOPAAMERICAPOS;
-        $seccion = ZONACOPAAMERICA;
-        // para la final se comentan la llamada a las secciones.
-        // $this->output->cache(CACHE_DEFAULT);
-
-        $this->load->module('noticias');
-        $this->load->module('templates');
-        $this->load->module('contenido');
-        $this->load->module('banners');
-        $this->load->library('user_agent');
-        $this->load->module('story');
-
-        $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top_copaamerica() . $this->banners->fe_skin_copaamerica();
-        $data['header1'] = $this->contenido->menucopaamerica();
-
-
-        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
-
-
-        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
-        $excluded = array();
-        foreach ($listadoRotativas as $row) {
-            $excluded[] = $row->id;
-        }
-
-
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE, 0, true, FALSE, $excluded);
-
-
-        $storia = "";
-        $bodytag = $nameSeccion;
-
-        // carga la informacion de la noticia
-        $idNoticia = $this->uri->segment(4);
-        //validamos las noticias
-
-        if ($idNoticia == 'ref.outcontrol')
-            redirect('home');
-
-        if ($idNoticia) {
-            $storia = $this->story->get_complete($idNoticia);
-            $aux = $this->mdl_story->get_story($idNoticia);
-            $bodytag = str_replace('"', '', strip_tags($aux->title));
-        } else {
-            //en caso que es la pagina principal nos muestra la rotativa de imagenes
-            $dataHeader2['FE_Bigboxbanner'] = $this->banners->fe_hp_brand();
-            $data['header2'] = $this->contenido->copaamericaheader($dataHeader2);
-            $data['top2'] = $this->banners->fe_brand_header();
-        }
-
-        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
-        // fin carga la informacion de la noticia
-
-        $data['content'] = $storia . $noticiasCuerpo;
-        $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
-
-        $data['footer'] = $this->contenido->footer();
-        $data['bottom'] = $this->contenido->bottom();
-
-        $data['fe_header'] = $this->banners->fe_header();
-        $this->templates->_indexcopa($data);
-
-    }
-
-    // para la final se comentan la llamada a las secciones.
-    public function copaamericamovil($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion = "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
-    {
-        // para la final se comentan la llamada a las secciones.
-
-        $this->output->cache(CACHE_DEFAULT);
-        // recupera parametro para mostrar o no el splash
-        $data = $this->db->query("SELECT valor FROM parametros WHERE id = '2'")->result();
-        $data['mostrarSplash'] = $data[0]->valor;
-
-        $this->load->module('noticias');
-        $this->load->module('templates');
-        $this->load->module('contenido');
-        $this->load->module('banners');
-        $this->load->module('teams_position');
-        $this->load->module('matches');
-
-
-        $fechas = '<div class="col-md-12 col-xs-12 separador10-xs-bot margen0r home ">'.$this->matches->matches($serie, "Copa América 2015").'</div>' ;
-
-        $data['verMobile'] = $this->verificarDispositivo();
-        $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
-        $this->load->library('user_agent');
-
-        $data['top1'] = "";
-        $data['header1'] = "";
-
-        //$bannerBottom = $this->banners->fe_smart_bottom_copa_america();
-        $bannerBottom = $this->banners->fe_smart_bottom();
-        //$bannerTop = $this->banners->fe_smart_top_copa_america();
-        $bannerTop = $this->banners->fe_smart_top();
-        $dataHeader2['FE_Bigboxbanner'] = "";
-        $data['header2'] = $this->contenido->header2mobile($dataHeader2, ZONACOPAAMERICA) . $bannerTop;
-        $campeonato = AMERICA;
-        $marcadorenvivo = $this->contenido->marcadorVivo($campeonato, "todos");
-
-        $data['top2'] = "";
-
-        //Resultados tabla de posiciones
-        $this->load->module('scoreboards');
-        $tablaposiciones = $this->scoreboards->tablaposiciones(AMERICA, AMERICA_TIPOTABLA);
-
-        //$fe_loading_movil = $this->banners->fe_loading_movil_copa_america();
-        $fe_loading_movil = $this->banners->fe_loading_movil();
-        $data['fe_header'] = $this->banners->fe_header();
-        $outbrain = ' ';
-        $publicidadFlotante = "";
-
-        $data["extraheader"] = "no";
-
-        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
-        $excluded = array();
-        foreach ($listadoRotativas as $row) {
-            $excluded[] = $row->id;
-        }
-
-        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data, $excluded);
-
-        $data['content'] = $marcadorenvivo . $publicidadFlotante . $noticiasCuerpo . $bannerBottom . $tablaposiciones . $fechas. $outbrain . $fe_loading_movil . "</div>";
-        $data['sidebar'] = "";
-
-        $data['footer'] = '';
-        $data['bottom'] = $this->contenido->bottom();
-        $data['fe_splash'] = "";
-
-        //$data['fe_header'] = $this->banners->fe_header_copa_america();
-        $data['fe_header'] = $this->banners->fe_header();
-        $this->templates->_index($data);
-    }
-
-
-
-    function notificacionRecordatorio($data)
+    function notificacionRecordatorio($data, $dia)
     {
 
         $date = date_create($data->date_match);
-        $fecha = date_format($date, 'H:i');
+        $fecha = $dia . date_format($date, 'H:i');
 
-        $contenido = $fecha . " - " . $data->name_home . " vs " .  $data->name_away;
+        $contenido = $fecha . " - " . $data->name_home . " vs " . $data->name_away;
 
         // pruebas de notificacion se generan eventos para todos los partidos
-        $equiposCopaAmerica = array (26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 72, 73);
+        $equiposCopaAmerica = array(26, 34, 35, 36, 37, 38, 39, 40, 41, 42, 72, 73);
         $home = $data->seccion_home;
         $visita = $data->seccion_away;
 
@@ -1254,6 +1124,153 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($response === false)
             return false;
         return $response;
+    }
+
+
+    public function indexcopaamerica()
+    {
+        if ($this->verificarDispositivo() == "1")
+            redirect('copa-america-movil');
+        else
+            redirect('copaamerica');
+    }
+
+    public function copaamerica($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion = "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
+    {
+        $seccionpos = ZONACOPAAMERICAPOS;
+        $seccion = ZONACOPAAMERICA;
+        // para la final se comentan la llamada a las secciones.
+        // $this->output->cache(CACHE_DEFAULT);
+
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $this->load->library('user_agent');
+        $this->load->module('story');
+
+        $data['verMobile'] = $this->verificarDispositivo();
+        $data['top1'] = $this->banners->top_copaamerica() . $this->banners->fe_skin_copaamerica();
+        $data['header1'] = $this->contenido->menucopaamerica();
+
+
+        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+
+
+        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
+        $excluded = array();
+        foreach ($listadoRotativas as $row) {
+            $excluded[] = $row->id;
+        }
+
+        $noticiasCuerpo = $this->noticias->copaamericaviewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE, 0, true, FALSE, $excluded);
+
+
+        $storia = "";
+        $bodytag = $nameSeccion;
+
+        // carga la informacion de la noticia
+        $idNoticia = $this->uri->segment(4);
+        //validamos las noticias
+
+        if ($idNoticia == 'ref.outcontrol')
+            redirect('home');
+
+        if ($idNoticia) {
+            $storia = $this->story->get_complete($idNoticia);
+            $aux = $this->mdl_story->get_story($idNoticia);
+            $bodytag = str_replace('"', '', strip_tags($aux->title));
+        } else {
+            //en caso que es la pagina principal nos muestra la rotativa de imagenes
+            $dataHeader2['FE_Bigboxbanner'] = $this->banners->fe_hp_brand();
+            $data['header2'] = $this->contenido->copaamericaheader($dataHeader2);
+            $data['top2'] = $this->banners->fe_brand_header();
+        }
+
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+        // fin carga la informacion de la noticia
+
+        $data['content'] = $storia . $noticiasCuerpo;
+        $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
+
+        $data['footer'] = $this->contenido->footer();
+        $data['bottom'] = $this->contenido->bottom();
+
+        $data['fe_splash'] = $this->banners->fe_splash();
+        $data['fe_header'] = $this->banners->fe_header();
+        $this->templates->_indexcopa($data);
+
+    }
+
+    // para la final se comentan la llamada a las secciones.
+    public function copaamericamovil($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion = "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
+    {
+        // para la final se comentan la llamada a las secciones.
+
+        $this->output->cache(CACHE_DEFAULT);
+        // recupera parametro para mostrar o no el splash
+        $data = $this->db->query("SELECT valor FROM parametros WHERE id = '2'")->result();
+        $data['mostrarSplash'] = $data[0]->valor;
+
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $this->load->module('teams_position');
+        $this->load->module('matches');
+
+
+        $fechas = '<div class="col-md-12 col-xs-12 separador10-xs-bot margen0r home ">' . $this->matches->matches($serie, "Copa América 2015") . '</div>';
+
+        $data['verMobile'] = $this->verificarDispositivo();
+        $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
+        $this->load->library('user_agent');
+
+        $data['top1'] = "";
+        $data['header1'] = "";
+
+        //$bannerBottom = $this->banners->fe_smart_bottom_copa_america();
+        $bannerBottom = $this->banners->fe_smart_bottom();
+        //$bannerTop = $this->banners->fe_smart_top_copa_america();
+        $bannerTop = $this->banners->fe_smart_top();
+        $dataHeader2['FE_Bigboxbanner'] = "";
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2, ZONACOPAAMERICA) . $bannerTop;
+        $campeonato = AMERICA;
+        $marcadorenvivo = $this->contenido->marcadorVivo($campeonato, "todos");
+
+        $data['top2'] = "";
+
+        //Resultados tabla de posiciones
+        $this->load->module('scoreboards');
+        $tablaposiciones = $this->scoreboards->tablaposiciones(AMERICA, AMERICA_TIPOTABLA);
+
+        //$fe_loading_movil = $this->banners->fe_loading_movil_copa_america();
+        $fe_loading_movil = $this->banners->fe_loading_movil();
+        $data['fe_header'] = $this->banners->fe_header();
+        $outbrain = ' ';
+        $publicidadFlotante = "";
+
+        $data["extraheader"] = "no";
+
+        $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
+        $excluded = array();
+        foreach ($listadoRotativas as $row) {
+            $excluded[] = $row->id;
+        }
+
+        $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data, $excluded);
+
+        $data['content'] = $marcadorenvivo . $publicidadFlotante . $noticiasCuerpo . $bannerBottom . $tablaposiciones . $fechas . $outbrain . $fe_loading_movil . "</div>";
+        $data['sidebar'] = "";
+
+        $data['footer'] = '';
+        $data['bottom'] = $this->contenido->bottom();
+        $data['fe_splash'] = "";
+
+
+        //$data['fe_header'] = $this->banners->fe_header_copa_america();
+        $data['fe_header'] = $this->banners->fe_header();
+        $this->templates->_index($data);
     }
 
 

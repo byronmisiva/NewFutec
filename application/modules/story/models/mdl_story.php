@@ -105,6 +105,7 @@ class Mdl_story extends MY_Model
 				s.votes,
 				i.name,
 				i.thumbh50,
+				i.thumbh120,
 				i.thumbh80,
 				i.thumb300,
 				i.thumb500", FALSE);
@@ -247,6 +248,7 @@ class Mdl_story extends MY_Model
 				s.votes,
 				i.name,
 				i.thumbh50,
+				i.thumbh120,
 				i.thumbh80,
 				i.thumb300, (select name from sections where category_id = s.category_id LIMIT 1) AS seccion,
 				i.thumb500", FALSE);

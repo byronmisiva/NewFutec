@@ -78,7 +78,7 @@
     <!-- Input slider -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
-    <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/style.css?a=1" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css" media="screen">
 
