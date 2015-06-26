@@ -106,7 +106,7 @@
                                                                 if ( "Independiente del Valle" == $partido->hname) $partido->hname = "I. del Valle";
                                                                 echo $partido->hname; ?>">
                                                             </div>
-                                                            <div class="col-md-10 col-xs-9 col-lg-8  ">
+                                                            <div class="col-md-9 col-xs-9 col-lg-8  ">
                                                                 <?php echo $partido->hname; ?>
                                                             </div>
 
@@ -121,7 +121,7 @@
                                                                     alt="<?php echo $partido->aname; ?>"
                                                                     title="<?php echo $partido->aname; ?>">
                                                             </div>
-                                                            <div class="col-md-10 col-xs-9 col-lg-8  ">
+                                                            <div class="col-md-9 col-xs-9 col-lg-8  ">
                                                                 <?php
                                                                 if ( "Universidad Católica de Quito" == $partido->aname) $partido->aname = "U.C. de  Quito";
                                                                 if ( "Independiente del Valle" == $partido->aname) $partido->aname = "I. del Valle";

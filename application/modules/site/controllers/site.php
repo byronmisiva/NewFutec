@@ -52,18 +52,32 @@ class Site extends MY_Controller
 
     public function index()
     {
-        /*if ($this->verificarDispositivo() == "1")
-            redirect('site/movil/');
-        else
-            redirect('home');*/
 
-        if ($this->verificarDispositivo() == "1")
-            redirect('copa-america-movil');
-        else
-            redirect('copaamerica');
-
+        if ($this->campeonatoCopa()== true) {
+            if ($this->verificarDispositivo() == "1")
+                redirect('site/movil/');
+            else
+                redirect('home');
+        } else {
+            if ($this->verificarDispositivo() == "1")
+                redirect('copa-america-movil');
+            else
+                redirect('copaamerica');
+        }
     }
 
+    // funcion que permite programar en caso que se muestre copa america
+    public function campeonatoCopa (){
+        // recupera parametro para mostrar o no el splash
+        $data = $this->db->query("SELECT *, NOW() FROM parametros WHERE id = '4' AND valor = 1 AND NOW() BETWEEN inicio AND fin")->result();
+        if (count ($data) > 0){
+            // es copa america
+            return false;
+        } else {
+            //campeonato nacional
+            return true;
+        }
+    }
 
     // para la final se comentan la llamada a las secciones.
     public function movil()
@@ -338,8 +352,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         } else {
             echo "no existen partidos";
         }
-
-
     }
 
     public function recordatorioAppDiaAntes()
@@ -493,6 +505,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function sidebardonbalon()
     {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
         $this->load->module('contenido');
         $this->load->module('teams_position');
 
@@ -1173,18 +1187,18 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $idNoticia = $this->uri->segment(4);
         //validamos las noticias
 
-        if ($idNoticia == 'ref.outcontrol')
-            redirect('home');
 
         if ($idNoticia) {
             $storia = $this->story->get_complete($idNoticia);
             $aux = $this->mdl_story->get_story($idNoticia);
             $bodytag = str_replace('"', '', strip_tags($aux->title));
+            $data['fe_splash'] = "";
         } else {
             //en caso que es la pagina principal nos muestra la rotativa de imagenes
             $dataHeader2['FE_Bigboxbanner'] = $this->banners->fe_hp_brand();
             $data['header2'] = $this->contenido->copaamericaheader($dataHeader2);
             $data['top2'] = $this->banners->fe_brand_header();
+            $data['fe_splash'] = $this->banners->fe_splash();
         }
 
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
@@ -1196,7 +1210,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
 
-        $data['fe_splash'] = $this->banners->fe_splash();
+
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_indexcopa($data);
 

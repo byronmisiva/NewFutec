@@ -1824,7 +1824,7 @@ h1.tabla, h2.tabla {
 
 @media (min-width: 768px) {
     .sidebar {
-        width: 100% !important;
+        width: 300px !important;
         margin-top: 15px !important;
         text-align: left;
     }
