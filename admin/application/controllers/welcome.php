@@ -10,9 +10,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function index()
-	{
-        //redirect('admin');
-
+	{	
 		if('http://'.$_SERVER['SERVER_NAME'].'/'!=base_url() and 'http://'.$_SERVER['SERVER_NAME'].'/CI_fe2008/'!=base_url())
 			Header('Location: '.base_url());
 		
@@ -102,7 +100,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function movil(){
-		//$this->output->cache(CACHE_MOVIL);
+		$this->output->cache(CACHE_MOVIL);
 		$this->load->model('module');
 		$this->load->model('section');
 
@@ -133,7 +131,6 @@ class Welcome extends CI_Controller {
 				$tabla=$this->teams_position->get_table($grp['1']['id']);
 			}
 		}
-
 		//Defino primero el template publico para poder escribir ahi los modulos
 		$this->template->set_template('movil');
 		$this->template->write('title','futbolecuador.com - Lo mejor del fútbol ecuatoriano',TRUE);
@@ -191,15 +188,15 @@ class Welcome extends CI_Controller {
 		$data['sel']=$sel;
 		$data['grp']=$grp;
 		$data['tabla']=$tabla;
-
 		if(is_array($tabla)){
 			$this->template->write_view('info2','movil/table_positions',$data,TRUE);
+			
 			$data='';
 			$data['title']='Tabla de Posiciones';
 			$this->template->write_view('title2', 'movil/title', $data, TRUE);
 		}
 
-        //leo la tabla de pocisiones Acumulada
+		 //leo la tabla de pocisiones acumulada
         $tabla2 = $this->teams_position->get_table_by_champ(SERIE_A);$data='';
 		$data['sel']=$sel;
 		$data['grp']=$grp;
@@ -207,11 +204,12 @@ class Welcome extends CI_Controller {
 		$data['tabla']=$tabla2;
  		if(is_array($tabla)){
 			$this->template->write_view('info3','movil/table_positions',$data,TRUE);
-            $data['title']='Tabla Acumulada';
+			$data['title']='Tabla Acumulada';
             $this->template->write_view('title3', 'movil/title', $data, TRUE);
 		}
-        //fin posiciones Acumuladas
+        //fin posiciones acumuladas
 
+		
 		$data='';
 		$noticias='';
 		if($champ==1){
@@ -246,7 +244,7 @@ class Welcome extends CI_Controller {
 		$data['img']=base_url().'imagenes/moviles/button_vt.jpg';
 		$data['bg1']="#398BB0";
 		$data['bg2']="#0D4664";
-		$data['nombre']="La Voz de las Tribunas";
+		$data['nombre']="La voz de las tribunas";
 		$this->template->write_view('button2', 'movil/sms_button', $data, FALSE);
 		
 		$data='';
@@ -302,7 +300,7 @@ class Welcome extends CI_Controller {
 	
 	
 	function blackberry(){
-		//$this->output->cache(CACHE_MOVIL);
+		$this->output->cache(CACHE_MOVIL);
 		
 		$id=0;
 		$this->load->model('module');
@@ -451,7 +449,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function search(){
-		//$this->output->cache(CACHE_MENU);
+		$this->output->cache(CACHE_MENU);
 		$this->load->model('story');
 		
 		//Defino primero el template publico para poder escribir ahi los modulos
@@ -477,7 +475,7 @@ class Welcome extends CI_Controller {
 	}
 	
 	function publicMenu(){
-		//$this->output->cache(CACHE_MENU);
+		$this->output->cache(CACHE_MENU);
 		
 		$this->load->model('teams_position');
 		$this->load->model('team');

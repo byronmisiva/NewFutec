@@ -51,7 +51,7 @@
 	<tr>
 		<td class='required'>*</td>
 		<td>Twitter:</td>
-		<td><input type="text" name="twitter" size="80" value="<?php echo set_value('twitter')?>"/></td>
+		<td><input type="text" name="twitter" size="80" maxlength="94" value="<?php echo set_value('twitter')?>"/></td>
 	</tr>
 	<tr>
 		<td class='required'>*</td>

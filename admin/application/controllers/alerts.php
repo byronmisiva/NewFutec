@@ -9,7 +9,7 @@ class Alerts extends CI_Controller {
 	}
 	
 	function index(){
-		//$this->output->cache(CACHE_DEFAULT);
+		$this->output->cache(CACHE_DEFAULT);
 		
 		$data['today_match']=$this->today_match_num();
 		$data['no_aprov']=$this->get_num_no_aprov();

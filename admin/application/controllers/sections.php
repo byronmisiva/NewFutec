@@ -65,7 +65,8 @@ class Sections extends CI_Controller {
 			$modulos->set_modulos($id);
 		
 			$this->template->write('section',$sec_name,TRUE);
-
+			
+			
 			$this->template->render();
 		}
 		else

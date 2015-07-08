@@ -67,5 +67,9 @@ define('CACHE_DEFAULT',4);	//minutos
 define('PW_AUTH', 'eNYzs32HAKRtn4vatf4ylwEiYItTmp9s/Q+7ppCEoQha1bzYXLx8yVsIpBAG16cH+QiSTKMyuaBCdUbS+efa');
 define('PW_APPLICATION', '0E44F-5F59B');
 define('PW_APP_MOBILE', '8D581-9CE88');
+
+// pruebas
+//define('PW_APPLICATION', '75BFD-06379');
+
 /* End of file constants.php */
 /* Location: ./system/application/config/constants.php */

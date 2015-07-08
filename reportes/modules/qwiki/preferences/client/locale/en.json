@@ -1,0 +1,99 @@
+{
+   "launcher": {
+   	"text": "Primax preferencias"
+      , "tooltip": "<b>Primax Preferencias</b><br />Permite configurar el escritorio"
+   }
+   , "button": {
+   	"back": {
+   		"text": "Regresar"
+   	}
+   	, "backgroundColor": {
+   		"text": "Color de fondo"
+   	}
+   	, "close": {
+         "text": "Cerrar"
+   	}
+   	, "fontColor": {
+         "text": "Color de fuente"
+      }
+
+   	, "next": {
+   		"text": "Siguiente"
+   	}
+   	, "save": {
+   		"text": "Grabar"
+   	}
+   }
+   , "connection": {
+   	"lost": {
+	      "msg": "Conexión perdida con el servidor."
+	      , "title": "Error"
+	   }
+   }
+   , "error": {
+   	"msg": "Errores encontrados con el servidor."
+   	, "title": "Error"
+   }
+   , "data": {
+   	"nav": [
+         {
+         	"cls": "icon-pref-shortcut"
+         	, "id": "viewShortcuts"
+         	, "text": "Atajos"
+         	, "description": "Escoja que aplicación salen en sus atajos"
+         }
+         , {
+            "cls": "icon-pref-autorun"
+            , "id": "viewAutoRun"
+            , "text": "Auto Run"
+            , "description": "Escoja que aplicación  se abre luego de ingresar"
+         }
+         , {
+            "cls": "icon-pref-quickstart"
+            , "id": "viewQuickstart"
+            , "text": "Quick Start"
+            , "description": "Escoja que aplicación se muestra en el panel"
+         }
+         , {
+            "cls": "icon-pref-appearance"
+            , "id": "viewAppearance"
+            , "text": "Color y apariencia de ventanas"
+            , "description": "Ajustar el estilo de las ventanas"
+         }
+         , {
+            "cls": "icon-pref-wallpaper"
+            , "id": "viewWallpapers"
+            , "text": "Fondo de pantalla"
+            , "description": "Escojer un fondo depantalla para decorar el escritorio"
+         }
+   	]
+   }
+   , "html": {
+   	"autorun": "Escoja la aplicación que arranque de manera automática al iniciar la aplicación.  No olvide pulsar el boton \"Grabar\" al terminar.."
+      , "quickstart": "Escoja la aplicación que este disponible en el modulo de arranque rápido.  No olvide pulsar el boton \"Grabar\" al terminar."
+   }
+   , "label": {
+      "backgroundColor": "Escojer el color de fondo"
+      , "fontColor": "Escojer el color de fondo"
+      , "transparency": "Taskbar Transparency"
+      , "wallpaperPosition": "How should the wallpaper be positioned?"
+   }
+   , "notification": {
+   	"saved": {
+	      "msg": "Save completo."
+	      , "title": "Terminado"
+	   }
+	   , "saving": {
+	   	"msg": "Grabando..."
+	   	, "title": "Por favor espere"
+	   }
+   }
+   , "title": {
+      "appearance": "Window Color And Appearance"
+      , "autorun": "Auto Run"
+      , "background": "Desktop Background"
+      , "quickstart": "Quick Start"
+      , "shortcuts": "Shortcuts"
+      , "window": "Primax preferencias"
+   }
+}

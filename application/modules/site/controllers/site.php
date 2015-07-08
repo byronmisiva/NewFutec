@@ -324,12 +324,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
+
+
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
         //   $data['header2'] = $this->contenido->header2($dataHeader2);
         //   $data['top2'] = $this->banners->FE_Megabanner();
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
+        $data['content'] = $storia  . $this->banners->fe_netsonic_tv() . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
@@ -364,13 +366,17 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             foreach ($partidos as $partido) {
                 $this->notificacionRecordatorio($partido, "Mañana ");
             }
+            echo count($partidos);
+        } else {
+            echo "no existen partidos";
         }
-        echo "OK";
     }
 
     public function getnewsjsonapp()
     {
 
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
         header('Content-type: text/html; charset=utf-8');
         //informacion para app y para don balon
 
@@ -1104,7 +1110,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                         "android_vibration" => 0,
                         "android_sound" => "res/sound/inicio.wav",
                         "ios_sound" => "res/sound/inicio.wav",
-                        'filter' => 'seccion',
                         'conditions' => array(array("informacion", "IN", $envios))
                     )
                 )
@@ -1174,10 +1179,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $listadoRotativas = $this->mdl_story->get_banner_seccion(6, "", SECTION_AMERICA);
         $excluded = array();
         foreach ($listadoRotativas as $row) {
-            $excluded[] = $row->id;
+            $excluded[] =  $row->id ;
         }
 
-        $noticiasCuerpo = $this->noticias->copaamericaviewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE, 0, true, FALSE, $excluded);
+        $noticiasCuerpo = $this->noticias->copaamericaviewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE, 0, true, FALSE,   $excluded);
 
 
         $storia = "";
@@ -1275,12 +1280,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion, RESULT_PAGE_LITE, 0, true, $data, $excluded);
 
         $data['content'] = $marcadorenvivo . $publicidadFlotante . $noticiasCuerpo . $bannerBottom . $tablaposiciones . $fechas . $outbrain . $fe_loading_movil . "</div>";
-        $data['sidebar'] = "";
-
-        $data['footer'] = '';
         $data['bottom'] = $this->contenido->bottom();
-        $data['fe_splash'] = "";
 
+        $data['sidebar'] = '';
+        $data['footer'] = '';
+        $data['fe_splash'] = '';
 
         //$data['fe_header'] = $this->banners->fe_header_copa_america();
         $data['fe_header'] = $this->banners->fe_header();

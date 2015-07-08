@@ -226,4 +226,10 @@ class Banners extends MY_Controller
     }
 
 
+    public function fe_netsonic_tv($data = FALSE)
+    {
+        return $this->load->view('fe_netsonic_tv', $data, TRUE);
+    }
+
+
 }

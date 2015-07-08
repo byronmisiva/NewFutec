@@ -1,0 +1,8 @@
+.canal-icon { background-image: url(images/canal.png) !important; }
+.x-btn-large .canal-icon { background-image: url(images/canal32.png) !important; }
+.canal-shortcut { background-image: url(images/canal48.png) !important; }
+#canal-nav-panel li { margin-bottom:5px; }
+.save-icon{background:transparent url(images/add.png) 0 0 no-repeat !important;}
+.delete-icon{background:transparent url(images/delete.png) 0 0 no-repeat !important;}
+.print-icon{background:transparent url(images/printer.png) 0 0 no-repeat !important;}
+.send-icon{background:transparent url(images/email_go.png) 0 0 no-repeat !important;}

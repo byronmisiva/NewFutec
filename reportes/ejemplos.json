@@ -1,0 +1,38 @@
+{
+    "id": "enfapromo",
+    "type": "desktop/enfapromo",
+    "about": {
+        "author": "",
+        "description": "Mantenimiento de Enfapromo.",
+        "name": "Ventana Enfapromo",
+        "url": "",
+        "version": "1.0"
+    },
+
+    "client": {
+        "class": "QoDesk.EnfapromoWindow",
+        "css": [
+            {
+                "directory": "desktop/enfapromo/client/resources/",
+                "files": [ "styles.css" ]
+            }
+        ],
+        "javascript": [
+            {
+                "directory": "desktop/enfapromo/client/",
+                "files": [ "enfapromo-win.js" ]
+            }
+        ],
+        "launcher": {
+            "config": {
+                "iconCls": "enfapromo-icon",
+                "shortcutIconCls": "enfapromo-shortcut",
+                "text": "Enfapromo",
+                "tooltip": "<b>Enfapromo</b>"
+            },
+            "paths": {
+                "startmenu": "/"
+            }
+        }
+    }
+}

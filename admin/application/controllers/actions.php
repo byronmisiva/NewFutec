@@ -51,13 +51,17 @@ class Actions extends CI_Controller {
 			if($this->form_validation->run()==TRUE){
 				unset($_POST['submit']);
 				$this->db->insert('actions', $_POST);
+                //llamada para notificaciones
+                notificacionMarcadorEnVivo ($_POST);
 				redirect('actions/index/'.$_POST['match_id'].'/'.$_POST['team_id']);
 		    }	
 		}
 		$this->view('actions_vinsert',$data);
+
+
 	}
 
-	function delete()
+    function delete()
 	{
 		$this->db->where( 'id',$this->uri->segment(3));
         $this->db->delete('actions'); 

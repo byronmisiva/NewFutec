@@ -3,17 +3,19 @@
 class Moviles extends CI_Controller
 {
 
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
         $this->load->model('profile');
         $this->load->model('story');
         $this->load->model('comment');
     }
 
-    function read(){
+    function read()
+    {
         $this->load->model('user');
 
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -28,13 +30,11 @@ class Moviles extends CI_Controller
             $champ = $this->uri->segment(4);
 
         if ($champ == 1) {
-            $data['logo'] = 'imagenes/moviles/fe-logo-mobile.png';
+            $data['logo'] = 'imagenes/template/movil/titulo_logo.jpg';
         } else {
 
             $data['logo'] = 'imagenes/template/movil/eliminatorias.jpg';
         }
-        
-        
         $this->template->write_view('logo', 'movil/logo', $data, FALSE);
 
         //$data='';
@@ -92,7 +92,7 @@ class Moviles extends CI_Controller
 
     function readProfile()
     {
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -163,7 +163,7 @@ class Moviles extends CI_Controller
 
     function more()
     {
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -174,7 +174,7 @@ class Moviles extends CI_Controller
         $data = '';
         $data['link'] = 'welcome/movil/' . $this->uri->segment(4);
         if ($this->uri->segment(4) == 1) {
-            $data['logo'] = 'imagenes/moviles/fe-logo-mobile.png';
+            $data['logo'] = 'imagenes/template/movil/titulo_logo.jpg';
         } else {
             $data['logo'] = 'imagenes/template/movil/eliminatorias.jpg';
         }
@@ -241,7 +241,7 @@ class Moviles extends CI_Controller
 
     function scoreboard()
     {
-        //$this->output->cache(REFRESH_VIVO / 60);
+        $this->output->cache(REFRESH_VIVO / 60);
         $this->load->helper('date');
         $championship[1] = CHAMP_DEFAULT;
         $championship[2] = MUNDIAL;
@@ -254,7 +254,7 @@ class Moviles extends CI_Controller
         $data = '';
         $data['link'] = 'welcome/movil/' . $champ;
         if ($champ == 1) {
-            $data['logo'] = 'imagenes/moviles/fe-logo-mobile.png';
+            $data['logo'] = 'imagenes/template/movil/titulo_logo.jpg';
         } else {
             $data['logo'] = 'imagenes/template/movil/eliminatorias.jpg';
         }
@@ -302,7 +302,7 @@ class Moviles extends CI_Controller
 
     function single()
     {
-        //$this->output->cache(REFRESH_VIVO / 60);
+        $this->output->cache(REFRESH_VIVO / 60);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -314,7 +314,7 @@ class Moviles extends CI_Controller
         $data = '';
         $data['link'] = 'welcome/movil/' . $champ;
         if ($champ == 1) {
-            $data['logo'] = 'imagenes/moviles/fe-logo-mobile.png';
+            $data['logo'] = 'imagenes/template/movil/titulo_logo.jpg';
         } else {
             $data['logo'] = 'imagenes/template/movil/eliminatorias.jpg';
         }
@@ -477,7 +477,7 @@ class Moviles extends CI_Controller
 
     function games()
     {
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;
@@ -488,7 +488,7 @@ class Moviles extends CI_Controller
         $data = '';
         $data['link'] = 'welcome/movil/' . $this->uri->segment(4);
         if ($this->uri->segment(4) == 1) {
-            $data['logo'] = 'imagenes/moviles/fe-logo-mobile.png';
+            $data['logo'] = 'imagenes/template/movil/titulo_logo.jpg';
         } else {
             $data['logo'] = 'imagenes/template/movil/eliminatorias.jpg';
         }
@@ -863,7 +863,7 @@ class Moviles extends CI_Controller
     function femagazine()
     {
         $this->load->library('user_agent');
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->helper('date');
         $championship['1'] = CHAMP_DEFAULT;
         $championship['2'] = MUNDIAL;

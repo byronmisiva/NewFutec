@@ -82,7 +82,7 @@
 	 	   }?>
 	 		
 	 		<tr class='altrow'>
-	 			<td width="20%"><?=mdate('%Y-%m-%d %h:%i',$row->dm)?></td>
+	 			<td width="20%"><?= date_format(date_create($row->date_match), 'Y-m-d H:i')?></td>
 	 			<td width="40%"><?=$row->hname.' vs '.$row->aname?></td>
 	 			<td width="10%"><?=$row->result?></td>
 	 			<td width="15%"><?=$tiempo[$row->state]?></td>

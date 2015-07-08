@@ -101,7 +101,7 @@ class Histories extends CI_Controller
 
     function getNewsBySecction($id_seccion = '', $limit = '')
     {
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->model('story');
         $this->load->model('image');
 
@@ -124,7 +124,7 @@ class Histories extends CI_Controller
 
     function getNewsBySecction2($id_seccion = '', $limit = 8)
     {
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
         $this->load->model('story');
         $this->load->model('image');
 
@@ -160,7 +160,7 @@ class Histories extends CI_Controller
     function getNewsBySecctionId($id = '')
     {
         if ($id != '') {
-            //$this->output->cache(CACHE_MOVIL);
+            $this->output->cache(CACHE_MOVIL);
             $this->load->model('story');
             $this->load->model('image');
             $news  = $this->story->get($id) ;
@@ -173,10 +173,10 @@ class Histories extends CI_Controller
 
     function leaderboard_magazine($champ)
     {
-	if($champ=="45")	
-		$champ="49";
+	//if($champ=="45")	
+	$champ="53";
 
-        //$this->output->cache(CACHE_MOVIL);
+        $this->output->cache(CACHE_MOVIL);
 
         $this->load->model('group');
         $this->load->model('teams_position');

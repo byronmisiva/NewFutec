@@ -7,21 +7,18 @@ class Magazine extends CI_Controller {
 		parent::__construct();
 	}	
 	
-	public function twitter_feed($type='clubes'){
+	public function twitter_feed($type='clubes'){		
+		$data['type']=$type;		
+		$lists=array(
+		'clubes' => array('href'=>'https://twitter.com/futbolecuador/equipos','id'=>'347121552686465024','name'=>'Tweets de @futbolecuador/equipos'),
+		'players' => array('href'=>'https://twitter.com/futbolecuador/jugadores','id'=>'346759559605530625','name'=>'Tweets de @futbolecuador/jugadores'));
 		
-		$data['type']=$type;
-
-
-        $lists=array(
-            'futbolecuador' => array('href'=>'https://twitter.com/futbolecuador','id'=>'385878782776582144','name'=>'Tweets de @futbolecuador', 'ancho' => 280),
-            'clubes' => array('href'=>'https://twitter.com/futbolecuador/equipos','id'=>'347121552686465024','name'=>'Tweets de @futbolecuador/equipos', 'ancho' => 280),
-            'players' => array('href'=>'https://twitter.com/futbolecuador/jugadores','id'=>'346759559605530625','name'=>'Tweets de @futbolecuador/jugadores', 'ancho' => 280),
-            'chucho' => array('href'=>'https://twitter.com/search?q=%23HastaSiempreChucho%2C+%23GraciasChucho','id'=>'362334640989696000','name'=>'Tweets sobre "#HastaSiempreChucho, #GraciasChucho"', 'ancho' => 560));
-
-
-        $data['tweets']=$lists[$type];
+		$data['tweets']=$lists[$type];
 		$this->load->view('/magazine/twitter_feed',$data);
-		
+	}
+	
+	public function feedipad(){
+		$this->load->view('magazine/feed-twitter');
 	}
 	
 	public function question(){
@@ -31,11 +28,42 @@ class Magazine extends CI_Controller {
 	public function question_vertical(){
 		$this->load->view('magazine/questions_vertical');
 	}
+	
+	public function datosfutec(){
+		$data['pageTitle']="#JefeNoSeaMalito";
+		$this->load->view('magazine/contenedor',$data);		
+	}
+	
+	public function noticias($id_seccion = '', $limit = 8){
+        $this->load->model('story');
+        $this->load->model('image');
 
+        $secciones = array('' => 'Últimas Noticias', '11' => 'Selección', '16' => 'Serie A');
+
+        $data['seccion'] = $secciones[$id_seccion];
+
+        $news = $this->story->rotativa(0, $limit,0);
+        $newsSel = $this->story->get_by_category('16', $limit)->result();
+        $newsA = $this->story->get_by_category('11', $limit)->result();
+
+        foreach ($news as $new) {
+            $new->image_id = $this->image->get($new->image_id)->thumbh120;
+        }
+        foreach ($newsSel as $newSel) {
+            $newSel->image_id = $this->image->get($newSel->image_id)->thumbh120;
+        }
+        foreach ($newsA as $newA) {
+            $newA->image_id = $this->image->get($newA->image_id)->thumbh120;
+        }
+        $data['news'] = $news;
+        $data['newsSel'] = $newsSel;
+        $data['newsA'] = $newsA;
+        $this->load->view('magazine/section_news2', $data);
+	}
+	
 	function simbiosis(){
 		$this->load->view('magazine/simbiosis');		
 	}
-
 	
 	public function send_form(){
 		$body="<html><body><table>";
@@ -48,7 +76,7 @@ class Magazine extends CI_Controller {
 		
 		$this->load->library('email');
 		
-		$this->email->from('contact@misiva.com.ec',"Magazine");
+		$this->email->from('contact@misiva.com.ec',"FE Magazine");
 		$this->email->to('magazine@misiva.com.ec');
 		
 		$this->email->subject('Comentario desde FEMag');

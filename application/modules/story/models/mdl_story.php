@@ -184,6 +184,7 @@ class Mdl_story extends MY_Model
                 $this->db->join('images i', 'i.id = s.image_id');
 
                 if ($this->mdl_noticias->validarquery($str_ids, $str_tags, $sec->category_id, 0, $limit)) {
+                    //$this->db->join("(SELECT * FROM stories_tags WHERE stories_tags.tag_id IN ($str_tags)) st", 's.id = st.story_id');
                     $this->db->join('`stories_tags` st', 's.id = st.story_id');
                     $where = "(category_id=$sec->category_id OR st.tag_id IN($str_tags))";
                 } else {
@@ -209,16 +210,14 @@ class Mdl_story extends MY_Model
         $this->db->select('s.*,i.thumb500,,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
         $this->db->where('s.invisible', '0');
 
-
         $this->db->where('s.position <', 10);
-
 
         $l = explode(',', $limit);
         if (count($l) > 1)
             $this->db->limit($l[0], $l[1]);
         else {
             $limitNew = $limit;
-
+            $this->db->limit($limitNew * 3);
 
         }
 
@@ -229,9 +228,8 @@ class Mdl_story extends MY_Model
         $aux = $this->mdl_noticias->ajustaArray($aux, $limit);
 
         $test = $this->db->last_query();
-        return $aux;
+         return $aux;
     }
-
 
     function get_banner_seccion2($max = 5, $exclude = '', $id_seccion = '')
     {

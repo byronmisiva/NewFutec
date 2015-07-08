@@ -30,7 +30,8 @@
 						  
 					 		<tr class='altrow'>
 					 			<td width="66%"><?=$row->hname.' vs '.$row->aname?></td>
-					 			<td width="15%"><?=mdate('%h:%i',$row->dm)?></td>
+					 			<td width="15%"><?=date_format(date_create($row->date_match), 'H:i')?></td>
+
 					 			<td width="19%"><?=anchor('matches/update/'.$row->id.'/'.$row->group_id, img(array('src'=>'imagenes/icons/pencil.png','border'=>'0')), array('title' => 'Editar'));?>
 					 				<?=anchor('matches_actions/index/'.$row->id.'/'.$row->team_id_home.'/'.$row->team_id_away, img(array('src'=>'imagenes/icons/opcion.png','border'=>'0')), array('title' => 'Opciones'));?>
 					 			    <?=anchor('lineups/index/'.$row->id.'/'.$row->team_id_home, img(array('src'=>'imagenes/icons/alineacion.png','border'=>'0')), array('title' => 'Alineaci&oacute;n del Local'));?></td>

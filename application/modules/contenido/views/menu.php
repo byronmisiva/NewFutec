@@ -196,7 +196,7 @@
     <a href="<?= base_url('en-el-exterior') ?>" class="pull-left">En el Exterior</a>
 </li>
 <!-- Mega Menu -->
-<li class="dropdown fhmm-fw hidden">
+<li class="dropdown fhmm-fw ">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Copas<b class="caret"></b></a>
     <ul class="dropdown-menu fullwidth">
         <li class="fhmm-content">
@@ -232,7 +232,7 @@
 <!-- mega menu -->
 <!-- list elements -->
 <!-- Mega Menu -->
-<li class="dropdown fhmm-fw">
+<li class="dropdown fhmm-fw hidden">
     <a href="<?= base_url('copa-america') ?>" class="pull-left"><div class="logocopaamericamini"></div></a>
     <!-- dropdown-menu -->
 </li>

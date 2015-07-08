@@ -30,16 +30,18 @@
     <meta name="twitter:card" content="app">
     <meta name="twitter:app:id:iphone" content="622931242">
     <meta name="twitter:app:id:ipad" content="622931242">
-    <meta name="twitter:app:id:googleplay" content="com.futbolecuador.femagazine">
+    <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
 
     <meta name="apple-itunes-app" content="app-id=622931242, app-argument=//www.futbolecuador.com">
 
-    <meta name="google-play-app" content="app-id=com.futbolecuador.femagazine">
+    <meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
 
+    <!--TAGS com.misiva.futbolecuadorpush 1008177383-->
+    <!--TAGS com.futbolecuador.femagazine 622931242-->
 
-    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+   <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">
         twttr.conversion.trackPid('l4vk1');
     </script>
@@ -212,7 +214,7 @@
 
         // splsh movil
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1434137569309-1').addService(googletag.pubads());
+        //googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1434137569309-1').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
 
         googletag.pubads().enableSingleRequest();
@@ -244,7 +246,7 @@
             if (event.slot.i == '/1022247/FE_LOADING') {
                 if (event.isEmpty) {
                     cleanBlackLayer ();
-                    console.log ("caso 3");
+
                 } else {
                     <?php if ($verMobile != "1"){ ?>
                     cargarSplash();
@@ -285,11 +287,7 @@
         googletag.defineSlot('/1022247/FE_BRAND_SMART_TOP', [320, 50], 'div-gpt-ad-1432051647687-6').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
-
-
-
-
-        googletag.pubads().enableSingleRequest();
+         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
     // fin espacios copa america
@@ -402,6 +400,10 @@
          width="1" alt=""/>
 </noscript>
 <!-- End Alexa Certify Javascript -->
+
+
+
+
 <div id="darkLayerFE" style="display:none;"></div>
 <div id="FE_LOADINGFE" style="display:none;">
     <!-- Gestion revistaFE -->

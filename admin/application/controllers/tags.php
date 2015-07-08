@@ -62,7 +62,7 @@ class Tags extends CI_Controller {
 	}
 	
 	public function cargar_tags(){
-		//$this->output->cache(CACHE_DEFAULT);
+		$this->output->cache(CACHE_DEFAULT);
 		$this->load->model('tag');
 		$this->load->helper('inflector');
 		$m=($this->tag->get_max()-$this->tag->get_min())/(25-15);
