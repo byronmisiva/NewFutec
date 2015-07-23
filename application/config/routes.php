@@ -67,6 +67,7 @@ $route['tabla-de-posiciones'] = "site/tabladeposiciones";
 $route['tabla-de-posicionesb'] = "site/tabladeposiciones/54";
 $route['resultados'] = "site/resultados";
 $route['fuera-de-juego'] = "site/fueradejuego";
+$route['juventus'] = "site/juventus";
 
 $route['serie-a'] = "site/seriea";
 $route['serie-b'] = "site/serieb";

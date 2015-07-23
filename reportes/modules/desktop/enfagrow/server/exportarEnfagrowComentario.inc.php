@@ -13,19 +13,13 @@
  */
 
 
-$sql = "SELECT doky_registro.id,
-                doky_registro.nombre,
-                doky_registro.cedula,
-                doky_registro.telefono,
-                doky_registro.direccion,
-                doky_premios.nombre AS premio,
-                doky_registro.creado,
-                doky_registro.mail,
-                doky_registro.ciudad,
-                doky_registro.consumidor,
-                doky_registro.`consumidor-donde`,
-                doky_registro.donde
-            FROM doky_registro INNER JOIN doky_premios ON doky_registro.id_premio = doky_premios.id ORDER BY creado  ";
+$sql = "SELECT id,
+	doky_contactanos.nombre,
+	doky_contactanos.telefono,
+	doky_contactanos.creado,
+	doky_contactanos.mensaje,
+	doky_contactanos.correo
+FROM doky_contactanos ORDER BY creado DESC ";
 
 $result = $os->db->conn->query($sql);
 $data = array();
@@ -36,34 +30,21 @@ $objPHPExcel->setActiveSheetIndex(0);
 
 $filaInicio = 2;
 
-
 $objPHPExcel->getActiveSheet()->setCellValue('A1', 'id');
-$objPHPExcel->getActiveSheet()->setCellValue('B1', 'nombre');
-$objPHPExcel->getActiveSheet()->setCellValue('C1', 'cedula');
-$objPHPExcel->getActiveSheet()->setCellValue('D1', 'telefono');
-$objPHPExcel->getActiveSheet()->setCellValue('E1', 'Direccion');
-$objPHPExcel->getActiveSheet()->setCellValue('F1', 'Premio');
-$objPHPExcel->getActiveSheet()->setCellValue('G1', 'Creado');
-$objPHPExcel->getActiveSheet()->setCellValue('H1', 'mail');
-$objPHPExcel->getActiveSheet()->setCellValue('I1', 'ciudad');
-$objPHPExcel->getActiveSheet()->setCellValue('J1', 'Consumidor');
-$objPHPExcel->getActiveSheet()->setCellValue('K1', 'Consumidor-donde');
-$objPHPExcel->getActiveSheet()->setCellValue('L1', 'Donde');
+$objPHPExcel->getActiveSheet()->setCellValue('B1', 'Nombre');
+$objPHPExcel->getActiveSheet()->setCellValue('C1', 'Telefono');
+$objPHPExcel->getActiveSheet()->setCellValue('D1', 'Creado');
+$objPHPExcel->getActiveSheet()->setCellValue('E1', 'Correo');
+$objPHPExcel->getActiveSheet()->setCellValue('F1', 'Mensaje');
 
 while ($rowdetalle = $result->fetch(PDO::FETCH_ASSOC)) {
     $objPHPExcel->getActiveSheet()->setCellValue('A' . $filaInicio, $rowdetalle['id']);
     $objPHPExcel->getActiveSheet()->setCellValue('B' . $filaInicio, $rowdetalle['nombre']);
-    $objPHPExcel->getActiveSheet()->setCellValue('C' . $filaInicio, $rowdetalle['cedula']);
-    $objPHPExcel->getActiveSheet()->setCellValue('D' . $filaInicio, $rowdetalle['telefono']);
-    $objPHPExcel->getActiveSheet()->setCellValue('E' . $filaInicio, $rowdetalle['direccion']);
-    $objPHPExcel->getActiveSheet()->setCellValue('F' . $filaInicio, $rowdetalle['premio']);
-    $objPHPExcel->getActiveSheet()->setCellValue('G' . $filaInicio, $rowdetalle['creado']);
-    $objPHPExcel->getActiveSheet()->setCellValue('H' . $filaInicio, $rowdetalle['mail']);
-    $objPHPExcel->getActiveSheet()->setCellValue('I' . $filaInicio, $rowdetalle['ciudad']);
-    $objPHPExcel->getActiveSheet()->setCellValue('J' . $filaInicio, $rowdetalle['consumidor']);
-    $objPHPExcel->getActiveSheet()->setCellValue('K' . $filaInicio, $rowdetalle['consumidor-donde']);
-    $objPHPExcel->getActiveSheet()->setCellValue('L' . $filaInicio, $rowdetalle['donde']);
-    $filaInicio++;
+    $objPHPExcel->getActiveSheet()->setCellValue('C' . $filaInicio, $rowdetalle['telefono']);
+    $objPHPExcel->getActiveSheet()->setCellValue('D' . $filaInicio, $rowdetalle['creado']);
+    $objPHPExcel->getActiveSheet()->setCellValue('E' . $filaInicio, $rowdetalle['mensaje']);
+    $objPHPExcel->getActiveSheet()->setCellValue('F' . $filaInicio, $rowdetalle['correo']);
+     $filaInicio++;
 }
 
 

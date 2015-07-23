@@ -532,7 +532,7 @@ QoDesk.EnfagrowWindow = Ext.extend(Ext.app.Module, {
     requestGridDataExport: function () {
         Ext.Msg.show({
             title:'Advertencia',
-            msg:'Descargue el archivo xls para imprimirlo.<br>¿Desea continuar?',
+            msg:'Descargue el archivo xls  .<br>¿Desea continuar?',
             scope:this,
             icon:Ext.Msg.WARNING,
             buttons:Ext.Msg.YESNO,
@@ -549,13 +549,13 @@ QoDesk.EnfagrowWindow = Ext.extend(Ext.app.Module, {
     requestEnfagrowSorteoExport: function () {
         Ext.Msg.show({
             title:'Advertencia',
-            msg:'Descargue el archivo xls para imprimirlo.<br>¿Desea continuar?',
+            msg:'Descargue el archivo xls .<br>¿Desea continuar?',
             scope:this,
             icon:Ext.Msg.WARNING,
             buttons:Ext.Msg.YESNO,
             fn:function (btn) {
                 if (btn == 'yes') {
-                    window.location.href = 'modules/desktop/enfagrow/server/EnfagrowGanadores.php' ;
+                    window.location.href = 'modules/desktop/enfagrow/server/Enfagrow1anio.php' ;
                 }
             }
         });
@@ -572,7 +572,7 @@ QoDesk.EnfagrowWindow = Ext.extend(Ext.app.Module, {
             buttons:Ext.Msg.YESNO,
             fn:function (btn) {
                 if (btn == 'yes') {
-                    window.location.href = 'mmodules/desktop/enfagrow/server/EnfagrowGanadores.php' ;
+                    window.location.href = 'modules/desktop/enfagrow/server/EnfagrowComentario.php' ;
                 }
             }
         });

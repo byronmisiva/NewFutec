@@ -18,14 +18,14 @@ $sql = "SELECT doky_registro.id,
                 doky_registro.cedula,
                 doky_registro.telefono,
                 doky_registro.direccion,
-                doky_premios.nombre AS premio,
+
                 doky_registro.creado,
                 doky_registro.mail,
                 doky_registro.ciudad,
                 doky_registro.consumidor,
                 doky_registro.`consumidor-donde`,
                 doky_registro.donde
-            FROM doky_registro INNER JOIN doky_premios ON doky_registro.id_premio = doky_premios.id ORDER BY creado  ";
+            FROM doky_registro   ORDER BY creado desc ";
 
 $result = $os->db->conn->query($sql);
 $data = array();
@@ -42,13 +42,12 @@ $objPHPExcel->getActiveSheet()->setCellValue('B1', 'nombre');
 $objPHPExcel->getActiveSheet()->setCellValue('C1', 'cedula');
 $objPHPExcel->getActiveSheet()->setCellValue('D1', 'telefono');
 $objPHPExcel->getActiveSheet()->setCellValue('E1', 'Direccion');
-$objPHPExcel->getActiveSheet()->setCellValue('F1', 'Premio');
-$objPHPExcel->getActiveSheet()->setCellValue('G1', 'Creado');
-$objPHPExcel->getActiveSheet()->setCellValue('H1', 'mail');
-$objPHPExcel->getActiveSheet()->setCellValue('I1', 'ciudad');
-$objPHPExcel->getActiveSheet()->setCellValue('J1', 'Consumidor');
-$objPHPExcel->getActiveSheet()->setCellValue('K1', 'Consumidor-donde');
-$objPHPExcel->getActiveSheet()->setCellValue('L1', 'Donde');
+$objPHPExcel->getActiveSheet()->setCellValue('F1', 'Creado');
+$objPHPExcel->getActiveSheet()->setCellValue('G1', 'mail');
+$objPHPExcel->getActiveSheet()->setCellValue('H1', 'ciudad');
+$objPHPExcel->getActiveSheet()->setCellValue('I1', 'Consumidor');
+$objPHPExcel->getActiveSheet()->setCellValue('J1', 'Consumidor-donde');
+$objPHPExcel->getActiveSheet()->setCellValue('K1', 'Donde');
 
 while ($rowdetalle = $result->fetch(PDO::FETCH_ASSOC)) {
     $objPHPExcel->getActiveSheet()->setCellValue('A' . $filaInicio, $rowdetalle['id']);
@@ -56,13 +55,12 @@ while ($rowdetalle = $result->fetch(PDO::FETCH_ASSOC)) {
     $objPHPExcel->getActiveSheet()->setCellValue('C' . $filaInicio, $rowdetalle['cedula']);
     $objPHPExcel->getActiveSheet()->setCellValue('D' . $filaInicio, $rowdetalle['telefono']);
     $objPHPExcel->getActiveSheet()->setCellValue('E' . $filaInicio, $rowdetalle['direccion']);
-    $objPHPExcel->getActiveSheet()->setCellValue('F' . $filaInicio, $rowdetalle['premio']);
-    $objPHPExcel->getActiveSheet()->setCellValue('G' . $filaInicio, $rowdetalle['creado']);
-    $objPHPExcel->getActiveSheet()->setCellValue('H' . $filaInicio, $rowdetalle['mail']);
-    $objPHPExcel->getActiveSheet()->setCellValue('I' . $filaInicio, $rowdetalle['ciudad']);
-    $objPHPExcel->getActiveSheet()->setCellValue('J' . $filaInicio, $rowdetalle['consumidor']);
-    $objPHPExcel->getActiveSheet()->setCellValue('K' . $filaInicio, $rowdetalle['consumidor-donde']);
-    $objPHPExcel->getActiveSheet()->setCellValue('L' . $filaInicio, $rowdetalle['donde']);
+    $objPHPExcel->getActiveSheet()->setCellValue('F' . $filaInicio, $rowdetalle['creado']);
+    $objPHPExcel->getActiveSheet()->setCellValue('G' . $filaInicio, $rowdetalle['mail']);
+    $objPHPExcel->getActiveSheet()->setCellValue('H' . $filaInicio, $rowdetalle['ciudad']);
+    $objPHPExcel->getActiveSheet()->setCellValue('I' . $filaInicio, $rowdetalle['consumidor']);
+    $objPHPExcel->getActiveSheet()->setCellValue('J' . $filaInicio, $rowdetalle['consumidor-donde']);
+    $objPHPExcel->getActiveSheet()->setCellValue('K' . $filaInicio, $rowdetalle['donde']);
     $filaInicio++;
 }
 
@@ -73,9 +71,9 @@ while ($rowdetalle = $result->fetch(PDO::FETCH_ASSOC)) {
 //echo date('H:i:s') , " Set document properties" , PHP_EOL;
 $objPHPExcel->getProperties()->setCreator("Byron Herrera")
     ->setLastModifiedBy("Byron Herrera")
-    ->setTitle("Enfagrow Ganadores")
+    ->setTitle("Enfagrow Registro 1 año")
     ->setSubject("")
-    ->setDescription("Enfagrow Ganadores, generated using PHP classes.")
+    ->setDescription("Enfagrow registro 1 año, generated using PHP classes.")
     ->setKeywords("enfagrow ganadores openxml php")
     ->setCategory("Archivo");
 

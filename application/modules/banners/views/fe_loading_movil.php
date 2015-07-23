@@ -7,9 +7,7 @@
         <div id='closeBanner'>
             <img style="height: 100%;" src='<?=base_url()?>imagenes/public/close_banner.png' />
         </div>
-        <script type='text/javascript'>
-            googletag.display('div-gpt-ad-1383593884981-1');
-        </script>
+
     </div>
 </div>
 

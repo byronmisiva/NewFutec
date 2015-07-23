@@ -41,6 +41,16 @@ class Scoreboards extends MY_Controller
         return $tabla;
     }
 
+    public function sancionLDUL ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['name']== "Liga de Loja"){
+                $tabla[$key]['points'] = $equipo['points'] - 3;
+            }
+        }
+        return $tabla;
+    }
+
     // Tabla de Posiciones
     public function leaderboard($champ, $leaderboard = 'leaderboard', $tipoCampeonato = 'acumulada')
     {
@@ -57,8 +67,12 @@ class Scoreboards extends MY_Controller
                 $data['tabla'] = $this->mdl_teams_position->get_table($active_group->id);
 
                 //barcelona sancion campeonato 2015.
-                if ($round == 196)
+                if ($round == 196) {
+                    $data['tabla'] = $this->sancionLDUL ($data['tabla']);
                     $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+                }
+
+
 
                 return $this->load->view($leaderboard, $data, true);
             } else {
@@ -84,8 +98,10 @@ class Scoreboards extends MY_Controller
                     //$data['tabla'] = array_merge($data['tabla'], $this->mdl_teams_position->get_table($grupo->id));
                     $data['tabla'] =  $this->mdl_teams_position->get_table($grupo->id);
                     //barcelona sancion campeonato 2015.
-                    if ($round == 196)
+                    if ($round == 196) {
+                        $data['tabla'] = $this->sancionLDUL ($data['tabla']);
                         $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+                    }
 
                     return $this->load->view($leaderboard, $data, true);
 
@@ -146,11 +162,9 @@ class Scoreboards extends MY_Controller
                 $data['scroreBoardSingle'] = $data['scroreBoardAcumulative'];
             }
         }
-
         return $this->load->view('leaderboardFull', $data, true);
 
     }
-
 
     // Tabla de Posiciones  acumulada
     public function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
@@ -162,16 +176,11 @@ class Scoreboards extends MY_Controller
 
         $data['tabla'] = $this->mdl_teams_position->get_table_by_champ($champ);
         //barcelona sancion campeonato 2015.
-        if ($champ == 53)
+        if ($champ == 53) {
+            $data['tabla'] = $this->sancionLDUL ($data['tabla']);
             $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
-
+        }
         return $this->load->view($leaderboard, $data, true);
-
-        $data['groups'] = 0;
-
-        return $this->load->view($leaderboard, $data, true);
-    }
+     }
     //Fin Tabla de Posiciones acumulada
-
-
 }

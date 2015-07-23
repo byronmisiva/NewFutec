@@ -3,6 +3,10 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
     header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
     header('Access-Control-Allow-Credentials: true');
     header('Access-Control-Max-Age: 86400');
+
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+    header('Content-type: text/html; charset=utf-8');
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
@@ -295,7 +299,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
 
-        $storia = $this->story->get_complete($idNoticia);
+        $storia = $this->story->get_complete($idNoticia, $this->banners->fe_netsonic_tv() );
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
         //  if (ZONAINTERNACIONAL == $seccion) {
         $storia = str_replace("en www.donbalon.com", "", $storia);
@@ -331,7 +335,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         //   $data['header2'] = $this->contenido->header2($dataHeader2);
         //   $data['top2'] = $this->banners->FE_Megabanner();
 
-        $data['content'] = $storia  . $this->banners->fe_netsonic_tv() . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
+        $data['content'] = $storia  .  $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
@@ -847,6 +851,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $fueradejuego = $this->contenido->view_fuera_de_juego();
         $this->singleConten("Fuera de Juego", $fueradejuego);
+    }
+
+    public function juventus()
+    {
+        //$this->output->cache(CACHE_DEFAULT);
+        $this->load->module('contenido');
+        $juventus = $this->contenido->view_juventus();
+        $this->singleConten("Juventus", $juventus);
     }
 
     public function singleConten($nameSeccion, $contenSeccion, $description = "", $serie = SERIE_A, $tipotabla = "acumulada")

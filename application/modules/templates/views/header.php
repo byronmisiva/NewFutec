@@ -28,13 +28,13 @@
 
     <!--twitter TAGS-->
     <meta name="twitter:card" content="app">
-    <meta name="twitter:app:id:iphone" content="622931242">
-    <meta name="twitter:app:id:ipad" content="622931242">
+    <meta name="twitter:app:id:iphone" content="1008177383">
+    <meta name="twitter:app:id:ipad" content="1008177383">
     <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
 
-    <meta name="apple-itunes-app" content="app-id=622931242, app-argument=//www.futbolecuador.com">
+    <meta name="apple-itunes-app" content="app-id=1008177383, app-argument=//www.futbolecuador.com">
 
     <meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
 
@@ -64,7 +64,7 @@
     <meta property="og:description"
           content="<?php echo (isset($description)) ? $description . "," . $tags : 'Futbol Ecuador'; ?>"/>
     <meta property="og:image"
-          content="<?php echo (isset($image)) ? base_url($image) : base_url('img/apple-touch-icon-144-precomposed.png'); ?>"/>
+          content="<?php echo (isset($image)) ? base_url($image) : base_url('imagenes/coverappalertas.jpg'); ?>"/>
     <!--SEO TAGS-->
     <meta name="keywords"
           content="<?= $tags ?> futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014, futbol ecuatoriano,tabla de posiciones, ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com, campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,fut,seleccion de ecuador , ecuatorianos en el exterior"/>
@@ -211,8 +211,6 @@
         googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
 
         googletag.defineSlot('/1022247/FE_LOADING', [800, 600], 'div-gpt-ad-1425424774921-0').addService(googletag.pubads());
-
-        // splsh movil
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
         //googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1434137569309-1').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());

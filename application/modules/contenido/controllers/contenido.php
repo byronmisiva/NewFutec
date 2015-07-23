@@ -228,6 +228,11 @@ class Contenido extends MY_Controller
 
     }
 
+    public function view_juventus($data = FALSE)
+    {
+        return $this->load->view('juventus', $data, TRUE);
+
+    }
     public function view_fuera_de_juego($data = FALSE)
     {
         return $this->load->view('fueradejuego', $data, TRUE);
