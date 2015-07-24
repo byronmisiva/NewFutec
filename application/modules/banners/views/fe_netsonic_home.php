@@ -11,8 +11,11 @@
 </div>
 <script type='text/javascript'>
     $(document).ready(function () {
+        console.log ("1");
         if (typeof secondskin != 'undefined') {
+            console.log ("2");
             if (secondskin == false) {
+                console.log ("3");
                 $("#netsonic").remove();
                 $("#eyeDiv").remove();
                 $("#ebDimmer").remove();
