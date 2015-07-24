@@ -310,6 +310,12 @@ if (isset($fe_splash))
     echo $fe_splash;
 ?>
 
+<?php
+if (isset($fe_scritp_footer))
+    echo $fe_scritp_footer;
+?>
+
+
 <!-- NETSONIC.TV 1.0 - CODE Z - AL FINAL DEL BODY -->
 <script language="JavaScript" type="text/javascript">
 
@@ -323,12 +329,6 @@ if (isset($fe_splash))
 </script>
 <!-- /NETSONIC.TV 1.0 - CODE Z - AL FINAL DEL BODY  -->
 
-<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=14265700&PluID=0&w=1&h=1&ord=[random]&ucm=true"></script>
 
-<noscript>
-
-    <a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=14265700&Page=&PluID=0&Pos=2101911275" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=14265700&Page=&PluID=0&Pos=2101911275" border=0 width=1 height=1></a>
-
-</noscript>
 </body>
 </html>

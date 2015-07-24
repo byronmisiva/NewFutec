@@ -32,6 +32,7 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxnews1', $data, TRUE);
     }
+
     public function FE_desplegable_movil($data = FALSE)
     {
         return $this->load->view('fe_desplegable_movil', $data, TRUE);
@@ -149,11 +150,12 @@ class Banners extends MY_Controller
     }
 
     //// copa america banners
-    public function fe_brand_header ($data = FALSE)
+    public function fe_brand_header($data = FALSE)
     {
         return $this->load->view('fe_brand_header', $data, TRUE);
     }
-    public function fe_hp_brand  ($data = FALSE)
+
+    public function fe_hp_brand($data = FALSE)
     {
         return $this->load->view('fe_hp_brand', $data, TRUE);
     }
@@ -170,6 +172,7 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_skin_copaamerica', $data, TRUE);
     }
+
     public function fe_header($data = FALSE)
     {
         return $this->load->view('fe_header', $data, TRUE);
@@ -187,14 +190,17 @@ class Banners extends MY_Controller
     {
         return $this->load->view('dpasportslive', $data, TRUE);
     }
+
     public function dpaSportsLiveMovil($data = FALSE)
     {
         return $this->load->view('dpasportslivemovil', $data, TRUE);
     }
+
     public function dpaSportsLiveFrame($data = FALSE)
     {
         return $this->load->view('dpasportsliveiframe', $data, TRUE);
     }
+
     public function dpaSportsLiveFrameMovil($data = FALSE)
     {
         return $this->load->view('dpasportsliveframemovil', $data, TRUE);
@@ -229,6 +235,11 @@ class Banners extends MY_Controller
     public function fe_netsonic_tv($data = FALSE)
     {
         return $this->load->view('fe_netsonic_tv', $data, TRUE);
+    }
+
+    public function fe_netsonic_home($data = FALSE)
+    {
+        return $this->load->view('fe_netsonic_home', $data, TRUE);
     }
 
 
