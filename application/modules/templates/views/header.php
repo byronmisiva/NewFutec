@@ -261,6 +261,7 @@
                 }
             }
 
+
             if (event.slot.i == '/1022247/FE_HEADER') {
                 if (event.isEmpty) {
                     //ocultamos el div
