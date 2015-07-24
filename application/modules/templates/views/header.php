@@ -185,6 +185,7 @@
 
 <script type='text/javascript'>
     var verMobile = <?php echo $verMobile ?>;
+    var secondskin;
     var uri = "<?php  echo ($this->uri->segment(2) != "" ) ? $this->uri->segment(2) :"false"; ?>";
     googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());
@@ -235,8 +236,6 @@
                     //cleanBlackLayer;
                 } else {
                     cargarSplash();
-
-
                 }
             }
             //para el caso de splash desktop
@@ -250,6 +249,17 @@
                     cargarSplash();
 
                     <?php } ?>
+                }
+            }
+
+            if (event.slot.i == '/1022247/FE_SKIN') {
+                if (event.isEmpty) {
+                    console.log ("esta vacia");
+                     secondskin = true;
+
+                } else {
+                    console.log ("esta llena no hace nada");
+                     secondskin = false;
                 }
             }
 
