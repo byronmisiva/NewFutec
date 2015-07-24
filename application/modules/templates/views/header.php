@@ -254,11 +254,9 @@
 
             if (event.slot.i == '/1022247/FE_SKIN') {
                 if (event.isEmpty) {
-                    console.log ("esta vacia");
                      secondskin = true;
 
                 } else {
-                    console.log ("esta llena no hace nada");
                      secondskin = false;
                 }
             }
