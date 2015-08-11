@@ -177,8 +177,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
-        //$data['fe_scritp_footer'] = $this->banners->fe_netsonic_home();
-        $data['fe_scritp_footer'] = "";
+
+        $data['fe_scritp_footer'] = $this->banners->fe_netsonic_home();
+        //$data['fe_scritp_footer'] = "";
 
         $data['header1'] = $this->contenido->menu();
 
