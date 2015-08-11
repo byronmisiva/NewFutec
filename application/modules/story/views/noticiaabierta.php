@@ -18,25 +18,30 @@
             <h1 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h1>
         </div>
         <div class="col-md-5  col-xs-12">
-            <div class="col-md-6 col-xs-4">
+            <div class="col-md-6 col-xs-3">
                 <div class="fb-like"
                      data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
                      data-send="false" data-layout="box_count" data-width="90" data-show-faces="false"
                      data-font="arial"></div>
             </div>
-            <div class="col-md-6 col-xs-4">
+            <div class="col-md-6 col-xs-3">
                 <a href="http://twitter.com/share" class="twitter-share-button"
                    data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
                    data-count="vertical" data-via="futbolecuador" data-lang="es"
                    data-counturl="<?= $link; ?>">Tweet</a>
                 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
             </div>
-            <div class="col-md-0 col-xs-4 visible-xs-block visible-xs-block">
+            <div class="col-md-0 col-xs-3 visible-xs-block visible-xs-block">
                 <!--        Tag para watsapp-->
                 <a class='ssba'
                    data-action='share/whatsapp/share'
                    href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/'. $noticia->id;  ?>'>
                     <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
+            </div>
+            <div class="col-md-0 col-xs-3 visible-xs-block visible-xs-block">
+                <!--        Tag para watsapp-->
+                <a  href='http://push.futbolecuador.com/'>
+                    <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-alertasecuador.png'/></a>
             </div>
         </div>
         <div class="margen10lados-sx  separador5">

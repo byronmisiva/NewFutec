@@ -159,9 +159,21 @@ class Stories extends CI_Controller
             )
         );
     }
+    
+    function verificarHora(){       		
+        /***metodo para verificar hora de mensaje app rango (8am - 10pm)***********/
+	$hora =(int)date("G");
+        if($hora >=8 && $hora <22)
+			return true;
+		else
+			return false;
+    }
 
     function  pushNotificationMobile($id, $post)
     {
+        /******validacion de hora con el mètodo verificarHora*************/
+        if($this->verificarHora()!=true)
+            return;
         $urlFriend = $this->_urlFriendly($post);
 
         $seccionesLista = array();
@@ -313,14 +325,17 @@ class Stories extends CI_Controller
                 $this->tag->insert_story_tag($tags, $id);
                 $this->story_stat->insert_story_stat($id);
 
+
                 // SEND TWEET
-                /*if ($_POST['invisible'] == 0) {
+                if ($_POST['invisible'] == 0) {
                     $this->send_tweet_image($_POST['twitter'], $id, $_POST['image_id']);
-                    // pushNotificacion MOBILE
-                    $this->pushNotificationMobile($id, $_POST['subtitle']);
                     // pushNotificacion Safari
                     $this->pushNotificationBrowser($id, $_POST['title'], $_POST['subtitle']);
-                }*/
+
+                    // pushNotificacion MOBILE
+                    $this->pushNotificationMobile($id, $_POST['subtitle']);
+                }
+
                 redirect($previous_url);
             }
         }
@@ -1081,5 +1096,3 @@ class Stories extends CI_Controller
 }
 
 ?>
-
-

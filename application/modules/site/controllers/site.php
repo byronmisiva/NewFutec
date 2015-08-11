@@ -177,8 +177,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
-        $data['fe_scritp_footer'] = $this->banners->fe_netsonic_home();
-        //$data['fe_scritp_footer'] = "";
+        //$data['fe_scritp_footer'] = $this->banners->fe_netsonic_home();
+        $data['fe_scritp_footer'] = "";
 
         $data['header1'] = $this->contenido->menu();
 
@@ -391,38 +391,52 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
         $this->load->module('noticias');
         // recuperar codigo de don balos
-        if (isset($_GET["secciones"])) {
+        if (isset($_GET["secciones"]) ) {
             $secciones = $_GET["secciones"];
+            if ($secciones == "") {
+                echo "[]";
+                return;
+            }
+
             $totalsecciones = explode(",", $secciones);
 
             /// Recupera y ordena datos de cada seccion
             $noticiasOrden = array();
+
+            if (count($totalsecciones) == 0)  
+                ; 
+
             foreach ($totalsecciones as $index1 => $seccion) {
-                if ($seccion != 3) {
-                    if ($seccion != 28) {
-                        $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION, '', $seccion);
-                        foreach ($data as $index => $noticia) {
-                            if (!in_array($noticia->id, $data)) {
-                                $noticia->seccion = $seccion;
-                                $noticiasOrden[] = $noticia;
+                // ARREGLO PARA JA
+                if ($seccion != "/646544654646") {
+                      if ($seccion != '') {
+                    if ($seccion != 3) {
+                        if ($seccion != 28) {
+                            $data = $this->mdl_story->get_banner_seccion(FEAPPMAXSECCION, '', $seccion);
+                            foreach ($data as $index => $noticia) {
+                                if (!in_array($noticia->id, $data)) {
+                                    $noticia->seccion = $seccion;
+                                    $noticiasOrden[] = $noticia;
+                                }
+                            }
+                        } else {
+                            // para el caso de en jugadores en el exterior
+                            $data = $this->mdl_story->get_banner_seccion2(FEAPPMAXSECCION, '', $seccion);
+                            foreach ($data as $index => $noticia) {
+                                if (!in_array($noticia->id, $data)) {
+                                    $noticia->seccion = $seccion;
+                                    $noticiasOrden[] = $noticia;
+                                }
                             }
                         }
                     } else {
-                        // para el caso de en jugadores en el exterior
-                        $data = $this->mdl_story->get_banner_seccion2(FEAPPMAXSECCION, '', $seccion);
-                        foreach ($data as $index => $noticia) {
-                            if (!in_array($noticia->id, $data)) {
-                                $noticia->seccion = $seccion;
-                                $noticiasOrden[] = $noticia;
-                            }
+                        //para el caso de rotativas
+                        $data = $this->mdl_story->get_banner(3, 44);
+                        foreach ($data as $noticia) {
+                            $noticia->seccion = $seccion;
+                            $noticiasOrden[] = $noticia;
                         }
-                    }
-                } else {
-                    //para el caso de rotativas
-                    $data = $this->mdl_story->get_banner(3, 44);
-                    foreach ($data as $noticia) {
-                        $noticia->seccion = $seccion;
-                        $noticiasOrden[] = $noticia;
+                }
                     }
                 }
             }

@@ -10,11 +10,14 @@
         <img class="img-responsive" src="http://www.futbolecuador.com/imagenes/concursos/camiseta-juventus-adidas-2.jpg"
              alt="Juventus 1"/>
 
-        <img class="img-responsive" src="http://www.futbolecuador.com/imagenes/concursos/camiseta-juventus-adidas-1.jpg"
-             alt="Juventus 2"/>
+        <!--<img class="img-responsive" src="http://www.futbolecuador.com/imagenes/concursos/camiseta-juventus-adidas-1.jpg"
+             alt="Juventus 2"/>-->
     </div>
 
     <!-- End Container -->
+
+
+
     <div class=" col-md-12">
         <iframe src="https://www.misiva.com.ec/formulario-camiseta-fe/" width="100%" height="500px"frameborder="0" scrolling="no">
 
@@ -23,4 +26,6 @@
     <div class="col-md-12 text-right fondoazul  ">
         <a href="http://www.futbolecuador.com/imagenes/concursos/reglamento-de-terminos-y-condiciones-para-el-concurso-camiseta-2015-la-juventaus.pdf" target="_blank">Términos y condiciones</a>
     </div>
+
+
 </div>

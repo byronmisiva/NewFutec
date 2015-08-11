@@ -6,23 +6,65 @@
         </h4>
     </div>
     <div class="  ">
-        <div class="containerfueradejuego galeria20content">
-            <div class="liquid-slider" id="main-slider20">
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1a.jpg" alt="Karen"/>
+        <div class="containerfueradejuego galeria21content">
+            <div class="liquid-slider" id="main-slider21">
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1a.jpg" alt="Karen"/>
                        <!-- <div class="socialesFueradeJuego">
                         Nombre
                         twiter
                         facebook
                     </div>-->
                 </div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/2b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/2a.jpg" alt="Karen"/></div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/3b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/3a.jpg" alt="Karen"/>
+                </div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/4b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/4a.jpg" alt="Karen"/>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="logosGPAS">
+                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
+                                <div></div>
+                            </a></div>
+                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
+                                <div></div>
+                            </a></div>
+                    </div>
+                </div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/5b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/5a.jpg" alt="Karen"/>
+
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="logosGPAS">
+                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
+                                <div></div>
+                            </a></div>
+                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
+                                <div></div>
+                            </a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="containerfueradejuego galeria20content">
+            <div class="liquid-slider" id="main-slider20">
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1a.jpg" alt="Karen"/></div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/2b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/2a.jpg" alt="Karen"/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/2a.jpg" alt="Karen"/></div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/3b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/3a.jpg" alt="Karen"/>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/3a.jpg" alt="Karen"/>
                 </div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/4b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/4a.jpg" alt="Karen"/>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/4a.jpg" alt="Karen"/>
+
                     <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
@@ -35,9 +77,8 @@
                     </div>
                 </div>
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/5b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/5a.jpg" alt="Karen"/>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/5a.jpg" alt="Karen"/>
 
-                    <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
                         <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
@@ -1003,6 +1044,8 @@
                                                 width="18" heigth="115"/></div>
             <div class="otrasmodelos">
                 <ul>
+                    <li class="galeria20"><img id="galeria21" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg"
+                                               width="110" heigth="140" alt="Carolina"/></li>
                     <li class="galeria20"><img id="galeria20" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1b.jpg"
                                                width="110" heigth="140" alt="Carolina"/></li>
                     <li class="galeria19"><img id="galeria19" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria19/1b.jpg"
