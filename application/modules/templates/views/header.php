@@ -165,15 +165,6 @@
     <!-- End Tapstream tracking-->
 </head>
 <body>
-
-<!-- Tag Netsonic-->
-<!-- /25992948/EC_futbolecuador.com_1x1 -->
-<div id='div-gpt-ad-1438988612575-0' style='height:1px; width:1px;'>
-    <script type='text/javascript'>
-        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1438988612575-0'); });
-    </script>
-</div>
-
 <input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/>
 <script LANGUAGE="JavaScript">var OBCTm = '1426714580701'; </script>
 <script LANGUAGE="JavaScript" src="http://widgets.outbrain.com/claim.js"></script>
@@ -231,16 +222,21 @@
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
+        googletag.enableServices();
+        //para el caso que no existe publicicad --MISIVA--
+        googletag.pubads().collapseEmptyDivs(true);
+        //console.log ("xx");
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
 
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
+                //console.log (event.slot.i);
                 if (typeof event.isEmpty != 'undefined') {
                     if (event.isEmpty) {
                         //para el caso de splash movil
                         <?php
                             if (isset($mostrarSplash)) {
-                            if ($mostrarSplash == "1")
-                                echo "cargarSplashFE();";
+                                if ($mostrarSplash == "1")
+                                    echo "cargarSplashFE();";
                             } else {
                                 echo "mostrarBlackLayer;";
                             }
@@ -248,6 +244,7 @@
 
                         //cleanBlackLayer;
                     } else {
+                        //console.log ( event.isEmpty)
                         cargarSplash();
                     }
                 }
@@ -269,10 +266,10 @@
 
             if (event.slot.i == '/1022247/FE_SKIN') {
                 if (event.isEmpty) {
-                     secondskin = 1;
+                    secondskin = 1;
 
                 } else {
-                     secondskin = 2;
+                    secondskin = 2;
                 }
             }
 
@@ -291,9 +288,8 @@
                 }
             }
         });
-        googletag.enableServices();
-        //para el caso que no existe publicicad --MISIVA--
-        googletag.pubads().collapseEmptyDivs(true);
+
+
     });
 
 </script>
@@ -309,12 +305,20 @@
         googletag.defineSlot('/1022247/FE_BRAND_SMART_TOP', [320, 50], 'div-gpt-ad-1432051647687-6').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
-         googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
     // fin espacios copa america
 
 </script>
+
+<!-- Tag Netsonic-->
+<!-- /25992948/EC_futbolecuador.com_1x1 -->
+<div id='div-gpt-ad-1438988612575-0' style='height:1px; width:1px;'>
+    <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1438988612575-0'); });
+    </script>
+</div>
 
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>

@@ -6,7 +6,7 @@
 */application/cache/*
 */application/cache/!index.html
 */application/cache/!.htaccess
-
+.idea/workspace.xml
 */config/development
 */config/config.php
 */config/database.php
@@ -21,4 +21,4 @@ application/config/config.php
 */.idea/*
 */.idea/workspace.xml
 .idea/*
-.idea/workspace.xml
+
