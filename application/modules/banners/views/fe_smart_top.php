@@ -56,7 +56,7 @@
 
 <script type="text/javascript">
     function see_fold() {
-        $(".desplegable-alertas").toggle( );
+        $(".desplegable-alertas").toggle('slow' );
     }
 
 </script>
