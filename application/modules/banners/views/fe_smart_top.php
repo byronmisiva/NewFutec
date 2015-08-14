@@ -40,7 +40,7 @@
         float: left;
     }
     .desplegable-alertas {
-        /*display: none;*/
+        display: none;
         background-image: url("<?php echo base_url();?>imagenes/febanners/images_desplegable_alertas/fondo2.jpg");
         width: 100%;
         height: 89px;
