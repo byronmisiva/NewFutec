@@ -11,11 +11,6 @@
     </div>
 </div>
 
-<style>
-    .FE_LOADING iframe {
-        display: block;
-    }
-</style>
 
 <script type="text/javascript">
     setTimeout(function(){ cargarSplash(); }, 2000);

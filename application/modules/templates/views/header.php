@@ -267,13 +267,10 @@
             if (event.slot.i == '/1022247/FE_SKIN') {
                 if (event.isEmpty) {
                     secondskin = 1;
-
                 } else {
                     secondskin = 2;
                 }
             }
-
-
             if (event.slot.i == '/1022247/FE_HEADER') {
                 if (event.isEmpty) {
                     //ocultamos el div
@@ -288,8 +285,6 @@
                 }
             }
         });
-
-
     });
 
 </script>
