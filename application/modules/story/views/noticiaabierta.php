@@ -48,6 +48,9 @@
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
         </div>
         <div class="ebzHere"></div>
+        <div class="banerintermedio">
+            <?php echo $banerintermedio; ?>
+        </div>
         <div class="margen10lados-sx noticia-body">
             <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
         </div>

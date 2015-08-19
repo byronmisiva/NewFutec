@@ -30,3 +30,4 @@
 
 </script>
 <!-- !NETSONIC.TV - ALL IN ONE (Intext) VIDEO 1.0 -->
+<div id="netsonic_divid_target"></div>

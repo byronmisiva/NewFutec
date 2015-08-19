@@ -32,7 +32,7 @@ class Story extends MY_Controller
     }
 
 
-    function get_complete($id)
+    function get_complete($id, $banerintermedio = "")
     {
         $this->mdl_story->cuentaVisita($id);
         $this->output->cache(CACHE_DEFAULT);
@@ -46,7 +46,9 @@ class Story extends MY_Controller
         }
         $noticia = $this->mdl_story->get_story($id);
         $data['noticia'] = $noticia;
+        $data['banerintermedio'] = $banerintermedio;
         $data['autor'] = $this->get_author($noticia->author_id);
+
 
 
         //La Voz de las Tribunas

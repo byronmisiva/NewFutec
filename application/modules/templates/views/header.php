@@ -229,9 +229,10 @@
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
 
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
-                //console.log (event.slot.i);
-                if (typeof event.isEmpty != 'undefined') {
+                if ((typeof event.isEmpty) == 'boolean') {
                     if (event.isEmpty) {
+                        console.log ("carga1 ");
+
                         //para el caso de splash movil
                         <?php
                             if (isset($mostrarSplash)) {
@@ -241,7 +242,6 @@
                                 echo "mostrarBlackLayer;";
                             }
                         ?>
-
                         //cleanBlackLayer;
                     } else {
                         //console.log ( event.isEmpty)

@@ -11,4 +11,16 @@
     </div>
 </div>
 
+<style>
+    .FE_LOADING iframe {
+        display: block;
+    }
+</style>
 
+<script type="text/javascript">
+    setTimeout(function(){ cargarSplash(); }, 2000);
+    var myVar =setInterval(function(){ limpiar_fe_loading  () }, 1000);
+    function limpiar_fe_loading  (){
+        if ($('#div-gpt-ad-1383593884981-1 iframe').length == 0 ) cleanBlackLayer ()
+    }
+</script>
