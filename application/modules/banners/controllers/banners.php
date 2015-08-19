@@ -241,6 +241,10 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_netsonic_home', $data, TRUE);
     }
+    public function fe_new_filmstrip_banner($data = FALSE)
+    {
+        return $this->load->view('fe_new_filmstrip_banner', $data, TRUE);
+    }
 
 
 }
