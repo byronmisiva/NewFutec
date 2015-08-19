@@ -1836,3 +1836,7 @@ div#closeBannerdpa {
 .home .separador30 {
     margin-top: 0px;
 }
+
+.android {
+    display: none;
+}
