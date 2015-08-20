@@ -337,9 +337,10 @@ class Contenido extends MY_Controller
 
         $bannersSidebar[] = $this->banners->FE_Bigboxbanner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
+        $bannersSidebar[] = $this->banners->fe_new_filmstrip_banner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
         //$bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
-        $bannersSidebar[] = $this->banners->fe_new_filmstrip_banner();
+
         // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
         //$bannersSidebar[] = $this->banners->fe_cocafm();
         $data['bannersSidebar'] = $bannersSidebar;
