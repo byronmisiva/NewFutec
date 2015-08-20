@@ -3,7 +3,9 @@
     <div class="col-md-12 ">
         <div class="col-md-7 margen10r">
             <div class="row">
-                <img width="100%" height="100%" src="http://www.futbolecuador.com/imagenes/000295a9fc4f680acd3abcf5cc9a278e.png" style="position: absolute;">
+                <img width="100%" height="100%"
+                     src="http://www.futbolecuador.com/imagenes/000295a9fc4f680acd3abcf5cc9a278e.png"
+                     style="position: absolute;">
                 <img class="img-responsive margen10b margen10r margen0-xs"
                      src="http://www.futbolecuador.com/<?php echo $noticia->thumb400; ?>"
                      alt="<?php echo $noticia->image_name; ?>">
@@ -17,31 +19,45 @@
         <div class="margen10lados-sx">
             <h1 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h1>
         </div>
-        <div class="col-md-5  col-xs-12">
-            <div class="col-md-6 col-xs-3">
-                <div class="fb-like"
-                     data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
-                     data-send="false" data-layout="box_count" data-width="90" data-show-faces="false"
-                     data-font="arial"></div>
+        <div class="col-md-5  col-xs-12 margen0">
+
+            <div class="col-md-12 col-xs-5 margen0">
+                <div class="col-md-12 col-xs-7 margen0">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="fb-like"
+                             data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
+                             data-send="false" data-layout="button" data-width="90" data-show-faces="false"
+                             data-font="arial"></div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 separadortw">
+                        <a href="http://twitter.com/share" class="twitter-share-button"
+                           data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
+                           data-count="none" data-via="futbolecuador" data-lang="es"
+                           data-counturl="<?= $link; ?>">Tweet</a>
+                        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                    </div>
+                </div>
+                <div class="col-md-0 col-xs-5 visible-xs-block margen0  ">
+                    <!--        Tag para watsapp-->
+                    <a class='ssba'
+                       data-action='share/whatsapp/share'
+                       href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
+                        <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
+                </div>
             </div>
-            <div class="col-md-6 col-xs-3">
-                <a href="http://twitter.com/share" class="twitter-share-button"
-                   data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
-                   data-count="vertical" data-via="futbolecuador" data-lang="es"
-                   data-counturl="<?= $link; ?>">Tweet</a>
-                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-            </div>
-            <div class="col-md-0 col-xs-3 visible-xs-block visible-xs-block">
-                <!--        Tag para watsapp-->
-                <a class='ssba'
-                   data-action='share/whatsapp/share'
-                   href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/'. $noticia->id;  ?>'>
-                    <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
-            </div>
-            <div class="col-md-0 col-xs-3 visible-xs-block visible-xs-block">
-                <!--        Tag para watsapp-->
-                <a  href='http://push.futbolecuador.com/'>
-                    <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-alertasecuador.png'/></a>
+            <div class="col-md-12 col-xs-7   margen0">
+                <div class="col-md-0 col-xs-6   margen0">
+                    <a target="_blank" href="https://itunes.apple.com/app/id1008177383"
+                       onclick="ga('send', 'event', 'btn-ios','click','push');"><img class="img-responsive"
+                                                                                     src="<?php echo base_url() ?>imagenes/moviles/ios.png"
+                                                                                     id="btn-ios"> </a>
+                </div>
+                <div class="col-md-0 col-xs-6   margen0">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.misiva.futbolecuadorpush"
+                       onclick="ga('send', 'event', 'btn-android','click','push');"><img class="img-responsive"
+                                                                                         src="<?php echo base_url() ?>imagenes/moviles/android.png"
+                                                                                         id="btn-android"> </a>
+                </div>
             </div>
         </div>
         <div class="margen10lados-sx  separador5">
@@ -56,19 +72,26 @@
         </div>
         <div class="margen10lados-sx noticia-body">
             <br/>
-            <?php if (isset($autor[0]->twitter)){ ?>
+            <?php if (isset($autor[0]->twitter)) { ?>
                 <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
                    target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
             <?php }
             ?>
-            <?php if (isset($autor[0]->mail)){ ?>
+            <?php if (isset($autor[0]->mail)) { ?>
                 <a href="mailto:<?php echo $autor[0]->mail; ?>"
                    target="_blank"><?php echo $autor[0]->mail; ?></a><br/>
             <?php }
             ?>
             <br/>
-                <a href="<?php echo base_url() ."site/noticia/". $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) ."/". $laVozDeLasTribunas[0]->id ?>">  <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
+            <a href="<?php echo base_url() . "site/noticia/" . $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) . "/" . $laVozDeLasTribunas[0]->id ?>">
+                <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
 
+            <br/>
+            <br/>
+            <a href="http://push.futbolecuador.com/">
+                <strong>#Alertas</strong>Futbolecuador, recibe las noticias de tu equipo directamente en tu smartphone o tablet, descargala aquí.</a>
+            <br/>
+            <br/>
         </div>
     </div>
 </div>

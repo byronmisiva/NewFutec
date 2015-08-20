@@ -1266,6 +1266,10 @@ h4.contenidos {
         color: #ccc;
         background-color: transparent;
     }
+
+    .separadortw {
+        margin-top: 8px;
+    }
 }
 .navbar-futec .navbar-link {
     color: #fff;
@@ -1839,4 +1843,12 @@ div#closeBannerdpa {
 
 .android {
     display: none;
+}
+
+ .img-center a, .img-center img {
+    margin: 0 auto;
+}
+
+#btn-android, #btn-ios {
+    max-width: 100px;
 }
