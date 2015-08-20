@@ -272,7 +272,7 @@
 <? echo $tablaposiciones; ?>
 <!--banner lateral 4 -->
 <div class="col-xs-12 separador10 margen0r">
-    <? echo $bannersSidebar[3]; ?>
+    <? echo $bannersSidebar[2]; ?>
 </div>
 <!--Lo más leído-->
 <div class="col-xs-12 separador10 margen0r">
@@ -281,7 +281,7 @@
 
 <!--banner lateral 2 -->
 <div class="col-xs-12 separador10 margen0r">
-    <? echo $bannersSidebar[2]; ?>
+    <? echo $bannersSidebar[3]; ?>
 </div>
 
 <!--Goleadores-->
