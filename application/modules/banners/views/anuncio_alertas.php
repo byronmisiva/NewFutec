@@ -19,7 +19,7 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
 	<div class="col-md-8 ">
 			<p><h2>#AlertasFutbolecuador</h2></p>
 			<p>Ahora futbolecuador te envía las alertas del fútbol ecuatoriano</p>
-			<p>Disponible para IOS y Android. Descárgala aquí</p>
+			<p>Disponible para IOS y Android. Descárgala aquí.</p>
 	</div>
 	<?php }else{?>
 	<div class="col-md-4" style="text-align: center; padding-top: 10px;">
@@ -28,7 +28,7 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
 	<div class="col-md-8">	
 			<p><h2>#FEMagazine</h2></p>
 			<p>La revista digital de futbolecuador.com</p>
-			<p>Disponible para IOS y Android. Descaárgala aquí</p>			
+			<p>Disponible para IOS y Android. Descárgala aquí.</p>
 	</div>
 	<?php }?>
 </div>
