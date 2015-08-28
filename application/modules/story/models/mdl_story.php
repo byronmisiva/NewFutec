@@ -59,6 +59,14 @@ class Mdl_story extends MY_Model
         return $data->result();
     }
 
+    function get_destacados()
+    {
+        $data = $this->db->query('SELECT *
+                                    FROM stories INNER JOIN images ON stories.image_id = images.id
+                                    WHERE destacado=3');
+        return $data->result();
+    }
+
     function storys_by_tags($tag = "", $limit = RESULT_PAGE, $exclude = '', $offset = 0)
     {
         $this->load->module('story');
@@ -155,7 +163,6 @@ class Mdl_story extends MY_Model
     }
 
 
-
     public function get_banner_seccion($limit = 5, $exclude = '', $seccion = '')
     {
         if ($seccion != "") {
@@ -170,7 +177,7 @@ class Mdl_story extends MY_Model
             $str_tags = trim($str_tags, ',');
             if (count($tags) > 0) {
 
-                    $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
+                $res = $this->db->query("SELECT s.image_id FROM  stories s where (category_id=$sec->category_id )
                                       AND invisible =  '0' ORDER BY created desc LIMIT $limit")->result(0);
 
                 $str_ids = "";
@@ -191,7 +198,6 @@ class Mdl_story extends MY_Model
                     $this->db->join('`stories_tags`  st', 's.id = st.story_id');
                     $where = "(category_id  =$sec->category_id OR st.tag_id IN($str_tags) )";
                 }
-
 
 
                 $this->db->where($where);
@@ -228,7 +234,7 @@ class Mdl_story extends MY_Model
         $aux = $this->mdl_noticias->ajustaArray($aux, $limit);
 
         $test = $this->db->last_query();
-         return $aux;
+        return $aux;
     }
 
     function get_banner_seccion2($max = 5, $exclude = '', $id_seccion = '')

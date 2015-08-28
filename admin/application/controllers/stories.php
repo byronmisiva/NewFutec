@@ -153,26 +153,27 @@ class Stories extends CI_Controller
                         "chrome_icon" => "icon/icon128.png",
                         "chrome_title" => $title,
                         "safari_title" => $title,
-                        "safari_url_args" => array("site/noticia/".$urlFriend."/" . $id)
+                        "safari_url_args" => array("site/noticia/" . $urlFriend . "/" . $id)
                     )
                 )
             )
         );
     }
-    
-    function verificarHora(){       		
+
+    function verificarHora()
+    {
         /***metodo para verificar hora de mensaje app rango (8am - 10pm)***********/
-	$hora =(int)date("G");
-        if($hora >=8 && $hora <22)
-			return true;
-		else
-			return false;
+        $hora = (int)date("G");
+        if ($hora >= 8 && $hora < 22)
+            return true;
+        else
+            return false;
     }
 
-    function  pushNotificationMobile($id, $post)
+    function  pushNotificationMobile($id, $post, $destacado = 0)
     {
         /******validacion de hora con el mètodo verificarHora*************/
-        if($this->verificarHora()!=true)
+        if ($this->verificarHora() != true)
             return;
         $urlFriend = $this->_urlFriendly($post);
 
@@ -190,7 +191,7 @@ class Stories extends CI_Controller
                 $seccionesLista[] = $row->id . "-IN1";
             }
         }
-
+        /***ENVIO NOTIFICACIONES SELECCION NACIONAL******************/
         $consulta2 = $this->db->query("select section_id as id  from sections_tags where tag_id IN  (select tag_id  from stories_tags   WHERE  story_id =  '$id');");
         if ($consulta2->num_rows() > 0) {
             $consulta2 = $consulta2->result();
@@ -201,18 +202,44 @@ class Stories extends CI_Controller
             }
         }
 
-        $consulta3 = $this->db->query("select * from stories WHERE position = 1  AND  id =  '$id';");
-        if ($consulta3->num_rows() > 0) {
-            $consulta3 = $consulta3->result();
-            foreach ($consulta3 as $row) {
-                $seccionesLista[] =   "3-IN1";
+        if ($destacado == "3") {
+            $emoticono = "⭐ ";
+        } else {
+            $emoticono = "";
+        }
+
+        /***ENVIO NOTIFICACIONES DESTACADOS******************/
+        if ($destacado == 3) {
+            $consulta3 = $this->db->query("select * from stories WHERE id =  '$id';");
+            if ($consulta3->num_rows() > 0) {
+                $consulta3 = $consulta3->result();
+                foreach ($consulta3 as $row) {
+                    $seccionesLista[] = "3-IN1";
+                }
+
             }
         }
+        /***ENVIO NOTIFICACIONES TEST******************/
+       /* if ($destacado == "test") {
+            $seccionesLista = array();
+            $consulta3 = $this->db->query("select * from stories WHERE id =  '$id';");
+            if ($consulta3->num_rows() > 0) {
+                $consulta3 = $consulta3->result();
+                foreach ($consulta3 as $row) {
+                    $seccionesListaTest[] = "test";
+                }
+
+            }
+        }*/
 
 
         $condiciones = array();
         if (count($seccionesLista) > 0) {
             $condiciones[] = array("informacion", "IN", $seccionesLista);
+        }
+
+        if (isset ($seccionesListaTest)) {
+            $condiciones[] = array("equipo", "IN", $seccionesListaTest);
         }
 
 //        $test = $this->db->last_query();
@@ -223,7 +250,7 @@ class Stories extends CI_Controller
                 'notifications' => array(
                     array(
                         'send_date' => 'now',
-                        'content' => $post,
+                        'content' => $emoticono . $post,
                         'link' => 'http://www.futbolecuador.com/site/noticia/' . $urlFriend . '/' . $id . '/push',
                         "android_icon" => "icon",
                         "android_vibration" => 0,
@@ -241,10 +268,11 @@ class Stories extends CI_Controller
         $json = json_encode(array('request' => $data));
         $this->doPostRequest($url, $json, 'Content-Type: application/json');
 
-        $this->logNotificaciones ($json);
+        $this->logNotificaciones($json);
     }
 
-    function logNotificaciones ($json){
+    function logNotificaciones($json)
+    {
         $file = 'lognotificaciones.txt';
         $json = $json . "\n";
         file_put_contents($file, $json, FILE_APPEND | LOCK_EX);
@@ -263,7 +291,7 @@ class Stories extends CI_Controller
         $ctx = stream_context_create($params);
         $fp = fopen($url, 'rb', false, $ctx);
         if (!$fp)
-            throw new Exception("Problem with $url, $php_errmsg");
+            throw new Exception("Problem with $url ");
 
         $response = @stream_get_contents($fp);
         if ($response === false)
@@ -286,8 +314,13 @@ class Stories extends CI_Controller
         $data['images'] = $this->image->get_list();
         $data['positions'] = $this->positions;
 
-
         if (isset($_POST['submit'])) {
+            //Verificacion si escogieron opcion destacado
+            if (isset($_POST["destacado"])) {
+                $destacado = $_POST["destacado"];
+            } else
+                $destacado = 0;
+
             if ($_POST['image_id'] == '')
                 $_POST['image_id'] = NULL;
             if ($_POST['programed'] == '') {
@@ -307,7 +340,8 @@ class Stories extends CI_Controller
                 $tags = $this->tag->insert_tag($_POST['related']);
                 unset($_POST['related']);
                 unset($_POST['submit']);
-                unset($_POST['_']);
+                unset($_POST['submit']);
+
                 if (!isset($_POST['sponsored']))
                     $_POST['sponsored'] = 0;
                 $previous_url = $_POST['previous_url'];
@@ -317,6 +351,11 @@ class Stories extends CI_Controller
                 $tabla = $this->model->name;
 
                 // no se por que se envia estos datos ... los filtramos previo a enviar a la insercion
+                if (isset($params['embed'])) {
+                    $params['body'] .= "<span>" . $params['embed'] . "</span>";
+                    unset($params['embed']);
+                }
+
                 unset($params['nick']);
                 unset($params['password']);
 
@@ -332,8 +371,8 @@ class Stories extends CI_Controller
                     // pushNotificacion Safari
                     $this->pushNotificationBrowser($id, $_POST['title'], $_POST['subtitle']);
 
-                    // pushNotificacion MOBILE
-                    $this->pushNotificationMobile($id, $_POST['subtitle']);
+                    // pushNotificacion MOBILE AlertasFutbolecuador
+                    $this->pushNotificationMobile($id, $_POST['subtitle'], $destacado);
                 }
 
                 redirect($previous_url);
@@ -349,11 +388,11 @@ class Stories extends CI_Controller
 
     function pruebaNotificacion()
     {
-        $id = $this->uri->segment(3);
-        $mensaje = $this->uri->segment(4);
+        $id = "58192";
+        $mensaje = "Ángel Mena estará 21 días de baja en el Club Sport Emelec";
         //$mensajecontenido = $this->uri->segment(5);
         //$this->pushNotificationMobile ($id, $mensaje, $mensajecontenido);
-        $this->pushNotificationMobile($id, $mensaje);
+        $this->pushNotificationMobile($id, $mensaje, "test");
     }
 
     function pruebaNotificacionBrowser()
@@ -361,7 +400,7 @@ class Stories extends CI_Controller
         $id = $this->uri->segment(3);
         $mensaje = $this->uri->segment(4);
         $mensajecontenido = $this->uri->segment(5);
-        $this->pushNotificationBrowser ($id, $mensaje, $mensajecontenido);
+        $this->pushNotificationBrowser($id, $mensaje, $mensajecontenido);
         //$this->pushNotificationMobile($id, $mensaje);
     }
 

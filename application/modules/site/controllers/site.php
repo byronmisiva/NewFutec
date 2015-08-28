@@ -305,7 +305,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1")
             $storia = $this->story->get_complete($idNoticia, "" );
         else
-            $storia = $this->story->get_complete($idNoticia, $this->banners->fe_netsonic_tv() );
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
 
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
         //  if (ZONAINTERNACIONAL == $seccion) {
@@ -435,7 +435,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                         }
                     } else {
                         //para el caso de rotativas
-                        $data = $this->mdl_story->get_banner(3, 44);
+                        //$data = $this->mdl_story->get_banner(3, 44);
+                        $data = $this->mdl_story->get_destacados();
                         foreach ($data as $noticia) {
                             $noticia->seccion = $seccion;
                             $noticiasOrden[] = $noticia;

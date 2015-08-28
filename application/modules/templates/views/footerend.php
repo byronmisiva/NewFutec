@@ -316,15 +316,6 @@ if (isset($fe_scritp_footer))
 ?>
 
 
-<!-- NETSONIC.TV 1.0 - CODE Z - AL FINAL DEL BODY -->
-<script language="JavaScript" type="text/javascript">
-    var ns_body_publisher = "EC_futbolecuador.com"; //ref. publisher
-    var ns_body_categories = "";
-    var ns_body_tags = "";
-    var ns_body_ver = "1.0";
-    var ns_body_random = new Date().getTime();
-//    document.write("<scr"+"ipt type='text/javascript' language='JavaScript' src='//cdn.netsonic.tv/res/body/"+ns_body_ver+"/"+ns_body_publisher+"/ns_body_z.js?ver="+ns_body_ver+"&pub="+ns_body_publisher+"&cats="+ns_body_categories+"&tags="+ns_body_tags+"&rnd="+ns_body_random+"' ></scr"+"ipt>");
-</script>
 <!-- /NETSONIC.TV 1.0 - CODE Z - AL FINAL DEL BODY  -->
 
 <div id="fb-root"></div>

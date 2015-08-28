@@ -89,7 +89,8 @@
             <br/>
             <br/>
             <a href="http://push.futbolecuador.com/">
-                <strong>#Alertas</strong>Futbolecuador, recibe las noticias de tu equipo directamente en tu smartphone o tablet, descargala aquí.</a>
+                ¿Querías ser el primero en leer esta noticia? Descarga ya <strong>#Alertas</strong>FutbolEcuador y recibe inmediatamente las alertas de tu equipo favorito.
+            </a>
             <br/>
             <br/>
         </div>
