@@ -7,7 +7,7 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
 	background-color:#f8f8f9;
 	border-color:#e6e7e8;
 	border-radius:10px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 </style>
 <a href="<?php echo $url[$turno]?>" target="_blank">
