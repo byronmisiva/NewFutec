@@ -229,7 +229,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $config['wordwrap'] = FALSE;
 
         $this->email->initialize($config);
-        $this->email->from('info@misiva.com.ec', 'Publicidad Futbolecuador.com');
+        $this->email->from('boletin@futbolecuador.com','futbolecuador.com');
         $this->email->to('ddelosreyes@futbolecuador.com');
         $this->email->cc('jfchiriboga@misiva.com.ec');
         $data['informacion'] = $_POST;

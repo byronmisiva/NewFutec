@@ -27,8 +27,8 @@ $url = array("http://push.futbolecuador.com", "http://www.futbolecuador.com/fe-m
             </div>
             <div class="col-md-8 ">
                 <h2>#AlertasFutbolecuador</h2>
+                <p>Descarga nuestra aplicación #AlertasFutbolEcuador y se el primero en leer las noticias de tu equipo favorito.</p>
 
-                <p>Ahora futbolecuador te envía las alertas del fútbol ecuatoriano</p>
 
                 <p>Disponible para IOS y Android. Descaárgala aquí</p>
             </div>
@@ -40,8 +40,7 @@ $url = array("http://push.futbolecuador.com", "http://www.futbolecuador.com/fe-m
                 <p>
 
                 <h2>#FEMagazine</h2></p>
-                <p>La revista digital de futbolecuador.com</p>
-
+                <p>Descarga FE Magazine, la revista digital de futbolecuador.com y conoce toda la actualidad del fútbol.</p>
                 <p>Disponible para IOS y Android. Descaárgala aquí</p>
             </div>
         <?php } ?>
