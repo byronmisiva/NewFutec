@@ -236,7 +236,7 @@
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
                 if ((typeof event.isEmpty) == 'boolean') {
                     if (event.isEmpty) {
-                        console.log ("carga1 ");
+
 
                         //para el caso de splash movil
                         <?php
@@ -258,10 +258,13 @@
             //para el caso de splash desktop
             //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING') {
+                console.log ("carga1 ");
                 if (event.isEmpty) {
+                    console.log ("carga2 ");
                     cleanBlackLayer ();
 
                 } else {
+                    console.log ("carga3 ");
                     <?php if ($verMobile != "1"){ ?>
                     cargarSplash();
 

@@ -305,8 +305,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1")
             $storia = $this->story->get_complete($idNoticia, "" );
         else
+            $storia = $this->story->get_complete($idNoticia, $this->banners->fe_netsonic_tv() );
 
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
+            //$storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
 
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
         //  if (ZONAINTERNACIONAL == $seccion) {
@@ -333,7 +334,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         // fin carga la informacion de la noticia
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['top1'] = $this->banners->topStory() . $this->banners->fe_skin();
         $data['header1'] = $this->contenido->menu();
 
 

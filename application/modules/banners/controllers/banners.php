@@ -13,8 +13,14 @@ class Banners extends MY_Controller
     public function top1($data = FALSE)
     {
         $data['FE_Halfbanner'] = $this->load->view('fe_cocafm', $data, TRUE);
-        //$data['FE_Halfbanner'] = $this->load->view('fe_halfbanner', $data, TRUE);
-        $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE);;
+        $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE) ;
+        return $this->load->view('top1', $data, TRUE);
+    }
+
+    public function topStory($data = FALSE)
+    {
+        $data['FE_Halfbanner'] = $this->load->view('fe_cocafm', $data, TRUE);
+        $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE) . $this->load->view('fe_superbanner_passback', $data, TRUE);
         return $this->load->view('top1', $data, TRUE);
     }
 
@@ -37,7 +43,6 @@ class Banners extends MY_Controller
     {
         return $this->load->view('anuncio_alertas', $data, TRUE);
     }
-
 
 
     public function FE_desplegable_movil($data = FALSE)
@@ -248,12 +253,17 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_netsonic_home', $data, TRUE);
     }
+
     public function fe_new_filmstrip_banner($data = FALSE)
     {
         return $this->load->view('fe_new_filmstrip_banner', $data, TRUE);
     }
 
 
+    public function fe_superbanner_passback($data = FALSE)
+    {
+        return $this->load->view('fe_superbanner_passback', $data, TRUE);
+    }
 
 
 }

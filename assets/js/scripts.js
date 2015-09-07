@@ -1,4 +1,40 @@
+// En caso que fe_header no contenga publicidad
+$(function () {
+    limpiar_fe_header();
+    feHeaderVar = setInterval(function () {
+        limpiar_fe_header()
+    }, 1000);
+})
+
+function limpiar_fe_header() {
+    if (verMobile == 1) {
+        if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
+            $('#div-gpt-ad-1383593619381-0').hide()
+            $('.separador10-xs').css('margin-top', '16px');
+        } else {
+            $('#div-gpt-ad-1383593619381-0').show()
+            $('.separador10-xs').css('margin-top', '95px');
+        }
+    }
+}
+//Fin En caso que fe_header no contenga publicidad
+
+//fe header movil
+setTimeout(function () {
+    cargarSplash();
+}, 2000);
+
+var myVar = setInterval(function () {
+    limpiar_fe_loading()
+}, 4000);
+function limpiar_fe_loading() {
+    //    if ($('#div-gpt-ad-1383593884981-1 iframe').length == 0 ) cleanBlackLayer ()
+}
+
+///////
+
 var masnoticas = "";
+
 
 //inicio funciones splash
 function cargarSplashFE() {
@@ -15,6 +51,7 @@ function cargarSplashFE() {
 };
 
 function cargarSplash() {
+
     $('#darkLayer').show();
     $('#FE_LOADING').show();
     //funcion enviar encuesta
@@ -643,7 +680,7 @@ $(document).ready(function () {
     $("#dpasportsliveover").click(function () {
         $(".flotante").show();
         $(".flotante .contenedor").html('<iframe frameborder="0" height="720" width="700" marginheight="0" marginwidth="0" frameborder="no"' +
-        'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/index.html#/live-e800865-ticker"></iframe>');
+            'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/index.html#/live-e800865-ticker"></iframe>');
 
     });
     $("#closeBannerdpa").click(function () {
@@ -658,7 +695,7 @@ $(document).ready(function () {
 
         $("#dpasportslivemovil").fadeOut();
         $(".contenedordpa").html('<iframe frameborder="0" height="740" width="100%" marginheight="0" marginwidth="0" frameborder="no"' +
-        'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/indexMobile.html"></iframe>');
+            'scrolling="no" src="http://sportslive-feed.com.s3.amazonaws.com/futbolecuador/html/indexMobile.html"></iframe>');
     });
 
     $('#dpasportsliveframe').load(function () {
