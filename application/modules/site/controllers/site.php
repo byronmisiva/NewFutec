@@ -303,7 +303,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($this->verificarDispositivo() == "1")
-            $storia = $this->story->get_complete($idNoticia, "" );
+//            $storia = $this->story->get_complete($idNoticia, "" );
+              $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() );
         else
             //$storia = $this->story->get_complete($idNoticia, $this->banners->fe_netsonic_tv() );
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
