@@ -57,7 +57,7 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
         }
     }
 </style>
-<a href="<?php echo $url[$turno]?>" target="_blank" class="col-md-12 fondo-anuncio">
+<a href="<?php echo $url[$turno]?>" target="_blank" class="col-md-12 fondo-anuncio" class="margen0-xs">
     <div class="contenedor-anuncio">
         <?php if ($turno == 0){?>
             <div class="col-md-4 img-alertas" >
