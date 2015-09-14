@@ -14,7 +14,7 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
         border-radius: 10px;
         margin-left: 18%;
         margin-top: 10px;
-        width: 75%;
+        width: 85%;
     }
 
     .contenedor-anuncio .col-md-8 p{
