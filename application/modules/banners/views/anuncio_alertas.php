@@ -4,7 +4,7 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
 ?>
 <style>
     .fondo-anuncio{
-        background-color: #eaeaed;
+
         padding-bottom: 5px;
     }
 
