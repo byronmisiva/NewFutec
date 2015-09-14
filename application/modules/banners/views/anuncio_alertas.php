@@ -12,9 +12,9 @@ $url= array("http://push.futbolecuador.com","http://www.futbolecuador.com/fe-mag
         background-color: #eaeaed;
         border-color: #e6e7e8;
         border-radius: 10px;
-        margin-left: 18%;
+        margin-left: 16%;
         margin-top: 10px;
-        width: 85%;
+        width: 86%;
     }
 
     .contenedor-anuncio .col-md-8 p{
