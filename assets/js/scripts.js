@@ -3,7 +3,7 @@ $(function () {
     limpiar_fe_header();
     feHeaderVar = setInterval(function () {
         limpiar_fe_header()
-    }, 1000);
+    },5000);
 })
 
 function limpiar_fe_header() {

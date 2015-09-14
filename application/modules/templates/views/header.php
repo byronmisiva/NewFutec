@@ -224,6 +224,8 @@
 
 
 
+
+
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';

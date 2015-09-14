@@ -10,7 +10,7 @@ class Tags extends CI_Controller {
 		$this->load->helper('url');
 		
 		//Validacion ACL
-		$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2));
+		//$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2));
 		
 	}
 	

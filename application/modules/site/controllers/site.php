@@ -305,21 +305,22 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1")
             $storia = $this->story->get_complete($idNoticia, "" );
         else
-            $storia = $this->story->get_complete($idNoticia, $this->banners->fe_netsonic_tv() );
-
-            //$storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
+            //$storia = $this->story->get_complete($idNoticia, $this->banners->fe_netsonic_tv() );
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
 
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
         //  if (ZONAINTERNACIONAL == $seccion) {
+        $linkDonbalon = " <a href='http://www.donbalon.com/' target='_blank'><span class='donbalonlogo'></span></a>";
+
         $storia = str_replace("en www.donbalon.com", "", $storia);
-        $storia = str_replace(" donbalon", " <span class='donbalonlogo'></span>", $storia);
+        $storia = str_replace(" donbalon", $linkDonbalon , $storia);
         $storia = str_replace("Mira la noticia completa", "Lee la noticia completa en ", $storia);
         $storia = str_replace("Mira la nota completa", "Lee la noticia completa en ", $storia);
         $storia = str_replace("La nota completa", "Lee la noticia completa en", $storia);
-        $storia = str_replace("(AQUÍ).", " <span class='donbalonlogo'></span>", $storia);
-        $storia = str_replace("(AQUÍ)", " <span class='donbalonlogo'></span>", $storia);
-        $storia = str_replace("AQUÍ:", " <span class='donbalonlogo'></span>", $storia);
-        $storia = str_replace("AQUÍ", " <span class='donbalonlogo'></span>", $storia);
+        $storia = str_replace("(AQUÍ).", $linkDonbalon, $storia);
+        $storia = str_replace("(AQUÍ)", $linkDonbalon, $storia);
+        $storia = str_replace("AQUÍ:", $linkDonbalon, $storia);
+        $storia = str_replace("AQUÍ", $linkDonbalon, $storia);
 
         $aux = $this->mdl_story->get_story($idNoticia);
         $image = $aux->thumb150;
@@ -544,7 +545,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('teams_position');
 
-        echo $this->contenido->sidebarDonBalon(false, SERIE_A);
+        $parte = $this->uri->segment(3);
+
+        if (!$parte){
+            echo $this->contenido->sidebarDonBalon(false, SERIE_A, 0);
+        } else {
+            echo $this->contenido->sidebarDonBalon(false, SERIE_A,  $parte);
+        }
     }
 
     public function tablaposicionesalone()

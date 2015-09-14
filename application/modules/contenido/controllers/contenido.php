@@ -413,12 +413,13 @@ class Contenido extends MY_Controller
         }
     }
 
-    public function sidebarDonBalon($data = FALSE, $serie = SERIE_A, $tipo = "large")
+    public function sidebarDonBalon($data = FALSE, $serie = SERIE_A, $modo = 0 )
     {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Origin: www.tudeloo.com');
+        header( 'Access-Control-Allow-Origin: www.donbalon.com/');
 
-//        header('Access-Control-Allow-Origin: *');
-//        header('Access-Control-Allow-Origin: www.tudeloo.com');
-//        header( 'Access-Control-Allow-Origin: www.donbalon.com/');
+        header("access-control-allow-origin: *");
 
         header("access-control-allow-origin: *");
         //carga Banners
@@ -426,12 +427,6 @@ class Contenido extends MY_Controller
         $this->load->module('scoreboards');
 
         $bannersSidebar = array();
-
-        //$bannersSidebar[] = $this->banners->FE_Bigboxbanner();
-        //$bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
-        //$bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
-        // $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
-        //$bannersSidebar[] = $this->banners->fe_cocafm();
         $data['bannersSidebar'] = $bannersSidebar;
         //fin carga banners
 
@@ -456,13 +451,71 @@ class Contenido extends MY_Controller
 
             $campeonatosResultados[] = $listcampeonato;
         }
-        $data['campeonatosResultados'] = $campeonatosResultados;
-
 
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
+        $data['modo'] = $modo;
+        switch ($modo) {
+            case 0:
+                //resultados campeonato
+                $data['campeonatosResultados'] = $campeonatosResultados;
+                //Resultados tabla de posiciones
+                $this->load->module('scoreboards');
+                $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
 
-        if ($tipo == "large") {
+                //Resultados goleadores
+                $this->load->module('strikes');
+                $data['strikes'] = $this->strikes->goleadores($serie);
+
+                return $this->load->view('sidebardonbalon', $data, TRUE);
+                break;
+            case 1:
+                //resultados campeonato
+                $data['campeonatosResultados'] = $campeonatosResultados;
+                //Resultados tabla de posiciones
+
+                $data['tablaposiciones'] = "";
+
+                //Resultados goleadores
+
+                $data['strikes'] = "";
+
+                return $this->load->view('sidebardonbalon', $data, TRUE);
+                break;
+            case 2:
+                //resultados campeonato
+                $data['campeonatosResultados'] = "";
+                //Resultados tabla de posiciones
+                $this->load->module('scoreboards');
+                $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
+
+                //Resultados goleadores
+
+                $data['strikes'] = "";
+
+                return $this->load->view('sidebardonbalon', $data, TRUE);
+                break;
+            case 3:
+                //resultados campeonato
+                $data['campeonatosResultados'] = "";
+                //Resultados tabla de posiciones
+
+                $data['tablaposiciones'] ="";
+
+                //Resultados goleadores
+                $this->load->module('strikes');
+                $data['strikes'] = $this->strikes->goleadores($serie);
+
+                return $this->load->view('sidebardonbalon', $data, TRUE);
+                break;
+        }
+
+
+
+        if ($modo == 0) {
+
+            //resultados campeonato
+            $data['campeonatosResultados'] = $campeonatosResultados;
             //Resultados tabla de posiciones
             $this->load->module('scoreboards');
             $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
@@ -471,35 +524,10 @@ class Contenido extends MY_Controller
             $this->load->module('strikes');
             $data['strikes'] = $this->strikes->goleadores($serie);
 
-
-            //Lo más leído
-            $this->load->module('story');
-            $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
-
-            //La Voz de las Tribunas
-            $this->load->module('noticias');
-            $data['laVozDeLasTribunas'] = $this->noticias->viewmininewssidebar("La Voz de las Tribunas", LAVOZDELASTRIBUNAS, LAVOZDELASTRIBUNASPOS, "lavoz");
-
-            //Zona Fe
-            $data['zonaFe'] = $this->noticias->viewmininewssidebar("Zona FE", ZONAFE, ZONAFEPOS, "zonafe");
             return $this->load->view('sidebardonbalon', $data, TRUE);
-        } else {
-            //Resultados tabla de posiciones
-            $data['tablaposiciones'] = "";
+        }  else {
 
-            //Resultados goleadores
-            $data['strikes'] = "";
 
-            //Lo más leído
-            $data['loMasLeido'] = "";
-
-            //La Voz de las Tribunas
-            $data['laVozDeLasTribunas'] = "";
-
-            //Zona Fe
-            $data['zonaFe'] = "";
-
-            return $this->load->view('sidebardonbalon', $data, TRUE);
         }
     }
 
