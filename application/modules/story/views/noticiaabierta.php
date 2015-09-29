@@ -21,23 +21,22 @@
         </div>
         <div class="col-md-5  col-xs-12 margen0">
 
-            <div class="col-md-12 col-xs-5 margen0">
-                <div class="col-md-12 col-xs-7 margen0">
-                    <div class="col-md-6 col-xs-12">
+            <div class="col-md-12 col-xs-12 margen0">                
+                    <div class="col-md-6 col-xs-4">
                         <div class="fb-like"
                              data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
-                             data-send="false" data-layout="button" data-width="90" data-show-faces="false"
+                             data-send="false" data-layout="box_count" data-width="90" data-show-faces="true"
                              data-font="arial"></div>
                     </div>
-                    <div class="col-md-6 col-xs-12 separadortw">
+                    <div class="col-md-6 col-xs-4 separadortw">
                         <a href="http://twitter.com/share" class="twitter-share-button"
                            data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
-                           data-count="none" data-via="futbolecuador" data-lang="es"
+                           data-count="vertical" data-via="futbolecuador" data-lang="es"
                            data-counturl="<?= $link; ?>">Tweet</a>
                         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
                     </div>
-                </div>
-                <div class="col-md-0 col-xs-5 visible-xs-block margen0  ">
+                
+                <div class="col-md-0 col-xs-4 visible-xs-block margen0  ">
                     <!--        Tag para watsapp-->
                     <a class='ssba'
                        data-action='share/whatsapp/share'
@@ -45,7 +44,8 @@
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
                 </div>
             </div>
-            <div class="col-md-12 col-xs-7   margen0">
+            <!-- Botones para redireccionar descarga aplicacion alertas -->
+            <!--  <div class="col-md-12 col-xs-7   margen0">
                 <div class="col-md-0 col-xs-6   margen0">
                     <a target="_blank" href="https://itunes.apple.com/app/id1008177383"
                        onclick="ga('send', 'event', 'btn-ios','click','push');"><img class="img-responsive"
@@ -58,18 +58,34 @@
                                                                                          src="<?php echo base_url() ?>imagenes/moviles/android.png"
                                                                                          id="btn-android"> </a>
                 </div>
-            </div>
+            </div>-->
         </div>
         <div class="margen10lados-sx  separador5">
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
         </div>
         <div class="ebzHere"></div>
-        <div class="banerintermedio">
-            <?php echo $banerintermedio; ?>
-        </div>
+        <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
+            ?>
+            <div class="banerintermedio">
+
+                <?php echo $banerintermedio; ?>
+            </div>
+
+        <?php }
+        ?>
         <div class="margen10lados-sx noticia-body">
             <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
         </div>
+
+        <?php if (strpos($noticia->body, "Lee la noticia completa en")) {
+            ?>
+            <div class="banerintermedio">
+
+                <?php echo $banerintermedio; ?>
+            </div>
+
+        <?php }
+        ?>
         <div class="margen10lados-sx noticia-body">
             <br/>
             <?php if (isset($autor[0]->twitter)) { ?>
@@ -88,9 +104,10 @@
 
             <br/>
             <br/>
-            <a href="http://push.futbolecuador.com/">
+            <!-- Link para redirecionar a push.futbolecuador.com -->
+            <!-- <a href="http://push.futbolecuador.com/">
                 ¿Querías ser el primero en leer esta noticia? Descarga ya <strong>#Alertas</strong>FutbolEcuador y recibe inmediatamente las alertas de tu equipo favorito.
-            </a>
+            </a> -->
             <br/>
             <br/>
         </div>

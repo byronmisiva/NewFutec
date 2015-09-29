@@ -1044,7 +1044,7 @@
                                                 width="18" heigth="115"/></div>
             <div class="otrasmodelos">
                 <ul>
-                    <li class="galeria20"><img id="galeria21" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg"
+                    <li class="galeria21"><img id="galeria21" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg"
                                                width="110" heigth="140" alt="Carolina"/></li>
                     <li class="galeria20"><img id="galeria20" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1b.jpg"
                                                width="110" heigth="140" alt="Carolina"/></li>

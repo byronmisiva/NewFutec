@@ -80,7 +80,7 @@
     <!-- Input slider -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
-    <link href="<?php echo base_url() ?>assets/css/style.css?a=1" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/style.css?a=2" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css" media="screen">
 
@@ -238,8 +238,6 @@
             if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
                 if ((typeof event.isEmpty) == 'boolean') {
                     if (event.isEmpty) {
-
-
                         //para el caso de splash movil
                         <?php
                             if (isset($mostrarSplash)) {
@@ -249,7 +247,7 @@
                                 echo "mostrarBlackLayer;";
                             }
                         ?>
-                        //cleanBlackLayer;
+
                     } else {
                         //console.log ( event.isEmpty)
                         cargarSplash();
@@ -258,7 +256,6 @@
 
             }
             //para el caso de splash desktop
-            //para el caso de splash movil
             if (event.slot.i == '/1022247/FE_LOADING') {
                 console.log ("carga1 ");
                 if (event.isEmpty) {

@@ -1075,7 +1075,8 @@ h4.contenidos {
         margin-top: 0;
     }
     .separador10-xs {
-        margin-top: 95px;
+        margin-top: 16px;
+/*        margin-top: 95px;*/
         margin-left: -10px;
         margin-right: -10px;
     }
@@ -1355,11 +1356,11 @@ div#closeBanner {
     background-color: black;
     border: 1px solid #cccccc;
     cursor: pointer;
-    height: 20px;
+    height: 30px;
     opacity: 0.6;
     left: 0;
     top: -20px;
-    width: 81px;
+    width: 110px;
 }
 
 

@@ -8,7 +8,7 @@
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=1') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/notificacion.js') ?>"></script>
 
 
@@ -28,7 +28,6 @@
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>assets/js/add2home.js?v1"></script>
 
 <script src="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.js') ?>"></script>
 

@@ -1,37 +1,7 @@
-// En caso que fe_header no contenga publicidad
-$(function () {
-    limpiar_fe_header();
-    feHeaderVar = setInterval(function () {
-        limpiar_fe_header()
-    },5000);
-})
-
-function limpiar_fe_header() {
-    if (verMobile == 1) {
-        if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
-            $('#div-gpt-ad-1383593619381-0').hide()
-            $('.separador10-xs').css('margin-top', '16px');
-        } else {
-            $('#div-gpt-ad-1383593619381-0').show()
-            $('.separador10-xs').css('margin-top', '95px');
-        }
-    }
-}
-//Fin En caso que fe_header no contenga publicidad
-
 //fe header movil
 setTimeout(function () {
     cargarSplash();
 }, 2000);
-
-var myVar = setInterval(function () {
-    limpiar_fe_loading()
-}, 4000);
-function limpiar_fe_loading() {
-    //    if ($('#div-gpt-ad-1383593884981-1 iframe').length == 0 ) cleanBlackLayer ()
-}
-
-///////
 
 var masnoticas = "";
 
@@ -46,23 +16,48 @@ function cargarSplashFE() {
             $('#darkLayerFE').hide();
             $('#FE_LOADINGFE').hide();
         })
-        //cleanBlackLayer;
+
     }
 };
 
 function cargarSplash() {
 
-    $('#darkLayer').show();
-    $('#FE_LOADING').show();
-    //funcion enviar encuesta
-    $("#closeBanner").click(function () {
-        $('#darkLayer').hide();
-        $('#FE_LOADING').hide();
-    })
-    setTimeout(cleanBlackLayer, 70000);
+    if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
+        $('#div-gpt-ad-1383593619381-0').hide()
+        $('.separador10-xs').css('margin-top', '16px');
+    } else {
+        $('#div-gpt-ad-1383593619381-0').show()
+        $('.separador10-xs').css('margin-top', '95px');
+    }
+
+    if (verMobile == 1) {
+        // caso movil
+        if ($("#div-gpt-ad-1383593884981-1 iframe").contents().find("body").html().length > 0) {
+            $('#darkLayer').show();
+            $('#FE_LOADING').show();
+            //funcion enviar encuesta
+            $("#closeBanner").click(function () {
+                $('#darkLayer').hide();
+                $('#FE_LOADING').hide();
+            })
+            setTimeout(cleanBlackLayer, 14000);
+        }
+    } else {
+        // caso desktop
+        if ($("#div-gpt-ad-1425424774921-0 iframe").contents().find("body").html().length > 0) {
+            $('#darkLayer').show();
+            $('#FE_LOADING').show();
+            //funcion enviar encuesta
+            $("#closeBanner").click(function () {
+                $('#darkLayer').hide();
+                $('#FE_LOADING').hide();
+            })
+            setTimeout(cleanBlackLayer, 100000);
+        }
+    }
+
 
 };
-
 
 var cleanBlackLayer = function () {
     $('#darkLayer').hide();
@@ -428,8 +423,8 @@ jQuery(function () {
     jQuery(".contenidoexclusivo").show();
 
 
-    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17,#main-slider18,#main-slider19,#main-slider20').liquidSlider({
-        //  jQuery('#main-slider15,#main-slider16').liquidSlider({
+    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17,#main-slider18,#main-slider19,#main-slider20,#main-slider21').liquidSlider({
+
         includeTitle: false,
         mobileNavigation: false,
         slideEaseFunction: "easeInOutCubic",
@@ -442,7 +437,6 @@ jQuery(function () {
     });
 
 
-    //jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16').adjustHeightNoAnimation();
     ancho = $("body").width();
     if (ancho < 600) {
         if (ancho < 380) {
@@ -461,13 +455,13 @@ jQuery(function () {
         scroll: 2
     });
     jQuery(".containerfueradejuego").hide();
-    jQuery(".galeria20content").show();
+    jQuery(".galeria21content").show();
 
 
     // funcion swipe menu inferior
     jQuery(".otrasmodelos").swipe({
         tap: function (event, target) {
-            for (var i = 1; i <= 20; i++)
+            for (var i = 1; i <= 21; i++)
                 jQuery(".galeria" + i + "content").hide();
             thisLocal = target;
             jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
@@ -492,8 +486,8 @@ jQuery(function () {
         threshold: 0
     });
     //menuchicas
-    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20").click(function () {
-        for (var i = 1; i <= 20; i++)
+    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20,.otrasmodelos .galeria21").click(function () {
+        for (var i = 1; i <= 21; i++)
             jQuery(".galeria" + i + "content").hide();
         jQuery("." + jQuery(this).attr('class') + "content").show();
         idclic = jQuery(this).attr('class');
@@ -663,14 +657,14 @@ function igualarancho() {
 
 if ((verMobile == 1 ) && (uri == "movil")) {
 //add2home
-    var addToHomeConfig = {
-        animationIn: 'bubble',
-        animationOut: 'drop',
-        lifespan: 1000,
-        expire: 2,
-        touchIcon: true,
-        message: 'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
-    };
+    /*    var addToHomeConfig = {
+     animationIn: 'bubble',
+     animationOut: 'drop',
+     lifespan: 300,
+     expire: 1,
+     touchIcon: true,
+     message: 'Guarda esta aplicación en tu móvil. Da click en la fecha y selecciona `Añadir a la pantalla de inicio`.'
+     };*/
 }
 
 $(document).ready(function () {
