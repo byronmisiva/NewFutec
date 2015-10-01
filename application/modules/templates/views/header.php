@@ -41,7 +41,7 @@
     <!--TAGS com.misiva.futbolecuadorpush 1008177383-->
     <!--TAGS com.futbolecuador.femagazine 622931242-->
 
-   <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">
         twttr.conversion.trackPid('l4vk1');
     </script>
@@ -82,7 +82,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     <link href="<?php echo base_url() ?>assets/css/style.css?a=2" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css" media="screen">
+    <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css"
+          media="screen">
 
 
     <link href="<?php echo base_url('assets/css/add2home.css') ?>" rel="stylesheet">
@@ -111,25 +112,25 @@
     if ($verMobile == "1") {
         ?>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <script type="text/javascript" async defer
                 src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
         </script>
     <?php
     } else {
-        if ($verMobile == "2") {
-            ?>
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-            <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
+    if ($verMobile == "2") {
+    ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
         <?php
-        } else {
-            ?>
-            <link rel="chrome-webstore-item"
-                  href="https://chrome.google.com/webstore/detail/cjkoikfgconobaeikllfnkpnjihcfnil">
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-            <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
+    } else {
+        ?>
+    <link rel="chrome-webstore-item"
+          href="https://chrome.google.com/webstore/detail/cjkoikfgconobaeikllfnkpnjihcfnil">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <!--        <meta name="viewport" content="width=990, initial-scale=1, maximum-scale=1"/>-->
         <?php
-        }
+    }
     }
     ?>
     <script>
@@ -146,8 +147,8 @@
         _tsq.push(["setAccountName", "futbolecuador"]);
         _tsq.push(["trackPage"]);
 
-        (function() {
-            function z(){
+        (function () {
+            function z() {
                 var s = document.createElement("script");
                 s.type = "text/javascript";
                 s.async = "async";
@@ -155,6 +156,7 @@
                 var x = document.getElementsByTagName("script")[0];
                 x.parentNode.insertBefore(s, x);
             }
+
             if (window.attachEvent)
                 window.attachEvent("onload", z);
             else
@@ -177,7 +179,7 @@
         gads.type = 'text/javascript';
         var useSSL = 'https:' == document.location.protocol;
         gads.src = (useSSL ? 'https:' : 'http:') +
-        '//www.googletagservices.com/tag/js/gpt.js';
+            '//www.googletagservices.com/tag/js/gpt.js';
         var node = document.getElementsByTagName('script')[0];
         node.parentNode.insertBefore(gads, node);
     })();
@@ -222,10 +224,6 @@
         //netsonic
         googletag.defineSlot('/25992948/EC_futbolecuador.com_1x1', [1, 1], 'div-gpt-ad-1438988612575-0').addService(googletag.pubads());
 
-
-
-
-
         googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
@@ -235,35 +233,15 @@
         //console.log ("xx");
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
 
-            if (event.slot.i == '/1022247/FE_LOADING_MOVIL') {
-                if ((typeof event.isEmpty) == 'boolean') {
-                    if (event.isEmpty) {
-                        //para el caso de splash movil
-                        <?php
-                            if (isset($mostrarSplash)) {
-                                if ($mostrarSplash == "1")
-                                    echo "cargarSplashFE();";
-                            } else {
-                                echo "mostrarBlackLayer;";
-                            }
-                        ?>
-
-                    } else {
-                        //console.log ( event.isEmpty)
-                        cargarSplash();
-                    }
-                }
-
-            }
             //para el caso de splash desktop
             if (event.slot.i == '/1022247/FE_LOADING') {
-                console.log ("carga1 ");
+                console.log("carga1 ");
                 if (event.isEmpty) {
-                    console.log ("carga2 ");
-                    cleanBlackLayer ();
+
+                    cleanBlackLayer();
 
                 } else {
-                    console.log ("carga3 ");
+
                     <?php if ($verMobile != "1"){ ?>
                     cargarSplash();
 
@@ -296,8 +274,19 @@
 
 </script>
 <script type='text/javascript'>
+    <?php
+    if (isset($mostrarSplash)) {
+        if ($mostrarSplash == "1") {
+            echo "mostrarSplash = 1;";
+                }
+        else {
+            echo "mostrarSplash = 0;";
+    }} else {
+     echo "mostrarSplash = 0;";
+    }
+    ?>
     //espacios copa america
-    googletag.cmd.push(function() {
+    googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_BRAND_HEADER', [980, 50], 'div-gpt-ad-1432051647687-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_BRAND_HALF', [260, 90], 'div-gpt-ad-1432051647687-1').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_BRAND_SKY2', [728, 90], 'div-gpt-ad-1432051647687-2').addService(googletag.pubads());
@@ -318,7 +307,9 @@
 <!-- /25992948/EC_futbolecuador.com_1x1 -->
 <div id='div-gpt-ad-1438988612575-0' style='height:1px; width:1px;'>
     <script type='text/javascript'>
-        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1438988612575-0'); });
+        googletag.cmd.push(function () {
+            googletag.display('div-gpt-ad-1438988612575-0');
+        });
     </script>
 </div>
 
@@ -329,7 +320,6 @@
 </script>
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
-
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
 
@@ -344,8 +334,8 @@
     _tsq.push(["setAccountName", "futbolecuador"]);
     _tsq.push(["trackPage"]);
 
-    (function() {
-        function z(){
+    (function () {
+        function z() {
             var s = document.createElement("script");
             s.type = "text/javascript";
             s.async = "async";
@@ -353,6 +343,7 @@
             var x = document.getElementsByTagName("script")[0];
             x.parentNode.insertBefore(s, x);
         }
+
         if (window.attachEvent)
             window.attachEvent("onload", z);
         else
@@ -430,8 +421,6 @@
 <!-- End Alexa Certify Javascript -->
 
 
-
-
 <div id="darkLayerFE" style="display:none;"></div>
 <div id="FE_LOADINGFE" style="display:none;">
     <!-- Gestion revistaFE -->
@@ -448,7 +437,7 @@
                 <div class="itunesFE" id="itunesFE"></div>
             </a>
             <a href="http://goo.gl/jhlPq" target='_blank' );>
-            <div class="googleFE" id="googleFE"></div>
+                <div class="googleFE" id="googleFE"></div>
             </a>
         </div>
     </div>

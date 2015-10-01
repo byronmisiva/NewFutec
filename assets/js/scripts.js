@@ -8,26 +8,28 @@ var masnoticas = "";
 
 //inicio funciones splash
 function cargarSplashFE() {
-    if ((verMobile == 1 ) && (uri == "movil")) {
+    //if ((verMobile == 1 ) && (uri == "movil")) {
         $('#darkLayerFE').show();
         $('#FE_LOADINGFE').show();
         //funcion spalsh movil
-        $(".redireccionFE, .deviceFE, #closeBanner").click(function () {
+        $(".redireccionFE, .deviceFE, #closeBanner, .introFE").click(function () {
             $('#darkLayerFE').hide();
             $('#FE_LOADINGFE').hide();
         })
 
-    }
+    //}
 };
 
 function cargarSplash() {
 
     if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
-        $('#div-gpt-ad-1383593619381-0').hide()
-        $('.separador10-xs').css('margin-top', '16px');
+        $('#div-gpt-ad-1383593619381-0').hide();
+        if (verMobile == 1)
+            $('.separador10-xs').css('margin-top', '16px');
     } else {
-        $('#div-gpt-ad-1383593619381-0').show()
-        $('.separador10-xs').css('margin-top', '95px');
+        $('#div-gpt-ad-1383593619381-0').show();
+        if (verMobile == 1)
+            $('.separador10-xs').css('margin-top', '95px');
     }
 
     if (verMobile == 1) {
@@ -41,6 +43,9 @@ function cargarSplash() {
                 $('#FE_LOADING').hide();
             })
             setTimeout(cleanBlackLayer, 14000);
+        } else {
+            if (mostrarSplash == 1)
+                cargarSplashFE();
         }
     } else {
         // caso desktop
@@ -53,6 +58,9 @@ function cargarSplash() {
                 $('#FE_LOADING').hide();
             })
             setTimeout(cleanBlackLayer, 100000);
+        } else {
+            if (mostrarSplash == 1)
+                cargarSplashFE();
         }
     }
 
@@ -423,7 +431,7 @@ jQuery(function () {
     jQuery(".contenidoexclusivo").show();
 
 
-    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17,#main-slider18,#main-slider19,#main-slider20,#main-slider21').liquidSlider({
+    jQuery('#main-slider1, #main-slider2, #main-slider3, #main-slider4,#main-slider5, #main-slider6,#main-slider7,#main-slider8,#main-slider9,#main-slider10,#main-slider11,#main-slider12,#main-slider13,#main-slider14,#main-slider15,#main-slider16,#main-slider17,#main-slider18,#main-slider19,#main-slider20,#main-slider21,#main-slider22').liquidSlider({
 
         includeTitle: false,
         mobileNavigation: false,
@@ -455,13 +463,13 @@ jQuery(function () {
         scroll: 2
     });
     jQuery(".containerfueradejuego").hide();
-    jQuery(".galeria21content").show();
+    jQuery(".galeria22content").show();
 
 
     // funcion swipe menu inferior
     jQuery(".otrasmodelos").swipe({
         tap: function (event, target) {
-            for (var i = 1; i <= 21; i++)
+            for (var i = 1; i <= 22; i++)
                 jQuery(".galeria" + i + "content").hide();
             thisLocal = target;
             jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
@@ -486,8 +494,8 @@ jQuery(function () {
         threshold: 0
     });
     //menuchicas
-    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20,.otrasmodelos .galeria21").click(function () {
-        for (var i = 1; i <= 21; i++)
+    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20,.otrasmodelos .galeria21,.otrasmodelos .galeria22").click(function () {
+        for (var i = 1; i <= 22; i++)
             jQuery(".galeria" + i + "content").hide();
         jQuery("." + jQuery(this).attr('class') + "content").show();
         idclic = jQuery(this).attr('class');

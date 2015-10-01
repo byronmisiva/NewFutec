@@ -1319,8 +1319,6 @@ div#darkLayerFE {
     z-index: 1035;
 }
 
-
-
 div#FE_LOADINGFE {
     left: 0;
     right: 0;
@@ -1329,6 +1327,7 @@ div#FE_LOADINGFE {
     top: 10px;
     width: 95%;
     z-index: 1040;
+    max-width: 480px;
 }
 div#darkLayer {
     background-color: #000000;

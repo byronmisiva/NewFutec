@@ -6,23 +6,23 @@
         </h4>
     </div>
     <div class="  ">
-        <div class="containerfueradejuego galeria21content">
-            <div class="liquid-slider" id="main-slider21">
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1a.jpg" alt="Karen"/>
+        <div class="containerfueradejuego galeria22content">
+            <div class="liquid-slider" id="main-slider22">
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/1b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/1a.jpg" alt="Karen"/>
                        <!-- <div class="socialesFueradeJuego">
                         Nombre
                         twiter
                         facebook
                     </div>-->
                 </div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/2b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/2a.jpg" alt="Karen"/></div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/3b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/3a.jpg" alt="Karen"/>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/2b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/2a.jpg" alt="Karen"/></div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/3b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/3a.jpg" alt="Karen"/>
                 </div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/4b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/4a.jpg" alt="Karen"/>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/4b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/4a.jpg" alt="Karen"/>
                     <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="logosGPAS">
@@ -34,8 +34,8 @@
                             </a></div>
                     </div>
                 </div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/5b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/5a.jpg" alt="Karen"/>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/5b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/5a.jpg" alt="Karen"/>
 
                     <div class="contenidoexclusivo" style="display: none">  </div>
                     <div class="contenidoexclusivo" style="display: none">  </div>
@@ -52,6 +52,48 @@
             </div>
 
         </div>
+
+        <div class="containerfueradejuego galeria21content">
+            <div class="liquid-slider" id="main-slider21">
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1a.jpg" alt="Karen"/></div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/2b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/2a.jpg" alt="Karen"/></div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/3b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/3a.jpg" alt="Karen"/>
+                </div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/4b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/4a.jpg" alt="Karen"/>
+
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="logosGPAS">
+                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
+                                <div></div>
+                            </a></div>
+                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
+                                <div></div>
+                            </a></div>
+                    </div>
+                </div>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/5b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/5a.jpg" alt="Karen"/>
+
+                    <div class="contenidoexclusivo" style="display: none">  </div>
+                    <div class="logosGPAS">
+                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
+                                <div></div>
+                            </a></div>
+                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
+                                <div></div>
+                            </a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
 
         <div class="containerfueradejuego galeria20content">
             <div class="liquid-slider" id="main-slider20">
@@ -1044,6 +1086,8 @@
                                                 width="18" heigth="115"/></div>
             <div class="otrasmodelos">
                 <ul>
+                    <li class="galeria22"><img id="galeria22" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/1b.jpg"
+                                               width="110" heigth="140" alt="Carolina"/></li>
                     <li class="galeria21"><img id="galeria21" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg"
                                                width="110" heigth="140" alt="Carolina"/></li>
                     <li class="galeria20"><img id="galeria20" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1b.jpg"
