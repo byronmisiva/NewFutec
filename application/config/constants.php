@@ -81,7 +81,7 @@ define('URLAMERICA',"copaamerica");
 
 
 //Futbolecuador
-define('CHAMP_DEFAULT',53);
+//define('CHAMP_DEFAULT',53);
 
 //define('REFRESH_VIVO',300); //segundos
 define('REFRESH_VIVO',60); //segundos

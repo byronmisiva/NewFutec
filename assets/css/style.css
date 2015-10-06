@@ -1167,7 +1167,7 @@ h4.contenidos {
 
 .navbar-futec {
     background-color: #133751;
-    border-color:92 #06131d;
+    border-color: #06131d;
 }
 
 .navbar-futec .navbar-collapse {
@@ -1452,7 +1452,7 @@ input[type="checkbox"], input[type="radio"] {
     width: 100%;
     position: absolute;
     left: 0;
-    top:0;
+    top:30px;
     border: 1px solid white;
 }
 

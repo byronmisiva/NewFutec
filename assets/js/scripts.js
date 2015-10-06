@@ -3,19 +3,20 @@ setTimeout(function () {
     cargarSplash();
 }, 2000);
 
+
 var masnoticas = "";
 
 
 //inicio funciones splash
 function cargarSplashFE() {
     //if ((verMobile == 1 ) && (uri == "movil")) {
-        $('#darkLayerFE').show();
-        $('#FE_LOADINGFE').show();
-        //funcion spalsh movil
-        $(".redireccionFE, .deviceFE, #closeBanner, .introFE").click(function () {
-            $('#darkLayerFE').hide();
-            $('#FE_LOADINGFE').hide();
-        })
+    $('#darkLayerFE').show();
+    $('#FE_LOADINGFE').show();
+    //funcion spalsh movil
+    $(".redireccionFE, .deviceFE, #closeBanner, .introFE").click(function () {
+        $('#darkLayerFE').hide();
+        $('#FE_LOADINGFE').hide();
+    })
 
     //}
 };
@@ -45,7 +46,8 @@ function cargarSplash() {
             setTimeout(cleanBlackLayer, 14000);
         } else {
             if (mostrarSplash == 1)
-                cargarSplashFE();
+                if (validarCookie())
+                    cargarSplashFE();
         }
     } else {
         // caso desktop
@@ -60,7 +62,8 @@ function cargarSplash() {
             setTimeout(cleanBlackLayer, 100000);
         } else {
             if (mostrarSplash == 1)
-                cargarSplashFE();
+                if (validarCookie())
+                    cargarSplashFE();
         }
     }
 
@@ -717,4 +720,53 @@ $(document).ready(function () {
     //})
 });
 
+
+// Grabar
+function setCookie(name, value, expires, path, domain, secure) {
+    document.cookie = name + "=" + escape(value) +
+        ((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
+        ((path == null) ? "" : "; path=" + path) +
+        ((domain == null) ? "" : "; domain=" + domain) +
+        ((secure == null) ? "" : "; secure");
+}
+
+// Leer
+function getCookie(name) {
+    var cname = name + "=";
+    var dc = document.cookie;
+    if (dc.length > 0) {
+        begin = dc.indexOf(cname);
+        if (begin != -1) {
+            begin += cname.length;
+            end = dc.indexOf(";", begin);
+            if (end == -1) end = dc.length;
+            return unescape(dc.substring(begin, end));
+        }
+    }
+    return null;
+}
+
+//Borrar
+function delCookie(name, path, domain) {
+    if (getCookie(name)) {
+        document.cookie = name + "=" +
+            ((path == null) ? "" : "; path=" + path) +
+            ((domain == null) ? "" : "; domain=" + domain) +
+            "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+    }
+}
+
+function validarCookie() {
+    var comprobar = getCookie("vezprimera");
+    if (comprobar != null) {
+        return false;
+    }
+    else {
+        var expiration = new Date();
+        //expiration.setTime(expiration.getTime() + 86400000);
+          expiration.setTime(expiration.getTime() + 7200000);
+        setCookie("vezprimera", "1", expiration);
+        return true
+    }
+}
 
