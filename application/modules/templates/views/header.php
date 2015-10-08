@@ -424,7 +424,7 @@
 <div id="darkLayerFE" style="display:none;"></div>
 <div id="FE_LOADINGFE" style="display:none;">
     <!-- Gestion revistaFE -->
-    <div id='closeBanner' onclick='cleanBlackLayer();'>
+    <div class='closeBanner' onclick='cleanBlackLayer();'>
         <img src='<?= base_url() ?>assets/img/close_banner.png'
              width='81' height='20'/>
     </div>

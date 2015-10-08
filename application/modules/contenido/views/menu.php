@@ -205,8 +205,8 @@
                 </div>
                 <!-- end col-4 -->
                 <div class="col-sm-3 text-center separador-dotted">
-                    <a href="<?= base_url('copa-america') ?>" class="pull-left">
-                        <img src="<?= base_url('assets/img/copa-america-2015.png') ?>" alt="Copa America" title="Lea todo sobre la Copa America">
+                    <a href="<?= base_url('eliminatorias') ?>" class="pull-left">
+                        <img src="<?= base_url('assets/img/mundial-2018.png') ?>" alt="Copa America" title="Lea todo sobre las eliminatorias">
                     </a>
                 </div>
                 <div class="col-sm-3  text-center separador-dotted">

@@ -13,7 +13,7 @@ function cargarSplashFE() {
     $('#darkLayerFE').show();
     $('#FE_LOADINGFE').show();
     //funcion spalsh movil
-    $(".redireccionFE, .deviceFE, #closeBanner, .introFE").click(function () {
+    $(".redireccionFE, .deviceFE, .closeBanner, .introFE").click(function () {
         $('#darkLayerFE').hide();
         $('#FE_LOADINGFE').hide();
     })
@@ -39,7 +39,7 @@ function cargarSplash() {
             $('#darkLayer').show();
             $('#FE_LOADING').show();
             //funcion enviar encuesta
-            $("#closeBanner").click(function () {
+            $(".closeBanner").click(function () {
                 $('#darkLayer').hide();
                 $('#FE_LOADING').hide();
             })
@@ -55,7 +55,7 @@ function cargarSplash() {
             $('#darkLayer').show();
             $('#FE_LOADING').show();
             //funcion enviar encuesta
-            $("#closeBanner").click(function () {
+            $(".closeBanner").click(function () {
                 $('#darkLayer').hide();
                 $('#FE_LOADING').hide();
             })
@@ -145,7 +145,7 @@ jQuery(document).ready(function () {
     })
 
     //ocultar el splash
-    $("#closeBanner").click(function () {
+    $(".closeBanner").click(function () {
         cleanBlackLayer()
     })
 

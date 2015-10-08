@@ -24,7 +24,7 @@ class Contenido extends MY_Controller
         //$this->output->cache(CACHE_DEFAULT);
 
         $this->load->module('teams_position');
-        $positions = $this->mdl_teams_position->get_table_by_champ(SECTION_SERIE_A);
+        $positions = $this->mdl_teams_position->get_table_by_champ(SERIE_A);
         $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 2);
         $data['serieb'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_B, 2);
         $data['seleccion'] = $this->mdl_noticias->get_by_position(1, SECTION_SELECCION, 2);

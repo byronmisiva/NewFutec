@@ -56,6 +56,8 @@ define('SECTION_SUDAMERICANA',32);
 
 define('SECTION_AMERICA',71);
 
+define('SECTION_ELIMINATORIAS',71);
+
 //Campeonatos
 define('SERIE_A',53);
 define('SERIE_A_TIPOTABLA',"acumulada");
@@ -71,6 +73,9 @@ define('LIBERTADORES_TIPOTABLA',"simple");
 
 define('SUDAMERICANA',52);
 define('SUDAMERICANA_TIPOTABLA',"simple");
+
+define('ELIMINATORIAS',58);
+define('ELIMINATORIAS_TIPOTABLA',"simple");
 
 define('AMERICA',56);
 define('AMERICA_TIPOTABLA',"simple");
@@ -106,6 +111,9 @@ define('ZONACOPALIBERTADORESPOS', null);
 
 define('ZONACOPASUDAMERICANA',32);
 define('ZONACOPASUDAMERICANAPOS',null);
+
+define('ZONAELIMINATORIAS',71);
+define('ZONAELIMINATORIASPOS',null);
 
 //todo actualizar copa america
 define('ZONACOPAAMERICA'   ,71);

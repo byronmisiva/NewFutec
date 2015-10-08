@@ -1438,7 +1438,7 @@ div#FE_LOADING {
     z-index: 1040;
 }
 
-div#closeBanner {
+div.closeBanner {
     background-color: black;
     border: 1px solid #cccccc;
     cursor: pointer;
@@ -1449,7 +1449,7 @@ div#closeBanner {
     width: 81px;
 }
 
-div#closeBanner {
+div.closeBanner {
     cursor: pointer;
 }
 
