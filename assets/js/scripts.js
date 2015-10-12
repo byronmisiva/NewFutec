@@ -209,12 +209,16 @@ jQuery(document).ready(function () {
         link = $(".result-link").attr("href");
         var res = link.split("/");
         //reemplazar el penultimo
-        res1 = res[res.length - 1];
-        link = link.replace(res1, $(this).attr("data-info"));
-        res2 = res[res.length - 0];
-
-        link = link.replace(res2, $(this).attr("data-name"));
-        $(".result-link").attr("href", link);
+        for (i=0; i < res.length; i++ ){
+            console.log (res)
+            if (res[i] == 'resultados') {
+                res1 = res[i + 1];
+                link = link.replace(res1, $(this).attr("data-info"));
+                res2 = res[i + 2];
+                link = link.replace(res2, $(this).attr("data-name"));
+                $(".result-link").attr("href", link);
+            }
+        }
     })
     var original = jQuery(".et_lb_module_content_inner").html();
     jQuery.each(jQuery(".cargo select option"), function (index, value) {

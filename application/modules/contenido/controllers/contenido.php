@@ -250,7 +250,7 @@ class Contenido extends MY_Controller
         return $this->load->view('search', $data, TRUE);
     }
 
-    public function sidebar($data = FALSE, $serie = SERIE_A)
+    public function sidebar($data = FALSE, $serie = SERIE_A, $tipoTabla = SERIE_A_TIPOTABLA)
     {
 
         //carga Banners
@@ -294,7 +294,7 @@ class Contenido extends MY_Controller
         $this->load->module('scoreboards');
 
 
-        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
+        $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipoTabla);
 
         //Resultados goleadores
         $this->load->module('strikes');

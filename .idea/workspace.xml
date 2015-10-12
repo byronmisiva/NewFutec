@@ -5,82 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/tiny_confNuevaVersion.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/css/advhr.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/editor_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/editor_plugin_src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/js/rule.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/langs/en_dlg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/langs/es_dlg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/advhr/rule.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/editor_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/editor_plugin_src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/emotions.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-cool.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-cry.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-embarassed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-foot-in-mouth.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-frown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-innocent.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-kiss.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-laughing.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-money-mouth.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-sealed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-smile.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-surprised.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-tongue-out.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-undecided.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-wink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/img/smiley-yell.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/js/emotions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/langs/en_dlg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/emotions/langs/es_dlg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/editor_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/editor_plugin_src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/button.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/inlinepopups/template.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/safari/blank.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/safari/editor_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/safari/editor_plugin_src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/abbr.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/acronym.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/attributes.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/cite.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/css/attributes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/css/popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/del.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/editor_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/editor_plugin_src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/ins.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/abbr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/acronym.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/cite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/del.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/element_common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/js/ins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/js/tiny_mce/plugins/xhtmlxtras/langs/es_dlg.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/tiny_conf_oldVersion.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" afterPath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/templates/admin.php" afterPath="$PROJECT_DIR$/admin/application/views/templates/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" afterPath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/championships_vupdate.php" afterPath="$PROJECT_DIR$/admin/application/views/championships_vupdate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/config/constants.php" afterPath="$PROJECT_DIR$/admin/application/config/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" afterPath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_header.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_skin.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_skin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/footerend.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/matches_actions.php" afterPath="$PROJECT_DIR$/admin/application/controllers/matches_actions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/stories.php" afterPath="$PROJECT_DIR$/admin/application/controllers/stories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" afterPath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/tiny_conf.js" afterPath="$PROJECT_DIR$/admin/js/tiny_conf.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -106,67 +50,160 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footerend.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pushwoosh.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/pushwoosh.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="120" selection-start-line="152" selection-start-column="120" selection-end-line="152" selection-end-column="120" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="1172" column="7" selection-start-line="1172" selection-start-column="7" selection-end-line="1172" selection-end-column="7" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#pushwooshUnregisterDevice#0" expanded="false" />
-                <element signature="n#!!block;n#pushwooshStatistics#0" expanded="false" />
+                <marker date="1444661289000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
+                <marker date="1444661289000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
+                <marker date="1444661289000" expanded="true" signature="1188:1268" placeholder="select COUNT..rounds..." />
+                <marker date="1444661289000" expanded="true" signature="3146:3239" placeholder="SELECT *, NO..parametros..." />
+                <marker date="1444661289000" expanded="true" signature="3733:3776" placeholder="SELECT valor..parametros..." />
+                <marker date="1444661289000" expanded="true" signature="4627:4687" placeholder="SELECT valor..parametros..." />
+                <marker date="1444661289000" expanded="true" signature="6241:6293" placeholder="..." />
+                <marker date="1444661289000" expanded="true" signature="6345:6385" placeholder="..." />
+                <marker date="1444661289000" expanded="true" signature="6386:6511" placeholder="..." />
+                <marker date="1444661289000" expanded="true" signature="6400:6430" placeholder="..." />
+                <marker date="1444661289000" expanded="true" signature="6463:6489" placeholder="..." />
+                <marker date="1444661289000" expanded="true" signature="7867:7910" placeholder="SELECT valor..parametros..." />
+                <marker date="1444661289000" expanded="true" signature="20751:20811" placeholder="SELECT valor..parametros..." />
+                <marker date="1444661289000" expanded="true" signature="49314:49357" placeholder="SELECT valor..parametros..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <file leaf-file-name="matches_actions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/matches_actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.083333">
-              <caret line="144" column="124" selection-start-line="141" selection-start-column="21" selection-end-line="144" selection-end-column="124" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="465" column="83" selection-start-line="465" selection-start-column="81" selection-end-line="465" selection-end-column="83" />
               <folding>
-                <element signature="n#getnewsjsonapp#0;n#Site#0;n#!!top" expanded="false" />
-                <marker date="1442854698000" expanded="true" signature="2419:2512" placeholder="SELECT *, NO..parametros..." />
-                <marker date="1442854698000" expanded="true" signature="3006:3049" placeholder="SELECT valor..parametros..." />
-                <marker date="1442854698000" expanded="true" signature="3900:3960" placeholder="SELECT valor..parametros..." />
-                <marker date="1442854698000" expanded="true" signature="5502:5554" placeholder="..." />
-                <marker date="1442854698000" expanded="true" signature="5606:5646" placeholder="..." />
-                <marker date="1442854698000" expanded="true" signature="5647:5772" placeholder="..." />
-                <marker date="1442854698000" expanded="true" signature="5661:5691" placeholder="..." />
-                <marker date="1442854698000" expanded="true" signature="5724:5750" placeholder="..." />
-                <marker date="1442854698000" expanded="true" signature="19613:19673" placeholder="SELECT valor..parametros..." />
-                <marker date="1442854698000" expanded="true" signature="47892:47935" placeholder="SELECT valor..parametros..." />
+                <marker date="1444661479000" expanded="true" signature="1485:1636" placeholder="SELECT id, n..teams..." />
+                <marker date="1444661479000" expanded="true" signature="1715:1775" placeholder="SELECT group..matches..." />
+                <marker date="1444661479000" expanded="true" signature="1846:2094" placeholder="SELECT c.nam..championships..." />
+                <marker date="1444661479000" expanded="true" signature="2141:2392" placeholder="SELECT mt.te..matches_teams..." />
+                <marker date="1444661479000" expanded="true" signature="2439:2878" placeholder="SELECT rc.id..*..." />
+                <marker date="1444661479000" expanded="true" signature="2513:2592" placeholder="SELECT mr. *..matches_referee..." />
+                <marker date="1444661479000" expanded="true" signature="4735:4824" placeholder="SELECT id, s..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="4948:5037" placeholder="SELECT id, s..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="5555:6186" placeholder="SELECT p.id,..*..." />
+                <marker date="1444661479000" expanded="true" signature="5611:6118" placeholder="SELECT * FRO..id..." />
+                <marker date="1444661479000" expanded="true" signature="5641:5865" placeholder="SELECT id as..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="5928:6099" placeholder="SELECT id as..cards..." />
+                <marker date="1444661479000" expanded="true" signature="6235:6850" placeholder="SELECT p.id,..*..." />
+                <marker date="1444661479000" expanded="true" signature="6291:6782" placeholder="SELECT * FRO..id..." />
+                <marker date="1444661479000" expanded="true" signature="6321:6529" placeholder="SELECT id as..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="6592:6763" placeholder="SELECT id as..cards..." />
+                <marker date="1444661479000" expanded="true" signature="7925:8556" placeholder="SELECT p.id,..*..." />
+                <marker date="1444661479000" expanded="true" signature="7981:8488" placeholder="SELECT * FRO..id..." />
+                <marker date="1444661479000" expanded="true" signature="8011:8235" placeholder="SELECT id as..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="8298:8469" placeholder="SELECT id as..cards..." />
+                <marker date="1444661479000" expanded="true" signature="9083:9763" placeholder="SELECT p.id,..*..." />
+                <marker date="1444661479000" expanded="true" signature="9143:9698" placeholder="SELECT * FRO..id..." />
+                <marker date="1444661479000" expanded="true" signature="9177:9392" placeholder="SELECT id as..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="9459:9679" placeholder="SELECT id as..cards..." />
+                <marker date="1444661479000" expanded="true" signature="9900:10005" placeholder="SELECT a.id,..." />
+                <marker date="1444661479000" expanded="true" signature="10071:10349" placeholder="SELECT g.id,..goals..." />
+                <marker date="1444661479000" expanded="true" signature="10390:10668" placeholder="SELECT c.id,..cards..." />
+                <marker date="1444661479000" expanded="true" signature="10709:11370" placeholder="SELECT entra..id..." />
+                <marker date="1444661479000" expanded="true" signature="10789:11072" placeholder="SELECT c.id,..changes..." />
+                <marker date="1444661479000" expanded="true" signature="11110:11319" placeholder="SELECT c.id,..changes..." />
+                <marker date="1444661479000" expanded="true" signature="11411:11513" placeholder="SELECT id, t..teams..." />
+                <marker date="1444661479000" expanded="true" signature="11583:11637" placeholder="SELECT group..matches..." />
+                <marker date="1444661479000" expanded="true" signature="15362:15410" placeholder="SELECT c.in,..changes..." />
+                <marker date="1444661479000" expanded="true" signature="15492:15585" placeholder="SELECT id, s..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="15653:15746" placeholder="SELECT id, s..lineups..." />
+                <marker date="1444661479000" expanded="true" signature="18758:19394" placeholder="SELECT match..matches_teams..." />
+                <marker date="1444661479000" expanded="true" signature="18815:18887" placeholder="select teams..teams..." />
+                <marker date="1444661479000" expanded="true" signature="18925:19002" placeholder="select secti..sections..." />
+                <marker date="1444661479000" expanded="true" signature="19070:19142" placeholder="select teams..teams..." />
+                <marker date="1444661479000" expanded="true" signature="19180:19257" placeholder="select secti..sections..." />
+                <marker date="1444661479000" expanded="true" signature="19764:19802" placeholder="SELECT resul..matches..." />
+                <marker date="1444661479000" expanded="true" signature="23250:23307" placeholder="Select * Fro..goals..." />
+                <marker date="1444661479000" expanded="true" signature="24112:24212" placeholder="Select t.id,..teams..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contenido.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="377" column="34" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="34" />
+              <folding>
+                <marker date="1444333084000" expanded="true" signature="3610:3670" placeholder="SELECT valor..parametros..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strikes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/strikes/controllers/strikes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strikesside.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tablaposiciones.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tablaposicionessimple.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/stories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+              <folding>
+                <marker date="1444665954000" expanded="true" signature="6926:7104" placeholder="SELECT id FR..sections..." />
+                <marker date="1444665954000" expanded="true" signature="7051:7103" placeholder="select categ..stories..." />
+                <marker date="1444665954000" expanded="true" signature="7558:7680" placeholder="select secti..sections_tags..." />
+                <marker date="1444665954000" expanded="true" signature="7620:7679" placeholder="select tag_i..stories_tags..." />
+                <marker date="1444665954000" expanded="true" signature="8242:8281" placeholder="select * fro..stories..." />
+                <marker date="1444665954000" expanded="true" signature="21388:22040" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="21397:22029" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="22843:23698" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="23086:23698" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="23443:23610" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="26226:26980" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="26543:26980" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="26781:26948" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="33033:33052" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="33797:33816" placeholder="..." />
+                <marker date="1444665954000" expanded="true" signature="39616:39720" placeholder="Select * Fro..stories..." />
+                <marker date="1444665954000" expanded="true" signature="39944:40119" placeholder="Update stori..." />
               </folding>
             </state>
           </provider>
@@ -175,22 +212,20 @@
       <file leaf-file-name="fe_cocafm.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43269232">
-              <caret line="15" column="132" selection-start-line="15" selection-start-column="132" selection-end-line="15" selection-end-column="132" />
+            <state vertical-scroll-proportion="0.028846154">
+              <caret line="1" column="135" selection-start-line="1" selection-start-column="135" selection-end-line="1" selection-end-column="135" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/register.js">
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+              <caret line="280" column="20" selection-start-line="280" selection-start-column="12" selection-end-line="280" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -218,56 +253,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/controllers/story.php" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_netsonic_tv.php" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_netsonic_home.php" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxsidebar2.php" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_new_filmstrip_banner.php" />
-        <option value="$PROJECT_DIR$/pruebas/tiwtter.html" />
-        <option value="$PROJECT_DIR$/pruebas/tiwtter_p.php" />
-        <option value="$PROJECT_DIR$/pruebas/twitter_p.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php" />
-        <option value="$PROJECT_DIR$/pruebas/twitter.php" />
-        <option value="$PROJECT_DIR$/pruebas/pruebasMail.html" />
-        <option value="$PROJECT_DIR$/pruebas/pruebamail.php" />
-        <option value="$PROJECT_DIR$/admin/application/config/database.php" />
-        <option value="$PROJECT_DIR$/admin/application/config/config.php" />
-        <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-        <option value="$PROJECT_DIR$/admin/lognotificaciones.txt" />
         <option value="$PROJECT_DIR$/pruebas/new.html" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/controllers/banners.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_superbanner_passback.php" />
         <option value="$PROJECT_DIR$/admin/system/core/Common.php" />
         <option value="$PROJECT_DIR$/admin/application/controllers/tags.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxbanner.php" />
         <option value="$PROJECT_DIR$/pruebas/pruebasAdsense.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebardonbalon.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/anuncio_alertas.php" />
         <option value="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" />
         <option value="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skin.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_header.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/templates/admin.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/stories.php" />
-        <option value="$PROJECT_DIR$/admin/js/tiny_conf.js" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0/pushwoosh.js" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0/manifest.json" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0/background.js" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/manifest.json" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/register.js" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/pushwoosh.js" />
-        <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
         <option value="$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/background.js" />
+        <option value="$PROJECT_DIR$/admin/js/tiny_conf.js" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/admin.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/config.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/championships_vupdate.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/championships/championships_vupdate.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/constants.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/views/menu.php" />
+        <option value="$PROJECT_DIR$/application/config/constants.php" />
+        <option value="$PROJECT_DIR$/application/modules/templates/views/index.php" />
+        <option value="$PROJECT_DIR$/assets/css/styledonbalon.css" />
+        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php" />
+        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil_copa_america.php" />
+        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_splash.php" />
+        <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
+        <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
+        <option value="$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
+        <option value="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php" />
+        <option value="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/matches_actions.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/stories.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php" />
       </list>
     </option>
@@ -286,7 +321,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="209" />
+    <option name="x" value="31" />
     <option name="y" value="23" />
     <option name="width" value="1711" />
     <option name="height" value="964" />
@@ -317,6 +352,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,9 +483,204 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scoreboards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scoreboards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scoreboards" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contenido" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contenido" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contenido" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="banners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="banners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -485,11 +716,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pluginChrome" />
+      <recent name="$PROJECT_DIR$/admin/application/views/templates" />
       <recent name="$PROJECT_DIR$/admin/js" />
+      <recent name="$PROJECT_DIR$/pluginChrome" />
       <recent name="$PROJECT_DIR$/imagenes/anuncio" />
       <recent name="$PROJECT_DIR$/application/modules/banners/views" />
-      <recent name="$PROJECT_DIR$/admin/application/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/modules/banners/views" />
@@ -550,66 +781,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00811" summary="e">
-      <created>1434127563247</created>
-      <option name="number" value="00811" />
-      <option name="project" value="LOCAL" />
-      <updated>1434127563248</updated>
-    </task>
-    <task id="LOCAL-00812" summary="e">
-      <created>1434127642964</created>
-      <option name="number" value="00812" />
-      <option name="project" value="LOCAL" />
-      <updated>1434127642964</updated>
-    </task>
-    <task id="LOCAL-00813" summary="e">
-      <created>1434127742369</created>
-      <option name="number" value="00813" />
-      <option name="project" value="LOCAL" />
-      <updated>1434127742370</updated>
-    </task>
-    <task id="LOCAL-00814" summary="e">
-      <created>1434127918827</created>
-      <option name="number" value="00814" />
-      <option name="project" value="LOCAL" />
-      <updated>1434127918827</updated>
-    </task>
-    <task id="LOCAL-00815" summary="e">
-      <created>1434128042849</created>
-      <option name="number" value="00815" />
-      <option name="project" value="LOCAL" />
-      <updated>1434128042849</updated>
-    </task>
-    <task id="LOCAL-00816" summary="e">
-      <created>1434128169709</created>
-      <option name="number" value="00816" />
-      <option name="project" value="LOCAL" />
-      <updated>1434128169709</updated>
-    </task>
-    <task id="LOCAL-00817" summary="e">
-      <created>1434128324321</created>
-      <option name="number" value="00817" />
-      <option name="project" value="LOCAL" />
-      <updated>1434128324322</updated>
-    </task>
-    <task id="LOCAL-00818" summary="e">
-      <created>1434133060940</created>
-      <option name="number" value="00818" />
-      <option name="project" value="LOCAL" />
-      <updated>1434133060940</updated>
-    </task>
-    <task id="LOCAL-00819" summary="e">
-      <created>1434147720619</created>
-      <option name="number" value="00819" />
-      <option name="project" value="LOCAL" />
-      <updated>1434147720619</updated>
-    </task>
-    <task id="LOCAL-00820" summary="e">
-      <created>1434411269010</created>
-      <option name="number" value="00820" />
-      <option name="project" value="LOCAL" />
-      <updated>1434411269014</updated>
     </task>
     <task id="LOCAL-00821" summary="e">
       <created>1434493884029</created>
@@ -845,7 +1016,67 @@
       <option name="project" value="LOCAL" />
       <updated>1442271440163</updated>
     </task>
-    <option name="localTasksCounter" value="860" />
+    <task id="LOCAL-00860" summary="e">
+      <created>1443542508231</created>
+      <option name="number" value="00860" />
+      <option name="project" value="LOCAL" />
+      <updated>1443542508232</updated>
+    </task>
+    <task id="LOCAL-00861" summary="e">
+      <created>1443543598939</created>
+      <option name="number" value="00861" />
+      <option name="project" value="LOCAL" />
+      <updated>1443543598940</updated>
+    </task>
+    <task id="LOCAL-00862" summary="e">
+      <created>1443543614910</created>
+      <option name="number" value="00862" />
+      <option name="project" value="LOCAL" />
+      <updated>1443543614910</updated>
+    </task>
+    <task id="LOCAL-00863" summary="e">
+      <created>1443646440411</created>
+      <option name="number" value="00863" />
+      <option name="project" value="LOCAL" />
+      <updated>1443646440411</updated>
+    </task>
+    <task id="LOCAL-00864" summary="e">
+      <created>1443646917604</created>
+      <option name="number" value="00864" />
+      <option name="project" value="LOCAL" />
+      <updated>1443646917604</updated>
+    </task>
+    <task id="LOCAL-00865" summary="e">
+      <created>1443647075818</created>
+      <option name="number" value="00865" />
+      <option name="project" value="LOCAL" />
+      <updated>1443647075818</updated>
+    </task>
+    <task id="LOCAL-00866" summary="e">
+      <created>1443647637247</created>
+      <option name="number" value="00866" />
+      <option name="project" value="LOCAL" />
+      <updated>1443647637247</updated>
+    </task>
+    <task id="LOCAL-00867" summary="e">
+      <created>1443718068709</created>
+      <option name="number" value="00867" />
+      <option name="project" value="LOCAL" />
+      <updated>1443718068711</updated>
+    </task>
+    <task id="LOCAL-00868" summary="e">
+      <created>1444171571554</created>
+      <option name="number" value="00868" />
+      <option name="project" value="LOCAL" />
+      <updated>1444171571719</updated>
+    </task>
+    <task id="LOCAL-00869" summary="e">
+      <created>1444318644398</created>
+      <option name="number" value="00869" />
+      <option name="project" value="LOCAL" />
+      <updated>1444318644406</updated>
+    </task>
+    <option name="localTasksCounter" value="870" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -869,7 +1100,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="23" width="1711" height="964" extended-state="0" />
+    <frame x="31" y="23" width="1711" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -878,7 +1109,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.48816234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23007789" sideWeight="0.64599776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2546435" sideWeight="0.64599776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.51183766" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -886,13 +1117,13 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35091743" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34977064" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.320304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299435" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -914,9 +1145,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21693811" sideWeight="0.65068495" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299435" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -949,64 +1180,51 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>640</line>
+          <line>661</line>
           <option name="timeStamp" value="1038" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php</url>
+          <line>34</line>
+          <option name="timeStamp" value="1044" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>141</line>
-          <option name="timeStamp" value="1040" />
+          <line>857</line>
+          <option name="timeStamp" value="1046" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
+          <line>155</line>
+          <option name="timeStamp" value="1063" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1041" />
+      <option name="time" value="1064" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
         <watch expression="$test" />
+        <watch expression="$row-&gt;active_championship" />
+        <watch expression="$consulta[0]-&gt;id" />
+        <watch expression="$consulta[0]-&gt;total" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
+    <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.7972973">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/pushwoosh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.003690037">
           <caret line="152" column="120" selection-start-line="152" selection-start-column="120" selection-end-line="152" selection-end-column="120" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#pushwooshUnregisterDevice#0" expanded="false" />
-            <element signature="n#!!block;n#pushwooshStatistics#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="495" column="33" selection-start-line="495" selection-start-column="33" selection-end-line="495" selection-end-column="33" />
-          <folding>
-            <element signature="n#getnewsjsonapp#0;n#Site#0;n#!!top" expanded="false" />
-            <marker date="1442854698000" expanded="true" signature="2419:2512" placeholder="SELECT *, NO..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="3006:3049" placeholder="SELECT valor..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="3900:3960" placeholder="SELECT valor..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="5502:5554" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5606:5646" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5647:5772" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5661:5691" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5724:5750" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="19613:19673" placeholder="SELECT valor..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="47892:47935" placeholder="SELECT valor..parametros..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,362 +1232,439 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25089607">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8888889">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26881722">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/database/DB_driver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33460802">
-          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/database/DB_result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3499044">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_new_filmstrip_banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/models/mdl_story.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44741875">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebaropennews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54110897">
-          <caret line="283" column="29" selection-start-line="283" selection-start-column="29" selection-end-line="283" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebas/new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68641114">
-          <caret line="36" column="6" selection-start-line="31" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/tags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/core/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="258" column="26" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_superbanner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025996534">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_superbanner_passback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1559792">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12998267">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_bigboxbanner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36395147">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/styledonbalon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327787">
-          <caret line="1801" column="1" selection-start-line="1801" selection-start-column="1" selection-end-line="1801" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34824902">
-          <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="417" column="0" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebas/pruebasAdsense.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8211679">
-          <caret line="45" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebardonbalon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="360" column="0" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31141868">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/anuncio_alertas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3027681">
-          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.051903114">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/controllers/banners.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3911368">
-          <caret line="143" column="41" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057803467">
-          <caret line="2" column="120" selection-start-line="2" selection-start-column="120" selection-end-line="2" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/movil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="393" column="16" selection-start-line="393" selection-start-column="16" selection-end-line="393" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018248174">
-          <caret line="1" column="89" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/controllers/story.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1079" column="27" selection-start-line="1079" selection-start-column="27" selection-end-line="1079" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="64" selection-start-line="82" selection-start-column="64" selection-end-line="82" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_splash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.054744527">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/tinymce/tinymce.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/tiny_mce/tiny_mce.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/stories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3488372">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/js/tiny_conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333">
-          <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/js/tiny_confNuevaVersion.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/tiny_conf_oldVersion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/adminRespaldo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/manifest.json">
+    <entry file="file://$PROJECT_DIR$/system/core/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34749034">
+          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/stories/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7003891">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/js/tiny_conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="85" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/core/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35019454">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/third_party/MX/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/register.js">
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/models/mdl_matches.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="61" column="66" selection-start-line="52" selection-start-column="35" selection-end-line="61" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/pushwoosh.js">
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7987805">
+          <caret line="97" column="51" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="120" selection-start-line="152" selection-start-column="120" selection-end-line="152" selection-end-column="120" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#pushwooshUnregisterDevice#0" expanded="false" />
-            <element signature="n#!!block;n#pushwooshStatistics#0" expanded="false" />
-          </folding>
+          <caret line="315" column="238" selection-start-line="315" selection-start-column="238" selection-end-line="315" selection-end-column="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/championships_vupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83011585">
+          <caret line="58" column="25" selection-start-line="51" selection-start-column="20" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4368932">
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/championships.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8258197">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0621359">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/championships/championships_vupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5067961">
+          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6699029">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029126214">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="207" column="56" selection-start-line="207" selection-start-column="56" selection-end-line="207" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="52" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="115" selection-start-line="85" selection-start-column="115" selection-end-line="85" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/styledonbalon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321033">
+          <caret line="1451" column="4" selection-start-line="1451" selection-start-column="4" selection-end-line="1451" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_splash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3764479">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil_copa_america.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17374517">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_loading_movil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17374517">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/footerend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.305499">
+          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34749034">
+          <caret line="426" column="16" selection-start-line="426" selection-start-column="16" selection-end-line="426" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/scoreboards.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.05498982">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49514562">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pluginChrome/3.0.1_0_Modificado/background.js">
+    <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6469194">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3475728">
+          <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029126214">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.528757">
+          <caret line="1831" column="10" selection-start-line="1831" selection-start-column="1" selection-end-line="1831" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/controllers/scoreboards.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29126215">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="280" column="20" selection-start-line="280" selection-start-column="12" selection-end-line="280" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/strikes/controllers/strikes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/strikes/views/strikesside.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/tablaposiciones.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="377" column="34" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="34" />
+          <folding>
+            <marker date="1444333084000" expanded="true" signature="3610:3670" placeholder="SELECT valor..parametros..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.083333">
-          <caret line="144" column="124" selection-start-line="141" selection-start-column="21" selection-end-line="144" selection-end-column="124" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="1172" column="7" selection-start-line="1172" selection-start-column="7" selection-end-line="1172" selection-end-column="7" />
           <folding>
-            <element signature="n#getnewsjsonapp#0;n#Site#0;n#!!top" expanded="false" />
-            <marker date="1442854698000" expanded="true" signature="2419:2512" placeholder="SELECT *, NO..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="3006:3049" placeholder="SELECT valor..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="3900:3960" placeholder="SELECT valor..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="5502:5554" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5606:5646" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5647:5772" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5661:5691" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="5724:5750" placeholder="..." />
-            <marker date="1442854698000" expanded="true" signature="19613:19673" placeholder="SELECT valor..parametros..." />
-            <marker date="1442854698000" expanded="true" signature="47892:47935" placeholder="SELECT valor..parametros..." />
+            <marker date="1444661289000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
+            <marker date="1444661289000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
+            <marker date="1444661289000" expanded="true" signature="1188:1268" placeholder="select COUNT..rounds..." />
+            <marker date="1444661289000" expanded="true" signature="3146:3239" placeholder="SELECT *, NO..parametros..." />
+            <marker date="1444661289000" expanded="true" signature="3733:3776" placeholder="SELECT valor..parametros..." />
+            <marker date="1444661289000" expanded="true" signature="4627:4687" placeholder="SELECT valor..parametros..." />
+            <marker date="1444661289000" expanded="true" signature="6241:6293" placeholder="..." />
+            <marker date="1444661289000" expanded="true" signature="6345:6385" placeholder="..." />
+            <marker date="1444661289000" expanded="true" signature="6386:6511" placeholder="..." />
+            <marker date="1444661289000" expanded="true" signature="6400:6430" placeholder="..." />
+            <marker date="1444661289000" expanded="true" signature="6463:6489" placeholder="..." />
+            <marker date="1444661289000" expanded="true" signature="7867:7910" placeholder="SELECT valor..parametros..." />
+            <marker date="1444661289000" expanded="true" signature="20751:20811" placeholder="SELECT valor..parametros..." />
+            <marker date="1444661289000" expanded="true" signature="49314:49357" placeholder="SELECT valor..parametros..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/matches_actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="465" column="83" selection-start-line="465" selection-start-column="81" selection-end-line="465" selection-end-column="83" />
+          <folding>
+            <marker date="1444661479000" expanded="true" signature="1485:1636" placeholder="SELECT id, n..teams..." />
+            <marker date="1444661479000" expanded="true" signature="1715:1775" placeholder="SELECT group..matches..." />
+            <marker date="1444661479000" expanded="true" signature="1846:2094" placeholder="SELECT c.nam..championships..." />
+            <marker date="1444661479000" expanded="true" signature="2141:2392" placeholder="SELECT mt.te..matches_teams..." />
+            <marker date="1444661479000" expanded="true" signature="2439:2878" placeholder="SELECT rc.id..*..." />
+            <marker date="1444661479000" expanded="true" signature="2513:2592" placeholder="SELECT mr. *..matches_referee..." />
+            <marker date="1444661479000" expanded="true" signature="4735:4824" placeholder="SELECT id, s..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="4948:5037" placeholder="SELECT id, s..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="5555:6186" placeholder="SELECT p.id,..*..." />
+            <marker date="1444661479000" expanded="true" signature="5611:6118" placeholder="SELECT * FRO..id..." />
+            <marker date="1444661479000" expanded="true" signature="5641:5865" placeholder="SELECT id as..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="5928:6099" placeholder="SELECT id as..cards..." />
+            <marker date="1444661479000" expanded="true" signature="6235:6850" placeholder="SELECT p.id,..*..." />
+            <marker date="1444661479000" expanded="true" signature="6291:6782" placeholder="SELECT * FRO..id..." />
+            <marker date="1444661479000" expanded="true" signature="6321:6529" placeholder="SELECT id as..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="6592:6763" placeholder="SELECT id as..cards..." />
+            <marker date="1444661479000" expanded="true" signature="7925:8556" placeholder="SELECT p.id,..*..." />
+            <marker date="1444661479000" expanded="true" signature="7981:8488" placeholder="SELECT * FRO..id..." />
+            <marker date="1444661479000" expanded="true" signature="8011:8235" placeholder="SELECT id as..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="8298:8469" placeholder="SELECT id as..cards..." />
+            <marker date="1444661479000" expanded="true" signature="9083:9763" placeholder="SELECT p.id,..*..." />
+            <marker date="1444661479000" expanded="true" signature="9143:9698" placeholder="SELECT * FRO..id..." />
+            <marker date="1444661479000" expanded="true" signature="9177:9392" placeholder="SELECT id as..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="9459:9679" placeholder="SELECT id as..cards..." />
+            <marker date="1444661479000" expanded="true" signature="9900:10005" placeholder="SELECT a.id,..." />
+            <marker date="1444661479000" expanded="true" signature="10071:10349" placeholder="SELECT g.id,..goals..." />
+            <marker date="1444661479000" expanded="true" signature="10390:10668" placeholder="SELECT c.id,..cards..." />
+            <marker date="1444661479000" expanded="true" signature="10709:11370" placeholder="SELECT entra..id..." />
+            <marker date="1444661479000" expanded="true" signature="10789:11072" placeholder="SELECT c.id,..changes..." />
+            <marker date="1444661479000" expanded="true" signature="11110:11319" placeholder="SELECT c.id,..changes..." />
+            <marker date="1444661479000" expanded="true" signature="11411:11513" placeholder="SELECT id, t..teams..." />
+            <marker date="1444661479000" expanded="true" signature="11583:11637" placeholder="SELECT group..matches..." />
+            <marker date="1444661479000" expanded="true" signature="15362:15410" placeholder="SELECT c.in,..changes..." />
+            <marker date="1444661479000" expanded="true" signature="15492:15585" placeholder="SELECT id, s..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="15653:15746" placeholder="SELECT id, s..lineups..." />
+            <marker date="1444661479000" expanded="true" signature="18758:19394" placeholder="SELECT match..matches_teams..." />
+            <marker date="1444661479000" expanded="true" signature="18815:18887" placeholder="select teams..teams..." />
+            <marker date="1444661479000" expanded="true" signature="18925:19002" placeholder="select secti..sections..." />
+            <marker date="1444661479000" expanded="true" signature="19070:19142" placeholder="select teams..teams..." />
+            <marker date="1444661479000" expanded="true" signature="19180:19257" placeholder="select secti..sections..." />
+            <marker date="1444661479000" expanded="true" signature="19764:19802" placeholder="SELECT resul..matches..." />
+            <marker date="1444661479000" expanded="true" signature="23250:23307" placeholder="Select * Fro..goals..." />
+            <marker date="1444661479000" expanded="true" signature="24112:24212" placeholder="Select t.id,..teams..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/ca_fe_skin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/stories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
+          <folding>
+            <marker date="1444665954000" expanded="true" signature="6926:7104" placeholder="SELECT id FR..sections..." />
+            <marker date="1444665954000" expanded="true" signature="7051:7103" placeholder="select categ..stories..." />
+            <marker date="1444665954000" expanded="true" signature="7558:7680" placeholder="select secti..sections_tags..." />
+            <marker date="1444665954000" expanded="true" signature="7620:7679" placeholder="select tag_i..stories_tags..." />
+            <marker date="1444665954000" expanded="true" signature="8242:8281" placeholder="select * fro..stories..." />
+            <marker date="1444665954000" expanded="true" signature="21388:22040" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="21397:22029" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="22843:23698" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="23086:23698" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="23443:23610" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="26226:26980" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="26543:26980" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="26781:26948" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="33033:33052" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="33797:33816" placeholder="..." />
+            <marker date="1444665954000" expanded="true" signature="39616:39720" placeholder="Select * Fro..stories..." />
+            <marker date="1444665954000" expanded="true" signature="39944:40119" placeholder="Update stori..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43269232">
-          <caret line="15" column="132" selection-start-line="15" selection-start-column="132" selection-end-line="15" selection-end-column="132" />
+        <state vertical-scroll-proportion="0.028846154">
+          <caret line="1" column="135" selection-start-line="1" selection-start-column="135" selection-end-line="1" selection-end-column="135" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

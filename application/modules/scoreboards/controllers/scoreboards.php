@@ -34,8 +34,8 @@ class Scoreboards extends MY_Controller
     public function sancionBarcelona ($tabla ) {
         foreach ($tabla as $key=>$equipo )
         {
-            if ($equipo['name']== "Barcelona"){
-                $tabla[$key]['points'] = $equipo['points']- 1;
+            if ($equipo['id']== "34"){
+                $tabla[$key]['points'] = $equipo['points'] - 1;
             }
         }
         return $tabla;
@@ -44,8 +44,27 @@ class Scoreboards extends MY_Controller
     public function sancionLDUL ($tabla ) {
         foreach ($tabla as $key=>$equipo )
         {
-            if ($equipo['name']== "Liga de Loja"){
-                $tabla[$key]['points'] = $equipo['points'] - 3;
+            if ($equipo['id']== "77"){
+                $tabla[$key]['points'] = $equipo['points'] - 1;
+            }
+        }
+        return $tabla;
+    }
+    public function sancionQuevedo ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "229"){
+                $tabla[$key]['points'] = $equipo['points']- 1;
+            }
+        }
+        return $tabla;
+    }
+
+    public function sancionOlmedo ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "41"){
+                $tabla[$key]['points'] = $equipo['points'] - 1;
             }
         }
         return $tabla;
@@ -69,7 +88,20 @@ class Scoreboards extends MY_Controller
                 //barcelona sancion campeonato 2015.
                 if ($round == 196) {
                     $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+                    $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+                    $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+
                     $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+                }
+
+                if ($round == 209) {
+                    $data['tabla'] = $this->sancionLDUL($data['tabla']);
+                    $data['tabla'] = $this->sancionBarcelona($data['tabla']);
+
+                    $data['tabla'] = $this->sancionOlmedo($data['tabla']);
+                    $data['tabla'] = $this->sancionQuevedo($data['tabla']);
+
+
                 }
 
 
@@ -100,7 +132,19 @@ class Scoreboards extends MY_Controller
                     //barcelona sancion campeonato 2015.
                     if ($round == 196) {
                         $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+                        $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+                        $data['tabla'] = $this->sancionLDUL ($data['tabla']);
                         $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+                        $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+                    }
+                    if ($round == 209) {
+                        $data['tabla'] = $this->sancionLDUL($data['tabla']);
+                        $data['tabla'] = $this->sancionBarcelona($data['tabla']);
+
+                        $data['tabla'] = $this->sancionOlmedo($data['tabla']);
+                        $data['tabla'] = $this->sancionQuevedo($data['tabla']);
+
+
                     }
 
                     return $this->load->view($leaderboard, $data, true);
@@ -178,7 +222,17 @@ class Scoreboards extends MY_Controller
         //barcelona sancion campeonato 2015.
         if ($champ == 53) {
             $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+            $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+            $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+            $data['tabla'] = $this->sancionLDUL ($data['tabla']);
+
             $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+            $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
+
+            $data['tabla'] = $this->sancionOlmedo ($data['tabla']);
+            $data['tabla'] = $this->sancionQuevedo($data['tabla']);
+
+
         }
         return $this->load->view($leaderboard, $data, true);
      }

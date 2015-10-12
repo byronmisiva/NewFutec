@@ -1813,6 +1813,8 @@ h1.tabla, h2.tabla {
     z-index: 90;
     cursor: pointer;
 }
+
+
 div#closeBannerdpa {
     position: fixed;
     left: 0;
