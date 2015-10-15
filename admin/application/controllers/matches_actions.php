@@ -25,9 +25,9 @@ class Matches_actions extends CI_Controller
             '1' => $path . "tarjeta_amarilla.png", 'in' => $path . "entra.png", 'out' => $path . "sale.png", 'tipo' => $path . 'player.png', 'cambio' => $path . 'cambio.png');
 
         //Validacion ACL
-        if (!$this->acl->checkAcl($this->uri->segment(1), $this->uri->segment(2), FALSE)) {
+       /* if (!$this->acl->checkAcl($this->uri->segment(1), $this->uri->segment(2), FALSE)) {
             redirect('admin');
-        }
+        }*/
 
     }
 
@@ -415,6 +415,8 @@ class Matches_actions extends CI_Controller
 
     function notificacionMarcadorEnVivo($data, $estado)
     {
+
+
         // recuperar equipos
         $sql = "SELECT
                     matches_teams.team_id_home,  (select teams.name from teams where teams.id = matches_teams.team_id_home ) AS home_name,
@@ -465,12 +467,12 @@ class Matches_actions extends CI_Controller
         $home = $query[0]->seccion_home;
         $visita = $query[0]->seccion_away;
 
-        if (in_array($home, $equiposCopaAmerica)){
-            $query[0]->seccion_home = 26;
-        }
-        if (in_array($visita, $equiposCopaAmerica)){
-            $query[0]->seccion_away = 26;
-        }
+        //    if (in_array($home, $equiposCopaAmerica)){
+        // $query[0]->seccion_home = 26;
+        //   }
+        //   if (in_array($visita, $equiposCopaAmerica)){
+        //  $query[0]->seccion_away = 26;
+        //   }
         //fin pruebas
 
         $envios = array();
@@ -491,7 +493,7 @@ class Matches_actions extends CI_Controller
                         "android_sound" => "res/sound/inicio.wav",
                         "ios_sound" => "res/sound/inicio.wav",
 
-
+                         
                         'conditions' => array(array("informacion", "IN", $envios))
                     )
                 )

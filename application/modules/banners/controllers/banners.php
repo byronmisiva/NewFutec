@@ -39,9 +39,10 @@ class Banners extends MY_Controller
         return $this->load->view('fe_bigboxnews1', $data, TRUE);
     }
 
-    public function anuncio_alertas($data = FALSE)
+
+     public function anuncio_alertas($data = FALSE)
     {
-        return $this->load->view('anuncio_alertas', $data, TRUE);
+    	return $this->load->view('anuncio_alertas', $data, TRUE);
     }
 
 
@@ -137,6 +138,15 @@ class Banners extends MY_Controller
     public function fe_smart_top($data = FALSE)
     {
         return $this->load->view('fe_smart_top', $data, TRUE);
+    }
+    public function fe_smart_bottom_internas($data = FALSE)
+    {
+        return $this->load->view('fe_smart_bottom_internas', $data, TRUE);
+    }
+
+    public function fe_smart_top_internas($data = FALSE)
+    {
+        return $this->load->view('fe_smart_top_internas', $data, TRUE);
     }
 
     public function fe_skin($data = FALSE)

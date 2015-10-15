@@ -17,6 +17,6 @@
     <div class="col-md-12 col-xs-12 text-right fondoazul separador10 tablacompleta">
 
             <a href="<?= base_url('site/tabladeposiciones/' . $champ . "/" . $tipoCampeonato ) ?>">Tabla Completa</a>
-
+ 
     </div>
 </div>

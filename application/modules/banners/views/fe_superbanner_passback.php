@@ -4,3 +4,4 @@
     googletag.pubads().definePassback('8746/www.futbolecuador.com/inicio', [[728,90]]).setTargeting('pos',['top']).display();
 </script>
 <!-- End Passback -->
+ 

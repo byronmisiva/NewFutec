@@ -25,12 +25,12 @@ tinyMCE.init({
 	external_link_list_url : "lists/link_list.js",
 	external_image_list_url : "lists/image_list.js",
 	media_external_list_url : "lists/media_list.js",
-
+	
 	//extended_valid_elements : "iframe[src|width|height|name|align|frameborder|allowfullscreen],blockquote,  blockquote[data-instgrm-captioned|data-instgrm-version],script[async|src|charset], time, time[datetime]",
 	extended_valid_elements : "*[*]",
 
 	editor_deselector: "tinyNoEditor",
-
+	
 	// Replace values for the template plugin
 	template_replace_values : {
 		username : "Some User",
@@ -39,7 +39,7 @@ tinyMCE.init({
 
 
 
-
+	
 });
 
 function toggleEditor(id) {

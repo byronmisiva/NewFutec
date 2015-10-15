@@ -187,13 +187,10 @@ LIMIT 8";
         }
 
         $aux = $this->db->get()->result();
-
-        $test = $this->db->last_query();
-
         // por optimizacion
         $aux = $this->ajustaArray($aux, $limit);
 
-
+        $test = $this->db->last_query();
 
         foreach ($aux as $key => $row) {
             $date = explode(" ", $row->time);

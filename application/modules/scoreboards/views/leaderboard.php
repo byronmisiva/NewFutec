@@ -1,5 +1,5 @@
 <?php if (is_array($tabla)) { ?>
-    <div class="table-responsive fondocopa">
+    <div class="table-responsive">
         <table class="table table-striped font12  tablemargin4">
             <thead>
             <tr>

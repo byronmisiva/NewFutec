@@ -574,9 +574,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $parte = $this->uri->segment(3);
 
         if (!$parte) {
-            echo $this->contenido->sidebarDonBalon(false, SERIE_A, 0);
+            echo $this->contenido->sidebarDonBalon(false, CHAMP_DEFAULT, 0);
         } else {
-            echo $this->contenido->sidebarDonBalon(false, SERIE_A, $parte);
+            echo $this->contenido->sidebarDonBalon(false, CHAMP_DEFAULT, $parte);
         }
     }
 
@@ -675,7 +675,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Fútbol Internacional", "futbolinternacional", "futbolinternacional");
     }
 
-    public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = SERIE_A, $tipotabla = "acumulada")
+    public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT, $tipotabla = CHAMP_DEFAULT_TIPOTABLA)
     {
         // para la final se comentan la llamada a las secciones.
         $this->output->cache(CACHE_DEFAULT);
@@ -750,7 +750,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->templates->_index($data);
     }
 
-    public function tag($tag, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = SERIE_A)
+    public function tag($tag, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT)
     {
         // para la final se comentan la llamada a las secciones.
         $this->output->cache(CACHE_DEFAULT);
@@ -822,7 +822,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->singleConten("Búsqueda", $search);
     }
 
-    public function goleadores($serie = SERIE_A)
+    public function goleadores($serie = CHAMP_DEFAULT)
     {
         $this->output->cache(CACHE_DEFAULT);
 
@@ -838,7 +838,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->singleConten("Goleadores", $goleadores, "", $serie);
     }
 
-    public function tabladeposiciones($serie = SERIE_A)
+    public function tabladeposiciones($serie = CHAMP_DEFAULT)
     {
 
         $id = $this->uri->segment(3);
@@ -889,13 +889,25 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         //$this->output->cache(CACHE_PARTIDOS);
 
         $this->load->module('matches');
+        $this->load->module('banners');
         $id = $this->uri->segment(4);
 
         if ($id == "ref.outcontrol")
             redirect('home');
 
+        if ($this->verificarDispositivo() == "1") {
 
-        $match = $this->matches->getMatch($id);
+            $bannerBottom = $this->banners->fe_smart_bottom_internas();
+            $bannerTop = $this->banners->fe_smart_top_internas();
+        }
+        else {
+
+            $bannerBottom = "";
+            $bannerTop = "";
+        }
+
+        $match = $bannerTop . $this->matches->getMatch($id) . $bannerBottom;
+
         $title = $this->matches->getMatchName($id);
         $description = "Sigue el partido en vivo, " . $this->matches->getMatchNameLong($id);
         $champ = $this->uri->segment(5);
@@ -929,7 +941,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->singleConten("Juventus", $juventus);
     }
 
-    public function singleConten($nameSeccion, $contenSeccion, $description = "", $serie = SERIE_A, $tipotabla = "acumulada")
+    public function singleConten($nameSeccion, $contenSeccion, $description = "", $serie = CHAMP_DEFAULT, $tipotabla = CHAMP_DEFAULT_TIPOTABLA)
     {
         // para la final se comentan la llamada a las secciones.
 
@@ -1039,10 +1051,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $idNoticia = "1";
         }
 
-
         $infoSeccionEquipo = $this->mdl_site->getNameSection($seccion);
         $nameSeccion = $infoSeccionEquipo[0]->name;
-
 
         if (!$idNoticia) {
             $this->load->module('team');

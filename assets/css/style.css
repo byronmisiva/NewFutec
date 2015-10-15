@@ -1831,7 +1831,7 @@ div#closeBannerdpa {
 
 .fondocopa, .fondomove {
     background-color: transparent;
-    background-image: url("../img/fondo_header_copa.png");;
+    /*background-image: url("../img/fondo_header_copa.png");;*/
 }
 
 .fondomove {

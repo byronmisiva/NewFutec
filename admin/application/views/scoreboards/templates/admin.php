@@ -10,7 +10,7 @@
   google.load("scriptaculous", "1.8.3");
 </script>
 <script type="text/javascript" src="<?=base_url()?>js/effects.js"></script>
-<script type="text/javascript" src="<?=base_url()?>js/tiny_mce/tiny_mce.js"></script>		
+<script type="text/javascript" src="<?=base_url()?>js/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript" src="<?=base_url()?>js/scripts.js?refresh=987654321065646556456"></script>
 <script type="text/javascript" src="<?=base_url()?>js/modalbox.js"></script>
 <script type="text/javascript" src="<?=base_url()?>js/tiny_conf.js?refresh=999"></script>

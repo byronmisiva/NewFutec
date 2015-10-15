@@ -187,7 +187,7 @@ class Stories extends CI_Controller
             $consulta = $consulta->result();
             foreach ($consulta as $row) {
                 //caso copa america
-                if ($row->id == 71) $row->id = 26;
+                //if ($row->id == 71) $row->id = 26;
                 $seccionesLista[] = $row->id . "-IN1";
             }
         }
@@ -197,7 +197,7 @@ class Stories extends CI_Controller
             $consulta2 = $consulta2->result();
             foreach ($consulta2 as $row) {
                 //caso copa america
-                if ($row->id == 71) $row->id = 26;
+               // if ($row->id == 71) $row->id = 26;
                 $seccionesLista[] = $row->id . "-IN1";
             }
         }

@@ -64,7 +64,7 @@
     </table>
 </div>
 <div class="col-md-12 text-right fondoazul separador10">
-        <a href="<?= base_url('goleadores/' . $champ) ?>">Tabla Completa</a>
+        <a href="<?= base_url('site/goleadores/' . $champ) ?>">Tabla Completa</a>
 </div>
 
 

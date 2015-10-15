@@ -351,13 +351,21 @@ class Mdl_story extends MY_Model
         $sql = 'select `reads` from stories_stats  where story_id=' . $id;
         $aux = $this->db->query($sql)->result();
 
-        $data = array(
-            '`reads`' => $aux[0]->reads + 1
-        );
+        if (isset($aux[0]->reads)) {
+            $data = array(
+                'reads' => $aux[0]->reads + 1
+            );
+            $this->db->where('story_id', $id);
+            $this->db->update('stories_stats', $data);
 
-        $this->db->where('story_id', $id);
-        $this->db->update('stories_stats', $data);
+        } else {
+            $data = array(
+                '`reads`' => 1 ,
+                '`story_id`' => $id
 
+            );
+            $this->db->insert('stories_stats', $data);
+        }
         return $aux;
     }
 
