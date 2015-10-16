@@ -4,9 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/config/configbak.php" afterPath="" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -68,15 +67,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matchdetail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="matchdetail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35521236">
+            <state vertical-scroll-proportion="-7.6666665">
               <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
               <folding>
                 <element signature="e#11318#13742#0#HTML" expanded="false" />
                 <element signature="e#13769#16206#0#HTML" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="databasebak.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/databasebak.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/banners/views/anuncio_alertas.php" />
         <option value="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" />
         <option value="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
@@ -198,6 +216,7 @@
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
+        <option value="$PROJECT_DIR$/application/config/databasebak.php" />
       </list>
     </option>
   </component>
@@ -536,11 +555,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/config" />
       <recent name="$PROJECT_DIR$/application/modules/banners/views" />
       <recent name="$PROJECT_DIR$/archivosIniServidores" />
       <recent name="$PROJECT_DIR$/admin/application/views/templates" />
       <recent name="$PROJECT_DIR$/admin/js" />
-      <recent name="$PROJECT_DIR$/pluginChrome" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/modules/banners/views" />
@@ -601,12 +620,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00826" summary="e">
-      <created>1439573866533</created>
-      <option name="number" value="00826" />
-      <option name="project" value="LOCAL" />
-      <updated>1439573866544</updated>
     </task>
     <task id="LOCAL-00827" summary="e">
       <created>1439574449311</created>
@@ -896,7 +909,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445004425602</updated>
     </task>
-    <option name="localTasksCounter" value="875" />
+    <task id="LOCAL-00875" summary="e">
+      <created>1445004739190</created>
+      <option name="number" value="00875" />
+      <option name="project" value="LOCAL" />
+      <updated>1445004739190</updated>
+    </task>
+    <option name="localTasksCounter" value="876" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1049,27 +1068,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/application/views/championships_vupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83011585">
-          <caret line="58" column="25" selection-start-line="51" selection-start-column="20" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4368932">
-          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/championships.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8258197">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0621359">
@@ -1560,12 +1558,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35521236">
+        <state vertical-scroll-proportion="-7.6666665">
           <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
           <folding>
             <element signature="e#11318#13742#0#HTML" expanded="false" />
             <element signature="e#13769#16206#0#HTML" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/databasebak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
