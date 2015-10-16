@@ -71,7 +71,7 @@ function cargarSplash() {
         if ($("#div-gpt-ad-1444931286798-0 iframe").contents().find("body").html().length > 0) {
             $("#div-gpt-ad-1444931286798-0").height(80)
         } else {
-            $("#div-gpt-ad-1444931286798-0").height(0)
+            $("#div-gpt-ad-1444931286798-0").height(110)
         }
     }
 
