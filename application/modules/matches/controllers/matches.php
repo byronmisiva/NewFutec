@@ -57,7 +57,7 @@ class Matches extends MY_Controller
 
     }
 
-    public function getMatch($id)
+    public function getMatch($id, $banner = "")
     {
         $this->output->cache(CACHE_PARTIDOS);
 
@@ -75,6 +75,8 @@ class Matches extends MY_Controller
             $data['teams_pics'] = $this->mdl_matches->get_pics_teams_by_id($equipos[0]->team_id_home,$equipos[0]->team_id_away );
         }
 
+
+        $data['banner']= $banner;
 
         $data['idEquipo']= $id;
 

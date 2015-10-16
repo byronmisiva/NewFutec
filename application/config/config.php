@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:10088/newFutbolEcuador/site/NewFutec/';
+$config['base_url']	= 'http://localhost:10088/futec/NewFutec/';
 
 /*
 |--------------------------------------------------------------------------

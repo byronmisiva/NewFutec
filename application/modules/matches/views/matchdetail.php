@@ -239,7 +239,9 @@ $estado['8'] = 'Fin del Partido';?>
             ?>
         </div>
     </div>
-
+        <div class="col-md-12 col-xs-12  separador0 margen0">
+            <?php echo $banner; ?>
+        </div>
 
     <!--Titulares-->
     <div class="col-md-12 col-xs-12 separador10  margen0 clearfix">
@@ -353,6 +355,7 @@ $estado['8'] = 'Fin del Partido';?>
             </div>
         </div>
     </div>
+
 
     <div class="col-md-12 col-xs-12 separador10-xs margen0l">
         <div class="panel-heading fondoazul">

@@ -305,7 +305,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $idEquipo = $this->uri->segment(3);
         $this->load->module('matches');
-        echo $this->matches->getMatch($idEquipo);
+        if ($this->verificarDispositivo() == "1") {
+            $bannerBottom = $this->banners->fe_smart_bottom_internas();
+        }
+        else {
+            $bannerBottom = "";
+        }
+        echo $this->matches->getMatch($idEquipo, $bannerBottom)  ;
     }
 
 
@@ -906,7 +912,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $bannerTop = "";
         }
 
-        $match = $bannerTop . $this->matches->getMatch($id) . $bannerBottom;
+        $match = $bannerTop . $this->matches->getMatch($id, $bannerBottom)  ;
 
         $title = $this->matches->getMatchName($id);
         $description = "Sigue el partido en vivo, " . $this->matches->getMatchNameLong($id);

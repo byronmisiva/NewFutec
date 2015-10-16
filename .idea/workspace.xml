@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_bottom_internas.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top_internas.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/js/tiny_conf_oldVersion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" afterPath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/templates/admin.php" afterPath="$PROJECT_DIR$/admin/application/views/templates/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" afterPath="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/anuncio_alertas.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/anuncio_alertas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/controllers/banners.php" afterPath="$PROJECT_DIR$/application/modules/banners/controllers/banners.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/championships_vupdate.php" afterPath="$PROJECT_DIR$/admin/application/views/championships_vupdate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/config/constants.php" afterPath="$PROJECT_DIR$/admin/application/config/constants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxbanner.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_bigboxbanner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_cocafm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_netsonic_home.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_netsonic_home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_superbanner_passback.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_superbanner_passback.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/views/leaderboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" afterPath="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" afterPath="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/matches_actions.php" afterPath="$PROJECT_DIR$/admin/application/controllers/matches_actions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" afterPath="$PROJECT_DIR$/application/modules/noticias/models/mdl_noticias.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" afterPath="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/views/sidebardonbalon.php" afterPath="$PROJECT_DIR$/application/modules/contenido/views/sidebardonbalon.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/stories.php" afterPath="$PROJECT_DIR$/admin/application/controllers/stories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" afterPath="$PROJECT_DIR$/application/modules/strikes/views/strikesside.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php" afterPath="$PROJECT_DIR$/application/modules/scoreboards/views/tablaposicionessimple.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/js/tiny_conf.js" afterPath="$PROJECT_DIR$/admin/js/tiny_conf.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -57,26 +33,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76744187">
-              <caret line="907" column="0" selection-start-line="907" selection-start-column="0" selection-end-line="907" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.1666665">
+              <caret line="914" column="37" selection-start-line="914" selection-start-column="37" selection-end-line="914" selection-end-column="37" />
               <folding>
-                <marker date="1444939987000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
-                <marker date="1444939987000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
-                <marker date="1444939987000" expanded="true" signature="1188:1268" placeholder="select COUNT..rounds..." />
-                <marker date="1444939987000" expanded="true" signature="3146:3239" placeholder="SELECT *, NO..parametros..." />
-                <marker date="1444939987000" expanded="true" signature="3733:3776" placeholder="SELECT valor..parametros..." />
-                <marker date="1444939987000" expanded="true" signature="4627:4687" placeholder="SELECT valor..parametros..." />
-                <marker date="1444939987000" expanded="true" signature="6241:6293" placeholder="..." />
-                <marker date="1444939987000" expanded="true" signature="6345:6385" placeholder="..." />
-                <marker date="1444939987000" expanded="true" signature="6386:6511" placeholder="..." />
-                <marker date="1444939987000" expanded="true" signature="6400:6430" placeholder="..." />
-                <marker date="1444939987000" expanded="true" signature="6463:6489" placeholder="..." />
-                <marker date="1444939987000" expanded="true" signature="7867:7910" placeholder="SELECT valor..parametros..." />
-                <marker date="1444939987000" expanded="true" signature="20751:20811" placeholder="SELECT valor..parametros..." />
-                <marker date="1444939987000" expanded="true" signature="49736:49779" placeholder="SELECT valor..parametros..." />
+                <marker date="1445004132000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
+                <marker date="1445004132000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
+                <marker date="1445004132000" expanded="true" signature="1188:1268" placeholder="select COUNT..rounds..." />
+                <marker date="1445004132000" expanded="true" signature="3146:3239" placeholder="SELECT *, NO..parametros..." />
+                <marker date="1445004132000" expanded="true" signature="3733:3776" placeholder="SELECT valor..parametros..." />
+                <marker date="1445004132000" expanded="true" signature="4627:4687" placeholder="SELECT valor..parametros..." />
+                <marker date="1445004132000" expanded="true" signature="6241:6293" placeholder="..." />
+                <marker date="1445004132000" expanded="true" signature="6345:6385" placeholder="..." />
+                <marker date="1445004132000" expanded="true" signature="6386:6511" placeholder="..." />
+                <marker date="1445004132000" expanded="true" signature="6400:6430" placeholder="..." />
+                <marker date="1445004132000" expanded="true" signature="6463:6489" placeholder="..." />
+                <marker date="1445004132000" expanded="true" signature="7867:7910" placeholder="SELECT valor..parametros..." />
+                <marker date="1445004132000" expanded="true" signature="20959:21019" placeholder="SELECT valor..parametros..." />
+                <marker date="1445004132000" expanded="true" signature="49945:49988" placeholder="SELECT valor..parametros..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matches.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.166666">
+              <caret line="104" column="45" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="45" />
+              <folding>
+                <marker date="1445004132000" expanded="true" signature="5732:6096" placeholder="SELECT champ..matches..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matchdetail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2972973">
+              <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
+              <folding>
+                <element signature="e#11318#13742#0#HTML" expanded="false" />
+                <element signature="e#13769#16206#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -148,8 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pruebas/pruebasAdsense.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/views/sidebardonbalon.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/anuncio_alertas.php" />
         <option value="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin2.php" />
         <option value="$PROJECT_DIR$/admin/application/views/scoreboards/templates/admin.php" />
@@ -199,6 +198,8 @@
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top_internas.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_bottom_internas.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/application/modules/matches/controllers/matches.php" />
+        <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
       </list>
     </option>
   </component>
@@ -585,12 +586,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00824" summary="e">
-      <created>1439312808032</created>
-      <option name="number" value="00824" />
-      <option name="project" value="LOCAL" />
-      <updated>1439312808054</updated>
-    </task>
     <task id="LOCAL-00825" summary="e">
       <created>1439334290294</created>
       <option name="number" value="00825" />
@@ -879,7 +874,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444672758842</updated>
     </task>
-    <option name="localTasksCounter" value="873" />
+    <task id="LOCAL-00873" summary="e">
+      <created>1444940204127</created>
+      <option name="number" value="00873" />
+      <option name="project" value="LOCAL" />
+      <updated>1444940204229</updated>
+    </task>
+    <option name="localTasksCounter" value="874" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -907,22 +908,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32790446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34633029" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34633029" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34862384" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.51183766" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32790446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.48816234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2606351" sideWeight="0.64599776" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34862384" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.51183766" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.320304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -983,12 +984,12 @@
       <breakpoints>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>661</line>
+          <line>667</line>
           <option name="timeStamp" value="1038" />
         </line-breakpoint>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>857</line>
+          <line>863</line>
           <option name="timeStamp" value="1046" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -1032,20 +1033,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7987805">
-          <caret line="97" column="51" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/femagazine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="315" column="238" selection-start-line="315" selection-start-column="238" selection-end-line="315" selection-end-column="238" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/views/championships_vupdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83011585">
@@ -1522,25 +1509,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/controllers/matches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.166666">
+          <caret line="104" column="45" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="45" />
+          <folding>
+            <marker date="1445004132000" expanded="true" signature="5732:6096" placeholder="SELECT champ..matches..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76744187">
-          <caret line="907" column="0" selection-start-line="907" selection-start-column="0" selection-end-line="907" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.1666665">
+          <caret line="914" column="37" selection-start-line="914" selection-start-column="37" selection-end-line="914" selection-end-column="37" />
           <folding>
-            <marker date="1444939987000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
-            <marker date="1444939987000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
-            <marker date="1444939987000" expanded="true" signature="1188:1268" placeholder="select COUNT..rounds..." />
-            <marker date="1444939987000" expanded="true" signature="3146:3239" placeholder="SELECT *, NO..parametros..." />
-            <marker date="1444939987000" expanded="true" signature="3733:3776" placeholder="SELECT valor..parametros..." />
-            <marker date="1444939987000" expanded="true" signature="4627:4687" placeholder="SELECT valor..parametros..." />
-            <marker date="1444939987000" expanded="true" signature="6241:6293" placeholder="..." />
-            <marker date="1444939987000" expanded="true" signature="6345:6385" placeholder="..." />
-            <marker date="1444939987000" expanded="true" signature="6386:6511" placeholder="..." />
-            <marker date="1444939987000" expanded="true" signature="6400:6430" placeholder="..." />
-            <marker date="1444939987000" expanded="true" signature="6463:6489" placeholder="..." />
-            <marker date="1444939987000" expanded="true" signature="7867:7910" placeholder="SELECT valor..parametros..." />
-            <marker date="1444939987000" expanded="true" signature="20751:20811" placeholder="SELECT valor..parametros..." />
-            <marker date="1444939987000" expanded="true" signature="49736:49779" placeholder="SELECT valor..parametros..." />
+            <marker date="1445004132000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
+            <marker date="1445004132000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
+            <marker date="1445004132000" expanded="true" signature="1188:1268" placeholder="select COUNT..rounds..." />
+            <marker date="1445004132000" expanded="true" signature="3146:3239" placeholder="SELECT *, NO..parametros..." />
+            <marker date="1445004132000" expanded="true" signature="3733:3776" placeholder="SELECT valor..parametros..." />
+            <marker date="1445004132000" expanded="true" signature="4627:4687" placeholder="SELECT valor..parametros..." />
+            <marker date="1445004132000" expanded="true" signature="6241:6293" placeholder="..." />
+            <marker date="1445004132000" expanded="true" signature="6345:6385" placeholder="..." />
+            <marker date="1445004132000" expanded="true" signature="6386:6511" placeholder="..." />
+            <marker date="1445004132000" expanded="true" signature="6400:6430" placeholder="..." />
+            <marker date="1445004132000" expanded="true" signature="6463:6489" placeholder="..." />
+            <marker date="1445004132000" expanded="true" signature="7867:7910" placeholder="SELECT valor..parametros..." />
+            <marker date="1445004132000" expanded="true" signature="20959:21019" placeholder="SELECT valor..parametros..." />
+            <marker date="1445004132000" expanded="true" signature="49945:49988" placeholder="SELECT valor..parametros..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/matches/views/matchdetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2972973">
+          <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
+          <folding>
+            <element signature="e#11318#13742#0#HTML" expanded="false" />
+            <element signature="e#13769#16206#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
