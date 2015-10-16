@@ -34,14 +34,6 @@ function cargarSplash() {
     }
 
     if (verMobile == 1) {
-
-        if ($("#div-gpt-ad-1444931286798-0 iframe").contents().find("body").html().length > 0) {
-            $("#div-gpt-ad-1444931286798-0").height(80)
-        } else {
-            $("#div-gpt-ad-1444931286798-0").height(0)
-        }
-
-
         // caso movil
         if ($("#div-gpt-ad-1383593884981-1 iframe").contents().find("body").html().length > 0) {
             $('#darkLayer').show();
@@ -75,6 +67,13 @@ function cargarSplash() {
         }
     }
 
+    if (typeof $("#div-gpt-ad-1444931286798-0 iframe").contents().find("body").html().length != 'undefined') {
+        if ($("#div-gpt-ad-1444931286798-0 iframe").contents().find("body").html().length > 0) {
+            $("#div-gpt-ad-1444931286798-0").height(80)
+        } else {
+            $("#div-gpt-ad-1444931286798-0").height(0)
+        }
+    }
 
 };
 

@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_bottom_internas.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_bottom_internas.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top_internas.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top_internas.php" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -137,9 +135,13 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41512915">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-              <folding />
+            <state vertical-scroll-proportion="0.80442804">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="e#578#722#0" expanded="false" />
+                <element signature="e#898#1467#0" expanded="false" />
+                <element signature="e#1594#1911#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,8 +217,8 @@
         <option value="$PROJECT_DIR$/application/modules/matches/views/matchdetail.php" />
         <option value="$PROJECT_DIR$/application/config/databasebak.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_bottom_internas.php" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_smart_top_internas.php" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -529,12 +531,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00828" summary="e">
-      <created>1439575590461</created>
-      <option name="number" value="00828" />
-      <option name="project" value="LOCAL" />
-      <updated>1439575590461</updated>
-    </task>
     <task id="LOCAL-00829" summary="e">
       <created>1439576305200</created>
       <option name="number" value="00829" />
@@ -823,7 +819,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445005434630</updated>
     </task>
-    <option name="localTasksCounter" value="877" />
+    <task id="LOCAL-00877" summary="e">
+      <created>1445017295701</created>
+      <option name="number" value="00877" />
+      <option name="project" value="LOCAL" />
+      <updated>1445017295701</updated>
+    </task>
+    <option name="localTasksCounter" value="878" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1493,9 +1495,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41512915">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="0.80442804">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#578#722#0" expanded="false" />
+            <element signature="e#898#1467#0" expanded="false" />
+            <element signature="e#1594#1911#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
