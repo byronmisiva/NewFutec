@@ -1,4 +1,3 @@
-
 <?php
 $separador10 = "separador10-xs ";
 if (isset($extraheader)) {
@@ -15,7 +14,7 @@ if (isset($extraheader)) {
                 <h4 class="panel-title"><?php echo $namesection; ?></h4>
             </div>
         </div>
-    <?php
+        <?php
     }
 } ?>
 <?php
@@ -24,6 +23,11 @@ foreach ($noticias as $noticia) {
     $findme = '<div class="noticia-img">';
     $pos = strpos($noticia, $findme);
     $paraTable = "6";
+
+    if ($indice  == 8) {
+        if (isset($intermediaBanner))
+        echo $intermediaBanner;
+    }
     if ($indice % 2 == 0) {
         echo '<div class="row noticia-content">';
         $validaInicio = substr($noticia, 0, 45);
@@ -63,6 +67,8 @@ if ($indice % 2 == 1) echo '</div>';
 </div>
 
 <div class="col-md-12 text-right fondoazul separador10 masnoticias" offset="<?php echo rand() . "-" . $offset; ?>"
-     urlSeccion="<?php echo (isset($urlsecction))? $urlsecction: ""; ?>" section="<?php echo (isset($idsection))? $idsection: "";   ?>" pos="<?php echo (isset($posSection))? $posSection: "1"; ?>">
+     urlSeccion="<?php echo (isset($urlsecction)) ? $urlsecction : ""; ?>"
+     section="<?php echo (isset($idsection)) ? $idsection : ""; ?>"
+     pos="<?php echo (isset($posSection)) ? $posSection : "1"; ?>">
     Más Noticias
 </div>

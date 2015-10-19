@@ -15,7 +15,7 @@ class Noticias extends MY_Controller
     //totalMiniNews total de noticias a mostrar
     //offset desplazamiento en las noticias
 
-    public function viewNoticiasHome($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
+    public function viewNoticiasHome($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE, $intermediaBanner = "")
     {
         //$this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
@@ -99,6 +99,8 @@ class Noticias extends MY_Controller
         $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = "";
         $data['posSection'] = "";
+        $data['intermediaBanner'] = $intermediaBanner;
+
 
         return $this->load->view('noticiashome', $data, TRUE);
     }
