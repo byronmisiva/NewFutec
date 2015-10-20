@@ -217,7 +217,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $country = file_get_contents('http://api.hostip.info/country.php?ip=' . $ip);
 
         if ($country == "US") {
-            $amazonAssociates = $country .  '<script type="text/javascript">
+            $amazonAssociates =  '<script type="text/javascript">
 amzn_assoc_placement = "adunit0";
 amzn_assoc_tracking_id = "theultappmedc-20";
 amzn_assoc_ad_mode = "manual";
@@ -230,7 +230,7 @@ amzn_assoc_title = "";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>';
         } else {
-            $amazonAssociates = $country.  'xxxxxx';
+            $amazonAssociates =  '';
         }
 
 
