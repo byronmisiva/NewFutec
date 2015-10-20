@@ -36,10 +36,9 @@ class Site extends MY_Controller
 
             define('CHAMP_DEFAULT', $consulta[0]->id);
             $consulta = $this->db->query("select COUNT(*) as total from  rounds   where championship_id= " . CHAMP_DEFAULT)->result();
-            if ($consulta[0]->total ==  "1") {
+            if ($consulta[0]->total == "1") {
                 define('CHAMP_DEFAULT_TIPOTABLA', "simple");
-            }
-            else {
+            } else {
                 define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
             }
 
@@ -214,7 +213,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['header2'] = $this->contenido->header2($dataHeader2);
         $data['top2'] = $this->banners->FE_Megabanner();
 
-        $amazonAssociates = '<script type="text/javascript">
+        $ip = $_SERVER ['REMOTE_ADDR'];
+        $country = file_get_contents('http://api.hostip.info/country.php?ip=' . $ip);
+
+        if ($country == "US") {
+            $amazonAssociates = $country .  '<script type="text/javascript">
 amzn_assoc_placement = "adunit0";
 amzn_assoc_tracking_id = "theultappmedc-20";
 amzn_assoc_ad_mode = "manual";
@@ -226,8 +229,12 @@ amzn_assoc_asins = "B00U60IB28,B00U60JXJ8,B00L6GP3C2,B00PFZJ1B4";
 amzn_assoc_title = "";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>';
+        } else {
+            $amazonAssociates = $country.  'xxxxxx';
+        }
 
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE,   0,   FALSE, $amazonAssociates) ;
+
+        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE, 0, FALSE, $amazonAssociates);
         $test = CHAMP_DEFAULT_TIPOTABLA;
         $data['sidebar'] = $this->contenido->sidebar(FALSE, CHAMP_DEFAULT, CHAMP_DEFAULT_TIPOTABLA);
 
@@ -320,11 +327,10 @@ amzn_assoc_title = "";
         $this->load->module('matches');
         if ($this->verificarDispositivo() == "1") {
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
-        }
-        else {
+        } else {
             $bannerBottom = "";
         }
-        echo $this->matches->getMatch($idEquipo, $bannerBottom)  ;
+        echo $this->matches->getMatch($idEquipo, $bannerBottom);
     }
 
 
@@ -918,14 +924,13 @@ amzn_assoc_title = "";
 
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
-        }
-        else {
+        } else {
 
             $bannerBottom = "";
             $bannerTop = "";
         }
 
-        $match = $bannerTop . $this->matches->getMatch($id, $bannerBottom)  ;
+        $match = $bannerTop . $this->matches->getMatch($id, $bannerBottom);
 
         $title = $this->matches->getMatchName($id);
         $description = "Sigue el partido en vivo, " . $this->matches->getMatchNameLong($id);
@@ -1197,10 +1202,10 @@ amzn_assoc_title = "";
         $visita = $data->seccion_away;
 
 
-      //  if (in_array($home, $equiposCopaAmerica))
-     //       $data->seccion_home = 26;
-     //   if (in_array($visita, $equiposCopaAmerica))
-     //       $data->seccion_away = 26;
+        //  if (in_array($home, $equiposCopaAmerica))
+        //       $data->seccion_home = 26;
+        //   if (in_array($visita, $equiposCopaAmerica))
+        //       $data->seccion_away = 26;
         //fin pruebas
 
         $envios = array();
