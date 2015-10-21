@@ -32,6 +32,13 @@ function cargarSplash() {
         if (verMobile == 1)
             $('.separador10-xs').css('margin-top', '95px');
     }
+    // amazon asociates
+    if ($('#div-gpt-ad-1445466832316-0 iframe').contents().find("body").html().length == 0) {
+        $('#div-gpt-ad-1445466832316-0').hide();
+    } else {
+        $('#div-gpt-ad-1445466832316-0').show();
+    }
+
 
     if (verMobile == 1) {
         // caso movil
