@@ -213,26 +213,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['header2'] = $this->contenido->header2($dataHeader2);
         $data['top2'] = $this->banners->FE_Megabanner();
 
-/*        $ip = $_SERVER ['REMOTE_ADDR'];
-        $country = file_get_contents('http://api.hostip.info/country.php?ip=' . $ip);
-
-        if ($country == "US") {*/
-            $amazonAssociates =  '<script type="text/javascript">
-amzn_assoc_placement = "adunit0";
-amzn_assoc_tracking_id = "theultappmedc-20";
-amzn_assoc_ad_mode = "manual";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_linkid = "c3680e81a595d2cfdd9ea6e1afceb7b2";
-amzn_assoc_asins = "B00U60IB28,B00U60JXJ8,B00L6GP3C2,B00PFZJ1B4";
-amzn_assoc_title = "";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>';
-       /* } else {
-            $amazonAssociates =  '';
-        }*/
-
+        // banner amazon
+        $amazonAssociates = $this->banners->fe_amazon();
 
         $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE, 0, FALSE, $amazonAssociates);
         $test = CHAMP_DEFAULT_TIPOTABLA;
