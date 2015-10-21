@@ -1028,9 +1028,16 @@ class Stories extends CI_Controller
 
         $this->load->library('Twitter');
         //para el caso que titular inicia con @
+        $carpetaRoot = $_SERVER['DOCUMENT_ROOT'] ;
         if (substr($titular, 0) == "@")
             $titular = " " . $titular;
-        $this->twitter->update_image($titular . ' http://en.fut.ec/?l=' . $id, "http://www.futbolecuador.com/" . $consultaSeccion[0]->thumb640);
+        $urlImagen = $carpetaRoot .  "/" .$consultaSeccion[0]->thumb640;
+
+        if ( file_exists ( $urlImagen )) {
+            $this->twitter->update_image($titular . ' http://en.fut.ec/?l=' . $id, "http://www.futbolecuador.com/" . $consultaSeccion[0]->thumb640);
+        } else {
+            $this->twitter->update($titular . ' http://en.fut.ec/?l=' . $id);
+        }
     }
 
     function programadas()

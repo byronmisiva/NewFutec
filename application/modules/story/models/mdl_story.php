@@ -22,7 +22,7 @@ class Mdl_story extends MY_Model
 
     function get_story($id)
     {
-        $this->db->select('s.*, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, i.thumb400,i.thumb300,i.thumb150,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name', FALSE);
+        $this->db->select('s.*, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, i.thumb400,i.thumb300,i.thumb150,i.thumb640,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name', FALSE);
         $this->db->join('images i', 's.image_id=i.id', 'LEFT');
         //$this->db->where('s.image_id','i.id',FALSE);
         $this->db->where('s.id', $id);

@@ -13,7 +13,7 @@
     }
     ?>
     <meta name="description"
-          content="<?php echo (isset($description)) ? strip_tags($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del ftbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias, copa libertadores.'; ?>"/>
+          content="<?php echo (isset($description)) ? strip_tags($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
