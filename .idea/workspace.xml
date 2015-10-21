@@ -4,8 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/application/modules/noticias/views/mininewssidebar.php" line="15" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="e">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
+    <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -83,8 +83,8 @@
       <file leaf-file-name="fe_amazon.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.029069768">
+              <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -487,12 +487,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00841" summary="e">
-      <created>1440111418565</created>
-      <option name="number" value="00841" />
-      <option name="project" value="LOCAL" />
-      <updated>1440111418565</updated>
-    </task>
     <task id="LOCAL-00842" summary="e">
       <created>1440773117962</created>
       <option name="number" value="00842" />
@@ -781,7 +775,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445468231630</updated>
     </task>
-    <option name="localTasksCounter" value="890" />
+    <task id="LOCAL-00890" summary="e">
+      <created>1445468783146</created>
+      <option name="number" value="00890" />
+      <option name="project" value="LOCAL" />
+      <updated>1445468783147</updated>
+    </task>
+    <option name="localTasksCounter" value="891" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1490,8 +1490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.029069768">
+          <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
