@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/templates/views/header.php" afterPath="$PROJECT_DIR$/application/modules/templates/views/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -59,11 +57,11 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17772512">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.1421801">
+              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
               <folding>
-                <element signature="e#1138#1707#0" expanded="false" />
-                <element signature="e#1834#2151#0" expanded="false" />
+                <element signature="e#1134#1703#0" expanded="false" />
+                <element signature="e#1830#2147#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -370,12 +368,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00845" summary="e">
-      <created>1440773658759</created>
-      <option name="number" value="00845" />
-      <option name="project" value="LOCAL" />
-      <updated>1440773658759</updated>
-    </task>
     <task id="LOCAL-00846" summary="e">
       <created>1440773709297</created>
       <option name="number" value="00846" />
@@ -664,7 +656,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445524132369</updated>
     </task>
-    <option name="localTasksCounter" value="894" />
+    <task id="LOCAL-00894" summary="e">
+      <created>1445524416249</created>
+      <option name="number" value="00894" />
+      <option name="project" value="LOCAL" />
+      <updated>1445524416250</updated>
+    </task>
+    <option name="localTasksCounter" value="895" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1207,11 +1205,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17772512">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.1421801">
+          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
           <folding>
-            <element signature="e#1138#1707#0" expanded="false" />
-            <element signature="e#1834#2151#0" expanded="false" />
+            <element signature="e#1134#1703#0" expanded="false" />
+            <element signature="e#1830#2147#0" expanded="false" />
           </folding>
         </state>
       </provider>
