@@ -35,8 +35,11 @@ function cargarSplash() {
     // amazon asociates
     if ($('#div-gpt-ad-1445466832316-0 iframe').contents().find("body").html().length == 0) {
         $('#div-gpt-ad-1445466832316-0').hide();
+        $('#div-gpt-ad-1445466832316-0').css( "height", "0p" );
+
     } else {
-        $('#div-gpt-ad-1445466832316-0').removeClass('hidden').show();
+        $('#div-gpt-ad-1445466832316-0').show();
+        $('#div-gpt-ad-1445466832316-0').css( "height", "370px" );
     }
 
 
