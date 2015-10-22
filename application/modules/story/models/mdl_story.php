@@ -22,7 +22,7 @@ class Mdl_story extends MY_Model
 
     function get_story($id)
     {
-        $this->db->select('s.*, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, i.thumb400,i.thumb300,i.thumb150,i.thumb640,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name', FALSE);
+        $this->db->select('s.*, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id limit 1) AS lecturas, i.thumb400,i.thumb300,i.thumb150,i.thumb640,i.thumbh120,thumbh50, UNIX_TIMESTAMP(s.modified) as datem,i.name as image_name', FALSE);
         $this->db->join('images i', 's.image_id=i.id', 'LEFT');
         //$this->db->where('s.image_id','i.id',FALSE);
         $this->db->where('s.id', $id);
@@ -71,7 +71,7 @@ class Mdl_story extends MY_Model
     {
         $this->load->module('story');
         if ($tag != "") $tag = 'lower("' . $tag . '")=lower(t.name) AND ';
-        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas,  i.thumb300, i.thumbh120,i.thumbh80,i.thumbh50, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
+        $this->db->select("s.id, s.category_id, s.title, s.subtitle, s.lead, s.body, s.created, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id limit 1) AS lecturas,  i.thumb300, i.thumbh120,i.thumbh80,i.thumbh50, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category", FALSE);
         $this->db->from('stories  s', FALSE);
         $this->db->join('images i', 's.image_id = i.id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
@@ -213,7 +213,7 @@ class Mdl_story extends MY_Model
 
         }
 
-        $this->db->select('s.*,i.thumb500,,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
+        $this->db->select('s.*,i.thumb500,,i.thumb300, i.thumbh120 as thumb1,i.thumbh120,i.thumbh80 as thumb2,i.thumbh80 ,i.thumbh50 as thumb3,i.thumbh50,s.created as time, (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id limit 1) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
         $this->db->where('s.invisible', '0');
 
         $this->db->where('s.position <', 10);
@@ -348,7 +348,7 @@ class Mdl_story extends MY_Model
 
     function cuentaVisita($id)
     {
-        $sql = 'select `reads` from stories_stats  where story_id=' . $id;
+        $sql = 'select `reads` from stories_stats  where story_id=' . $id . ' limit 1';
         $aux = $this->db->query($sql)->result();
 
         if (isset($aux[0]->reads)) {
@@ -383,7 +383,7 @@ class Mdl_story extends MY_Model
         $this->db->from('stories_stats ss');
         $this->db->where('ss.story_id', 's.id', FALSE);
         $this->db->order_by('ss.reads', 'desc');
-        $this->db->select('*, , (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
+        $this->db->select('*, , (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id limit 1) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
 
         $data = $this->db->get($this->table_name . ' s')->result();
 
