@@ -173,7 +173,7 @@
 <script type='text/javascript'>
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
-    (function () {
+    (function() {
         var gads = document.createElement('script');
         gads.async = true;
         gads.type = 'text/javascript';
@@ -184,6 +184,14 @@
         node.parentNode.insertBefore(gads, node);
     })();
 </script>
+
+<script type='text/javascript'>
+
+
+
+
+</script>
+
 
 <script type='text/javascript'>
     var verMobile = <?php echo $verMobile ?>;
@@ -227,10 +235,9 @@
 
         //amazon
         googletag.defineSlot('/1022247/Amazon_associates', [665, 370], 'div-gpt-ad-1445466832316-0').addService(googletag.pubads());
-
-        googletag.pubads().enableSingleRequest();
         // si no existe contenido no muestra para el caso del header y splas
         //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
+        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
