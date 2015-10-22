@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -54,14 +54,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.19549763">
+              <caret line="39" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
               <folding>
-                <element signature="e#1134#1703#0" expanded="false" />
-                <element signature="e#1830#2147#0" expanded="false" />
+                <element signature="e#1156#1725#0" expanded="false" />
+                <element signature="e#1852#2169#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fe_amazon.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fe_amazon.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.018292682">
+            <state vertical-scroll-proportion="-0.625">
               <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -182,8 +182,8 @@
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
         <option value="$PROJECT_DIR$/banner.html" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -367,12 +367,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00847" summary="e">
-      <created>1440774444182</created>
-      <option name="number" value="00847" />
-      <option name="project" value="LOCAL" />
-      <updated>1440774444182</updated>
     </task>
     <task id="LOCAL-00848" summary="e">
       <created>1441051885134</created>
@@ -662,7 +656,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445524580853</updated>
     </task>
-    <option name="localTasksCounter" value="896" />
+    <task id="LOCAL-00896" summary="e">
+      <created>1445524734974</created>
+      <option name="number" value="00896" />
+      <option name="project" value="LOCAL" />
+      <updated>1445524734974</updated>
+    </task>
+    <option name="localTasksCounter" value="897" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1194,23 +1194,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
           <folding>
-            <element signature="e#1134#1703#0" expanded="false" />
-            <element signature="e#1830#2147#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_amazon.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018292682">
-          <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.19549763">
+          <caret line="39" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1156#1725#0" expanded="false" />
+            <element signature="e#1852#2169#0" expanded="false" />
           </folding>
         </state>
       </provider>
