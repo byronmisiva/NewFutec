@@ -24,9 +24,9 @@ foreach ($noticias as $noticia) {
     $pos = strpos($noticia, $findme);
     $paraTable = "6";
 
-    if ($indice  == 8) {
+    if ($indice == 8) {
         if (isset($intermediaBanner))
-        echo $intermediaBanner;
+            echo $intermediaBanner;
     }
     if ($indice % 2 == 0) {
         echo '<div class="row noticia-content">';
@@ -61,6 +61,10 @@ foreach ($noticias as $noticia) {
 }
 //importante cuando no son par + 1 las noticias  se le cierra el div
 if ($indice % 2 == 1) echo '</div>';
+?>
+<?php
+if (isset($intermediaBanner))
+    echo $intermediaBanner;
 ?>
 
 <div class="noticiasextras">

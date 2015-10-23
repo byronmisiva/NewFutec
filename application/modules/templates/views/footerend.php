@@ -325,5 +325,14 @@ if (isset($fe_scritp_footer))
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4&appId=1117750194919935";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Taboola  tracking add 20151023-->
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+</script>
+<!-- End Taboola  tracking add 20151023-->
+
+
 </body>
 </html>

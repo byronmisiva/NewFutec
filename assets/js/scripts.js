@@ -33,13 +33,16 @@ function cargarSplash() {
             $('.separador10-xs').css('margin-top', '95px');
     }
     // amazon asociates
-    if ($('#div-gpt-ad-1445466832316-0 iframe').contents().find("body").html().length == 0) {
-        $('#div-gpt-ad-1445466832316-0').hide();
-        $('#div-gpt-ad-1445466832316-0').css( "height", "0p" );
 
-    } else {
-        $('#div-gpt-ad-1445466832316-0').show();
-        $('#div-gpt-ad-1445466832316-0').css( "height", "370px" );
+    if ($('#div-gpt-ad-1445466832316-0 ').length > 0) {
+        if ($('#div-gpt-ad-1445466832316-0 iframe').contents().find("body").html().length == 0) {
+            $('#div-gpt-ad-1445466832316-0').hide();
+            $('#div-gpt-ad-1445466832316-0').css("height", "0p");
+
+        } else {
+            $('#div-gpt-ad-1445466832316-0').show();
+            $('#div-gpt-ad-1445466832316-0').css("height", "370px");
+        }
     }
 
 
@@ -61,23 +64,26 @@ function cargarSplash() {
         }
     } else {
         // caso desktop
-        if ($("#div-gpt-ad-1425424774921-0 iframe").contents().find("body").html().length > 0) {
-            $('#darkLayer').show();
-            $('#FE_LOADING').show();
-            //funcion enviar encuesta
-            $(".closeBanner").click(function () {
-                $('#darkLayer').hide();
-                $('#FE_LOADING').hide();
-            })
-            setTimeout(cleanBlackLayer, 100000);
-        } else {
-            if (mostrarSplash == 1)
-                if (validarCookie())
-                    cargarSplashFE();
+
+        if ($("#div-gpt-ad-1425424774921-0").length > 0) {
+            if ($("#div-gpt-ad-1425424774921-0 iframe").contents().find("body").html().length > 0) {
+                $('#darkLayer').show();
+                $('#FE_LOADING').show();
+                //funcion enviar encuesta
+                $(".closeBanner").click(function () {
+                    $('#darkLayer').hide();
+                    $('#FE_LOADING').hide();
+                })
+                setTimeout(cleanBlackLayer, 100000);
+            } else {
+                if (mostrarSplash == 1)
+                    if (validarCookie())
+                        cargarSplashFE();
+            }
         }
     }
 
-    if ($('#div-gpt-ad-1444931286798-0').length != 0 ) {
+    if ($('#div-gpt-ad-1444931286798-0').length != 0) {
         if ($("#div-gpt-ad-1444931286798-0 iframe").contents().find("body").html().length > 0) {
             $("#div-gpt-ad-1444931286798-0").height(80)
         } else {
@@ -226,8 +232,8 @@ jQuery(document).ready(function () {
         link = $(".result-link").attr("href");
         var res = link.split("/");
         //reemplazar el penultimo
-        for (i=0; i < res.length; i++ ){
-            console.log (res)
+        for (i = 0; i < res.length; i++) {
+            console.log(res)
             if (res[i] == 'resultados') {
                 res1 = res[i + 1];
                 link = link.replace(res1, $(this).attr("data-info"));
@@ -785,7 +791,7 @@ function validarCookie() {
     else {
         var expiration = new Date();
         //expiration.setTime(expiration.getTime() + 86400000);
-          expiration.setTime(expiration.getTime() + 7200000);
+        expiration.setTime(expiration.getTime() + 7200000);
         setCookie("vezprimera", "1", expiration);
         return true
     }

@@ -205,6 +205,11 @@ class Banners extends MY_Controller
         return $this->load->view('fe_amazon', $data, TRUE);
     }
 
+    public function fe_taboola($data = FALSE)
+    {
+        return $this->load->view('fe_taboola', $data, TRUE);
+    }
+
     // fin copa america banners
 
     public function fe_header_copa_america($data = FALSE)

@@ -165,6 +165,21 @@
 
     </script>
     <!-- End Tapstream tracking-->
+
+    <!-- Taboola  tracking add 20151023-->
+    <script type="text/javascript">
+        window._taboola = window._taboola || [];
+        _taboola.push({article:'auto'});
+        !function (e, f, u) {
+            e.async = 1;
+            e.src = u;
+            f.parentNode.insertBefore(e, f);
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/futbolecuador/loader.js');
+    </script>
+    <!-- Taboola  tracking add 20151023-->
+
 </head>
 <body>
 <input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/>
