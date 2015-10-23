@@ -63,8 +63,8 @@ foreach ($noticias as $noticia) {
 if ($indice % 2 == 1) echo '</div>';
 ?>
 <?php
-if (isset($intermediaBanner))
-    echo $intermediaBanner;
+if (isset($finalmediaBanner))
+    echo $finalmediaBanner;
 ?>
 
 <div class="noticiasextras">
