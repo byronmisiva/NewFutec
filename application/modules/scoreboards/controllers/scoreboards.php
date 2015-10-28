@@ -40,6 +40,15 @@ class Scoreboards extends MY_Controller
         }
         return $tabla;
     }
+    public function sancionQuito ($tabla, $puntos ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "36"){
+                $tabla[$key]['points'] = $equipo['points'] - $puntos;
+            }
+        }
+        return $tabla;
+    }
 
     public function sancionLDUL ($tabla ) {
         foreach ($tabla as $key=>$equipo )
@@ -50,6 +59,7 @@ class Scoreboards extends MY_Controller
         }
         return $tabla;
     }
+
     public function sancionQuevedo ($tabla ) {
         foreach ($tabla as $key=>$equipo )
         {
@@ -101,8 +111,20 @@ class Scoreboards extends MY_Controller
                     $data['tabla'] = $this->sancionOlmedo($data['tabla']);
                     $data['tabla'] = $this->sancionQuevedo($data['tabla']);
 
+                    $data['tabla'] = $this->sancionQuito($data['tabla'], 6);
+
 
                 }
+                //Reodenamos la tabla luego de disminuir puntos
+                foreach ($data['tabla'] as $key=>$arr):
+                    $pun[$key] = $arr['points'];
+                    $g1[$key] = $arr['gd'];
+                    $g2[$key] = $arr['gf'];
+                    $g3[$key] = $arr['gc'];
+                endforeach;
+                    array_multisort($pun,SORT_DESC,$g1,SORT_DESC,$g2,SORT_DESC,$g3,SORT_ASC,$data['tabla']);
+
+               // array_multisort($data['tabla'], SORT_DESC, $data['tabla']['points'], SORT_ASC, $data);
 
 
 
@@ -144,9 +166,17 @@ class Scoreboards extends MY_Controller
                         $data['tabla'] = $this->sancionOlmedo($data['tabla']);
                         $data['tabla'] = $this->sancionQuevedo($data['tabla']);
 
-
+                        $data['tabla'] = $this->sancionQuito($data['tabla'], 6);
                     }
+                    //Reodenamos la tabla luego de disminuir puntos
 
+                    foreach ($data['tabla'] as $key=>$arr):
+                        $pun[$key] = $arr['points'];
+                        $g1[$key] = $arr['gd'];
+                        $g2[$key] = $arr['gf'];
+                        $g3[$key] = $arr['gc'];
+                    endforeach;
+                    array_multisort($pun,SORT_DESC,$g1,SORT_DESC,$g2,SORT_DESC,$g3,SORT_ASC,$data['tabla']);
                     return $this->load->view($leaderboard, $data, true);
 
                     $tablas = $tablas . $this->load->view($leaderboard, $data, true);
@@ -229,11 +259,22 @@ class Scoreboards extends MY_Controller
             $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
             $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
 
+            //sancion campeonato
+            $data['tabla'] = $this->sancionQuito ($data['tabla'], 6);
+
             $data['tabla'] = $this->sancionOlmedo ($data['tabla']);
             $data['tabla'] = $this->sancionQuevedo($data['tabla']);
 
-
         }
+        //Reodenamos la tabla luego de disminuir puntos
+        foreach ($data['tabla'] as $key=>$arr):
+            $pun[$key] = $arr['points'];
+            $g1[$key] = $arr['gd'];
+            $g2[$key] = $arr['gf'];
+            $g3[$key] = $arr['gc'];
+        endforeach;
+        array_multisort($pun,SORT_DESC,$g1,SORT_DESC,$g2,SORT_DESC,$g3,SORT_ASC,$data['tabla']);
+
         return $this->load->view($leaderboard, $data, true);
      }
     //Fin Tabla de Posiciones acumulada

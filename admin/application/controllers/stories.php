@@ -243,23 +243,26 @@ class Stories extends CI_Controller
         }
 
 //        $test = $this->db->last_query();
-
-        $this->pwCall('createMessage', array(
-                'application' => PW_APP_MOBILE,
-                'auth' => PW_AUTH,
-                'notifications' => array(
-                    array(
-                        'send_date' => 'now',
-                        'content' => $emoticono . $post,
-                        'link' => 'http://www.futbolecuador.com/site/noticia/' . $urlFriend . '/' . $id . '/push',
-                        "android_icon" => "icon",
-                        "android_vibration" => 0,
-                        'conditions' => $condiciones,
-                        // 'conditions' => array(array("informacion", "IN", $seccionesLista), array())
+        if (count($condiciones) > 0) {
+            $this->pwCall('createMessage', array(
+                    'application' => PW_APP_MOBILE,
+                    'auth' => PW_AUTH,
+                    'notifications' => array(
+                        array(
+                            'send_date' => 'now',
+                            'content' => $emoticono . $post,
+                            'link' => 'http://www.futbolecuador.com/site/noticia/' . $urlFriend . '/' . $id . '/push',
+                            "android_icon" => "icon",
+                            "android_vibration" => 0,
+                            'conditions' => $condiciones,
+                            // 'conditions' => array(array("informacion", "IN", $seccionesLista), array())
+                        )
                     )
                 )
-            )
-        );
+            );
+        }
+
+
     }
 
     function pwCall($action, $data = array())
@@ -275,6 +278,13 @@ class Stories extends CI_Controller
     {
         $file = 'lognotificaciones.txt';
         $json = $json . "\n";
+        file_put_contents($file, $json, FILE_APPEND | LOCK_EX);
+    }
+
+    function logtwiter($json)
+    {
+        $file = 'logtwitter.txt';
+        $json = json_encode($json) . "\n";
         file_put_contents($file, $json, FILE_APPEND | LOCK_EX);
     }
 
@@ -1034,10 +1044,12 @@ class Stories extends CI_Controller
         $urlImagen = $carpetaRoot .  "/" .$consultaSeccion[0]->thumb640;
 
         if ( file_exists ( $urlImagen )) {
-            $this->twitter->update_image($titular . ' http://en.fut.ec/?l=' . $id, "http://www.futbolecuador.com/" . $consultaSeccion[0]->thumb640);
+            $result = $this->twitter->update_image($titular . ' http://en.fut.ec/?l=' . $id, "http://www.futbolecuador.com/" . $consultaSeccion[0]->thumb640);
         } else {
-            $this->twitter->update($titular . ' http://en.fut.ec/?l=' . $id);
+            $result = $this->twitter->update($titular . ' http://en.fut.ec/?l=' . $id);
         }
+        $this->logtwiter($result);
+
     }
 
     function programadas()
