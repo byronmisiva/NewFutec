@@ -3,6 +3,10 @@ setTimeout(function () {
     cargarSplash();
 }, 3000);
 
+setTimeout(function () {
+    cargarSplash();
+}, 5000);
+
 
 var masnoticas = "";
 
@@ -23,14 +27,16 @@ function cargarSplashFE() {
 
 function cargarSplash() {
 
-    if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
-        $('#div-gpt-ad-1383593619381-0').hide();
-        if (verMobile == 1)
-            $('.separador10-xs').css('margin-top', '16px');
-    } else {
-        $('#div-gpt-ad-1383593619381-0').show();
-        if (verMobile == 1)
-            $('.separador10-xs').css('margin-top', '95px');
+    if ($('#div-gpt-ad-1383593619381-0').length == 0) {
+        if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
+            $('#div-gpt-ad-1383593619381-0').hide();
+            if (verMobile == 1)
+                $('.separador10-xs').css('margin-top', '16px');
+        } else {
+            $('#div-gpt-ad-1383593619381-0').show();
+            if (verMobile == 1)
+                $('.separador10-xs').css('margin-top', '95px');
+        }
     }
     // amazon asociates
 
@@ -48,19 +54,21 @@ function cargarSplash() {
 
     if (verMobile == 1) {
         // caso movil
-        if ($("#div-gpt-ad-1383593884981-1 iframe").contents().find("body").html().length > 0) {
-            $('#darkLayer').show();
-            $('#FE_LOADING').show();
-            //funcion enviar encuesta
-            $(".closeBanner").click(function () {
-                $('#darkLayer').hide();
-                $('#FE_LOADING').hide();
-            })
-            setTimeout(cleanBlackLayer, 14000);
-        } else {
-            if (mostrarSplash == 1)
-                if (validarCookie())
-                    cargarSplashFE();
+        if ($("#div-gpt-ad-1383593884981-1").length > 0) {
+            if ($("#div-gpt-ad-1383593884981-1 iframe").contents().find("body").html().length > 0) {
+                $('#darkLayer').show();
+                $('#FE_LOADING').show();
+                //funcion enviar encuesta
+                $(".closeBanner").click(function () {
+                    $('#darkLayer').hide();
+                    $('#FE_LOADING').hide();
+                })
+                setTimeout(cleanBlackLayer, 14000);
+            } else {
+                if (mostrarSplash == 1)
+                    if (validarCookie())
+                        cargarSplashFE();
+            }
         }
     } else {
         // caso desktop
@@ -88,6 +96,13 @@ function cargarSplash() {
             $("#div-gpt-ad-1444931286798-0").height(80)
         } else {
             $("#div-gpt-ad-1444931286798-0").height(0)
+        }
+    }
+    if ($('#div-gpt-ad-1444931286798-1').length != 0) {
+        if ($("#div-gpt-ad-1444931286798-1 iframe").contents().find("body").html().length > 0) {
+            $("#div-gpt-ad-1444931286798-1").height(80)
+        } else {
+            $("#div-gpt-ad-1444931286798-1").height(0)
         }
     }
 

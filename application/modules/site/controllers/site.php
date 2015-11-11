@@ -331,6 +331,18 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $this->load->library('user_agent');
         $this->load->module('story');
+
+
+        if ($this->verificarDispositivo() == "1") {
+            $bannerBottom = $this->banners->fe_smart_bottom_internas();
+            $bannerTop = $this->banners->fe_smart_top_internas();
+        } else {
+
+            $bannerBottom = "";
+            $bannerTop = "";
+        }
+
+
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
         if (!$idNoticia) {
@@ -343,7 +355,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($this->verificarDispositivo() == "1")
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas());
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(),$bannerBottom, $bannerTop );
         else
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
 
@@ -351,15 +363,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
         //  if (ZONAINTERNACIONAL == $seccion) {
+        $logoDonBalon = "  <span class='donbalonlogo'></span>";
         $storia = str_replace("en www.donbalon.com", "", $storia);
-        $storia = str_replace(" donbalon", " <span class='donbalonlogo'></span>", $storia);
+        $storia = str_replace(" donbalon", $logoDonBalon, $storia);
         $storia = str_replace("Mira la noticia completa", "Lee la noticia completa en ", $storia);
         $storia = str_replace("Mira la nota completa", "Lee la noticia completa en ", $storia);
         $storia = str_replace("La nota completa", "Lee la noticia completa en", $storia);
-        $storia = str_replace("(AQUÍ).", " <span class='donbalonlogo'></span>", $storia);
-        $storia = str_replace("(AQUÍ)", " <span class='donbalonlogo'></span>", $storia);
-        $storia = str_replace("AQUÍ:", " <span class='donbalonlogo'></span>", $storia);
-        $storia = str_replace("AQUÍ", " <span class='donbalonlogo'></span>", $storia);
+        $storia = str_replace("(AQUÍ).", $logoDonBalon, $storia);
+        $storia = str_replace("(AQUÍ)", $logoDonBalon, $storia);
+        $storia = str_replace("AQUÍ:", $logoDonBalon, $storia);
+        $storia = str_replace("AQUÍ", $logoDonBalon, $storia);
 
         $aux = $this->mdl_story->get_story($idNoticia);
         $image = $aux->thumb640;
@@ -735,15 +748,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
             //para el caso de don balon se cambia el texto donbalon por el logo de don balon
             //  if (ZONAINTERNACIONAL == $seccion) {
+            $logoDonBalon = "  <span class='donbalonlogo'></span>";
             $storia = str_replace("en www.donbalon.com", "", $storia);
-            $storia = str_replace(" donbalon", " <span class='donbalonlogo'></span>", $storia);
+            $storia = str_replace(" donbalon", $logoDonBalon, $storia);
             $storia = str_replace("Mira la noticia completa", "Lee la noticia completa en ", $storia);
             $storia = str_replace("Mira la nota completa", "Lee la noticia completa en ", $storia);
             $storia = str_replace("La nota completa", "Lee la noticia completa en", $storia);
-            $storia = str_replace("(AQUÍ).", " <span class='donbalonlogo'></span>", $storia);
-            $storia = str_replace("(AQUÍ)", " <span class='donbalonlogo'></span>", $storia);
-            $storia = str_replace("AQUÍ:", " <span class='donbalonlogo'></span>", $storia);
-            $storia = str_replace("AQUÍ", " <span class='donbalonlogo'></span>", $storia);
+            $storia = str_replace("(AQUÍ).", $logoDonBalon, $storia);
+            $storia = str_replace("(AQUÍ)", $logoDonBalon, $storia);
+            $storia = str_replace("AQUÍ:", $logoDonBalon, $storia);
+            $storia = str_replace("AQUÍ", $logoDonBalon, $storia);
 
             //  }
             $aux = $this->mdl_story->get_story($idNoticia);
@@ -908,7 +922,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($this->verificarDispositivo() == "1") {
-
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
         } else {

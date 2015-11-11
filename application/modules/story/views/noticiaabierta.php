@@ -9,6 +9,7 @@
                 <img class="img-responsive margen10b margen10r margen0-xs"
                      src="http://www.futbolecuador.com/<?php echo $noticia->thumb400; ?>"
                      alt="<?php echo $noticia->image_name; ?>">
+                <?php echo $bannerTop; ?>
             </div>
         </div>
         <div class="margen10lados-sx fechaabierta">
@@ -123,6 +124,10 @@
             if ($key < count($noticia->tags) - 1) echo ", ";
         } ?>
     </div>
+</div>
+
+<div class="col-xs-12 col-md-12 margen0">
+    <?php echo $bannerBottom; ?>
 </div>
 <div class="col-xs-12 col-md-12 backcuadros block-title separador10">
     <h4 class="panel-title">Comentarios </h4>

@@ -111,7 +111,7 @@ class Scoreboards extends MY_Controller
                     $data['tabla'] = $this->sancionOlmedo($data['tabla']);
                     $data['tabla'] = $this->sancionQuevedo($data['tabla']);
 
-                    $data['tabla'] = $this->sancionQuito($data['tabla'], 6);
+                    $data['tabla'] = $this->sancionQuito($data['tabla'], 7);
 
 
                 }
@@ -166,7 +166,7 @@ class Scoreboards extends MY_Controller
                         $data['tabla'] = $this->sancionOlmedo($data['tabla']);
                         $data['tabla'] = $this->sancionQuevedo($data['tabla']);
 
-                        $data['tabla'] = $this->sancionQuito($data['tabla'], 6);
+                        $data['tabla'] = $this->sancionQuito($data['tabla'], 7);
                     }
                     //Reodenamos la tabla luego de disminuir puntos
 
@@ -260,7 +260,7 @@ class Scoreboards extends MY_Controller
             $data['tabla'] = $this->sancionBarcelona ($data['tabla']);
 
             //sancion campeonato
-            $data['tabla'] = $this->sancionQuito ($data['tabla'], 6);
+            $data['tabla'] = $this->sancionQuito ($data['tabla'], 7);
 
             $data['tabla'] = $this->sancionOlmedo ($data['tabla']);
             $data['tabla'] = $this->sancionQuevedo($data['tabla']);

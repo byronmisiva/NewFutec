@@ -32,8 +32,9 @@ class Story extends MY_Controller
     }
 
 
-    function get_complete($id, $banerintermedio = "")
+    function get_complete($id, $banerintermedio = "",$bannerBottom ="", $bannerTop = "")
     {
+
         $this->mdl_story->cuentaVisita($id);
         $this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
@@ -46,8 +47,13 @@ class Story extends MY_Controller
         }
         $noticia = $this->mdl_story->get_story($id);
         $data['noticia'] = $noticia;
+
+        $data['bannerBottom'] = $bannerBottom;
+        $data['bannerTop'] = $bannerTop;
+
         $data['banerintermedio'] = $banerintermedio;
         $data['autor'] = $this->get_author($noticia->author_id);
+
 
 
 
