@@ -1,11 +1,11 @@
 //fe header movil
 setTimeout(function () {
-    cargarSplash();
+//    cargarSplash();
 }, 3000);
 
 setTimeout(function () {
     cargarSplash();
-}, 5000);
+}, 4000);
 
 
 var masnoticas = "";

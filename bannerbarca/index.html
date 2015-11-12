@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="es"/>
+    <meta name="robots" content="follow,index,nocache"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="Misiva Corp"/>
+
+</head>
+<body style="margin: 0; padding: 0">
+
+<script type="text/javascript" src="http://www.futbolecuador.com/assets/js/jquery.min.js"></script>
+<div class="peque" style="width: 980px; height: 50px">
+    <iframe src="http://www.futbolecuador.com/bannerbarca/index2.html" width="980" height="50" frameborder="0"></iframe>
+</div>
+<div class="grande" style="display: none; width: 980px; height: 200px">
+    <iframe src="http://www.futbolecuador.com/bannerbarca/index1.html" width="980" height="200"
+            frameborder="0"></iframe>
+</div>
+<div class="js--over" style="width: 980px; height: 50px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+<div class="js--click" style="width: 980px; height: 0px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.js--click').click (function (){
+            window.open('%%CLICK_URL_ESC%%http://www.movistarbarca4g.com/', '_blank');
+        })
+         $(".js--over").on("mouseenter", function () {
+            $(".peque").hide();
+            $(".js--over").hide();
+            $(".grande").css("display", "block");
+             $(".js--click").css("height", "200px");
+            window.parent.see_fold2('on');
+        })
+        $("div.js--click")
+                .on("mouseleave", function () {
+                    $(".peque").show();
+                    $(".js--over").show();
+                    $(".grande").css("display", "none");
+                    $(".js--click").css("height", "0");
+                    window.parent.see_fold2('off');
+                });
+    });
+</script>
+</body>
+</html><!-- /container -->
