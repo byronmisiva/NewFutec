@@ -20,14 +20,7 @@ class Mdl_teams_position extends MY_Model{
 	}
 
 
-    function get_table_by_champ($championship){
 
-        $teams=$this->get_teams_total($championship)->result();
-        $matches=$this->get_matches_by_champ($championship);
-        $last_schedule=$this->get_last_schedule($championship);
-
-        return $this->make_table($matches,$teams,$last_schedule);
-    }
 
     function get_active_round($id){
         $this->db->select('active_round as round');
@@ -113,9 +106,19 @@ class Mdl_teams_position extends MY_Model{
 
         return $aux;
     }
+    function get_table_by_champ($championship, $round = 0){
 
+        $teams=$this->get_teams_total($championship)->result();
+        $matches=$this->get_matches_by_champ($championship);
+        $last_schedule=$this->get_last_schedule($championship);
 
-    function get_table($group )
+        $result = $this->make_table($matches,$teams,$last_schedule);
+        $teams = $this->sanciones_by_champ($result, $championship);
+
+        return $teams;
+    }
+
+    function get_table($group, $round = 0 )
     {
 
 
@@ -298,8 +301,120 @@ class Mdl_teams_position extends MY_Model{
                 $i+=1;
             endforeach;
         }
+
+        $teams = $this->sanciones($teams, $round);
         return $teams;
     }
+    function sanciones_by_champ  ($teams, $round) {
+        //barcelona sancion campeonato 2015.
+        if ($round == 53) {
+            $teams = $this->sancionLDUL ($teams);
+            $teams = $this->sancionLDUL ($teams);
+            $teams = $this->sancionLDUL ($teams);
+            $teams = $this->sancionLDUL ($teams);
+
+            $teams = $this->sancionBarcelona ($teams);
+            $teams = $this->sancionBarcelona ($teams);
+
+            //sancion campeonato
+            $teams = $this->sancionQuito ($teams, 7);
+
+            $teams = $this->sancionOlmedo ($teams);
+            $teams = $this->sancionQuevedo($teams);
+
+        }
+        //Reodenamos la tabla luego de disminuir puntos
+        foreach ($teams as $key=>$arr):
+            $pun[$key] = $arr['points'];
+            $g1[$key] = $arr['gd'];
+            $g2[$key] = $arr['gf'];
+            $g3[$key] = $arr['gc'];
+        endforeach;
+        array_multisort($pun,SORT_DESC,$g1,SORT_DESC,$g2,SORT_DESC,$g3,SORT_ASC,$teams);
+        return $teams;
+    }
+    function sanciones ($teams, $round) {
+
+        //barcelona sancion campeonato 2015.
+        if ($round == 196) {
+            $teams = $this->sancionLDUL ($teams);
+            $teams = $this->sancionLDUL ($teams);
+            $teams = $this->sancionLDUL ($teams);
+
+            $teams = $this->sancionBarcelona ($teams);
+        }
+
+        if ($round == 209) {
+            $teams = $this->sancionLDUL($teams);
+            $teams = $this->sancionBarcelona($teams);
+
+            $teams = $this->sancionOlmedo($teams);
+            $teams = $this->sancionQuevedo($teams);
+
+            $teams = $this->sancionQuito($teams, 7);
+
+
+        }
+        //Reodenamos la tabla luego de disminuir puntos
+        foreach ($teams as $key=>$arr):
+            $pun[$key] = $arr['points'];
+            $g1[$key] = $arr['gd'];
+            $g2[$key] = $arr['gf'];
+            $g3[$key] = $arr['gc'];
+        endforeach;
+        array_multisort($pun,SORT_DESC,$g1,SORT_DESC,$g2,SORT_DESC,$g3,SORT_ASC,$teams);
+        return $teams;
+    }
+
+    public function sancionBarcelona ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "34"){
+                $tabla[$key]['points'] = $equipo['points'] - 1;
+            }
+        }
+        return $tabla;
+    }
+    public function sancionQuito ($tabla, $puntos ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "36"){
+                $tabla[$key]['points'] = $equipo['points'] - $puntos;
+            }
+        }
+        return $tabla;
+    }
+
+    public function sancionLDUL ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "77"){
+                $tabla[$key]['points'] = $equipo['points'] - 1;
+            }
+        }
+        return $tabla;
+    }
+
+    public function sancionQuevedo ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "229"){
+                $tabla[$key]['points'] = $equipo['points']- 1;
+            }
+        }
+        return $tabla;
+    }
+
+    public function sancionOlmedo ($tabla ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "41"){
+                $tabla[$key]['points'] = $equipo['points'] - 1;
+            }
+        }
+        return $tabla;
+    }
+
 
     function get_bonus($group){
         $row=$this->db->query('Select c.active_round as ar, r.id

@@ -113,7 +113,7 @@ class Mdl_scoreboards extends MY_Model
         $this->db->where('date_match >', 'ADDDATE(NOW(), INTERVAL -60 DAY)', false);
         $this->db->where_in('state', array('0', '8'));
         $this->db->where_in('schedule_id', $fechas);
-        $this->db->order_by('date_match', 'asc');
+        $this->db->order_by('date_match', 'desc');
         $matches = $this->db->get('matches');
         $test = $this->db->last_query();
         if ($matches->num_rows() > 0)
