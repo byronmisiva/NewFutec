@@ -649,7 +649,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function serieb()
     {
-        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb", "", SERIE_B);
+
+        $this->seccion(SECTION_SERIE_B, 2, "Serie B", "serieb", "", SERIE_B, SERIE_B_TIPOTABLA);
     }
 
     public function seleccion()
@@ -922,6 +923,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($this->verificarDispositivo() == "1") {
+
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
         } else {

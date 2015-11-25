@@ -31,6 +31,12 @@
 	</tr>
 	<tr>
 		<td class='required'></td>
+		<td>Destacada:</td>
+		<td>
+		<input type="checkbox" name="destacado" value="3"> Alertas Futbolecuador</td> <!-- 3 valor de la categoria Destacados en app AlertasFutbolecuador  -->
+	</tr>
+	<tr>
+		<td class='required'></td>
 		<td>Programar:</td>
 		<td>
 		<input type="text" name="programed" value="<?php echo set_value('programed')?>" readonly >
@@ -51,7 +57,7 @@
 	<tr>
 		<td class='required'>*</td>
 		<td>Twitter:</td>
-		<td><input type="text" name="twitter" size="80" maxlength="94" value="<?php echo set_value('twitter')?>"/></td>
+		<td><input type="text" name="twitter" size="80" maxlength="93" value="<?php echo set_value('twitter')?>"/></td>
 	</tr>
 	<tr>
 		<td class='required'>*</td>
