@@ -18,15 +18,15 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="<?= base_url('imagenes/femagazine/zonafe01.jpg'); ?>" class="img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/zonafe01.png'); ?>" class="img-responsive">
 
                 </div>
                 <div class="item">
-                    <img src="<?= base_url('imagenes/femagazine/zonafe02.jpg'); ?>" class="img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/zonafe02.png'); ?>" class="img-responsive">
 
                 </div>
                 <div class="item">
-                    <img src="<?= base_url('imagenes/femagazine/zonafe03.jpg'); ?>" class="img-responsive">
+                    <img src="<?= base_url('imagenes/femagazine/zonafe03.png'); ?>" class="img-responsive">
                 </div>
 
             </div>
@@ -76,9 +76,11 @@
                         <h2>La de Todos</h2>
 
                         <p>
-                            Un nuevo reto para el Equipo de Todos es clasificar al Mundial de Rusia 2018, y el
-                            calendario de las Eliminatorias quedó definido. Además, el lugar en que está posicionada en
-                            el ranking FIFA y la lesión de Énner Valencia.
+                            Partidos de la selección de Ecuador en Eliminatorias.
+                            Las tan esperadas Eliminatorias rumbo al Mundial de Rusia 2018 iniciaron, y la selección
+                            ecuatoriana tuvo un arranque incomparable. Conoce en detalle los hechos más curiosos que
+                            sucedieron en cada partido, y como jugadores, cuerpo técnico y aficionados vibraron con los
+                            partidos del Equipo de Todos.
                         </p>
                     </div>
                 </div>
@@ -87,16 +89,16 @@
             <div class="clearfix col-md-6  col-xs-12 margen0l separador10 ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/tiempo-extra.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/las-figuras.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>12 Pasos</h2>
+                        <h2>Las Figuras</h2>
 
-                        <p>
-                            Carlos Ischia, director técnico con amplio recorrido, llegó para dirigir a Aucas y sacarlo
-                            de un mal momento, poniéndolo a luchar en lo más alto del torneo. El estratega confesó los
-                            momentos cumbres que ha vivido en su carrera.
+                        <p>Una nueva dupla demoledora empezó a formarse en la selección nacional, Felipe Caicedo y Miler
+                            Bolaños pusieron a la orden de La Tricolor su poder goleador. FE Magazine te presenta un
+                            análisis de este nuevo dúo dinámico en ofensiva, que ha empezado a darle alegrías a todo
+                            Ecuador.
                         </p>
                     </div>
                 </div>
@@ -106,44 +108,6 @@
             <div class="clearfix col-md-6  col-xs-12 margen0l separador10   ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4 margen0   ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/la-figura.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>La Figura</h2>
-
-                        <p>
-                            Vanessa Arauz se ha convertido en la entrenadora más exitosa de la Selección Femenina. La
-                            joven estratega se confesó y reveló cómo piensa seguir aportando para la evolución de las
-                            futuras generaciones. También entérate sobre el Récord Guinness conseguido.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/directorio-de-apps.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Directorio de Apps</h2>
-
-                        <p>
-                            Las aplicaciones futboleras más destacadas te las presenta Futbolecuador.com Magazine, para
-                            que lleves lo mejor del deporte siempre en tu dispositivo.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-xs-12   margen0 ">
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
                         <img src="<?= base_url('imagenes/femagazine/contenidos/internacional.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
@@ -151,11 +115,10 @@
                         <h2>Internacional</h2>
 
                         <p>
-                            En colaboración con Don Balón, te presentamos la renovación del Manchester United, los
-                            jugadores que pidió Louis Van Gaal, y la inmensa inversión que hizo el club. Además, el
-                            Watford de Quique Sánchez Flores, integrado por jugadores de 23 nacionalidades distintas,
-                            para enfrentar el reto de La Premier League.
-
+                            En colaboración con Don Balón, te presentamos el espectacular año que ha tenido Luis Suárez
+                            con la camiseta del FC Barcelona, lleno de goles y éxitos. Además Felipe Caicedo y Keylor
+                            Navas, los jugadores en forma de la Liga Española, destacando por un su nivel sobresaliente
+                            en los terrenos de juego.
                         </p>
                     </div>
                 </div>
@@ -164,52 +127,19 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/90-minutos.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/radiografia.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>90 Minutos</h2>
+                        <h2>Copa Sudamericana</h2>
 
                         <p>
-                            La Copa Sudamericana arrancó y cuatro equipos asumieron el reto de representar al Ecuador.
-                            Resumen de la participación de los clubes y los duelos apasionantes que se vivieron, dentro
-                            y fuera del país. Liga y Emelec avanzaron a octavos de final. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-xs-12   margen0 ">
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/tecnologia.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Tecnología</h2>
+                            La eliminación de Emelec y Liga de Quito
+                            El sueño de quedarse con la Copa Sudamericana llegó a su fin para Emelec y Liga de Quito,
+                            los equipos ecuatorianos quedaron fuera del torneo derrochando todos sus esfuerzos. Varios
+                            detalles y hechos curiosos sucedieron en los partidos decisivos, entérate y revive los
+                            momentos particulares de estos apasionantes duelos.
 
-                        <p>
-                            Los videojuegos en línea son un verdadero boom en el planeta, y en mundo del fútbol, FIFA y
-                            PES son los más reconocidos. Conoce en detalle las sorpresas e innovaciones que traen en sus
-                            nuevas ediciones.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/ecuatorianos-en-ingalterra.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Especial</h2>
-
-                        <p>
-                            Los futbolistas ecuatorianos siguen pisando fuerte en el exterior, y en esta nueva temporada
-                            de La Premier League, son cuatro los representantes que tienen la oportunidad de dejar
-                            huella en Inglaterra.
                         </p>
                     </div>
                 </div>
@@ -219,15 +149,16 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/ecuatorianos-en-mexico.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/camisetazos.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Especial</h2>
+                        <h2>Los Camisetazos</h2>
 
                         <p>
-                            Cada vez son más los compatriotas que nos representan en el fútbol mexicano. Entérate y
-                            conoce a todos los jugadores que están marcando época el balompié azteca.
+                            Varios jugadores se olvidaron del amor eterno a los colores de un club y eso los marcó para
+                            siempre en la memoria de los hinchas, que no perdonaron su pasó por el rival de toda la
+                            vida.
                         </p>
                     </div>
                 </div>
@@ -236,16 +167,90 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/elecciones-barcelona.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/debut.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2><a href="http://www.futbolecuador.com/fuera-de-juego">Elecciones en Barcelona</a></h2>
+                        <h2>Debut y despedida </h2>
 
                         <p>
-                            Se aproximan las elecciones en Barcelona, y los aspirantes han echado sus cartas. Conoce las
-                            propuestas de Luis Noboa, José Cevallos y Carlos Nahón, candidatos que anhelan asumir el
-                            cargo de presidente del equipo más popular de Ecuador.
+                            Recuerda las contrataciones que pasaron sin pena ni gloria en el fútbol ecuatoriano. Los
+                            jugadores que vinieron como estrellas y fracasaron en su paso por Ecuador, dejando una
+                            huella negativa imborrable. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12   margen0 ">
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/luces-camara-gol.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Luces, cámaras, Gol </h2>
+
+                        <p>
+                            El mundo del cine y del fútbol cada vez están más ligados y las historias entorno al
+                            balompié cada vez son de mayor interés. Descubre más de aquellas películas que todo amante
+                            de este deporte debe ver.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/peculiares.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Los jugadores más peculiares</h2>
+
+                        <p>
+                            Muchos jugadores quedaron en la mente de los aficionados sin ser grandes estrellas,
+                            trascendieron en el mundo del fútbol por una característica peculiar. Ya sea por sus
+                            extravagantes peinados, estar pasados de kilos, o un ritmo de vida alocado, quedaron
+                            registrados entre los futbolistas más polémicos y llamativos de la historia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12   margen0 ">
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/autos-de-los-jugadoreas.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Las ruedas de los jugadores</h2>
+
+                        <p>
+                            Los juguetes favoritos de varias estrellas del deporte Rey son los automóviles, unos más
+                            hermoso, potentes y caros que los otros, que caracterizan los gustos de los futbolistas.
+                            Descubre que cuales son los carros de varias estrellas del balompié mundial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/radiografia.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Radiografía de Liga de Quito y Emelec</h2>
+
+                        <p>
+                            Los hinchas de Liga de Quito y Emelec tienen características específicas que los definen
+                            como tal, algunas positivas, otras muy graciosas. Conoce como los aficionados identifican a
+                            los seguidores de estos dos equipos.
                         </p>
                     </div>
                 </div>
@@ -256,37 +261,20 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/ascenso.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/fuera-dejuego.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Ascenso</h2>
+                        <h2><a href="http://www.futbolecuador.com/fuera-de-juego">Fuera de Juego</a></h2>
 
                         <p>
-                            Repasa cómo El Ciclón de Los Andes sorprendió con una buena campaña, que tuvo sus malos y buenos momentos, pero que al final logró ganar la primera etapa de la Serie B.
+                            Ana Milena Cardozo en una sesión de infarto, brinda su apoyo y aliento a Deportivo Quito en
+                            el momento que más lo necesita, luchando por mantenerse en la serie de privilegio.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/rueda-de-prensa.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Rueda de Prensa</h2>
-
-                        <p>
-                            Recuerda las mejores frases que en su momento causaron furor y polémica en el balompié ecuatoriano, dichas por sus protagonistas.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-xs-12   margen0 ">
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
@@ -294,26 +282,12 @@
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Serie A</h2>
+                        <h2>Para la Foto</h2>
 
                         <p>
-                            Varios fueron los clubes que al no conseguir los resultados esperados cambiaron de director técnico, con el fin de enrumbar nuevamente a sus equipos a conseguir los objetivos de la temporada.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <a href="http://www.futbolecuador.com/fuera-de-juego"><img src="<?= base_url('imagenes/femagazine/contenidos/fuera-de-juego.jpg'); ?>"
-                             class="img-circle img-responsive separador10 "></a>
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2><a href="http://www.futbolecuador.com/fuera-de-juego">Fuera de Juego</a></h2>
-
-                        <p>
-                            <a href="http://www.futbolecuador.com/fuera-de-juego">Katherine Loaiza en una sesión imperdible y sensacional, demuestra su pasión por Aucas y celebra como una verdadera hincha el buen momento de su equipo.</a>
+                            Futbolecuador Magazine te invita a disfrutar las espectaculares imágenes captadas por
+                            nuestro lente, los mejores momentos del Campeonato Ecuatoriano 2015, en su recta final para
+                            determinar al ganador de la segunda etapa.
                         </p>
                     </div>
                 </div>
@@ -326,7 +300,7 @@
 
 <style>
     .altofema {
-        min-height: 190px;
+        min-height: 260px;
     }
 
 </style>
