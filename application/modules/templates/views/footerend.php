@@ -35,7 +35,7 @@
 $idtipo = $this->uri->segment(2);
 $tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
 if (in_array($idtipo, $tipo)) {?>
-    <script type="text/javascript" src="http://as.ebz.io/api/choixPubJS.htm?pid=1134009&screenLayer=1&mode=NONE&home=http://www.futbolecuador.com"></script>
+    <script type="text/javascript" src="http://as.tebz.io/api/choixPubJS.htm?pid=1134009&screenLayer=1&mode=NONE&home=http://www.futbolecuador.com"></script>
 <?php
 }?>
 
@@ -131,9 +131,9 @@ if (in_array($idtipo, $tipo)) {?>
     var isFirstRegister = false;
 
     var checkRemotePermission = function (permissionData) {
-        console.log(permissionData);
+        //console.log(permissionData);
         if (permissionData.permission === 'default') {
-            console.log('This is a new web service URL and its validity is unknown.');
+            //console.log('This is a new web service URL and its validity is unknown.');
             window.safari.pushNotification.requestPermission(
                 pushwooshUrl + 'safari',
                 WEB_SITE_PUSH_ID,
@@ -142,10 +142,10 @@ if (in_array($idtipo, $tipo)) {?>
             );
             isFirstRegister = true;
         } else if (permissionData.permission === 'denied') {
-            console.log('The user said no.');
+            //console.log('The user said no.');
         } else if (permissionData.permission === 'granted') {
-            console.log('The web service URL is a valid push provider, and the user said yes.');
-            console.log('You deviceToken is ' + permissionData.deviceToken);
+            //console.log('The web service URL is a valid push provider, and the user said yes.');
+            //console.log('You deviceToken is ' + permissionData.deviceToken);
             // set system tags
             if (isFirstRegister == true) {
                 var tags = {
@@ -162,7 +162,7 @@ if (in_array($idtipo, $tipo)) {?>
             var permissionData = window.safari.pushNotification.permission(WEB_SITE_PUSH_ID);
             checkRemotePermission(permissionData);
         } else {
-            console.log('Push Notifications are available for Safari browser only');
+            //console.log('Push Notifications are available for Safari browser only');
         }
 
         // send to Pushwoosh push open statistics
@@ -199,7 +199,7 @@ if (in_array($idtipo, $tipo)) {?>
             var permissionData = window.safari.pushNotification.permission(WEB_SITE_PUSH_ID);
             checkRemotePermission(permissionData);
         } else {
-            console.log('Push Notifications are available for Safari browser only');
+            //console.log('Push Notifications are available for Safari browser only');
         }
 
         // send to Pushwoosh push open statistics
@@ -234,7 +234,7 @@ if (in_array($idtipo, $tipo)) {?>
     ;
 
     function pushwooshSetTags(hwid, tags) {
-        console.log('Sending setTags call to Pushwoosh');
+        //console.log('Sending setTags call to Pushwoosh');
         try {
             var xhr = new XMLHttpRequest(),
                 url = pushwooshUrl + 'setTags',
@@ -253,20 +253,20 @@ if (in_array($idtipo, $tipo)) {?>
                 if (this.status == 200) {
                     var response = JSON.parse(this.responseText);
                     if (response.status_code == 200) {
-                        console.log('Set tags method were successfully sent to Pushwoosh');
+                        //console.log('Set tags method were successfully sent to Pushwoosh');
                     }
                     else {
-                        console.log('Error occurred while sending setTags to Pushwoosh: ' + response.status_message);
+                        //console.log('Error occurred while sending setTags to Pushwoosh: ' + response.status_message);
                     }
                 } else {
-                    console.log('Error occurred, status code::' + this.status);
+                    //console.log('Error occurred, status code::' + this.status);
                 }
             };
             xhr.onerror = function () {
-                console.log('Pushwoosh response status code to pushStat call in not 200');
+                //console.log('Pushwoosh response status code to pushStat call in not 200');
             };
         } catch (e) {
-            console.log('Exception while sending setTags to Pushwoosh: ' + e);
+            //console.log('Exception while sending setTags to Pushwoosh: ' + e);
             return;
         }
     }
