@@ -170,14 +170,13 @@ class Noticias extends MY_Controller
         $noticias = array();
 
         $data['idsection'] = $idsection;
-        //$storysOld = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset);
+
 
         $this->load->module('story');
-        // recuperar codigo de don balos
-        $data = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result();
-        $tag = $data[0]->valor;
 
-        $storys = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON, 0);
+        // se hace llamado por el tag
+
+        $storys = $this->mdl_story->news_by_tags($idsection, TOTALNEWSINDONBALON, 0);
 
 
         $dataStory['tipoLink'] = "secction";
@@ -216,7 +215,7 @@ class Noticias extends MY_Controller
             //fin intercalar banners
         }
         $data ['namesection'] = $namesection;
-        $data['noticias'] = $noticias;
+        $data['noticias'] =  $noticias;
 
         $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = trim($idsection);

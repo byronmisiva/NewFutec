@@ -74,6 +74,7 @@ $route['juventus'] = "site/juventus";
 $route['serie-a'] = "site/seriea";
 $route['serie-b'] = "site/serieb";
 $route['seleccion'] = "site/seleccion";
+$route['fifagate'] = "site/fifagate";
 
 $route['sitemap\.xml'] = "seo/sitemap";
 $route['sitemap_news\.xml'] = "seo/sitemap_news";

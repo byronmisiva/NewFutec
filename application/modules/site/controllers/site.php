@@ -217,9 +217,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $amazonAssociates = $this->banners->fe_amazon();
 
         //contenido taboola
-        $taboola  = $this->banners->fe_taboola();
+        $taboola = $this->banners->fe_taboola();
 
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE, 0, FALSE, $amazonAssociates,  $taboola);
+        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE, 0, FALSE, $amazonAssociates, $taboola);
 
         //
         $test = CHAMP_DEFAULT_TIPOTABLA;
@@ -355,7 +355,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($this->verificarDispositivo() == "1")
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(),$bannerBottom, $bannerTop );
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(), $bannerBottom, $bannerTop);
         else
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
 
@@ -701,6 +701,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->seccion(ZONAINTERNACIONAL, ZONAINTERNACIONALPOS, "Fútbol Internacional", "futbolinternacional", "futbolinternacional");
     }
 
+    public function fifagate()
+    {
+        $this->tag("FIFA GATE", ZONANUESTROSEMBAJADORESPOS, "Fifa Gate ", "noticia", "noticia");
+    }
+
     public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT, $tipotabla = CHAMP_DEFAULT_TIPOTABLA)
     {
         // para la final se comentan la llamada a las secciones.
@@ -776,6 +781,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
+
 
     public function tag($tag, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT)
     {
