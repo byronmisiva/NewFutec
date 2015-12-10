@@ -60,7 +60,7 @@ if (isset($tipoLink)) {
     <?php
     }?>
 </div>
-<div class="col-md-12 col-xs-12 col-sm-12 column content-gris hidden-xs">
+<div class="col-md-12 col-xs-12 col-sm-12 column content-gris hidden-xs right pull-right">
     <?php
     $mostar = "hidden";
     $ancho = "col-md-12 col-sm-12";

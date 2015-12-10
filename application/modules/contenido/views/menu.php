@@ -250,6 +250,9 @@
 <li class="dropdown fhmm-fw">
     <a href="<?= base_url('fe-magazine') ?>" class="pull-left"><div class="logomagazina"></div></a>
 </li>
+<li class="dropdown fhmm-fw">
+    <a href="<?= base_url('fifa-gate') ?>" class="pull-left">FIFA Gate</a>
+</li>
 </ul>
 <!-- end nav navbar-nav -->
 </div>

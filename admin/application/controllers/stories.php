@@ -1076,7 +1076,6 @@ class Stories extends CI_Controller
                 $this->pushNotificationMobile($row->id, $row->subtitle);
             }
         }
-        echo "OK";
     }
 
     function _clearStringGion($string)

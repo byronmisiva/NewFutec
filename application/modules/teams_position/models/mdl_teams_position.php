@@ -317,7 +317,9 @@ class Mdl_teams_position extends MY_Model{
             $teams = $this->sancionBarcelona ($teams);
 
             //sancion campeonato
-            $teams = $this->sancionQuito ($teams, 7);
+            $teams = $this->sancionQuito ($teams, 8);
+
+            $teams = $this->sancionNacional($teams, 1);
 
             $teams = $this->sancionOlmedo ($teams);
             $teams = $this->sancionQuevedo($teams);
@@ -351,7 +353,9 @@ class Mdl_teams_position extends MY_Model{
             $teams = $this->sancionOlmedo($teams);
             $teams = $this->sancionQuevedo($teams);
 
-            $teams = $this->sancionQuito($teams, 7);
+            $teams = $this->sancionQuito($teams, 8);
+
+            $teams = $this->sancionNacional($teams, 1);
 
 
         }
@@ -379,6 +383,15 @@ class Mdl_teams_position extends MY_Model{
         foreach ($tabla as $key=>$equipo )
         {
             if ($equipo['id']== "36"){
+                $tabla[$key]['points'] = $equipo['points'] - $puntos;
+            }
+        }
+        return $tabla;
+    }
+    public function sancionNacional ($tabla, $puntos ) {
+        foreach ($tabla as $key=>$equipo )
+        {
+            if ($equipo['id']== "15"){
                 $tabla[$key]['points'] = $equipo['points'] - $puntos;
             }
         }
