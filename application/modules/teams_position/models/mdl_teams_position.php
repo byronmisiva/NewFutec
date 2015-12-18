@@ -364,6 +364,7 @@ class Mdl_teams_position extends MY_Model{
             $teams = $this->sancionBarcelona ($teams);
         }
 
+
         if ($round == 209) {
             $teams = $this->sancionLDUL($teams);
             $teams = $this->sancionBarcelona($teams);
