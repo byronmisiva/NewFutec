@@ -61,9 +61,10 @@ class Mdl_story extends MY_Model
 
     function get_destacados()
     {
-        $data = $this->db->query('SELECT *
+        $data = $this->db->query('SELECT stories.*, images.thumbh50, images.thumbh120
                                     FROM stories INNER JOIN images ON stories.image_id = images.id
-                                    WHERE destacado=3');
+                                    WHERE destacado=3 ORDER BY stories.created DESC
+                                    LIMIT 5');
         return $data->result();
     }
 

@@ -118,6 +118,17 @@ class Mdl_teams_position extends MY_Model{
         return $teams;
     }
 
+    function get_table_only($group  )
+    {
+        $query=$this->db->query('Select t.id, t.name, t.mini_shield,  if( s.id IS NULL , 0, s.id ) AS sid
+                                 From (Select DISTINCT(t.id), t.name, t.mini_shield, g.name as group_name
+                                         From groups as g, matches as m, matches_teams as mt, teams as t
+                                         Where g.id='.$group.' AND g.id=m.group_id AND m.id=mt.match_id AND m.special=0 AND (mt.team_id_home=t.id or mt.team_id_away=t.id) ) as t
+                                  Left Join sections as s ON t.id=s.team_id
+                                  Order by t.name asc');
+        return $query->result();
+    }
+
     function get_table($group, $round = 0 )
     {
 
@@ -305,6 +316,7 @@ class Mdl_teams_position extends MY_Model{
         $teams = $this->sanciones($teams, $round);
         return $teams;
     }
+
     function sanciones_by_champ  ($teams, $round) {
         //barcelona sancion campeonato 2015.
         if ($round == 53) {
@@ -313,6 +325,12 @@ class Mdl_teams_position extends MY_Model{
             $teams = $this->sancionLDUL ($teams);
             $teams = $this->sancionLDUL ($teams);
 
+            $teams = $this->sancionBarcelona ($teams);
+            $teams = $this->sancionBarcelona ($teams);
+            $teams = $this->sancionBarcelona ($teams);
+            $teams = $this->sancionBarcelona ($teams);
+            $teams = $this->sancionBarcelona ($teams);
+            $teams = $this->sancionBarcelona ($teams);
             $teams = $this->sancionBarcelona ($teams);
             $teams = $this->sancionBarcelona ($teams);
 
@@ -348,6 +366,12 @@ class Mdl_teams_position extends MY_Model{
 
         if ($round == 209) {
             $teams = $this->sancionLDUL($teams);
+            $teams = $this->sancionBarcelona($teams);
+            $teams = $this->sancionBarcelona($teams);
+            $teams = $this->sancionBarcelona($teams);
+            $teams = $this->sancionBarcelona($teams);
+            $teams = $this->sancionBarcelona($teams);
+            $teams = $this->sancionBarcelona($teams);
             $teams = $this->sancionBarcelona($teams);
 
             $teams = $this->sancionOlmedo($teams);

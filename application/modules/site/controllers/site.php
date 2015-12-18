@@ -1267,6 +1267,19 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         return $response;
     }
 
+    public function equiposJson () {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+        $this->load->module('contenido');
+        $this->load->module('teams_position');
+
+        $this->load->module('scoreboards');
+        $this->load->module('teams_position');
+        $equiposJson = $this->scoreboards->leaderboard_only(CHAMP_DEFAULT);
+        echo json_encode($equiposJson);
+
+    }
+
 
     public function indexcopaamerica()
     {
