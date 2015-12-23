@@ -1,5 +1,5 @@
 <div class="skyscraper_de" style="position: fixed;
-    top: 154px;
+    top: 200px;
     left: 50%;
     width: 1050px;
     height: 600px;
