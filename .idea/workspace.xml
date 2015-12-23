@@ -115,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.20153551">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -463,12 +463,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00868" summary="e">
-      <created>1444171571554</created>
-      <option name="number" value="00868" />
-      <option name="project" value="LOCAL" />
-      <updated>1444171571719</updated>
-    </task>
     <task id="LOCAL-00869" summary="e">
       <created>1444318644398</created>
       <option name="number" value="00869" />
@@ -757,7 +751,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450885079768</updated>
     </task>
-    <option name="localTasksCounter" value="917" />
+    <task id="LOCAL-00917" summary="e">
+      <created>1450885085766</created>
+      <option name="number" value="00917" />
+      <option name="project" value="LOCAL" />
+      <updated>1450885085767</updated>
+    </task>
+    <option name="localTasksCounter" value="918" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1321,7 +1321,7 @@
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20153551">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />

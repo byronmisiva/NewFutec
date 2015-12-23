@@ -5,5 +5,4 @@
             googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450734059657-1'); });
         </script>
     </div>
-
 </div>
