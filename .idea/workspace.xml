@@ -99,24 +99,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fe_skyscraper_de.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fe_skyscraper_de.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17274472">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fe_skyscraper_iz.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fe_skyscraper_iz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="0.17274472">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,8 +196,8 @@
         <option value="$PROJECT_DIR$/application/modules/banners/controllers/banners.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php" />
+        <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" />
       </list>
     </option>
   </component>
@@ -459,12 +463,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00866" summary="e">
-      <created>1443647637247</created>
-      <option name="number" value="00866" />
-      <option name="project" value="LOCAL" />
-      <updated>1443647637247</updated>
     </task>
     <task id="LOCAL-00867" summary="e">
       <created>1443718068709</created>
@@ -754,7 +752,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450882916280</updated>
     </task>
-    <option name="localTasksCounter" value="915" />
+    <task id="LOCAL-00915" summary="e">
+      <created>1450884897108</created>
+      <option name="number" value="00915" />
+      <option name="project" value="LOCAL" />
+      <updated>1450884897108</updated>
+    </task>
+    <option name="localTasksCounter" value="916" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1304,20 +1308,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17274472">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
