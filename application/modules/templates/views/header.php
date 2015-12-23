@@ -323,6 +323,9 @@
         googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
 
+        googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
+
         googletag.defineSlot('/1022247/Marcador_en_vivo', [320, 80], 'div-gpt-ad-1444931286798-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/MARCADOR_EN_VIVO_SMART', [320, 50], 'div-gpt-ad-1444931286798-1').addService(googletag.pubads());
 

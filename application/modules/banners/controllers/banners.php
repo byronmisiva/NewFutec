@@ -129,6 +129,15 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_skyscraper2', $data, TRUE);
     }
+    public function FE_Skyscraper_de($data = FALSE)
+    {
+        return $this->load->view('fe_skyscraper_de', $data, TRUE);
+    }
+
+    public function FE_Skyscraper_iz($data = FALSE)
+    {
+        return $this->load->view('fe_skyscraper_iz', $data, TRUE);
+    }
 
     public function fe_smart_bottom($data = FALSE)
     {

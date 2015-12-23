@@ -197,7 +197,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('banners');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . "xxxx" .$this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+
 
 
         // recupera parametro para mostrar o no el splash

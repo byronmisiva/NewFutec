@@ -59,10 +59,10 @@ define('SECTION_AMERICA',71);
 define('SECTION_ELIMINATORIAS',71);
 
 //Campeonatos
-define('SERIE_A',53);
+define('SERIE_A',59);
 define('SERIE_A_TIPOTABLA',"acumulada");
 
-define('SERIE_B',54);
+define('SERIE_B',61);
 define('SERIE_B_TIPOTABLA',"acumulada");
 
 define('MUNDIAL',43);
