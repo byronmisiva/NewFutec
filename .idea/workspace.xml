@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -115,8 +114,8 @@
       <file leaf-file-name="fe_skyscraper_iz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17274472">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.20153551">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -464,12 +463,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00867" summary="e">
-      <created>1443718068709</created>
-      <option name="number" value="00867" />
-      <option name="project" value="LOCAL" />
-      <updated>1443718068711</updated>
-    </task>
     <task id="LOCAL-00868" summary="e">
       <created>1444171571554</created>
       <option name="number" value="00868" />
@@ -758,7 +751,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450884897108</updated>
     </task>
-    <option name="localTasksCounter" value="916" />
+    <task id="LOCAL-00916" summary="e">
+      <created>1450885079768</created>
+      <option name="number" value="00916" />
+      <option name="project" value="LOCAL" />
+      <updated>1450885079768</updated>
+    </task>
+    <option name="localTasksCounter" value="917" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1321,8 +1320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17274472">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.20153551">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
