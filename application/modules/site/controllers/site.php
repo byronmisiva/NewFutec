@@ -197,7 +197,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('banners');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . "xxxx" .$this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
 
 
 
@@ -388,7 +388,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         // fin carga la informacion de la noticia
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
 
@@ -720,7 +720,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
 
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -796,7 +796,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->library('user_agent');
         $this->load->module('story');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -1015,7 +1015,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
         } else {
-            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
 
@@ -1190,7 +1190,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
         } else {
-            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin();
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
 
