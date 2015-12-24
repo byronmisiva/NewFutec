@@ -296,6 +296,8 @@ class Contenido extends MY_Controller
 
         $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipoTabla);
 
+       // $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie, $tipotabla);
+
         //Resultados goleadores
         $this->load->module('strikes');
         $data['strikes'] = $this->strikes->goleadores($serie);

@@ -164,11 +164,21 @@ jQuery(document).ready(function () {
         ancho = $("body").width();
         if (ancho > 800) {
             $(window).scroll(function (event) {
+                //muestra / oculta boton arriba
                 if ($(window).scrollTop() > 500) {
                     $(".flechaariba").fadeIn();
                 } else {
                     $(".flechaariba").fadeOut();
                 }
+                //ancla / spalsh laterales
+                if ($(window).scrollTop() > 100) {
+                    $(".skyscraper_iz").fadeIn();
+                    $(".skyscraper_de").fadeIn();
+                } else {
+                    $(".skyscraper_iz").fadeOut();
+                    $(".skyscraper_de").fadeOut();
+                }
+
             });
         }
     }
@@ -258,6 +268,7 @@ jQuery(document).ready(function () {
             }
         }
     })
+
     var original = jQuery(".et_lb_module_content_inner").html();
     jQuery.each(jQuery(".cargo select option"), function (index, value) {
         mensaje = jQuery(value).html();

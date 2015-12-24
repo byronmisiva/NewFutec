@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" afterPath="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" afterPath="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php" afterPath="$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="$PROJECT_DIR$/assets/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/sprites.css" afterPath="$PROJECT_DIR$/assets/css/sprites.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -35,46 +38,55 @@
       <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2156863">
-              <caret line="199" column="74" selection-start-line="199" selection-start-column="49" selection-end-line="199" selection-end-column="74" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="598" column="46" selection-start-line="598" selection-start-column="46" selection-end-line="598" selection-end-column="46" />
               <folding>
-                <element signature="n#movil#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#contacto#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#publicidad#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#masnoticias#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#masMarcadorVivo#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#MarcadorVivoDetail#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#recordatorioAppDiaAntes#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#getnewsjson#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#sidebardonbalon#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#tablaposicionesalone#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#noticiasalone#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#donbalon#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#eliminatorias#0;n#Site#0;n#!!top" expanded="false" />
-                <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-                <marker date="1450885839000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
-                <marker date="1450885839000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
-                <marker date="1450885839000" expanded="true" signature="3133:3226" placeholder="SELECT *, NO..parametros..." />
-                <marker date="1450885839000" expanded="true" signature="3720:3763" placeholder="SELECT valor..parametros..." />
-                <marker date="1450885839000" expanded="true" signature="4614:4674" placeholder="SELECT valor..parametros..." />
-                <marker date="1450885839000" expanded="true" signature="6228:6280" placeholder="..." />
-                <marker date="1450885839000" expanded="false" signature="6332:6372" placeholder="..." />
-                <marker date="1450885839000" expanded="true" signature="6373:6498" placeholder="..." />
-                <marker date="1450885839000" expanded="true" signature="6387:6417" placeholder="..." />
-                <marker date="1450885839000" expanded="true" signature="6450:6476" placeholder="..." />
-                <marker date="1450885839000" expanded="true" signature="7928:7971" placeholder="SELECT valor..parametros..." />
-                <marker date="1450885839000" expanded="true" signature="21561:21621" placeholder="SELECT valor..parametros..." />
-                <marker date="1450885839000" expanded="true" signature="51406:51449" placeholder="SELECT valor..parametros..." />
+                <marker date="1450905786000" expanded="true" signature="970:1037" placeholder="select id fr..championships..." />
+                <marker date="1450905786000" expanded="true" signature="1186:1249" placeholder="select COUNT..rounds..." />
+                <marker date="1450905786000" expanded="true" signature="3292:3385" placeholder="SELECT *, NO..parametros..." />
+                <marker date="1450905786000" expanded="true" signature="3879:3922" placeholder="SELECT valor..parametros..." />
+                <marker date="1450905786000" expanded="true" signature="4773:4833" placeholder="SELECT valor..parametros..." />
+                <marker date="1450905786000" expanded="true" signature="6387:6439" placeholder="..." />
+                <marker date="1450905786000" expanded="false" signature="6491:6531" placeholder="..." />
+                <marker date="1450905786000" expanded="true" signature="6532:6657" placeholder="..." />
+                <marker date="1450905786000" expanded="false" signature="6546:6576" placeholder="..." />
+                <marker date="1450905786000" expanded="false" signature="6609:6635" placeholder="..." />
+                <marker date="1450905786000" expanded="true" signature="8087:8130" placeholder="SELECT valor..parametros..." />
+                <marker date="1450905786000" expanded="true" signature="21720:21780" placeholder="SELECT valor..parametros..." />
+                <marker date="1450905786000" expanded="true" signature="51565:51608" placeholder="SELECT valor..parametros..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.222221">
+              <caret line="173" column="46" selection-start-line="173" selection-start-column="46" selection-end-line="173" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contenido.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="296" column="0" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+              <folding>
+                <marker date="1450905089000" expanded="true" signature="3610:3670" placeholder="SELECT valor..parametros..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="32" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +94,7 @@
       <file leaf-file-name="banners.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/controllers/banners.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.208333">
+            <state vertical-scroll-proportion="0.0">
               <caret line="131" column="36" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="36" />
               <folding />
             </state>
@@ -92,7 +104,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="326" column="131" selection-start-line="326" selection-start-column="131" selection-end-line="326" selection-end-column="131" />
               <folding />
             </state>
@@ -103,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+              <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -111,22 +123,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fe_skyscraper_iz.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fe_skyscraper_iz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdl_teams_position.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mdl_teams_position.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53474903">
+            <state vertical-scroll-proportion="0.0">
               <caret line="405" column="9" selection-start-line="405" selection-start-column="9" selection-end-line="405" selection-end-column="9" />
               <folding>
                 <marker date="1450887271000" expanded="true" signature="3936:4531" placeholder="Select t.id,..id..." />
@@ -190,13 +200,11 @@
         <option value="$PROJECT_DIR$/application/modules/scoreboards/models/mdl_scoreboards.php" />
         <option value="$PROJECT_DIR$/bannerbarca/pichincha.html" />
         <option value="$PROJECT_DIR$/application/modules/stories/controllers/stories.php" />
-        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/marcadorvivo.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/footerend.php" />
         <option value="$PROJECT_DIR$/admin/application/views/stories/insert.php" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php" />
-        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/contenido/views/femagazine.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
@@ -209,13 +217,15 @@
         <option value="$PROJECT_DIR$/application/modules/seo/controllers/seo.php" />
         <option value="$PROJECT_DIR$/application/modules/story/models/mdl_story.php" />
         <option value="$PROJECT_DIR$/application/config/constants.php" />
-        <option value="$PROJECT_DIR$/assets/css/sprites.css" />
         <option value="$PROJECT_DIR$/application/modules/banners/controllers/banners.php" />
         <option value="$PROJECT_DIR$/application/modules/templates/views/header.php" />
+        <option value="$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php" />
+        <option value="$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php" />
         <option value="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
+        <option value="$PROJECT_DIR$/assets/css/sprites.css" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php" />
         <option value="$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php" />
-        <option value="$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php" />
       </list>
     </option>
   </component>
@@ -233,8 +243,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="23" />
+    <option name="x" value="100" />
+    <option name="y" value="69" />
     <option name="width" value="1711" />
     <option name="height" value="964" />
   </component>
@@ -378,8 +388,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,18 +491,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00872" summary="e">
-      <created>1444672758842</created>
-      <option name="number" value="00872" />
-      <option name="project" value="LOCAL" />
-      <updated>1444672758842</updated>
-    </task>
-    <task id="LOCAL-00873" summary="e">
-      <created>1444940204127</created>
-      <option name="number" value="00873" />
-      <option name="project" value="LOCAL" />
-      <updated>1444940204229</updated>
     </task>
     <task id="LOCAL-00874" summary="e">
       <created>1445004425601</created>
@@ -776,7 +774,19 @@
       <option name="project" value="LOCAL" />
       <updated>1450885950412</updated>
     </task>
-    <option name="localTasksCounter" value="921" />
+    <task id="LOCAL-00921" summary="e">
+      <created>1450887332693</created>
+      <option name="number" value="00921" />
+      <option name="project" value="LOCAL" />
+      <updated>1450887332694</updated>
+    </task>
+    <task id="LOCAL-00922" summary="e">
+      <created>1450889663030</created>
+      <option name="number" value="00922" />
+      <option name="project" value="LOCAL" />
+      <updated>1450889663030</updated>
+    </task>
+    <option name="localTasksCounter" value="923" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -800,30 +810,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="23" width="1711" height="964" extended-state="0" />
+    <frame x="100" y="69" width="1711" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3428899" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34633029" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.51183766" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32790446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.48816234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18873577" sideWeight="0.64599776" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19532654" sideWeight="0.64599776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.51183766" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3428899" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34553775" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.320304" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299435" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -845,9 +855,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21693811" sideWeight="0.65068495" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299435" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -880,7 +890,7 @@
       <breakpoints>
         <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>709</line>
+          <line>710</line>
           <option name="timeStamp" value="1095" />
         </line-breakpoint>
         <line-breakpoint type="php">
@@ -915,7 +925,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/modules/site/controllers/site.php</url>
-          <line>493</line>
+          <line>494</line>
           <option name="timeStamp" value="1117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -923,11 +933,16 @@
           <line>398</line>
           <option name="timeStamp" value="1118" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php</url>
+          <line>376</line>
+          <option name="timeStamp" value="1120" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1119" />
+      <option name="time" value="1127" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
@@ -1053,13 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/stories/controllers/stories.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1099,13 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="268" column="25" selection-start-line="268" selection-start-column="14" selection-end-line="268" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="511" column="22" selection-start-line="511" selection-start-column="22" selection-end-line="511" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1163,13 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8064516">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1242,29 +1236,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/sprites.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027422303">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/templates/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="326" column="131" selection-start-line="326" selection-start-column="131" selection-end-line="326" selection-end-column="131" />
           <folding />
         </state>
@@ -1272,80 +1249,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/banners/controllers/banners.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.208333">
+        <state vertical-scroll-proportion="0.0">
           <caret line="131" column="36" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2156863">
-          <caret line="199" column="74" selection-start-line="199" selection-start-column="49" selection-end-line="199" selection-end-column="74" />
-          <folding>
-            <element signature="n#movil#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#contacto#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#publicidad#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#masnoticias#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#masMarcadorVivo#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#MarcadorVivoDetail#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#recordatorioAppDiaAntes#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#getnewsjson#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#sidebardonbalon#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#tablaposicionesalone#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#noticiasalone#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#zonafe#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seriea#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#serieb#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#seleccion#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#lavoz#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#masleido#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#nuestrosembajadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#donbalon#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copalibertadores#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#copasudamericana#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#eliminatorias#0;n#Site#0;n#!!top" expanded="false" />
-            <element signature="n#futbolinternacional#0;n#Site#0;n#!!top" expanded="false" />
-            <marker date="1450885839000" expanded="true" signature="971:1038" placeholder="select id fr..championships..." />
-            <marker date="1450885839000" expanded="true" signature="1188:1251" placeholder="select COUNT..rounds..." />
-            <marker date="1450885839000" expanded="true" signature="3133:3226" placeholder="SELECT *, NO..parametros..." />
-            <marker date="1450885839000" expanded="true" signature="3720:3763" placeholder="SELECT valor..parametros..." />
-            <marker date="1450885839000" expanded="true" signature="4614:4674" placeholder="SELECT valor..parametros..." />
-            <marker date="1450885839000" expanded="true" signature="6228:6280" placeholder="..." />
-            <marker date="1450885839000" expanded="false" signature="6332:6372" placeholder="..." />
-            <marker date="1450885839000" expanded="true" signature="6373:6498" placeholder="..." />
-            <marker date="1450885839000" expanded="true" signature="6387:6417" placeholder="..." />
-            <marker date="1450885839000" expanded="true" signature="6450:6476" placeholder="..." />
-            <marker date="1450885839000" expanded="true" signature="7928:7971" placeholder="SELECT valor..parametros..." />
-            <marker date="1450885839000" expanded="true" signature="21561:21621" placeholder="SELECT valor..parametros..." />
-            <marker date="1450885839000" expanded="true" signature="51406:51449" placeholder="SELECT valor..parametros..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="59" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53474903">
+        <state vertical-scroll-proportion="0.0">
           <caret line="405" column="9" selection-start-line="405" selection-start-column="9" selection-end-line="405" selection-end-column="9" />
           <folding>
             <marker date="1450887271000" expanded="true" signature="3936:4531" placeholder="Select t.id,..id..." />
@@ -1358,6 +1270,87 @@
             <marker date="1450887271000" expanded="true" signature="17180:17252" placeholder="Select g.rou..groups..." />
             <marker date="1450887271000" expanded="true" signature="17306:17608" placeholder="Select m.res..groups..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3480769">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/sprites.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24816176">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/contenido/controllers/contenido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="296" column="0" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+          <folding>
+            <marker date="1450905089000" expanded="true" signature="3610:3670" placeholder="SELECT valor..parametros..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="598" column="46" selection-start-line="598" selection-start-column="46" selection-end-line="598" selection-end-column="46" />
+          <folding>
+            <marker date="1450905786000" expanded="true" signature="970:1037" placeholder="select id fr..championships..." />
+            <marker date="1450905786000" expanded="true" signature="1186:1249" placeholder="select COUNT..rounds..." />
+            <marker date="1450905786000" expanded="true" signature="3292:3385" placeholder="SELECT *, NO..parametros..." />
+            <marker date="1450905786000" expanded="true" signature="3879:3922" placeholder="SELECT valor..parametros..." />
+            <marker date="1450905786000" expanded="true" signature="4773:4833" placeholder="SELECT valor..parametros..." />
+            <marker date="1450905786000" expanded="true" signature="6387:6439" placeholder="..." />
+            <marker date="1450905786000" expanded="false" signature="6491:6531" placeholder="..." />
+            <marker date="1450905786000" expanded="true" signature="6532:6657" placeholder="..." />
+            <marker date="1450905786000" expanded="false" signature="6546:6576" placeholder="..." />
+            <marker date="1450905786000" expanded="false" signature="6609:6635" placeholder="..." />
+            <marker date="1450905786000" expanded="true" signature="8087:8130" placeholder="SELECT valor..parametros..." />
+            <marker date="1450905786000" expanded="true" signature="21720:21780" placeholder="SELECT valor..parametros..." />
+            <marker date="1450905786000" expanded="true" signature="51565:51608" placeholder="SELECT valor..parametros..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.222221">
+          <caret line="173" column="46" selection-start-line="173" selection-start-column="46" selection-end-line="173" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_de.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/banners/views/fe_skyscraper_iz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
