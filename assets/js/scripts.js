@@ -171,12 +171,12 @@ jQuery(document).ready(function () {
                     $(".flechaariba").fadeOut();
                 }
                 //ancla / spalsh laterales
-                if ($(window).scrollTop() > 100) {
-                    $(".skyscraper_iz").fadeIn();
-                    $(".skyscraper_de").fadeIn();
+                if ($(window).scrollTop() > 150) {
+                    $(".skyscraper_iz").addClass('lateral-fijo');
+                    $(".skyscraper_de").addClass('lateral-fijo');
                 } else {
-                    $(".skyscraper_iz").fadeOut();
-                    $(".skyscraper_de").fadeOut();
+                    $(".skyscraper_iz").removeClass('lateral-fijo');
+                    $(".skyscraper_de").removeClass('lateral-fijo');
                 }
 
             });

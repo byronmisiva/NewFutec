@@ -1966,3 +1966,8 @@ div#closeBannerdpa {
 #btn-android, #btn-ios {
     max-width: 100px;
 }
+
+.lateral-fijo {
+    position: fixed !important;
+    top: 10px !important;
+}
