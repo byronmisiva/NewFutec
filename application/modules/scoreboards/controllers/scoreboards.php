@@ -32,13 +32,13 @@ class Scoreboards extends MY_Controller
     }
 
 
-    // Tabla de Posiciones
+    // Listado de equipos por campeonato
     public function leaderboard_only($champ)
     {
         $round = $this->mdl_teams_position->get_active_round($champ);
         if ($round != false) {
-            $active_group = current($this->mdl_teams_position->get_by_round($round));
-            $datatabla = $this->mdl_teams_position->get_table_only($active_group->id);
+            //$active_group = current($this->mdl_teams_position->get_by_round($round));
+            $datatabla = $this->mdl_teams_position->get_table_only($champ);
             $seleccionNacional = '{
                                     "id": "5",
                                     "name": "Selección Nacional",

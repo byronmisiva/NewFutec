@@ -129,12 +129,13 @@ class Mdl_teams_position extends MY_Model
 
     function get_table_only($group)
     {
-        $query = $this->db->query('Select t.id, t.name, t.mini_shield,  if( s.id IS NULL , 0, s.id ) AS sid
-                                 From (Select DISTINCT(t.id), t.name, t.mini_shield, g.name as group_name
-                                         From groups as g, matches as m, matches_teams as mt, teams as t
-                                         Where g.id=' . $group . ' AND g.id=m.group_id AND m.id=mt.match_id AND m.special=0 AND (mt.team_id_home=t.id or mt.team_id_away=t.id) ) as t
-                                  Left Join sections as s ON t.id=s.team_id
-                                  Order by t.name asc');
+        $query = $this->db->query('SELECT ct.id,  t.id,  t.name as tname, t.mini_shield, if( s.id IS NULL , 0, s.id ) AS sid
+										 FROM (championships_teams as ct)
+										 JOIN championships as c ON ct.championship_id = c.id and c.id= '. $group .'
+										 JOIN teams as t ON ct.team_id = t.id
+										 LEFT JOIN rounds as r ON ct.round_id = r.id
+										 Left Join sections as s ON t.id=s.team_id
+										 ORDER BY tname asc ');
         return $query->result();
     }
 

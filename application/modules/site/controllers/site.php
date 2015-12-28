@@ -257,6 +257,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     }
 
 
+
+
     public function publicidad()
     {
         $this->load->library('email');
@@ -1277,7 +1279,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $this->load->module('scoreboards');
         $this->load->module('teams_position');
-        $equiposJson = $this->scoreboards->leaderboard_only(CHAMP_DEFAULT);
+        $equiposJson = $this->scoreboards->leaderboard_only(SERIE_A);
         echo json_encode($equiposJson);
 
     }
