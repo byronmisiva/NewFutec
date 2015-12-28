@@ -8,7 +8,7 @@
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=12') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=13') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/notificacion.js') ?>"></script>
 
 
