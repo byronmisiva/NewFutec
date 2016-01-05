@@ -63,7 +63,7 @@ function cargarSplash() {
                     $('#darkLayer').hide();
                     $('#FE_LOADING').hide();
                 })
-                setTimeout(cleanBlackLayer, 14000);
+                setTimeout(cleanBlackLayer, 16000);
             } else {
                 if (mostrarSplash == 1)
                     if (validarCookie())
@@ -121,6 +121,12 @@ var mostrarBlackLayer = function () {
 };
 
 jQuery(document).ready(function () {
+    if ($('#carousel-marcadorenvivo .item').length == 1)
+    {
+        $(".carousel-control").hide();
+    }
+
+
     //funcion enviar encuesta
     if ($(".enviar-encuesta").length) {
         $("#enviar-encuesta-boton").click(function () {

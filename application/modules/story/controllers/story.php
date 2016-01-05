@@ -54,8 +54,13 @@ class Story extends MY_Controller
         $data['banerintermedio'] = $banerintermedio;
         $data['autor'] = $this->get_author($noticia->author_id);
 
+        $tags = "";
+        foreach ($noticia->tags as $key => $tag) {
+            $tags = $tags . "'" . $tag->name . "'" ;
+            if ($key < count($noticia->tags) - 1) $tags = $tags .  ", ";
+        }
 
-
+        $data['tagsStorys']  = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "",  4,  0, false,false, $id );
 
         //La Voz de las Tribunas
         $this->load->module('noticias');

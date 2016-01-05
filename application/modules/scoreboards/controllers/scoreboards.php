@@ -42,9 +42,11 @@ class Scoreboards extends MY_Controller
             $seleccionNacional = '{
                                     "id": "5",
                                     "name": "Selección Nacional",
-                                    "mini_shield": "imagenes\/teams\/mini_shield\/Ecuador.png",
+                                    "mini_shield": "imagenes\/teams\/shield\/Ecuador.png",
                                     "sid": "26"
                                    }';
+
+
             $seleccionNacional = json_decode($seleccionNacional);
 
             array_unshift($datatabla,$seleccionNacional) ;

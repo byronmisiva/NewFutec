@@ -163,20 +163,20 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewTags($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
+    public function viewTags($namesection, $tags, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE, $idNoticia = false)
     {
         //$this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
-        $data['idsection'] = $idsection;
+        $data['idsection'] = $tags;
 
 
         $this->load->module('story');
 
         // se hace llamado por el tag
 
-        $storys = $this->mdl_story->news_by_tags($idsection, TOTALNEWSINDONBALON, 0);
+        $storys = $this->mdl_story->news_by_tags($tags, $totalMiniNews, 0, $idNoticia);
 
 
         $dataStory['tipoLink'] = "secction";
@@ -218,7 +218,7 @@ class Noticias extends MY_Controller
         $data['noticias'] =  $noticias;
 
         $data['offset'] = $totalMiniNews + $offset;
-        $data['idsection'] = trim($idsection);
+        $data['idsection'] = trim($tags);
         $data['posSection'] = $posSection;
 
         return $this->load->view('noticiashome', $data, TRUE);

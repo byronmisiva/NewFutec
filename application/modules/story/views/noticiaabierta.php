@@ -99,17 +99,14 @@
                    target="_blank"><?php echo $autor[0]->mail; ?></a><br/>
             <?php }
             ?>
-            <br/>
+
             <a href="<?php echo base_url() . "site/noticia/" . $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) . "/" . $laVozDeLasTribunas[0]->id ?>">
                 <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
 
-            <br/>
-            <br/>
             <!-- Link para redirecionar a push.futbolecuador.com -->
             <!-- <a href="http://push.futbolecuador.com/">
                 ¿Querías ser el primero en leer esta noticia? Descarga ya <strong>#Alertas</strong>FutbolEcuador y recibe inmediatamente las alertas de tu equipo favorito.
             </a> -->
-            <br/>
             <br/>
         </div>
     </div>
@@ -124,6 +121,9 @@
             if ($key < count($noticia->tags) - 1) echo ", ";
         } ?>
     </div>
+</div>
+<div class="col-xs-12 col-md-12 margen0">
+    <?php echo $tagsStorys; ?>
 </div>
 
 <div class="col-xs-12 col-md-12 margen0">

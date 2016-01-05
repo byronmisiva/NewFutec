@@ -130,7 +130,8 @@ class Contenido extends MY_Controller
             $datamarcador['scores'] = $this->mdl_scoreboards->today_matches("todos");
 
         if ($datamarcador['scores'] == false) {
-            $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
+            //$datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
+            $datamarcador['scores'] = $this->mdl_scoreboards->future_matches();
         }
 
         $datamarcador['campeonato'] = $campeonato;
