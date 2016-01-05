@@ -32,7 +32,7 @@ class Story extends MY_Controller
     }
 
 
-    function get_complete($id, $banerintermedio = "",$bannerBottom ="", $bannerTop = "")
+    function get_complete($id, $banerintermedio = "", $bannerBottom = "", $bannerTop = "")
     {
 
         $this->mdl_story->cuentaVisita($id);
@@ -56,11 +56,13 @@ class Story extends MY_Controller
 
         $tags = "";
         foreach ($noticia->tags as $key => $tag) {
-            $tags = $tags . "'" . $tag->name . "'" ;
-            if ($key < count($noticia->tags) - 1) $tags = $tags .  ", ";
+            if ($tag->name != "don balon") {
+                $tags = $tags . "'" . $tag->name . "'";
+                if ($key < count($noticia->tags) - 1) $tags = $tags . ", ";
+            }
         }
 
-        $data['tagsStorys']  = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "",  4,  0, false,false, $id );
+        $data['tagsStorys'] = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "", 4, 0, false, false, $id);
 
         //La Voz de las Tribunas
         $this->load->module('noticias');
