@@ -6,7 +6,7 @@ if (isset($extraheader)) {
     }
 }
 ?>
-<?php if (isset($namesection)) {
+<?php /*if (isset($namesection)) {
     if ($namesection != "") {
         ?>
         <div class="col-md-12 <?php echo $separador10; ?> margen0">
@@ -16,7 +16,7 @@ if (isset($extraheader)) {
         </div>
         <?php
     }
-} ?>
+}*/ ?>
 <?php
 $indice = 0;
 foreach ($noticias as $noticia) {

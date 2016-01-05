@@ -60,8 +60,9 @@ class Story extends MY_Controller
             if ($tag->name != "don balon") {
                 $tags = $tags . "'" . $tag->name . "'";
                 $final ++;
+                if ($key < count($noticia->tags) - $final) $tags = $tags . ", ";
             }
-            if ($key < count($noticia->tags) - $final) $tags = $tags . ", ";
+
 
         }
 

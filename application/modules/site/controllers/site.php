@@ -365,8 +365,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
 
 
-//        $tags = "'colombia', 'daniel angulo', 'Independiente Santa Fe'";
-//        $tagsStorys = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "",  4,  0, false,false, $idNoticia );
+
         //$storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
 
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
@@ -401,8 +400,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
-        //   $data['header2'] = $this->contenido->header2($dataHeader2);
-        //   $data['top2'] = $this->banners->FE_Megabanner();
+
 
         $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
