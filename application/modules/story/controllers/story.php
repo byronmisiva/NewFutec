@@ -55,11 +55,14 @@ class Story extends MY_Controller
         $data['autor'] = $this->get_author($noticia->author_id);
 
         $tags = "";
+        $final = 1;
         foreach ($noticia->tags as $key => $tag) {
             if ($tag->name != "don balon") {
                 $tags = $tags . "'" . $tag->name . "'";
-                if ($key < count($noticia->tags) - 1) $tags = $tags . ", ";
+                $final ++;
             }
+            if ($key < count($noticia->tags) - $final) $tags = $tags . ", ";
+
         }
 
         $data['tagsStorys'] = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "", 4, 0, false, false, $id);
