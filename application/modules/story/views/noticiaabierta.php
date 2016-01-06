@@ -89,13 +89,13 @@
         ?>
 
         <div class="col-md-12 column content-gris ">
-                Sigue leyendo
+                Leer también
         </div>
-        <div class="col-xs-12 col-md-12 margen0">
+        <div class="col-xs-12 col-md-12 margen0 separador10">
             <?php echo $tagsStorys; ?>
         </div>
 
-        <div class="margen10lados-sx noticia-body">
+        <div class="margen10lados-sx noticia-body separador10">
             <br/>
             <?php if (isset($autor[0]->twitter)) { ?>
                 <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
