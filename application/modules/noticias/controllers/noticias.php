@@ -222,6 +222,7 @@ class Noticias extends MY_Controller
         $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = trim($tags);
         $data['posSection'] = $posSection;
+        $data['sinMasNoticias'] = false;
 
         return $this->load->view('noticiashome', $data, TRUE);
     }
