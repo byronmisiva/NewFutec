@@ -2,7 +2,7 @@
 <?php
 foreach ($noticias as $noticia) {
     ?>
-        <p><?php echo $noticia ?></p>
+        <div style="margin-left: 20px"><?php echo $noticia ?></div>
     <?php
 }
 ?>

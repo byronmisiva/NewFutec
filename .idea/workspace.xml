@@ -128,7 +128,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.115606934">
               <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-              <folding />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -602,12 +604,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00902" summary="e">
-      <created>1445610697310</created>
-      <option name="number" value="00902" />
-      <option name="project" value="LOCAL" />
-      <updated>1445610697310</updated>
-    </task>
     <task id="LOCAL-00903" summary="e">
       <created>1445990811512</created>
       <option name="number" value="00903" />
@@ -896,7 +892,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452115272627</updated>
     </task>
-    <option name="localTasksCounter" value="951" />
+    <task id="LOCAL-00951" summary="e">
+      <created>1452115330756</created>
+      <option name="number" value="00951" />
+      <option name="project" value="LOCAL" />
+      <updated>1452115330756</updated>
+    </task>
+    <option name="localTasksCounter" value="952" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1500,7 +1502,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.115606934">
           <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
