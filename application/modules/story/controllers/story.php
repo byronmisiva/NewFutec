@@ -54,6 +54,7 @@ class Story extends MY_Controller
         $data['banerintermedio'] = $banerintermedio;
         $data['autor'] = $this->get_author($noticia->author_id);
 
+        // noticias por tag
         $tags = "";
         $final = 1;
         foreach ($noticia->tags as $key => $tag) {
@@ -62,11 +63,9 @@ class Story extends MY_Controller
                 $final ++;
                 if ($key < count($noticia->tags) - $final) $tags = $tags . ", ";
             }
-
-
         }
-
-        $data['tagsStorys'] = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "", 4, 0, false, false, $id);
+        $data['tagsStorys'] = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "noticia", 4, 0, false, false, $id);
+        // fin noticias por tag
 
         //La Voz de las Tribunas
         $this->load->module('noticias');
