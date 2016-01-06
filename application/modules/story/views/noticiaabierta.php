@@ -88,6 +88,7 @@
         <?php }
         ?>
         <?php if ( strlen ( $tagsStorys ) >3) {?>
+
         <div class="col-md-12 column content-gris ">
                 Leer también <?php echo strlen ( $tagsStorys ) ; ?>
         </div>
