@@ -222,9 +222,9 @@ class Noticias extends MY_Controller
         $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = trim($tags);
         $data['posSection'] = $posSection;
-        $data['sinMasNoticias'] = false;
 
-        return $this->load->view('noticiashome', $data, TRUE);
+
+        return $this->load->view('noticiasrelacionadas', $data, TRUE);
     }
 
     public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE, $excluded = "")
