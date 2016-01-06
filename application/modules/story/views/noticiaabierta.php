@@ -87,13 +87,14 @@
 
         <?php }
         ?>
-
+        <?php if ( strlen ( $tagsStorys ) >3) {?>
         <div class="col-md-12 column content-gris ">
-                Leer también
+                Leer también <?php echo strlen ( $tagsStorys ) ; ?>
         </div>
         <div class="col-xs-12 col-md-12 margen0 separador10">
             <?php echo $tagsStorys; ?>
         </div>
+        <?php } ?>
 
         <div class="margen10lados-sx noticia-body separador10">
             <br/>
