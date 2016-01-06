@@ -102,6 +102,8 @@ class Noticias extends MY_Controller
         $data['intermediaBanner'] = $intermediaBanner;
         $data['finalmediaBanner'] = $finalmediaBanner;
 
+        $data['namesection'] = '';
+
 
         return $this->load->view('noticiashome', $data, TRUE);
     }
