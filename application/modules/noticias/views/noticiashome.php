@@ -67,22 +67,23 @@ if (isset($finalmediaBanner))
     echo $finalmediaBanner;
 ?>
 
-<div class="noticiasextras">
-</div>
-<?php if (isset ($sinMasNoticias)) {
+    <div class="noticiasextras">
+    </div>
+<?php
+$mostrar = true;
+if (isset ($sinMasNoticias)) {
     if ($sinMasNoticias)
         $mostrar = false;
 } else
     $mostrar = true;
 
 if ($mostrar) {
-
-?>
-<div class="col-md-12 text-right fondoazul separador10 masnoticias" offset="<?php echo rand() . "-" . $offset; ?>"
-     urlSeccion="<?php echo (isset($urlsecction)) ? $urlsecction : ""; ?>"
-     section="<?php echo (isset($idsection)) ? $idsection : ""; ?>"
-     pos="<?php echo (isset($posSection)) ? $posSection : "1"; ?>">
-    Más Noticias
-</div>
+    ?>
+    <div class="col-md-12 text-right fondoazul separador10 masnoticias" offset="<?php echo rand() . "-" . $offset; ?>"
+         urlSeccion="<?php echo (isset($urlsecction)) ? $urlsecction : ""; ?>"
+         section="<?php echo (isset($idsection)) ? $idsection : ""; ?>"
+         pos="<?php echo (isset($posSection)) ? $posSection : "1"; ?>">
+        Más Noticias
+    </div>
 <?php }
 ?>
