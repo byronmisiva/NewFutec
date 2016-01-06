@@ -173,13 +173,11 @@ class Noticias extends MY_Controller
 
         $data['idsection'] = $tags;
 
-
         $this->load->module('story');
 
         // se hace llamado por el tag
 
         $storys = $this->mdl_story->news_by_tags($tags, $totalMiniNews, 0, $idNoticia);
-
 
         $dataStory['tipoLink'] = "secction";
 

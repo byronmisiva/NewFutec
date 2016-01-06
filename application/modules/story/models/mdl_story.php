@@ -63,6 +63,8 @@ class Mdl_story extends MY_Model
                                     INNER JOIN images i ON s.image_id = i.id
                                     WHERE lower(t. NAME) IN (' . $tag . ') AND s.position != 10 ' . $notIn .'
                                     ORDER BY s.modified DESC ' . $limit);
+
+        $test = $this->db->last_query();
         return $data->result();
     }
 

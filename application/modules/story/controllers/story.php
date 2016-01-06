@@ -56,7 +56,7 @@ class Story extends MY_Controller
 
         // noticias por tag
         $tags = "";
-        $final = 1;
+        $final = 0;
         foreach ($noticia->tags as $key => $tag) {
             if ($tag->name != "don balon") {
                 $tags = $tags . "'" . $tag->name . "'";
