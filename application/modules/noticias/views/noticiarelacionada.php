@@ -8,7 +8,7 @@
     $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($story->title) . '/' . $story->id;
 }
 ?>
-<li><strong><a href="<?php echo $link ?>"><?php echo $story->title ?></a></strong></li>
+ <strong><a href="<?php echo $link ?>"><?php echo $story->title ?></a></strong>
 
 
 

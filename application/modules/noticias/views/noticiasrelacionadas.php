@@ -1,4 +1,4 @@
-<ul>
+
 <?php
 foreach ($noticias as $noticia) {
     ?>
@@ -6,4 +6,3 @@ foreach ($noticias as $noticia) {
     <?php
 }
 ?>
-</ul>
