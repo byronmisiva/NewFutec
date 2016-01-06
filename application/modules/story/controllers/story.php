@@ -58,7 +58,7 @@ class Story extends MY_Controller
         $tags = "";
         $final = 0;
         foreach ($noticia->tags as $key => $tag) {
-            if ($tag->name != "don balon") {
+            if (($tag->name != "don balon") && ($tag->name != "serie a")&& ($tag->name != "serie b")&& ($tag->name != "Campeonato Ecuatoriano")) {
                 $tags = $tags . "'" . $tag->name . "'";
                 $final ++;
                 if ($key < count($noticia->tags) - $final) $tags = $tags . ", ";
