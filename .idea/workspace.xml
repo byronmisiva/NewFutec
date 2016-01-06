@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" afterPath="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php" afterPath="$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -64,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiaabierta.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="noticiaabierta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56647396">
+            <state vertical-scroll-proportion="-12.25">
               <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
@@ -123,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticiarelacionada.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="noticiarelacionada.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.607595">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.61422414">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -224,8 +224,8 @@
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiashome.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/controllers/noticias.php" />
         <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiasrelacionadas.php" />
-        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php" />
         <option value="$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php" />
+        <option value="$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php" />
       </list>
     </option>
   </component>
@@ -622,12 +622,6 @@
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
     </task>
-    <task id="LOCAL-00894" summary="e">
-      <created>1445524416249</created>
-      <option name="number" value="00894" />
-      <option name="project" value="LOCAL" />
-      <updated>1445524416250</updated>
-    </task>
     <task id="LOCAL-00895" summary="e">
       <created>1445524580853</created>
       <option name="number" value="00895" />
@@ -916,7 +910,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452109644674</updated>
     </task>
-    <option name="localTasksCounter" value="943" />
+    <task id="LOCAL-00943" summary="e">
+      <created>1452109765645</created>
+      <option name="number" value="00943" />
+      <option name="project" value="LOCAL" />
+      <updated>1452109765645</updated>
+    </task>
+    <option name="localTasksCounter" value="944" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1498,10 +1498,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.607595">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state vertical-scroll-proportion="-12.25">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1514,10 +1514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/story/views/noticiaabierta.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/noticias/views/noticiarelacionada.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56647396">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.61422414">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding />
         </state>
       </provider>

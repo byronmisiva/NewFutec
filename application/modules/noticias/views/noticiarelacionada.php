@@ -11,13 +11,13 @@
 
 
 <div class="row clearfix news-detail">
-    <div class="col-md-2 col-sm-3 col-xs-3">
+    <div class="col-md-2 col-sm-3 col-xs-2">
         <a href="<?php echo $link ?>"><img
                 src="http://www.futbolecuador.com/<?php echo $story->thumbh50; ?>"
                 alt="<?php echo str_replace('"', '', "$story->title"); ?>"
                 title="<?php echo str_replace('"', '', "$story->title"); ?>"></a>
     </div>
-    <div class="col-md-10 col-sm-9 col-xs-9">
+    <div class="col-md-10 col-sm-9 col-xs-10">
         <div class="col-md-12 column col-xs-12">
             <h2><a href="<?php echo $link ?>"><?php echo $story->title ?></a></h2>
         </div>
