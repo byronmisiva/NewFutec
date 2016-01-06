@@ -88,7 +88,7 @@
         <?php }
         ?>
 
-        <div class="col-md-12 column content-gris hidden-xs">
+        <div class="col-md-12 column content-gris ">
             <div class="col-md-4 col-xs-4 column margen0">
                 Sigue leyendo
             </div>
