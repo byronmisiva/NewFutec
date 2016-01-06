@@ -87,6 +87,10 @@
 
         <?php }
         ?>
+        <div class="col-xs-12 col-md-12 margen0">
+            <?php echo $tagsStorys; ?>
+        </div>
+
         <div class="margen10lados-sx noticia-body">
             <br/>
             <?php if (isset($autor[0]->twitter)) { ?>
@@ -122,9 +126,7 @@
         } ?>
     </div>
 </div>
-<div class="col-xs-12 col-md-12 margen0">
-    <?php echo $tagsStorys; ?>
-</div>
+
 
 <div class="col-xs-12 col-md-12 margen0">
     <?php echo $bannerBottom; ?>

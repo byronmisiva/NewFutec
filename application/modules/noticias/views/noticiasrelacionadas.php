@@ -6,17 +6,7 @@ if (isset($extraheader)) {
     }
 }
 ?>
-<?php if (isset($namesection)) {
-    if ($namesection != "") {
-        ?>
-        <div class="col-md-12 <?php echo $separador10; ?> margen0">
-            <div class="panel-heading backcuadros">
-                <h4 class="panel-title"><?php echo $namesection; ?></h4>
-            </div>
-        </div>
-        <?php
-    }
-} ?>
+
 <?php
 $indice = 0;
 foreach ($noticias as $noticia) {
@@ -62,8 +52,3 @@ foreach ($noticias as $noticia) {
 //importante cuando no son par + 1 las noticias  se le cierra el div
 if ($indice % 2 == 1) echo '</div>';
 ?>
-<?php
-if (isset($finalmediaBanner))
-    echo $finalmediaBanner;
-?>
-

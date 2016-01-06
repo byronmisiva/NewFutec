@@ -187,7 +187,7 @@ class Noticias extends MY_Controller
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
-            $noticias[] = $this->viewNoticia($dataStory);
+            $noticias[] =  $this->load->view('noticiarelacionada', $dataStory, TRUE);
         }
         if ($mostrarBanner) {
             //intercalar banners
