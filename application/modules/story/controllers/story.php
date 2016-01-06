@@ -56,14 +56,13 @@ class Story extends MY_Controller
 
         // noticias por tag
         $tags = "";
-        $final = 0;
         foreach ($noticia->tags as $key => $tag) {
-            if (($tag->name != "don balon") && ($tag->name != "serie a")&& ($tag->name != "serie b")&& ($tag->name != "Campeonato Ecuatoriano")) {
+            if (($tag->name != "don balon") && ($tag->name != "serie a")&& ($tag->name != "serie b") && ($tag->name != "Campeonato Ecuatoriano") && ($tag->name != "zona fe")) {
                 $tags = $tags . "'" . $tag->name . "'";
-                $final ++;
-                if ($key < count($noticia->tags) - $final) $tags = $tags . ", ";
             }
         }
+
+        $tags = str_replace("''", "','", $tags );
         $data['tagsStorys'] = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "noticia", 4, 0, false, false, $id);
         // fin noticias por tag
 
