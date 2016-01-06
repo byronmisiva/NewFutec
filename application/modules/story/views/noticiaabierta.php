@@ -89,9 +89,7 @@
         ?>
 
         <div class="col-md-12 column content-gris ">
-            <div class="col-md-4 col-xs-4 column margen0">
                 Sigue leyendo
-            </div>
         </div>
         <div class="col-xs-12 col-md-12 margen0">
             <?php echo $tagsStorys; ?>
