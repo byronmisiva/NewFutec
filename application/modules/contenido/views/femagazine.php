@@ -69,18 +69,14 @@
             <div class="col-md-6  col-xs-12 margen0l separador10 ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4 margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/la-de-todos.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/01-con-sabor-a-gol.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>La de Todos</h2>
+                        <h2>Con sabor a Gol</h2>
 
-                        <p>
-                            Partidos de la selección de Ecuador en Eliminatorias.
-                            Las tan esperadas Eliminatorias rumbo al Mundial de Rusia 2018 iniciaron, y la selección
-                            ecuatoriana tuvo un arranque incomparable. Conoce en detalle los hechos más curiosos que
-                            sucedieron en cada partido, y como jugadores, cuerpo técnico y aficionados vibraron con los
-                            partidos del Equipo de Todos.
+                        <p> Conoce los mejores sitios futboleros, donde todos los amantes del deporte rey se dan cita a disfrutar de los partidos de su club. Los lugares que son verdaderos templos para los aficionados que aman el fútbol.
+
                         </p>
                     </div>
                 </div>
@@ -89,16 +85,13 @@
             <div class="clearfix col-md-6  col-xs-12 margen0l separador10 ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/las-figuras.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/02-estrellas-que-se-estrellaron.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Las Figuras</h2>
+                        <h2>Estrellas que se estrellaron</h2>
 
-                        <p>Una nueva dupla demoledora empezó a formarse en la selección nacional, Felipe Caicedo y Miler
-                            Bolaños pusieron a la orden de La Tricolor su poder goleador. FE Magazine te presenta un
-                            análisis de este nuevo dúo dinámico en ofensiva, que ha empezado a darle alegrías a todo
-                            Ecuador.
+                        <p>Varios fueron los futbolistas que en el inicio de sus carreras demostraron todo su talento y se esperaba que brillen con luz propia, pero tuvieron varios tropiezos, desapareciendo de la palestra de las figuras mundiales. Descubre los casos de esos jugadores que tenían todo para deslumbrar, pero se fueron opacando de a poco, hasta quedar en el olvido.
                         </p>
                     </div>
                 </div>
@@ -108,38 +101,59 @@
             <div class="clearfix col-md-6  col-xs-12 margen0l separador10   ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4 margen0   ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/internacional.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/03-camisetazos.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Camisetazos</h2>
+
+                        <p>Una nueva entrega de esta controversial sección llegó. Varios fueron los camisetazos que causaron revuelo en el entorno futbolístico y te los recordamos. Aquellos que juraron en un momento amor eterno a un club y terminaron por vestirse con la piel de su rival.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/04-ave-fenix.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Ave Fénix o Desplumado</h2>
+
+                        <p>Algunos casos excepcionales se han visto en el planeta fútbol, equipos que construyeron una leyenda pero que un día tocaron fondo, descendieron y de la misma forma resurgieron para volver a ser protagonistas. Otros que encantaron al mundo, se convirtieron en gigantes, pero cayeron de forma abrupta para no levantarse más. Conoce en detalle la historia de los clubes que dejaron huella, por renacer o desaparecer definitivamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12   margen0 ">
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/05-refuerzos-decepcionantes.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Los refuerzos más decepcionantes del 2015</h2>
+
+                        <p>Futbolecuador Magazine recapitula y te presenta, aquellas incorporaciones que llegaron para la temporada 2015, que fueron un fracaso, no llenaron las expectativas, siendo un aporte casi nulo para los clubes y criticados por los hinchas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/06-internacional.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
                         <h2>Internacional</h2>
 
-                        <p>
-                            En colaboración con Don Balón, te presentamos el espectacular año que ha tenido Luis Suárez
-                            con la camiseta del FC Barcelona, lleno de goles y éxitos. Además Felipe Caicedo y Keylor
-                            Navas, los jugadores en forma de la Liga Española, destacando por un su nivel sobresaliente
-                            en los terrenos de juego.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/radiografia.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Copa Sudamericana</h2>
-
-                        <p>
-                            La eliminación de Emelec y Liga de Quito
-                            El sueño de quedarse con la Copa Sudamericana llegó a su fin para Emelec y Liga de Quito,
-                            los equipos ecuatorianos quedaron fuera del torneo derrochando todos sus esfuerzos. Varios
-                            detalles y hechos curiosos sucedieron en los partidos decisivos, entérate y revive los
-                            momentos particulares de estos apasionantes duelos.
-
+                        <p>En colaboración con Don Balón, te presentamos el gran año que ha tenido el ecuatoriano Jefferson Montero, destacando como uno de los jugadores que está en forma, por su excelente nivel. Además, Frickson Erazo, el central que espera ver Europa; en el Viejo Continente se hacen eco del talento del Elegante y aspiran observarlo en una de las ligas más importantes del mundo.
                         </p>
                     </div>
                 </div>
@@ -149,16 +163,13 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/camisetazos.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/07-ascenso.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Los Camisetazos</h2>
+                        <h2>Acenso</h2>
 
-                        <p>
-                            Varios jugadores se olvidaron del amor eterno a los colores de un club y eso los marcó para
-                            siempre en la memoria de los hinchas, que no perdonaron su pasó por el rival de toda la
-                            vida.
+                        <p>Delfín y Fuerza Amarilla se impusieron en la Serie B y consiguieron los dos boletos para jugar en la categoría de privilegio del fútbol ecuatoriano el 2016. Recuerda el camino por el que transitaron estos dos clubes que serán los nuevos integrantes de la Serie A.
                         </p>
                     </div>
                 </div>
@@ -167,90 +178,13 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/debut.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/08-mejor-y-peor-11.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Debut y despedida </h2>
+                        <h2>El mejor y peor 11 del Campeonato Ecuatoriano 2015</h2>
 
-                        <p>
-                            Recuerda las contrataciones que pasaron sin pena ni gloria en el fútbol ecuatoriano. Los
-                            jugadores que vinieron como estrellas y fracasaron en su paso por Ecuador, dejando una
-                            huella negativa imborrable. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-xs-12   margen0 ">
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/luces-camara-gol.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Luces, cámaras, Gol </h2>
-
-                        <p>
-                            El mundo del cine y del fútbol cada vez están más ligados y las historias entorno al
-                            balompié cada vez son de mayor interés. Descubre más de aquellas películas que todo amante
-                            de este deporte debe ver.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/peculiares.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Los jugadores más peculiares</h2>
-
-                        <p>
-                            Muchos jugadores quedaron en la mente de los aficionados sin ser grandes estrellas,
-                            trascendieron en el mundo del fútbol por una característica peculiar. Ya sea por sus
-                            extravagantes peinados, estar pasados de kilos, o un ritmo de vida alocado, quedaron
-                            registrados entre los futbolistas más polémicos y llamativos de la historia.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-xs-12   margen0 ">
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/autos-de-los-jugadoreas.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Las ruedas de los jugadores</h2>
-
-                        <p>
-                            Los juguetes favoritos de varias estrellas del deporte Rey son los automóviles, unos más
-                            hermoso, potentes y caros que los otros, que caracterizan los gustos de los futbolistas.
-                            Descubre que cuales son los carros de varias estrellas del balompié mundial.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
-                    <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/radiografia.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
-                    </div>
-                    <div class="col-md-8  col-xs-8   ">
-                        <h2>Radiografía de Liga de Quito y Emelec</h2>
-
-                        <p>
-                            Los hinchas de Liga de Quito y Emelec tienen características específicas que los definen
-                            como tal, algunas positivas, otras muy graciosas. Conoce como los aficionados identifican a
-                            los seguidores de estos dos equipos.
+                        <p>El Torneo ecuatoriano concluyó y Futbolecuador Magazine te presenta la alineación estelar de quienes brillaron en el campeonato y a su vez los 11 que decepcionaron, convirtiéndose en los mejores y peores futbolistas del certamen. Además una mención especial al jugador revelación del Campeonato Nacional.
                         </p>
                     </div>
                 </div>
@@ -261,34 +195,91 @@
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
                 <div class="col-md-12 col-xs-12    clearfix altofema borde">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/fuera-dejuego.jpg'); ?>"
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/09-la-figura.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>La Figura</h2>
+
+                        <p>Un solo jugador deslumbró en el certamen y se impuso al resto por sus goles, asistencias y actuaciones. Un análisis de Miller Bolaños, el futbolistas más destacado de la temporada 2015.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/10-emelec-campeon.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Campeón 2015 y clasificados a torneos internacionales</h2>
+
+                        <p>En dos vibrantes finales Emelec se consagró como campeón ecuatoriano del 2015. Recuerda el camino que llevó al Bombillo a conseguir el Tricampeonato. Además, conoce los equipos que clasificaron a los torneos internacionales y representarán a Ecuador en Copa Libertadores y Sudamericana 2016.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12   margen0 ">
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/11-radiografia.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Radiografía del Hincha</h2>
+
+                        <p>Llegó una nueva entrega especial de esta sección, ahora para los hinchas de Barcelona y El Nacional que tienen particularidades específicas que los definen como seguidores de su club. Algunas positivas, otras muy graciosas. Conoce como otros aficionados identifican a los fanáticos de estos dos equipos grandes de Ecuador.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/12-fifa-gate.jpg'); ?>"
+                             class="img-circle img-responsive separador10 ">
+                    </div>
+                    <div class="col-md-8  col-xs-8   ">
+                        <h2>Especial FIFA Gate</h2>
+
+                        <p>El escándalo de corrupción en el organismo rector del fútbol mundial estalló.
+                            Conoce en detalle como se fue desarrollando y la forma en la que repercutió en los dirigentes, el fútbol ecuatoriano, de Sudamérica y el planeta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12   margen0 ">
+            <div class="col-md-6  col-xs-12 margen0l separador10  ">
+                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                    <div class="col-md-4  col-xs-4   margen0 ">
+                        <img src="<?= base_url('imagenes/femagazine/contenidos/13-fuera-de-juego.jpg'); ?>"
                              class="img-circle img-responsive separador10 ">
                     </div>
                     <div class="col-md-8  col-xs-8   ">
                         <h2><a href="http://www.futbolecuador.com/fuera-de-juego">Fuera de Juego</a></h2>
 
-                        <p>
-                            Ana Milena Cardozo en una sesión de infarto, brinda su apoyo y aliento a Deportivo Quito en
-                            el momento que más lo necesita, luchando por mantenerse en la serie de privilegio.
+                        <p>Diana Guevara en una sesión imperdible y de infarto, festejó por lo alto el Tricampeonato obtenido por Emelec. Mientras que Sol Tapia, fiel a Liga de Quito brinda su apoyo y aliento al vicecampeón del Ecuador.
+
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6  col-xs-12 margen0l separador10  ">
-                <div class="col-md-12 col-xs-12    clearfix altofema borde">
+                <div class="col-md-12 col-xs-12    clearfix altofema  ">
                     <div class="col-md-4  col-xs-4   margen0 ">
-                        <img src="<?= base_url('imagenes/femagazine/contenidos/para-la-foto.jpg'); ?>"
-                             class="img-circle img-responsive separador10 ">
+
                     </div>
                     <div class="col-md-8  col-xs-8   ">
-                        <h2>Para la Foto</h2>
 
-                        <p>
-                            Futbolecuador Magazine te invita a disfrutar las espectaculares imágenes captadas por
-                            nuestro lente, los mejores momentos del Campeonato Ecuatoriano 2015, en su recta final para
-                            determinar al ganador de la segunda etapa.
-                        </p>
                     </div>
                 </div>
             </div>
