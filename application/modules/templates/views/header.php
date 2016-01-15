@@ -28,18 +28,34 @@
 
     <!--twitter TAGS-->
     <meta name="twitter:card" content="app">
+    <?php if (rand(1, 2) == 1  ) { ?>
+
     <meta name="twitter:app:id:iphone" content="1008177383">
     <meta name="twitter:app:id:ipad" content="1008177383">
     <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
+    <?php } else {?>
+    <meta name="twitter:app:id:iphone" content="622931242">
+    <meta name="twitter:app:id:ipad" content="622931242">
+    <meta name="twitter:app:id:googleplay" content="com.futbolecuador.femagazine">
+    <?php } ?>
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
 
-    <meta name="apple-itunes-app" content="app-id=1008177383, app-argument=//www.futbolecuador.com">
+    <meta name="twitter:description" content="<?php echo (isset($description)) ? $description : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>" />
 
+    <meta name="apple-itunes-app" content="app-id=1008177383, app-argument=//www.futbolecuador.com">
     <meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
 
     <!--TAGS com.misiva.futbolecuadorpush 1008177383-->
     <!--TAGS com.futbolecuador.femagazine 622931242-->
+    <?php if (isset($noticia))  { ?>
+    <?php if ($this->uri->segment('2') != 'noticia')   { ?>
+    <?php if ($this->uri->segment('2') != 'equipo')   { ?>
+    <link rel=”canonical” href=”<?php  echo base_url('site/noticia') . '/'.$this->story->_urlFriendly( $noticia->subtitle) . '/'. $noticia->id  ; ?>”>
+
+    <?php } ?>
+    <?php } ?>
+    <?php } ?>
 
     <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -139,14 +155,11 @@
     </script>
     <!--   script teads  se muestra cuando es noticia abierta-->
 
-
     <!-- Tapstream tracking-->
     <script type="text/javascript">
-
         var _tsq = _tsq || [];
         _tsq.push(["setAccountName", "futbolecuador"]);
         _tsq.push(["trackPage"]);
-
         (function () {
             function z() {
                 var s = document.createElement("script");
@@ -156,13 +169,11 @@
                 var x = document.getElementsByTagName("script")[0];
                 x.parentNode.insertBefore(s, x);
             }
-
             if (window.attachEvent)
                 window.attachEvent("onload", z);
             else
                 window.addEventListener("load", z, false);
         })();
-
     </script>
     <!-- End Tapstream tracking-->
 
@@ -201,11 +212,8 @@
 </script>
 
 <script type='text/javascript'>
-
-
-
-
 </script>
+
 
 
 <script type='text/javascript'>
@@ -214,12 +222,9 @@
     var uri = "<?php  echo ($this->uri->segment(2) != "" ) ? $this->uri->segment(2) :"false"; ?>";
     googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1424964392222-0').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413318555463-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413318555463-3').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads());
@@ -229,48 +234,35 @@
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1413414586192-6').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_4', [300, 250], 'div-gpt-ad-1413414586192-7').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_5', [300, 250], 'div-gpt-ad-1413414586192-8').addService(googletag.pubads());
-
         //new 2015
         googletag.defineSlot('/1022247/FE_NEW_FILMSTRIP_BANNER', [300, 600], 'div-gpt-ad-1439997438966-0').addService(googletag.pubads());
-
         // publicidades en mobil
         googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/FE_LOADING', [800, 600], 'div-gpt-ad-1425424774921-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-        //googletag.defineSlot('/1022247/FE_SKIN_BRAND', [1800, 800], 'div-gpt-ad-1434137569309-1').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
-
         //netsonic
         googletag.defineSlot('/25992948/EC_futbolecuador.com_1x1', [1, 1], 'div-gpt-ad-1438988612575-0').addService(googletag.pubads());
-
-
         //amazon
         googletag.defineSlot('/1022247/Amazon_associates', [665, 370], 'div-gpt-ad-1445466832316-0').addService(googletag.pubads());
         // si no existe contenido no muestra para el caso del header y splas
-        //document.getElementById("div-gpt-ad-1383593619381-0").style.display = 'none';
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
         //console.log ("xx");
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
-
             //para el caso de splash desktop
             if (event.slot.i == '/1022247/FE_LOADING') {
                 console.log("carga1 ");
                 if (event.isEmpty) {
-
                     cleanBlackLayer();
-
                 } else {
-
                     <?php if ($verMobile != "1"){ ?>
                     cargarSplash();
-
                     <?php } ?>
                 }
             }
@@ -322,20 +314,15 @@
         googletag.defineSlot('/1022247/FE_BRAND_SMART_TOP', [320, 50], 'div-gpt-ad-1432051647687-6').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
-
         googletag.defineSlot('/1022247/Marcador_en_vivo', [320, 80], 'div-gpt-ad-1444931286798-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/MARCADOR_EN_VIVO_SMART', [320, 50], 'div-gpt-ad-1444931286798-1').addService(googletag.pubads());
-
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
     });
     // fin espacios copa america
-
 </script>
-
 <!-- Tag Netsonic-->
 <!-- /25992948/EC_futbolecuador.com_1x1 -->
 <div id='div-gpt-ad-1438988612575-0' style='height:1px; width:1px;'>
@@ -356,13 +343,11 @@
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
 
-
 <script type='text/javascript'>GA_googleFetchAds();</script>
 <!-- Google Tag Manager -->
 
 <!-- Tapstream tracking-->
 <script type="text/javascript">
-
     var _tsq = _tsq || [];
     _tsq.push(["setAccountName", "futbolecuador"]);
     _tsq.push(["trackPage"]);
@@ -385,7 +370,6 @@
 
 </script>
 <!-- End Tapstream tracking-->
-
 
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
@@ -467,8 +451,6 @@
                src="https://www.facebook.com/tr?id=1437375723207649&ev=PageView&noscript=1"
         /></noscript>
 <!-- End Facebook Pixel Code -->
-
-
 
 <div id="darkLayerFE" style="display:none;"></div>
 <div id="FE_LOADINGFE" style="display:none;">

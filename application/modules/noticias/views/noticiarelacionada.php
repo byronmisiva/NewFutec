@@ -8,8 +8,5 @@
     $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($story->title) . '/' . $story->id;
 }
 ?>
- <strong><a href="<?php echo $link ?>"><?php echo $story->title ?></a></strong>
-
-
-
+ <strong onclick="ga('send', 'event', 'Relacionadas', 'click', 'noticia');"><a  href="<?php echo $link ?>"><?php echo $story->title ?></a></strong>
 

@@ -92,12 +92,13 @@
         <div class="col-md-12 column content-gris ">
                 Leer también
         </div>
-        <div class="col-xs-12 col-md-12 margen0 separador10">
+        <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys">
             <?php echo $tagsStorys; ?>
         </div>
+
         <?php } ?>
 
-        <div class="margen10lados-sx noticia-body separador10">
+        <div class="margen10lados-sx noticia-body separador10 col-xs-12 col-md-12 ">
             <br/>
             <?php if (isset($autor[0]->twitter)) { ?>
                 <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
@@ -127,7 +128,7 @@
     </div>
     <div class="col-md-12 col-xs-12 column margen0 text-right text-news-zone">
         <?php foreach ($noticia->tags as $key => $tag) {
-            echo $tag->name;
+            echo "<a href=" .base_url() . "site/tags/" . $this->story->_urlFriendly($tag->name) .">" .$tag->name  . "</a>";
             if ($key < count($noticia->tags) - 1) echo ", ";
         } ?>
     </div>

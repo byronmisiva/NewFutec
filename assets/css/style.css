@@ -1813,10 +1813,12 @@ h1.tabla, h2.tabla {
 }
 
 .respiframe iframe {
-/*    width: 100%;*/
+    width: 100%;
     margin: 0 auto;
     display: block;
 }
+
+
 
 .azulmovistar {
     background-color: #005c84
@@ -1970,4 +1972,14 @@ div#closeBannerdpa {
 .lateral-fijo {
     position: fixed !important;
     top: 10px !important;
+}
+
+.tagstorys *:visited:after {
+    color: red;
+
+    content: " (leido)";
+}
+
+.tagstorys  a:visited:after {
+    content:  "\2713 ";
 }

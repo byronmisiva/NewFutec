@@ -165,19 +165,21 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    public function viewTags($namesection, $tags, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE, $idNoticia = false)
+    public function viewTagsList($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
     {
         //$this->output->cache(CACHE_DEFAULT);
         setlocale(LC_ALL, "es_ES");
         $noticias = array();
 
-        $data['idsection'] = $tags;
+        $data['idsection'] = $idsection;
+
 
         $this->load->module('story');
 
         // se hace llamado por el tag
 
-        $storys = $this->mdl_story->news_by_tags($tags, $totalMiniNews, 0, $idNoticia);
+        $storys = $this->mdl_story->news_by_tagsList($idsection, TOTALNEWSINDONBALON, 0);
+
 
         $dataStory['tipoLink'] = "secction";
 
@@ -185,7 +187,7 @@ class Noticias extends MY_Controller
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
-            $noticias[] =  $this->load->view('noticiarelacionada', $dataStory, TRUE);
+            $noticias[] = $this->viewNoticia($dataStory);
         }
         if ($mostrarBanner) {
             //intercalar banners
@@ -215,7 +217,69 @@ class Noticias extends MY_Controller
             //fin intercalar banners
         }
         $data ['namesection'] = $namesection;
-        $data['noticias'] =  $noticias;
+        $data['noticias'] = $noticias;
+
+        $data['offset'] = $totalMiniNews + $offset;
+        $data['idsection'] = trim($idsection);
+        $data['posSection'] = $posSection;
+
+        return $this->load->view('noticiashome', $data, TRUE);
+    }
+
+    public function viewTags($namesection, $tags, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE, $idNoticia = false)
+    {
+        //$this->output->cache(CACHE_DEFAULT);
+        setlocale(LC_ALL, "es_ES");
+        $noticias = array();
+
+        $data['idsection'] = $tags;
+
+        $this->load->module('story');
+
+        // se hace llamado por el tag
+
+        if ($tags == '')
+            return '';
+        else
+            $storys = $this->mdl_story->news_by_tags($tags, $totalMiniNews, 0, $idNoticia);
+
+        $dataStory['tipoLink'] = "secction";
+
+        $dataStory['urlsecction'] = $urlSeccion;
+
+        foreach ($storys as $story) {
+            $dataStory['story'] = $story;
+            $noticias[] = $this->load->view('noticiarelacionada', $dataStory, TRUE);
+        }
+        if ($mostrarBanner) {
+            //intercalar banners
+            $this->load->module('banners');
+            $banners = array();
+            $banners[] = $this->banners->FE_Bigboxnews1();
+            $banners[] = $this->banners->FE_Bigboxnews2();
+            $banners[] = $this->banners->FE_Bigboxnews3();
+            $banners[] = $this->banners->FE_Bigboxnews4();
+            $banners[] = $this->banners->FE_Bigboxnews5();
+            //intercalo entre las noticias los banners.
+            if ($totalMiniNews > 10) {
+                array_splice($noticias, 5, 0, $banners[0]);
+                array_splice($noticias, 10, 0, $banners[1]);
+                array_splice($noticias, 17, 0, $banners[2]);
+                array_splice($noticias, 22, 0, $banners[3]);
+                array_splice($noticias, 29, 0, $banners[4]);
+            } else {
+                if ($totalMiniNews > 2) {
+                    array_splice($noticias, 5, 0, $banners[0]);
+                }
+                if ($totalMiniNews > 10) {
+
+                    array_splice($noticias, 12, 0, $banners[1]);
+                }
+            }
+            //fin intercalar banners
+        }
+        $data ['namesection'] = $namesection;
+        $data['noticias'] = $noticias;
 
         $data['offset'] = $totalMiniNews + $offset;
         $data['idsection'] = trim($tags);
@@ -232,7 +296,7 @@ class Noticias extends MY_Controller
         $noticias = array();
 
         $data['idsection'] = $idsection;
-        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset,$excluded );
+        $storys = $this->mdl_noticias->get_by_position($totalMiniNews, $idsection, $posSection, $offset, $excluded);
 
 
         $dataStory['tipoLink'] = "secction";
@@ -253,7 +317,7 @@ class Noticias extends MY_Controller
                 $banners[] = $this->banners->FE_Bigboxnews1();
             else
                 $banners[] = $this->banners->FE_Bigboxnews1();
-                //$banners[] = $this->banners->FE_Bigboxnews1_copa_america();
+            //$banners[] = $this->banners->FE_Bigboxnews1_copa_america();
             $banners[] = $this->banners->FE_Bigboxnews2();
             $banners[] = $this->banners->FE_Bigboxnews3();
             $banners[] = $this->banners->FE_Bigboxnews4();
@@ -428,6 +492,7 @@ class Noticias extends MY_Controller
         }
         return $this->load->view('noticiahomenano', $data, TRUE);
     }
+
     public function viewNoticiaRevista($data = FALSE)
     {
         //$this->output->cache(CACHE_DEFAULT);

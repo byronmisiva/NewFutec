@@ -38,6 +38,29 @@ function cargarSplash() {
                 $('.separador10-xs').css('margin-top', '95px');
         }
     }
+    //div-gpt-ad-1383593619381-3
+
+    //centrar banner movile
+    if (verMobile == 1) {
+        if ($('#div-gpt-ad-1383593619381-4').length != 0) {
+            if ($('#div-gpt-ad-1383593619381-4 iframe').contents().find("#google_image_div").length != 0) {
+                $('#div-gpt-ad-1383593619381-4 iframe').contents().find("#google_image_div").css('width', '100%')
+                $('#div-gpt-ad-1383593619381-4 iframe').contents().find("#google_image_div img").css('margin', 'auto').css('display', 'block');
+            }
+
+            if ($('#div-gpt-ad-1383593619381-2 iframe').contents().find("#google_image_div").length != 0) {
+                $('#div-gpt-ad-1383593619381-2 iframe').contents().find("#google_image_div").css('width', '100%')
+                $('#div-gpt-ad-1383593619381-2 iframe').contents().find("#google_image_div img").css('margin', 'auto').css('display', 'block');
+            }
+
+            if ($('#div-gpt-ad-1383593619381-3 iframe').contents().find("#google_image_div").length != 0) {
+                $('#div-gpt-ad-1383593619381-3 iframe').contents().find("#google_image_div").css('width', '100%')
+                $('#div-gpt-ad-1383593619381-3 iframe').contents().find("#google_image_div img").css('margin', 'auto').css('display', 'block');
+            }
+        }
+    }
+
+
     // amazon asociates
 
     if ($('#div-gpt-ad-1445466832316-0 ').length > 0) {
@@ -121,8 +144,7 @@ var mostrarBlackLayer = function () {
 };
 
 jQuery(document).ready(function () {
-    if ($('#carousel-marcadorenvivo .item').length == 1)
-    {
+    if ($('#carousel-marcadorenvivo .item').length == 1) {
         $(".carousel-control").hide();
     }
 

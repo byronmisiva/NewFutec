@@ -577,7 +577,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             echo "},";
 
         }
-        $data = $this->mdl_story->news_by_tags($tag, TOTALNEWSINDONBALON);
+        $data = $this->mdl_story->news_by_tagsList($tag, TOTALNEWSINDONBALON);
 
         foreach ($data as $index => $noticia) {
             if (!in_array($noticia->id, $rotativasListado)) {
@@ -709,7 +709,21 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function fifagate()
     {
-        $this->tag("FIFA GATE", ZONANUESTROSEMBAJADORESPOS, "Fifa Gate ", "noticia", "noticia");
+        $this->taglist("FIFA GATE", ZONANUESTROSEMBAJADORESPOS, "Fifa Gate", "noticia", "noticia");
+    }
+
+
+    public function tags()
+    {
+        $parametro = $this->uri->segment('3');
+        if ($parametro) {
+            $parametro = str_replace("-", " ", $parametro);
+            $parametro = ucwords($parametro);
+            $this->taglist($parametro, ZONANUESTROSEMBAJADORESPOS, $parametro, "noticia", "noticia");
+        }
+        else
+            redirect('home');
+
     }
 
     public function seccion($seccion, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT, $tipotabla = CHAMP_DEFAULT_TIPOTABLA)
@@ -788,6 +802,54 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->templates->_index($data);
     }
 
+
+    public function taglist($tag, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT)
+    {
+        // para la final se comentan la llamada a las secciones.
+        $this->output->cache(CACHE_DEFAULT);
+
+        $this->load->module('noticias');
+        $this->load->module('templates');
+        $this->load->module('contenido');
+        $this->load->module('banners');
+        $this->load->library('user_agent');
+        $this->load->module('story');
+        $data['verMobile'] = $this->verificarDispositivo();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['header1'] = $this->contenido->menu();
+
+        $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
+
+        $noticiasCuerpo = $this->noticias->viewTagsList($nameSeccion, $tag, $seccionpos, $urlSeccion);
+
+        $storia = "";
+        $bodytag = $nameSeccion;
+
+        // carga la informacion de la noticia
+        $idNoticia = $this->uri->segment(4);
+        //validamos las noticias
+        /*if ($idNoticia < 39898)
+            redirect('home');*/
+        if ($idNoticia == 'ref.outcontrol')
+            redirect('home');
+
+        if ($idNoticia) {
+            $storia = $this->story->get_complete($idNoticia);
+            $aux = $this->mdl_story->get_story($idNoticia);
+            $bodytag = str_replace('"', '', strip_tags($aux->title));
+        }
+
+        $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+        // fin carga la informacion de la noticia
+
+        $data['content'] = $storia . $noticiasCuerpo;
+        $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie);
+
+        $data['footer'] = $this->contenido->footer();
+        $data['bottom'] = $this->contenido->bottom();
+        $data['fe_header'] = $this->banners->fe_header();
+        $this->templates->_index($data);
+    }
 
     public function tag($tag, $seccionpos, $nameSeccion, $urlSeccion, $tipoSeccion = "", $serie = CHAMP_DEFAULT)
     {
