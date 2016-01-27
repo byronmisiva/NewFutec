@@ -185,13 +185,15 @@ class Gaco extends CI_Model {
 				$gmatch=$this->codes($gmatch,$start);
 				$k=0;
 				foreach($gmatch[0] as $row):
-					$this->construir($row[0],1,$k,&$gmatch,&$matches,&$hlp);
+					//$this->construir($row[0],1,$k,&$gmatch,&$matches,&$hlp);
+					$this->construir($row[0],1,$k,$gmatch,$matches,$hlp);
 					$k++;
 				endforeach;
 				if($lmatch!=''){
 					$k=0;
 					foreach($lmatch[0] as $row):
-						$this->construir($row[0],1,$k,&$lmatch,&$matches,&$hlp);
+						//$this->construir($row[0],1,$k,&$lmatch,&$matches,&$hlp);
+						$this->construir($row[0],1,$k,$lmatch,$matches,$hlp);
 						$k++;
 					endforeach;
 					$lmatch=$this->matrix($lmatch);
@@ -266,7 +268,9 @@ class Gaco extends CI_Model {
 				unset($hlp[$matches[$matches[$hlp[$aux[1]]]['ta'].$matches[$hlp[$aux[1]]]['th']]['id']]);
 				unset($matches[$matches[$hlp[$aux[1]]]['ta'].$matches[$hlp[$aux[1]]]['th']]);
 			}
-			$this->construir($matches[$hlp[$aux[1]]],$i+1,(($j+1)*2)-2,&$glmatch,&$matches,&$hlp);
+
+			//$this->construir($matches[$hlp[$aux[1]]],$i+1,(($j+1)*2)-2,&$glmatch,&$matches,&$hlp);
+			$this->construir($matches[$hlp[$aux[1]]],$i+1,(($j+1)*2)-2,	$glmatch,$matches,$hlp);
 			unset($matches[$hlp[$aux[1]]]);
 			unset($hlp[$aux[1]]);
 		}
@@ -283,7 +287,8 @@ class Gaco extends CI_Model {
 				unset($hlp[$matches[$matches[$hlp[$aux[1]]]['ta'].$matches[$hlp[$aux[1]]]['th']]['id']]);
 				unset($matches[$matches[$hlp[$aux[1]]]['ta'].$matches[$hlp[$aux[1]]]['th']]);
 			}
-			$this->construir($matches[$hlp[$aux[1]]],$i+1,(($j+1)*2)-1,&$glmatch,&$matches,&$hlp);
+			//$this->construir($matches[$hlp[$aux[1]]],$i+1,(($j+1)*2)-1,&$glmatch,&$matches,&$hlp);
+			$this->construir($matches[$hlp[$aux[1]]],$i+1,(($j+1)*2)-1,$glmatch,$matches,$hlp);
 			unset($matches[$hlp[$aux[1]]]);
 			unset($hlp[$aux[1]]);
 		}

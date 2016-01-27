@@ -1228,5 +1228,11 @@
             <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css') ?>"/>
             <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css') ?>"/>
         </div>
+
+        <div class="col-md-12 ">
+            <a href="http://andresrodzap.wix.com/arzfotografia" target="_blank">
+                <img src="http://www.futbolecuador.com/imagenes/fuera-de-juego/fotografo.png" class="img-responsive">
+            </a>
+        </div>
     </div>
 </div>

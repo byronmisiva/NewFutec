@@ -58,8 +58,8 @@ class Stadiums extends CI_Controller {
 	   			}
 	   			$this->session->set_flashdata('upload_image',$this->upload->display_errors());
 	   			$this->db->insert('stadia', $_POST);
-	   			redirect('stadiums/index');
-		    }	
+	   			//redirect('stadiums/index');
+		    }
 		}
 		$this->view('stadiums_vinsert',$data);
 	}
@@ -92,7 +92,7 @@ class Stadiums extends CI_Controller {
 	   		$this->session->set_flashdata('upload_image',$this->upload->display_errors());
 	    	$this->db->where( 'id',$_POST['id']);
         	$this->db->update('stadia', $_POST);
-        	redirect('stadiums');
+        	//redirect('stadiums');
 		    }	
 		}
 		$this->db->where( 'id',$this->uri->segment(3));

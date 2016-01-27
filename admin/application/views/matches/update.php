@@ -60,22 +60,24 @@
 		<tr>
 			<td class='required'>*</td>
 			<td>&Aacute;rbitro Central:</td>
-			<td><?php echo form_dropdown('referee_id_central', $referees, $matches_referees[0]->id);?></td>
+			<td><?php
+
+				echo form_dropdown('referee_id_central', $referees, isset ($matches_referees[0]->id) ? $matches_referees[0]->id:"" );?></td>
 		</tr>
 		<tr>
 			<td class='required'></td>
 			<td>&Aacute;rbitro Linea 1:</td>
-			<td><?php echo form_dropdown('referee_id_line1', $referees, $matches_referees[1]->id);?></td>
+			<td><?php echo form_dropdown('referee_id_line1', $referees, isset ($matches_referees[1]->id) ? $matches_referees[0]->id:"" );?></td>
 		</tr>
 		<tr>
 			<td class='required'></td>
 			<td>&Aacute;rbitro Linea 2:</td>
-			<td><?php echo form_dropdown('referee_id_line2', $referees, $matches_referees[2]->id);?></td>
+			<td><?php echo form_dropdown('referee_id_line2', $referees, isset ($matches_referees[2]->id) ? $matches_referees[0]->id:"" );?></td>
 		</tr>
 		<tr>
 			<td class='required'></td>
 			<td>&Aacute;rbitro Suplente:</td>
-			<td><?php echo form_dropdown('referee_id_sub', $referees, $matches_referees[3]->id);?></td>
+			<td><?php echo form_dropdown('referee_id_sub', $referees, isset ($matches_referees[3]->id) ? $matches_referees[0]->id:"" );?></td>
 		</tr>
 	
 		<tr>
