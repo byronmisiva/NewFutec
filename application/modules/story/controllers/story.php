@@ -35,6 +35,7 @@ class Story extends MY_Controller
     function get_complete($id, $banerintermedio = "", $bannerBottom = "", $bannerTop = "")
     {
 
+
         $this->mdl_story->cuentaVisita($id);
         $this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
@@ -52,6 +53,20 @@ class Story extends MY_Controller
         $data['bannerTop'] = $bannerTop;
 
         $data['banerintermedio'] = $banerintermedio;
+
+        //sobre escribo el banner intermedio en caso de que tenga tag AlertasFutbolecuador
+        $listtags = $noticia->tags;
+         foreach ($listtags  as   $tag) {
+            if ($tag->name == "Alertasfutbolecuador") {
+                $data2 = array();
+                $data2 ['parametro'] = 1;
+                $data['banerintermedio'] = $this->banners->anuncio_alertas($data2);
+                break;
+
+            }
+        }
+
+
         $data['autor'] = $this->get_author($noticia->author_id);
 
         // noticias por tag

@@ -68,7 +68,6 @@
         <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
             ?>
             <div class="banerintermedio">
-
                 <?php echo $banerintermedio; ?>
             </div>
 
