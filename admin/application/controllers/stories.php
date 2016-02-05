@@ -375,16 +375,18 @@ class Stories extends CI_Controller
                 $this->story_stat->insert_story_stat($id);
 
 
-                // SEND TWEET
+                // SEND TWEET, send push notification, chrome & safari, push alertas futbolecuador
                 if ($_POST['invisible'] == 0) {
                     $this->send_tweet_image($_POST['twitter'], $id, $_POST['image_id']);
                     // pushNotificacion Safari
                     $this->pushNotificationBrowser($id, $_POST['title'], $_POST['subtitle']);
 
                     // pushNotificacion MOBILE AlertasFutbolecuador
-                    $this->pushNotificationMobile($id, $_POST['subtitle'], $destacado);
+                    //
+                    if ($this->validaTags ($tags, 'AlertasFutbolecuador')) {
+                        $this->pushNotificationMobile($id, $_POST['subtitle'], $destacado);
+                    }
                 }
-
                 redirect($previous_url);
             }
         }
@@ -394,6 +396,15 @@ class Stories extends CI_Controller
             $data['previous_url'] = '';
         }
         $this->view($this->model->name . '/insert', $data);
+    }
+
+    function validaTags ($tags, $tagEvitar ) {
+        foreach ($tags as $tag) {
+            if ($tag['name'] == $tagEvitar) {
+                return false;
+            }
+        }
+        return true;
     }
 
     function pruebaNotificacion()

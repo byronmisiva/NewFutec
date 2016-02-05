@@ -1287,7 +1287,9 @@
 
                 <div id='FE_HP_1' style='margin-top: 5px; width: 300px; height: 250px;'>
                     <script src='mraid.js'></script>
-                    <script src="http://ads.sparkflow.net?g=4560&r=%RANDOM%"></script>
+                    <script>
+                        document.write('<scr'+'ipt src=\''+('https:'==document.location.protocol?'https':'http')+'://ads.sparkflow.net?g=4560&r='+Math.round(Math.random()*99999)+'\'></scr'+'ipt>');
+                    </script>
                 </div>
             </div>
         </div>

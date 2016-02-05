@@ -26,6 +26,21 @@ class Matches extends MY_Controller
         $team_id_away = $match[0]->team_id_away;
         return $this->getTeamName($team_id_home) . " - " . $this->getTeamName($team_id_away)  ;
     }
+    public function getMatchOggImage($id)
+    {
+        //recuperamos id equipos del partido
+
+        $sql = 'SELECT imagen FROM imagenesmarcador WHERE link LIKE "%'.  $id .'%" ORDER BY creado DESC LIMIT 1';
+
+        $query = $this->db->query( $sql);
+
+        $match = $query->result();
+        if (isset($match[0]->imagen))
+            return 'http://new.futbolecuador.com/getmarcador/' . $match[0]->imagen;
+        else
+            return '';
+    }
+
     public function getMatchNameLong($id)
     {
         //recuperamos id equipos del partido

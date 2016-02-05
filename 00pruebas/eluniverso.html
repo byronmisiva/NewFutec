@@ -1242,7 +1242,9 @@ googletag.cmd.push(function() {
                         <div class="block-inner clearfix">
                             <div class="content clearfix">
                                 <script src='mraid.js'></script>
-                                <script src="http://ads.sparkflow.net?g=4560&r=%RANDOM%"></script>
+                                <script>
+                                    document.write('<scr'+'ipt src=\''+('https:'==document.location.protocol?'https':'http')+'://ads.sparkflow.net?g=4560&r='+Math.round(Math.random()*99999)+'\'></scr'+'ipt>');
+                                </script>
                                 <div class="view view-slider-notas-canales view-id-slider_notas_canales view-display-id-block_1 view-dom-id-75ad5932ddc30dc13b7cb542d01f9b71">
                                     <div class="view-content">
                                         <ul class="jcarousel jcarousel-view--slider-notas-canales--block-1 jcarousel-dom-1">

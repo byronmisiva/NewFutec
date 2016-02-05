@@ -38,7 +38,6 @@
     <meta name="twitter:app:id:ipad" content="622931242">
     <meta name="twitter:app:id:googleplay" content="com.futbolecuador.femagazine">
     <?php } ?>
-
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
 
@@ -80,19 +79,8 @@
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
     <meta property="og:description"
           content="<?php echo (isset($description)) ? $description . "," . $tags : 'Futbol Ecuador'; ?>"/>
-    <?php if (!isset($og_image)) $og_image = ''; ?>
     <meta property="og:image"
-          content="<?php
-          if ((isset($image))) {
-              echo base_url($image);
-          } else {
-              if ($og_image=='') {
-                  echo base_url('imagenes/coverappalertas.jpg');
-              } else {
-                  echo $og_image;
-              }
-          }
-          ?>"/>
+          content="<?php echo (isset($image)) ? base_url($image) : base_url('imagenes/coverappalertas.jpg'); ?>"/>
     <!--SEO TAGS-->
     <meta name="keywords"
           content="<?= $tags ?> futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014, futbol ecuatoriano,tabla de posiciones, ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com, campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,fut,seleccion de ecuador , ecuatorianos en el exterior"/>
@@ -167,18 +155,47 @@
     </script>
     <!--   script teads  se muestra cuando es noticia abierta-->
 
+    <!-- Tapstream tracking-->
+    <script type="text/javascript">
+        var _tsq = _tsq || [];
+        _tsq.push(["setAccountName", "futbolecuador"]);
+        _tsq.push(["trackPage"]);
+        (function () {
+            function z() {
+                var s = document.createElement("script");
+                s.type = "text/javascript";
+                s.async = "async";
+                s.src = window.location.protocol + "//cdn.tapstream.com/static/js/tapstream.js";
+                var x = document.getElementsByTagName("script")[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (window.attachEvent)
+                window.attachEvent("onload", z);
+            else
+                window.addEventListener("load", z, false);
+        })();
+    </script>
+    <!-- End Tapstream tracking-->
 
+    <!-- Taboola  tracking add 20151023-->
+    <script type="text/javascript">
+        window._taboola = window._taboola || [];
+        _taboola.push({article:'auto'});
+        !function (e, f, u) {
+            e.async = 1;
+            e.src = u;
+            f.parentNode.insertBefore(e, f);
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/futbolecuador/loader.js');
+    </script>
+    <!-- Taboola  tracking add 20151023-->
 
 </head>
 <body>
-
-
-<script type='text/javascript'>
-    var verMobile = <?php echo $verMobile ?>;
-    var secondskin;
-    var uri = "<?php  echo ($this->uri->segment(2) != "" ) ? $this->uri->segment(2) :"false"; ?>";
-</script>
-
+<input type="hidden" name="OBKey" value="uTBPZWgHc7ufQoVDUh9ZDA=="/>
+<script LANGUAGE="JavaScript">var OBCTm = '1426714580701'; </script>
+<script LANGUAGE="JavaScript" src="http://widgets.outbrain.com/claim.js"></script>
 <script type='text/javascript'>
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
@@ -195,6 +212,14 @@
 </script>
 
 <script type='text/javascript'>
+</script>
+
+
+
+<script type='text/javascript'>
+    var verMobile = <?php echo $verMobile ?>;
+    var secondskin;
+    var uri = "<?php  echo ($this->uri->segment(2) != "" ) ? $this->uri->segment(2) :"false"; ?>";
     googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1424964392222-0').addService(googletag.pubads());
@@ -228,7 +253,7 @@
         googletag.enableServices();
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
-
+        //console.log ("xx");
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
             //para el caso de splash desktop
             if (event.slot.i == '/1022247/FE_LOADING') {
@@ -264,8 +289,8 @@
             }
         });
     });
-</script>
 
+</script>
 <script type='text/javascript'>
     <?php
     if (isset($mostrarSplash)) {
@@ -321,6 +346,32 @@
 
 <script type='text/javascript'>GA_googleFetchAds();</script>
 <!-- Google Tag Manager -->
+
+<!-- Tapstream tracking-->
+<script type="text/javascript">
+    var _tsq = _tsq || [];
+    _tsq.push(["setAccountName", "futbolecuador"]);
+    _tsq.push(["trackPage"]);
+
+    (function () {
+        function z() {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = "async";
+            s.src = window.location.protocol + "//cdn.tapstream.com/static/js/tapstream.js";
+            var x = document.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+        }
+
+        if (window.attachEvent)
+            window.attachEvent("onload", z);
+        else
+            window.addEventListener("load", z, false);
+    })();
+
+</script>
+<!-- End Tapstream tracking-->
+
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -339,6 +390,68 @@
     })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');</script>
 <!-- End Google Tag Manager -->
 
+<!-- Facebook Conversion Code for FE_Visitas -->
+<script>(function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6017525548394', {'value': '0.00', 'currency': 'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6017525548394&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
+
+<!-- Facebook Conversion Code for futbolecuador.com -->
+<script>(function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6015959317594', {'value': '0.00', 'currency': 'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none"
+               src="https://www.facebook.com/tr?ev=6015959317594&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script>
+<script type="text/javascript">_atrk_opts = {atrk_acct: "A9Dnf1aUOO00Gi", domain: "futbolecuador.com"};
+    atrk();</script>
+<noscript>
+    <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=A9Dnf1aUOO00Gi" style="display: none" height="1"
+         width="1" alt=""/>
+</noscript>
+<!-- End Alexa Certify Javascript -->
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1437375723207649');
+    fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1437375723207649&ev=PageView&noscript=1"
+        /></noscript>
+<!-- End Facebook Pixel Code -->
 
 <div id="darkLayerFE" style="display:none;"></div>
 <div id="FE_LOADINGFE" style="display:none;">

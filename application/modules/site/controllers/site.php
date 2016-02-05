@@ -24,6 +24,8 @@ class Site extends MY_Controller
     public $model = 'mdl_site';
     public $data = array();
 
+    public $og_image = '';
+
     public function __construct()
     {
         parent::__construct();
@@ -387,6 +389,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $bodytag = str_replace('"', '', strip_tags($aux->title));
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+        $this->og_image = base_url($image);
         $data['image'] = $image;
         $data['description'] = $description;
         $data['idnoticia'] = $idNoticia;
@@ -952,6 +955,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $tipotabla = "acumulada";
         }
 
+        //para el caso eliminatorias
+        if ($id == ELIMINATORIAS) $tipotabla = ELIMINATORIAS_TIPOTABLA;
+
 
         $this->load->module('scoreboards');
         $tablapocisiones = $this->scoreboards->scoreboardFull($serie, $tipotabla);
@@ -1009,6 +1015,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $match = $bannerTop . $this->matches->getMatch($id, $bannerBottom);
 
         $title = $this->matches->getMatchName($id);
+        $this->og_image = $this->matches->getMatchOggImage($id);
+
         $description = "Sigue el partido en vivo, " . $this->matches->getMatchNameLong($id);
         $champ = $this->uri->segment(5);
         if (!$champ)
@@ -1058,6 +1066,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $bodytag = $nameSeccion;
 
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
+
+        $data['og_image'] = $this->og_image;
 
         // fin carga la informacion de la noticia
         $data['content'] = $contenSeccion;
