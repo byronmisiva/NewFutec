@@ -1,10 +1,5 @@
 <?php
-$turno = rand(0, 1);
-// EN CASO QUE EL TAG SEA ALERTAS FUTBOL ECUADOR
-if (isset($parametro)){
-    if ($parametro== 1 ) $turno = 0;
-}
-
+$turno = 0;
 $url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
 ?>
 <style>
@@ -92,32 +87,13 @@ $url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
 </style>
 <a href="<?php echo $url[$turno] ?>" target="_blank" class="col-md-12 fondo-anuncio">
     <div class="contenedor-anuncio">
-        <?php if ($turno == 0) { ?>
             <div class="col-md-4 img-alertas">
                 <img src="<?php echo base_url() ?>imagenes/anuncio/alertas.png">
             </div>
             <div class="col-md-8 txt-alertas">
                 <h2>#AlertasFutbolecuador</h2>
-
                 <p>Se el primero en leer las noticias de tu equipo favorito.</p>
-
                 <p>Disponible para iOS y Android. Descárgala gratis aquí.</p>
             </div>
-        <?php } else { ?>
-            <div class="col-md-4 img-fe">
-                <img
-                    src="<?php echo base_url() ?>imagenes/anuncio/portada-revista_mini.png?refresh=<?php echo rand(10, 1000) ?>"
-                    width="70px">
-            </div>
-            <div class="col-md-8">
-                <p>
-
-                <h2>Futbolecuador Magazine</h2></p>
-                <p>Encuentra toda la actualidad del fútbol nacional e internacional, en la revista digital de
-                    futbolecuador.com.</p>
-
-                <p>Disponible para iOS y Android. Descárgala gratis aquí.</p>
-            </div>
-        <?php } ?>
     </div>
 </a>

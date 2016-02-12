@@ -49,9 +49,6 @@
         <div class="col-md-12 separa">
             <a href="<?= base_url('zona-fe') ?>">Zona FE</a>
         </div>
-        <div class="col-md-12 ">
-            <a href="<?= base_url('fe-magazine') ?>">Magazine</a>
-        </div>
 
     </div>
     <div class="col-md-3 col-sm-3 hide">

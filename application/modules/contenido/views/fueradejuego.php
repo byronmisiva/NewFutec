@@ -6,6 +6,29 @@
         </h4>
     </div>
     <div class="  ">
+        <div class="linksFueraJuego col-md-12">
+            <div class="controlfueraJuego"><img class="prev"
+                                                src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/left-fuera.jpg"
+                                                width="18" heigth="115"/></div>
+            <div class="otrasmodelos">
+                <ul>
+                    <?php for ($i = 24; $i >= 1; $i--) { ?>
+                    <li style="list-style-type: none; float:left" class="galeria<?php echo $i ?>"><img id="galeria<?php echo $i ?>" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $i ?>/1b.jpg"
+                                               width="110" heigth="140" alt="Modelo Futbol Ecuador"/></li>
+                    <?php } ?>
+                </ul>
+            </div>
+
+            <div class="controlfueraJuego">
+                <img class="next"
+                     src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/right-fuera.jpg"
+                     width="18" heigth="115"/>
+            </div>
+            <!-- Feel free to load scripts in the footer -->
+            <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css') ?>"/>
+            <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css') ?>"/>
+        </div>
+
         <div class="containerfueradejuego galeria24content">
             <div class="liquid-slider" id="main-slider24">
                 <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria24/1b.jpg" alt=" "/></div>
@@ -95,45 +118,14 @@
         </div>
 
 
-        <div class="containerfueradejuego galeria22content">
-            <div class="liquid-slider" id="main-slider22">
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/1b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/1a.jpg" alt="Karen"/></div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/2b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/2a.jpg" alt="Karen"/></div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/3b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/3a.jpg" alt="Karen"/>
-                </div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/4b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/4a.jpg" alt="Karen"/>
-
-                    <div class="contenidoexclusivo" style="display: none">  </div>
-                    <div class="contenidoexclusivo" style="display: none">  </div>
-                    <div class="logosGPAS">
-                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
-                                <div></div>
-                            </a></div>
-                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
-                                <div></div>
-                            </a></div>
-                    </div>
-                </div>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/5b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/5a.jpg" alt="Karen"/>
-
-                    <div class="contenidoexclusivo" style="display: none">  </div>
-                    <div class="logosGPAS">
-                        <div class="logoGP"><a href="http://goo.gl/jhlPq" target="_blank">
-                                <div></div>
-                            </a></div>
-                        <div class="logoAS"><a href="http://goo.gl/76UWV" target="_blank">
-                                <div></div>
-                            </a></div>
-                    </div>
-                </div>
-
+        <?php $total = 11; $nombre='Karen'; $galeria = 22; ?>
+        <div class="containerfueradejuego galeria<?php echo $galeria; ?>content">
+            <div class="liquid-slider" id="main-slider<?php echo $galeria; ?>">
+                <?php for ($i = 1; $i <= $total; $i++) { ?>
+                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>b.jpg" alt=" "/></div>
+                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>a.jpg" alt="<?php echo $nombre; ?>"/></div>
+                <?php } ?>
             </div>
-
         </div>
 
         <div class="containerfueradejuego galeria21content">
@@ -1157,79 +1149,14 @@
 
         <!-- End Container -->
 
-        <div class="col-md-12 text-right fondoazul  ">
+        <!--<div class="col-md-12 text-right fondoazul  ">
             Más hinchas
-        </div>
+        </div> -->
 
 
-        <div class="linksFueraJuego col-md-12">
-            <div class="controlfueraJuego"><img class="prev"
-                                                src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/left-fuera.jpg"
-                                                width="18" heigth="115"/></div>
-            <div class="otrasmodelos">
-                <ul>
-                    <li class="galeria24"><img id="galeria24" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria24/1b.jpg"
-                                               width="110" heigth="140" alt="Diana Guevara"/></li>
-                    <li class="galeria23"><img id="galeria23"
-                                               src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria23/1b.jpg"
-                                               width="110" heigth="140" alt="Ana Milena Cardoso"/></li>
-                    <li class="galeria22"><img id="galeria22" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria22/1b.jpg"
-                                               width="110" heigth="140" alt="Carolina"/></li>
-                    <li class="galeria21"><img id="galeria21" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria21/1b.jpg"
-                                               width="110" heigth="140" alt="Carolina"/></li>
-                    <li class="galeria20"><img id="galeria20" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria20/1b.jpg"
-                                               width="110" heigth="140" alt="Carolina"/></li>
-                    <li class="galeria19"><img id="galeria19" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria19/1b.jpg"
-                                               width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria18"><img id="galeria18" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria18/1b.jpg"
-                                               width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria17"><img id="galeria17" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria17/1b.jpg"
-                                               width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria16"><img id="galeria16" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria16/1b.jpg"
-                                               width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria15"><img id="galeria15" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria15/1b.jpg"
-                                               width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria14"><img id="galeria14" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria14/1b.jpg"
-                                               width="110" heigth="140" alt="Alison"/></li>
-                    <li class="galeria13"><img id="galeria13" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria13/1b.jpg"
-                                               width="110" heigth="140" alt="Karen"/></li>
-                    <li class="galeria12"><img id="galeria12" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria12/1b.jpg"
-                                               width="110" heigth="140" alt="Karen"/></li>
-                    <li class="galeria11"><img id="galeria11" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria11/1b.jpg"
-                                               width="110" heigth="140" alt="Paulina"/></li>
-                    <li class="galeria10"><img id="galeria10" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria10/1b.jpg"
-                                               width="110" heigth="140" alt="Alisson Hidalgo"/></li>
-                    <li class="galeria9"><img id="galeria9" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria9/1b.jpg"
-                                              width="110" heigth="140" alt="Angeles Azules"/></li>
-                    <li class="galeria8"><img id="galeria8" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria8/1b.jpg"
-                                              width="110" heigth="140" alt="Michelle López"/></li>
-                    <li class="galeria7"><img id="galeria7" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria7/1b.jpg"
-                                              width="110" heigth="140" alt="Adriana Palacios"/></li>
-                    <li class="galeria6"><img id="galeria6" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria6/1b.jpg"
-                                              width="110" heigth="140" alt="Sanny Cabrera"/></li>
-                    <li class="galeria5"><img id="galeria5" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria5/1b.jpg"
-                                              width="110" heigth="140" alt="Francesca Galarza"/></li>
-                    <li class="galeria4"><img id="galeria4" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria4/1b.jpg"
-                                              width="110" heigth="140" alt=""/></li>
-                    <li class="galeria3"><img id="galeria3" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria3/1b.jpg"
-                                              width="110" heigth="140" alt="Andrea Ortiz"/></li>
-                    <li class="galeria2"><img id="galeria2" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria2/1b.jpg"
-                                              width="110" heigth="140" alt="Marcela Recalde"/></li>
-                    <li class="galeria1"><img id="galeria1" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria1/1b.jpg"
-                                              width="110" heigth="140" alt="Diana Bastidas"/></li>
-                </ul>
-            </div>
-            <div class="controlfueraJuego">
-                <img class="next"
-                     src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/controls/right-fuera.jpg"
-                     width="18" heigth="115"/>
-            </div>
-            <!-- Feel free to load scripts in the footer -->
-            <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css') ?>"/>
-            <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css') ?>"/>
-        </div>
 
-        <div class="col-md-12 ">
+
+        <div class="col-md-12 separador20">
             <a href="http://andresrodzap.wix.com/arzfotografia" target="_blank">
                 <img src="http://www.futbolecuador.com/imagenes/fuera-de-juego/fotografo.png" class="img-responsive">
             </a>

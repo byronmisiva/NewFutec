@@ -1,11 +1,15 @@
 //fe header movil
 setTimeout(function () {
 //    cargarSplash();
-}, 3000);
+},4000);
 
 setTimeout(function () {
     cargarSplash();
-}, 4000);
+}, 5000);
+
+setTimeout(function () {
+    cargarSplash();
+}, 6000);
 
 
 var masnoticas = "";
@@ -86,7 +90,7 @@ function cargarSplash() {
                     $('#darkLayer').hide();
                     $('#FE_LOADING').hide();
                 })
-                setTimeout(cleanBlackLayer, 16000);
+                setTimeout(cleanBlackLayer, 18000);
             } else {
                 if (mostrarSplash == 1)
                     if (validarCookie())

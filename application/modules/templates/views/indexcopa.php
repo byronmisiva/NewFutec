@@ -92,7 +92,7 @@ $this->load->view('header', $data);
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
                     <li><a class="clickmenu" href="<?= base_url('goleadores') ?>">Goleadores</a></li>
-                    <li><a class="clickmenu" href="<?= base_url('fe-magazine') ?>">Magazine</a></li>
+
                     <li><a class="clickmenu" href="<?= base_url('fuera-de-juego') ?>">Fuera de juego</a></li>
                 </ul>
 

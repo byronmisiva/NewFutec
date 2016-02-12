@@ -158,11 +158,11 @@ img.tituloFuera {
 
 @media (min-width: 767px) {
     .ls-wrapper .liquid-slider {
-        height: 550px !important;
+        /*height: 550px !important;*/
     }
 
     .thum-fuera {
-        height: 106px;
+        height: 80px;
     }
 
     .contenidoexclusivo {

@@ -161,11 +161,7 @@
         <li class="dropdown fhmm-fw">
             <a href="<?= base_url('fuera-de-juego') ?>" class="pull-left">Fuera de Juego</a>
         </li>
-        <li class="dropdown fhmm-fw">
-            <a href="<?= base_url('fe-magazine') ?>" class="pull-left">
-                <div class="logomagazina"></div>
-            </a>
-        </li>
+
     </ul>
     <!-- end nav navbar-nav -->
 </div>
