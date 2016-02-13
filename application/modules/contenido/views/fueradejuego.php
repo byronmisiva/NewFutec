@@ -31,7 +31,6 @@
             <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css') ?>"/>
             <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css') ?>"/>
         </div>
-
         <?php slidemodelo2 (12 , 'Karen', 24, ' ' ) ; //15 ?>
         <?php slidemodelo(10, 'Karen', 23); ?>
         <?php slidemodelo(11, 'Karen', 22); ?>
