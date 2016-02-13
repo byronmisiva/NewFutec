@@ -5,6 +5,7 @@
             Fuera de Juego
         </h4>
     </div>
+
     <div class="  ">
         <div class="linksFueraJuego col-md-12">
             <div class="controlfueraJuego"><img class="prev"
