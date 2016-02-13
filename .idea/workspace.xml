@@ -33,12 +33,10 @@
       <file leaf-file-name="fueradejuego.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13513513">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.9086229">
+              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#slidemodelo#0;n#!!top" expanded="false" />
-                <element signature="n#slidemodelo2#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -237,6 +235,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewFutec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imagenes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerias-fuera-de-juego" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galeria24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -340,12 +360,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00917" summary="e">
-      <created>1450885085766</created>
-      <option name="number" value="00917" />
-      <option name="project" value="LOCAL" />
-      <updated>1450885085767</updated>
     </task>
     <task id="LOCAL-00918" summary="e">
       <created>1450885135318</created>
@@ -635,7 +649,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455322970254</updated>
     </task>
-    <option name="localTasksCounter" value="966" />
+    <task id="LOCAL-00966" summary="e">
+      <created>1455323060198</created>
+      <option name="number" value="00966" />
+      <option name="project" value="LOCAL" />
+      <updated>1455323060199</updated>
+    </task>
+    <option name="localTasksCounter" value="967" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1139,12 +1159,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/contenido/views/fueradejuego.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13513513">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.9086229">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#slidemodelo#0;n#!!top" expanded="false" />
-            <element signature="n#slidemodelo2#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

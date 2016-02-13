@@ -94,11 +94,11 @@
             <div>
                 <h2 class="title hidden">
                     <div class="thum-fuera"><img class="img-responsive"
-                                                 src="http://www.futbolecuador.com/imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>b.jpg"
+                                                 src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>b.jpg"
                                                  alt=" "/></div>
                 </h2>
                 <img class="img-responsive lazo"
-                     src="http://www.futbolecuador.com/imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>a.jpg"
+                     src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>a.jpg"
                      alt="<?php echo $nombre; ?>"/>
             </div>
             <?php } ?>
