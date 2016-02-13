@@ -13,8 +13,10 @@
             <div class="otrasmodelos">
                 <ul>
                     <?php for ($i = 24; $i >= 1; $i--) { ?>
-                    <li style="list-style-type: none; float:left" class="galeria<?php echo $i ?>"><img id="galeria<?php echo $i ?>" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $i ?>/1b.jpg"
-                                               width="110" heigth="140" alt="Modelo Futbol Ecuador"/></li>
+                        <li style="list-style-type: none; float:left" class="galeria<?php echo $i ?>"><img
+                                id="galeria<?php echo $i ?>"
+                                src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $i ?>/1b.jpg"
+                                width="110" heigth="140" alt="Modelo Futbol Ecuador"/></li>
                     <?php } ?>
                 </ul>
             </div>
@@ -28,30 +30,31 @@
             <link rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/liquid-slider.css') ?>"/>
             <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css') ?>"/>
         </div>
-        <?php slidemodelo (5 , 'Karen', 24 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 23 ) ; ?>
-        <?php slidemodelo (11 , 'Karen', 22 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 21 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 20 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 19 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 18 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 17 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 16 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 15 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 14 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 13 ) ; ?>
-        <?php slidemodelo (5 , 'Karen', 12 ) ; ?>
-        <?php slidemodelo (5 , 'Paulina', 11 ) ; ?>
-        <?php slidemodelo (5 , 'Alisson Hidalgo', 10 ) ; ?>
-        <?php slidemodelo (5 , 'Angeles azules', 9 ) ; ?>
-        <?php slidemodelo (5 , 'Michelle López', 8 ) ; ?>
-        <?php slidemodelo (5 , 'Diana Bastidas', 7 ) ; ?>
-        <?php slidemodelo (5 , 'Diana Bastidas', 6 ) ; ?>
-        <?php slidemodelo (5 , 'Diana Bastidas', 5 ) ; ?>
-        <?php slidemodelo (5 , 'Diana Bastidas', 4 ) ; ?>
-        <?php slidemodelo (5 , 'Diana Bastidas', 3 ) ; ?>
-        <?php slidemodelo (5 , 'Marcela Recalde', 2 ) ; ?>
-        <?php slidemodelo (5 , 'Diana Bastidas', 1 ) ; ?>
+
+        <?php slidemodelo2 (15 , 'Karen', 24, ' ' ) ; ?>
+        <?php slidemodelo(10, 'Karen', 23); ?>
+        <?php slidemodelo(11, 'Karen', 22); ?>
+        <?php slidemodelo(9, 'Karen', 21); ?>
+        <?php slidemodelo(10, 'Karen', 20); ?>
+        <?php slidemodelo(10, 'Karen', 19); ?>
+        <?php slidemodelo(11, 'Karen', 18); ?>
+        <?php slidemodelo(10, 'Karen', 17); ?>
+        <?php slidemodelo(10, 'Karen', 16); ?>
+        <?php slidemodelo(5, 'Karen', 15); ?>
+        <?php slidemodelo(10, 'Karen', 14); //15?>
+        <?php slidemodelo(10, 'Karen', 13); //16?>
+        <?php slidemodelo(12, 'Karen', 12); ?>
+        <?php slidemodelo(10, 'Paulina', 11); ?>
+        <?php slidemodelo(10, 'Alisson Hidalgo', 10); ?>
+        <?php slidemodelo(11, 'Angeles azules', 9); //11 ?>
+        <?php slidemodelo(10, 'Michelle López', 8); ?>
+        <?php slidemodelo(9, 'Diana Bastidas', 7); ?>
+        <?php slidemodelo(11, 'Diana Bastidas', 6); ?>
+        <?php slidemodelo(10, 'Diana Bastidas', 5); ?>
+        <?php slidemodelo(10, 'Diana Bastidas', 4); ?>
+        <?php slidemodelo(10, 'Diana Bastidas', 3); ?>
+        <?php slidemodelo(12, 'Marcela Recalde', 2); ?>
+        <?php slidemodelo(10, 'Diana Bastidas', 1); ?>
         <!--<div class="col-md-12 text-right fondoazul  ">
             Más hinchas
         </div> -->
@@ -63,12 +66,40 @@
     </div>
 </div>
 
-<?php function slidemodelo ($total , $nombre, $galeria ) { ?>
+<?php function slidemodelo($total, $nombre, $galeria, $lazo = 'lazo')
+{ ?>
     <div class="containerfueradejuego galeria<?php echo $galeria; ?>content">
         <div class="liquid-slider" id="main-slider<?php echo $galeria; ?>">
             <?php for ($i = 1; $i <= $total; $i++) { ?>
-                <div><h2 class="title hidden"><div class="thum-fuera"><img class="img-responsive" src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>b.jpg" alt=" "/></div>
-                    </h2> <img class="img-responsive lazo" data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>a.jpg" alt="<?php echo $nombre; ?>"/></div>
+                <div>
+                    <h2 class="title hidden">
+                        <div class="thum-fuera"><img class="img-responsive"
+                                                     src="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>b.jpg"
+                                                     alt=" "/></div>
+                    </h2>
+                    <img class="img-responsive <?php echo $lazo; ?>"
+                         data-original="<?= base_url() ?>imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>a.jpg"
+                         alt="<?php echo $nombre; ?>"/></div>
+            <?php } ?>
+        </div>
+    </div>
+<?php } ?>
+
+<?php function slidemodelo2($total, $nombre, $galeria )
+{ ?>
+    <div class="containerfueradejuego galeria<?php echo $galeria; ?>content">
+        <div class="liquid-slider" id="main-slider<?php echo $galeria; ?>">
+            <?php for ($i = 1; $i <= $total; $i++) { ?>
+            <div>
+                <h2 class="title hidden">
+                    <div class="thum-fuera"><img class="img-responsive"
+                                                 src="http://www.futbolecuador.com/imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>b.jpg"
+                                                 alt=" "/></div>
+                </h2>
+                <img class="img-responsive lazo"
+                     src="http://www.futbolecuador.com/imagenes/galerias-fuera-de-juego/galeria<?php echo $galeria; ?>/<?php echo $i; ?>a.jpg"
+                     alt="<?php echo $nombre; ?>"/>
+            </div>
             <?php } ?>
         </div>
     </div>
