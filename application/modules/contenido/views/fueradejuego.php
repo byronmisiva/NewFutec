@@ -32,7 +32,7 @@
             <link type="text/css" rel="stylesheet" href="<?= base_url('assets/css/fueradejuego/fueradejuego.css') ?>"/>
         </div>
 
-        <?php slidemodelo2 (15 , 'Karen', 24, ' ' ) ; ?>
+        <?php slidemodelo2 (12 , 'Karen', 24, ' ' ) ; //15 ?>
         <?php slidemodelo(10, 'Karen', 23); ?>
         <?php slidemodelo(11, 'Karen', 22); ?>
         <?php slidemodelo(9, 'Karen', 21); ?>
@@ -42,12 +42,12 @@
         <?php slidemodelo(10, 'Karen', 17); ?>
         <?php slidemodelo(10, 'Karen', 16); ?>
         <?php slidemodelo(5, 'Karen', 15); ?>
-        <?php slidemodelo(10, 'Karen', 14); //15?>
-        <?php slidemodelo(10, 'Karen', 13); //16?>
+        <?php slidemodelo(11, 'Karen', 14); //15?>
+        <?php slidemodelo(11, 'Karen', 13); //16?>
         <?php slidemodelo(12, 'Karen', 12); ?>
         <?php slidemodelo(10, 'Paulina', 11); ?>
         <?php slidemodelo(10, 'Alisson Hidalgo', 10); ?>
-        <?php slidemodelo(11, 'Angeles azules', 9); //11 ?>
+        <?php slidemodelo(11, 'Angeles azules', 9); //13 ?>
         <?php slidemodelo(10, 'Michelle López', 8); ?>
         <?php slidemodelo(9, 'Diana Bastidas', 7); ?>
         <?php slidemodelo(11, 'Diana Bastidas', 6); ?>
