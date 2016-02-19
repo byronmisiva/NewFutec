@@ -14,6 +14,13 @@
             $linkbody = $noticia->title;
 
         $link = $linkShort . '/' . $this->contenido->_urlFriendly($linkbody ) . '/' . $noticia->id;
+
+        // caso abre seccion
+        if (isset($noticia->openseccion)) {
+            if ($noticia->openseccion != '')
+            $link = base_url() . $noticia->openseccion;
+        }
+
         ?>
         <div class="col-md-12 lineseparador separador10">
             <div class="row">

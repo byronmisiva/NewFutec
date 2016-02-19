@@ -12,6 +12,13 @@ if (isset($tipoLink)) {
 } else {
     $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($linkbody) . '/' . $story->id;
 }
+
+// caso abre seccion
+if (isset($story->openseccion)) {
+    if ($story->openseccion != '')
+    $link = base_url() . $story->openseccion;
+}
+
 ?>
 <div class="margen0-xs clearfix news-detail">
     <div class="col-md-12 col-xs-12 col-sm-12  margen0 col-xs-2">

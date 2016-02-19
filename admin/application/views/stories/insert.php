@@ -29,6 +29,11 @@
 		<td>Posición:</td>
 		<td><?php echo form_dropdown('position', $positions, set_value('position'));?></td>
 	</tr>
+		<tr>
+			<td></td>
+			<td>Redirección Sección:</td>
+			<td><?php echo form_dropdown('openseccion', $openseccion, set_value('openseccion'));?></td>
+		</tr>
 	<tr>
 		<td class='required'></td>
 		<td>Destacada:</td>
@@ -69,7 +74,7 @@
 		<td valign='top'>Introducci&oacute;n:</td>
 		<td><textarea style="width:100%;" name="lead"><?php echo set_value('lead')?></textarea></td>
 	</tr>
-	
+
 	<tr>
 		<td class='required'>*</td>
 		<td valign='top'>Cuerpo:</td>

@@ -283,7 +283,7 @@
   height: 25px;
   background: url(../../../imagenes/galerias-fuera-de-juego/img/arrow.png) no-repeat top left;
   margin-top: 50px;
-  margin-left: 5px;
+  margin-left: 25px;
   /* Do not edit below this line */
   position:relative;
 }
@@ -361,7 +361,7 @@
 .ls-responsive .ls-nav-right-arrow {
   /* Do not edit below this line */
   position: absolute;
-  right: 0;
+  right: 80px;
   z-index: 2;
 }
 
@@ -430,3 +430,12 @@
 
 
 }
+
+
+.ls-wrapper .ls-nav
+li.tab1 a {
+  padding: 0px 1px;
+}
+
+
+fuera-de-juego

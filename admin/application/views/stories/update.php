@@ -30,6 +30,11 @@
 		<td><?php echo form_dropdown('position', $positions, $row[0]->position);?></td>
 	</tr>
 	<tr>
+		<td></td>
+		<td>Redirección Sección:</td>
+		<td><?php echo form_dropdown('openseccion', $openseccion, $row[0]->openseccion);?></td>
+	</tr>
+	<tr>
 		<td class='required'></td>
 		<td>Programar:</td>
 		<td>

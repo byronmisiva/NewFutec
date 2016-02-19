@@ -33,6 +33,7 @@ class Stories extends CI_Controller
         $this->form_validation->set_rules('programed', 'Programar', '');
         $this->form_validation->set_error_delimiters('<li>', '</li>');
         $this->positions = array('1' => 'Rotativas', '2' => 'Principales', '3' => 'Noticia del Dia');
+        $this->openseccion = array('fuera-de-juego' => 'Fuera de juego', '' => 'Ninguno');
 
         //Validacion ACL
         //$this->acl->checkAcl($this->uri->segment(1),$this->uri->segment(2));
@@ -323,6 +324,7 @@ class Stories extends CI_Controller
         $data['categories'] = $this->category->get_list();
         $data['images'] = $this->image->get_list();
         $data['positions'] = $this->positions;
+        $data['openseccion'] = $this->openseccion;
 
         if (isset($_POST['submit'])) {
             //Verificacion si escogieron opcion destacado
@@ -376,7 +378,7 @@ class Stories extends CI_Controller
 
 
                 // SEND TWEET, send push notification, chrome & safari, push alertas futbolecuador
-                if ($_POST['invisible'] == 0) {
+                /*if ($_POST['invisible'] == 0) {
                     $this->send_tweet_image($_POST['twitter'], $id, $_POST['image_id']);
                     // pushNotificacion Safari
                     $this->pushNotificationBrowser($id, $_POST['title'], $_POST['subtitle']);
@@ -386,7 +388,7 @@ class Stories extends CI_Controller
                     if ($this->validaTags ($tags, 'AlertasFutbolecuador')) {
                         $this->pushNotificationMobile($id, $_POST['subtitle'], $destacado);
                     }
-                }
+                }*/
                 redirect($previous_url);
             }
         }
@@ -439,6 +441,7 @@ class Stories extends CI_Controller
         $data['images'] = $this->image->get_list();
         $data['images_url'] = $this->image->get_list_url('thumb100');
         $data['positions'] = $this->positions;
+        $data['openseccion'] = $this->openseccion;
 
         $data['tags'] = $this->tag->get_story_tags($this->uri->segment(3));
 

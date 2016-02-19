@@ -1,7 +1,7 @@
 //fe header movil
 setTimeout(function () {
-//    cargarSplash();
-},4000);
+//  cargarSplash();
+}, 4000);
 
 setTimeout(function () {
     cargarSplash();
@@ -30,8 +30,7 @@ function cargarSplashFE() {
 };
 
 function cargarSplash() {
-
-    if ($('#div-gpt-ad-1383593619381-0').length == 0) {
+    if ($('#div-gpt-ad-1383593619381-0').length != 0) {
         if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
             $('#div-gpt-ad-1383593619381-0').hide();
             if (verMobile == 1)
@@ -544,51 +543,48 @@ jQuery(function () {
     } else {
         visibles = 5
     }
-    jQuery(".otrasmodelos").jCarouselLite({
-        btnNext: ".next",
-        btnPrev: ".prev",
-        visible: visibles,
-        mouseWheel: true,
-        scroll: 2
-    });
-    jQuery(".containerfueradejuego").hide();
-    jQuery(".galeria24content").show();
+    var totalModelos = 24;
+    var cadenaImagen = '';
+    for (i=1; i<=totalModelos; i=i+1){
+        cadenaImagen = cadenaImagen + "#imagen" + i + ",";
+    }
+    cadenaImagen = cadenaImagen.substring(0, cadenaImagen.length - 1);
+
+    $(cadenaImagen).load(  function () {
+            idSelImg = '#' +  $(this).attr('id') ;
+            altoImagen = $(this).height();
+            idSeleccionado = $(idSelImg).parent().parent().parent().parent().attr('id');
+            divContenedor = "#" +  idSeleccionado + "-nav-ul li";
+            totalImagenes = $(divContenedor).length;
+            altoMiniatura = Math.round(altoImagen / totalImagenes) - 4;
+            contenedorImagen = divContenedor + ' .thum-fuera';
+            $(contenedorImagen).css( "height", altoMiniatura + 'px' );
+    })
 
 
-    // funcion swipe menu inferior
-    jQuery(".otrasmodelos").swipe({
-        tap: function (event, target) {
-            for (var i = 1; i <= 24; i++)
-                jQuery(".galeria" + i + "content").hide();
-            thisLocal = target;
-            jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
-            idclic = jQuery(thisLocal).attr('id');
-            idclic = idclic.replace("galeria", "");
 
-            $(".galeria" + idclic + "content img.lazo").each(function () {
-                $(this).attr("src", $(this).attr("data-original"))
-                setTimeout(function () {
-                    jQuery("#main-slider" + idclic + "-nav-ul li.tab2 a ").click();
-                    jQuery("#main-slider" + idclic + "-nav-ul li.tab1 a ").click();
-                }, 1000);
-            });
-        },
-        swipeLeft: function (event, direction, distance, duration, fingerCount) {
-            $("img.next").click()
-        },
-        swipeRight: function () {
-            $("img.prev").click()
-        },
-        //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold: 0
-    });
-    //menuchicas
-    jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20,.otrasmodelos .galeria21,.otrasmodelos .galeria22,.otrasmodelos .galeria23,.otrasmodelos .galeria24").click(function () {
+
+jQuery(".otrasmodelos").jCarouselLite({
+    btnNext: ".next",
+    btnPrev: ".prev",
+    visible: visibles,
+    mouseWheel: true,
+    scroll: 2
+});
+jQuery(".containerfueradejuego").hide();
+jQuery(".galeria24content").show();
+
+
+// funcion swipe menu inferior
+jQuery(".otrasmodelos").swipe({
+    tap: function (event, target) {
         for (var i = 1; i <= 24; i++)
             jQuery(".galeria" + i + "content").hide();
-        jQuery("." + jQuery(this).attr('class') + "content").show();
-        idclic = jQuery(this).attr('class');
+        thisLocal = target;
+        jQuery("." + jQuery(thisLocal).attr('id') + "content").show();
+        idclic = jQuery(thisLocal).attr('id');
         idclic = idclic.replace("galeria", "");
+
         $(".galeria" + idclic + "content img.lazo").each(function () {
             $(this).attr("src", $(this).attr("data-original"))
             setTimeout(function () {
@@ -596,10 +592,35 @@ jQuery(function () {
                 jQuery("#main-slider" + idclic + "-nav-ul li.tab1 a ").click();
             }, 1000);
         });
-    })
-
-
+    },
+    swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        $("img.next").click()
+    },
+    swipeRight: function () {
+        $("img.prev").click()
+    },
+    //Default is 75px, set to 0 for demo so any distance triggers swipe
+    threshold: 0
 });
+//menuchicas
+jQuery(".otrasmodelos div.galeria1, .otrasmodelos div.galeria2,.otrasmodelos .galeria3,.otrasmodelos .galeria4,.otrasmodelos .galeria5,.otrasmodelos .galeria6,.otrasmodelos .galeria7,.otrasmodelos .galeria8,.otrasmodelos .galeria9,.otrasmodelos .galeria10,.otrasmodelos .galeria11,.otrasmodelos .galeria12,.otrasmodelos .galeria13,.otrasmodelos .galeria14,.otrasmodelos .galeria15,.otrasmodelos .galeria16,.otrasmodelos .galeria17,.otrasmodelos .galeria18,.otrasmodelos .galeria19,.otrasmodelos .galeria20,.otrasmodelos .galeria21,.otrasmodelos .galeria22,.otrasmodelos .galeria23,.otrasmodelos .galeria24").click(function () {
+    for (var i = 1; i <= 24; i++)
+        jQuery(".galeria" + i + "content").hide();
+    jQuery("." + jQuery(this).attr('class') + "content").show();
+    idclic = jQuery(this).attr('class');
+    idclic = idclic.replace("galeria", "");
+    $(".galeria" + idclic + "content img.lazo").each(function () {
+        $(this).attr("src", $(this).attr("data-original"))
+        setTimeout(function () {
+            jQuery("#main-slider" + idclic + "-nav-ul li.tab2 a ").click();
+            jQuery("#main-slider" + idclic + "-nav-ul li.tab1 a ").click();
+        }, 1000);
+    });
+})
+
+
+})
+;
 
 function cargaSendMail(mail, nombre, mensaje, botEnvio, errorCaja, urlMensaje) {
     $(botEnvio).attr("disabled", true);

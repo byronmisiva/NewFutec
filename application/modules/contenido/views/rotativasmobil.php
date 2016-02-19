@@ -6,6 +6,10 @@
             if ($linkbody == "")
                 $linkbody = $rotativa->title;
             $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($linkbody) . '/' . $rotativa->id;
+            if (isset($rotativa->openseccion)) {
+                if ($rotativa->openseccion != '')
+                    $link = base_url() . $rotativa->openseccion;
+            }
             ?>
             <li>
                 <a href="<?php echo $link ?>">

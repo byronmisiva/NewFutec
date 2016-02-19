@@ -979,8 +979,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $fechas = $this->matches->matches($id, $title);
 
-
-        $this->singleConten($title, $fechas, "Resultados", $id);
+        if ($id == ELIMINATORIAS) {
+            $this->singleConten($title, $fechas, "Resultados", $id, ELIMINATORIAS_TIPOTABLA );
+        } else {
+            $this->singleConten($title, $fechas, "Resultados", $id );
+        }
     }
 
     public function marcadorenvivo()

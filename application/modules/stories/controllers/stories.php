@@ -154,7 +154,7 @@ class Stories extends MY_Controller
 
 				          </figcaption>
 				        </figure>
-				        <p>' . $row->texto . '</p>
+				        <p>' .  $row->texto . '</p>
 					]]>
 				  </content:encoded>
 				</item>';
@@ -269,7 +269,7 @@ class Stories extends MY_Controller
                 $texto2 = substr($texto, 0, $posicionInicio);
                 $video = "<figure><" . $video . "</figure>";
             } else {
-                $texto2 = $row->body;
+                $texto2 = strip_tags ($row->body);
                 $video = "";
             }
 
@@ -358,7 +358,7 @@ class Stories extends MY_Controller
 				           <strong>' . $row->title . '</strong>
 				          </figcaption>
 				        </figure>
-				         ' . $row->body . ']]>
+				         ' . strip_tags($row->body) . ']]>
 				  </content:encoded>
 				</item>';
         endforeach;

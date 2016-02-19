@@ -7,6 +7,11 @@
 } else {
     $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($story->title) . '/' . $story->id;
 }
+// caso abre seccion
+if (isset($story->openseccion)) {
+    if ($story->openseccion != '')
+    $link = base_url() . $story->openseccion;
+}
 ?>
 <div class="row clearfix news-detail">
     <div class="col-md-12 column text-news-date hidden-xs">
