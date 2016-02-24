@@ -20,7 +20,6 @@
             if ($noticia->openseccion != '')
             $link = base_url() . $noticia->openseccion;
         }
-
         ?>
         <div class="col-md-12 lineseparador separador10">
             <div class="row">

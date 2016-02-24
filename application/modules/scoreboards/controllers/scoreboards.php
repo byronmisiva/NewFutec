@@ -83,8 +83,8 @@ class Scoreboards extends MY_Controller
 
             if ($round != false) {
 
-                //caso compa america
-                if ($champ == 56) $round = 205;
+                //todo caso copa america
+                if ($champ == AMERICA) $round = 205;
 
                 $grupoActivo = $this->mdl_teams_position->get_by_round($round);
                 $data['tabla'] = array();
@@ -94,7 +94,6 @@ class Scoreboards extends MY_Controller
                 foreach ($grupoActivo as $grupo) {
                     //$data['tabla'] = array_merge($data['tabla'], $this->mdl_teams_position->get_table($grupo->id));
                     $data['tabla'] = $this->mdl_teams_position->get_table($grupo->id);
-
 
                     return $this->load->view($leaderboard, $data, true);
 
@@ -174,6 +173,21 @@ class Scoreboards extends MY_Controller
 
 
         return $this->load->view($leaderboard, $data, true);
+    }
+
+    public function getMatchOggImageTablaPos()
+    {
+        //recuperamos id equipos del partido
+
+        $sql = 'SELECT imagen FROM imagenesmarcador WHERE link LIKE "%tabla-de-posiciones%" ORDER BY creado DESC LIMIT 1';
+
+        $query = $this->db->query( $sql);
+
+        $match = $query->result();
+        if (isset($match[0]->imagen))
+            return 'http://new.futbolecuador.com/getmarcador/' . $match[0]->imagen;
+        else
+            return '';
     }
 //Fin Tabla de Posiciones acumulada
 }

@@ -41,6 +41,10 @@ class Matches extends MY_Controller
             return '';
     }
 
+
+
+
+
     public function getMatchNameLong($id)
     {
         //recuperamos id equipos del partido

@@ -149,7 +149,6 @@ class Site extends MY_Controller
             $marcadorenvivo = $this->contenido->marcadorVivo();
         }
 
-        // $marcadorenvivo = $this->contenido->marcadorVivo();
 
         $data['top2'] = "";
 
@@ -158,18 +157,13 @@ class Site extends MY_Controller
         $tablaposiciones = $this->scoreboards->tablaposiciones(CHAMP_DEFAULT, CHAMP_DEFAULT_TIPOTABLA);
 
         $fe_loading_movil = $this->banners->fe_loading_movil();
-        // $outbrain  = '<!--Inicio ejemplo -->
-        //                  <div data-src="www.futbolecuador.com" class="OUTBRAIN" ></div>
-        //                  <script type="text/javascript">(function(){window.OB_platformType=8;window.OB_langJS="http://widgets.outbrain.com/lang_es.js";window.OBITm="1426714580680";window.OB_recMode="brn_strip";var ob=document.createElement("script");ob.type="text/javascript";ob.async=true;ob.src="http"+("https:"===document.location.protocol?"s":"")+"://widgets.outbrain.com/outbrainLT.js";var h=document.getElementsByTagName("script")[0];h.parentNode.insertBefore(ob,h);})();</script>
-        //                  <!--Fin ejemplo -->';
+
 
         $outbrain = '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
 <div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
 
-
-        //     $publicidadFlotante =  $this->banners->fe_desplegable_movil();
 
         $publicidadFlotante = "";
 
@@ -201,7 +195,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
-
 
 
         // recupera parametro para mostrar o no el splash
@@ -257,8 +250,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->email->send();
         echo "Mensaje Enviado";
     }
-
-
 
 
     public function publicidad()
@@ -367,7 +358,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
 
 
-
         //$storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
 
         //para el caso de don balon se cambia el texto donbalon por el logo de don balon
@@ -397,12 +387,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         // fin carga la informacion de la noticia
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
-
 
 
         $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
@@ -691,9 +680,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function copalibertadores()
     {
         $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores", LIBERTADORES);
-        // $this->seccion(ZONACOPALIBERTADORES, ZONACOPALIBERTADORESPOS, "Copa Libertadores", "copalibertadores", "copalibertadores" , LIBERTADORES);
     }
-
 
     public function copasudamericana()
     {
@@ -716,6 +703,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     }
 
 
+    public function copaamericacentenario()
+    {
+     //   $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América Centenario 2016", URLAMERICA, URLAMERICA, AMERICA, AMERICA_TIPOTABLA);
+        $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América Centenario 2016", "noticia", "noticia", AMERICA, AMERICA_TIPOTABLA);
+    }
+
+
     public function tags()
     {
         $parametro = $this->uri->segment('3');
@@ -723,8 +717,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $parametro = str_replace("-", " ", $parametro);
             $parametro = ucwords($parametro);
             $this->taglist($parametro, ZONANUESTROSEMBAJADORESPOS, $parametro, "noticia", "noticia");
-        }
-        else
+        } else
             redirect('home');
 
     }
@@ -742,7 +735,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('story');
 
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -818,7 +811,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->library('user_agent');
         $this->load->module('story');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -958,8 +951,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         //para el caso eliminatorias
         if ($id == ELIMINATORIAS) $tipotabla = ELIMINATORIAS_TIPOTABLA;
 
-
         $this->load->module('scoreboards');
+        $this->og_image = $this->scoreboards->getMatchOggImageTablaPos($id);
         $tablapocisiones = $this->scoreboards->scoreboardFull($serie, $tipotabla);
         $descriptio = "Tabla de posiciones, campeonato nacional de fútbol, campeonato nacional de fútbol serie b, actualizado minuto a minuto con los resultados del futbol ecuatoriano";
         $this->singleConten("Tabla de Posiciones", $tablapocisiones, $descriptio, $serie, $tipotabla);
@@ -980,9 +973,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $fechas = $this->matches->matches($id, $title);
 
         if ($id == ELIMINATORIAS) {
-            $this->singleConten($title, $fechas, "Resultados", $id, ELIMINATORIAS_TIPOTABLA );
+            $this->singleConten($title, $fechas, "Resultados", $id, ELIMINATORIAS_TIPOTABLA);
         } else {
-            $this->singleConten($title, $fechas, "Resultados", $id );
+            if ($id == LIBERTADORES) {
+                $this->singleConten($title, $fechas, "Resultados", $id, LIBERTADORES_TIPOTABLA);
+            } else {
+
+                $this->singleConten($title, $fechas, "Resultados", $id);
+            }
         }
     }
 
@@ -1076,7 +1074,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['content'] = $contenSeccion;
 
         if (($nameSeccion != "Magazine") && ($nameSeccion != "Fuera de Juego")) {
-            if ($serie != 56) {
+            if ($serie != AMERICA) {
                 $data['sidebar'] = $this->contenido->sidebarOpenNews(FALSE, $serie, "large", $tipotabla);
             } else {
                 $data['sidebar'] = $this->contenido->copaamericasidebar(false, $serie);
@@ -1090,7 +1088,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['fe_header'] = $this->banners->fe_header();
 
 
-        if ($serie == 56) {
+        if ($serie == AMERICA) {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
@@ -1186,7 +1184,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
             $campeonatoEquipo = $this->uri->segment(5);
 
-            if ($campeonatoEquipo == 56) {
+            if ($campeonatoEquipo == AMERICA) {
                 $dataTeam ['fechas'] = $this->matches->matchesperteam($idEquipo, $campeonatoEquipo);
                 $dataTeam ['modeloficha'] = "simple";
             } else {
@@ -1251,8 +1249,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         }
 
         $campeonatoEquipo = $this->uri->segment(5);
-        // todo es caso copa america pero se puede generalizar
-        if ($campeonatoEquipo == "56") {
+
+        if ($campeonatoEquipo == "AMERICA") {
             $data['sidebar'] = $this->contenido->copaamericasidebar(false, $campeonatoEquipo);
 
         } else {
@@ -1265,7 +1263,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['fe_header'] = $this->banners->fe_header();
 
-        if ($campeonatoEquipo == 56) {
+        if ($campeonatoEquipo == AMERICA) {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
@@ -1372,8 +1370,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function copaamerica($seccion = ZONACOPAAMERICA, $seccionpos = ZONACOPAAMERICAPOS, $nameSeccion = "Copa América", $urlSeccion = URLAMERICA, $tipoSeccion = URLAMERICA, $serie = AMERICA)
     {
-        $seccionpos = ZONACOPAAMERICAPOS;
-        $seccion = ZONACOPAAMERICA;
+
         // para la final se comentan la llamada a las secciones.
         // $this->output->cache(CACHE_DEFAULT);
 
@@ -1434,7 +1431,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_indexcopa($data);
-
     }
 
     // para la final se comentan la llamada a las secciones.

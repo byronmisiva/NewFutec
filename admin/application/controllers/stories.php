@@ -378,7 +378,7 @@ class Stories extends CI_Controller
 
 
                 // SEND TWEET, send push notification, chrome & safari, push alertas futbolecuador
-                /*if ($_POST['invisible'] == 0) {
+                if ($_POST['invisible'] == 0) {
                     $this->send_tweet_image($_POST['twitter'], $id, $_POST['image_id']);
                     // pushNotificacion Safari
                     $this->pushNotificationBrowser($id, $_POST['title'], $_POST['subtitle']);
@@ -388,7 +388,7 @@ class Stories extends CI_Controller
                     if ($this->validaTags ($tags, 'AlertasFutbolecuador')) {
                         $this->pushNotificationMobile($id, $_POST['subtitle'], $destacado);
                     }
-                }*/
+                }
                 redirect($previous_url);
             }
         }
@@ -1092,12 +1092,11 @@ class Stories extends CI_Controller
         }
     }
 
-    function _clearStringGion($string)
-    {
-        $tempSting = str_replace(' ', '-', $this->_clearString($string));
+    function _clearStringGion($string) {
+        $tempSting = str_replace(' ','-',$this->_clearString($string) );
 
         $tempSting = str_replace(
-            array("\\", "¨", "º", "~",
+            array("\\", "¨", "º",  "~",
                 "#", "@", "|", "!", "\"",
                 "·", "$", "%", "&", "/",
                 "(", ")", "?", "'", "¡",
@@ -1109,12 +1108,11 @@ class Stories extends CI_Controller
             $tempSting
         );
 
-        $tempSting = str_replace('---', '-', $tempSting);
-        $tempSting = str_replace('--', '-', $tempSting);
+        $tempSting = str_replace('---','-',$tempSting );
+        $tempSting = str_replace('--','-',$tempSting );
 
         return $tempSting;
     }
-
     function _clearString($string)
     {
 
@@ -1160,10 +1158,8 @@ class Stories extends CI_Controller
         return $string;
     }
 
-    function _urlFriendly($string)
-    {
-        return strtolower($this->_clearStringGion($string));
-    }
-}
+    function _urlFriendly ($string){
+        return strtolower($this->_clearStringGion ($string)) ;
+    }}
 
 ?>

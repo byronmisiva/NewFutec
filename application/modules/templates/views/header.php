@@ -28,16 +28,11 @@
 
     <!--twitter TAGS-->
     <meta name="twitter:card" content="app">
-    <?php if (rand(1, 2) == 1  ) { ?>
 
     <meta name="twitter:app:id:iphone" content="1008177383">
     <meta name="twitter:app:id:ipad" content="1008177383">
     <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
-    <?php } else {?>
-    <meta name="twitter:app:id:iphone" content="622931242">
-    <meta name="twitter:app:id:ipad" content="622931242">
-    <meta name="twitter:app:id:googleplay" content="com.futbolecuador.femagazine">
-    <?php } ?>
+
 
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">

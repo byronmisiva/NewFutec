@@ -52,6 +52,7 @@ define('SECTION_SERIE_B',30);
 
 define('SECTION_SELECCION',26); //Section
 define('SECTION_LIBERTADORES',31);
+
 define('SECTION_SUDAMERICANA',32);
 
 define('SECTION_AMERICA',71);
@@ -68,15 +69,16 @@ define('SERIE_B_TIPOTABLA',"acumulada");
 define('MUNDIAL',43);
 define('MUNDIAL_TIPOTABLA',"simple");
 
-define('LIBERTADORES',55);
+define('LIBERTADORES',62);
 define('LIBERTADORES_TIPOTABLA',"simple");
 
-define('SUDAMERICANA',52);
+define('SUDAMERICANA',57);
 define('SUDAMERICANA_TIPOTABLA',"simple");
 
 define('ELIMINATORIAS',58);
 define('ELIMINATORIAS_TIPOTABLA',"simple");
 
+//todo actualizar copa america
 define('AMERICA',56);
 define('AMERICA_TIPOTABLA',"simple");
 
@@ -115,8 +117,7 @@ define('ZONACOPASUDAMERICANAPOS',null);
 define('ZONAELIMINATORIAS',71);
 define('ZONAELIMINATORIASPOS',null);
 
-//todo actualizar copa america
-define('ZONACOPAAMERICA'   ,71);
+define('ZONACOPAAMERICA'   ,76);
 define('ZONACOPAAMERICAPOS',null);
 
 //todo actualizar seccion futbol internacion

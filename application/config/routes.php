@@ -57,7 +57,8 @@ $route['copa-sudamericana'] = "site/copasudamericana";
 
 $route['eliminatorias'] = "site/eliminatorias";
 
-$route['copa-america'] = "site/indexcopaamerica";
+$route['copa-america'] = "site/copaamericacentenario";
+//$route['copa-america'] = "site/indexcopaamerica";
 $route['copaamerica'] = "site/copaamerica";
 $route['copa-america-movil'] = "site/copaamericamovil";
 

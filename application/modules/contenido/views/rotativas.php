@@ -14,9 +14,7 @@
             if (isset($rotativa->openseccion)) {
                 if ($rotativa->openseccion != '')
                     $link = base_url() . $rotativa->openseccion;
-
             }
-
             ?>
             <li style="height: 348px;" data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
                 <a href="<?php echo $link ?>">

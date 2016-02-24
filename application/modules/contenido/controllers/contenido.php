@@ -559,7 +559,7 @@ class Contenido extends MY_Controller
         $this->load->module('scoreboards');
         $this->load->module('surveys');
         $bannersSidebar = array();
-        if ($serie == 56)
+        if ($serie == AMERICA)
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1_copaamerica();
         else
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();

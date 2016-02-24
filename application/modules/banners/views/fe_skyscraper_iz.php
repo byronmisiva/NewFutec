@@ -1,4 +1,4 @@
-<div class="skyscraper_iz" style="position: absolute; top: 160px; left: 50%; width: 1050px;height: 600px; margin-left: -670px;">
+<div class="skyscraper_iz" style="position: fixed; top: 160px; left: 50%; width: 160px;height: 600px; margin-left: -670px;">
     <!-- /1022247/FE_SKYSCRAPER_IZ -->
     <div id='div-gpt-ad-1450734059657-1' style='height:600px; width:160px;'>
         <script type='text/javascript'>

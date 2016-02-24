@@ -201,12 +201,12 @@
     <ul class="dropdown-menu fullwidth">
         <li class="fhmm-content">
             <div class="row">
-                <div class="col-sm-3  ">
+                <div class="col-sm-3">
+
                 </div>
-                <!-- end col-4 -->
                 <div class="col-sm-3 text-center separador-dotted">
                     <a href="<?= base_url('eliminatorias') ?>" class="pull-left">
-                        <img src="<?= base_url('assets/img/mundial-2018.png') ?>" alt="Copa America" title="Lea todo sobre las eliminatorias">
+                        <img src="<?= base_url('assets/img/mundial-2018.png') ?>" alt="Eliminatorias" title="Lea todo sobre las eliminatorias">
                     </a>
                 </div>
                 <div class="col-sm-3  text-center separador-dotted">
@@ -215,13 +215,20 @@
                     </a>
 
                 </div>
-                <!-- end col-4 -->
-                <div class="col-sm-3 text-center">
+
+                <div class="col-sm-3  text-center  ">
+                    <a href="<?= base_url('copa-america') ?>" class="pull-left">
+                        <img src="<?= base_url('assets/img/copa-america-2016.png') ?>" alt="Copa America Centenario 2016" title="Lea todo sobre la Copa America Centenario 2016">
+                    </a>
+
+                </div>
+
+<!--                <div class="col-sm-3 text-center">
                     <a href="<?= base_url('copa-sudamericana') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana" title="Lea todo sobre la Copa Sudamericana">
                     </a>
                 </div>
-                <!-- end col-4 -->
+-->
             </div>
             <!-- end row -->
         </li>
