@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e7ad7e-7a05-4362-83ae-57453396a0eb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/modules/modules.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/seo/controllers/seo.php" afterPath="$PROJECT_DIR$/application/modules/seo/controllers/seo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/site/controllers/site.php" afterPath="$PROJECT_DIR$/application/modules/site/controllers/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sitemap.php" afterPath="$PROJECT_DIR$/application/views/sitemap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sitemapnews.php" afterPath="$PROJECT_DIR$/application/views/sitemapnews.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewFutec.iws" />
@@ -33,136 +28,7 @@
     <favorites_list name="NewFutec" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MY_Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.5">
-              <caret line="70" column="26" selection-start-line="52" selection-start-column="8" selection-end-line="70" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3961456">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/seo/controllers/seo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/sitemap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="59" column="84" selection-start-line="57" selection-start-column="16" selection-end-line="59" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemapnews.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/sitemapnews.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdl_seo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/seo/models/mdl_seo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5833335">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="36" />
-              <folding>
-                <marker date="1444837533000" expanded="true" signature="3449:3577" placeholder="SELECT id, t..stories..." />
-                <marker date="1444837533000" expanded="true" signature="3710:3847" placeholder="SELECT id, t..stories..." />
-                <marker date="1444837533000" expanded="true" signature="4115:4154" placeholder="SELECT name ..tags..." />
-                <marker date="1444837533000" expanded="true" signature="4297:4498" placeholder="SELECT tags...tags..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.083334">
-              <caret line="1006" column="0" selection-start-line="1006" selection-start-column="0" selection-end-line="1006" selection-end-column="0" />
-              <folding>
-                <marker date="1456512138000" expanded="true" signature="998:1065" placeholder="select id fr..championships..." />
-                <marker date="1456512138000" expanded="true" signature="1214:1277" placeholder="select COUNT..rounds..." />
-                <marker date="1456512138000" expanded="true" signature="3316:3409" placeholder="SELECT *, NO..parametros..." />
-                <marker date="1456512138000" expanded="true" signature="3903:3946" placeholder="SELECT valor..parametros..." />
-                <marker date="1456512138000" expanded="true" signature="4797:4857" placeholder="SELECT valor..parametros..." />
-                <marker date="1456512138000" expanded="true" signature="5670:5722" placeholder="..." />
-                <marker date="1456512138000" expanded="false" signature="5774:5814" placeholder="..." />
-                <marker date="1456512138000" expanded="true" signature="5815:5940" placeholder="..." />
-                <marker date="1456512138000" expanded="true" signature="5829:5859" placeholder="..." />
-                <marker date="1456512138000" expanded="true" signature="5892:5918" placeholder="..." />
-                <marker date="1456512138000" expanded="true" signature="7291:7334" placeholder="SELECT valor..parametros..." />
-                <marker date="1456512138000" expanded="true" signature="21097:21157" placeholder="SELECT valor..parametros..." />
-                <marker date="1456512138000" expanded="true" signature="54604:54647" placeholder="SELECT valor..parametros..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9583333">
-              <caret line="62" column="15" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdl_teams_position.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0392158">
-              <caret line="116" column="22" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="22" />
-              <folding>
-                <marker date="1451940357000" expanded="true" signature="3936:4328" placeholder="SELECT ct.id..championships_teams..." />
-                <marker date="1451940357000" expanded="true" signature="4459:4975" placeholder="Select t.*, ..id..." />
-                <marker date="1451940357000" expanded="true" signature="4546:4892" placeholder="Select DISTI..groups..." />
-                <marker date="1451940357000" expanded="true" signature="5016:5327" placeholder="Select m.res..groups..." />
-                <marker date="1451940357000" expanded="true" signature="16421:16606" placeholder="Select c.act..championships..." />
-                <marker date="1451940357000" expanded="true" signature="16728:16831" placeholder="Select ct.te..championships_teams..." />
-                <marker date="1451940357000" expanded="true" signature="16978:17050" placeholder="Select g.rou..groups..." />
-                <marker date="1451940357000" expanded="true" signature="17104:17406" placeholder="Select m.res..groups..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CodeIgniter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1666665">
-              <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -329,24 +195,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewFutec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -452,12 +300,6 @@
       <created>1411601701573</created>
       <option name="number" value="Default" />
       <updated>1411601701573</updated>
-    </task>
-    <task id="LOCAL-00925" summary="e">
-      <created>1451315605644</created>
-      <option name="number" value="00925" />
-      <option name="project" value="LOCAL" />
-      <updated>1451315605644</updated>
     </task>
     <task id="LOCAL-00926" summary="e">
       <created>1451316006763</created>
@@ -747,7 +589,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456357343138</updated>
     </task>
-    <option name="localTasksCounter" value="974" />
+    <task id="LOCAL-00974" summary="e">
+      <created>1456516784446</created>
+      <option name="number" value="00974" />
+      <option name="project" value="LOCAL" />
+      <updated>1456516784446</updated>
+    </task>
+    <option name="localTasksCounter" value="975" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -772,7 +620,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="39" width="1553" height="971" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -785,7 +633,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32790446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2545211" sideWeight="0.48816234" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18001324" sideWeight="0.52747256" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18001324" sideWeight="0.52747256" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32648402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1244,63 +1092,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1666665">
-          <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/teams_position/models/mdl_teams_position.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0392158">
+        <state vertical-scroll-proportion="0.33190578">
           <caret line="116" column="22" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="22" />
           <folding>
-            <marker date="1451940357000" expanded="true" signature="3936:4328" placeholder="SELECT ct.id..championships_teams..." />
-            <marker date="1451940357000" expanded="true" signature="4459:4975" placeholder="Select t.*, ..id..." />
-            <marker date="1451940357000" expanded="true" signature="4546:4892" placeholder="Select DISTI..groups..." />
-            <marker date="1451940357000" expanded="true" signature="5016:5327" placeholder="Select m.res..groups..." />
-            <marker date="1451940357000" expanded="true" signature="16421:16606" placeholder="Select c.act..championships..." />
-            <marker date="1451940357000" expanded="true" signature="16728:16831" placeholder="Select ct.te..championships_teams..." />
-            <marker date="1451940357000" expanded="true" signature="16978:17050" placeholder="Select g.rou..groups..." />
-            <marker date="1451940357000" expanded="true" signature="17104:17406" placeholder="Select m.res..groups..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.5">
-          <caret line="70" column="26" selection-start-line="52" selection-start-column="8" selection-end-line="70" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/seo/controllers/seo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/seo/models/mdl_seo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5833335">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="36" />
-          <folding>
-            <marker date="1444837533000" expanded="true" signature="3449:3577" placeholder="SELECT id, t..stories..." />
-            <marker date="1444837533000" expanded="true" signature="3710:3847" placeholder="SELECT id, t..stories..." />
-            <marker date="1444837533000" expanded="true" signature="4115:4154" placeholder="SELECT name ..tags..." />
-            <marker date="1444837533000" expanded="true" signature="4297:4498" placeholder="SELECT tags...tags..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="SELECT ct.id..championships_teams..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select t.*, ..id..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select DISTI..groups..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select m.res..groups..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select c.act..championships..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select ct.te..championships_teams..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select g.rou..groups..." />
+            <marker date="1451940357000" expanded="true" signature="-1:-1" placeholder="Select m.res..groups..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/constants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9583333">
+        <state vertical-scroll-proportion="0.1437247">
           <caret line="62" column="15" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="15" />
           <folding />
         </state>
@@ -1308,38 +1119,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/site/controllers/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.083334">
+        <state vertical-scroll-proportion="0.8785425">
           <caret line="1006" column="0" selection-start-line="1006" selection-start-column="0" selection-end-line="1006" selection-end-column="0" />
           <folding>
-            <marker date="1456512138000" expanded="true" signature="998:1065" placeholder="select id fr..championships..." />
-            <marker date="1456512138000" expanded="true" signature="1214:1277" placeholder="select COUNT..rounds..." />
-            <marker date="1456512138000" expanded="true" signature="3316:3409" placeholder="SELECT *, NO..parametros..." />
-            <marker date="1456512138000" expanded="true" signature="3903:3946" placeholder="SELECT valor..parametros..." />
-            <marker date="1456512138000" expanded="true" signature="4797:4857" placeholder="SELECT valor..parametros..." />
-            <marker date="1456512138000" expanded="true" signature="5670:5722" placeholder="..." />
-            <marker date="1456512138000" expanded="false" signature="5774:5814" placeholder="..." />
-            <marker date="1456512138000" expanded="true" signature="5815:5940" placeholder="..." />
-            <marker date="1456512138000" expanded="true" signature="5829:5859" placeholder="..." />
-            <marker date="1456512138000" expanded="true" signature="5892:5918" placeholder="..." />
-            <marker date="1456512138000" expanded="true" signature="7291:7334" placeholder="SELECT valor..parametros..." />
-            <marker date="1456512138000" expanded="true" signature="21097:21157" placeholder="SELECT valor..parametros..." />
-            <marker date="1456512138000" expanded="true" signature="54604:54647" placeholder="SELECT valor..parametros..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="select id fr..championships..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="select COUNT..rounds..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="SELECT *, NO..parametros..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="SELECT valor..parametros..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="SELECT valor..parametros..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1456512138000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="SELECT valor..parametros..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="SELECT valor..parametros..." />
+            <marker date="1456512138000" expanded="true" signature="-1:-1" placeholder="SELECT valor..parametros..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/sitemap.php">
+    <entry file="file://$PROJECT_DIR$/application/modules/seo/models/mdl_seo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="59" column="84" selection-start-line="57" selection-start-column="16" selection-end-line="59" selection-end-column="84" />
-          <folding />
+        <state vertical-scroll-proportion="0.36842105">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="36" />
+          <folding>
+            <marker date="1444837533000" expanded="true" signature="-1:-1" placeholder="SELECT id, t..stories..." />
+            <marker date="1444837533000" expanded="true" signature="-1:-1" placeholder="SELECT id, t..stories..." />
+            <marker date="1444837533000" expanded="true" signature="-1:-1" placeholder="SELECT name ..tags..." />
+            <marker date="1444837533000" expanded="true" signature="-1:-1" placeholder="SELECT tags...tags..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/sitemapnews.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
+        <state vertical-scroll-proportion="0.45546558">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sitemap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6983806">
+          <caret line="59" column="84" selection-start-line="57" selection-start-column="16" selection-end-line="59" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/seo/controllers/seo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48582995">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1348,6 +1180,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3961456">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/MY_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94736844">
+          <caret line="70" column="26" selection-start-line="52" selection-start-column="8" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34817815">
+          <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
           <folding />
         </state>
       </provider>
