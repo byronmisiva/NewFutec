@@ -30,6 +30,7 @@ class Seo extends MY_Controller
         $this->load->module('seo');
         $this->load->view("sitemap", $data);
     }
+
     public function sitemap_news(){
 
         $data['stories']=$this->mdl_seo->get_stories_news();

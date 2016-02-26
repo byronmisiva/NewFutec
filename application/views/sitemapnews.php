@@ -8,7 +8,11 @@
                 $linkbody = $url->subtitle;
                 if ($linkbody == "")
                     $linkbody = $url->title;
-                echo base_url() .  $this->seo->_urlFriendly($linkbody)  ."/" . $url->id ?></loc>
+
+                $linkbody = $this->seo->_urlFriendly($linkbody);
+                $linkbody = preg_replace("/[^a-zA-Z0-9\s]-/", "", $linkbody);
+                echo base_url(). "site/noticia/". $linkbody . "/". $url->id ?></loc>
+
             <news:news>
                 <news:publication>
                     <news:name><?= $url->title ?></news:name>

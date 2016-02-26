@@ -11,7 +11,7 @@
     </url>
     <url>
         <loc>
-            http://www.futbolecuador.com/site/resultados/53
+            http://www.futbolecuador.com/site/resultados
         </loc>
         <priority>0.8</priority>
         <changefreq>daily</changefreq>
@@ -55,8 +55,9 @@
                 if ($linkbody == "")  {
                     $linkbody = $url->title;
                 }
-
-                echo base_url(). "site/noticia/". $this->seo->_urlFriendly($linkbody). "/". $url->id ?></loc>
+                $linkbody = $this->seo->_urlFriendly($linkbody);
+                $linkbody = preg_replace("/[^a-zA-Z0-9\s]-/", "", $linkbody);
+                echo base_url(). "site/noticia/". $linkbody . "/". $url->id ?></loc>
             <priority>0.5</priority>
             <lastmod><?= $url->created ?></lastmod>
             <language>es</language>

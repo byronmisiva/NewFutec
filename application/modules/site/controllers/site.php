@@ -38,7 +38,7 @@ class Site extends MY_Controller
             $consulta = $this->db->query("select COUNT(*) as total from  rounds   where championship_id= " . CHAMP_DEFAULT)->result();
 
             if (CHAMP_DEFAULT == 59) {
-                    define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
+                define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
             } else {
                 if ($consulta[0]->total == "1") {
                     define('CHAMP_DEFAULT_TIPOTABLA', "simple");
@@ -194,7 +194,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('banners');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
 
 
         // recupera parametro para mostrar o no el splash
@@ -340,16 +340,24 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         }
 
 
-
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
+        $idNoticia = preg_replace("/[^0-9]/", "", $idNoticia);
+
         if (!$idNoticia) {
             $idNoticia = $this->uri->segment(3);
+            if (!$idNoticia) {
+                redirect('home');
+
+            } else {
+                $idNoticia = preg_replace("/[^0-9]/", "", $idNoticia);
+
+            }
         }
         if (is_numeric($idNoticia))
             if ($idNoticia < 39898)
                 redirect('home');
-        if ($idNoticia == 'ref.outcontrol')
+        if (($idNoticia == 'ref.outcontrol') or ($idNoticia == ''))
             redirect('home');
 
         if ($this->verificarDispositivo() == "1")
@@ -705,7 +713,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function copaamericacentenario()
     {
-     //   $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América Centenario 2016", URLAMERICA, URLAMERICA, AMERICA, AMERICA_TIPOTABLA);
+        //   $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América Centenario 2016", URLAMERICA, URLAMERICA, AMERICA, AMERICA_TIPOTABLA);
         $this->seccion(ZONACOPAAMERICA, ZONACOPAAMERICAPOS, "Copa América Centenario 2016", "noticia", "noticia", AMERICA, AMERICA_TIPOTABLA);
     }
 
@@ -753,15 +761,26 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
-        //validamos las noticias
-        /*if ($idNoticia < 39898)
-            redirect('home');*/
+
+        $idNoticia = preg_replace("/[^0-9]/", "", $idNoticia);
+
+        if (!$idNoticia) {
+            $idNoticia = $this->uri->segment(3);
+            if (!$idNoticia) {
+                redirect('home');
+                $idNoticia = preg_replace("/[^0-9]/", "", $idNoticia);
+
+            }
+        }
+
+        if ($idNoticia < 39898)
+            redirect('home');
+
+
         if ($idNoticia == 'ref.outcontrol')
             redirect('home');
 
         if ($idNoticia) {
-
-//            $storia = $this->story->get_complete($idNoticia);
 
             if ($this->verificarDispositivo() == "1")
                 $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas());
@@ -859,7 +878,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->library('user_agent');
         $this->load->module('story');
         $data['verMobile'] = $this->verificarDispositivo();
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -964,10 +983,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('matches');
 
         $id = $this->uri->segment(3);
+
+        if (!$id)
+            $id = CHAMP_DEFAULT;
+
         $name = $this->matches->getChampionship($id)->row();
 
         $title = $name->name;
-        //$title = "Calendario - Campeonato Serie B 2014";
 
 
         $fechas = $this->matches->matches($id, $title);
@@ -1000,6 +1022,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $id = $this->uri->segment(4);
 
+        if (!$id )
+            redirect('home');
+
+
         if ($id == "ref.outcontrol")
             redirect('home');
 
@@ -1020,10 +1046,23 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $description = "Sigue el partido en vivo, " . $this->matches->getMatchNameLong($id);
         $champ = $this->uri->segment(5);
+
+
         if (!$champ)
             $this->singleConten($title, $match, $description);
-        else
-            $this->singleConten($title, $match, $description, $champ);
+        else {
+            // para el caso que venga mal el codigo
+            $champ = preg_replace("/[^0-9]/", "", $champ);
+
+            //validamos si el campeonato es valido
+            $name = $this->matches->getChampionship($champ)->row();
+
+            if ($name) {
+                $this->singleConten($title, $match, $description, $champ);
+            } else {
+                $this->singleConten($title, $match, $description);
+            }
+        }
     }
 
     public function partidodata()
@@ -1093,7 +1132,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
         } else {
-            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
 
@@ -1268,7 +1307,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['header1'] = $this->contenido->menucopaamerica();
             $this->templates->_indexcopa($data);
         } else {
-            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin(). $this->banners->FE_Skyscraper_de() .$this->banners->FE_Skyscraper_iz();
+            $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
 
@@ -1346,7 +1385,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         return $response;
     }
 
-    public function equiposJson () {
+    public function equiposJson()
+    {
         header('Access-Control-Allow-Origin: *');
         header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
         $this->load->module('contenido');
