@@ -179,7 +179,7 @@ class Scoreboards extends MY_Controller
     {
         //recuperamos id equipos del partido
 
-        $sql = 'SELECT imagen FROM imagenesmarcador WHERE link LIKE "%tabla-de-posiciones%" ORDER BY creado DESC LIMIT 1';
+        $sql = 'SELECT imagen FROM imagenesmarcador WHERE link LIKE "%tabladeposiciones%" ORDER BY creado DESC LIMIT 1';
 
         $query = $this->db->query( $sql);
 

@@ -32,7 +32,7 @@
     <meta name="twitter:app:id:iphone" content="1008177383">
     <meta name="twitter:app:id:ipad" content="1008177383">
     <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
-
+    
 
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">

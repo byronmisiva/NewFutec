@@ -815,17 +815,7 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    //$(function () {
-    //    $.smartbanner({
-    //        daysHidden: 0,
-    //        daysReminder: 0,
-    //        inGooglePlay: 'En Google Play',
-    //        price: 'Gratis'
-    //    });
-    //
-    //})
-});
+
 
 
 // Grabar

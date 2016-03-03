@@ -115,7 +115,52 @@ class MY_Controller extends MX_Controller{
         return $string;
     }
 
-    function _urlFriendly ($string){
-        return strtolower($this->_clearStringGion ($string)) ;
+    function _urlFriendly ($string)
+    {
+        $string = strtolower($this->_clearStringGion($string));
+        $string = preg_replace('/[^a-zA-Z0-9-]/', "", $string);
+        return $string;
     }
+
+
+
+    function get_with_limit($limit, $offset, $order_by) {
+        $this->load->model('mdl_perfectcontroller');
+        $query = $this->mdl_perfectcontroller->get_with_limit($limit, $offset, $order_by);
+        return $query;
+    }
+
+
+
+    function get_where_custom($col, $value) {
+        $this->load->model('mdl_perfectcontroller');
+        $query = $this->mdl_perfectcontroller->get_where_custom($col, $value);
+        return $query;
+    }
+
+	/*
+
+	function _delete($id){
+		$this->load->model('mdl_perfectcontroller');
+		$this->mdl_perfectcontroller->_delete($id);
+	}
+
+	function count_where($column, $value) {
+		$this->load->model('mdl_perfectcontroller');
+		$count = $this->mdl_perfectcontroller->count_where($column, $value);
+		return $count;
+	}
+
+	function get_max() {
+		$this->load->model('mdl_perfectcontroller');
+		$max_id = $this->mdl_perfectcontroller->get_max();
+		return $max_id;
+	}
+
+	function _custom_query($mysql_query) {
+		$this->load->model('mdl_perfectcontroller');
+		$query = $this->mdl_perfectcontroller->_custom_query($mysql_query);
+		return $query;
+	}*/
+
 }

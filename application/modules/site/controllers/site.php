@@ -363,13 +363,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1")
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(), $bannerBottom, $bannerTop);
         else
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
 
 
-        //$storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(). $this->banners->fe_netsonic_tv() );
 
-        //para el caso de don balon se cambia el texto donbalon por el logo de don balon
-        //  if (ZONAINTERNACIONAL == $seccion) {
         $logoDonBalon = "  <span class='donbalonlogo'></span>";
         $storia = str_replace("en www.donbalon.com", "", $storia);
         $storia = str_replace(" donbalon", $logoDonBalon, $storia);
@@ -767,13 +764,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (!$idNoticia) {
             $idNoticia = $this->uri->segment(3);
             if (!$idNoticia) {
-                redirect('home');
+               // redirect('home');
                 $idNoticia = preg_replace("/[^0-9]/", "", $idNoticia);
 
             }
         }
 
-        if ($idNoticia < 39898)
+        if (($idNoticia < 39898) and (($idNoticia > 0)))
             redirect('home');
 
 

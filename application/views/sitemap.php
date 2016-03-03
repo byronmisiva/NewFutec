@@ -56,7 +56,7 @@
                     $linkbody = $url->title;
                 }
                 $linkbody = $this->seo->_urlFriendly($linkbody);
-                $linkbody = preg_replace("/[^a-zA-Z0-9\s]-/", "", $linkbody);
+                $linkbody = preg_replace('/[^a-zA-Z0-9-]/', "", $linkbody);
                 echo base_url(). "site/noticia/". $linkbody . "/". $url->id ?></loc>
             <priority>0.5</priority>
             <lastmod><?= $url->created ?></lastmod>

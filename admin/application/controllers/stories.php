@@ -1159,7 +1159,11 @@ class Stories extends CI_Controller
     }
 
     function _urlFriendly ($string){
-        return strtolower($this->_clearStringGion ($string)) ;
-    }}
+
+        $string = strtolower($this->_clearStringGion ($string)) ;
+        $string = preg_replace('/[^a-zA-Z0-9-]/', "", $string);
+        return $string ;
+    }
+}
 
 ?>

@@ -28,7 +28,6 @@
                              data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
                              data-send="false" data-layout="box_count" data-width="90" data-show-faces="true"
                              data-font="arial"></div>
-
                     </div>
                     <div class="col-md-6 col-xs-4 separadortw">
                         <a href="http://twitter.com/share" class="twitter-share-button"
@@ -69,6 +68,7 @@
         <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
             ?>
             <div class="banerintermedio">
+
                 <?php echo $banerintermedio; ?>
             </div>
 
@@ -87,12 +87,6 @@
 
         <?php }
         ?>
-        <div class="col-md-12 column content-gris ">
-            <div class="fb-share-button"
-                 data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
-                 data-layout="button_count">
-            </div>
-        </div>
         <?php if ( strlen ( $tagsStorys ) >3) {?>
 
         <div class="col-md-12 column content-gris ">

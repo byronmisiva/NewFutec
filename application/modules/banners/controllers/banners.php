@@ -291,7 +291,13 @@ class Banners extends MY_Controller
 
     public function fe_superbanner_passback($data = FALSE)
     {
+        // agencia externa tempormente inhabilitado
         return $this->load->view('fe_superbanner_passback', $data, TRUE);
+    }
+
+    public function fe_intext($data = FALSE)
+    {
+        return $this->load->view('fe_intext', $data, TRUE);
     }
 
 

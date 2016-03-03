@@ -100,7 +100,10 @@ class Stories extends MY_Controller
 
     function _urlFriendly($string)
     {
-        return strtolower($this->_clearStringGion($string));
+        $cadena = strtolower($this->_clearStringGion($string));
+        $cadena = preg_replace('/[^a-zA-Z0-9-]/', "", $cadena);
+
+        return $cadena ;
     }
 
 
