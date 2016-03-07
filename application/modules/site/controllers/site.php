@@ -363,7 +363,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1")
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(), $bannerBottom, $bannerTop);
         else
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
+//            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
 
 
 
@@ -970,7 +971,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('scoreboards');
         $this->og_image = $this->scoreboards->getMatchOggImageTablaPos($id);
         $tablapocisiones = $this->scoreboards->scoreboardFull($serie, $tipotabla);
-        $descriptio = "Tabla de posiciones, campeonato nacional de fútbol, campeonato nacional de fútbol serie b, actualizado minuto a minuto con los resultados del futbol ecuatoriano";
+        $descriptio = "Tabla de posiciones del campeonato ecuatoriano de fútbol, Serie A 2016 Copa Pilsener, sigue los partidos en vivo.";
         $this->singleConten("Tabla de Posiciones", $tablapocisiones, $descriptio, $serie, $tipotabla);
     }
 
@@ -982,6 +983,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $id = $this->uri->segment(3);
 
         if (!$id)
+            $id = CHAMP_DEFAULT;
+
+        //campeonato viejo
+        if ($id== 53)
             $id = CHAMP_DEFAULT;
 
         $name = $this->matches->getChampionship($id)->row();

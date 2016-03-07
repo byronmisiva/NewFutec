@@ -101,16 +101,30 @@ $route['noticiascopaamerica/(:num)/{:any}'] = 'site/noticiasalone/$1';
 //$route['fuera-de-juego'] =  "sections/publica/64";
 //
 //$route['equipo/olmedo'] = "sections/publica/21/Olmedo";
-//$route['equipo/el-nacional'] = "sections/publica/15/El_Nacional";
 //$route['equipo/universidad-catolica-de-quito'] = "sections/publica/45/Universidad_Católica_de_Quito";
 //$route['equipo/liga-de-loja'] = "sections/publica/47/Liga_de_Loja";
-//$route['equipo/independiente-del-valle'] = "sections/publica/44/Independiente_del_Valle";
-//$route['equipo/barcelona'] = "sections/publica/23/Barcelona";
-$route['liga-de-quito'] = "site/equipo/liga-de-quito/14";
-//$route['equipo/manta-fc'] = "sections/publica/25/Manta_F.C.";
-//$route['equipo/deportivo-cuenca'] = "sections/publica/17/Deportivo_Cuenca";
-//$route['equipo/mushuc-runa'] = "sections/publica/65/Mushuc_Runa";
-//$route['equipo/deportivo-quito'] = "sections/publica/22/Deportivo_Quito";
+
+$route['equipo/el-nacional'] = "site/equipo/el-nacional/15";
+$route['equipo/independiente-del-valle'] = "site/equipo/independiente-del-valle/44";
+$route['equipo/barcelona'] = "site/equipo/barcelona-sporting-club/23";
+$route['equipo/liga-de-quito'] = "site/equipo/liga-de-quito/14";
+$route['equipo/emelec'] = "site/equipo/emelec/18";
+$route['equipo/universidad-catolica-de-quito'] = "site/equipo/universidad-catolica-de-quito/45";
+$route['equipo/river-ecuador'] = "site/equipo/river-ecuador/70";
+$route['equipo/deportivo-cuenca'] = "site/equipo/deportivo-cuenca/17";
+$route['equipo/delfin'] = "site/equipo/delfin/74";
+$route['equipo/aucas'] = "site/equipo/aucas/69";
+$route['equipo/fuerza-amarilla'] = "site/equipo/fuerza-amarilla/75";
+$route['equipo/mushuc-runa'] = "site/equipo/mushuc-runa/65";
+$route['equipo/manta-fc'] = "site/equipo/manta-fc/79";
+
+$route['equipo/deportivo-quito'] = "site/equipo/deportivo-quito/36";
+$route['equipo/seleccion-nacional'] = "site/equipo/seleccion-nacional/5";
+$route['seleccion-nacional'] = "site/equipo/seleccion-nacional/5";
+$route['calendario-campeonato-ecuatoriano'] = "http://www.futbolecuador.com/site/resultados/";
+$route['goleadores-campeonato-ecuatoriano-serie-a-2014'] = "http://www.futbolecuador.com/site/goleadores";
+
+
 //
 //$route['eliminatorias'] = "sections/publica/53";
 //$route['serie-a'] = "sections/publica/29";
