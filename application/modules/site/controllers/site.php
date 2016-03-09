@@ -360,13 +360,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (($idNoticia == 'ref.outcontrol') or ($idNoticia == ''))
             redirect('home');
 
-        if ($this->verificarDispositivo() == "1")
+        if ($this->verificarDispositivo() == "1") {
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(), $bannerBottom, $bannerTop);
-        else
+        } else {
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
 //            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
-
-
+        }
 
         $logoDonBalon = "  <span class='donbalonlogo'></span>";
         $storia = str_replace("en www.donbalon.com", "", $storia);
@@ -765,7 +764,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (!$idNoticia) {
             $idNoticia = $this->uri->segment(3);
             if (!$idNoticia) {
-               // redirect('home');
+                // redirect('home');
                 $idNoticia = preg_replace("/[^0-9]/", "", $idNoticia);
 
             }
@@ -954,14 +953,23 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function tabladeposiciones($serie = CHAMP_DEFAULT)
     {
-
-        $id = $this->uri->segment(3);
-        $tipotabla = $this->uri->segment(4);
+        if ($this->uri->segment(2) == 'tabladeposiciones') {
+            $id = $this->uri->segment(3);
+            $tipotabla = $this->uri->segment(4);
+        }
+        if ($this->uri->segment(1) == 'tabla-de-posiciones') {
+            $id = $this->uri->segment(2);
+            $tipotabla = $this->uri->segment(3);
+        }
 
         if ($id) {
             $serie = $id;
         }
         if (!$tipotabla) {
+            $tipotabla = "acumulada";
+        }
+
+        if (($tipotabla != 'simple') and ($tipotabla != 'acumulada')) {
             $tipotabla = "acumulada";
         }
 
@@ -986,7 +994,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $id = CHAMP_DEFAULT;
 
         //campeonato viejo
-        if ($id== 53)
+        if ($id == 53)
             $id = CHAMP_DEFAULT;
 
         $name = $this->matches->getChampionship($id)->row();
@@ -1024,7 +1032,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('banners');
         $id = $this->uri->segment(4);
 
-        if (!$id )
+        if (!$id)
             redirect('home');
 
 
@@ -1398,6 +1406,43 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('teams_position');
         $equiposJson = $this->scoreboards->leaderboard_only(SERIE_A);
         echo json_encode($equiposJson);
+
+    }
+
+    public function futecJson()
+    {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+        $this->load->module('contenido');
+        $this->load->module('teams_position');
+
+        $this->load->module('scoreboards');
+        $this->load->module('teams_position');
+        $equiposJson = $this->scoreboards->leaderboard_only(SERIE_A);
+        $equiposJson =  json_encode($equiposJson);
+
+        $secciones = '"secciones": [
+                                   {
+                                    "checked": "false",
+                                    "id": "28",
+                                    "name": "Ecuatorianos en el exterior"
+                                    },
+                                    {
+                                    "checked": "false",
+                                    "id": "3",
+                                    "name": "Noticias destacadas"
+                                    },{
+                                    "checked": "false",
+                                    "id": "63",
+                                    "name": "Zona FE"
+                                    },
+                                    {
+                                    "checked": "false",
+                                    "id": "30",
+                                    "name": "Serie B"
+                                    } ]';
+        echo " {" . $secciones . ', "equipos": ' . $equiposJson . ' } ';
+
 
     }
 

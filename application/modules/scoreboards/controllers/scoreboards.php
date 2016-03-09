@@ -41,6 +41,7 @@ class Scoreboards extends MY_Controller
             $datatabla = $this->mdl_teams_position->get_table_only($champ);
             $seleccionNacional = '{
                                     "id": "5",
+                                    "checked": "false",
                                     "name": "Selección Nacional",
                                     "mini_shield": "imagenes\/teams\/shield\/Ecuador.png",
                                     "sid": "26"
@@ -179,7 +180,7 @@ class Scoreboards extends MY_Controller
     {
         //recuperamos id equipos del partido
 
-        $sql = 'SELECT imagen FROM imagenesmarcador WHERE link LIKE "%tabladeposiciones%" ORDER BY creado DESC LIMIT 1';
+        $sql = 'SELECT imagen FROM imagenesmarcador WHERE link LIKE "%tabla-de-posiciones%" or link LIKE "%tabladeposiciones%" ORDER BY creado DESC LIMIT 1';
 
         $query = $this->db->query( $sql);
 

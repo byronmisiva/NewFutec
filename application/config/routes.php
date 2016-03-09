@@ -69,6 +69,7 @@ $route['goleadores'] = "site/goleadores";
 $route['tabla-de-posiciones'] = "site/tabladeposiciones";
 $route['tabladeposiciones/(:num)'] = "site/tabladeposiciones";
 $route['tabla-de-posiciones/(:num)'] = "site/tabladeposiciones";
+$route['tabla-de-posiciones/(:num)/(:num)'] = "site/tabladeposiciones/$1/$2";
 $route['tabla-de-posiciones'] = "site/tabladeposiciones";
 $route['tabla-de-posicionesb'] = "site/tabladeposiciones/" . SERIE_B;
 $route['resultados'] = "site/resultados";
