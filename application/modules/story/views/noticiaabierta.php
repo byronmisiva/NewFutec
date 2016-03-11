@@ -29,12 +29,12 @@
                          data-send="false" data-layout="box_count" data-width="90" data-show-faces="true"
                          data-font="arial"></div>
                 </div>
-                <div class="col-md-4 col-xs-3">
-                    <span class="ig-follow" data-id="4ff5dfe260" data-handle="igfbdotcom" data-count="false" data-size="large" data-username="false"></span>
+                <!-- <div class="col-md-4 col-xs-3">
+                    <span class="ig-follow" data-id="a83ed5" data-handle="futbolecuadorcom" data-count="false" data-size="large" data-username="false"></span>
                     <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
 
-                </div>
-                <div class="col-md-4 col-xs-3 separadortw">
+                </div>-->
+                <div class="col-md-4 col-xs-3 ">
                     <a href="http://twitter.com/share" class="twitter-share-button"
                        data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
                        data-count="vertical" data-via="futbolecuador" data-lang="es"
@@ -42,7 +42,7 @@
                     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
                 </div>
 
-                <div class="col-md-0 col-xs-4 visible-xs-block margen0  ">
+                <div class="col-md-0 col-xs-3 visible-xs-block margen0  ">
                     <!--        Tag para watsapp-->
                     <a class='ssba'
                        data-action='share/whatsapp/share'
@@ -113,7 +113,7 @@
     </div>
 </div>
 <div class="col-md-12 column content-gris hidden-xs">
-    <div class="col-md-4 col-xs-4 column margen0 hidden">
+    <div class="col-md-4 col-xs-4 column margen0 hidden lecturas">
         Lecturas <?php echo $noticia->lecturas; ?>
     </div>
     <div class="col-md-12 col-xs-12 column margen0 text-right text-news-zone">

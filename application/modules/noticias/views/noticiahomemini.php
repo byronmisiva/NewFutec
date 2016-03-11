@@ -79,7 +79,7 @@ if (isset($story->openseccion)) {
         }
     }
     ?>
-    <div class="col-md-4 col-sm-4 column margen0 <?php echo $mostar; ?>">
+    <div class="col-md-4 col-sm-4 column margen0 <?php echo $mostar; ?> lecturas">
         Lecturas <?php echo $story->lecturas ?>
     </div>
     <div class="<?php echo $ancho;?> column margen0-noti text-right text-news-zone">

@@ -805,12 +805,12 @@ ul.headernavtabs {
 
 input.search[type=text] {
     height: 28px;
-    padding-left: 25px;
+    padding-left: 20px;
     text-decoration: none;
     background-image: url('../dummys/redes-buscar.jpg');
     background-repeat: no-repeat;
-    width: 154px;
-    border: 0;
+    width: 100%;
+    border: 1px solid #cccccc;
     font-size: 12px;
 }
 
