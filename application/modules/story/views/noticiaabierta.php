@@ -60,10 +60,18 @@
         <div class="ebzHere"></div>
         <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
             ?>
-            <div class="banerintermedio">
-
-                <?php echo $banerintermedio; ?>
+            <!-- ubicacion para relacionadas -->
+            <?php if (strlen($tagsStorys) > 3) { ?>
+            <div class="col-md-12 column content-gris ">
+                Leer también
             </div>
+            <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys">
+                <?php echo $tagsStorys; ?>
+                <br>
+            </div>
+			<br>
+        <?php } ?>
+            
 
         <?php }
         ?>
@@ -80,16 +88,10 @@
 
         <?php }
         ?>
-        <?php if (strlen($tagsStorys) > 3) { ?>
-
-            <div class="col-md-12 column content-gris ">
-                Leer también
+        <!-- ubicacion para banner anuncio -->
+        <div class="banerintermedio">
+                <?php echo $banerintermedio; ?>
             </div>
-            <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys">
-                <?php echo $tagsStorys; ?>
-            </div>
-
-        <?php } ?>
 
         <div class="margen10lados-sx noticia-body separador10 col-xs-12 col-md-12 ">
             <br/>
