@@ -272,6 +272,11 @@ class Banners extends MY_Controller
         return $this->load->view('fe_bigboxsidebar1_copaamerica', $data, TRUE);
     }
 
+    public function fe_video_banner($data = FALSE)
+    {
+    	return $this->load->view('fe_video_banner', $data, TRUE);
+    }
+    
 
     public function fe_netsonic_tv($data = FALSE)
     {
