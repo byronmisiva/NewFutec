@@ -29,15 +29,24 @@
 
 <script src="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.js') ?>"></script>
 
-<?php
-$idtipo = $this->uri->segment(2);
-$tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
-if (in_array($idtipo, $tipo)) { ?>
-    <script type="text/javascript"
-            src="http://as.tebz.io/api/choixPubJS.htm?pid=1134009&screenLayer=1&mode=NONE&home=http://www.futbolecuador.com"></script>
-    <?php
-}
-?>
+<!-- Codigo CAG inicio -->
+    <script data-cfasync="false" type="text/javascript">
+      (function (document, window) {
+                var c = document.createElement("script");
+                c.type = "text/javascript";
+                c.async = !0;
+                c.src = "//hipersushiads.com/scripts/57af6c29eb5a32f5f09b20ff22b3e0b9.min.js?20160329=" + Math.floor((new Date).getTime());
+                var a = !1;
+                try {
+                    a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+                } catch (e) {
+                    a = !1;
+                }
+                a || ( a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+                a.parentNode.insertBefore(c, a);
+            })(document, window);
+      </script>
+<!-- Codigo CAG fin -->
 
 <script type="text/javascript">
     $(document).ready(function () {
