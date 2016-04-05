@@ -201,7 +201,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $consulta = $this->db->query("SELECT valor FROM parametros WHERE id = '2'")->result();
         $data['mostrarSplash'] = $consulta[0]->valor;
 
-        $data['fe_scritp_footer'] = $this->banners->fe_netsonic_home();
+        //$data['fe_scritp_footer'] = $this->banners->fe_netsonic_home();
+        $data['fe_scritp_footer'] = $this->banners->fe_video_banner();
         //$data['fe_scritp_footer'] = "";
 
         $data['header1'] = $this->contenido->menu();
@@ -321,7 +322,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     public function noticia()
     {
         // para la final se comentan la llamada a las secciones.
-        $this->output->cache(CACHE_DEFAULT);
+       // $this->output->cache(CACHE_DEFAULT);
         $this->load->module('noticias');
         $this->load->module('templates');
         $this->load->module('contenido');
@@ -363,7 +364,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1") {
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(), $bannerBottom, $bannerTop);
         } else {
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv());
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_video_banner());
 //            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
         }
 
