@@ -1,5 +1,5 @@
 <?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id; ?>
-<style> .content-gris-sin-margin {margin-bottom: 10px !important;}</style>
+<style> .content-gris-sin-margin {margin-bottom: 10px !important;} .color-titular{color:#444444;}</style>
 
 <div class="row clearfix news-open separador10-xs noticiaabierta">
     <div class="col-md-12 ">
@@ -62,7 +62,7 @@
             <!-- ubicacion para relacionadas -->
             <?php if (strlen($tagsStorys) > 3) { ?>
             <div class="col-md-12 column content-gris ">
-                Leer también
+                <strong class="color-titular">Leer también</strong>  
             </div>
             <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys content-gris content-gris-sin-margin">
                 <?php echo $tagsStorys; ?>
