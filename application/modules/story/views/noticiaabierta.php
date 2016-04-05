@@ -1,4 +1,6 @@
 <?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id; ?>
+<style> .content-gris-sin-margin {margin-bottom: 10px !important;}</style>
+
 <div class="row clearfix news-open separador10-xs noticiaabierta">
     <div class="col-md-12 ">
         <div class="col-md-7 margen10r">
@@ -49,10 +51,7 @@
                        href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
                 </div>
-
-
-            </div>
-
+             </div>
         </div>
         <div class="margen10lados-sx  separador5">
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
@@ -67,7 +66,6 @@
             </div>
             <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys content-gris content-gris-sin-margin">
                 <?php echo $tagsStorys; ?>
-                
             </div>			
         <?php } ?>
             
