@@ -65,11 +65,10 @@
             <div class="col-md-12 column content-gris ">
                 Leer también
             </div>
-            <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys">
+            <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys content-gris">
                 <?php echo $tagsStorys; ?>
-                <br>
-            </div>
-			<br>
+                
+            </div>			
         <?php } ?>
             
 
