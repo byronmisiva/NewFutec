@@ -62,7 +62,6 @@ class Story extends MY_Controller
                 $data2 ['parametro'] = 1;
                 $data['banerintermedio'] = $this->banners->anuncio_alertas($data2);
                 break;
-
             }
         }
 
