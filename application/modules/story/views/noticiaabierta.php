@@ -1,19 +1,9 @@
 <?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id; ?>
 <style> .content-gris-sin-margin {margin-bottom: 10px !important;} .color-titular{color:#444444;} .p-l-20{padding-left:10px;}.titular-reciente{font-weight:bold;line-height: 18px;font-size: 13px;text-align:center;}
-.img-relacionada{height:80px;overflow:hidden;}
-.mg-n-10{margin-left: 0}
-@media screen and (max-width: 415px) {
-.img-relacionada{height:60px;overflow:hidden;}
-.img-relacionada > img {width: 70px;}
-.p-l-20{padding-left:0;}
-.mg-n-10{margin-left: 0;margin-bottom: 10px;height: 70px;padding-right: 3px;padding-left: 3px;}
-.titular-reciente{line-height: 16px;font-size: 12px;text-align:left;}
-}
-
-@media screen and (max-width: 361px) {
-	.mg-n-10 > a > img {margin-left: 0; margin-right: 0;}
-	.mg-n-10{padding-right: 0;padding-left: 0;}
-]
+.img-relacionada{height:80px;overflow:hidden;}.mg-n-10{margin-left: 0}@media screen and (max-width: 415px){.img-relacionada{height:60px;overflow:hidden;}.img-relacionada > img {width: 70px;}
+.p-l-20{padding-left:0;}.mg-n-10{margin-left: 0;margin-bottom: 10px;height: 70px;padding-right: 3px;padding-left: 3px;}
+.titular-reciente{line-height: 16px;font-size: 12px;text-align:left;}}
+@media screen and (max-width: 361px) {.mg-n-10 > a > img {margin-left: 0; margin-right: 0;}.mg-n-10{padding-right: 0;padding-left: 0;}]
 </style>
 
 <div class="row clearfix news-open separador10-xs noticiaabierta">
@@ -94,16 +84,13 @@
         <?php if (strpos($noticia->body, "Lee la noticia completa en")) {
             ?>
             <div class="banerintermedio">
-
                 <?php echo $banerintermedio; ?>
             </div>
 
         <?php }
         ?>
-        <!-- ubicacion para banner anuncio -->
-        <div class="banerintermedio">
-                <?php echo $banerintermedio; ?>
-            </div>
+        
+        
 
         <div class="margen10lados-sx noticia-body separador10 col-xs-12 col-md-12 ">
             <br/>
