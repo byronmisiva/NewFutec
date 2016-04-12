@@ -23,9 +23,8 @@ class Admin extends CI_Controller {
 			redirect('users/login');
 		}
 	}
-	
-	function index(){
-		
+			
+	function index(){		
 		$this->db->close();
     	$this->load->database('admin');
 		$data['title'] = "Administrador ";

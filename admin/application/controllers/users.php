@@ -259,16 +259,26 @@ class Users extends CI_Controller {
 			if ($this->form_validation->run() == TRUE){
 				if($this->acl->login($_POST['nick'],$_POST['password'])){
 					redirect('admin');
+					redirect('/admin/index');
 				}
-				else
+				else{
 				$data['login_errors']="<li>Usuario o clave incorrectos.</li>";
+				$this->template->set_template('acceso_admin');
+				$this->template->write('title','futbolecuador.com - Lo mejor del fútbol ecuatoriano',TRUE);
+				$this->template->write('path',base_url(),TRUE);
+				$this->template->write('menu','',TRUE);
+				$this->template->write_view('content', $this->model->name.'/login',$data, TRUE);
+				$this->template->write('block_left',"<div style='background-color: white; width:230px; height: 250px; margin-left:2px;'></div>",TRUE);
+				$this->template->write('block_right',"<div style='background-color: white; width:227px; height: 250px; margin-left:-1px;'></div>",TRUE);
+				$this->template->render();
+				}
 			}
 				
 		}
 		else{	
 			//Visualizacion
-			$this->template->set_template('public');
-	
+			//$this->template->set_template('public');			
+			$this->template->set_template('acceso_admin');
 			$this->template->write('title','futbolecuador.com - Lo mejor del fútbol ecuatoriano',TRUE);
 			$this->template->write('path',base_url(),TRUE);
 			$this->template->write('menu','',TRUE);
