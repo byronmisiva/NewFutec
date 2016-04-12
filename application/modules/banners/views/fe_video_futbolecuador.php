@@ -16,12 +16,15 @@ if (in_array($idtipo, $tipo)) { ?>
 
 <script type='text/javascript'>
 	function cerrarVideo(){
-		alert("cerrar");
 		$("#div-gpt-ad-1457102356654-0").toggle();
 	};	
 
-setTimeout(function(){ 
-	$("#div-gpt-ad-1457102356654-0").toggle();
-}, 400000);	
+	function tiempoCerrarBanner(){
+		$("#div-gpt-ad-1457102356654-0").toggle();
+	}
+
+	setTimeout(function(){ 
+		tiempoCerrarBanner()
+	}, 400000);	
 </script>
 <?php }?>
