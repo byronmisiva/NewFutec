@@ -17,19 +17,34 @@
 <?=$_styles ?>
 <link type="text/css" rel="stylesheet" href="<?=$path ?>css/modalbox_admin.css" />
 <link type="text/css" rel="stylesheet" href="<?=$path ?>css/main.css" />
+<style>
+	body, html {
+		font-family: Arial;
+	}
+</style>
 
 
 </head>
 <body>
+<div style="position:relative; width: 950px; height: auto;margin: 15px auto;">
+	<div style="float:left;margin:0;">
+		<a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 150);?>'>
+    		<img src="http://www.futbolecuador.com/assets/img/logotipo.png" width="285" height="33" border='0' alt='' />
+    	</a>
+    </div>
+</div>
 <table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td width="100%"><div align="right"><a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 15);?>'><img src="<?=$path?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /></a></div></td>
+    <td width="100%"><div align="left"><a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 150);?>'>
+    <!-- <img src="<?=base_url()?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /> -->
+    <!-- <img src="http://www.futbolecuador.com/assets/img/logotipo.png" width="285" height="33" border='0' alt='' />-->
+    </a></div></td>
   </tr>
     <tr>
-        <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarImagen' target="_blank"><span style="color: #fff; font-size:11px;font-family:  Arial, Verdana">Generar Marcador</span> </a></div></td>
+        <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarImagen' target="_blank"><span style="color: #fff; font-size:14px;font-family:  Arial, Verdana">Generar Marcador</span> </a></div></td>
     </tr>
     <tr>
-        <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarTabla' target="_blank"><span style="color: #fff; font-size:11px;font-family:  Arial, Verdana">Generar Tabla Posiciones A</span> </a></div></td>
+        <td width="100%"><div align="right"><a href='http://new.futbolecuador.com/getmarcador/generar/generarTabla' target="_blank"><span style="color: #fff; font-size:12px;font-family:  Arial, Verdana">Generar Tabla Posiciones A</span> </a></div></td>
     </tr>
   <tr>
     <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">

@@ -17,13 +17,17 @@
 <script type="text/javascript" src="<?=base_url()?>js/tiny_conf.js"></script>
 <link type="text/css" rel="stylesheet" href="<?=base_url()?>css/modalbox_admin.css" />
 <link type="text/css" rel="stylesheet" href="<?=base_url()?>css/main.css" />
-
+<style>body, html{font-family: Arial !important;}</style>
 
 </head>
 <body>
 <table style='width:1100; border:0px; margin:0 auto; border-spacing:0; border-collapse:collapse;' >
   <tr>
-    <td width="100%"><div align="right"><a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 15);?>'><img src="<?=base_url()?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /></a></div></td>
+    <td width="100%"><div align="right"><a href='http://www.futbolecuador.com/site/home/<?php echo rand(5, 150);?>'>
+    <!-- <img src="<?=base_url()?>imagenes/titulo.jpg" width="525" height="76" border='0' alt='' /> -->
+    <img src="http://www.futbolecuador.com/assets/img/logotipo.png" width="525" height="76" border='0' alt='' />
+    
+    </a></div></td>
   </tr>
   <tr>
     <td bgcolor="#FFFFFF"><table style='width:100%; border:0px;  border-spacing:0; border-collapse:collapse;'>
