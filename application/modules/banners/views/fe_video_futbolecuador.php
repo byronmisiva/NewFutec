@@ -7,23 +7,21 @@ if (in_array($idtipo, $tipo)) { ?>
 </style>
  <!-- /1022247/NEW_FE_Video_VAST -->
 <div id='div-gpt-ad-1457102356654-0' style='height:auto; width:670px;min-height: 10px;float: left;'>
-	<div class="cerrar">CERRAR</div>
+	<div class="cerrar" onclick="cerrarVideo()">CERRAR</div>
 	<script type='text/javascript'>
 		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1457102356654-0'); });
 	</script>
 	
 </div>
 
-<script>
-$(document).ready(function(){
-	$(".cerrar").click(function(){
+<script type='text/javascript'>
+	function cerrarVideo(){
+		alert("cerrar");
 		$("#div-gpt-ad-1457102356654-0").toggle();
-	});
-	
+	};	
 
-});
 setTimeout(function(){ 
-	$("#div-gpt-ad-1457102356654-0").toggle();;
+	$("#div-gpt-ad-1457102356654-0").toggle();
 }, 400000);	
 </script>
 <?php }?>
