@@ -321,7 +321,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function noticia()
     {
-        // para la final se comentan la llamada a las secciones.
+       // para la final se comentan la llamada a las secciones.
        // $this->output->cache(CACHE_DEFAULT);
         $this->load->module('noticias');
         $this->load->module('templates');
@@ -361,10 +361,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (($idNoticia == 'ref.outcontrol') or ($idNoticia == ''))
             redirect('home');
 
-        if ($this->verificarDispositivo() == "1") {
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas(), $bannerBottom, $bannerTop);
+        if ($this->verificarDispositivo() == "1") {  
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_splash_g13(), $bannerBottom, $bannerTop);
         } else {
-            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_video_banner());
+            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_splash_g13(),"","",$this->banners->fe_video_banner());
 //            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
         }
 
