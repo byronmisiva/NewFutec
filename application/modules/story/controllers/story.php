@@ -32,10 +32,8 @@ class Story extends MY_Controller
     }
 
 
-    function get_complete($id, $banerintermedio = "", $bannerBottom = "", $bannerTop = "")
+    function get_complete($id, $banerintermedio = "", $bannerBottom = "", $bannerTop = "", $videoBanner = "")
     {
-
-
         $this->mdl_story->cuentaVisita($id);
         $this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
@@ -53,7 +51,7 @@ class Story extends MY_Controller
         $data['bannerTop'] = $bannerTop;
 
         $data['banerintermedio'] = $banerintermedio;
-
+        $data['videoPublicidad'] = $videoBanner;
         //sobre escribo el banner intermedio en caso de que tenga tag AlertasFutbolecuador
         $listtags = $noticia->tags;
          foreach ($listtags  as   $tag) {
@@ -64,10 +62,7 @@ class Story extends MY_Controller
                 break;
             }
         }
-
-
         $data['autor'] = $this->get_author($noticia->author_id);
-
         // noticias por tag
         $tags = "";
         foreach ($noticia->tags as $key => $tag) {
@@ -75,10 +70,11 @@ class Story extends MY_Controller
                 $tags = $tags . "'" . $tag->name . "'";
             }
         }
-
         $tags = str_replace("''", "','", $tags );
         $data['tagsStorys'] = $this->noticias->viewTags("Noticias Relacionadas", $tags, 0, "noticia", 4, 0, false, false, $id);
         // fin noticias por tag
+        
+        
 
         //La Voz de las Tribunas
         $this->load->module('noticias');
