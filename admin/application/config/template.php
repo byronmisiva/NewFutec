@@ -92,6 +92,27 @@ $template['public']['parser'] = 'parser';
 $template['public']['parser_method'] = 'parse';
 $template['public']['parse_template'] = FALSE;
 
+$template['acceso_admin']['template'] = 'templates/acceso_admin';
+$template['acceso_admin']['regions'] = array(
+		'metatags',
+		'title',
+		'header',
+		'metas',
+		'descripcion',
+		'menu',
+		'content',
+		'block_left',
+		'block_right',
+		'footer',
+		'path',
+		'rotativas',
+		'onload',
+		'section'
+);
+$template['acceso_admin']['parser'] = 'parser';
+$template['acceso_admin']['parser_method'] = 'parse';
+$template['acceso_admin']['parse_template'] = FALSE;
+
 $template['public2']['template'] = 'templates/public2';
 $template['public2']['regions'] = array(
     'metatags',
