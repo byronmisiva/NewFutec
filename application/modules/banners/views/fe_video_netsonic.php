@@ -3,6 +3,7 @@ $idtipo = $this->uri->segment(2);
 $tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
 if (in_array($idtipo, $tipo)) { ?>
 <div class="col-md-12  col-xs-12">
+	<div id="netsonic_divid_target"></div>
     <!-- NETSONIC.TV - ALL IN ONE (Intext) VIDEO 1.0 -->
     <script type="text/javascript">
         var NS_allinone_options = {
@@ -36,7 +37,6 @@ if (in_array($idtipo, $tipo)) { ?>
         };
     </script>
     <!-- !NETSONIC.TV - ALL IN ONE (Intext) VIDEO 1.0 -->
-    <div id="netsonic_divid_target"></div>
 </div>
 <?php }else {?>
 	<div id="netsonic"></div>
