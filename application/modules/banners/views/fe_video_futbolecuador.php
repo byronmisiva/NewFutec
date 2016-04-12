@@ -21,6 +21,6 @@ if (in_array($idtipo, $tipo)) { ?>
 
 	setTimeout(function(){ 
 		$("#div-gpt-ad-1457102356654-0").toggle();
-	}, 40000);	
+	}, 45000);	
 </script>
 <?php }?>
