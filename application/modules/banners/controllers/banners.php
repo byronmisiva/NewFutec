@@ -277,11 +277,18 @@ class Banners extends MY_Controller
     	return $this->load->view('fe_video_banner', $data, TRUE);
     }
     
+    public function fe_splash_g13($data = FALSE)
+    {
+    	return $this->load->view('fe_splash_g13.php', $data, TRUE);
+    }
+    
 
     public function fe_netsonic_tv($data = FALSE)
     {
         return $this->load->view('fe_netsonic_tv', $data, TRUE);
     }
+    
+    
 
     public function fe_netsonic_home($data = FALSE)
     {
