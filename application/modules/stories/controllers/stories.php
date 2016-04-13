@@ -106,6 +106,83 @@ class Stories extends MY_Controller
         return $cadena ;
     }
 
+    
+    function rssRotativas(){
+    	$this->config->set_item('compress_output', 'FALSE');
+    	$data['name'] = 'XML RSS';
+    	$data['views'] = 1;
+    	$this->sum($data);
+    	header('Content-type: text/xml; charset=utf-8');
+    	$request = '<?xml version="1.0" encoding="UTF-8"?>
+			  <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+			  <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+					     xmlns:atom="http://www.w3.org/2005/Atom"
+					     xmlns:media="http://search.yahoo.com/mrss/"
+					     xmlns:dc="http://purl.org/dc/elements/1.1/"
+					     xmlns:georss="http://www.georss.org/georss">
+					<channel>
+					<atom:link rel="hub" href="http://www.futbolecuador.com" />
+					<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+					<title>futbolecuador.com</title>
+					<link>http://www.futbolecuador.com</link>
+					<description><![CDATA[Futbol del Ecuador y del mundo]]></description>
+					<image>
+						<title>futbolecuador.com</title>
+						<link>http://www.futbolecuador.com</link>
+						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
+					</image>
+					<language>es-ec</language>
+					<pubDate>' . date('r', time()) . '</pubDate>
+				 ';    	
+    	$news = $this->mdl_stories->rssnewRotativas();    	
+    	
+    	foreach ($news as $row):
+            $posicionInicio = 0;
+            $texto = strip_tags($row->body);
+            $texto = (string)$texto;
+            $total = strlen($texto);
+            $posicionInicio = strpos($texto, "iframe");
+            if ($posicionInicio > 0) {
+                $video = substr($texto, $posicionInicio, $total);
+                $posicionInicio = (int)$posicionInicio - 4;
+                $texto2 = substr($texto, 0, $posicionInicio);
+                $video = "<figure><" . $video . "</figure>";
+            } else {
+                $texto2 = strip_tags ($row->body);
+                $video = "";
+            }
+
+            $linkbody = $row->subtitle;
+            if ($linkbody == "") {
+                $linkbody = $row->title;
+            }
+
+            $request = $request . '
+				<item>
+				  <title>' . $row->title . '</title>
+ 	      			  <link>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</link>
+	      			  <guid>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</guid>
+	      			  <pubDate>' . date('r', $row->ntime) . '</pubDate>
+				  	  <author>info@futbolecuador.com</author>
+	      			  <description><![CDATA[<img src="http://www.futbolecuador.com/' . $row->thumb640 . '"/><br>' . $row->lead . '<span>&nbsp;</span>]]></description>
+	      			  <content:encoded><![CDATA[
+				        <figure>
+				          <img src="http://www.futbolecuador.com/' . $row->thumb640 . '"  />
+				          <figcaption>
+
+				          </figcaption>
+				        </figure>
+				        <p>' . $texto2 . '</p>
+					  ' . $video . '
+					]]>
+				  </content:encoded>
+				</item>';
+        endforeach;
+    	$request = $request . '
+			</channel></rss>';
+    	print $request;
+    	
+    }
 
     function rssmarcador()
     {
