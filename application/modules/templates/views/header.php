@@ -156,16 +156,17 @@
     }
     }
     ?>
+    <!-- edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    
     <script>
         var baseUrl = "<?php echo base_url(); ?>";
         var REFRESH_VIVO = "<?php echo REFRESH_VIVO; ?>";
     </script>
     <!--   script teads  se muestra cuando es noticia abierta-->
 
-
-
 </head>
-<body>
+<body onload="verificarInstlacion();cargarSplash();">
 
 
 <script type='text/javascript'>

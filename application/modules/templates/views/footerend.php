@@ -1,3 +1,40 @@
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>coke/edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-28231535 { visibility:hidden; }
+    </style>
+    <script>
+    AdobeEdge.loadComposition(baseUrl+'coke/union_layer', 'EDGE-28231535', {
+	    scaleToFit: "none",
+	    centerStage: "none",
+	    minW: "0px",
+	    maxW: "undefined",
+	    width: "1330px",
+	    height: "600px"
+	}, {dom: [ ]}, {dom: [ ]});	
+    </script>
+<div class="pbl-union" style="height: 100%;left: 0;position: fixed;top: 0;
+    width: 100%;
+    z-index: 100000000;display:none;">
+    <div style="margin: 155px auto;position: relative;width: 1320px;height: auto;background-color: transparent !important;" id="pbl-coke">
+    	<div id="Stage" class="EDGE-28231535"></div>
+    </div>
+	
+</div>
+<<script type="text/javascript">
+function activarPbl(){	
+	$(".pbl-union").fadeIn();	
+		 
+		 $(".Stage_boton_abre_id").click();
+    
+	
+}
+
+
+	
+</script>
+
+
+
 <!-- Bootstrap core JavaScript-->
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
@@ -8,7 +45,6 @@
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=13') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/notificacion.js') ?>"></script>
-
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
