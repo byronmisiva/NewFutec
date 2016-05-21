@@ -7,7 +7,13 @@
     </script>
 </div>
 
-<div  class="desplegable-alertas col-md-12 col-xs-12 col-sm-12  margen0">
+<div class="grande col-md-12 col-xs-12 col-sm-12  margen0" style="display: none;width: 100%;height: auto;background-color: #000;">
+	<video id="splash-video" controls style="width:100%;" webkit-playsinline>
+		  <source src="http://futbolecuador.com/futbolecuador_html5/xmen/media/XMA_2.mp4" style="width: 100%;" type="video/mp4">
+	</video>
+
+</div>
+<!--  <div  class="desplegable-alertas col-md-12 col-xs-12 col-sm-12  margen0">
     <div  class="desplegable-alertas-conten  ">
 
         <div class=" margen0 despimglogo">
@@ -52,11 +58,23 @@
         width: 244px;
         margin: 15px auto 0 ;
     }
-</style>
-
+</style>-->
 <script type="text/javascript">
-    function see_fold() {
-        $(".desplegable-alertas").toggle( );
-    }
+    var sw=0;
+    var vid= document.getElementById("splash-video");
+    function playVideoNew(){
+        if (sw == 0){
+        	sw = 1;
+        	vid.play();	
+        }else if(sw==1){
+        	sw=0;
+        	vid.pause();
+         }
+        $(".grande").toggle();
+     }   
+
+/*    setTimeout(function(){ 
+    	playVideoNew();
+     }, 61000); */
 
 </script>
