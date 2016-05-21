@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+article > header > h1{
+	font-size: 18px;
+	font-family: Helvetica;
+	color:red;
+}
+
+article > p{
+	font-size:14px;
+	font-family: Helvetica;
+	color:red;
+}
+
+.op-medium{
+	font-size:16px;
+	color:red;
+}
