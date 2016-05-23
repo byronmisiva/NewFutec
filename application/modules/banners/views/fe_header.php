@@ -6,8 +6,7 @@
 </div>
 
 <script type="text/javascript">
-function ampliarSeparador(){
-	console.log("pantalla:"+screen.width);
+function ampliarSeparador(){	
 	if(screen.width < 600){
 		$(".separador10-xs").css("margin-top","101px");
 	}
