@@ -19,26 +19,29 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       });
       //Edge binding end
- 
+
+      
+
+      
+
+      
+
+      
 
       Symbol.bindElementAction(compId, symbolName, "${cerrar2}", "click", function(sym, e) {
          // insert code for mouse click here
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
+         
          setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
          }, 1500);
-         
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5000, function(sym, e) {
-         
-         sym.stop();
 
       });
       //Edge binding end
+
+      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
          // insert code here
@@ -58,14 +61,15 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          // insert code here
-         sym.stop();
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${boton_abre}", "click", function(sym, e) {
-         // insert code for mouse click here
-         sym.play();
+         
+         // Play the timeline at a label or specific time. For example:
+         // sym.play(500); or sym.play("myLabel");
+         sym.play("inicio");
          
 
       });
@@ -84,11 +88,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
-         
          setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
          }, 1500);
-         
+
       });
          //Edge binding end
 

@@ -31,14 +31,14 @@
                             id: 'tapa_izq',
                             type: 'rect',
                             rect: ['1px', '0px', '160px', '600px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,0.00)"],
+                            fill: ["rgba(255,255,255,1.00)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
                             id: 'tapa_der',
                             type: 'rect',
                             rect: ['1170px', '0px', '160px', '600px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,0.00)"],
+                            fill: ["rgba(255,255,255,1.00)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
@@ -77,7 +77,7 @@
                             id: 'cerrar2',
                             symbolName: 'cerrar',
                             type: 'rect',
-                            rect: ['1073', '5', '32', '32', 'auto', 'auto'],
+                            rect: ['1064px', '10px', '32', '32', 'auto', 'auto'],
                             cursor: 'pointer',
                             opacity: '0'
                         },
@@ -136,7 +136,8 @@
                         {
                             id: 'boton_abre',
                             type: 'rect',
-                            rect: ['642px', '-141px', '93px', '105px', 'auto', 'auto'],
+                            rect: ['973px', '16px', '24px', '27px', 'auto', 'auto'],
+                            opacity: '0',
                             fill: ["rgba(242,10,10,1.00)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         }
@@ -146,7 +147,7 @@
                             isStage: true,
                             rect: ['null', 'null', '1330px', '600px', 'auto', 'auto'],
                             overflow: 'hidden',
-                            fill: ["rgba(255,255,255,0.00)"]
+                            fill: ["rgba(0,0,0,0.00)"]
                         }
                     }
                 },
@@ -154,6 +155,7 @@
                     duration: 5000,
                     autoPlay: true,
                     labels: {
+                        "inicio": 0,
                         "play": 3343
                     },
                     data: [
@@ -438,24 +440,24 @@
                             '0'
                         ],
                         [
-                            "eid21",
-                            "height",
-                            250,
-                            1157,
+                            "eid82",
+                            "left",
+                            0,
+                            3656,
                             "easeOutQuad",
-                            "${fondo_derecha}",
-                            '609px',
-                            '859px'
+                            "${cerrar2}",
+                            '1064px',
+                            '1073px'
                         ],
                         [
-                            "eid28",
-                            "height",
-                            3843,
-                            1157,
+                            "eid63",
+                            "left",
+                            3656,
+                            94,
                             "easeOutQuad",
-                            "${fondo_derecha}",
-                            '859px',
-                            '609px'
+                            "${cerrar2}",
+                            '1073px',
+                            '1076px'
                         ],
                         [
                             "eid81",
@@ -488,24 +490,24 @@
                             '0'
                         ],
                         [
-                            "eid4",
-                            "left",
-                            250,
-                            1144,
+                            "eid83",
+                            "top",
+                            0,
+                            3656,
                             "easeOutQuad",
-                            "${mask_izquierda}",
-                            '0px',
-                            '265px'
+                            "${cerrar2}",
+                            '10px',
+                            '5px'
                         ],
                         [
-                            "eid10",
-                            "left",
-                            3843,
-                            1157,
+                            "eid64",
+                            "top",
+                            3656,
+                            94,
                             "easeOutQuad",
-                            "${mask_izquierda}",
-                            '265px',
-                            '0px'
+                            "${cerrar2}",
+                            '5px',
+                            '-46px'
                         ],
                         [
                             "eid18",
@@ -548,24 +550,44 @@
                             '-5px'
                         ],
                         [
-                            "eid64",
-                            "top",
-                            3656,
-                            94,
+                            "eid4",
+                            "left",
+                            250,
+                            1144,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '5px',
-                            '-46px'
+                            "${mask_izquierda}",
+                            '0px',
+                            '265px'
                         ],
                         [
-                            "eid63",
+                            "eid10",
                             "left",
-                            3656,
-                            94,
+                            3843,
+                            1157,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '1073px',
-                            '1076px'
+                            "${mask_izquierda}",
+                            '265px',
+                            '0px'
+                        ],
+                        [
+                            "eid21",
+                            "height",
+                            250,
+                            1157,
+                            "easeOutQuad",
+                            "${fondo_derecha}",
+                            '609px',
+                            '859px'
+                        ],
+                        [
+                            "eid28",
+                            "height",
+                            3843,
+                            1157,
+                            "easeOutQuad",
+                            "${fondo_derecha}",
+                            '859px',
+                            '609px'
                         ]
                     ]
                 }
@@ -582,23 +604,23 @@
                         {
                             rect: ['0px', '0px', '32px', '32px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
-                            opacity: '1',
-                            id: 'cerrar',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'cerrar',
+                            opacity: '1',
                             type: 'ellipse',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                             rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
+                            transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
                             rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
+                            transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
                             id: 'Rectangle2Copy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
@@ -629,10 +651,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'video',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
                             fill: ['rgba(192,192,192,1)']
                         }
                     ],
