@@ -4,8 +4,8 @@
 
     "use strict";
     var im=baseUrl+'coke/images/',
-        aud= baseUrl+'coke/media/',
-        vid= baseUrl+'coke/media/',
+        aud= baseUrl+'coke/video/',
+        vid= baseUrl+'coke/video/',
         js= baseUrl+'coke/js/',
         fonts = {
         },
