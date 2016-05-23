@@ -1,20 +1,17 @@
 //fe header movil
-setTimeout(function () {
-//  cargarSplash();
-}, 4000);
+/*setTimeout(function () {
+  cargarSplash();
+}, 4000);*/
 
-setTimeout(function () {
+/*setTimeout(function () {
     cargarSplash();
-}, 5000);
+}, 5000);*/
 
 setTimeout(function () {
     cargarSplash();
 }, 6000);
 
-
 var masnoticas = "";
-
-
 //inicio funciones splash
 function cargarSplashFE() {
     //if ((verMobile == 1 ) && (uri == "movil")) {
@@ -25,7 +22,6 @@ function cargarSplashFE() {
         $('#darkLayerFE').hide();
         $('#FE_LOADINGFE').hide();
     })
-
     //}
 };
 
