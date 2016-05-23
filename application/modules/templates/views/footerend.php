@@ -16,15 +16,8 @@
 	    	z-index: 100000000;display:none;
         }
     </style>
-    
-<div class="pbl-union" >
-    <div id="pbl-coke">
-    	<div id="Stage" class="EDGE-28231535"></div>
-    </div>
-</div>
-<script type="text/javascript">
-function activarPbl(){
-	AdobeEdge.loadComposition(baseUrl+'coke/union_layer', 'EDGE-28231535', {
+    <script>
+    AdobeEdge.loadComposition(baseUrl+'coke/union_layer', 'EDGE-28231535', {
 	    scaleToFit: "none",
 	    centerStage: "none",
 	    minW: "0px",
@@ -32,6 +25,14 @@ function activarPbl(){
 	    width: "1330px",
 	    height: "600px"
 	}, {dom: [ ]}, {dom: [ ]});	
+    </script>
+<div class="pbl-union" >
+    <div id="pbl-coke">
+    	<div id="Stage" class="EDGE-28231535"></div>
+    </div>
+</div>
+<script type="text/javascript">
+function activarPbl(){
 	$("#div-gpt-ad-1450734059657-0").hide();
 	$("#div-gpt-ad-1450734059657-1").hide();
 	$(".pbl-union").fadeIn();
