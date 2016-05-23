@@ -202,11 +202,11 @@ jQuery(document).ready(function () {
                 if ($(window).scrollTop() > 150) {
                     $(".skyscraper_iz").addClass('lateral-fijo');
                     $(".skyscraper_de").addClass('lateral-fijo');
-                    $("#pbl-coke").css({"margin-top":"10px!important"});                    
+                    $("#pbl-coke").css("margin-top":"10px");                    
                 } else {
                     $(".skyscraper_iz").removeClass('lateral-fijo');
                     $(".skyscraper_de").removeClass('lateral-fijo');
-                    $("#pbl-coke").css({"margin-top":"160px!important"});
+                    $("#pbl-coke").css("margin-top":"160px");
                 }
 
             });
