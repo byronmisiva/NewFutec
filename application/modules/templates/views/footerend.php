@@ -33,6 +33,14 @@
 </div>
 <script type="text/javascript">
 function activarPbl(){
+	AdobeEdge.loadComposition(baseUrl+'coke/union_layer', 'EDGE-28231535', {
+	    scaleToFit: "none",
+	    centerStage: "none",
+	    minW: "0px",
+	    maxW: "undefined",
+	    width: "1330px",
+	    height: "600px"
+	}, {dom: [ ]}, {dom: [ ]});	
 	$("#div-gpt-ad-1450734059657-0").hide();
 	$("#div-gpt-ad-1450734059657-1").hide();
 	$(".pbl-union").fadeIn();
