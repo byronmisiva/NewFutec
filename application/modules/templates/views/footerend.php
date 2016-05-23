@@ -22,11 +22,8 @@
 </div>
 <<script type="text/javascript">
 function activarPbl(){	
-	$(".pbl-union").fadeIn();	
-		 
-		 $(".Stage_boton_abre_id").click();
-    
-	
+	$(".pbl-union").fadeIn();
+	$(".Stage_boton_abre_id").click();	
 }
 
 
