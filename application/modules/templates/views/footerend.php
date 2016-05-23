@@ -16,9 +16,7 @@
 	    	z-index: 100000000;display:none;
         }
     </style>
-    <script>
     
-    </script>
 <div class="pbl-union" >
     <div id="pbl-coke">
     	<div id="Stage" class="EDGE-28231535"></div>
