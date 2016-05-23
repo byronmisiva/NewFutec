@@ -4,9 +4,9 @@
 
     "use strict";
     var im=baseUrl+'coke/images/',
-        aud=baseUrl+'coke/media/',
-        vid=baseUrl+'coke/media/',
-        js=baseUrl+'coke/js/',
+        aud= baseUrl+'coke/media/',
+        vid= baseUrl+'coke/media/',
+        js= baseUrl+'coke/js/',
         fonts = {
         },
         opts = {
@@ -27,20 +27,6 @@
                 resizeInstances: false,
                 content: {
                     dom: [
-                        {
-                            id: 'tapa_izq',
-                            type: 'rect',
-                            rect: ['1px', '0px', '160px', '600px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
-                        {
-                            id: 'tapa_der',
-                            type: 'rect',
-                            rect: ['1170px', '0px', '160px', '600px', 'auto', 'auto'],
-                            fill: ["rgba(255,255,255,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
-                        },
                         {
                             id: 'mask_izquierda',
                             type: 'rect',
@@ -440,24 +426,24 @@
                             '0'
                         ],
                         [
-                            "eid82",
-                            "left",
-                            0,
-                            3656,
+                            "eid21",
+                            "height",
+                            250,
+                            1157,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '1064px',
-                            '1073px'
+                            "${fondo_derecha}",
+                            '609px',
+                            '859px'
                         ],
                         [
-                            "eid63",
-                            "left",
-                            3656,
-                            94,
+                            "eid28",
+                            "height",
+                            3843,
+                            1157,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '1073px',
-                            '1076px'
+                            "${fondo_derecha}",
+                            '859px',
+                            '609px'
                         ],
                         [
                             "eid81",
@@ -490,24 +476,24 @@
                             '0'
                         ],
                         [
-                            "eid83",
-                            "top",
-                            0,
-                            3656,
+                            "eid4",
+                            "left",
+                            250,
+                            1144,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '10px',
-                            '5px'
+                            "${mask_izquierda}",
+                            '0px',
+                            '265px'
                         ],
                         [
-                            "eid64",
-                            "top",
-                            3656,
-                            94,
+                            "eid10",
+                            "left",
+                            3843,
+                            1157,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '5px',
-                            '-46px'
+                            "${mask_izquierda}",
+                            '265px',
+                            '0px'
                         ],
                         [
                             "eid18",
@@ -550,44 +536,44 @@
                             '-5px'
                         ],
                         [
-                            "eid4",
+                            "eid83",
+                            "top",
+                            0,
+                            3656,
+                            "easeOutQuad",
+                            "${cerrar2}",
+                            '10px',
+                            '5px'
+                        ],
+                        [
+                            "eid64",
+                            "top",
+                            3656,
+                            94,
+                            "easeOutQuad",
+                            "${cerrar2}",
+                            '5px',
+                            '-46px'
+                        ],
+                        [
+                            "eid82",
                             "left",
-                            250,
-                            1144,
+                            0,
+                            3656,
                             "easeOutQuad",
-                            "${mask_izquierda}",
-                            '0px',
-                            '265px'
+                            "${cerrar2}",
+                            '1064px',
+                            '1073px'
                         ],
                         [
-                            "eid10",
+                            "eid63",
                             "left",
-                            3843,
-                            1157,
+                            3656,
+                            94,
                             "easeOutQuad",
-                            "${mask_izquierda}",
-                            '265px',
-                            '0px'
-                        ],
-                        [
-                            "eid21",
-                            "height",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '609px',
-                            '859px'
-                        ],
-                        [
-                            "eid28",
-                            "height",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '859px',
-                            '609px'
+                            "${cerrar2}",
+                            '1073px',
+                            '1076px'
                         ]
                     ]
                 }
@@ -604,23 +590,23 @@
                         {
                             rect: ['0px', '0px', '32px', '32px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'cerrar',
                             opacity: '1',
+                            id: 'cerrar',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'ellipse',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
+                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
+                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             id: 'Rectangle2Copy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
@@ -651,10 +637,10 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
                             id: 'video',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(192,192,192,1)']
                         }
                     ],

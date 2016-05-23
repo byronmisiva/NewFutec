@@ -33,7 +33,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
-         
          setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
         	 $("#div-gpt-ad-1450734059657-0").show();
@@ -45,13 +44,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
-         // insert code here
-         // Play a video track 
-         sym.$("video")[0].play();
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3750, function(sym, e) {
          // insert code here
@@ -61,17 +54,17 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         // insert code here
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindElementAction(compId, symbolName, "${boton_abre}", "click", function(sym, e) {
          
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("inicio");
+         
+         // Play a video track 
+         sym.$("video")[0].play();
+         
          
 
       });
@@ -90,10 +83,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
+         
          setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
+        	 $("#div-gpt-ad-1450734059657-0").show();
+        	 $("#div-gpt-ad-1450734059657-1").show();
          }, 1500);
-
       });
          //Edge binding end
 
