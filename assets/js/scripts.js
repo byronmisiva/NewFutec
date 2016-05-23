@@ -133,6 +133,7 @@ function cargarSplash() {
 var cleanBlackLayer = function () {
     $('#darkLayer').hide();
     $('#FE_LOADING').hide();
+    $("#div-gpt-ad-1425424774921-0").html("");
     //si no existe cargar splash de fe
 };
 
