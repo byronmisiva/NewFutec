@@ -1,7 +1,6 @@
 /*jslint */
 /*global AdobeEdge: false, window: false, document: false, console:false, alert: false */
 (function (compId) {
-
     "use strict";
     var im=baseUrl+'coke/images/',
         aud= baseUrl+'coke/video/',
@@ -116,7 +115,7 @@
                             tag: 'video',
                             rect: ['568px', '201px', '480px', '334px', 'auto', 'auto'],
                             opacity: '0',
-                            source: [vid+"video.mp4"],
+                            source: [vid+"video.mp4?frefresh=32164"],
                             preload: 'auto'
                         },
                         {
