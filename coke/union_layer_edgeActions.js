@@ -36,6 +36,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
+        	 $("#div-gpt-ad-1450734059657-0").show();
+        	 $("#div-gpt-ad-1450734059657-1").show();
          }, 1500);
 
       });
