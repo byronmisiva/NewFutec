@@ -17,14 +17,7 @@
         }
     </style>
     <script>
-    AdobeEdge.loadComposition(baseUrl+'coke/union_layer', 'EDGE-28231535', {
-	    scaleToFit: "none",
-	    centerStage: "none",
-	    minW: "0px",
-	    maxW: "undefined",
-	    width: "1330px",
-	    height: "600px"
-	}, {dom: [ ]}, {dom: [ ]});	
+    
     </script>
 <div class="pbl-union" >
     <div id="pbl-coke">
