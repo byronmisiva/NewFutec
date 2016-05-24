@@ -28,14 +28,6 @@
                 content: {
                     dom: [
                         {
-                            id: 'cerrar2',
-                            symbolName: 'cerrar',
-                            type: 'rect',
-                            rect: ['1074px', '10px', '32', '32', 'auto', 'auto'],
-                            cursor: 'pointer',
-                            opacity: '0'
-                        },
-                        {
                             id: 'boton_abre',
                             type: 'rect',
                             rect: ['973px', '16px', '24px', '27px', 'auto', 'auto'],
@@ -44,53 +36,32 @@
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
-                            id: '_160x600',
+                            id: '_160x600_1',
                             type: 'image',
-                            rect: ['265px', '0', '160px', '600px', 'auto', 'auto'],
+                            rect: ['270px', '0px', '160px', '600px', 'auto', 'auto'],
                             opacity: '1',
                             fill: ["rgba(0,0,0,0)",im+"160x600.jpg",'0px','0px']
                         },
                         {
-                            id: '_160x600Copy',
+                            id: '_160x600_2',
                             type: 'image',
-                            rect: ['905px', '0', '160px', '600px', 'auto', 'auto'],
+                            rect: ['900px', '0px', '160px', '600px', 'auto', 'auto'],
                             opacity: '1',
                             fill: ["rgba(0,0,0,0)",im+"160x600.jpg",'0px','0px']
                         },
                         {
-                            id: 'RectangleCopy',
-                            type: 'rect',
-                            rect: ['265px', '0px', '162px', '600px', 'auto', 'auto'],
-                            overflow: 'hidden',
+                            id: 'desplegado_1',
+                            type: 'image',
+                            rect: ['261px', '0px', '800px', '600px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(192,192,192,1)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"],
-                            c: [
-                            {
-                                id: 'desplegado',
-                                type: 'image',
-                                rect: ['0px', '0', '800px', '600px', 'auto', 'auto'],
-                                opacity: '0',
-                                fill: ["rgba(0,0,0,0)",im+"desplegado.jpg",'0px','0px']
-                            }]
+                            fill: ["rgba(0,0,0,0)",im+"desplegado.jpg",'0px','0px']
                         },
                         {
-                            id: 'Rectangle',
-                            type: 'rect',
-                            rect: ['651px', '0px', '167px', '600px', 'auto', 'auto'],
-                            overflow: 'hidden',
+                            id: 'desplegado_2',
+                            type: 'image',
+                            rect: ['261px', '0px', '800px', '600px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(192,192,192,1)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"],
-                            c: [
-                            {
-                                id: 'desplegadoCopy3',
-                                type: 'image',
-                                rect: ['-384px', '0', '800px', '600px', 'auto', 'auto'],
-                                overflow: 'visible',
-                                opacity: '1',
-                                fill: ["rgba(0,0,0,0)",im+"desplegado.jpg",'0px','0px']
-                            }]
+                            fill: ["rgba(0,0,0,0)",im+"desplegado.jpg",'0px','0px']
                         },
                         {
                             id: 'video',
@@ -101,6 +72,14 @@
                             opacity: '0',
                             source: [vid+"video.mp4"],
                             preload: 'auto'
+                        },
+                        {
+                            id: 'cerrar2',
+                            symbolName: 'cerrar',
+                            type: 'rect',
+                            rect: ['1074px', '10px', '32', '32', 'auto', 'auto'],
+                            cursor: 'pointer',
+                            opacity: '0'
                         }
                     ],
                     style: {
@@ -121,19 +100,139 @@
                     },
                     data: [
                         [
-                            "eid127",
-                            "width",
-                            507,
-                            750,
+                            "eid160",
+                            "opacity",
+                            328,
+                            336,
+                            "linear",
+                            "${desplegado_1}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid176",
+                            "opacity",
+                            1933,
+                            250,
+                            "linear",
+                            "${desplegado_1}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid175",
+                            "opacity",
+                            1933,
+                            250,
+                            "linear",
+                            "${_160x600_2}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid152",
+                            "top",
+                            2250,
+                            83,
                             "easeOutQuad",
-                            "${RectangleCopy}",
-                            '162px',
-                            '402px'
+                            "${cerrar2}",
+                            '10px',
+                            '-40px'
+                        ],
+                        [
+                            "eid178",
+                            "opacity",
+                            1933,
+                            250,
+                            "linear",
+                            "${_160x600_1}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid156",
+                            "left",
+                            0,
+                            500,
+                            "linear",
+                            "${_160x600_2}",
+                            '1170px',
+                            '900px'
+                        ],
+                        [
+                            "eid153",
+                            "left",
+                            978,
+                            0,
+                            "easeOutQuad",
+                            "${cerrar2}",
+                            '1074px',
+                            '1074px'
+                        ],
+                        [
+                            "eid155",
+                            "left",
+                            0,
+                            500,
+                            "linear",
+                            "${_160x600_1}",
+                            '0px',
+                            '270px'
+                        ],
+                        [
+                            "eid81",
+                            "volume",
+                            1933,
+                            250,
+                            "linear",
+                            "${video}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid161",
+                            "opacity",
+                            328,
+                            336,
+                            "linear",
+                            "${desplegado_2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid177",
+                            "opacity",
+                            1933,
+                            250,
+                            "linear",
+                            "${desplegado_2}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid79",
+                            "opacity",
+                            664,
+                            250,
+                            "linear",
+                            "${video}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid80",
+                            "opacity",
+                            1933,
+                            250,
+                            "linear",
+                            "${video}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid61",
                             "opacity",
-                            1391,
+                            798,
                             180,
                             "easeOutQuad",
                             "${cerrar2}",
@@ -147,226 +246,6 @@
                             83,
                             "easeOutQuad",
                             "${cerrar2}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid120",
-                            "width",
-                            507,
-                            750,
-                            "easeOutQuad",
-                            "${Rectangle}",
-                            '167px',
-                            '416px'
-                        ],
-                        [
-                            "eid137",
-                            "left",
-                            399,
-                            108,
-                            "easeOutQuad",
-                            "${desplegadoCopy3}",
-                            '-601px',
-                            '-633px'
-                        ],
-                        [
-                            "eid138",
-                            "left",
-                            507,
-                            750,
-                            "easeOutQuad",
-                            "${desplegadoCopy3}",
-                            '-633px',
-                            '-384px'
-                        ],
-                        [
-                            "eid79",
-                            "opacity",
-                            1257,
-                            250,
-                            "linear",
-                            "${video}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid80",
-                            "opacity",
-                            1750,
-                            250,
-                            "linear",
-                            "${video}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid142",
-                            "left",
-                            507,
-                            750,
-                            "easeOutQuad",
-                            "${RectangleCopy}",
-                            '263px',
-                            '265px'
-                        ],
-                        [
-                            "eid143",
-                            "opacity",
-                            399,
-                            37,
-                            "linear",
-                            "${_160x600Copy}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid133",
-                            "opacity",
-                            399,
-                            108,
-                            "easeOutQuad",
-                            "${Rectangle}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid148",
-                            "opacity",
-                            2250,
-                            83,
-                            "easeOutQuad",
-                            "${Rectangle}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid146",
-                            "left",
-                            1500,
-                            0,
-                            "easeOutQuad",
-                            "${desplegado}",
-                            '0px',
-                            '0px'
-                        ],
-                        [
-                            "eid152",
-                            "top",
-                            2250,
-                            83,
-                            "easeOutQuad",
-                            "${cerrar2}",
-                            '10px',
-                            '-40px'
-                        ],
-                        [
-                            "eid115",
-                            "left",
-                            0,
-                            399,
-                            "linear",
-                            "${_160x600Copy}",
-                            '1170px',
-                            '905px'
-                        ],
-                        [
-                            "eid135",
-                            "opacity",
-                            399,
-                            108,
-                            "easeOutQuad",
-                            "${RectangleCopy}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid147",
-                            "opacity",
-                            2250,
-                            83,
-                            "easeOutQuad",
-                            "${RectangleCopy}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid153",
-                            "left",
-                            1571,
-                            0,
-                            "easeOutQuad",
-                            "${cerrar2}",
-                            '1074px',
-                            '1074px'
-                        ],
-                        [
-                            "eid81",
-                            "volume",
-                            1750,
-                            250,
-                            "linear",
-                            "${video}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid144",
-                            "opacity",
-                            399,
-                            37,
-                            "linear",
-                            "${_160x600}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid150",
-                            "opacity",
-                            2250,
-                            83,
-                            "easeOutQuad",
-                            "${desplegadoCopy3}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid116",
-                            "left",
-                            0,
-                            399,
-                            "linear",
-                            "${_160x600}",
-                            '0px',
-                            '265px'
-                        ],
-                        [
-                            "eid119",
-                            "left",
-                            507,
-                            750,
-                            "easeOutQuad",
-                            "${Rectangle}",
-                            '905px',
-                            '651px'
-                        ],
-                        [
-                            "eid131",
-                            "opacity",
-                            399,
-                            108,
-                            "easeOutQuad",
-                            "${desplegado}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid149",
-                            "opacity",
-                            2250,
-                            83,
-                            "easeOutQuad",
-                            "${desplegado}",
                             '1',
                             '0'
                         ]
@@ -385,23 +264,23 @@
                         {
                             rect: ['0px', '0px', '32px', '32px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
-                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            id: 'cerrar',
                             opacity: '1',
+                            id: 'cerrar',
+                            stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'ellipse',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
+                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
+                            rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
                             id: 'Rectangle2Copy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
@@ -432,10 +311,10 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
                             id: 'video',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
+                            type: 'rect',
                             fill: ['rgba(192,192,192,1)']
                         }
                     ],
