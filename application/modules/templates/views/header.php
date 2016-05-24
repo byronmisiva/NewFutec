@@ -210,6 +210,7 @@
         googletag.defineSlot('/1022247/FE_NEW_FILMSTRIP_BANNER', [300, 600], 'div-gpt-ad-1439997438966-0').addService(googletag.pubads());
         //new 2016
         googletag.defineSlot('/1022247/FE_NEW_UNIONLAYER', [800, 600], 'div-gpt-ad-1464046739579-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/SMART_TOP_EXPANDIO', [320, 200], 'div-gpt-ad-1464126935195-0').addService(googletag.pubads());
         // publicidades en mobil
         googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
