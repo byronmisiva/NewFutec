@@ -7,11 +7,11 @@
     </script>
 </div>
 
-<!-- <div class="grande col-md-12 col-xs-12 col-sm-12  margen0" style="display: none;width: 100%;height: auto;background-color: #000;">
+ <div class="grande col-md-12 col-xs-12 col-sm-12  margen0" style="display: none;width: 100%;height: auto;background-color: #000;">
 	<video id="splash-video" controls style="width:100%;" webkit-playsinline>
 	  <source src="http://futbolecuador.com/futbolecuador_html5/xmen/media/XMA_2.mp4" style="width: 100%;" type="video/mp4">
 	</video>
-</div>-->
+</div>
 <!--  <div  class="desplegable-alertas col-md-12 col-xs-12 col-sm-12  margen0">
     <div  class="desplegable-alertas-conten  ">
 
@@ -71,15 +71,19 @@
          }
         $(".grande").toggle();
      }   */
-
+    
+	var vid= document.getElementById("splash-video");
     function switchSmartTop(swE) {
         if (swE == 'on') {
             //agrandamos a 200 el banner
+            vid.play();	
             $('#div-gpt-ad-1383593619381-4').css("height", "200px");
         } else {
             //disminuimos a 50
+            vid.pause();
             $('#div-gpt-ad-1383593619381-4').css("height", "50px");
         }
+        $(".grande").toggle();
     }
     
 
