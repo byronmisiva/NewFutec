@@ -92,6 +92,17 @@ class Site extends MY_Controller
                 redirect('copaamerica');
         }
     }
+    
+    //redireccion a aportes y donaciones
+    
+    public function aportes(){
+    	redirect("http://aportes.misiva.com.ec");
+    }
+    
+    public function donaciones(){
+    	redirect("http://donaciones.misiva.com.ec");
+    }
+    
 
     // funcion que permite programar en caso que se muestre copa america
     public function campeonatoCopa()
@@ -128,13 +139,11 @@ class Site extends MY_Controller
 
         $data['top1'] = "";
         $data['header1'] = "";
-
+		$bannerTapTap =$this->banners->fe_desplegable_movil_tap_tap();
         $bannerBottom = $this->banners->fe_smart_bottom();
         $bannerTop = $this->banners->fe_smart_top();
         $dataHeader2['FE_Bigboxbanner'] = "";
         $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
-
-
         // recuperar codigo dpa-sportslive
         $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'");
 
@@ -167,11 +176,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $publicidadFlotante = "";
 
-
-        $data['content'] = $marcadorenvivo . $publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain . $fe_loading_movil . "</div>";
+        $data['content'] = $marcadorenvivo . $publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain . $fe_loading_movil. $bannerTapTap . "</div>";
         $data['sidebar'] = "";
-
-        $data['footer'] = '';
+		
+        $data['footer'] = ''.$bannerTapTap;
         $data['bottom'] = $this->contenido->bottom();
         $data['fe_splash'] = "";
 
@@ -649,6 +657,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     {
         $this->seccion(SECTION_SERIE_A, 2, "Serie A", "seriea");
     }
+    
+    
 
     public function serieb()
     {
@@ -812,6 +822,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['bottom'] = $this->contenido->bottom();
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
+    }
+    
+    public function bannerArticle(){
+    	$this->load->module('templates');
+    	$this->templates->_indexbanner();
     }
 
 
@@ -1431,6 +1446,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                                     "checked": "false",
                                     "id": "3",
                                     "name": "Noticias destacadas"
+                                    },{
+                                    "checked": "false",
+                                    "id": "76",
+                                    "name": "Copa América"
                                     },{
                                     "checked": "false",
                                     "id": "63",
