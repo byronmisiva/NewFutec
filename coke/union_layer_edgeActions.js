@@ -19,21 +19,14 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       });
       //Edge binding end
-
-      
-
-      
-
-      
-
-      
+     
 
       Symbol.bindElementAction(compId, symbolName, "${cerrar2}", "click", function(sym, e) {
          // insert code for mouse click here
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
-         setTimeout(function(){ 
+          setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
         	 $("#div-gpt-ad-1450734059657-0").show();
         	 $("#div-gpt-ad-1450734059657-1").show();
@@ -83,12 +76,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
-         
-         setTimeout(function(){ 
+             setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
         	 $("#div-gpt-ad-1450734059657-0").show();
         	 $("#div-gpt-ad-1450734059657-1").show();
          }, 1500);
+
       });
          //Edge binding end
 
