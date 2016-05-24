@@ -83,11 +83,11 @@
         if (swE == 'on') {
             //agrandamos a 200 el banner
             vidSmartTop.play();	
-            $('#div-gpt-ad-1383593619381-4').css("height", "200px");
+            //$('#div-gpt-ad-1383593619381-4').css("height", "200px");
         } else {
             //disminuimos a 50
             vidSmartTop.pause();
-            $('#div-gpt-ad-1383593619381-4').css("height", "50px");
+            //$('#div-gpt-ad-1383593619381-4').css("height", "50px");
         }
         $(".grande").toggle();
     }
