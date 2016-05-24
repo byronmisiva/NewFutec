@@ -10,8 +10,14 @@
  <div class="grande col-md-12 col-xs-12 col-sm-12  margen0" style="display: none;width: 100%;height: auto;background-color: #000;">
 	<video id="splash-video" controls style="width:100%;" webkit-playsinline>
 	  <source src="http://futbolecuador.com/futbolecuador_html5/xmen/media/XMA_2.mp4" style="width: 100%;" type="video/mp4">
-	</video>
+	</video>	
 </div>
+<!-- /1022247/SMART_TOP_EXPANDIDO -->
+	<div id='div-gpt-ad-1464126935195-0' style='height:200px; width:320px;position:absolute;top:50px;left:0;  '>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464126935195-0'); });
+		</script>
+	</div>
 <!--  <div  class="desplegable-alertas col-md-12 col-xs-12 col-sm-12  margen0">
     <div  class="desplegable-alertas-conten  ">
 
@@ -72,15 +78,15 @@
         $(".grande").toggle();
      }   */
     
-	var vid= document.getElementById("splash-video");
+	var vidSmartTop= document.getElementById("splash-video");
     function switchSmartTop(swE) {
         if (swE == 'on') {
             //agrandamos a 200 el banner
-            vid.play();	
+            vidSmartTop.play();	
             $('#div-gpt-ad-1383593619381-4').css("height", "200px");
         } else {
             //disminuimos a 50
-            vid.pause();
+            vidSmartTop.pause();
             $('#div-gpt-ad-1383593619381-4').css("height", "50px");
         }
         $(".grande").toggle();
