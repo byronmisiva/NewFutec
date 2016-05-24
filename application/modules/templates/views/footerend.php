@@ -42,7 +42,6 @@ function activarPbl(){
 	$("#div-gpt-ad-1450734059657-0").hide();
 	$("#div-gpt-ad-1450734059657-1").hide();
 	$(".pbl-union").fadeIn();
-	
 	$(".Stage_boton_abre_id").click();	
 }	
 </script>
