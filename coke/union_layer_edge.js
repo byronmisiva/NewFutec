@@ -68,7 +68,7 @@
                             volume: '1',
                             type: 'video',
                             tag: 'video',
-                            rect: ['568px', '201px', '480px', '334px', 'auto', 'auto'],
+                            rect: ['568px', '241px', '480px', '334px', 'auto', 'auto'],
                             opacity: '0',
                             source: [vid+"video.mp4"],
                             preload: 'auto'
@@ -120,16 +120,6 @@
                             '0'
                         ],
                         [
-                            "eid175",
-                            "opacity",
-                            1933,
-                            250,
-                            "linear",
-                            "${_160x600_2}",
-                            '1',
-                            '0'
-                        ],
-                        [
                             "eid152",
                             "top",
                             2250,
@@ -150,14 +140,14 @@
                             '0'
                         ],
                         [
-                            "eid156",
-                            "left",
+                            "eid179",
+                            "top",
+                            914,
                             0,
-                            500,
                             "linear",
-                            "${_160x600_2}",
-                            '1170px',
-                            '900px'
+                            "${video}",
+                            '241px',
+                            '241px'
                         ],
                         [
                             "eid153",
@@ -170,6 +160,16 @@
                             '1074px'
                         ],
                         [
+                            "eid81",
+                            "volume",
+                            1933,
+                            250,
+                            "linear",
+                            "${video}",
+                            '1',
+                            '0'
+                        ],
+                        [
                             "eid155",
                             "left",
                             0,
@@ -180,14 +180,34 @@
                             '270px'
                         ],
                         [
-                            "eid81",
-                            "volume",
-                            1933,
-                            250,
-                            "linear",
-                            "${video}",
+                            "eid61",
+                            "opacity",
+                            798,
+                            180,
+                            "easeOutQuad",
+                            "${cerrar2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid151",
+                            "opacity",
+                            2250,
+                            83,
+                            "easeOutQuad",
+                            "${cerrar2}",
                             '1',
                             '0'
+                        ],
+                        [
+                            "eid156",
+                            "left",
+                            0,
+                            500,
+                            "linear",
+                            "${_160x600_2}",
+                            '1170px',
+                            '900px'
                         ],
                         [
                             "eid161",
@@ -210,6 +230,16 @@
                             '0'
                         ],
                         [
+                            "eid175",
+                            "opacity",
+                            1933,
+                            250,
+                            "linear",
+                            "${_160x600_2}",
+                            '1',
+                            '0'
+                        ],
+                        [
                             "eid79",
                             "opacity",
                             664,
@@ -228,26 +258,6 @@
                             "${video}",
                             '1',
                             '0'
-                        ],
-                        [
-                            "eid61",
-                            "opacity",
-                            798,
-                            180,
-                            "easeOutQuad",
-                            "${cerrar2}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid151",
-                            "opacity",
-                            2250,
-                            83,
-                            "easeOutQuad",
-                            "${cerrar2}",
-                            '1',
-                            '0'
                         ]
                     ]
                 }
@@ -264,23 +274,23 @@
                         {
                             rect: ['0px', '0px', '32px', '32px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
-                            opacity: '1',
-                            id: 'cerrar',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'cerrar',
+                            opacity: '1',
                             type: 'ellipse',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                             rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
+                            transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
                             rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
+                            transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
                             id: 'Rectangle2Copy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
@@ -311,10 +321,10 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'video',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['0px', '0px', '560px', '315px', 'auto', 'auto'],
                             fill: ['rgba(192,192,192,1)']
                         }
                     ],
