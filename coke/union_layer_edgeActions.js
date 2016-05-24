@@ -13,20 +13,21 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3071, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1571, function(sym, e) {
          // insert code here
          sym.stop();
 
       });
       //Edge binding end
-     
+
+          
 
       Symbol.bindElementAction(compId, symbolName, "${cerrar2}", "click", function(sym, e) {
          // insert code for mouse click here
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
-          setTimeout(function(){ 
+         setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
         	 $("#div-gpt-ad-1450734059657-0").show();
         	 $("#div-gpt-ad-1450734059657-1").show();
@@ -39,7 +40,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3750, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
          // insert code here
          // Pause a video track 
          sym.$("video")[0].pause();
@@ -76,7 +77,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // Play the timeline at a label or specific time. For example:
          // sym.play(500); or sym.play("myLabel");
          sym.play("play");
-             setTimeout(function(){ 
+         setTimeout(function(){ 
         	 $(".pbl-union").fadeOut();
         	 $("#div-gpt-ad-1450734059657-0").show();
         	 $("#div-gpt-ad-1450734059657-1").show();

@@ -28,86 +28,69 @@
                 content: {
                     dom: [
                         {
-                            id: 'mask_izquierda',
-                            type: 'rect',
-                            rect: ['0px', '0px', '160px', '600px', 'auto', 'auto'],
-                            overflow: 'hidden',
-                            fill: ["rgba(192,192,192,1)"],
-                            stroke: [0,"rgba(0,0,0,1)","none"],
-                            c: [
-                            {
-                                id: 'fondo_izquierda',
-                                type: 'image',
-                                rect: ['-223px', '-5px', '943px', '609px', 'auto', 'auto'],
-                                fill: ["rgba(0,0,0,0)",im+"fondo.jpg",'0px','0px']
-                            }]
-                        },
-                        {
-                            id: 'mask_derecha',
-                            type: 'rect',
-                            rect: ['1170px', '0px', '160px', '600px', 'auto', 'auto'],
-                            overflow: 'hidden',
-                            fill: ["rgba(192,192,192,1)"],
-                            stroke: [0,"rgba(0,0,0,1)","none"],
-                            c: [
-                            {
-                                id: 'fondo_derecha',
-                                type: 'image',
-                                rect: ['-212px', '-5px', '943px', '609px', 'auto', 'auto'],
-                                overflow: 'visible',
-                                fill: ["rgba(0,0,0,0)",im+"fondo.jpg",'0px','0px'],
-                                filter: [0, 0, 1, 1, 0, 0, 0, 0, "rgba(0,0,0,0)", 0, 0, 0]
-                            }]
-                        },
-                        {
                             id: 'cerrar2',
                             symbolName: 'cerrar',
                             type: 'rect',
-                            rect: ['1064px', '10px', '32', '32', 'auto', 'auto'],
+                            rect: ['1074px', '10px', '32', '32', 'auto', 'auto'],
                             cursor: 'pointer',
                             opacity: '0'
                         },
                         {
-                            id: 'logo_grande',
-                            type: 'image',
-                            rect: ['839px', '10px', '200px', '200px', 'auto', 'auto'],
+                            id: 'boton_abre',
+                            type: 'rect',
+                            rect: ['973px', '16px', '24px', '27px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"logo_grande.png",'0px','0px']
+                            fill: ["rgba(242,10,10,1.00)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
-                            id: 'l1',
+                            id: '_160x600',
                             type: 'image',
-                            rect: ['309px', '538px', '51px', '44px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"l1.png",'0px','0px']
+                            rect: ['265px', '0', '160px', '600px', 'auto', 'auto'],
+                            opacity: '1',
+                            fill: ["rgba(0,0,0,0)",im+"160x600.jpg",'0px','0px']
                         },
                         {
-                            id: 'l2',
+                            id: '_160x600Copy',
                             type: 'image',
-                            rect: ['363px', '538px', '93px', '44px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"l2.png",'0px','0px']
+                            rect: ['905px', '0', '160px', '600px', 'auto', 'auto'],
+                            opacity: '1',
+                            fill: ["rgba(0,0,0,0)",im+"160x600.jpg",'0px','0px']
                         },
                         {
-                            id: 'l3',
-                            type: 'image',
-                            rect: ['460px', '538px', '47px', '44px', 'auto', 'auto'],
+                            id: 'RectangleCopy',
+                            type: 'rect',
+                            rect: ['265px', '0px', '162px', '600px', 'auto', 'auto'],
+                            overflow: 'hidden',
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"l3.png",'0px','0px']
+                            fill: ["rgba(192,192,192,1)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            c: [
+                            {
+                                id: 'desplegado',
+                                type: 'image',
+                                rect: ['0px', '0', '800px', '600px', 'auto', 'auto'],
+                                opacity: '0',
+                                fill: ["rgba(0,0,0,0)",im+"desplegado.jpg",'0px','0px']
+                            }]
                         },
                         {
-                            id: 'logo_peq',
-                            type: 'image',
-                            rect: ['25px', '25px', '108px', '115px', 'auto', 'auto'],
+                            id: 'Rectangle',
+                            type: 'rect',
+                            rect: ['651px', '0px', '167px', '600px', 'auto', 'auto'],
+                            overflow: 'hidden',
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"logo_peq.png",'0px','0px']
-                        },
-                        {
-                            id: 'logo_peq2',
-                            type: 'image',
-                            rect: ['1195px', '25px', '108px', '115px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"logo_peq.png",'0px','0px']
+                            fill: ["rgba(192,192,192,1)"],
+                            stroke: [0,"rgb(0, 0, 0)","none"],
+                            c: [
+                            {
+                                id: 'desplegadoCopy3',
+                                type: 'image',
+                                rect: ['-384px', '0', '800px', '600px', 'auto', 'auto'],
+                                overflow: 'visible',
+                                opacity: '1',
+                                fill: ["rgba(0,0,0,0)",im+"desplegado.jpg",'0px','0px']
+                            }]
                         },
                         {
                             id: 'video',
@@ -118,14 +101,6 @@
                             opacity: '0',
                             source: [vid+"video.mp4"],
                             preload: 'auto'
-                        },
-                        {
-                            id: 'boton_abre',
-                            type: 'rect',
-                            rect: ['973px', '16px', '24px', '27px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(242,10,10,1.00)"],
-                            stroke: [0,"rgb(0, 0, 0)","none"]
                         }
                     ],
                     style: {
@@ -138,97 +113,27 @@
                     }
                 },
                 timeline: {
-                    duration: 5000,
+                    duration: 2333,
                     autoPlay: true,
                     labels: {
                         "inicio": 0,
-                        "play": 3343
+                        "play": 1933
                     },
                     data: [
                         [
-                            "eid12",
-                            "left",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '-223px',
-                            '-252px'
-                        ],
-                        [
-                            "eid30",
-                            "left",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '-252px',
-                            '-223px'
-                        ],
-                        [
-                            "eid44",
-                            "opacity",
-                            1665,
-                            703,
-                            "easeOutQuad",
-                            "${l1}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid47",
-                            "opacity",
-                            3500,
-                            250,
-                            "easeOutQuad",
-                            "${l1}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid49",
-                            "opacity",
-                            1000,
-                            656,
-                            "easeOutQuad",
-                            "${logo_grande}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid48",
-                            "opacity",
-                            3439,
-                            217,
-                            "easeOutQuad",
-                            "${logo_grande}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid23",
+                            "eid127",
                             "width",
-                            250,
-                            1157,
+                            507,
+                            750,
                             "easeOutQuad",
-                            "${fondo_derecha}",
-                            '943px',
-                            '1330px'
-                        ],
-                        [
-                            "eid29",
-                            "width",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '1330px',
-                            '943px'
+                            "${RectangleCopy}",
+                            '162px',
+                            '402px'
                         ],
                         [
                             "eid61",
                             "opacity",
-                            1656,
+                            1391,
                             180,
                             "easeOutQuad",
                             "${cerrar2}",
@@ -236,100 +141,50 @@
                             '1'
                         ],
                         [
-                            "eid62",
+                            "eid151",
                             "opacity",
-                            3439,
-                            217,
+                            2250,
+                            83,
                             "easeOutQuad",
                             "${cerrar2}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid113",
-                            "top",
-                            2000,
-                            0,
+                            "eid120",
+                            "width",
+                            507,
+                            750,
                             "easeOutQuad",
-                            "${l2}",
-                            '538px',
-                            '538px'
+                            "${Rectangle}",
+                            '167px',
+                            '416px'
                         ],
                         [
-                            "eid107",
-                            "top",
-                            2368,
-                            0,
-                            "easeOutQuad",
-                            "${l3}",
-                            '538px',
-                            '538px'
-                        ],
-                        [
-                            "eid114",
+                            "eid137",
                             "left",
-                            2000,
-                            0,
+                            399,
+                            108,
                             "easeOutQuad",
-                            "${l2}",
-                            '363px',
-                            '363px'
+                            "${desplegadoCopy3}",
+                            '-601px',
+                            '-633px'
                         ],
                         [
-                            "eid106",
+                            "eid138",
                             "left",
-                            2368,
-                            0,
+                            507,
+                            750,
                             "easeOutQuad",
-                            "${l3}",
-                            '460px',
-                            '460px'
-                        ],
-                        [
-                            "eid22",
-                            "left",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '-214px',
-                            '-252px'
-                        ],
-                        [
-                            "eid24",
-                            "left",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '-252px',
-                            '-212px'
-                        ],
-                        [
-                            "eid5",
-                            "left",
-                            250,
-                            1144,
-                            "easeOutQuad",
-                            "${mask_derecha}",
-                            '1170px',
-                            '265px'
-                        ],
-                        [
-                            "eid7",
-                            "left",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${mask_derecha}",
-                            '265px',
-                            '1170px'
+                            "${desplegadoCopy3}",
+                            '-633px',
+                            '-384px'
                         ],
                         [
                             "eid79",
                             "opacity",
-                            1394,
-                            606,
+                            1257,
+                            250,
                             "linear",
                             "${video}",
                             '0',
@@ -338,302 +193,182 @@
                         [
                             "eid80",
                             "opacity",
-                            3343,
-                            407,
+                            1750,
+                            250,
                             "linear",
                             "${video}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid3",
-                            "width",
-                            250,
-                            1144,
+                            "eid142",
+                            "left",
+                            507,
+                            750,
                             "easeOutQuad",
-                            "${mask_izquierda}",
-                            '160px',
-                            '800px'
+                            "${RectangleCopy}",
+                            '263px',
+                            '265px'
                         ],
                         [
-                            "eid8",
-                            "width",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${mask_izquierda}",
-                            '800px',
-                            '160px'
-                        ],
-                        [
-                            "eid14",
-                            "height",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '609px',
-                            '859px'
-                        ],
-                        [
-                            "eid32",
-                            "height",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '859px',
-                            '609px'
-                        ],
-                        [
-                            "eid42",
+                            "eid143",
                             "opacity",
-                            2000,
-                            703,
+                            399,
+                            37,
+                            "linear",
+                            "${_160x600Copy}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid133",
+                            "opacity",
+                            399,
+                            108,
                             "easeOutQuad",
-                            "${l2}",
+                            "${Rectangle}",
                             '0',
                             '1'
                         ],
                         [
-                            "eid46",
+                            "eid148",
                             "opacity",
-                            3626,
-                            217,
+                            2250,
+                            83,
                             "easeOutQuad",
-                            "${l2}",
+                            "${Rectangle}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid93",
-                            "top",
-                            1656,
-                            0,
-                            "easeOutQuad",
-                            "${l1}",
-                            '538px',
-                            '538px'
-                        ],
-                        [
-                            "eid54",
-                            "opacity",
-                            0,
-                            250,
-                            "linear",
-                            "${logo_peq2}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid94",
+                            "eid146",
                             "left",
-                            1656,
+                            1500,
                             0,
                             "easeOutQuad",
-                            "${l1}",
-                            '309px',
-                            '309px'
+                            "${desplegado}",
+                            '0px',
+                            '0px'
                         ],
                         [
-                            "eid1",
-                            "width",
-                            250,
-                            1144,
-                            "easeOutQuad",
-                            "${mask_derecha}",
-                            '160px',
-                            '800px'
-                        ],
-                        [
-                            "eid6",
-                            "width",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${mask_derecha}",
-                            '800px',
-                            '160px'
-                        ],
-                        [
-                            "eid16",
+                            "eid152",
                             "top",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '-5px',
-                            '-175px'
-                        ],
-                        [
-                            "eid31",
-                            "top",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '-175px',
-                            '-5px'
-                        ],
-                        [
-                            "eid55",
-                            "opacity",
-                            0,
-                            250,
-                            "linear",
-                            "${logo_peq}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid82",
-                            "left",
-                            0,
-                            3656,
+                            2250,
+                            83,
                             "easeOutQuad",
                             "${cerrar2}",
-                            '1064px',
-                            '1073px'
+                            '10px',
+                            '-40px'
                         ],
                         [
-                            "eid63",
+                            "eid115",
                             "left",
-                            3656,
-                            94,
+                            0,
+                            399,
+                            "linear",
+                            "${_160x600Copy}",
+                            '1170px',
+                            '905px'
+                        ],
+                        [
+                            "eid135",
+                            "opacity",
+                            399,
+                            108,
+                            "easeOutQuad",
+                            "${RectangleCopy}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid147",
+                            "opacity",
+                            2250,
+                            83,
+                            "easeOutQuad",
+                            "${RectangleCopy}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid153",
+                            "left",
+                            1571,
+                            0,
                             "easeOutQuad",
                             "${cerrar2}",
-                            '1073px',
-                            '1076px'
+                            '1074px',
+                            '1074px'
                         ],
                         [
                             "eid81",
                             "volume",
-                            3343,
-                            407,
+                            1750,
+                            250,
                             "linear",
                             "${video}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid40",
+                            "eid144",
                             "opacity",
-                            2368,
-                            703,
-                            "easeOutQuad",
-                            "${l3}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid45",
-                            "opacity",
-                            3750,
-                            217,
-                            "easeOutQuad",
-                            "${l3}",
+                            399,
+                            37,
+                            "linear",
+                            "${_160x600}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid83",
-                            "top",
-                            0,
-                            3656,
+                            "eid150",
+                            "opacity",
+                            2250,
+                            83,
                             "easeOutQuad",
-                            "${cerrar2}",
-                            '10px',
-                            '5px'
+                            "${desplegadoCopy3}",
+                            '1',
+                            '0'
                         ],
                         [
-                            "eid64",
-                            "top",
-                            3656,
-                            94,
-                            "easeOutQuad",
-                            "${cerrar2}",
-                            '5px',
-                            '-46px'
-                        ],
-                        [
-                            "eid18",
-                            "width",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '943px',
-                            '1330px'
-                        ],
-                        [
-                            "eid33",
-                            "width",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_izquierda}",
-                            '1330px',
-                            '943px'
-                        ],
-                        [
-                            "eid20",
-                            "top",
-                            250,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '-5px',
-                            '-175px'
-                        ],
-                        [
-                            "eid25",
-                            "top",
-                            3843,
-                            1157,
-                            "easeOutQuad",
-                            "${fondo_derecha}",
-                            '-175px',
-                            '-5px'
-                        ],
-                        [
-                            "eid4",
+                            "eid116",
                             "left",
-                            250,
-                            1144,
-                            "easeOutQuad",
-                            "${mask_izquierda}",
+                            0,
+                            399,
+                            "linear",
+                            "${_160x600}",
                             '0px',
                             '265px'
                         ],
                         [
-                            "eid10",
+                            "eid119",
                             "left",
-                            3843,
-                            1157,
+                            507,
+                            750,
                             "easeOutQuad",
-                            "${mask_izquierda}",
-                            '265px',
-                            '0px'
+                            "${Rectangle}",
+                            '905px',
+                            '651px'
                         ],
                         [
-                            "eid21",
-                            "height",
-                            250,
-                            1157,
+                            "eid131",
+                            "opacity",
+                            399,
+                            108,
                             "easeOutQuad",
-                            "${fondo_derecha}",
-                            '609px',
-                            '859px'
+                            "${desplegado}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid28",
-                            "height",
-                            3843,
-                            1157,
+                            "eid149",
+                            "opacity",
+                            2250,
+                            83,
                             "easeOutQuad",
-                            "${fondo_derecha}",
-                            '859px',
-                            '609px'
+                            "${desplegado}",
+                            '1',
+                            '0'
                         ]
                     ]
                 }
