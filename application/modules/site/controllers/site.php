@@ -165,8 +165,7 @@ class Site extends MY_Controller
         $this->load->module('scoreboards');
         $tablaposiciones = $this->scoreboards->tablaposiciones(CHAMP_DEFAULT, CHAMP_DEFAULT_TIPOTABLA);
 
-        $fe_loading_movil = $this->banners->fe_loading_movil();
-
+        //$fe_loading_movil = $this->banners->fe_loading_movil();
 
         $outbrain = '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
@@ -175,8 +174,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         $publicidadFlotante = "";
-
-        $data['content'] = $marcadorenvivo . $publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain . $fe_loading_movil. $bannerTapTap . "</div>";
+        //$fe_loading_movil.
+        $data['content'] = $marcadorenvivo . $publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . "</div>";
         $data['sidebar'] = "";
 		
         $data['footer'] = ''.$bannerTapTap;
@@ -341,8 +340,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($this->verificarDispositivo() == "1") {
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
+            $fe_loading_movil = $this->banners->fe_loading_movil();
         } else {
-
             $bannerBottom = "";
             $bannerTop = "";
         }
@@ -407,7 +406,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS);
+        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS). $fe_loading_movil;
         $data['sidebar'] = $this->contenido->sidebarOpenNews();
 
         $data['footer'] = $this->contenido->footer();
