@@ -130,10 +130,8 @@
 				</div>	
 			<div class="col-xs-2 text-center">	
 				<span class='st_flipboard_large' displayText='Flipboard'></span>
-			</div>	
-			<div class="col-xs-2 text-center">	
-				<span class='st_tumblr_large' displayText='Tumblr'></span>
-			</div>	
+			</div>
+				
 			<div class="col-xs-2 text-center">	
 				<span class='st_email_large' displayText='Email'></span>
 			</div>	
