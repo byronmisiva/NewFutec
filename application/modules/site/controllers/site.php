@@ -344,6 +344,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         } else {
             $bannerBottom = "";
             $bannerTop = "";
+            $fe_loading_movil ="";
         }
 
 
