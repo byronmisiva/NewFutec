@@ -1,6 +1,8 @@
 <?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id; ?>
 <style> .content-gris-sin-margin {margin-bottom: 10px !important;} .color-titular{color:#444444;} .p-l-20{padding-left:10px;}.titular-reciente{font-weight:bold;line-height: 18px;font-size: 13px;text-align:center;}
-.img-relacionada{height:80px;overflow:hidden;}.mg-n-10{margin-left: 0}@media screen and (max-width: 415px){.img-relacionada{height:60px;overflow:hidden;}.img-relacionada > img {width: 70px;}
+.img-relacionada{height:80px;overflow:hidden;}.mg-n-10{margin-left: 0}
+.tagstorys{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+@media screen and (max-width: 415px){.img-relacionada{height:60px;overflow:hidden;}.img-relacionada > img {width: 70px;}
 .p-l-20{padding-left:0;}.mg-n-10{margin-left: 0;margin-bottom: 10px;height: 70px;padding-right: 3px;padding-left: 3px;}
 .titular-reciente{line-height: 16px;font-size: 12px;text-align:left;}}
 @media screen and (max-width: 361px) {.mg-n-10 > a > img {margin-left: 0; margin-right: 0;}.mg-n-10{padding-right: 0;padding-left: 0;}.titular-reciente{line-height: 16px;font-size: 11px;text-align:left;}]
@@ -73,7 +75,7 @@
             <div class="col-md-12 column ">
                 <strong class="color-titular text-uppercase padding-left-2 p-l-20">Leer también</strong>  
             </div>
-            <div class="col-xs-12 col-md-12 margen0 separador10 tagstorys content-gris-sin-margin">
+            <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
                 <?php echo $tagsStorys; ?>
             </div>			
         	<?php } ?>
@@ -89,7 +91,7 @@
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
         <div class="container">
-        	<div class="row">
+        	<div class="row separador10">
 				<div class="col-xs-2 text-center">
 					<span class='st_facebook_large' displayText='Facebook'></span>
 				</div>	
