@@ -116,13 +116,28 @@
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/>
                      </a>			
 			</div>-->
-			
-				<span class='st_sharethis_large' displayText='ShareThis'></span>
+			<div class="col-xs-2 text-center">
 				<span class='st_facebook_large' displayText='Facebook'></span>
+			</div>	
+			<div class="col-xs-2 text-center">
 				<span class='st_twitter_large' displayText='Tweet'></span>
-				<span class='st_linkedin_large' displayText='LinkedIn'></span>
+			</div>	
+			<div class="col-xs-2 text-center">	
+				<span class='st_whatsapp_large' displayText='WhatsApp'></span>
+			</div>	
+			<div class="col-xs-2 text-center">	
 				<span class='st_pinterest_large' displayText='Pinterest'></span>
+				</div>	
+			<div class="col-xs-2 text-center">	
+				<span class='st_flipboard_large' displayText='Flipboard'></span>
+			</div>	
+			<div class="col-xs-2 text-center">	
+				<span class='st_tumblr_large' displayText='Tumblr'></span>
+			</div>	
+			<div class="col-xs-2 text-center">	
 				<span class='st_email_large' displayText='Email'></span>
+			</div>	
+			
 		 </div>            
         </div>       
         <div class="banerintermedio">
