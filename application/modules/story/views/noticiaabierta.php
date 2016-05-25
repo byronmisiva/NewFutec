@@ -89,7 +89,7 @@
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
 		<div class="row">
-			<div class="col-xs-4 text-center">
+			<!-- <div class="col-xs-4 text-center">
 				<div class="fb-like"
                          data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
                          data-send="false" 
@@ -115,7 +115,14 @@
                        href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/>
                      </a>			
-			</div>
+			</div>-->
+			
+				<span class='st_sharethis_large' displayText='ShareThis'></span>
+				<span class='st_facebook_large' displayText='Facebook'></span>
+				<span class='st_twitter_large' displayText='Tweet'></span>
+				<span class='st_linkedin_large' displayText='LinkedIn'></span>
+				<span class='st_pinterest_large' displayText='Pinterest'></span>
+				<span class='st_email_large' displayText='Email'></span>
 		 </div>            
         </div>       
         <div class="banerintermedio">
@@ -140,6 +147,8 @@
 
 
             <br/>
+            
+            	
         </div>
     </div>
 </div>
