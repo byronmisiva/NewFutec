@@ -164,7 +164,11 @@
         var REFRESH_VIVO = "<?php echo REFRESH_VIVO; ?>";
     </script>
     <!--   script teads  se muestra cuando es noticia abierta-->
-
+	<!-- script sharethis -->
+	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "636c7935-082e-4d18-ac85-13cafa7345da", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+	<!-- fin share this -->
 </head>
 <body onload="verificarInstlacion();cargarSplash();">
 
