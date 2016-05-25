@@ -1,7 +1,7 @@
 <?php $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($noticia->title) . '/' . $noticia->id; ?>
 <style> .content-gris-sin-margin {margin-bottom: 10px !important;} .color-titular{color:#444444;} .p-l-20{padding-left:10px;}.titular-reciente{font-weight:bold;line-height: 18px;font-size: 13px;text-align:center;}
 .img-relacionada{height:80px;overflow:hidden;}.mg-n-10{margin-left: 0}
-.tagstorys{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.tagstorys{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding-top: 15px;}
 @media screen and (max-width: 415px){.img-relacionada{height:60px;overflow:hidden;}.img-relacionada > img {width: 70px;}
 .p-l-20{padding-left:0;}.mg-n-10{margin-left: 0;margin-bottom: 10px;height: 70px;padding-right: 3px;padding-left: 3px;}
 .titular-reciente{line-height: 16px;font-size: 12px;text-align:left;}}
@@ -58,17 +58,14 @@
                        href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
                 </div>-->
-                <div class="container">
+                
         	<div class="row separador10">
 				<div class="col-xs-2 text-center">
 					<span class='st_facebook_large' displayText='Facebook'></span>
 				</div>	
 				<div class="col-xs-2 text-center">
 					<span class='st_twitter_large' displayText='Tweet'></span>
-				</div>	
-				<div class="col-xs-2 text-center">	
-					<span class='st_whatsapp_large' displayText='WhatsApp'></span>
-				</div>	
+				</div>
 				<div class="col-xs-2 text-center">	
 					<span class='st_pinterest_large' displayText='Pinterest'></span>
 					</div>	
@@ -81,7 +78,6 @@
 				</div>
 			 </div>
         
-        </div>
              </div>
         </div>
         <div class="margen10lados-sx  separador5">
