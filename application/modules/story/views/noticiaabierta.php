@@ -32,7 +32,7 @@
         <div class="col-md-5  col-xs-12 margen0">
 
             <div class="col-md-12 col-xs-12 margen0 hidden-xs hidden-sm">
-                <div class="col-md-4 col-xs-3">
+                <!-- <div class="col-md-4 col-xs-3">
                     <div class="fb-like"
                          data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
                          data-send="false" 
@@ -43,11 +43,7 @@
                          data-show-faces="true"
                          data-font="arial"></div>                         
                 </div>
-                <!-- <div class="col-md-4 col-xs-3">
-                    <span class="ig-follow" data-id="a83ed5" data-handle="futbolecuadorcom" data-count="false" data-size="large" data-username="false"></span>
-                    <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
-
-                </div>-->
+                </div>
                 <div class="col-md-4 col-xs-3 ">
                     <a href="http://twitter.com/share" class="twitter-share-button"
                        data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
@@ -57,12 +53,35 @@
                 </div>
 
                 <div class="col-md-0 col-xs-3 visible-xs-block margen0  ">
-                    <!--        Tag para watsapp-->
                     <a class='ssba'
                        data-action='share/whatsapp/share'
                        href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
-                </div>
+                </div>-->
+                <div class="container">
+        	<div class="row separador10">
+				<div class="col-xs-2 text-center">
+					<span class='st_facebook_large' displayText='Facebook'></span>
+				</div>	
+				<div class="col-xs-2 text-center">
+					<span class='st_twitter_large' displayText='Tweet'></span>
+				</div>	
+				<div class="col-xs-2 text-center">	
+					<span class='st_whatsapp_large' displayText='WhatsApp'></span>
+				</div>	
+				<div class="col-xs-2 text-center">	
+					<span class='st_pinterest_large' displayText='Pinterest'></span>
+					</div>	
+				<div class="col-xs-2 text-center">	
+					<span class='st_flipboard_large' displayText='Flipboard'></span>
+				</div>
+					
+				<div class="col-xs-2 text-center">	
+					<span class='st_email_large' displayText='Email'></span>
+				</div>
+			 </div>
+        
+        </div>
              </div>
         </div>
         <div class="margen10lados-sx  separador5">
