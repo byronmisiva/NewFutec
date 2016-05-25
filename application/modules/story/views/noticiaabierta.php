@@ -88,55 +88,31 @@
             <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
-		<div class="row">
-			<!-- <div class="col-xs-4 text-center">
-				<div class="fb-like"
-                         data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
-                         data-send="false" 
-                         data-action="like"
-                         data-layout="button" 
-                         data-share="false"
-                         data-width="90" 
-                         data-show-faces="true"
-                         data-font="arial"></div>
-			</div>
-			<div class="col-xs-4 text-center">
-				<a href="http://twitter.com/share" class="twitter-share-button"
-                       data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
-                       data-count="vertical" data-via="futbolecuador" data-lang="es"
-                       data-counturl="<?= $link; ?>">Tweet</a>
-                    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-			
-			</div>
-			<div class="col-xs-4 text-center">
-					<!-- Tag para watsapp-->
-                   <!--  <a class='ssba'
-                       data-action='share/whatsapp/share'
-                       href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
-                        <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/>
-                     </a>			
-			</div>-->
-			<div class="col-xs-2 text-center">
-				<span class='st_facebook_large' displayText='Facebook'></span>
-			</div>	
-			<div class="col-xs-2 text-center">
-				<span class='st_twitter_large' displayText='Tweet'></span>
-			</div>	
-			<div class="col-xs-2 text-center">	
-				<span class='st_whatsapp_large' displayText='WhatsApp'></span>
-			</div>	
-			<div class="col-xs-2 text-center">	
-				<span class='st_pinterest_large' displayText='Pinterest'></span>
+        <div class="container">
+        	<div class="row">
+				<div class="col-xs-2 text-center">
+					<span class='st_facebook_large' displayText='Facebook'></span>
 				</div>	
-			<div class="col-xs-2 text-center">	
-				<span class='st_flipboard_large' displayText='Flipboard'></span>
-			</div>
-				
-			<div class="col-xs-2 text-center">	
-				<span class='st_email_large' displayText='Email'></span>
-			</div>	
-			
-		 </div>            
+				<div class="col-xs-2 text-center">
+					<span class='st_twitter_large' displayText='Tweet'></span>
+				</div>	
+				<div class="col-xs-2 text-center">	
+					<span class='st_whatsapp_large' displayText='WhatsApp'></span>
+				</div>	
+				<div class="col-xs-2 text-center">	
+					<span class='st_pinterest_large' displayText='Pinterest'></span>
+					</div>	
+				<div class="col-xs-2 text-center">	
+					<span class='st_flipboard_large' displayText='Flipboard'></span>
+				</div>
+					
+				<div class="col-xs-2 text-center">	
+					<span class='st_email_large' displayText='Email'></span>
+				</div>
+			 </div>
+        
+        </div>
+		            
         </div>       
         <div class="banerintermedio">
             <?php  echo $banerintermedio; ?>
