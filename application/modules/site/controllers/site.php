@@ -31,16 +31,16 @@ class Site extends MY_Controller
         parent::__construct();
         //Futbolecuador
         $consulta = $this->db->query("select id from championships where  active_championship = 1 limit 1")->result();
-
+		
         if (count($consulta) > 0) {
 
             define('CHAMP_DEFAULT', $consulta[0]->id);
             $consulta = $this->db->query("select COUNT(*) as total from  rounds   where championship_id= " . CHAMP_DEFAULT)->result();
-
+           
             if (CHAMP_DEFAULT == 59) {
                 define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
             } else {
-                if ($consulta[0]->total == "1") {
+                if ($consulta[0]->total == "5") {
                     define('CHAMP_DEFAULT_TIPOTABLA', "simple");
                 } else {
                     define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
