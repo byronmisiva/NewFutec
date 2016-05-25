@@ -110,7 +110,7 @@
 			</div>
 			<div class="col-xs-4 text-center">
 					<!-- Tag para watsapp-->
-                    <a class='ssba'
+                   <!--  <a class='ssba'
                        data-action='share/whatsapp/share'
                        href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
                         <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/>
