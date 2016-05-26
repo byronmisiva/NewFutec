@@ -2,6 +2,7 @@
 class Images extends CI_Controller {
 
 	var $tmpl;
+	var $urlImagenes = "http://www.futbolecuador.com/";
 	
 	function __construct(){
 		parent::__construct();
