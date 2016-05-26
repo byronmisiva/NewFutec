@@ -62,24 +62,27 @@ class Images extends CI_Controller {
 
 		$datos=array();
 		foreach($result as $row){
-			$image_size=getimagesize($row->thumb640);
-			$height=$image_size[1]+80;
-			$width=$image_size[0]+80;
-			$aux ="\n<table class='item' width='110' cellpadding='0' cellspacing='0'>\n";
-			$aux.="<tr><td colspan='4'>".anchor('images/update/'.$row->id,img(array('src'=>$row->thumb100,'border'=>'0')), array('title' => 'Cambiar Imagen'))."</td><tr>\n";
-			
-			$aux.="<tr><td colspan='4'>".$row->name."</td><tr>\n";
-			$aux.="<tr>\n";
-			$aux.="<td>";
-			if($row->thumbh160!="")
-			$aux.=anchor('images/view_thumbh/'.$row->id,img(array('src'=>'imagenes/icons/thome1.gif','border'=>'0')), array('title' => 'Home Thumbnail','onclick'=>'Modalbox.show(this.href, {title: this.title, width: 180}); return false;'));
-			$aux.="</td>\n";
-			$aux.="<td>".anchor('images/view_thumb/'.$row->id,img(array('src'=>'imagenes/icons/thumb1.gif','border'=>'0')), array('title' => 'Thumbnail','onclick'=>'Modalbox.show(this.href, {title: this.title, width: 450}); return false;'))."</td>\n";
-			$aux.="<td>".anchor('images/edit_thumb/'.$row->id,img(array('src'=>'imagenes/icons/cortar1.gif','border'=>'0')), array('title' => 'Recortar','onclick'=>'abrir_popup(this.href,\'no\',\'no\',\'no\',\'no\',\'no\',\'yes\',\'no\','.$width.','.$height.',100,10,0); return false;'))."</td>\n";
-			$aux.="<td>".anchor('images/confirm_delete/'.$row->id,img(array('src'=>'imagenes/icons/borrar1.gif','border'=>'0')), array('title' => 'Eliminar','onclick'=>'Modalbox.show(this.href, {title: this.title, width: 400}); return false;'))."</td>\n";
-			$aux.="</tr>\n";
-			$aux.="</table>\n";
-			$datos[]=$aux;
+		if ($image_size = @getimagesize("http://www.futbolecuador.com/" . $row->thumb640)) {
+	              $height = $image_size[1] + 80;
+	              $width = $image_size[0] + 80;
+	              $aux = "\n<table class='item' width='110' cellpadding='0' cellspacing='0'>\n";
+	              $aux .= "<tr><td colspan='4'>" . anchor('images/update/' . $row->id, img(array('src' => $this->urlImagenes . $row->thumb100, 'border' => '0')), array('title' => 'Cambiar Imagen')) . "</td><tr>\n";
+	
+	              $aux .= "<tr><td colspan='4'>" . $row->name . "</td><tr>\n";
+	              $aux .= "<tr>\n";
+	              $aux .= "<td>";
+	              if ($row->thumbh160 != "")
+	                  $aux .= anchor('images/view_thumbh/' . $row->id, img(array('src' => 'imagenes/icons/thome1.gif', 'border' => '0')), array('title' => 'Home Thumbnail', 'onclick' => 'Modalbox.show(this.href, {title: this.title, width: 180}); return false;'));
+	              $aux .= "</td>\n";
+	              $aux .= "<td>" . anchor('images/view_thumb/' . $row->id, img(array('src' => 'imagenes/icons/thumb1.gif', 'border' => '0')), array('title' => 'Thumbnail', 'onclick' => 'Modalbox.show(this.href, {title: this.title, width: 450}); return false;')) . "</td>\n";
+	              $aux .= "<td>" . anchor('images/edit_thumb/' . $row->id, img(array('src' => 'imagenes/icons/cortar1.gif', 'border' => '0')), array('title' => 'Recortar', 'onclick' => 'abrir_popup(this.href,\'no\',\'no\',\'no\',\'no\',\'no\',\'yes\',\'no\',' . $width . ',' . $height . ',100,10,0); return false;')) . "</td>\n";
+	              $aux .= "<td>" . anchor('images/confirm_delete/' . $row->id, img(array('src' => 'imagenes/icons/borrar1.gif', 'border' => '0')), array('title' => 'Eliminar', 'onclick' => 'Modalbox.show(this.href, {title: this.title, width: 400}); return false;')) . "</td>\n";
+	              $aux .= "</tr>\n";
+	              $aux .= "</table>\n";
+	              $datos[] = $aux;
+	            } else {
+	                $aux = "<div> La imagen con ID: ".$row->id." no se subio.</div>";
+	            }
 		}
 
 		$this->table->set_template($this->tmpl);
