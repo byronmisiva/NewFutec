@@ -12,6 +12,8 @@ class Scoreboards extends MY_Controller
 
     public function tablaposiciones($temporada, $tipoChamp = 'acumulada')
     {
+    	if ($temporada == "56")
+    		$temporada = 63;
         $data['tipoCampeonato'] = $tipoChamp;
         if ($tipoChamp == 'acumulada') {
             $data['scroreBoardAcumulative'] = $this->leaderboard_cumulative($temporada);
@@ -81,11 +83,15 @@ class Scoreboards extends MY_Controller
             $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
                 base_url() . 'imagenes/icons/igual.png',
                 base_url() . 'imagenes/icons/flecha_abajo.png');
-
+ 		//todo caso copa america
+                /**En la condicion de ($champ == AMERICA) se tiene q asignar a la variable $round el id de la competencia 
+                 * En el caso de copa america o alguna competicios en la que constenn grupos se requiere comentar la linea 113 la cual retorna solo un grupo
+                 * al momebto de comentar nos devolvera todas las tablas de la competencia. 
+                 * **/
             if ($round != false) {
 
                 //todo caso copa america
-                if ($champ == AMERICA) $round = 205;
+                if ($champ == AMERICA) $round = 225;
 
                 $grupoActivo = $this->mdl_teams_position->get_by_round($round);
                 $data['tabla'] = array();
@@ -96,7 +102,7 @@ class Scoreboards extends MY_Controller
                     //$data['tabla'] = array_merge($data['tabla'], $this->mdl_teams_position->get_table($grupo->id));
                     $data['tabla'] = $this->mdl_teams_position->get_table($grupo->id);
 
-                    return $this->load->view($leaderboard, $data, true);
+                    //return $this->load->view($leaderboard, $data, true);
 
                     $tablas = $tablas . $this->load->view($leaderboard, $data, true);
                 }
