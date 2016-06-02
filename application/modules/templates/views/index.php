@@ -114,6 +114,16 @@ $this->load->view('header', $data);
 
 <div class="container blanco">
     <!-- Example row of columns -->
+    <?php
+    if (isset($cinta_banner)){?>
+    	<div class="row separador10-xs">
+    		<div class="col-md-12">
+    		<?php echo $cinta_banner;?>
+    		</div>
+    	</div>
+    <?php }?>
+    
+    
     <?php if (isset($header2)) { ?>
         <div class="row separador10-xs">
             <?php echo $header2; ?>
