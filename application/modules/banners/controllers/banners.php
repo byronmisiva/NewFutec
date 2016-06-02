@@ -44,6 +44,16 @@ class Banners extends MY_Controller
     {
     	return $this->load->view('anuncio_alertas', $data, TRUE);
     }
+    
+	public function fe_cinta_copa($data = FALSE)
+    {
+    	return $this->load->view('fe_cinta_copa', $data, TRUE);
+    }
+    
+    public function fe_square_copa($data = FALSE)
+    {
+    	return $this->load->view('fe_square_copa', $data, TRUE);
+    } 
 
 
     public function FE_desplegable_movil($data = FALSE)
