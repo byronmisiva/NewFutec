@@ -35,12 +35,13 @@ class Site extends MY_Controller
         if (count($consulta) > 0) {
 
             define('CHAMP_DEFAULT', $consulta[0]->id);
+            
             $consulta = $this->db->query("select COUNT(*) as total from  rounds   where championship_id= " . CHAMP_DEFAULT)->result();
            
             if (CHAMP_DEFAULT == 59) {
                 define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
             } else {
-                if ($consulta[0]->total == "5") {
+                if ($consulta[0]->total == "4") {
                     define('CHAMP_DEFAULT_TIPOTABLA', "simple");
                 } else {
                     define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
@@ -817,9 +818,13 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['content'] = $storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie, "large", $tipotabla);
-
+			if ($serie == "56")
+				$data['cinta_banner'] = $this->banners->fe_cinta_copa();
+        
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
+        
+        
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
