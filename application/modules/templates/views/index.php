@@ -117,7 +117,7 @@ $this->load->view('header', $data);
     <?php
     if (isset($cinta_banner)){?>
     	<div class="row separador10-xs  margen0">
-    		<div class="col-md-12">
+    		<div class="col-md-12 margen0">
     		<?php echo $cinta_banner;?>
     		</div>
     	</div>
