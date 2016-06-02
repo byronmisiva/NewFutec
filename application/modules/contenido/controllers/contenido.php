@@ -330,14 +330,16 @@ class Contenido extends MY_Controller
     }
 
     public function sidebarOpenNews($data = FALSE, $serie = SERIE_A, $tipo = "large", $tipotabla = "acumulada")
-    {
-
+    {		
         //carga Banners
         $this->load->module('banners');
         $this->load->module('scoreboards');
         $bannersSidebar = array();
-
-        $bannersSidebar[] = $this->banners->FE_Bigboxbanner();
+			if ($serie== "56")
+				$bannersSidebar[] = $this->banners->fe_square_copa();
+			else
+				$bannersSidebar[] = $this->banners->FE_Bigboxbanner();
+			
         $bannersSidebar[] = $this->banners->fe_new_filmstrip_banner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
