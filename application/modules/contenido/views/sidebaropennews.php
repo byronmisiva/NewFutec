@@ -72,6 +72,9 @@
             <!--contenido colapsable-->
             <div class="panel-group" id="accordion2">
                 <?php
+                if($serie == "56")
+                	$serie = 63;
+                
                 foreach ($campeonatosResultados as $campeonato) {
                     if ($serie == $campeonato->champ) {
                         $active = "in";
