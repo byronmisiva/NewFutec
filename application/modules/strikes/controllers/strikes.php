@@ -10,11 +10,13 @@ class Strikes extends MY_Controller
         parent::__construct();
     }
 
-
     //Fin Tabla de Posiciones
 
     public function goleadores($campeonato)
     {
+    	if ($campeonato== "56")
+    	$campeonato = 63;
+    	
         $data['jugadores'] = $this->mdl_strikes->get_strikers($campeonato);
         $data['champ'] = $campeonato;
         return $this->load->view('strikesside', $data, true);
