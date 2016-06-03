@@ -7,7 +7,21 @@
 <div class="navbar-collapse collapse hidden-xs">
 <ul class="nav navbar-nav">
 <!-- list elements -->
-<li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown"
+
+
+             
+ <li class="dropdown fhmm-fw text-center">
+    <a href="<?= base_url('copa-america') ?>" class="pull-left text-center">
+    	<img src="<?= base_url('assets/img/logo-copa-america-mini-2016.png') ?>"
+		     alt="FutbolEcuador"
+		     width="150"
+		     title="Copa América Centeanario 2016 USA"
+     		 class=" media-object" />
+    </a>
+    <!-- dropdown-menu -->
+</li>
+
+<!-- <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown"
                                 class="dropdown-toggle">Equipos<b
             class="caret"></b></a>
     <ul class="dropdown-menu fullwidth">
@@ -62,19 +76,13 @@
                             </li>
                         </ul>
                     </div>
-
                 <?php
                 }
                 ?>
-
-
             </div>
-            <!-- end row -->
         </li>
-        <!-- end grid demo -->
     </ul>
-    <!-- end drop down menu -->
-</li>
+</li>-->
 <!-- end list elements -->
 <!-- Mega Menu -->
 <li class="dropdown fhmm-fw">
@@ -254,9 +262,9 @@
 <li class="dropdown fhmm-fw">
     <a href="<?= base_url('fuera-de-juego') ?>" class="pull-left">Fuera de Juego</a>
 </li>
-<li class="dropdown fhmm-fw">
+<!-- <li class="dropdown fhmm-fw">
     <a href="<?= base_url('fifa-gate') ?>" class="pull-left">FIFA Gate</a>
-</li>
+</li>-->
 </ul>
 <!-- end nav navbar-nav -->
 </div>
