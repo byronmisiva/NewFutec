@@ -752,7 +752,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
-        $data['header1'] = $this->contenido->menu();
+        if ($serie == "56")
+        	$data['header1'] = $this->contenido->menucopaamerica();
+        else
+        	$data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
