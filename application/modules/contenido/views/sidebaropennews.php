@@ -1,3 +1,6 @@
+<?php if (isset($marcador)){
+	echo $marcador;
+ }?>
 
 <div class="col-md-12 col-xs-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
