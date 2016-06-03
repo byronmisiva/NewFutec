@@ -66,6 +66,19 @@ class Contenido extends MY_Controller
 
         return $this->load->view('menucopaamerica', $data, TRUE);
     }
+    
+    public function marcador($data = FALSE){
+    	$this->load->module('story');	
+    	// recuperar codigo de don balos    	
+    	$data['marcadorvivo'] = $this->marcadorVivoCopa();
+    	
+    	//todo pruebas
+    	//$data['marcadorvivo'] = $this->marcadorVivo();
+    	
+    	return $this->load->view('marcador', $data, TRUE);
+    	
+    }
+    
 
     public function header2($data = FALSE)
     {
@@ -124,6 +137,7 @@ class Contenido extends MY_Controller
 
     public function marcadorVivo($campeonato = CHAMP_DEFAULT  )
     {
+    	
         $this->load->module('scoreboards');
         if ($campeonato != AMERICA)
             $datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
@@ -134,10 +148,27 @@ class Contenido extends MY_Controller
             //$datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             $datamarcador['scores'] = $this->mdl_scoreboards->future_matches();
         }
-
+		
         $datamarcador['campeonato'] = $campeonato;
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
     }
+    
+   public function marcadorVivoCopa($campeonato = CHAMP_DEFAULT )
+   { 	  
+	   	$this->load->module('scoreboards');
+	   	if ($campeonato == 63)
+	   		$datamarcador['scores'] = $this->mdl_scoreboards->today_matches("live");
+	   	
+   	
+	   	if ($datamarcador['scores'] == false) {
+	   		$datamarcador['scores'] = $this->mdl_scoreboards->last_matches($campeonato);
+	   	}
+   	
+   	$datamarcador['campeonato'] = $campeonato;
+   	return $this->load->view('marcadorvivo', $datamarcador, TRUE);
+   	
+   	
+   }
 
     public function dpasportslive()
     {
@@ -336,10 +367,12 @@ class Contenido extends MY_Controller
         $this->load->module('banners');
         $this->load->module('scoreboards');
         $bannersSidebar = array();
-			if ($serie== "56")
+			if ($serie== "56"){
 				$bannersSidebar[] = $this->banners->fe_square_copa();
-			else
+				$data['marcador'] = $this->marcador();
+			}else{
 				$bannersSidebar[] = $this->banners->FE_Bigboxbanner();
+			}
 			
         $bannersSidebar[] = $this->banners->fe_new_filmstrip_banner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
@@ -673,7 +706,7 @@ class Contenido extends MY_Controller
             $datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
 
         }
-        $data['marcadorvivo'] = $this->marcadorVivo();
+        $data['marcadorvivo'] = $this->marcadorVivoCopa();
 
         return $this->load->view('header2', $data, TRUE);
 
