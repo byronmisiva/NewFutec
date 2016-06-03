@@ -68,6 +68,21 @@ class Mdl_teams_position extends MY_Model
 
         return $res;
     }
+    
+    function get_teams_total_copa_america($championship){
+    	$this->db->select('t.id,t.name,s.id as section, t.short_name, t.thumb_shield');
+    	$this->db->from('championships as c, championships_teams as ct, teams as t');
+    	$this->db->join('sections s', 't.id = s.team_id', 'left');
+    	$this->db->where('c.id', 'ct.championship_id', FALSE);
+    	$this->db->where('ct.team_id', 't.id', FALSE);
+    	$this->db->where('c.id', $championship);
+    	/*$this->db->order_by('name', 'asc');*/
+    	
+    	$aux = $this->db->get();
+    	
+    	return $aux;
+    	
+    }
 
     function get_teams_total($championship)
     {
@@ -116,16 +131,31 @@ class Mdl_teams_position extends MY_Model
 
     function get_table_by_champ($championship, $round = 0)
     {
-
-        $teams = $this->get_teams_total($championship)->result();
-        $matches = $this->get_matches_by_champ($championship);
-        $last_schedule = $this->get_last_schedule($championship);
-
-        $result = $this->make_table($matches, $teams, $last_schedule);
-        $teams = $this->sanciones_by_champ($result, $championship);
-
+    	if($championship=="56")
+    		$championship = 63;
+       	$teams = $this->get_teams_total($championship)->result();      
+	    $matches = $this->get_matches_by_champ($championship);
+	    $last_schedule = $this->get_last_schedule($championship);
+	
+	    $result = $this->make_table($matches, $teams, $last_schedule);
+	    $teams = $this->sanciones_by_champ($result, $championship);        
         return $teams;
     }
+    
+    function get_table_by_champ_copa_america($championship, $round = 0)
+    {
+    	if($championship=="56")
+    		$championship = 63;
+    	$teams = $this->get_teams_total_copa_america($championship)->result();
+    	$matches = $this->get_matches_by_champ($championship);
+    	$last_schedule = $this->get_last_schedule($championship);
+    	
+    	/*$result = $this->make_table($matches, $teams, $last_schedule);
+    	$teams = $this->sanciones_by_champ($result, $championship);*/
+    	return $teams;
+    }
+    
+    
 
     function get_table_only($group)
     {
@@ -407,6 +437,8 @@ class Mdl_teams_position extends MY_Model
         }
         return $teams;
     }
+    
+    
 
     public function sancionBarcelona($tabla)
     {
