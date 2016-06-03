@@ -61,14 +61,14 @@ class Mdl_scoreboards extends MY_Model
 
     function today_matches($live = 'live')
     {   //Todo partido q se juega hoy
-
         $this->db->select('*, UNIX_TIMESTAMP(date_match) as hour', false);
         $this->db->from('matches');
         $this->db->where('DATE(date_match)', 'CURDATE()', false);
+        
         $this->db->order_by("date_match", "ASC");
 
         //para el caso de copa america
-        $copa = "(live =  '1' OR group_id in (252,253,255,256,257,254))";
+        $copa = "(live =  '1' OR group_id in (252,253,255,256,257,254,291,292,293,294))";
         if ($live == 'live')
             $this->db->where($copa);
 
@@ -81,6 +81,8 @@ class Mdl_scoreboards extends MY_Model
 
         return $partidos;
     }
+    
+    
 
     /*
      * ULTIMOS PARTIDOS DE UNA FECHA DE UN CAMPEONATO */
