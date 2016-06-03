@@ -216,6 +216,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
         $data['header2'] = $this->contenido->header2($dataHeader2);
+        
         $data['top2'] = $this->banners->FE_Megabanner();
 
         // banner amazon
