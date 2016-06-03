@@ -3,7 +3,7 @@
         <img src="<?= base_url('assets/img/logo-copa-america-mini-2016.png') ?>"
              alt="FutbolEcuador"
              width="220"
-             title="Copa América Centeanario 2016 Usa"
+             title="Copa América Centeanario 2016 USA"
              class=" media-object">
     </a>
 </div>
@@ -19,91 +19,55 @@
             <!-- dropdown-menu -->
         </li>
         <!-- mega menu -->
-        <li class="dropdown fhmm-fw"><a href="#" data-toggle="dropdown"
-                                        class="dropdown-toggle">Equipos<b
-                    class="caret"></b></a>
+        <li class="dropdown fhmm-fw">
+        	<a href="#" data-toggle="dropdown" class="dropdown-toggle">Equipos
+        		<b class="caret"></b>
+        	</a>
             <ul class="dropdown-menu fullwidth">
                 <li class="fhmm-content withoutdesc">
-                    <div class="row">
-                        <?php for ($i = 0; $i < 4; $i++) {
-                            $desp = 3;
-                            $separador = ($i < 3) ? 'separador-dotted' : '';
-                            $nombreEquipo1 = $teams[$i * $desp]['name'];
-                            $nombreEquipo2 = $teams[$i * $desp + 1]['name'];
-                            $nombreEquipo3 = $teams[$i * $desp + 2]['name'];
-
-                            //caso nombre muy largo en menu
-                            $nombreEquipo1 = ($nombreEquipo1 == "Universidad Católica de Quito") ? 'U. Católica de Quito' : $nombreEquipo1;
-                            $nombreEquipo2 = ($nombreEquipo2 == "Universidad Católica de Quito") ? 'U. Católica de Quito' : $nombreEquipo2;
-                            $nombreEquipo3 = ($nombreEquipo3 == "Universidad Católica de Quito") ? 'U. Católica de Quito' : $nombreEquipo3;
-
-                            ?>
-                            <div class="col-sm-3 <?php echo $separador ?>">
-                                <ul class="menu-option">
-                                    <li class="clearfix">
-                                        <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp]['name'])) . "/" . $teams[$i * $desp]['section']) . '/' . $campeonato ?>">
-                                            <div style="float: left">
-                                                <img
-                                                    src="http://www.futbolecuador.com/<?php echo $teams[$i * $desp]['thumb_shield']; ?>"
-                                                    alt="<?php $teams[$i * $desp]['thumb_shield']; ?>">
+                    <div class="row"> 
+                        <?php
+                        $pos = 0;
+						if ($campeonato=="56")
+						$campeonato = 63;
+                        for ($i = 0; $i < 4; $i++) {
+                        	$separador = ($i < 4) ? 'separador-dotted' : '';?>
+                        	<div class="col-sm-3 <?php echo $separador ?>">
+                        		<ul class="menu-option">
+                        	<?php for ($x = 0; $x < 4; $x++) {
+                        		if ($teams[$pos+$x]->section == NULL)
+                        			$url =  base_url('copa_america');
+                        			else{
+									$url =	base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$pos+$x]->name)) . "/" . $teams[$pos+$x]->section) . '/' . $campeonato;
+                        		}
+                        		?>
+								<li class="clearfix">
+                                        <a href="<?php echo $url ?>">
+                                            <div class="pull-left">
+                                                <img src="http://www.futbolecuador.com/<?php echo $teams[$pos+$x]->thumb_shield; ?>"
+                                                    alt="<?php $teams[$pos+$x]->name; ?>">
                                             </div>
-
-
-                                            <div class="menu-name"><?php echo $nombreEquipo1 ?></div>
-                                            <div
-                                                class="menu-points text-right"><?php //echo $teams[$i * $desp]['points'] . " pts"?>
-
-                                            </div>
-                                        </a></li>
-                                    <li class="clearfix">
-                                        <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 1]['name'])) . "/" . $teams[$i * $desp + 1]['section']) . '/' . $campeonato ?>">
-                                            <div style="float: left">
-                                                <img
-                                                    src="http://www.futbolecuador.com/<?php echo $teams[$i * $desp + 1]['thumb_shield']; ?>"
-                                                    alt="<?php $teams[$i * $desp + 1]['thumb_shield']; ?>">
-                                            </div>
-                                            <div class="menu-name"><?php echo $nombreEquipo2 ?></div>
-                                            <div
-                                                class="menu-points text-right"><?php //echo $teams[$i * $desp + 1]['points']   . " pts" ?>
+                                            <div class="menu-name"><?php echo $teams[$pos+$x]->name ?></div>
+                                            <div class="menu-points text-right">
                                             </div>
                                         </a>
-                                    </li>
-                                    <li class="clearfix">
-                                        <a href="<?= base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$i * $desp + 2]['name'])) . "/" . $teams[$i * $desp + 2]['section']) . '/' . $campeonato ?>">
-                                            <div style="float: left">
-                                                <img
-                                                    src="http://www.futbolecuador.com/<?php echo $teams[$i * $desp + 2]['thumb_shield']; ?>"
-                                                    alt="<?php $teams[$i * $desp + 2]['thumb_shield']; ?>">
-                                            </div>
-                                            <div class="menu-name"><?php echo $nombreEquipo3 ?></div>
-                                            <div
-                                                class="menu-points text-right"><?php //echo $teams[$i * $desp + 2]['points']  . " pts"?>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <?php
-                        }
-                        ?>
+                                 </li>
+								<?php
+								
+							}	
+							?>
+								</ul>
+							</div>
+							<?php 
+							$pos = $pos+4;
+						}?>
                     </div>
-                    <!-- end row -->
                 </li>
-                <!-- end grid demo -->
             </ul>
-            <!-- end drop down menu -->
-        </li>
-        <!-- end list elements -->
-        <!-- Mega Menu -->
-
-        <!-- mega menu -->
-        <!-- Mega Menu -->
+        </li>        
         <li class="dropdown fhmm-fw">
             <a href="<?= base_url('zona-fe') ?>" class="pull-left">Zona FE</a>
-            <!-- dropdown-menu -->
         </li>
-        <!-- mega menu -->
-        <!-- Mega Menu -->
         <li class="dropdown fhmm-fw">
             <a href="<?= base_url('en-el-exterior') ?>" class="pull-left">En el Exterior</a>
         </li>
@@ -136,33 +100,19 @@
                                      title="Lea todo sobre la Copa Sudamericana">
                             </a>
                         </div>
-                        <!-- end col-4 -->
                     </div>
-                    <!-- end row -->
                 </li>
-                <!-- fhmm-content -->
             </ul>
-            <!-- dropdown-menu -->
         </li>
-        <!-- mega menu -->
-        <!-- list elements -->
-        <!-- Mega Menu -->
-
-        <!-- Mega Menu -->
+        
         <li class="dropdown fhmm-fw">
             <a href="<?= base_url('don-balon') ?>" class="pull-left">
                 <div class="logodonbalon"></div>
             </a>
-            <!-- dropdown-menu -->
         </li>
-        <!-- mega menu -->
-        <!-- Mega Menu -->
 
         <li class="dropdown fhmm-fw">
             <a href="<?= base_url('fuera-de-juego') ?>" class="pull-left">Fuera de Juego</a>
         </li>
-
     </ul>
-    <!-- end nav navbar-nav -->
 </div>
-<!-- end #navbar-collapse-1 -->
