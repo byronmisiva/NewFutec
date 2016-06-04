@@ -13,7 +13,7 @@
 	</video>	
 </div>
 <!-- /1022247/SMART_TOP_EXPANDIDO -->
-	<div id='div-gpt-ad-1464126935195-0' style='height:200px; width:320px;position:absolute;top:50px;left:0;  '>
+	<div id='div-gpt-ad-1464126935195-0' style='height:200px; width:320px;position:initial;top:50px;left:0;display:none;'>
 		<script type='text/javascript'>
 			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464126935195-0'); });
 		</script>
