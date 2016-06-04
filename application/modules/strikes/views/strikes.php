@@ -1,4 +1,4 @@
-<div class="panel-heading backcuadros separador10-xs margen0">
+<div class="panel-heading backcuadros separador10-xs margen0 auspicio goleadores">
     <h4 class="panel-title">
         Goleadores
     </h4>
