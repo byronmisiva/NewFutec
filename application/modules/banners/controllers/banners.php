@@ -13,6 +13,10 @@ class Banners extends MY_Controller
     public function top1($data = FALSE)
     {
         $data['FE_Halfbanner'] = $this->load->view('fe_cocafm', $data, TRUE);
+        /*if (CHAMP_DEFAULT == 63 ){
+        	$this->load->module('contenido');
+        	$data['marcador'] = $this->contenido->marcadorHeader();
+        }*/
         $data['FE_Superbanner'] = $this->load->view('fe_superbanner', $data, TRUE) ;
         return $this->load->view('top1', $data, TRUE);
     }
@@ -221,6 +225,7 @@ class Banners extends MY_Controller
 
     public function fe_header($data = FALSE)
     {
+    	
         return $this->load->view('fe_header', $data, TRUE);
     }
 
