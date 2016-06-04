@@ -9,8 +9,8 @@ if (isset($extraheader)) {
 <?php if (isset($namesection)) {
     if ($namesection != "") {
         ?>
-        <div class="col-md-12 <?php echo $separador10; ?> margen0">
-            <div class="panel-heading backcuadros">
+        <div class="col-md-12 <?php echo $separador10; ?> margen0 ">
+            <div class="panel-heading backcuadros auspicio titular">
                 <h4 class="panel-title"><?php echo $namesection; ?></h4>
             </div>
         </div>
