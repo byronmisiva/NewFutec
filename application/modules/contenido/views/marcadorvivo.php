@@ -3,8 +3,7 @@
         <?php
         $active = " active";
 
-        foreach ($scores as $score) {
-            ?>
+        foreach ($scores as $score) {?>
 
             <div class="item <?php echo $active;
             $active = ""; ?>">
