@@ -7,10 +7,18 @@
 
 <script type="text/javascript">
 function ampliarSeparador(){	
-	if(screen.width < 600){
-		$(".separador10-xs").css("margin-top","101px");
+	  if(screen.width < 600){
+		$(".separador10-xs").css("margin-top","66px");
+		$("#div-gpt-ad-1383593619381-0").css(
+		{
+		"height":"50px",
+		"overflow":"hidden"
+		}
+		);
+	  }else{
+		$(".separador10-xs").css("margin-top","15px");
+		}
 	}
-}
 
 $(document).ready(function () {
 		var contenido = $("#div-gpt-ad-1383593619381-0");
