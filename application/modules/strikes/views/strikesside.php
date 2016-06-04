@@ -1,4 +1,4 @@
-<div class="panel-heading backcuadros">
+<div class="panel-heading backcuadros auspicio side-goleadores">
     <h4 class="panel-title">
         Goleadores
     </h4>
