@@ -28,7 +28,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          $(".pbl-union").fadeOut();
          $("#div-gpt-ad-1450734059657-0").show();
          $("#div-gpt-ad-1450734059657-1").show();
-	$("#Stage_contenedor_Rectangle").html("");
+
       });
       //Edge binding end
 
@@ -80,7 +80,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          $(".pbl-union").fadeOut();
          $("#div-gpt-ad-1450734059657-0").show();
          $("#div-gpt-ad-1450734059657-1").show();
-	$("#Stage_contenedor_Rectangle").html("");
+
       });
          //Edge binding end
 

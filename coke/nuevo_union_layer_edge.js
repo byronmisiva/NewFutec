@@ -4,9 +4,9 @@
 
     "use strict";
     var im=baseUrl+'coke/images/',
-        aud=baseUrl+'coke/media/',
-        vid=baseUrl+'coke/media/',
-        js=baseUrl+'coke/js/',
+        aud=baseUrl+'cokemedia/',
+        vid=baseUrl+'cokemedia/',
+        js=baseUrl+'cokejs/',
         fonts = {
         },
         opts = {
@@ -75,9 +75,9 @@
                             id: 'contenedor',
                             symbolName: 'video',
                             type: 'rect',
-                            rect: ['552px', '246px', '480', '300', 'auto', 'auto'],
+                            rect: ['566px', '259px', '480', '300', 'auto', 'auto'],
                             opacity: '0',
-                            transform: [[],[],[],['1.02941','0.93333']]
+                            transform: [[],[],[],['0.9375','0.85']]
                         }
                     ],
                     style: {
@@ -98,34 +98,14 @@
                     },
                     data: [
                         [
-                            "eid160",
-                            "opacity",
-                            328,
-                            336,
-                            "linear",
-                            "${desplegado_1}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid176",
-                            "opacity",
-                            1933,
-                            250,
-                            "linear",
-                            "${desplegado_1}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid208",
-                            "scaleY",
-                            978,
+                            "eid195",
+                            "scaleX",
+                            1500,
                             0,
                             "linear",
                             "${contenedor}",
-                            '0.93333',
-                            '0.93333'
+                            '0.9375',
+                            '0.9375'
                         ],
                         [
                             "eid199",
@@ -134,7 +114,7 @@
                             0,
                             "linear",
                             "${contenedor}",
-                            '0.93333',
+                            '0.85',
                             '0.85'
                         ],
                         [
@@ -158,6 +138,16 @@
                             '0'
                         ],
                         [
+                            "eid153",
+                            "left",
+                            978,
+                            0,
+                            "easeOutQuad",
+                            "${cerrar2}",
+                            '1074px',
+                            '1074px'
+                        ],
+                        [
                             "eid61",
                             "opacity",
                             798,
@@ -178,16 +168,6 @@
                             '0'
                         ],
                         [
-                            "eid153",
-                            "left",
-                            978,
-                            0,
-                            "easeOutQuad",
-                            "${cerrar2}",
-                            '1074px',
-                            '1074px'
-                        ],
-                        [
                             "eid175",
                             "opacity",
                             1933,
@@ -198,23 +178,13 @@
                             '0'
                         ],
                         [
-                            "eid210",
-                            "top",
-                            978,
-                            0,
-                            "linear",
-                            "${contenedor}",
-                            '246px',
-                            '246px'
-                        ],
-                        [
                             "eid200",
                             "top",
                             1500,
                             0,
                             "linear",
                             "${contenedor}",
-                            '246px',
+                            '259px',
                             '259px'
                         ],
                         [
@@ -228,30 +198,10 @@
                             '270px'
                         ],
                         [
-                            "eid205",
+                            "eid202",
                             "opacity",
                             664,
-                            0,
-                            "linear",
-                            "${contenedor}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid206",
-                            "opacity",
-                            798,
-                            0,
-                            "linear",
-                            "${contenedor}",
-                            '0',
-                            '0'
-                        ],
-                        [
-                            "eid211",
-                            "opacity",
-                            978,
-                            0,
+                            134,
                             "linear",
                             "${contenedor}",
                             '0',
@@ -308,44 +258,34 @@
                             '0'
                         ],
                         [
-                            "eid209",
-                            "left",
-                            978,
-                            0,
-                            "linear",
-                            "${contenedor}",
-                            '552px',
-                            '552px'
-                        ],
-                        [
                             "eid196",
                             "left",
                             1500,
                             0,
                             "linear",
                             "${contenedor}",
-                            '552px',
+                            '566px',
                             '566px'
                         ],
                         [
-                            "eid207",
-                            "scaleX",
-                            978,
-                            0,
+                            "eid160",
+                            "opacity",
+                            328,
+                            336,
                             "linear",
-                            "${contenedor}",
-                            '1.02941',
-                            '1.02941'
+                            "${desplegado_1}",
+                            '0',
+                            '1'
                         ],
                         [
-                            "eid195",
-                            "scaleX",
-                            1500,
-                            0,
+                            "eid176",
+                            "opacity",
+                            1933,
+                            250,
                             "linear",
-                            "${contenedor}",
-                            '1.02941',
-                            '0.9375'
+                            "${desplegado_1}",
+                            '1',
+                            '0'
                         ]
                     ]
                 }
@@ -440,17 +380,16 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '480px', '300px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
-                            fill: ['rgba(192,192,192,0.00)']
+                            rect: ['0px', '0px', '480px', '300px', 'auto', 'auto'],
+                            fill: ['rgba(192,192,192,1)']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '480px', '300px']
+                            rect: [null, null, '480px', '300px']
                         }
                     }
                 },
