@@ -68,15 +68,15 @@ class Contenido extends MY_Controller
     }
     
     public function marcador($data = FALSE){
-    	$this->load->module('story');	
-    	// recuperar codigo de don balos    	
+    	$this->load->module('story');
     	$data['marcadorvivo'] = $this->marcadorVivoCopa();
-    	
-    	//todo pruebas
-    	//$data['marcadorvivo'] = $this->marcadorVivo();
-    	
     	return $this->load->view('marcador', $data, TRUE);
-    	
+    }
+    
+    public function marcadorHeader($data = FALSE){
+    	$this->load->module('story');
+    	$marcadorvivo = $this->marcadorVivoCopaData();
+    	return $marcadorvivo["scores"];
     }
     
 
@@ -166,8 +166,20 @@ class Contenido extends MY_Controller
    	
    	$datamarcador['campeonato'] = $campeonato;
    	return $this->load->view('marcadorvivo', $datamarcador, TRUE);
-   	
-   	
+   }
+   
+   public function marcadorVivoCopaData($campeonato = CHAMP_DEFAULT )
+   {
+   	$this->load->module('scoreboards');
+   	if ($campeonato == 63)
+   		$datamarcador['scores'] = $this->mdl_scoreboards->today_matches("live");
+   	 
+   
+   	if ($datamarcador['scores'] == false) {
+   		$datamarcador['scores'] = $this->mdl_scoreboards->last_matches($campeonato);
+   	}
+   
+   	return $datamarcador;
    }
 
     public function dpasportslive()
