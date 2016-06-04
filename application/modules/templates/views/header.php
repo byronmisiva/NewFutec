@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
           href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
-
+   
     <meta name="twitter:widgets:csp" content="on">
 
     <!--twitter TAGS-->
@@ -169,6 +169,16 @@
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "636c7935-082e-4d18-ac85-13cafa7345da", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	<!-- fin share this -->
+	    <?php 
+
+    //echo $this->uri->segment(1);
+    
+    if ($this->uri->segment(3) == 63){?>
+    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.css') ?>"/>
+    <?php }elseif($this->uri->segment(1) == "copa-america"){?>
+    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.css') ?>"/>
+    <?php }?>
+	
 </head>
 <body onload="verificarInstlacion();cargarSplash();">
 
@@ -232,6 +242,7 @@
         // si no existe contenido no muestra para el caso del header y splas
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
+    
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
 
