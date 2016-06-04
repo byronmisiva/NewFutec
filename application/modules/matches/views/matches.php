@@ -12,7 +12,7 @@ $estado['8'] = 'Fin del Partido';?>
 
 
 <div class="col-md-12 separador10-xs margen0">
-    <div class="panel-heading backcuadros">
+    <div class="panel-heading backcuadros auspicio calendario">
         <h4 class="panel-title">
             <? echo $title; ?>
         </h4>
