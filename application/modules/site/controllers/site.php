@@ -793,7 +793,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             redirect('home');
 
         if ($idNoticia) {
-
             if ($this->verificarDispositivo() == "1")
                 $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas());
             else
@@ -822,8 +821,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['content'] = $storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie, "large", $tipotabla);
+        if ($data['verMobile'] == 0){
 			if ($serie == "56")
 				$data['cinta_banner'] = $this->banners->fe_cinta_copa();
+        }
         
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
@@ -1025,7 +1026,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $title = $name->name;
 
-
         $fechas = $this->matches->matches($id, $title);
 
         if ($id == ELIMINATORIAS) {
@@ -1160,7 +1160,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['description'] = $description;
         $data['fe_header'] = $this->banners->fe_header();
 
-
         if ($serie == AMERICA) {
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin_copaamerica();
             $data['header1'] = $this->contenido->menucopaamerica();
@@ -1169,7 +1168,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
             $data['header1'] = $this->contenido->menu();
             $this->templates->_index($data);
-
         }
 
     }
