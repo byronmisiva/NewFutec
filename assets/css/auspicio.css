@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+ .backcuadros.auspicio{
+	background-image: url(../../assets/auspicio/posiciones_660x50.jpg) !important;
+	background-size:660px auto !important;
+	height: 50px !important;
+}
+
+.backcuadros > .tabla{
+	display: none;
+}
+
+.marcadorenvivofondo {
+    background-image: url(../../assets/auspicio/fondo_marcador.jpg) !important;
+    background-size: 100% 100%;
+}
+
+.text-white, .text-blue1 {
+    color: #000;
+}
+
+.backcuadros.auspicio.calendario{
+	background-image: url(../../assets/auspicio/calendario_660x50.jpg) !important;
+	background-size:660px auto !important;
+	height: 50px !important;
+}
+
+.backcuadros.auspicio.calendario >.panel-title{
+	display: none;
+}
+
+.backcuadros.auspicio.goleadores{
+	background-image: url(../../assets/auspicio/goleadores_660x50.jpg) !important;
+	background-size:660px auto !important;
+	height: 50px !important;
+}
+
+.backcuadros.auspicio.goleadores >.panel-title{
+	display: none;
+}
+
+.backcuadros.auspicio.titular{
+	background-image: url(../../assets/auspicio/cabecera.jpg) !important;
+	background-size:660px auto !important;
+	height: 50px !important;	
+}
+
+.backcuadros.auspicio.titular >.panel-title{
+	display: none;
+}
+
+.backcuadros.auspicio.side-goleadores{
+	background-image: url(../../assets/auspicio/goleadores300.jpg) !important;
+	background-size:300px auto !important;
+	height: 50px !important;
+}
+
+.backcuadros.auspicio.side-goleadores >.panel-title{
+	display: none;
+}
+
+.backcuadros.auspicio.side-tabla{
+	background-image: url(../../assets/auspicio/tabla300.jpg) !important;
+	background-size:300px auto !important;
+	height: 50px !important;
+}
+
+.backcuadros.auspicio.side-tabla >.panel-title{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
