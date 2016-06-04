@@ -37,12 +37,44 @@
 		</div>
     </div>
 </div>
+<script src="http://www.youtube.com/player_api"></script>
 <script type="text/javascript">
-function activarPbl(){
+//activarPbl("yw_nKi2-Rek");
+var player;
+function playVideo(videoId) {
+    player = new YT.Player('player', {
+        height: '280',
+        width: '440',
+        videoId: videoId,
+        events: {
+             'onReady': onPlayerReady,
+             'onStateChange': onPlayerStateChange
+         }
+     });
+ };
+ 
+ function onPlayerReady(event) {
+     event.target.playVideo();
+ };
+ 
+ function onPlayerStateChange(event) {
+     if(event.data === 0) {
+         document.getElementById('content').innerHTML = "";
+     }
+ };
+
+ 
+function activarPbl(videoName){
 	$("#div-gpt-ad-1450734059657-0").hide();
 	$("#div-gpt-ad-1450734059657-1").hide();
 	$(".pbl-union").fadeIn();
 	$(".Stage_boton_abre_id").click();	
+    setTimeout(function(){
+    	var div = document.createElement('div');
+        div.id = 'player';
+        document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
+    	 playVideo(videoName);
+    }, 1500);
 }	
 </script>
 
