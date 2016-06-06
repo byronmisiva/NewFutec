@@ -49,6 +49,11 @@ class Banners extends MY_Controller
     	return $this->load->view('anuncio_alertas', $data, TRUE);
     }
     
+    public function fe_noticia_patrocinada($data = FALSE)
+    {
+    	return $this->load->view('fe_noticia_patrocinada', $data, TRUE);
+    }
+    
 	public function fe_cinta_copa($data = FALSE)
     {
     	return $this->load->view('fe_cinta_copa', $data, TRUE);
