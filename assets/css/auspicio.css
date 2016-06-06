@@ -69,6 +69,29 @@
 	display: none;
 }
 
+.backcuadros.auspicio.marcador{
+	background-image: url(../../assets/auspicio/marcador-en-vivo.jpg) !important;
+	background-size:300px auto !important;
+	height: 50px !important;
+}
+
+.backcuadros.auspicio.marcador >.panel-title{
+	display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+	.backcuadros.auspicio.titular,
+	.backcuadros.auspicio.marcador,
+	.backcuadros.auspicio.calendario,
+	.backcuadros.auspicio.goleadores,
+	.backcuadros.auspicio.titular {
+	    background-image: url(../../assets/auspicio/cabecera.jpg) !important;
+	    background-size: 100% auto !important;
+	    height: 36px !important;
+	    background-repeat: no-repeat !important;
+	}		
+}
 
 
 
