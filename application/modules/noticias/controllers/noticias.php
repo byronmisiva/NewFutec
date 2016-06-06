@@ -62,6 +62,7 @@ class Noticias extends MY_Controller
             $listRotativas = '';
         }
         $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas, $offset);
+        
 
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
