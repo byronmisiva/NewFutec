@@ -9,12 +9,11 @@
 function ampliarSeparador(){	
 	  if(screen.width < 600){
 		$(".separador10-xs").css("margin-top","66px");
-		$("#div-gpt-ad-1383593619381-0").css(
-		{
-		"height":"50px",
-		"overflow":"hidden"
+		$("#div-gpt-ad-1383593619381-0").css({"height":"50px","overflow":"hidden"});
+		var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
+      	var iframeHeader=contenedorheader[0].lastChild["childNodes"][0];
+      	$(iframeHeader).attr("height","50px");
 		}
-		);
 	  }else{
 		$(".separador10-xs").css("margin-top","15px");
 		}
@@ -23,8 +22,7 @@ function ampliarSeparador(){
 $(document).ready(function () {
 		var contenido = $("#div-gpt-ad-1383593619381-0");
 		if(contenido.length > 0){
-		  ampliarSeparador()
-		}
+		  ampliarSeparador();		
 });
 
 </script>
