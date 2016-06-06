@@ -47,7 +47,16 @@ $this->load->view('header', $data);
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-
+					<li>
+						  <a href="<?php echo base_url('copa-america') ?>">
+						        <img src="<?= base_url('assets/img/logo-copa-america-mini-2016.png') ?>"
+						             alt="FutbolEcuador"
+						             title="Copa América Centeanario 2016 USA"
+						             class=" media-object" width="130px">
+						    </a>
+					</li>
+					
+					
                     <li><a class="clickmenu" href="<?php echo base_url('site/marcadorenvivo') ?>">Marcador en Vivo</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Posiciones
@@ -85,7 +94,7 @@ $this->load->view('header', $data);
                         <ul class="dropdown-menu" role="menu">
                             <li><a class="clickmenu" href="<?= base_url('eliminatorias') ?>">Eliminatorias</a></li>
                             <li><a class="clickmenu" href="<?= base_url('copa-sudamericana') ?>">Copa Sudamericana</a></li>
-                            <li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa América 2015</a></li>
+                            <li><a class="clickmenu" href="<?= base_url('copa-america') ?>">Copa América Centenario</a></li>
                         </ul>
                     </li>
                     <li><a class="clickmenu" href="<?= base_url('zona-fe') ?>">Zona FE</a></li>
