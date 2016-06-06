@@ -12,7 +12,7 @@ $estado['8'] = 'Fin del Partido';?>
 
     <div class="matchdetail col-md-12 separador10-xs margen0 margen0-xs">
     <div class="col-md-12   margen0">
-        <div class="panel-heading backcuadros">
+        <div class="panel-heading backcuadros auspicio marcador">
             <h1 class="tabla textomarcadorenvivo"><? echo $title; ?></h1>
         </div>
     </div>
