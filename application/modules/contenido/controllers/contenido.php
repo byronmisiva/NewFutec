@@ -375,15 +375,24 @@ class Contenido extends MY_Controller
 
     public function sidebarOpenNews($data = FALSE, $serie = SERIE_A, $tipo = "large", $tipotabla = "acumulada")
     {		
-        //carga Banners
+    	//carga Banners
         $this->load->module('banners');
         $this->load->module('scoreboards');
+        
+        if (isset($data["patricinada"])){
+        	$bannersSidebar[] = $this->banners->fe_noticia_patrocinada();
+        }else{
+        	$bannersSidebar[] = $this->banners->FE_Bigboxbanner();
+        }
+        
         $bannersSidebar = array();
 			if ($serie== "56"){
 				$bannersSidebar[] = $this->banners->fe_square_copa();
 				$data['marcador'] = $this->marcador();
-			}else{
-				$bannersSidebar[] = $this->banners->FE_Bigboxbanner();
+			}elseif(isset($data["patricinada"]) && ($data["patricinada"] == "1")) {					
+						$bannersSidebar[] = $this->banners->fe_noticia_patrocinada();
+				}else{
+					$bannersSidebar[] = $this->banners->FE_Bigboxbanner();
 			}
 			
         $bannersSidebar[] = $this->banners->fe_new_filmstrip_banner();
