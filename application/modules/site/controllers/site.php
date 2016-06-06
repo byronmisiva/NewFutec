@@ -338,7 +338,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->library('user_agent');
         $this->load->module('story');
 
-
         if ($this->verificarDispositivo() == "1") {
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
@@ -376,7 +375,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_splash_g13(),"","",$this->banners->fe_video_banner());
 //            $storia = $this->story->get_complete($idNoticia, $this->banners->anuncio_alertas() . $this->banners->fe_netsonic_tv().   $this->banners->fe_intext());
         }
-
+            
+        
         $logoDonBalon = "  <span class='donbalonlogo'></span>";
         $storia = str_replace("en www.donbalon.com", "", $storia);
         $storia = str_replace(" donbalon", $logoDonBalon, $storia);
@@ -387,8 +387,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $storia = str_replace("(AQUÍ)", $logoDonBalon, $storia);
         $storia = str_replace("AQUÍ:", $logoDonBalon, $storia);
         $storia = str_replace("AQUÍ", $logoDonBalon, $storia);
-
+        
         $aux = $this->mdl_story->get_story($idNoticia);
+        $patrocinada=array("patricinada"=>$aux->sponsored);
+        
         $image = $aux->thumb640;
         $description = strip_tags($aux->lead);
         $bodytag = str_replace('"', '', strip_tags($aux->title));
@@ -399,18 +401,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['description'] = $description;
         $data['idnoticia'] = $idNoticia;
         $data['ulrfriend'] = $this->_urlFriendly($aux->title);
-
-
         // fin carga la informacion de la noticia
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
         $data['header1'] = $this->contenido->menu();
 
-
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
-
         $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS). $fe_loading_movil;
-        $data['sidebar'] = $this->contenido->sidebarOpenNews();
+        $data['sidebar'] = $this->contenido->sidebarOpenNews($patrocinada);
 
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
