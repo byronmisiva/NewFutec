@@ -70,7 +70,8 @@
         <div class="well well-sm">
             <!--contenido colapsable-->
             <div class="panel-group" id="accordion2">
-                <?php         
+                <?php              
+                
                 foreach ($campeonatosResultados as $campeonato) {
                     if (CHAMP_DEFAULT == $campeonato->champ) {
                         $active = "in";
