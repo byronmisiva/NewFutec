@@ -31,7 +31,7 @@
 						if ($campeonato=="56")
 						$campeonato = 63;
                         for ($i = 0; $i < 4; $i++) {
-                        	$separador = ($i < 4) ? 'separador-dotted' : '';?>
+                        	$separador = ($i < 3) ? 'separador-dotted' : '';?>
                         	<div class="col-sm-3 <?php echo $separador ?>">
                         		<ul class="menu-option">
                         	<?php for ($x = 0; $x < 4; $x++) {
