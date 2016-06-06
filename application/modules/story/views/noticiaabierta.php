@@ -21,8 +21,8 @@
                 <?php 
                 
                 if ($noticia->sponsored == "1"){?>
-	                <div style="position: absolute;top: 5px;right: 20px;">
-	                 	<img src="<?php echo base_url()?>assets/patrocinador/sponsor.gif" width="70px"/>
+	                <div class="img-sponsor">
+	                 	<img src="<?php echo base_url()?>assets/patrocinador/sponsor.gif" />
 	                </div>     
                 <?php }?>
                     
