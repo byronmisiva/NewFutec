@@ -405,6 +405,18 @@ footer {
     cursor: default;
 }
 
+/*imagen para noticia patrocinada*/
+.img-sponsor{
+	position: absolute;top: 0;right: 20px;
+}
+
+.img-sponsor >img{
+	width: 50px;
+}
+
+/*****/
+
+
 /* Media Queries
 ***********************/
 @media screen and (max-width: 960px) {
@@ -1359,6 +1371,10 @@ h4.contenidos {
     .separadortw {
         margin-top: 8px;
     }
+    
+    .img-sponsor {	    
+	    right: 10px;
+	}
 }
 
 .navbar-futec .navbar-link {
@@ -1708,6 +1724,8 @@ input[type="checkbox"], input[type="radio"] {
         top: 175px;
     }
 }
+
+
 
 @media screen and (max-device-width: 300px) {
     .redireccionFE {
