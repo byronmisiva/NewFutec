@@ -33,8 +33,17 @@ function cargarSplash() {
                 $('.separador10-xs').css('margin-top', '16px');
         } else {
             $('#div-gpt-ad-1383593619381-0').show();
-            if (verMobile == 1)
-                $('.separador10-xs').css('margin-top', '95px');
+            if (verMobile == 1){
+            	/*este caso es para desplegar pabbers de 320x80 version mas usada*/            	
+                	$('.separador10-xs').css('margin-top', '65px');
+                /*fin caso para */
+                /*este caso es para desplegar pabbers de 320x50*/
+                	var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
+                	var iframeHeader=contenedorheader[0].lastChild["childNodes"][0];
+                	$(iframeHeader).attr("height","50px");
+                	/*este caso modifica el iframe que carga el banner*/
+                /*fin caso*/
+            }
         }
     }
     //div-gpt-ad-1383593619381-3
@@ -72,14 +81,16 @@ function cargarSplash() {
             $('#div-gpt-ad-1445466832316-0').css("height", "370px");
         }
     }
-
+    
 
     if (verMobile == 1) {
         // caso movil
         if ($("#div-gpt-ad-1383593884981-1").length > 0) {
             if ($("#div-gpt-ad-1383593884981-1 iframe").contents().find("body").html().length > 0) {
+            	if(screen.width < 600){
                 $('#darkLayer').show();
                 $('#FE_LOADING').show();
+            	}
                 //funcion enviar encuesta
                 $(".closeBanner").click(function () {
                     $('#darkLayer').hide();
@@ -103,7 +114,7 @@ function cargarSplash() {
                 $(".closeBanner").click(function () {
                     $('#darkLayer').hide();
                     $('#FE_LOADING').hide();
-                })
+                });
                 setTimeout(cleanBlackLayer, 100000);
             } else {
                 if (mostrarSplash == 1)
