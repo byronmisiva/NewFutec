@@ -407,7 +407,7 @@ footer {
 
 /*imagen para noticia patrocinada*/
 .img-sponsor{
-	position: absolute;top: 0;right: 20px;
+	position: absolute;top: 0;right: 24px;
 }
 
 .img-sponsor >img{
