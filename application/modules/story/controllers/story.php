@@ -45,6 +45,7 @@ class Story extends MY_Controller
                 $data['isMobile'] = true;
         }
         $noticia = $this->mdl_story->get_story($id);
+        
         $data['noticia'] = $noticia;
 
         $data['bannerBottom'] = $bannerBottom;

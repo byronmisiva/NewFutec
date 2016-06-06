@@ -124,11 +124,10 @@ class Mdl_story extends MY_Model
 
     function get_banner($max = 5, $exclude = '')
     {
+    	
+    	//$this->db->where('s.sponsored', 0, FALSE);
         $this->db->select("s.id as sid,
-				s.id,
-				s.title,
-				s.lead,
-				s.subtitle,
+				s.id, s.title, s.lead, s.subtitle,
 				s.sponsored,
 				s.created,
 				s.rate,
@@ -146,7 +145,7 @@ class Mdl_story extends MY_Model
         $this->db->join('images i', 's.image_id = i.id', FALSE);
         $this->db->where('s.invisible', 0, FALSE);
         $this->db->where('s.position', 1, FALSE);
-        $this->db->where('s.sponsored', 0, FALSE);
+        
         $this->db->where('s.created >=', '(DATE_SUB(CURRENT_DATE, INTERVAL 30 DAY))', FALSE);
         $this->db->order_by('s.created', 'desc', FALSE);
         $this->db->limit($max);

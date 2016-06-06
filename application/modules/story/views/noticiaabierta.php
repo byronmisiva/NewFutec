@@ -18,6 +18,14 @@
                 <img class="img-responsive margen10b margen10r margen0-xs"
                      src="http://www.futbolecuador.com/<?php echo $noticia->thumb400; ?>"
                      alt="<?php echo $noticia->image_name; ?>">
+                <?php 
+                
+                if ($noticia->sponsored == "1"){?>
+	                <div style="position: absolute;top: 5px;right: 20px;">
+	                 	<img src="<?php echo base_url()?>assets/patrocinador/sponsor.gif" width="70px"/>
+	                </div>     
+                <?php }?>
+                    
                 <?php //echo $bannerTop; ?>
             </div>
         </div>
