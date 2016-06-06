@@ -103,7 +103,12 @@
     <!-- Input slider -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slider.css') ?>"/>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
-    <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet">
+    
+    <!-- habilitar para desarrollar -->
+    <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet"> -->
+    <!-- habilitar para produccion -->
+    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=5" rel="stylesheet">
+    
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css"
           media="screen">
@@ -174,9 +179,9 @@
     //echo $this->uri->segment(1);
     
     if ($this->uri->segment(3) == 63){?>
-    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.css') ?>"/>
+    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>
     <?php }elseif($this->uri->segment(1) == "copa-america"){?>
-    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.css') ?>"/>
+    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>
     <?php }?>
 	
 </head>
