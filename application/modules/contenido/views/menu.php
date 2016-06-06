@@ -1,6 +1,6 @@
 <div class="navbar-header hidden-xs">
     <a href="<?php echo base_url() ?>" class="" onclick="ga('send', 'event', 'menu', 'click', 'home');"><img src="<?= base_url('assets/img/logotipo.png') ?>"
-                                                     alt="FutbolEcuador" title="Lo mejor del futbol ecuatoriano" class=" media-object">
+          alt="FutbolEcuador" title="Lo mejor del futbol ecuatoriano" class=" media-object">
     </a>
 </div>
 <!-- end navbar-header -->
@@ -8,8 +8,6 @@
 <ul class="nav navbar-nav">
 <!-- list elements -->
 
-
-             
  <li class="dropdown fhmm-fw text-center">
     <a href="<?= base_url('copa-america') ?>" class="pull-left text-center">
     	<img src="<?= base_url('assets/img/logo-copa-america-mini-2016.png') ?>"
