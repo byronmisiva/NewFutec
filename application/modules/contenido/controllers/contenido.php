@@ -372,6 +372,8 @@ class Contenido extends MY_Controller
         return $this->load->view('sidebar', $data, TRUE);
         // todo validar si se queda
     }
+    
+   
 
     public function sidebarOpenNews($data = FALSE, $serie = SERIE_A, $tipo = "large", $tipotabla = "acumulada")
     {		
