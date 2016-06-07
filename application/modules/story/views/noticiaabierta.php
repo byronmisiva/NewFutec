@@ -22,7 +22,7 @@
                 
                 if ($noticia->sponsored == "1"){?>
 	                <div class="img-sponsor">
-	                 	<img src="<?php echo base_url()?>assets/patrocinador/sponsor.gif?refresh=4" />
+	                 	<img src="<?php echo base_url()?>assets/patrocinador/sponsor.gif?refresh=321" />
 	                </div>     
                 <?php }?>
                     
