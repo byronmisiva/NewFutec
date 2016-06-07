@@ -279,6 +279,8 @@ class Noticias extends MY_Controller
             }
             //fin intercalar banners
         }
+        
+    
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
 
@@ -341,6 +343,13 @@ class Noticias extends MY_Controller
             }
             //fin intercalar banners
         }
+        
+        if ($this->verificarDispositivo() == "1"){
+        	if ($urlSeccion != "copaamerica"){
+        		$data ['marcador'] = $this->contenido->marcador();
+        	}
+        }
+        
         $data ['namesection'] = $namesection;
         $data['noticias'] = $noticias;
 
@@ -349,6 +358,30 @@ class Noticias extends MY_Controller
         $data['posSection'] = $posSection;
 
         return $this->load->view('noticiashome', $data, TRUE);
+    }
+    
+    function verificarDispositivo()
+    {
+    	$this->load->library('user_agent');
+    	$mobiles = array('Sony Ericsson', 'Apple iPhone', 'Ipad', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia", "BlackBerry");
+    	$isMobile = "0";
+    	if ($this->agent->is_mobile()) {
+    		$m = $this->agent->mobile();
+    		if ($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i', $this->agent->agent) == 0)
+    			$m = "Android Tablet";
+    		switch ($m) {
+    			case 'Apple iPad':
+    				$isMobile = "2";
+    				break;
+    			case 'Android Tablet':
+    				$isMobile = "2";
+    				break;
+    			case in_array($m, $mobiles):
+    				$isMobile = "1";
+    				break;
+    		}
+    	}
+    	return $isMobile;
     }
 
     public function viewSeccionsSingle($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE)
