@@ -17,6 +17,13 @@ if (isset($extraheader)) {
         <?php
     }
 } ?>
+
+<?php if(isset($marcador)){?>
+
+            <?php echo $marcador?>
+
+
+<?php }?>
 <?php
 $indice = 0;
 foreach ($noticias as $noticia) {
