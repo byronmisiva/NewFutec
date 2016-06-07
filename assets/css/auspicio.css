@@ -71,8 +71,9 @@
 
 .backcuadros.auspicio.marcador{
 	background-image: url(../../assets/auspicio/marcador-en-vivo.jpg) !important;
-	background-size:300px auto !important;
+	background-size:660px auto !important;
 	height: 50px !important;
+	background-repeat: no-repeat;
 }
 
 .backcuadros.auspicio.marcador >.panel-title{
@@ -81,12 +82,17 @@
 
 
 @media screen and (max-width: 480px) {
-	.backcuadros.auspicio.titular,
-	.backcuadros.auspicio.marcador,
-	.backcuadros.auspicio.calendario,
-	.backcuadros.auspicio.goleadores,
+	
 	.backcuadros.auspicio.titular {
 	    background-image: url(../../assets/auspicio/cabecera.jpg) !important;
+	    background-size: 100% auto !important;
+	    height: 36px !important;
+	    background-repeat: no-repeat !important;
+	}
+	
+	.backcuadros.auspicio.marcador,
+	.backcuadros.auspicio.calendario,
+	.backcuadros.auspicio.goleadores{
 	    background-size: 100% auto !important;
 	    height: 36px !important;
 	    background-repeat: no-repeat !important;
