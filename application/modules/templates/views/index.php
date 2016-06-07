@@ -145,6 +145,7 @@ $this->load->view('header', $data);
             </div>
         </div>
     <?php } ?>
+            
     <div class="row">
         <div class="col-md-8  col-sm-8 zonacontenido">
             <div class="row margen0  content ">
