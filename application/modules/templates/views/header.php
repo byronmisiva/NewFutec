@@ -105,8 +105,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css'); ?>" type="text/css" media="screen"/>
     
     <!-- habilitar para desarrollar -->
-    <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet"> -->
-    <!-- habilitar para produccion -->
+     <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet">--> 
+    <!-- habilitar para produccion--> 
     <link href="<?php echo base_url() ?>assets/css/style.min.css?a=5" rel="stylesheet">
     
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
@@ -178,9 +178,10 @@
 
     //echo $this->uri->segment(1);
     
+    
     if ($this->uri->segment(3) == 63){?>
     	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>
-    <?php }elseif($this->uri->segment(1) == "copa-america"){?>
+    <?php }elseif(($this->uri->segment(1) == "copa-america") || ($this->uri->segment(2) =="partido")){?>
     	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>
     <?php }?>
 	
@@ -388,3 +389,6 @@
         </div>
     </div>
 </div>
+
+
+
