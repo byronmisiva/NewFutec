@@ -175,8 +175,10 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         $publicidadFlotante = "";
+        $publicidadSeccion = $this->banners->fe_smart_top_copa_america();
+        
         //$fe_loading_movil.
-        $data['content'] = $marcadorenvivo . $publicidadFlotante . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . "</div>";
+        $data['content'] = $marcadorenvivo . $publicidadFlotante.$publicidadSeccion . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . "</div>";
         $data['sidebar'] = "";
 		
         $data['footer'] = ''.$bannerTapTap;
@@ -751,6 +753,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['verMobile'] = $this->verificarDispositivo();
         $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
+        
+        if ($data['verMobile'] == 0){
+        	if ($serie == "56")
+        		$data['cinta_banner'] = $this->banners->fe_cinta_copa();
+        }
+        
         if ($serie == "56")
         	$data['header1'] = $this->contenido->menucopaamerica();
         else
@@ -760,7 +768,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         if ($tipoSeccion == "masleido") {
             $noticiasCuerpo = $this->noticias->viewseccion_plus($nameSeccion, $seccion, $seccionpos, $urlSeccion);
-
 
         } else {
             $noticiasCuerpo = $this->noticias->viewSeccions($nameSeccion, $seccion, $seccionpos, $urlSeccion);
@@ -816,13 +823,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $data['pageTitle'] = "futbolecuador.com - " . $bodytag;
         // fin carga la informacion de la noticia
-
+        
+        
+        
         $data['content'] = $storia . $noticiasCuerpo;
         $data['sidebar'] = $this->contenido->sidebarOpenNews(false, $serie, "large", $tipotabla);
-        if ($data['verMobile'] == 0){
-			if ($serie == "56")
-				$data['cinta_banner'] = $this->banners->fe_cinta_copa();
-        }
         
         $data['footer'] = $this->contenido->footer();
         $data['bottom'] = $this->contenido->bottom();
