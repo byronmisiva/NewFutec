@@ -31,7 +31,6 @@ if (in_array($idtipo, $tipo)) { ?>
 	var sw =0;
 	function activarVideo(){
 		if (sw == 0){
-			console.log("panta:"+screen.width);
 			if(screen.width > 600){
 			 $("#div-gpt-ad-1457102356654-0").animate(
 				 { height: 'toggle'},1000
