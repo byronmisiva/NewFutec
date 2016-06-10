@@ -27,6 +27,8 @@
      var iframeHeader=contenedorheader[0].lastChild["childNodes"][0];
      $(iframeHeader).attr("height","50px");
      
-
+     var conFm = $("#ccfmPlayer");
+     var iframeHeader = conFm.context["childNodes"][0];
+     console.debug(conFm);
      
 </script>
