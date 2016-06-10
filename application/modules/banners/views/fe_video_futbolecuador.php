@@ -36,8 +36,10 @@ if (in_array($idtipo, $tipo)) { ?>
 			 $("#div-gpt-ad-1457102356654-0").animate(
 				 { height: 'toggle'},1000
 			 );
+			 
 			return 1;
 			}else{
+				$("#div-gpt-ad-1457102356654-0").hide();
 					return 0;
 			}
 				sw=sw+1;
