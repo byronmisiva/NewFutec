@@ -7,7 +7,9 @@
 <div class="table-responsive">
     <table class="table table-striped font12  tablemargin4">
         <tbody>
-        <?php if (is_array($jugadores)) {
+        <?php
+        
+        if (is_array($jugadores)) {
             foreach ($jugadores as $key => $jugador) {
                 ?>
                 <tr>
