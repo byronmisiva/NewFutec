@@ -17,6 +17,7 @@ if (in_array($idtipo, $tipo)) { ?>
 <script type='text/javascript'>
 	function cerrarVideo(){
 		$("#div-gpt-ad-1457102356654-0").toggle();
+		$("div-gpt-ad-1457102356654-0").html("");
 	};	
 
 	setTimeout(function(){ 
