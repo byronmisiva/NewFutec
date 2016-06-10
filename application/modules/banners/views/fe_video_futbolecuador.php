@@ -23,5 +23,11 @@ if (in_array($idtipo, $tipo)) { ?>
 	setTimeout(function(){ 
 		$("#div-gpt-ad-1457102356654-0").toggle();
 	}, 240000);	
+
+	function activarVideo(){
+			 $("#div-gpt-ad-1457102356654-0").toggle();
+			return 1;
+		} 
+	
 </script>
 <?php }?>
