@@ -19,10 +19,7 @@ if (isset($extraheader)) {
 } ?>
 
 <?php if(isset($marcador)){?>
-
             <?php echo $marcador?>
-
-
 <?php }?>
 <?php
 $indice = 0;

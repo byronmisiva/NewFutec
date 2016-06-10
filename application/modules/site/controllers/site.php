@@ -609,12 +609,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $this->load->module('contenido');
         $this->load->module('teams_position');
 
-        $parte = $this->uri->segment(3);
-
-        if (!$parte) {
-            echo $this->contenido->sidebarDonBalon(false, CHAMP_DEFAULT, 0);
+        //$parte = $this->uri->segment(3);
+        if (!$this->uri->segment(3)){
+            echo $this->contenido->sidebarDonBalon(false, CHAMP_DEFAULT, 0);            
         } else {
-            echo $this->contenido->sidebarDonBalon(false, CHAMP_DEFAULT, $parte);
+            echo $this->contenido->sidebarDonBalon(false, CHAMP_DEFAULT, $this->uri->segment(3));
         }
     }
 

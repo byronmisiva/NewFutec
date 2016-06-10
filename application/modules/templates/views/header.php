@@ -332,7 +332,6 @@
         });
     </script>
 </div>
-
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");

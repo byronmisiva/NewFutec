@@ -11,9 +11,11 @@ class Scoreboards extends MY_Controller
     }
 
     public function tablaposiciones($temporada, $tipoChamp = 'acumulada')
-    {
+    {  	
+    	
     	if ($temporada == "56")
-    		$temporada = 63;
+    		$temporada = 63;    	
+    	
         $data['tipoCampeonato'] = $tipoChamp;
         if ($tipoChamp == 'acumulada') {
             $data['scroreBoardAcumulative'] = $this->leaderboard_cumulative($temporada);
