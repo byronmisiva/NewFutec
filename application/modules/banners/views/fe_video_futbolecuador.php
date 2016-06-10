@@ -29,11 +29,15 @@ if (in_array($idtipo, $tipo)) { ?>
 	}, 240000);	
 
 	function activarVideo(){
+		if(screen.width > 600){
 			 $("#div-gpt-ad-1457102356654-0").animate(
 					 { height: 'toggle'},
 					 1000
 					 );
 			return 1;
+		}else{
+			return 0;
+			}
 		} 
 	
 </script>
