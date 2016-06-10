@@ -4,7 +4,7 @@
  * Donde 0 Teads, 1 netsonic, 2 Futbolecuador
  */
 //$turno = rand(0, 1);
-urno = 2;
+$turno = 2;
 if ($turno == "0"){
 	$this->load->view('fe_video_teads');
 }else if ($turno == "1"){
