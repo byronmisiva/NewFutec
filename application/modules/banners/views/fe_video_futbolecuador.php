@@ -22,10 +22,17 @@ if (in_array($idtipo, $tipo)) { ?>
 
 	setTimeout(function(){ 
 		$("#div-gpt-ad-1457102356654-0").toggle();
+		$("#div-gpt-ad-1457102356654-0").animate(
+				 { height: 'toggle'},
+				 1000
+				 );
 	}, 240000);	
 
 	function activarVideo(){
-			 $("#div-gpt-ad-1457102356654-0").toggle();
+			 $("#div-gpt-ad-1457102356654-0").animate(
+					 { height: 'toggle'},
+					 1000
+					 );
 			return 1;
 		} 
 	
