@@ -388,6 +388,7 @@ class Contenido extends MY_Controller
         }
         
         $bannersSidebar = array();
+       
 			if ($serie== "56"){
 				$bannersSidebar[] = $this->banners->fe_square_copa();
 				$data['marcador'] = $this->marcador();
@@ -502,6 +503,8 @@ class Contenido extends MY_Controller
             $campeonatos[] = $listcampeonato;
         }
         $data['campeonatos'] = $campeonatos;
+        
+        
         //Fin Proxima Fecha
 
         //Resultados fecha ultima
@@ -517,18 +520,23 @@ class Contenido extends MY_Controller
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
         $data['modo'] = $modo;
+        
+        
         switch ($modo) {
             case 0:
                 //resultados campeonato
                 $data['campeonatosResultados'] = $campeonatosResultados;
                 //Resultados tabla de posiciones
                 $this->load->module('scoreboards');
-                $data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
+                if($serie == "63")
+                	$data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie,"simple");
+                else
+                	$data['tablaposiciones'] = $this->scoreboards->tablaposiciones($serie);
 
                 //Resultados goleadores
                 $this->load->module('strikes');
                 $data['strikes'] = $this->strikes->goleadores($serie);
-
+				
                 return $this->load->view('sidebardonbalon', $data, TRUE);
                 break;
             case 1:
@@ -574,7 +582,7 @@ class Contenido extends MY_Controller
 
 
 
-        if ($modo == 0) {
+       if ($modo == 0) {
 
             //resultados campeonato
             $data['campeonatosResultados'] = $campeonatosResultados;
@@ -586,11 +594,8 @@ class Contenido extends MY_Controller
             $this->load->module('strikes');
             $data['strikes'] = $this->strikes->goleadores($serie);
 
-            return $this->load->view('sidebardonbalon', $data, TRUE);
-        }  else {
-
-
-        }
+            echo $this->load->view('sidebardonbalon', $data, TRUE);
+        }  
     }
 
 

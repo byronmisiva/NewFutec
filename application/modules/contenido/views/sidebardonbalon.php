@@ -1,7 +1,6 @@
 <link href="<?php echo base_url() ?>assets/css/styledonbalon.css" rel="stylesheet">
 <link href="<?php echo base_url() ?>assets/css/sprites.css" rel="stylesheet">
-<?php if ($modo == 0) {
-    ?>
+<?php if ($modo == 0) { ?>
     <script type='text/javascript'>
         var googletag = googletag || {};
         googletag.cmd = googletag.cmd || [];
@@ -37,13 +36,11 @@
         </script>
     </div>
     <?php
-}
-?>
+}?>
 
 
 
-    <?php if ($campeonatosResultados != "") {
-        ?>
+    <?php if ($campeonatosResultados != "") { ?>
         <!--Calendario-->
         <div class="col-md-12 separador10  margen0 lateral">
 
@@ -66,7 +63,10 @@
                                 <!--contenido colapsable-->
                                 <div class="panel-group" id="accordion2">
                                     <?php
+                                 
+                                    
                                     foreach ($campeonatosResultados as $campeonato) {
+										
                                         if (CHAMP_DEFAULT == $campeonato->champ) {
                                             $active = "in";
                                         } else {
@@ -168,7 +168,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <?php
                                     }
                                     ?>
@@ -181,7 +180,7 @@
                                 <!--contenido colapsable-->
                                 <div class="panel-group" id="accordion1">
                                     <?php
-
+									
                                     foreach ($campeonatos as $campeonato) {
                                         $name_champ_default = "";
                                         if (CHAMP_DEFAULT == $campeonato->champ) {
@@ -321,7 +320,10 @@
     ?>
 
     <!--Tabla de Posiciones-->
-    <?php if ($tablaposiciones != "") {
+    
+    <?php 
+        
+    if ($tablaposiciones != "") {
         ?>
         <div class="col-md-12 col-xs-12 separador10 margen0">
             <? echo $tablaposiciones; ?>
@@ -347,24 +349,24 @@
     }
     ?>
 
-    <?php if ($strikes != "") {
-        ?>
+    <?php
+    if (isset($strikes)) {?>
         <!--Goleadores-->
         <div class="col-md-12 col-xs-12 separador10 margen0">
             <? echo $strikes; ?>
         </div>
         <!--Fin Goleadores -->
         <?php
-    }
+    } 
     ?>
 
  
 <!-- Google Tag Manager -->
 <noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-<script>(function (w, d, s, l, i) {
+<script>
+    /*(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
             'gtm.start': new Date().getTime(), event: 'gtm.js'
@@ -375,5 +377,6 @@
         j.src =
             '//www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');*/
+</script>
 <!-- End Google Tag Manager -->
