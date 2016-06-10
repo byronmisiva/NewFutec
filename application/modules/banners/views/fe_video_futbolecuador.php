@@ -27,18 +27,18 @@ if (in_array($idtipo, $tipo)) { ?>
 				 1000
 				 );
 	}, 240000);	
+	
 	var sw =0;
 	function activarVideo(){
 		if (sw == 0){
 			if(screen.width > 600){
-				 $("#div-gpt-ad-1457102356654-0").animate(
-						 { height: 'toggle'},
-						 1000
-						 );
-					return 1;
-				}else{
+			 $("#div-gpt-ad-1457102356654-0").animate(
+				 { height: 'toggle'},1000
+			 );
+			return 1;
+			}else{
 					return 0;
-					}
+			}
 				sw++;
 		}		
 	};
