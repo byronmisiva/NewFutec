@@ -124,7 +124,7 @@ function activarPbl(videoName){
 		  icon: null, // The URL of the icon (defaults to <meta name="apple-touch-icon">)
 		  iconGloss: null, // Force gloss effect for iOS even for precomposed
 		  url: null, // The URL for the button. Keep null if you want the button to link to the app store.
-		  button: 'VIEW', // Text for the install button
+		  button: 'Instalar', // Text for the install button
 		  scale: 'auto', // Scale based on viewport size (set to 1 to disable)
 		  speedIn: 300, // Show animation speed of the banner
 		  speedOut: 400, // Close animation speed of the banner
