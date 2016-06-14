@@ -114,14 +114,14 @@ function activarPbl(videoName){
 	$.smartbanner({
 		  title: "Alertas Futbolecuador", // What the title of the app should be in the banner (defaults to <title>)
 		  author: "futbolecuador.com", // What the author of the app should be in the banner (defaults to <meta name="author"> or hostname)
-		  price: 'FREE', // Price of the app
+		  price: 'Gratis', // Price of the app
 		  appStoreLanguage: 'us', // Language code for App Store
 		  inAppStore: 'En App Store', // Text of price for iOS
 		  inGooglePlay: 'En Google Play', // Text of price for Android
 		  inAmazonAppStore: 'In the Amazon Appstore',
 		  inWindowsStore: null, // Text of price for Windows
 		  GooglePlayParams: null, // Aditional parameters for the market
-		  icon: null, // The URL of the icon (defaults to <meta name="apple-touch-icon">)
+		  icon: "http://www.futbolecuador.com/imagenes/app/icono.png", // The URL of the icon (defaults to <meta name="apple-touch-icon">)
 		  iconGloss: null, // Force gloss effect for iOS even for precomposed
 		  url: null, // The URL for the button. Keep null if you want the button to link to the app store.
 		  button: 'Instalar', // Text for the install button
