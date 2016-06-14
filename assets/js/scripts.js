@@ -95,6 +95,7 @@ function cargarSplash() {
                 $(".closeBanner").click(function () {
                     $('#darkLayer').hide();
                     $('#FE_LOADING').hide();
+                    $("#div-gpt-ad-1425424774921-0").html("");
                 })
                 setTimeout(cleanBlackLayer, 18000);
             } else {
@@ -144,7 +145,14 @@ function cargarSplash() {
 var cleanBlackLayer = function () {
     $('#darkLayer').hide();
     $('#FE_LOADING').hide();
-    $("#div-gpt-ad-1425424774921-0").html("");
+    if (screen.width < 600 ){
+    	$("#div-gpt-ad-1383593884981-1").html("");
+    }else{
+    	$("#div-gpt-ad-1425424774921-0").html("");
+    }
+    
+    
+    
     //si no existe cargar splash de fe
 };
 
