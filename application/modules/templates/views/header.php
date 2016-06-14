@@ -141,9 +141,9 @@
         ?>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <script type="text/javascript" async defer
-                src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
+        <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
         </script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery.smartbanner.css') ?>"/>    
     <?php
     } else {
     if ($verMobile == "2") {
