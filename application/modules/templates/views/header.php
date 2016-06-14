@@ -143,7 +143,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
         </script>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery.smartbanner.css') ?>"/>    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery.smartbanner.css') ?>"/>
+    <style>
+    #smartbanner {
+	    background-image: -moz-linear-gradient(center top , #f4f4f4 0%, #cdcdcd 100%);
+	    border-bottom: none;
+	    box-shadow: none;
+	    font-family: 'Helvetica Neue',sans-serif;
+	    height: 85px;
+	    left: 0;
+	    overflow: hidden;
+	    position: relative !important;
+	    top: 0;
+	    width: 100%;
+	}
+    </style>    
     <?php
     } else {
     if ($verMobile == "2") {
