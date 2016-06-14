@@ -157,6 +157,10 @@
 	    top: 0;
 	    width: 100%;
 	}
+	
+	#smartbanner.android {	
+		border-top: 5px solid #88b131 !important;
+	}
     </style>    
     <?php
     } else {
