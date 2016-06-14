@@ -69,7 +69,7 @@
                 
         	<div class="row separador10">
 				<div class="col-xs-2 text-center">
-					<span class='st_facebook_large' displayText='Facebook'></span>
+					<span class='st_facebook_large' displayText='Facebook' style="z-index: -100;"></span>
 				</div>	
 				<div class="col-xs-2 text-center">
 					<span class='st_twitter_large' displayText='Tweet'></span>
