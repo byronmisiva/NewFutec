@@ -204,7 +204,7 @@ if (isset($fe_scritp_footer))
 
 	setTimeout(function(){
 		$(".row .separador10-xs").css("margin-top"," 101px;");
-		}, 3000);
+	}, 3000);
 	
 		
 
