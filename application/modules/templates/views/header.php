@@ -158,9 +158,26 @@
 	    width: 100%;
 	}
 	
-	#smartbanner.android {	
-		border-top: 5px solid #88b131 !important;
+	#smartbanner.android {
+		border-top: 5px solid #133751 !important;
 	}
+	
+	#smartbanner.android {
+		border-color: #212228;
+		background: #ccc !important;
+	}
+	
+	#smartbanner.android .sb-info strong {
+		color: #000;
+		font-weight: normal;
+	}
+	
+	#smartbanner.android .sb-info {
+		color: #000;
+		text-shadow: none;
+		}
+	
+	
     </style>    
     <?php
     } else {
