@@ -202,7 +202,11 @@ if (isset($fe_scritp_footer))
 		  }
 		});
 
+	setTimeout(function(){
 		$(".row .separador10-xs").css("margin-top"," 101px;");
+		}, 3000);
+	
+		
 
 		jQuery(document).ready(function () {
 			 if ($(".row .separador10-xs").length) {
