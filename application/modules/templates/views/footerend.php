@@ -193,7 +193,7 @@ if (isset($fe_scritp_footer))
 		  hideOnInstall: true, // Hide the banner after "VIEW" is clicked.
 		  layer: false, // Display as overlay layer or slide down the page
 		  iOSUniversalApp: true, // If the iOS App is a universal app for both iPad and iPhone, display Smart Banner to iPad users, too.      
-		  appendToSelector: 'body', //Append the banner to a specific selector
+		  appendToSelector: 'body.visible-xs-block.navbar.container-fluid', //Append the banner to a specific selector
 		  onInstall: function() {
 		     //alert('Click install');
 		  },
