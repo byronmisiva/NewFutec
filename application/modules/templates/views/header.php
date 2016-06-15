@@ -164,7 +164,7 @@
 	
 	#smartbanner.android {
 		border-color: #212228;
-		background: #ccc !important;
+		background: #ffffff !important;
 	}
 	
 	#smartbanner.android .sb-info strong {
