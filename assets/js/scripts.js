@@ -30,12 +30,14 @@ function cargarSplash() {
         if ($('#div-gpt-ad-1383593619381-0 iframe').contents().find("body").html().length == 0) {
             $('#div-gpt-ad-1383593619381-0').hide();
             if (verMobile == 1)
-                $('.separador10-xs').css('margin-top', '16px');
+                //$('.separador10-xs').css('margin-top', '16px');
+            $('.separador10-xs').css('margin-top', '101px');
         } else {
             $('#div-gpt-ad-1383593619381-0').show();
             if (verMobile == 1){
             	/*este caso es para desplegar pabbers de 320x80 version mas usada*/            	
-                	$('.separador10-xs').css('margin-top', '65px');
+                	/*$('.separador10-xs').css('margin-top', '65px');*/
+                	$('.separador10-xs').css('margin-top', '151px');
                 /*fin caso para */
                 /*este caso es para desplegar pabbers de 320x50*/
                 	var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
