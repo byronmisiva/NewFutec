@@ -201,6 +201,20 @@ if (isset($fe_scritp_footer))
 		     //alert('Click close');
 		  }
 		});
+
+		$(".row .separador10-xs").css("margin-top"," 101px;");
+
+		jQuery(document).ready(function () {
+			 if ($(".row .separador10-xs").length) {
+			        $(window).scroll(function (event) {
+			            if ($(window).scrollTop() < 105) {
+			                $("#smartbanner").hide();
+			            } else {
+			            	$("#smartbanner").show();
+			            }
+			        });
+			    }
+		});
 	</script>
 
 <?php }?>
