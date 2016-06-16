@@ -1,3 +1,4 @@
+
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>coke/edge_includes/edge.6.0.0.min.js"></script>
     <style>
         .edgeLoad-EDGE-28231535 { visibility:hidden; }
@@ -107,7 +108,7 @@ function activarPbl(videoName){
 	<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>	
 
 	<?php 
-		if($this->uri->segment(2) == "movil"){ ?>
+		if($verMobile == "1"){ ?>
 			<!-- <script src="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.js') ?>"></script>-->
 			<script src="<?php echo base_url('assets/js/jquery.smartbanner.js') ?>"></script>
 	<?php }?>
@@ -168,7 +169,7 @@ if (isset($fe_scritp_footer))
 </div>
 <!-- FIN Alexa.com -->
 <?php 
-	if($this->uri->segment(2) == "movil"){ ?>	
+	if($verMobile == "1"){ ?>	
 	<script>
 	$.smartbanner({
 		  title: "Alertas Futbolecuador", // What the title of the app should be in the banner (defaults to <title>)
@@ -187,8 +188,8 @@ if (isset($fe_scritp_footer))
 		  scale: 'auto', // Scale based on viewport size (set to 1 to disable)
 		  speedIn: 300, // Show animation speed of the banner
 		  speedOut: 400, // Close animation speed of the banner
-		  daysHidden: 0, // Duration to hide the banner after being closed (0 = always show banner)
-		  daysReminder: 0, // Duration to hide the banner after "VIEW" is clicked *separate from when the close button is clicked* (0 = always show banner)
+		  daysHidden: 1, // Duration to hide the banner after being closed (0 = always show banner)
+		  daysReminder: 45, // Duration to hide the banner after "VIEW" is clicked *separate from when the close button is clicked* (0 = always show banner)
 		  force: null, // Choose 'ios', 'android' or 'windows'. Don't do a browser check, just always show this banner
 		  hideOnInstall: false, // Hide the banner after "VIEW" is clicked.
 		  layer: false, // Display as overlay layer or slide down the page
