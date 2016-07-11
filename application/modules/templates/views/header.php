@@ -107,7 +107,7 @@
     <!-- habilitar para desarrollar -->
      <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet">--> 
     <!-- habilitar para produccion--> 
-    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=5" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=11" rel="stylesheet">
     
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css"
@@ -176,6 +176,18 @@
 		color: #000;
 		text-shadow: none;
 		}
+		
+		#smartbanner.android .sb-button span {
+		text-align: center;
+		display: block;
+		padding: 0 10px;
+		background-color: #1F344E;
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#1F344E),to(#1F344E));
+		background-image: -moz-linear-gradient(top,#1F344E,#1F344E);
+		text-transform: none;
+		text-shadow: none;
+		box-shadow: none;
+		}
 	
 	
     </style>    
@@ -213,11 +225,11 @@
 
     //echo $this->uri->segment(1);
     
-    
+    /*carga auspicio*/
     if ($this->uri->segment(3) == 63){?>
-    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>
+    	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>-->
     <?php }elseif(($this->uri->segment(1) == "copa-america") || ($this->uri->segment(2) =="partido")){?>
-    	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>
+    	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>-->
     <?php }?>
 	
 </head>
@@ -269,6 +281,8 @@
         googletag.defineSlot('/1022247/FE_NEW_CINTA_AUSPICIO_COPA_AMERICA', [980, 50], 'div-gpt-ad-1464883876542-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_SQUAREBANNER_AUSPICIO_COPA_AMERICA', [300, 250], 'div-gpt-ad-1464883629839-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NOTICIA_PATROCINADA', [300, 250], 'div-gpt-ad-1465241512633-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466776607930-0').addService(googletag.pubads());
+        
         // publicidades en mobil
         googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
@@ -399,7 +413,8 @@
 
 
 <div id="darkLayerFE" style="display:none;"></div>
-<div id="FE_LOADINGFE" style="display:none;">
+  <?php if ($verMobile == "1") {?>
+	<div id="FE_LOADINGFE" style="display:none;">
     <!-- Gestion revistaFE -->
     <div class='closeBanner' onclick='cleanBlackLayer();'>
         <img src='<?= base_url() ?>assets/img/close_banner.png'
@@ -424,5 +439,6 @@
     </div>
 </div>
 
+<?php }?>
 
 
