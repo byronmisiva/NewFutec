@@ -374,7 +374,7 @@ class Mdl_teams_position extends MY_Model
             $teams = $this->sancionBarcelona($teams);
 
             //sancion campeonato
-            $teams = $this->sancionQuito($teams, 8);
+            $teams = $this->sancionQuito($teams, 6);
 
             $teams = $this->sancionNacional($teams, 1);
 
@@ -382,6 +382,20 @@ class Mdl_teams_position extends MY_Model
             $teams = $this->sancionQuevedo($teams);
 
         }
+        
+        //Sancion campeonato Serie B 2016.
+        if ($round == 61) {
+        	/*$teams = $this->sancionLDUL($teams);
+        	$teams = $this->sancionLDUL($teams);
+        	$teams = $this->sancionLDUL($teams);
+        	$teams = $this->sancionLDUL($teams);*/
+        
+        	//sancion campeonato
+        	$teams = $this->sancionQuito($teams, 6);
+        
+        }
+        
+        
         //Reodenamos la tabla luego de disminuir puntos
         foreach ($teams as $key => $arr):
             $pun[$key] = $arr['points'];
@@ -425,6 +439,11 @@ class Mdl_teams_position extends MY_Model
 
 
         }
+        
+        if ($round == 220) {        	        
+        	$teams = $this->sancionQuito($teams, 6);
+        }
+        
         //Reodenamos la tabla luego de disminuir puntos
         if ($teams != '') {
             foreach ($teams as $key => $arr):
