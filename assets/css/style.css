@@ -1723,12 +1723,16 @@ input[type="checkbox"], input[type="radio"] {
     .flexslidermobile .content-text-rotativas {
         top: 175px;
     }
+     
 }
 
 
 
+
+
 @media screen and (max-device-width: 300px) {
-    .redireccionFE {
+	
+	.redireccionFE {
         background-color: rgba(0, 0, 0, 0.7);
         float: right;
         height: auto;
@@ -2000,4 +2004,22 @@ div#closeBannerdpa {
 
 .tagstorys  a:visited:after {
     content:  "\2713 ";
+}
+
+@media only screen and (max-width: 500px) {	
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	    font-size: 18px;
+	    height: 100%;
+	    margin-top: 0;
+	    width: 30px;
+	    color: #fff;
+	}
+	
+	.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+		top: 40%;
+	}
+	
+	.col-xs-6{
+		padding-left: 7% !important;
+	}
 }
