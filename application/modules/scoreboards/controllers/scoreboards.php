@@ -66,7 +66,8 @@ class Scoreboards extends MY_Controller
     public function leaderboard($champ, $leaderboard = 'leaderboard', $tipoCampeonato = 'acumulada')
     {
         $data['tipoCampeonato'] = $tipoCampeonato;
-        $round = $this->mdl_teams_position->get_active_round($champ);
+      $round = $this->mdl_teams_position->get_active_round($champ);
+        //$round = 227;
         if ($tipoCampeonato == 'acumulada') {
             $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
                 base_url() . 'imagenes/icons/igual.png',
@@ -93,7 +94,7 @@ class Scoreboards extends MY_Controller
             if ($round != false) {
 
                 //todo caso copa america
-                if ($champ == AMERICA) $round = 225;
+                if ($champ == AMERICA) $round = 227;
 
                 $grupoActivo = $this->mdl_teams_position->get_by_round($round);
                 $data['tabla'] = array();
@@ -170,8 +171,7 @@ class Scoreboards extends MY_Controller
     }
 
 // Tabla de Posiciones  acumulada
-    public
-    function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
+    public function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
     {
 
         $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',

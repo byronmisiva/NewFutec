@@ -68,7 +68,7 @@ class Mdl_scoreboards extends MY_Model
         $this->db->order_by("date_match", "ASC");
 
         //para el caso de copa america
-        $copa = "(live =  '1' OR group_id in (252,253,255,256,257,254,291,292,293,294))";
+        $copa = "(live =  '1' OR group_id in (252,253,255,256,257,254,295,296))";
         if ($live == 'live')
             $this->db->where($copa);
 
