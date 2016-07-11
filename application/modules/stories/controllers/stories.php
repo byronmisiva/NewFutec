@@ -183,6 +183,128 @@ class Stories extends MY_Controller
     	print $request;
     	
     }
+    
+    function rssRotativasnoticias(){	//$news = $this->mdl_stories->rss(FALSE);
+    	$this->config->set_item('compress_output', 'FALSE');
+    	$data['name'] = 'XML RSS';
+    	$data['views'] = 1;
+    	$this->sum($data);
+    	header('Content-type: text/xml; charset=utf-8');
+    	$request = '
+    			<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+					<channel>
+					<atom:link rel="hub" href="http://www.futbolecuador.com" />
+					<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+					<title>futbolecuador.com</title>
+					<link>http://www.futbolecuador.com</link>
+					<description><![CDATA[Futbol del Ecuador y del mundo]]></description>
+					<image>
+						<title>futbolecuador.com</title>
+						<link>http://www.futbolecuador.com</link>
+						<url>http://www.futbolecuador.com/imagenes/logo_rss.png</url>
+					</image>http://www.futbolecuador.com/assets/img/logotipo.png
+					<language>es-ec</language>
+					<pubDate>' . date('r', time()) . '</pubDate>
+				 ';
+    	//$news = $this->mdl_stories->rssnewRotativas();
+    	 
+    	$news = $this->mdl_stories->rss(FALSE);
+    	include('application/libraries/simple_html_dom.php');
+    	foreach ($news->result() as $row){
+    		$posicionInicio = 0;
+    		$texto = strip_tags($row->body);
+    		$texto = (string)$texto;
+    
+    		$html = new simple_html_dom();
+    		$html->load($row->body);
+    
+    		$carrusel = "<figure class='op-slideshow'>";
+    		foreach($html->find('img') as $e){
+    			$carrusel.="<figure data-feedback='fb:likes,fb:comments'>
+    							".$e->outertext."
+    						 </figure>";
+    		}
+    		$carrusel.= "</figure>";
+    
+    		$media = "<figure class='op-social' data-feedback='fb:likes, fb:comments' data-mode='aspect-fit'>";
+    		foreach($html->find('iframe') as $e){
+    			$media.= $e->outertext;
+    		}
+    		$media.= "</figure>";
+    
+    		$redes = "<figure class='op-social'><iframe>";
+    		foreach($html->find('blockquote') as $e){
+    			$redes.= $e->outertext;
+    		}
+    		foreach($html->find('script') as $e){
+    			$redes.= $e->outertext;
+    		}
+    		$redes.= "</iframe></figure>";
+    
+    		$texto2 = strip_tags ($row->body);
+    
+    		$linkbody = $row->subtitle;
+    		if ($linkbody == "") {
+    			$linkbody = $row->title;
+    		}
+    
+    		$request = $request . '
+				<item>
+				  <title>'. $row->title.'</title>
+ 	      		  <link>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</link>
+		      		<content:encoded><![CDATA[
+		      			<!doctype html>
+						<html lang="en" prefix="op: http://media.facebook.com/op#">
+						<head>
+							<meta charset="utf-8">
+							<link rel="canonical" href="http://www.futbolecuador.com/site/noticia/'.$this->_urlFriendly($linkbody).'/'.$row->id.'">
+							<meta property="op:markup_version" content="v1.0">
+							</head>
+								<body>
+									<article>
+										<header>
+										<figure data-mode="aspect-fit">
+											<img src="http://www.futbolecuador.com/' . $row->thumb640 . '"  />
+											 <figcaption class="op-vertical-bottom">
+												<h1>'.$row->title. '</h1>
+												'.$row->subtitle.'
+											 </figcaption>
+										</figure>
+										<time class="op-published" dateTime="'. date('r',$row->ntime).'">'.date('r',$row->ntime).'</time>
+									</header>
+    
+									<figure data-feedback="fb:likes, fb:comments">
+      									<img src="http://www.futbolecuador.com/' . $row->thumb640 . '" />
+       									<figcaption><h1>'.$row->title.'</h1>
+       											'.$row->subtitle.'
+      									</figcaption>
+     								</figure>
+									 <p data-feedback="fb:likes, fb:comments">' . $texto2 . '</p>
+									'.$carrusel. '
+									'.$media.'
+									'.$redes.'
+					
+									<figure class="op-ad">
+										<img src="http://www.google-analytics.com/collect?v=1&amp;tid=UA-2423727-1&amp;cid=CLIENT_ID_NUMBER&amp;t=event&amp;ec=article-fb&amp;ea=open&amp;el=recipient_id&amp;cs=newsletter&amp;cm=article-facebook&amp;cn=Articulo instantaneo" />
+										<iframe src="http://www.futbolecuador.com/site/bannerArticle" height="55" width="325"></iframe>
+									 </figure>
+									 <footer></footer>
+									</article>
+								</body>
+							</html>]]>
+					  </content:encoded>
+ 	      
+ 	      			 <guid>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</guid>
+	      			 <pubDate>' . date('r', $row->ntime) . '</pubDate>
+				  	 <author>info@futbolecuador.com</author>
+	      			 <description><![CDATA[<img src="http://www.futbolecuador.com/' . $row->thumb640 . '"/><br>' . $row->lead . '<span>&nbsp;</span>]]></description>
+    
+				</item>';
+    	}
+    	$request = $request . '
+			</channel></rss>';
+    	print $request;
+    }
 
     function rssmarcador()
     {
