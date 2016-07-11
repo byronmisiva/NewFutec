@@ -12,17 +12,26 @@ function ampliarSeparador(){
 		$("#div-gpt-ad-1383593619381-0").css({"height":"50px","overflow":"hidden"});
 		var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
       	var iframeHeader=contenedorheader[0].lastChild["childNodes"][0];
-      	$(iframeHeader).attr("height","50px");
-		}
+      	$(iframeHeader).attr("height","50px");		
 	  }else{
 		$(".separador10-xs").css("margin-top","15px");
 		}
-	}
+	};
 
-$(document).ready(function () {
+	
+
+/*jQuery(document).ready(function () {
+	var contenido = $("#div-gpt-ad-1383593619381-0");
+	if(contenido.length > 0){
+	  ampliarSeparador();	
+	}
+});*/
+
+/*$(document).ready(function () {
 		var contenido = $("#div-gpt-ad-1383593619381-0");
 		if(contenido.length > 0){
-		  ampliarSeparador();		
-});
+		  ampliarSeparador();	
+		}	
+});*/
 
 </script>
