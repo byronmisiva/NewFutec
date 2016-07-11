@@ -134,6 +134,30 @@ class Contenido extends MY_Controller
 
         return $this->load->view('header2', $data, TRUE);
     }
+    
+    function verificarDispositivo()
+    {
+    	$this->load->library('user_agent');
+    	$mobiles = array('Sony Ericsson', 'Apple iPhone', 'Ipad', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia", "BlackBerry");
+    	$isMobile = "0";
+    	if ($this->agent->is_mobile()) {
+    		$m = $this->agent->mobile();
+    		if ($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i', $this->agent->agent) == 0)
+    			$m = "Android Tablet";
+    		switch ($m) {
+    			case 'Apple iPad':
+    				$isMobile = "2";
+    				break;
+    			case 'Android Tablet':
+    				$isMobile = "2";
+    				break;
+    			case in_array($m, $mobiles):
+    				$isMobile = "1";
+    				break;
+    		}
+    	}
+    	return $isMobile;
+    }
 
     public function marcadorVivo($campeonato = CHAMP_DEFAULT  )
     {
@@ -148,6 +172,8 @@ class Contenido extends MY_Controller
             //$datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             $datamarcador['scores'] = $this->mdl_scoreboards->future_matches();
         }
+        
+        $datamarcador['device'] = $this->verificarDispositivo();
 		
         $datamarcador['campeonato'] = $campeonato;
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
@@ -434,7 +460,7 @@ class Contenido extends MY_Controller
 
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
-
+        
         if ($tipo == "large") {
             //Resultados tabla de posiciones
             $this->load->module('scoreboards');
