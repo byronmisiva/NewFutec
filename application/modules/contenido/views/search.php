@@ -4,6 +4,7 @@
             Resultados Búsqueda
         </h4>
     </div>
+        
     <div id='mod_femagazine' style='position:relative;width:100%; height:793px;' class="separador10-xs">
         <script>
             (function() {
@@ -13,7 +14,7 @@
                 gcse.async = true;
                 gcse.queryParameterName = 'gaga';
                 gcse.resultSetSize = 'small';
-                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                gcse.src = (document.location.protocol == 'http:' ? 'https:' : 'http:') +
                 '//www.google.com/cse/cse.js?cx=' + cx;
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(gcse, s);
