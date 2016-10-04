@@ -94,7 +94,7 @@
         <div class="ebzHere"></div>
         <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {?>
             <!-- ubicacion para relacionadas -->
-            <?php echo $noticia->tema; die;
+            <?php echo $noticia->tema; /*
             if ($noticia->tema == "0"){
             	if (strlen($tagsStorys) > 3) { ?>
 		            <div class="col-md-12 column ">
@@ -104,7 +104,7 @@
 		                <?php echo $tagsStorys; ?>
 		            </div>			
         	<?php }
-        	}?>
+        	}*/?>
         <?php }?>
         
         <div class="videoPublicidad">
