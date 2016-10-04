@@ -131,7 +131,7 @@ ORDER BY s.created DESC ');
         return $aux;
     }
 
-    function get_banner($max = 4, $exclude = '')
+    function get_banner($max = 2, $exclude = '')
     {
     	
     	//$this->db->where('s.sponsored', 0, FALSE);
