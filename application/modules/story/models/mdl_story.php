@@ -362,7 +362,7 @@ ORDER BY s.created DESC ');
         return $aux;
     }
 
-    function get_zonaFE($excluded = array(), $max = 1)
+    function get_zonaFE($excluded = array(), $max = 2)
     {
 
         $this->db->select('s.id as sid,s.*, i.*,i.name as image_name');
