@@ -83,7 +83,7 @@ class Contenido extends MY_Controller
     public function header2($data = FALSE)
     {
         $this->load->module('story');
-        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(4, 44);
+        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(5, 44);
         $excluded = array();
         foreach ($dataRotativas['rotativasData'] as $key => $row) {
             $excluded[] = $row->id;
