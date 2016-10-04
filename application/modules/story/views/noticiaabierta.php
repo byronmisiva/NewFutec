@@ -113,14 +113,14 @@
 			}?>
         </div>
         <div class="margen10lados-sx noticia-body">
-            <?php echo $noticia->tema."<br>";
-            echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8');
-            /*if ($noticia->tema == "1"){
+            <?php
+            
+            if ($noticia->tema == "1"){
 				$this->load->module('encuesta');
 				echo $this->encuesta->getFormulario();
             }else{
             	echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8');
-            }          */
+            }
             ?>
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
