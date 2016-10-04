@@ -94,7 +94,10 @@ class Contenido extends MY_Controller
         //recupera  y cambia por la ultima noticia
         //$sponsor = current($this->mdl_story->get_zonaFE($excluded));
         $sponsor = $this->mdl_story->get_zonaFE($excluded);
-        $sponsor[0]->id = $sponsor->sid;
+        echo "<pre>";
+        var_dump($sponsor);
+        
+        //$sponsor[0]->id = $sponsor->sid;
 		foreach ($sponsor as $row){
 			array_pop($dataRotativas['rotativasData']);
 			array_push($dataRotativas['rotativasData'], $row);
