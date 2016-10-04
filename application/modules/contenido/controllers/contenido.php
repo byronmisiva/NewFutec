@@ -92,7 +92,7 @@ class Contenido extends MY_Controller
         //ponemos en caso de existir la noticia ZONA FE
 
         //recupera  y cambia por la ultima noticia
-        $sponsor = current($this->mdl_story->get_zonafe($excluded));
+        $sponsor = current($this->mdl_story->get_zonaFE($excluded));
         $sponsor->id = $sponsor->sid;
 
         if ($sponsor !== FALSE) {
