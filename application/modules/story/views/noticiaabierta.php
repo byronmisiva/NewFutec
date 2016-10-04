@@ -94,7 +94,7 @@
         <div class="ebzHere"></div>
         <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {?>
             <!-- ubicacion para relacionadas -->
-            <?php 
+            <?php echo $noticia->tema; die;
             if ($noticia->tema == "0"){
             	if (strlen($tagsStorys) > 3) { ?>
 		            <div class="col-md-12 column ">
@@ -114,12 +114,12 @@
         </div>
         <div class="margen10lados-sx noticia-body">
             <?php 
-            if ($noticia->tema == "1"){
+            /*if ($noticia->tema == "1"){
 				$this->load->module('encuesta');
 				echo $this->encuesta->getFormulario();
             }else{
             	echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8');
-            }           
+            }  */         
             ?>
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
