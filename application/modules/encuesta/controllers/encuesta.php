@@ -14,7 +14,7 @@ class Encuesta extends MY_Controller
     }
     
     public function getFormulario()
-    {
+    {   $data = "";
     	return $this->load->view("index",$data, TRUE);
     }
     
