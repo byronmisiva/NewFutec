@@ -25,8 +25,8 @@
   });
 </script>
 </head>
-<body>
-	<div id='div-gpt-ad-1460670309337-0' style='height:50px; width:320px;'>
+<body style="margin:0;padding:0;">
+	<div id='div-gpt-ad-1460670309337-0' style='height:80px; width:100%;'>
 		<script type='text/javascript'>
 			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1460670309337-0'); });
 		</script>

@@ -134,30 +134,6 @@ class Contenido extends MY_Controller
 
         return $this->load->view('header2', $data, TRUE);
     }
-    
-    function verificarDispositivo()
-    {
-    	$this->load->library('user_agent');
-    	$mobiles = array('Sony Ericsson', 'Apple iPhone', 'Ipad', 'Android', 'Windows CE', 'Symbian S60', 'Apple iPad', "LG", "Nokia", "BlackBerry");
-    	$isMobile = "0";
-    	if ($this->agent->is_mobile()) {
-    		$m = $this->agent->mobile();
-    		if ($m == "Android" and preg_match('/\bAndroid\b.*\bMobile/i', $this->agent->agent) == 0)
-    			$m = "Android Tablet";
-    		switch ($m) {
-    			case 'Apple iPad':
-    				$isMobile = "2";
-    				break;
-    			case 'Android Tablet':
-    				$isMobile = "2";
-    				break;
-    			case in_array($m, $mobiles):
-    				$isMobile = "1";
-    				break;
-    		}
-    	}
-    	return $isMobile;
-    }
 
     public function marcadorVivo($campeonato = CHAMP_DEFAULT  )
     {
@@ -172,8 +148,6 @@ class Contenido extends MY_Controller
             //$datamarcador['scores'] = $this->mdl_scoreboards->last_matches();
             $datamarcador['scores'] = $this->mdl_scoreboards->future_matches();
         }
-        
-        $datamarcador['device'] = $this->verificarDispositivo();
 		
         $datamarcador['campeonato'] = $campeonato;
         return $this->load->view('marcadorvivo', $datamarcador, TRUE);
@@ -302,8 +276,13 @@ class Contenido extends MY_Controller
     public function view_juventus($data = FALSE)
     {
         return $this->load->view('juventus', $data, TRUE);
-
     }
+    
+    public function view_entradas($data = FALSE)
+    {
+    	return $this->load->view('entradas', $data, TRUE);
+    }
+    
     public function view_fuera_de_juego($data = FALSE)
     {
         return $this->load->view('fueradejuego', $data, TRUE);
@@ -414,7 +393,6 @@ class Contenido extends MY_Controller
         }
         
         $bannersSidebar = array();
-       
 			if ($serie== "56"){
 				$bannersSidebar[] = $this->banners->fe_square_copa();
 				$data['marcador'] = $this->marcador();
@@ -460,7 +438,7 @@ class Contenido extends MY_Controller
 
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
-        
+
         if ($tipo == "large") {
             //Resultados tabla de posiciones
             $this->load->module('scoreboards');
@@ -529,8 +507,6 @@ class Contenido extends MY_Controller
             $campeonatos[] = $listcampeonato;
         }
         $data['campeonatos'] = $campeonatos;
-        
-        
         //Fin Proxima Fecha
 
         //Resultados fecha ultima
@@ -546,8 +522,6 @@ class Contenido extends MY_Controller
         //para que se renderice la tabla de contenidos de acuerdo a la seccion abienrta
         $data['serie'] = $serie;
         $data['modo'] = $modo;
-        
-        
         switch ($modo) {
             case 0:
                 //resultados campeonato
@@ -562,7 +536,7 @@ class Contenido extends MY_Controller
                 //Resultados goleadores
                 $this->load->module('strikes');
                 $data['strikes'] = $this->strikes->goleadores($serie);
-				
+
                 return $this->load->view('sidebardonbalon', $data, TRUE);
                 break;
             case 1:
@@ -608,7 +582,7 @@ class Contenido extends MY_Controller
 
 
 
-       if ($modo == 0) {
+        if ($modo == 0) {
 
             //resultados campeonato
             $data['campeonatosResultados'] = $campeonatosResultados;
@@ -620,8 +594,11 @@ class Contenido extends MY_Controller
             $this->load->module('strikes');
             $data['strikes'] = $this->strikes->goleadores($serie);
 
-            echo $this->load->view('sidebardonbalon', $data, TRUE);
-        }  
+            return $this->load->view('sidebardonbalon', $data, TRUE);
+        }  else {
+
+
+        }
     }
 
 

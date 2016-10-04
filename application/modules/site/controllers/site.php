@@ -9,8 +9,6 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
     header('Content-type: text/html; charset=utf-8');
 }
 
-
-
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
     if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))
@@ -120,8 +118,10 @@ class Site extends MY_Controller
             return true;
         }
     }
-
+   
     // para la final se comentan la llamada a las secciones.
+   
+    
     public function movil()
     {
         // para la final se comentan la llamada a las secciones.
@@ -177,8 +177,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
 
         $publicidadFlotante = "";
-        //$publicidadSeccion = $this->banners->fe_smart_top_copa_america();
-        $publicidadSeccion = "";
+//        $publicidadSeccion = $this->banners->fe_smart_top_copa_america();
+        $publicidadSeccion ="";
         
         //$fe_loading_movil.
         $data['content'] = $marcadorenvivo . $publicidadFlotante.$publicidadSeccion . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . "</div>";
@@ -242,7 +242,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['fe_splash'] = $this->banners->fe_splash();
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
-
     }
 
     public function contacto()
@@ -352,6 +351,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $bannerTop = "";
             $fe_loading_movil ="";
         }
+
 
         // carga la informacion de la noticia
         $idNoticia = $this->uri->segment(4);
@@ -760,10 +760,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         		$data['cinta_banner'] = $this->banners->fe_cinta_copa();
         }
         
-        if ($serie == "56"){
-        	//$data['header1'] = $this->contenido->menucopaamerica();
-        	$data['header1'] = $this->contenido->menu();
-        }else
+        if ($serie == "56")
+        	$data['header1'] = $this->contenido->menucopaamerica();
+        else
         	$data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
@@ -983,11 +982,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function tabladeposiciones($serie = CHAMP_DEFAULT)
     {
-    	
-    	
-    	if ($serie == "63")
+	if ($serie == "63")
     		$serie = "59";
-    	
+
         if ($this->uri->segment(2) == 'tabladeposiciones') {
             $id = $this->uri->segment(3);
             $tipotabla = $this->uri->segment(4);
@@ -1132,7 +1129,23 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $juventus = $this->contenido->view_juventus();
         $this->singleConten("Juventus", $juventus);
     }
-
+    
+    public function entradas()
+    {
+    	//$this->output->cache(CACHE_DEFAULT);
+    	$this->load->module('contenido');
+    	$cuerpo = $this->contenido->view_entradas();
+    	$this->singleConten("Juventus", $cuerpo);
+    }
+    
+    public function encuesta(){
+    	$this->load->module('contenido');
+    	$this->load->module('encuesta');
+    	$cuerpo = $this->encuesta->getFormulario();
+    	$this->singleConten("Encuesta Formación", $cuerpo);
+    }
+    
+    
     public function singleConten($nameSeccion, $contenSeccion, $description = "", $serie = CHAMP_DEFAULT, $tipotabla = CHAMP_DEFAULT_TIPOTABLA)
     {
         // para la final se comentan la llamada a las secciones.

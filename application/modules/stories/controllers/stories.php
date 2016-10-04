@@ -188,6 +188,17 @@ class Stories extends MY_Controller
     	$this->config->set_item('compress_output', 'FALSE');
     	$data['name'] = 'XML RSS';
     	$data['views'] = 1;
+    	//$news = $this->mdl_stories->rss(FALSE);    	
+    	/*foreach ($news->result() as $row){
+    		echo "<pre>";    		
+    		var_dump("Titulo: ".$row->title);
+    		var_dump("SubTitulo: ".$row->subtitle);
+    		var_dump("Lead: ".$row->lead);
+    		var_dump("Cuerpo: ".$row->body);
+    	}
+    	
+    	die;    	*/
+    	
     	$this->sum($data);
     	header('Content-type: text/xml; charset=utf-8');
     	$request = '
@@ -210,38 +221,61 @@ class Stories extends MY_Controller
     	 
     	$news = $this->mdl_stories->rss(FALSE);
     	include('application/libraries/simple_html_dom.php');
-    	foreach ($news->result() as $row){
+    	foreach ($news->result() as $row){   	
     		$posicionInicio = 0;
     		$texto = strip_tags($row->body);
     		$texto = (string)$texto;
-    
+    		$texto2 = strip_tags ($row->body);
+    		$texto2 = str_replace(".", ". </p><p>", $texto2);
     		$html = new simple_html_dom();
     		$html->load($row->body);
-    
-    		$carrusel = "<figure class='op-slideshow'>";
-    		foreach($html->find('img') as $e){
-    			$carrusel.="<figure data-feedback='fb:likes,fb:comments'>
+		$carrusel="";
+    		if (count($html->find('img')) > 0){
+    			$carrusel = "<figure class='op-slideshow'>";
+    			foreach($html->find('img') as $e){
+    				$carrusel.="<figure class='op-interactive' data-feedback='fb:likes, fb:comments'>
     							".$e->outertext."
     						 </figure>";
+    			}
+    			$carrusel.= "</figure>";
     		}
-    		$carrusel.= "</figure>";
+    		$media="";
+    		if (count($html->find('iframe')) > 0){
+	    		$media = "<figure class='op-interactive' data-feedback='fb:likes, fb:comments' data-mode='aspect-fit'>";
+	    		foreach($html->find('iframe') as $e){
+	    			$media.= $e->outertext;
+	    		}
+	    		$media.= "</figure>";
+    		}
+    		$redes="";
+    		if (count($html->find('blockquote')) > 0){
+    			$redes = "<figure class='op-interactive' data-feedback='fb:likes, fb:comments'>
+    					<iframe>";
+    			foreach($html->find('blockquote') as $e){
+    				$redes.= $e->outertext;
+    			}
+    			foreach($html->find('script') as $e){
+    				$redes.= $e->outertext;
+    			}
+    			$redes.= "</iframe>
+    				</figure>";
+    		}
+
+		$contenidoAdicional="";
+    		
+    		if (isset($redes)){
+    			$contenidoAdicional.=$redes;
+    		}
+    		
+    		if (isset($media)){
+    			$contenidoAdicional.=$media;
+    		}
+    		
+    		if (isset($carrusel)){
+    			$contenidoAdicional.=$carrusel;
+    		}
     
-    		$media = "<figure class='op-social' data-feedback='fb:likes, fb:comments' data-mode='aspect-fit'>";
-    		foreach($html->find('iframe') as $e){
-    			$media.= $e->outertext;
-    		}
-    		$media.= "</figure>";
-    
-    		$redes = "<figure class='op-social'><iframe>";
-    		foreach($html->find('blockquote') as $e){
-    			$redes.= $e->outertext;
-    		}
-    		foreach($html->find('script') as $e){
-    			$redes.= $e->outertext;
-    		}
-    		$redes.= "</iframe></figure>";
-    
-    		$texto2 = strip_tags ($row->body);
+    		
     
     		$linkbody = $row->subtitle;
     		if ($linkbody == "") {
@@ -258,41 +292,57 @@ class Stories extends MY_Controller
 						<head>
 							<meta charset="utf-8">
 							<link rel="canonical" href="http://www.futbolecuador.com/site/noticia/'.$this->_urlFriendly($linkbody).'/'.$row->id.'">
-							<meta property="op:markup_version" content="v1.0">
+							<link rel="stylesheet" title="default" href="#">
 							</head>
-								<body>
-									<article>
-										<header>
-										<figure data-mode="aspect-fit">
-											<img src="http://www.futbolecuador.com/' . $row->thumb640 . '"  />
-											 <figcaption class="op-vertical-bottom">
-												<h1>'.$row->title. '</h1>
-												'.$row->subtitle.'
-											 </figcaption>
-										</figure>
-										<time class="op-published" dateTime="'. date('r',$row->ntime).'">'.date('r',$row->ntime).'</time>
-									</header>
-    
-									<figure data-feedback="fb:likes, fb:comments">
+							<body>
+								<article class="op-interactive" data-feedback="fb:likes, fb:comments">
+									<header>
+									<figure>
+										<img src="http://www.futbolecuador.com/'.$row->thumb640.'"/>
+										 <figcaption class="op-vertical-above op-medium op-center">
+											<h1>'.$row->title.'</h1>
+										 </figcaption>
+									</figure>
+									<!--<figure data-feedback="fb:likes, fb:comments">
       									<img src="http://www.futbolecuador.com/' . $row->thumb640 . '" />
-       									<figcaption><h1>'.$row->title.'</h1>
-       											'.$row->subtitle.'
+       									<figcaption><h1>'.$row->title.'</h1>       											
       									</figcaption>
-     								</figure>
-									 <p data-feedback="fb:likes, fb:comments">' . $texto2 . '</p>
-									'.$carrusel. '
-									'.$media.'
-									'.$redes.'
-					
-									<figure class="op-ad">
-										<img src="http://www.google-analytics.com/collect?v=1&amp;tid=UA-2423727-1&amp;cid=CLIENT_ID_NUMBER&amp;t=event&amp;ec=article-fb&amp;ea=open&amp;el=recipient_id&amp;cs=newsletter&amp;cm=article-facebook&amp;cn=Articulo instantaneo" />
-										<iframe src="http://www.futbolecuador.com/site/bannerArticle" height="55" width="325"></iframe>
-									 </figure>
-									 <footer></footer>
-									</article>
-								</body>
-							</html>]]>
-					  </content:encoded>
+     								</figure>-->       											
+      								<h2 style="font-size:12px;">'.$row->subtitle.'</h2>
+       								<address>
+							          futbolecuador.com
+							        </address>	
+      							    <time class="op-published" dateTime="'. date('r',$row->ntime).'">'.date('r',$row->ntime).'</time>
+							</header>
+      						'.$row->lead.'	    		
+							<p>'.$texto2.'</p>
+							'.$contenidoAdicional.'
+							<figure class="op-ad">
+								<img src="http://www.google-analytics.com/collect?v=1&amp;tid=UA-2423727-1&amp;cid=CLIENT_ID_NUMBER&amp;t=event&amp;ec=article-fb&amp;ea=open&amp;el=recipient_id&amp;cs=newsletter&amp;cm=article-facebook&amp;cn=Articulo instantaneo" />
+								<iframe src="http://www.futbolecuador.com/site/bannerArticle" height="50" width="320"></iframe>
+							</figure>
+                             <figure class="op-tracker"> 
+                                <iframe>
+                                    <script>
+                                        (function (i,s,o,g,r,a,m) {i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function () {(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),                         m=s.getElementsByTagName(o)0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+                                        ga("create", "UA-2423727-1", "auto");
+                                        ga("require", "displayfeatures");
+                                        ga("set", "campaignSource", "Facebook Article");
+                                        ga("set", "campaignMedium", "Social Instant Article");
+                                        ga("send", "pageview", {title: "POST TITLE"});
+                                    </script>
+                                </iframe>
+                            </figure>
+							<footer>
+								<aside>
+								      Lo mejor del fútbol ecuatoriano siempre en futbolecuador.com
+								</aside>								    
+								<small>Powered by Misiva</small>
+							</footer>
+						</article>
+						</body>
+					</html>]]>
+				 </content:encoded>
  	      
  	      			 <guid>http://www.futbolecuador.com/site/noticia/' . $this->_urlFriendly($linkbody) . '/' . $row->id . '</guid>
 	      			 <pubDate>' . date('r', $row->ntime) . '</pubDate>
@@ -305,6 +355,10 @@ class Stories extends MY_Controller
 			</channel></rss>';
     	print $request;
     }
+    
+    
+    
+    
 
     function rssmarcador()
     {
@@ -459,7 +513,7 @@ class Stories extends MY_Controller
         else
             $news = $this->mdl_stories->rss(FALSE);
 
-        foreach ($news->result() as $row):
+        foreach ($news->result() as $row):        
             $posicionInicio = 0;
             $texto = strip_tags($row->body);
             $texto = (string)$texto;

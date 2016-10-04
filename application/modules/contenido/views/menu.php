@@ -221,19 +221,17 @@
 
                 </div>
 
-                <div class="col-sm-3  text-center  ">
+                <!-- <div class="col-sm-3  text-center  ">
                     <a href="<?= base_url('copa-america') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-america-2016.png') ?>" alt="Copa America Centenario 2016" title="Lea todo sobre la Copa America Centenario 2016">
                     </a>
+                </div>-->
 
-                </div>
-
-<!--                <div class="col-sm-3 text-center">
+                <div class="col-sm-3 text-center">
                     <a href="<?= base_url('copa-sudamericana') ?>" class="pull-left">
                         <img src="<?= base_url('assets/img/copa-sudamericana.png') ?>" alt="Copa Sudamericana" title="Lea todo sobre la Copa Sudamericana">
                     </a>
                 </div>
--->
             </div>
             <!-- end row -->
         </li>

@@ -36,7 +36,7 @@
                         		<ul class="menu-option">
                         	<?php for ($x = 0; $x < 4; $x++) {
                         		if ($teams[$pos+$x]->section == NULL)
-                        			$url =  base_url('copa_america');
+                        			$url =  base_url('copa-america');
                         			else{
 									$url =	base_url('site/equipo/' . strtolower($this->contenido->_clearStringGion($teams[$pos+$x]->name)) . "/" . $teams[$pos+$x]->section) . '/' . $campeonato;
                         		}

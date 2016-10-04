@@ -16,8 +16,8 @@ class Templates extends MX_Controller{
 
 		$this->load->view( 'indexmovil', $data );
 	}
-	
-	public function _indexbanner(){
+
+public function _indexbanner(){
 		$this->load->view( 'bannerarticle');
 	}
 

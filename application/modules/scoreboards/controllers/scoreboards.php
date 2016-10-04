@@ -11,11 +11,9 @@ class Scoreboards extends MY_Controller
     }
 
     public function tablaposiciones($temporada, $tipoChamp = 'acumulada')
-    {  	
-    	
+    {
     	if ($temporada == "56")
-    		$temporada = 63;    	
-    	
+    		$temporada = 63;
         $data['tipoCampeonato'] = $tipoChamp;
         if ($tipoChamp == 'acumulada') {
             $data['scroreBoardAcumulative'] = $this->leaderboard_cumulative($temporada);
@@ -66,8 +64,8 @@ class Scoreboards extends MY_Controller
     public function leaderboard($champ, $leaderboard = 'leaderboard', $tipoCampeonato = 'acumulada')
     {
         $data['tipoCampeonato'] = $tipoCampeonato;
-      $round = $this->mdl_teams_position->get_active_round($champ);
-        //$round = 227;
+        $round = $this->mdl_teams_position->get_active_round($champ);
+	// $round = 227;
         if ($tipoCampeonato == 'acumulada') {
             $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
                 base_url() . 'imagenes/icons/igual.png',
@@ -171,7 +169,8 @@ class Scoreboards extends MY_Controller
     }
 
 // Tabla de Posiciones  acumulada
-    public function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
+    public
+    function leaderboard_cumulative($champ, $leaderboard = 'leaderboard')
     {
 
         $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',

@@ -75,7 +75,7 @@
             <!--contenido colapsable-->
             <div class="panel-group" id="accordion2">
                 <?php
-                /*if($serie == "56" || $serie == "59")
+/*                if($serie == "56" || $serie == "59")
                 	$serie = 63;*/
                 
                 foreach ($campeonatosResultados as $campeonato) {

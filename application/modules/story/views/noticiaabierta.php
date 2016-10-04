@@ -94,14 +94,17 @@
         <div class="ebzHere"></div>
         <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {?>
             <!-- ubicacion para relacionadas -->
-            <?php if (strlen($tagsStorys) > 3) { ?>
-            <div class="col-md-12 column ">
-                <strong class="color-titular text-uppercase padding-left-2 p-l-20">Leer también</strong>  
-            </div>
-            <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
-                <?php echo $tagsStorys; ?>
-            </div>			
-        	<?php } ?>
+            <?php 
+            if ($noticia->tema == "0"){
+            	if (strlen($tagsStorys) > 3) { ?>
+		            <div class="col-md-12 column ">
+		                <strong class="color-titular text-uppercase padding-left-2 p-l-20">Leer también</strong>  
+		            </div>
+		            <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
+		                <?php echo $tagsStorys; ?>
+		            </div>			
+        	<?php }
+        	}?>
         <?php }?>
         
         <div class="videoPublicidad">
@@ -110,7 +113,14 @@
 			}?>
         </div>
         <div class="margen10lados-sx noticia-body">
-            <?php echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8'); ?>
+            <?php 
+            if ($noticia->tema == "1"){
+				$this->load->module('encuesta');
+				echo $this->encuesta->getFormulario();
+            }else{
+            	echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8');
+            }           
+            ?>
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
         <div class="container">

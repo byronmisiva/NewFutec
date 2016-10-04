@@ -391,7 +391,7 @@ class Mdl_teams_position extends MY_Model
         	$teams = $this->sancionLDUL($teams);*/
         
         	//sancion campeonato
-        	$teams = $this->sancionQuito($teams, 6);
+        	$teams = $this->sancionQuito($teams, 12);
         
         }
         
@@ -441,7 +441,7 @@ class Mdl_teams_position extends MY_Model
         }
         
         if ($round == 220) {        	        
-        	$teams = $this->sancionQuito($teams, 6);
+        	$teams = $this->sancionQuito($teams, 12);
         }
         
         //Reodenamos la tabla luego de disminuir puntos

@@ -1,31 +1,12 @@
-
-<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>coke/edge_includes/edge.6.0.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/pichincha/edge_includes/edge.6.0.0.min.js"></script>
     <style>
-        .edgeLoad-EDGE-28231535 { visibility:hidden; }
-        
-        #pbl-coke{
-        margin: 160px auto;
-    	position: relative;
-	    width: 1341px;
-	    height: auto;
-	    background-color: transparent !important;
-        }
-        
-        .pbl-union{
-	        height: 100%;left: 0;position: fixed;top: 0;
-	    	width: 100%;
-	    	z-index: 100000000;display:none;
-        }
+        .edgeLoad-EDGE-28231535 { visibility:hidden; }        
+        #pbl-coke{        margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
+        .pbl-union{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
     </style>
     <script>
-    AdobeEdge.loadComposition(baseUrl+'coke/union_layer', 'EDGE-28231535', {
-	    scaleToFit: "none",
-	    centerStage: "none",
-	    minW: "0px",
-	    maxW: "undefined",
-	    width: "1330px",
-	    height: "600px"
-	}, {dom: [ ]}, {dom: [ ]});	
+    AdobeEdge.loadComposition(baseUrl+'unionlayer/pichincha/union_layer', 'EDGE-28231535', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
     </script>
 <div class="pbl-union" >
     <div id="pbl-coke">
@@ -38,43 +19,15 @@
 		</div>
     </div>
 </div>
-<script src="http://www.youtube.com/player_api"></script>
-<script type="text/javascript">
-//activarPbl("yw_nKi2-Rek");
-var player;
-function playVideo(videoId) {
-    player = new YT.Player('player', {
-        height: '280',
-        width: '440',
-        videoId: videoId,
-        events: {
-             'onReady': onPlayerReady,
-             'onStateChange': onPlayerStateChange
-         }
-     });
- };
- 
- function onPlayerReady(event) {
-     event.target.playVideo();
- };
- 
- function onPlayerStateChange(event) {
-     if(event.data === 0) {
-         document.getElementById('content').innerHTML = "";
-     }
- };
+<script type="text/javascript"> 
 
- 
-function activarPbl(videoName){
+function activarPbl(){
 	$("#div-gpt-ad-1450734059657-0").hide();
 	$("#div-gpt-ad-1450734059657-1").hide();
 	$(".pbl-union").fadeIn();
 	$(".Stage_boton_abre_id").click();	
-    setTimeout(function(){
-    	var div = document.createElement('div');
-        div.id = 'player';
+    setTimeout(function(){    	
         document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
-    	 playVideo(videoName);
     }, 1500);
 }	
 </script>
@@ -82,7 +35,7 @@ function activarPbl(videoName){
 
 
 <!-- Bootstrap core JavaScript-->
-<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
+
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <!-- FlexSlider -->
@@ -136,9 +89,10 @@ if (isset($fe_splash))
 ?>
 
 <?php
-if (isset($fe_scritp_footer))
+if (isset($fe_scritp_footer)){
+echo "<!-- <div>Hola Jairo </div>-->";
     echo $fe_scritp_footer;
-?>
+}?>
 
 <!-- Taboola  tracking add 20151023-->
 <script type="text/javascript">

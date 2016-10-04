@@ -44,6 +44,15 @@ class Mdl_story extends MY_Model
 
         return $aux;
     }
+    
+    function getNoticiaxMes($mes){
+    	$data = $this->db->query('SELECT s.id,s.title, s.subtitle, s.created
+From stories s
+WHERE month(s.created)='.$mes.'
+ORDER BY s.created DESC ');
+    	return $data->result();
+    	
+    }
 
     function news_by_tagsList($tag, $limit = "", $offset = 0)
     {

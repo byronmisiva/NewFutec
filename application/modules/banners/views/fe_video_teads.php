@@ -2,6 +2,7 @@
 $idtipo = $this->uri->segment(2);
 $tipo = array("noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido");
 if (in_array($idtipo, $tipo)) { ?>
+<!-- estamos en la nocita-->
     <!--   script teads  se muestra cuando es noticia abierta-->
     <script type="text/javascript">
         window._ttf = window._ttf || [];

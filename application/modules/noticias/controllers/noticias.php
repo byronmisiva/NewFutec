@@ -109,6 +109,12 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
+    
+    public function viewLista($mes){
+    	setlocale(LC_ALL, "es_ES");
+    	$this->load->module('story');
+    	return $this->mdl_story->getNoticiaxMes($mes);
+    }
 
     public function viewNoticias($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {

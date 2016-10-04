@@ -21,14 +21,4 @@
             $(iframeCinta).attr("height","50px");
         }
     }
-
-     
-     var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
-     var iframeHeader=contenedorheader[0].lastChild["childNodes"][0];
-     $(iframeHeader).attr("height","50px");
-     
-     var conFm = $("#ccfmPlayer");
-     var iframeHeader = conFm.context["childNodes"][0];
-     console.debug(conFm);
-     
 </script>

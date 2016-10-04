@@ -47,14 +47,14 @@ $this->load->view('header', $data);
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-					<li>
+					<!-- <li>
 						  <a href="<?php echo base_url('copa-america') ?>">
 						        <img src="<?= base_url('assets/img/logo-copa-america-mini-2016.png') ?>"
 						             alt="FutbolEcuador"
 						             title="Copa América Centeanario 2016 USA"
 						             class=" media-object" width="130px">
 						    </a>
-					</li>
+					</li>-->
 					
 					
                     <li><a class="clickmenu" href="<?php echo base_url('site/marcadorenvivo') ?>">Marcador en Vivo</a></li>
@@ -145,7 +145,6 @@ $this->load->view('header', $data);
             </div>
         </div>
     <?php } ?>
-            
     <div class="row">
         <div class="col-md-8  col-sm-8 zonacontenido">
             <div class="row margen0  content ">

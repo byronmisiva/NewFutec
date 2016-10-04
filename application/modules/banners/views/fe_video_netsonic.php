@@ -39,6 +39,7 @@ if (in_array($idtipo, $tipo)) { ?>
     <!-- !NETSONIC.TV - ALL IN ONE (Intext) VIDEO 1.0 -->
 </div>
 <?php }else {?>
+<!-- NETSONIC.TV - HOME -->
 	<div id="netsonic"></div>
 	<script type='text/javascript'>
 	    var cuerpoRef = document.getElementsByTagName("body")[0].innerHTML;
