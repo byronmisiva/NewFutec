@@ -327,11 +327,7 @@ class Stories extends CI_Controller
         $data['positions'] = $this->positions;
         $data['openseccion'] = $this->openseccion;
 
-        if (isset($_POST['submit'])) {
-        	echo "<pre>";
-        	var_dump($_POST);
-        	die;
-        	
+        if (isset($_POST['submit'])) { 
             //Verificacion si escogieron opcion destacado
             if (isset($_POST["destacado"])) {
                 $destacado = $_POST["destacado"];
@@ -355,11 +351,15 @@ class Stories extends CI_Controller
             $_POST['modified'] = $_POST['created'];
 
             if ($this->form_validation->run() == TRUE) {
-                $tags = $this->tag->insert_tag($_POST['related']);
+               // $tags = $this->tag->insert_tag($_POST['related']);
                 unset($_POST['related']);
                 unset($_POST['submit']);
                 unset($_POST['submit']);
 
+                echo "<pre>";
+                var_dump($_POST);
+                die;
+                
                 if (!isset($_POST['sponsored']))
                     $_POST['sponsored'] = 0;
                 	$previous_url = $_POST['previous_url'];
