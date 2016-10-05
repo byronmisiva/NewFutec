@@ -330,6 +330,7 @@ class Stories extends CI_Controller
         if (isset($_POST['submit'])) {
         	echo "<pre>";
         	var_dump($_POST);
+        	die;
         	
             //Verificacion si escogieron opcion destacado
             if (isset($_POST["destacado"])) {
