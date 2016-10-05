@@ -314,6 +314,7 @@ class Stories extends CI_Controller
 
     function insert()
     {
+    	
         $this->load->model('story_stat');
         $this->template->add_js('js/calendar.js');
         $this->template->add_js('js/ajax.js');
@@ -327,6 +328,9 @@ class Stories extends CI_Controller
         $data['openseccion'] = $this->openseccion;
 
         if (isset($_POST['submit'])) {
+        	echo "<pre>";
+        	var_dump($_POST);
+        	
             //Verificacion si escogieron opcion destacado
             if (isset($_POST["destacado"])) {
                 $destacado = $_POST["destacado"];
@@ -345,6 +349,7 @@ class Stories extends CI_Controller
             $_POST['reads'] = 0;
             $_POST['sends'] = 0;
             $_POST['votes'] = 0;
+            
             $_POST['created'] = mdate('%Y-%m-%d  %H:%i:%s', time());
             $_POST['modified'] = $_POST['created'];
 
@@ -356,11 +361,11 @@ class Stories extends CI_Controller
 
                 if (!isset($_POST['sponsored']))
                     $_POST['sponsored'] = 0;
-                $previous_url = $_POST['previous_url'];
-                unset($_POST['previous_url']);
+                	$previous_url = $_POST['previous_url'];
+                	unset($_POST['previous_url']);
 
-                $params = $_POST;
-                $tabla = $this->model->name;
+	                $params = $_POST;
+	                $tabla = $this->model->name;
 
                 // no se por que se envia estos datos ... los filtramos previo a enviar a la insercion
                 if (isset($params['embed'])) {
