@@ -1,3 +1,7 @@
+<?php 
+	$tema = array("0"=>"Ninguno","1"=>"Cancha");
+?>
+
 <div id="admin">
 	<h1><?=$title.$heading;?></h1>
 	<div class="actions">
@@ -29,11 +33,17 @@
 		<td>Posición:</td>
 		<td><?php echo form_dropdown('position', $positions, set_value('position'));?></td>
 	</tr>
-		<tr>
-			<td></td>
-			<td>Redirección Sección:</td>
-			<td><?php echo form_dropdown('openseccion', $openseccion, set_value('openseccion'));?></td>
-		</tr>
+	<tr>
+		<td></td>
+		<td>Redirección Sección:</td>
+		<td><?php echo form_dropdown('openseccion', $openseccion, set_value('openseccion'));?></td>
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td>Tema:</td>
+		<td><?php echo form_dropdown('tema', $tema, set_value('tema'));?></td>
+	</tr>
 	<tr>
 		<td class='required'></td>
 		<td>Destacada:</td>
