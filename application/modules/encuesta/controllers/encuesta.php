@@ -14,8 +14,14 @@ class Encuesta extends MY_Controller
     }
     
     public function getFormulario()
-    {   $data = "";
+    {   $data["formacion"] = json_encode($this->mdl_encuesta->getEncuesta());  ;
     	return $this->load->view("index",$data, TRUE);
+    }
+    
+    public function getResultado()
+    {   $data = "";
+    //return $this->load->view("resultado",$data, TRUE);
+    return $this->load->view("resultado",$data, TRUE);
     }
     
     public function listaNoticia($mes,$year)
@@ -41,6 +47,20 @@ class Encuesta extends MY_Controller
     	echo "<pre>";
     	var_dump($dato);
     	echo json_encode($data);
+    }
+    
+    public function resultados(){
+    	$dato["registro"]=$this->mdl_encuesta->sumRegistro();
+    	$dato["arquero"]=$this->mdl_encuesta->getLista("ARQ");
+    	$dato["defensa"]=$this->mdl_encuesta->getLista("DEF");
+    	$dato["volantes"]=$this->mdl_encuesta->getLista("VOL");
+    	$dato["delantero"]=$this->mdl_encuesta->getLista("DEL");
+    	echo json_encode($data);
+    } 
+    
+    public function getResultado()
+    {   $data = "";
+    return $this->load->view("resultado",$data, TRUE);
     }
     
 }
