@@ -185,116 +185,32 @@
 	var posicionFormacion;
 	var lista;
 	setTimeout(function(){ 
-		  $.getJSON( "http://www.futbolecuador.com/encuesta/consulta", function( data ) {
-				formacion = data;				 
+		  $.getJSON( "http://www.futbolecuador.com/encuesta/resultados", function( data ) {
+				formacion = data;	  
+				  var contador = 0;
+				  var imagen = "<img src='"+formacion["arquero"][0].imagen+"' /> <br> "+formacion["arquero"][0].first_name+" "+formacion["arquero"][0].last_name+" <br>"+formacion["arquero"][0].voto;
+				  	$("#"+contador).html(imagen);
+				  contador = contador + 1;
+				  for (var i=0 ; i<4; i++){
+					var imagen = "<img src='"+formacion["defensa"][i].imagen+"' /> <br> "+formacion["defensa"][i].first_name+" "+formacion["defensa"][i].last_name+" <br>"+formacion["defensa"][i].voto;						
+					$("#"+contador).html(imagen);
+					contador = contador + 1;
+				 }
+
+				 for (var i=0 ; i<4; i++){
+					var imagen = "<img src='"+formacion["volante"][i].imagen+"' /> <br> "+formacion["volante"][i].first_name+" "+formacion["volante"][i].last_name+" <br>"+formacion["volante"][i].voto;
+					$("#"+contador).html(imagen);
+					contador++;
+				 }
+
+				 for (var i=0 ; i<2; i++){
+				    var imagen = "<img src='"+formacion["delantero"][i].imagen+"' /> <br> "+formacion["delantero"][i].first_name+" "+formacion["delantero"][i].last_name+" <br>"+formacion["delantero"][i].voto;
+					$("#"+contador).html(imagen);
+					contador++;
+				 }
+							 
 			}); 
 	}, 2000);
 		
-	function verificarJugador(elem){
-		var pos ;
-		if ($("#"+posicionFormacion).attr("sel") == "0" ){
-			elementos.push (elem.attr("ref"));
-			for(var l=0; l<formacion.length; l++){
-				if ( formacion[l].id == elem.attr("ref")){
-					pos = l;
-					formacion[l].checked ="TRUE";
-					l = formacion.length;
-					
-				}
-			}	
-			$("#"+posicionFormacion).html("<img src='"+formacion[pos].imagen+"' />");
-			$("#"+posicionFormacion).attr("sel",elem.attr("ref"));
-		}else{
-			for(var e=0; e<elementos.length; e++){
-				if(elementos[e] == $("#"+posicionFormacion).attr("sel") ){
-					elementos.splice(e,1);
-					e=elementos.length;
-				}
-			}
-
-			for(var lim=0; lim<formacion.length; lim++){
-				if( formacion[lim].id == $("#"+posicionFormacion).attr("sel") ){
-					formacion[lim].checked = "FALSE";
-					lim = formacion.length;
-				}
-			}
-			
-			elementos.push (elem.attr("ref"));
-			for(var l=0; l<formacion.length; l++){
-				if ( formacion[l].id == elem.attr("ref")){
-					pos = l;
-					formacion[l].checked = "TRUE";
-					l = formacion.length;
-				}
-			}	
-			$("#"+posicionFormacion).html("<img src='"+formacion[pos].imagen+"' />");	
-			$("#"+posicionFormacion).attr("sel",elem.attr("ref"));		
-		}
-		if (elementos.length == 11){
-			$(".btn-success").show();
-		}else{
-			$(".btn-success").hide();
-		}
-	};
-	
-	$(document).ready(function () {
-		$(".btn-success").click(function(){
-			$.ajax({  
-				  type: "POST",  
-				  url: "http://www.futbolecuador.com/encuesta/pushVotos",  
-				  data: {datos:JSON.stringify(elementos)},
-				  success: function( result ) {
-					  lista = JSON.parse(result);					  
-					  var contador = 0;
-					  var imagen = "<img src='"+lista["arquero"][0].imagen+"' /> <br> "+lista["arquero"][0].first_name+" "+lista["arquero"][0].last_name+" <br>"+lista["arquero"][0].voto;
-					  	$("#"+contador).html(imagen);
-					  contador = contador + 1;
-					  for (var i=0 ; i<4; i++){
-						var imagen = "<img src='"+lista["defensa"][i].imagen+"' /> <br> "+lista["defensa"][i].first_name+" "+lista["defensa"][i].last_name+" <br>"+lista["defensa"][i].voto;						
-						$("#"+contador).html(imagen);
-						contador = contador + 1;
-					 }
-
-					 for (var i=0 ; i<4; i++){
-						var imagen = "<img src='"+lista["volante"][i].imagen+"' /> <br> "+lista["volante"][i].first_name+" "+lista["volante"][i].last_name+" <br>"+lista["volante"][i].voto;
-						$("#"+contador).html(imagen);
-						contador++;
-					 }
-
-					 for (var i=0 ; i<2; i++){
-					    var imagen = "<img src='"+lista["delantero"][i].imagen+"' /> <br> "+lista["delantero"][i].first_name+" "+lista["delantero"][i].last_name+" <br>"+lista["delantero"][i].voto;
-						$("#"+contador).html(imagen);
-						contador++;
-					 }
-
-					 $(".btn-enviar").html("");
-					 $(".btn-enviar").hide();					 
-					 elementos= [];
-					 formacion = [];
-		    		} 
-			});
-		});		
-		
-		$(".opcion").click(function(){			
-			var posicion = $(this).attr("ref");
-			posicionFormacion = $(this).attr("id");
-			var htmlLista;
-			htmlLista ="<ul>";
-			for(var x=0; x<formacion.length; x++){
-				if ( formacion[x].posicion == posicion){
-					 if (formacion[x].checked == "FALSE"){
-						 htmlLista = htmlLista+
-						"<li class='jugador ' data-dismiss='modal' ref='"+formacion[x].id+"' fil='"+formacion[x].posicion+"' pos='"+x+"' ver='"+formacion[x].checked+"' onclick='verificarJugador($(this))'>"+
-							formacion[x].first_name+" "+formacion[x].last_name+
-						"</li>";	 
-					 }			 
-				}				 
-			}
-			htmlLista = htmlLista+"<ul>";
-			$(".modal-body").html("");
-			$(".modal-body").html(htmlLista);
-			$(".btn-carga-lista").click();
-		});
-	});	
   </script>
 

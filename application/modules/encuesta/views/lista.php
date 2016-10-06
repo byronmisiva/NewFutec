@@ -22,13 +22,17 @@
 		$con=1;
 		foreach ($lista as $row){?>
 		<div class="row">
-		
 			<div class="col-lg-12 separador">
-				<div class="col-lg-1">
+				<div class="col-lg-1 text-center">
 					<?php echo $con?>
 				</div>
-				<div class="col-lg-5"> <?php echo $row->title?></div>
-				<div class="col-lg-6">
+				<div class="col-lg-3"> <?php echo $row->title?></div>
+				<div class="col-lg-3">
+				<?php setlocale(LC_ALL, "es_ES");
+                    echo $row->origen.",".ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($row->created))));?>
+				 </div>
+				 
+				<div class="col-lg-5">
 				  <?php $link = base_url() . 'site/noticia/'.$this->contenido->_urlFriendly($row->subtitle).'/'.$row->id ?>
 				  <a href="<?php echo $link?>" target="_blank" ><?php echo $link?></a>
 				</div>				
