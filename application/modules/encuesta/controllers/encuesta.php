@@ -14,14 +14,15 @@ class Encuesta extends MY_Controller
     }
     
     public function getFormulario()
-    {   $data["formacion"] = json_encode($this->mdl_encuesta->getEncuesta());  ;
-    	return $this->load->view("index",$data, TRUE);
+    {   $data["formacion"] = "";
+    	//return $this->load->view("index",$data, TRUE);
+    	return $this->load->view("resultado",$data, TRUE);
     }
     
     public function getResultado()
     {   $data = "";
     //return $this->load->view("resultado",$data, TRUE);
-    return $this->load->view("resultado",$data, TRUE);
+       return $this->load->view("resultado",$data, TRUE);
     }
     
     public function listaNoticia($mes,$year)
