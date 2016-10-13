@@ -220,10 +220,10 @@
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "636c7935-082e-4d18-ac85-13cafa7345da", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	<!-- fin share this -->
-	    <?php 
-
+	    <?php
+	    
     //echo $this->uri->segment(1);
-    
+	    
  	//carga de css auspicion
     if ($this->uri->segment(3) == 63){?>
     	<!--<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>-->
@@ -232,7 +232,7 @@
     <?php }?>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 </head>
-<body onload="verificarInstlacion();cargarSplash();">
+<body onload="verificarInstlacion();cargarSplash();" class="body-principal">
 
 
 <script type='text/javascript'>
