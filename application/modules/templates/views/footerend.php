@@ -1,14 +1,38 @@
-<div class="bannerMini" style="position:fixed;bottom: 10px;width: 100%;display:none;z-index: 10000;">
-	<div style="position: relative;width:980px;margin:0 auto;">
-		Noticias a desplegar
-	</div>
+<style>
+.bannerNoticiaGrande{
+	position: relative;
+    width: 600px;
+    height: 500px;
+    margin: 8% auto;
+    background-color: #fff;
+}
+
+.bannerMini{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    z-index: 10000;
+    height: 90px;
+    background-color: #11314b;
+}
+
+.bannerMayor{
+	position:absolute;top: 0;
+	left:0;width: 100%;height:100%;
+	display:none;background-color: #000;
+	z-index: 10000;
+}
+
+</style>
+
+<div class="bannerMini" >
+	<div class="contenedorNoticiapeque"></div>
 </div>
 
 
-<div class="bannerMayor" style="position:absolute;top: 0;left:0;width: 100%;height:100%;display:none;background-color: #000;z-index: 10000;">
-	<div style="position: fixed;width:400px;height:300px;margin:0 auto;background-color: #fff;">
-		Noticias a desplegar grande
-	</div>
+<div class="bannerMayor" >
+	<div class="bannerNoticiaGrande"></div>
 </div>
 
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/pichincha/edge_includes/edge.6.0.0.min.js"></script>
