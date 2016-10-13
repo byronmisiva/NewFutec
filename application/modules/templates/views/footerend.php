@@ -71,7 +71,7 @@ function activarPbl(){
 <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
 	$(".body-principal").attr('onmouseout','verificarLocalStorage()');
 	function verificarLocalStorage(){
-		if ( parseInt( window.localStorage['estadoVisita'] ) == 1){	
+		if ( parseInt( window.localStorage['estadoVisita'] ) == 0){	
 			$(".bannerMini").show();
 		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
 			$(".bannerMayor").show();
