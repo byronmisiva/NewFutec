@@ -33,7 +33,7 @@ function activarPbl(){
 
 
 <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
-	$("html").attr('onmouseout','verificarLocalStorage()');
+	$(".body-principal").attr('onmouseout','verificarLocalStorage()');
 	function verificarLocalStorage(){
 		 if( window.localStorage['estadoVisita'] != null) {	
 		        window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;
