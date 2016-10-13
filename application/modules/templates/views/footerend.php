@@ -1,3 +1,16 @@
+<div class="bannerMini" style="position:fixed;bottom: 10px;width: 100%;display:none;z-index: 10000;">
+	<div style="position: relative;width:980px;margin:0 auto;">
+		Noticias a desplegar
+	</div>
+</div>
+
+
+<div class="bannerMayor" style="position:absolute;top: 0;left:0;width: 100%;height:100%;display:none;background-color: #000;">
+	<div style="position: fixed;width:400px;height:300px;margin:0 auto;">
+		Noticias a desplegar grande
+	</div>
+</div>
+
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/pichincha/edge_includes/edge.6.0.0.min.js"></script>
     <style>
         .edgeLoad-EDGE-28231535 { visibility:hidden; }        
@@ -20,7 +33,6 @@
     </div>
 </div>
 <script type="text/javascript"> 
-
 function activarPbl(){
 	$("#div-gpt-ad-1450734059657-0").hide();
 	$("#div-gpt-ad-1450734059657-1").hide();
@@ -35,9 +47,17 @@ function activarPbl(){
 <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
 	$(".body-principal").attr('onmouseout','verificarLocalStorage()');
 	function verificarLocalStorage(){
+		if ( parseInt( window.localStorage['estadoVisita'] ) == 1){	
+			$(".bannerMini").show();
+		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
+			$(".bannerMayor").show();
+			}
 		console.debug("Vistia: " + window.localStorage['estadoVisita']);
+		cargarNoticia("<?php echo $this->uri->segment(4)?>");
+		
 	}	 	 
 <?php }?>
+
 	if( window.localStorage['estadoVisita'] != null) {	
 	    window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;
 	}else{
