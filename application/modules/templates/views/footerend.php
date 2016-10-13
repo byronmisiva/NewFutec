@@ -5,8 +5,8 @@
 </div>
 
 
-<div class="bannerMayor" style="position:absolute;top: 0;left:0;width: 100%;height:100%;display:none;background-color: #000;">
-	<div style="position: fixed;width:400px;height:300px;margin:0 auto;">
+<div class="bannerMayor" style="position:absolute;top: 0;left:0;width: 100%;height:100%;display:none;background-color: #000;z-index: 10000;">
+	<div style="position: fixed;width:400px;height:300px;margin:0 auto;background-color: #fff;">
 		Noticias a desplegar grande
 	</div>
 </div>
