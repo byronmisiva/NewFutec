@@ -53,7 +53,7 @@ function activarPbl(){
 			$(".bannerMayor").show();
 			}
 		console.debug("Vistia: " + window.localStorage['estadoVisita']);
-		cargarNoticia("<?php echo $this->uri->segment(4)?>");
+		//cargarNoticia("<?php echo $this->uri->segment(4)?>");
 		
 	}	 	 
 <?php }?>
