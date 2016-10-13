@@ -30,10 +30,22 @@ function activarPbl(){
         document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
     }, 1500);
 }	
+
+
+<?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
+	$("body").attr('onmouseout','verificarLocalStorage()');
+	function verificarLocalStorage(){
+		 if( window.localStorage['estadoVisita'] != null) {	
+		        window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;
+		    }else{
+		    	window.localStorage['estadoVisita'] = 0;
+			}
+			console.debug("Vistia: " + window.localStorage['estadoVisita']); 
+		}	 
+<?php }?>
+
+	    
 </script>
-
-
-
 <!-- Bootstrap core JavaScript-->
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
