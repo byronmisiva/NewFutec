@@ -8,13 +8,13 @@
             $link = base_url() . $noticia->openseccion;
         }
         ?>
-        <div class="col-md-12 lineseparador separador10" style="background-color:#fff; ">
+        <div class="col-md-12 lineseparador separador10" style="background-color:#fff;padding-top: 10px;">
             <div class="row">
                 <div class="col-md-2 ">
                     <a href="<?php echo $link ?>"><img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" alt="<?php echo str_replace('"', '', "$noticia->title"); ?>" title="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
                 <div class="col-md-10  ">
-                    <h2 style="font-size: 16px;"> <a style="color:#000;" href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
+                    <h2 style="font-size: 16px;margin-top: 0;"> <a style="color:#000;" href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
                     <?php
                     if (strlen(strip_tags($noticia->lead)) == 0) {
                         $num = 100;
