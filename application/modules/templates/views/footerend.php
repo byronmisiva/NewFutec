@@ -75,7 +75,9 @@ function activarPbl(){
 	function verificarLocalStorage(){
 		 var x=event.clientX;
 		 var y=event.clientY;
-		 if (y <= 0){
+			console.log("X"+x+" Y:"+y);
+		 
+		 if (y <= 10){
 			 desplegarSolicitud();
 		 }else if (x <= 0){
 			desplegarSolicitud();
