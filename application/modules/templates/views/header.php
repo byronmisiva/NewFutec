@@ -368,6 +368,33 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         googletag.enableServices();
     });
     // fin espacios copa america
+    
+    
+    <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
+	
+	function verificarLocalStorage(){
+		 var x=event.clientX;
+		 var y=event.clientY;
+		 if (y <= 10){
+			 desplegarSolicitud();
+		 }else if (x <= 0){
+			desplegarSolicitud();
+		}else if (x >= anchoTotal){
+			desplegarSolicitud();
+		}
+	}	 
+
+	function desplegarSolicitud(){
+		if( parseInt(window.localStorage['estadoVisita']) == 0 ){	
+			$(".bannerMini").show();
+		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
+			$(".bannerMayor").show();
+			$(".bannerNoticiaGrande").load("<?php echo base_url().'encuesta/getNoticiamayor/'.$this->uri->segment(4)?>");
+		}
+	}
+		 
+<?php }?>
+    
 </script>
 
 <!-- Tag Netsonic-->
