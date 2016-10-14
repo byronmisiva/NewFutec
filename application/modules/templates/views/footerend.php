@@ -33,7 +33,7 @@
 </div>
 
 
-<div class="bannerMayor" onclick="$(.bannerMayor).hide();">
+<div class="bannerMayor" onclick="$('.bannerMayor').hide();">
 	<div class="bannerNoticiaGrande"></div>
 </div>
 
