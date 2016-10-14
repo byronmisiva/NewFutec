@@ -2,7 +2,9 @@
 echo "<pre>";
 var_dump($principal[0]);?>
 
-<?php var_dump($principal[0]["title"]);?>
+<?php 
+echo "<pre>";
+var_dump($principal[0]->title);?>
 
 
 <div class="row">
