@@ -2,7 +2,7 @@
 $link = base_url().'site/noticia/'.$this->contenido->_urlFriendly ($principal[0]->title).'/'.$principal[0]->id;
 ?>
 <div class="row">
-	<div class="col-lg-6" style="background-color:#fff;height: 340px;">
+	<div class="col-lg-6" style="background-color:#fff;height: 345px;">
 		<div class="row">
 		<a href="<?php echo $link?>">
 			<div class="col-lg-12 text-center" style="padding-top: 10px">
