@@ -1,9 +1,7 @@
 <div class="row">
-
     <?php foreach ($noticias as $noticia) {
         $linkShort = base_url() . 'site/'.$nameSectionUrl;
         $link = $linkShort .'/' . $this->contenido->_urlFriendly ($noticia->title) . '/' . $noticia->id;
-
         // caso abre seccion
         if (isset($noticia->openseccion)) {
             if ($noticia->openseccion != '')
@@ -16,7 +14,7 @@
                     <a href="<?php echo $link ?>"><img src="http://www.futbolecuador.com/<?php echo $noticia->thumb3; ?>" alt="<?php echo str_replace('"', '', "$noticia->title"); ?>" title="<?php echo str_replace('"', '', "$noticia->title"); ?>"></a>
                 </div>
                 <div class="col-md-10  ">
-                    <h2> <a href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
+                    <h2 style="font-size: 16px;"> <a style="color:#000;" href="<?php echo $link ?>"><?php echo $noticia->title; ?></a></h2>
                     <?php
                     if (strlen(strip_tags($noticia->lead)) == 0) {
                         $num = 100;

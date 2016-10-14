@@ -502,18 +502,14 @@ ORDER BY s.created DESC ');
         $data = $this->db->get($this->table_name . ' s')->result();
 
         foreach ($data as $key => $nota) {
-            $this->db->select('i.thumbh120 as thumb1,i.thumbh120, i.thumbh80 as thumb2,i.thumbh50 as thumb3,i.thumbh50,i.thumb300 as thumb300', FALSE);
+            $this->db->select('i.thumbh50 as thumb3,i.thumbh50,i.thumb300 as thumb300', FALSE);
             $this->db->where('i.id', $nota->image_id);
             $imagenes = $this->db->get("images" . ' i')->result();
-            if (count($imagenes) > 0) {
-                $data[$key]->thumb1 = $imagenes[0]->thumb1;
-                $data[$key]->thumb2 = $imagenes[0]->thumb2;
+            if (count($imagenes) > 0) {                
                 $data[$key]->thumb3 = $imagenes[0]->thumb3;
                 $data[$key]->thumb300 = $imagenes[0]->thumb300;
                 $data[$key]->thumbh50 = $imagenes[0]->thumbh50;
-            } else {
-                $data[$key]->thumb1 = "";
-                $data[$key]->thumb2 = "";
+            } else {                
                 $data[$key]->thumb3 = "";
                 $data[$key]->thumb300 = "";
                 $data[$key]->thumbh50 = "";
