@@ -78,7 +78,7 @@ function activarPbl(){
 			//$(".contenedorNoticiapeque").load("<?php echo base_url()?>encuesta/getNoticiamayor"); 
 		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
 			$(".bannerMayor").show();
-			$(".bannerNoticiaGrande").load("<?php echo base_url()?>encuesta/getNoticiamayor");
+			$(".bannerNoticiaGrande").load("<?php echo base_url().'encuesta/getNoticiamayor/'.$this->uri->segment(4)?>");
 			}
 		console.debug("Vistia: " + window.localStorage['estadoVisita']);
 		//cargarNoticia("<?php echo $this->uri->segment(4)?>");
