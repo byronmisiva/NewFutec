@@ -36,9 +36,8 @@ class Story extends MY_Controller
     	$data['namesection'] = $namesection;
     	$data['nameSectionUrl'] = $nameSectionUrl;
     	$data['idsection'] = $idsection;
-    	$data['noticias'] = $this->mdl_story->get_noticia_aviso();
+    	$data['noticias'] = $this->mdl_story->get_NoticiaAviso();
     	return $this->noticias->load->view('mininewsaviso', $data, TRUE);
-    	
     }
     
     
