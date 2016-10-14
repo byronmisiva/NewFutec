@@ -73,7 +73,7 @@ function activarPbl(){
 <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
 	$(".body-principal").attr('onmouseout','verificarLocalStorage()');
 	function verificarLocalStorage(){
-		if ( window.localStorage['estadoVisita'] == "0"){	
+		if( parseInt(window.localStorage['estadoVisita']) == 0 ){	
 			$(".bannerMini").show();
 			//$(".contenedorNoticiapeque").load("<?php echo base_url()?>encuesta/getNoticiamayor"); 
 		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
@@ -82,7 +82,6 @@ function activarPbl(){
 		}
 		console.debug("Vistia: " + window.localStorage['estadoVisita']);
 		//cargarNoticia("<?php echo $this->uri->segment(4)?>");
-		
 	}	 	 
 <?php }?>
 
