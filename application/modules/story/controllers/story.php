@@ -30,7 +30,18 @@ class Story extends MY_Controller
         $data['noticias'] = $this->mdl_story->get_plus();
         return $this->noticias->load->view('mininewssidebar', $data, TRUE);
     }
-
+    public function viewget_simple($namesection, $idsection, $nameSectionUrl, $data = FALSE){
+    	$this->output->cache(CACHE_DEFAULT);
+    	$this->load->module('noticias');
+    	$data['namesection'] = $namesection;
+    	$data['nameSectionUrl'] = $nameSectionUrl;
+    	$data['idsection'] = $idsection;
+    	$data['noticias'] = $this->mdl_story->get_noticia_aviso();
+    	return $this->noticias->load->view('mininewsaviso', $data, TRUE);
+    }
+    
+    
+    
 
     function get_complete($id, $banerintermedio = "", $bannerBottom = "", $bannerTop = "", $videoBanner = "")
     {

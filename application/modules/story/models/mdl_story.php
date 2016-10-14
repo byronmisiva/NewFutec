@@ -483,5 +483,38 @@ ORDER BY s.created DESC ');
         }
         return $data;
     }
+    
+    function get_noticia_aviso($num = 1, $offset = 0)
+    {
+        //todo terminar esta funcion
+        $past_days = 7;
+        $last_month = date('Y-m-d', mktime(0, 0, 0, date("m"), date("d") - $past_days, date("Y")));
+        $this->db->where('s.created >', $last_month);
+        $this->db->where('s.invisible', '0');
+        $this->db->where('s.position !=', 10);
+        $this->db->limit($num, $offset);
+
+
+        $this->db->from('stories_stats ss');
+        $this->db->where('ss.story_id', 's.id', FALSE);
+        $this->db->order_by('ss.reads', 'desc');
+        $this->db->select('*, , (SELECT stories_stats.reads FROM stories_stats WHERE  stories_stats.story_id = s.id limit 1) AS lecturas, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category', FALSE);
+
+        $data = $this->db->get($this->table_name . ' s')->result();
+
+        foreach ($data as $key => $nota) {
+            $this->db->select('i.thumbh50 as thumb3,i.thumbh50,', FALSE);
+            $this->db->where('i.id', $nota->image_id);
+            $imagenes = $this->db->get("images" . ' i')->result();
+            if (count($imagenes) > 0) {                
+                $data[$key]->thumb3 = $imagenes[0]->thumb3;                
+                $data[$key]->thumbh50 = $imagenes[0]->thumbh50;
+            } else {                
+                $data[$key]->thumb3 = "";                
+                $data[$key]->thumbh50 = "";
+            }
+        }
+        return $data;
+    }
 
 }

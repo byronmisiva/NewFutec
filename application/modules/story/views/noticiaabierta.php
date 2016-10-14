@@ -31,7 +31,7 @@
         </div>
         <div class="margen10lados-sx fechaabierta">
             <?php setlocale(LC_ALL, "es_ES");
-            echo $noticia->origen . ", " . ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($noticia->created)))); ?>
+            echo $noticia->origen . ", ".ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($noticia->created))));?>
             <h2 class="h2noticiaabierta  "><?php echo $noticia->title; ?></h2>
         </div>
         <div class="margen10lados-sx">
