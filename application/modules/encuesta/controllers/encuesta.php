@@ -24,7 +24,7 @@ class Encuesta extends MY_Controller
     	$this->load->module('story');    	
     	$data['principal'] = $this->mdl_story->getultimaNoticia(1, 44);
         $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
-    	return $this->load->view("avisonotciacentral",$data, TRUE);
+    	$this->load->view("avisonotciacentral",$data, TRUE);
     }
 
     
