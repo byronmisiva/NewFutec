@@ -1,3 +1,10 @@
+<?php 
+echo "<pre>";
+var_dump($principal[0]);?>
+
+<?php var_dump($principal[0]["title"]);?>
+
+
 <div class="row">
 	<div class="col-lg-6">
 		<div class="row">
