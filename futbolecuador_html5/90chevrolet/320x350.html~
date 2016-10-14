@@ -1,0 +1,16 @@
+<!-- 320x350-->
+<div>
+  <video id="splash-video" width ="100%" style="margin:50px auto;" controls>   		   
+  <source src="http://www.futbolecuador.com/futbolecuador_html5/90chevrolet/media/promo_15.mp4" type="video/mp4">
+  </video>
+</div> 
+<div onclick="window.open('%%CLICK_URL_ESC%%https://www.facebook.com/MunicipioQuito', '_blank');" 
+style="width: 300px; height: 168px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+<script type="text/javascript">
+
+setTimeout(function(){ 
+        var vid= document.getElementById("splash-video");
+       	vid.play();
+ }, 3000);
+
+</script>

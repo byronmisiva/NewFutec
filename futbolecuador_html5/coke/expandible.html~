@@ -1,0 +1,38 @@
+<!-- Còdigo coke banner expandible-->
+<script type="text/javascript" src="http://www.futbolecuador.com/assets/js/jquery.min.js"></script>
+<div class="peque300250" style="width: 300px; height: 250px">
+   <iframe src="http://www.misiva.com.ec/banners/cocacola/carma_futbol/300x250_collapse/" width="300" height="250" frameborder="0"></iframe>
+</div>
+<div class="grande300250" style="display: none; width: 900px; height: 250px;position: relative; left: -600px;background-image: url(http://futbolecuador.com/futbolecuador_html5/cocacola/images/980x250.jpg);">
+   <video id="video300250" width ="320" style="margin-top: 35px;margin-left:250px;" loop="loop" src="http://www.futbolecuador.com/futbolecuador_html5/cocacola/media/video.mp4"></video>
+</div>
+<div class="js--over-300x250" style="width: 300px; height: 250px; position: absolute; top: 0;  z-index: 10; cursor: pointer;"></div>
+<div class="js--click-300x250" style="width: 900px; height: 0px; position: absolute; top: 0;  z-index: 10; cursor: pointer; left: -600px;"></div>
+
+<script type="text/javascript">
+   var link = 'http://www.coca-cola.com.ec/es/home/';
+   var vidCoke300x250 = document.getElementById("video300250");
+   $(document).ready(function () {
+       $('.js--click-300x250').click (function (){
+           window.open('%%CLICK_URL_ESC%%' + link, '_blank');
+       })
+       $(".js--over-300x250").on("mouseenter", function () {
+           $(".peque300250").hide();
+           $(".js--over-300x250").hide();
+           $(".grande300250").css("display", "block");
+           $(".js--click-300x250").css("height", "250px");
+	  vidCoke300x250.play();
+           //$('.grande iframe').contents().find("#Stage_play").click();
+          
+       })
+       $(".js--click-300x250").on("mouseleave", function () {
+               $(".peque300250").show();
+               $(".js--over-300x250").show();
+               $(".grande300250").css("display", "none");
+               $(".js--click-300x250").css("height", "0");
+		vidCoke300x250.pause(); 
+  //             $('.grande iframe').contents().find("#Stage_stop").click()
+          
+           });
+   });
+</script>

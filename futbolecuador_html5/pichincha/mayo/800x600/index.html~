@@ -1,0 +1,12 @@
+<div style="width:800px; height: 600px; position: absolute; top: 0; left: 0;  z-index: 9; cursor: pointer; "></div>
+<!--<iframe src="https://www.youtube.com/watch?v=WRQ0mDmHpQY" width="800" height="600" frameborder="0"></iframe>-->
+
+<iframe width="800" height="600" src="https://www.youtube.com/embed/WRQ0mDmHpQY" frameborder="0" allowfullscreen></iframe>
+<script type="text/javascript">
+/*   var link = 'https://www.facebook.com/pinguinoecuador/?fref=ts?utm_medium=cpm&utm_source=GDN&utm_campaign=Coffee_Break_Pinguino_Barra_800_Febrero&utm_term=Pinguino&utm_content=Display';
+   $(document).ready(function () {
+       $('.js--click').click (function (){
+           window.open('%%CLICK_URL_ESC%%' + link, '_blank');
+       });
+   });*/
+</script>

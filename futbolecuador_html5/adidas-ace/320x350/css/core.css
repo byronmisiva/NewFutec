@@ -1,0 +1,235 @@
+body, * {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+#mainContainer {
+	position: relative;
+	width: 320px;
+	height: 350px;
+	overflow: hidden;
+	font-size: 12px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #CCC;
+	color: #fff;
+	font-family:'News Cycle', sans-serif;
+}
+#mainContainer #bg-exit {
+	cursor: pointer;
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index:12;
+}
+/* Frame 1 */
+#mainContainer .logo {
+	position:absolute;
+	top: 24px;
+	right:15px;
+	z-index:10;
+}
+.LogoIn {
+	animation: 1.2s 0.2s both logo-in ease;
+	-webkit-animation: 1.2s 0.2s both logo-in ease;
+}
+@keyframes logo-in {
+	 0% {top:-100px;}
+	 60% {top:24px;}
+	 100% {top:14px;}
+}
+@-webkit-keyframes logo-in {
+	 0% {top:-100px;}
+	 60% {top:24px;}
+	 100% {top:14px;}
+}
+#mainContainer .fondo {
+	position:absolute;
+	top: 0px;
+	left:0px;
+	z-index:1;
+	opacity:0;
+	transform:scale(1,1);
+}
+.FondoIn {
+	animation:1.1s both fondo-in ease;
+	-webkit-animation:1.1s both fondo-in ease;
+}
+@keyframes fondo-in {
+	 0% {opacity:0; transform:scale(3,3);}
+	 100% {opacity:1; transform:scale(1,1);}
+}
+@-webkit-keyframes fondo-in {
+	 0% {opacity:0; transform:scale(3,3);}
+	 100% {opacity:1; transform:scale(1,1);}
+}
+#mainContainer .figu {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	top:28px;
+	left:0px;
+	z-index:2;
+	opacity:0;
+}
+.FiguIn {
+	animation: 1.6s 0.6s both figu-in ease;
+	-webkit-animation: 1.6s 0.6s both figu-in ease;
+}
+@keyframes figu-in {
+	 0% {top:300px; opacity:0;}
+	 60% {top:18px;}
+	 100% {top:28px; opacity:1;}
+}
+@-webkit-keyframes figu-in {
+	 0% {top:300px; opacity:0;}
+	 60% {top:18px;}
+	 100% {top:28px; opacity:1;}
+}
+#mainContainer .copy {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	left:0px;
+	bottom:80px;
+	z-index:8;
+	opacity:0;
+}
+.CopyIn {
+	animation: 1.6s 0.8s both copy-in ease;
+	-webkit-animation: 1.6s 0.8s both copy-in ease;
+}
+@keyframes copy-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+@-webkit-keyframes copy-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+.CopyOut {
+	animation: 0.8s both copy-out ease;
+	-webkit-animation: 0.8s both copy-out ease;
+}
+@keyframes copy-out {
+	 0% {opacity:1;}
+	 100% {opacity:0;}
+}
+@-webkit-keyframes copy-out {
+	 0% {opacity:1;}
+	 100% {opacity:0;}
+}
+#mainContainer .ace {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	left:0px;
+	bottom:30px;
+	z-index:8;
+	opacity:0;
+}
+.AceIn {
+	animation: 1.6s 1.0s both ace-in ease;
+	-webkit-animation: 1.6s 1.0s both ace-in ease;
+}
+@keyframes ace-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+@-webkit-keyframes ace-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+.AceOut {
+	animation: 0.8s both ace-out ease;
+	-webkit-animation: 0.8s both ace-out ease;
+}
+@keyframes ace-out {
+	 0% {opacity:1;}
+	 100% {opacity:0;}
+}
+@-webkit-keyframes ace-out {
+	 0% {opacity:1;}
+	 100% {opacity:0;}
+}
+/* Fin Frame 1 */
+/* Frame 2 */
+#mainContainer .rosa {
+	position:absolute;
+	top:350px;
+	z-index:9;
+}
+.RosaIn {
+	animation: 2.0s both rosa-in ease;
+	-webkit-animation: 2.0s both rosa-in ease;
+}
+@keyframes rosa-in {
+	 0% {top:350px;}
+	 100% {top:-831px;}
+}
+@-webkit-keyframes rosa-in {
+	 0% {top:350px;}
+	 100% {top:-831px;}
+}
+.RosaIn2 {
+	animation: 2.0s both rosa-in2 ease;
+	-webkit-animation: 2.0s both rosa-in2 ease;
+}
+@keyframes rosa-in2 {
+	 0% {top:350px;}
+	 100% {top:-831px;}
+}
+@-webkit-keyframes rosa-in2 {
+	 0% {top:350px;}
+	 100% {top:-831px;}
+}
+#mainContainer .zapa_z {
+	position:absolute;
+	width:50%;
+	text-align:right;
+	left:-5px;
+	bottom:50px;
+	z-index:6;
+	opacity:0;
+}
+.Zapa_zIn {
+	animation:1.2s 0.4s both zapa_z-in ease;
+	-webkit-animation:1.2s 0.4s both zapa_z-in ease;
+}
+@keyframes zapa_z-in {
+	 0% {left:-200px; opacity:0;}
+	 50% {left:5px;}
+	 100% {left:-5px; opacity:1;}
+}
+@-webkit-keyframes zapa_z-in {
+	 0% {left:-200px; opacity:0;}
+	 50% {left:5px;}
+	 100% {left:-5px; opacity:1;}
+}
+#mainContainer .zapa_d {
+	position:absolute;
+	width:50%;
+	text-align:left;
+	right:-5px;
+	bottom:50px;
+	z-index:6;
+	opacity:0;
+}
+.Zapa_dIn {
+	animation:1.2s 0.4s both zapa_d-in ease;
+	-webkit-animation:1.2s 0.4s both zapa_d-in ease;
+}
+@keyframes zapa_d-in {
+	 0% {right:-200px; opacity:0;}
+	 50% {right:5px;}
+	 100% {right:-5px; opacity:1;}
+}
+@-webkit-keyframes zapa_d-in {
+	 0% {right:-200px; opacity:0;}
+	 50% {right:5px;}
+	 100% {right:-5px; opacity:1;}
+}
+/* Fin Frame 2 */

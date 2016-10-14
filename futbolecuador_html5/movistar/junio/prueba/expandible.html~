@@ -1,0 +1,33 @@
+<!-- Còdigo movistar banner expandible-->
+<script type="text/javascript" src="http://www.futbolecuador.com/assets/js/jquery.min.js"></script>
+<div class="peque300250" style="width: 300px; height: 250px">
+   <iframe src="http://www.misiva.com.ec/banners/html5/movistar_elige/colapsado/" width="300" height="250" frameborder="0"></iframe>
+</div>
+<div class="grande300250" style="display: none; width: 980px; height: 250px;position: relative; left: -680px;">
+	<iframe src="http://www.misiva.com.ec/banners/html5/movistar_elige/desplegado/" width="980" height="250" frameborder="0"></iframe>
+</div>
+<div class="js--over-300x250" style="width: 300px; height: 250px; position: absolute; top: 0;  z-index: 10; cursor: pointer;"
+  onclick="window.open('%%CLICK_URL_ESC%%http://www.movistar.com.ec/', '_blank');"></div>
+<div class="js--click-300x250" style="width: 980px; height: 0px; position: absolute; top: 0;  z-index: 10; cursor: pointer; left: -680px;"
+onclick="window.open('%%CLICK_URL_ESC%%http://www.movistar.com.ec/', '_blank');"
+></div>
+
+<img src="https://ad.doubleclick.net/ddm/trackimp/N99002.1139871FUTBOLECUADOR.COM/B9862856.133412127;dc_trk_aid=305992879;dc_trk_cid=71575891;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" 
+border="0" height="1" widht="1" alt="Advertisement" />
+
+<script type="text/javascript">
+   $(document).ready(function () {
+       $(".js--over-300x250").on("mouseenter", function () {
+               $(".peque300250").hide();
+               $(".js--over-300x250").hide();
+               $(".grande300250").css("display", "block");
+               $(".js--click-300x250").css("height", "250px");
+       })
+       $(".js--click-300x250").on("mouseleave", function () {
+               $(".peque300250").show();
+               $(".js--over-300x250").show();
+               $(".grande300250").css("display", "none");
+               $(".js--click-300x250").css("height", "0"); 
+        });
+   });   
+</script>

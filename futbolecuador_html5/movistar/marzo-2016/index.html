@@ -1,0 +1,37 @@
+<script type="text/javascript" src="http://www.futbolecuador.com/assets/js/jquery.min.js"></script>
+<div class="peque" style="width: 980px; height: 50px">
+ <iframe src="http://www.futbolecuador.com/futbolecuador_html5/movistar/marzo-2016/Gol-Movistar/Display/html/980x50/index.html" width="980" height="50" frameborder="0"></iframe>
+</div>
+<div class="grande" style="display: none; width: 980px; height: 200px">
+  <iframe src="http://www.futbolecuador.com/futbolecuador_html5/movistar/marzo-2016/Gol-Movistar/Display/html/980x200/index.html" width="980" height="200"
+            frameborder="0"></iframe>
+</div>
+<div class="js--over-cinta" style="width: 980px; height: 50px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+<div class="js--click-cinta" style="width: 980px; height: 0px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+    var linkCinta  = "%%CLICK_URL_ESC%%https://ad.doubleclick.net/ddm/trackclk/N99002.1139871FUTBOLECUADOR.COM/B9590483.130234918;dc_trk_aid=303097777;dc_trk_cid=69805304;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=";
+        
+        $('.js--click-cinta').click (function (){
+            window.open(linkCinta, '_blank');
+        });
+         $(".js--over-cinta").on("mouseenter", function () {
+            $(".peque").hide();
+            $(".js--over-cinta").hide();
+            $(".grande").css("display", "block");
+             
+            $(".js--click-cinta").css("height", "200px"); ; ;
+            window.parent.see_fold2('on');
+        });
+        $("div.js--click-cinta").on("mouseleave", function () {
+            $(".peque").show();
+            $(".js--over-cinta").show();
+            $(".grande").css("display", "none");
+            
+            $(".js--click-cinta").css("height", "0");
+            window.parent.see_fold2('off');
+        });
+    });
+</script>

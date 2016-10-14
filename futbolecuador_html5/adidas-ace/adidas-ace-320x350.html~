@@ -1,0 +1,12 @@
+<div style="width: 728px; height: 90px;">
+    <iframe src="http://www.futbolecuador.com/futbolecuador_html5/uefa/uefa-728x90" width="728" height="90" frameborder="0"></iframe>
+</div>
+ 
+<div class="js--click" style="width: 728px; height: 90px; position: absolute; top: 0;  z-index: 10; cursor: pointer;"></div>
+
+<script>
+    var link = 'http://www.nissan.com.ec/sp/web/nscuploader/uefa2016/index.html?utm_source=futbol-ecuador&utm_medium=banner-728x90&utm_campaign=uefa-2106';
+    document.getElementById('js--click').onclick=function(){
+        window.open('%%CLICK_URL_ESC%%' + link, '_blank');
+    }
+</script>

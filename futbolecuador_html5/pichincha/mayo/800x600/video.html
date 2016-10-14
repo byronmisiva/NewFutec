@@ -1,0 +1,39 @@
+<div id="boton" style="width: 800px; height: 600px; cursor: pointer; background-image: url(http://www.futbolecuador.com/futbolecuador_html5/pichincha/mayo/bp.jpg);">
+    <div id="content" style="padding-top:0px; height: 600px"></div>
+</div>
+
+<script src="http://www.youtube.com/player_api"></script>
+<script>
+    // create youtube player
+    var player;
+    function playVideo () {
+        player = new YT.Player('player', {
+            height: '600',
+            width: '800',
+            videoId: 'WRQ0mDmHpQY',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    // autoplay video
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+    // when video ends
+    function onPlayerStateChange(event) {
+        if(event.data === 0) {
+            document.getElementById('content').innerHTML = "";
+        }
+    }
+
+setTimeout(function(){ 
+	var div = document.createElement('div');
+        div.id = 'player';
+        document.getElementById('content').appendChild(div);
+        playVideo();
+ }, 2000);
+
+</script>

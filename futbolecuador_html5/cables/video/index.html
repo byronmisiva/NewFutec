@@ -1,0 +1,34 @@
+<!-- Còdigo coke banner expandible-->
+<script type="text/javascript" src="http://www.futbolecuador.com/assets/js/jquery.min.js"></script>
+<div class="grande300250" style="display: none; width: 900px; height: 250px;position: relative; left: -600px;background-image: url(http://futbolecuador.com/futbolecuador_html5/martir/images/deplegado.jpg);">
+   <video id="video300250" width ="660" height="370" style="margin:0 auto;" 
+   		  src="http://www.futbolecuador.com/futbolecuador_html5/martir/media/Trailer-Oficial.mp4"></video>
+</div>
+<div class="js--over-300x250" style="width: 300px; height: 250px; position: absolute; top: 0;  z-index: 10; cursor: pointer;"></div>
+<div class="js--click-300x250" style="width: 900px; height: 0px; position: absolute; top: 0;  z-index: 10; cursor: pointer; left: -600px;"></div>
+
+<script type="text/javascript">
+   var link = 'https://www.youtube.com/watch?v=pSaLCQ7DqEk';
+   var vidCoke300x250 = document.getElementById("video300250");
+   $(document).ready(function () {
+       $('.js--click-300x250').click (function (){
+           window.open('%%CLICK_URL_ESC%%' + link, '_blank');
+       })
+       $(".js--over-300x250").on("mouseenter", function () {
+           $(".peque300250").hide();
+           $(".js--over-300x250").hide();
+           $(".grande300250").css("display", "block");
+           $(".js--click-300x250").css("height", "250px");
+      vidCoke300x250.play();           
+         
+       })
+       $(".js--click-300x250").on("mouseleave", function () {
+               $(".peque300250").show();
+               $(".js--over-300x250").show();
+               $(".grande300250").css("display", "none");
+               $(".js--click-300x250").css("height", "0");
+        vidCoke300x250.pause();
+         
+           });
+   });
+</script>

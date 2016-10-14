@@ -1,0 +1,38 @@
+<script type="text/javascript" src="http://www.futbolecuador.com/assets/js/jquery.min.js"></script>
+<div class="peque" style="width: 980px; height: 50px">
+	<iframe src="http://www.misiva.com.ec/banners/cocacola/carma_futbol/cintillo_collapse/" width="980" height="50" frameborder="0"></iframe>
+</div>
+<div class="grande" style="display: none; width: 980px; height: 200px;background-image: url(http://futbolecuador.com/futbolecuador_html5/cocacola/images/980x200.jpg);">
+<video id="videoCinta" width ="320" style="margin-top: 10px;margin-left:250px;" loop="loop" src="http://www.futbolecuador.com/futbolecuador_html5/cocacola/media/video.mp4"></video>
+</div>
+<div class="js--over-cinta" style="width: 980px; height: 50px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+<div class="js--click-cinta" style="width: 980px; height: 0px; position: absolute; top: 0;  z-index: 10; cursor: pointer"></div>
+
+<script type="text/javascript">
+
+   $(document).ready(function () {
+   var linkCinta  = "%%CLICK_URL_ESC%%http://www.coca-cola.com.ec/es/home/";
+   var vCintaCoke = document.getElementById("videoCinta");   
+       $('.js--click-cinta').click (function (){
+           window.open(linkCinta, '_blank');
+       });
+        $(".js--over-cinta").on("mouseenter", function () {
+           $(".peque").hide();
+           $(".js--over-cinta").hide();
+           $(".grande").css("display", "block");
+          
+           $(".js--click-cinta").css("height", "200px"); ; ;
+	   vCintaCoke.play();
+           window.parent.see_fold2('on');
+       });
+       $("div.js--click-cinta").on("mouseleave", function () {
+           $(".peque").show();
+           $(".js--over-cinta").show();
+           $(".grande").css("display", "none");
+          
+           $(".js--click-cinta").css("height", "0");
+           vCintaCoke.pause();
+           window.parent.see_fold2('off');
+       });
+   });
+</script>

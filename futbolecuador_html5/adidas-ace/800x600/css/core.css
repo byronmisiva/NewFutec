@@ -1,0 +1,111 @@
+body, * {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+#mainContainer {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	overflow: hidden;
+	font-size: 12px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #CCC;
+	color: #fff;
+	font-family:'News Cycle', sans-serif;
+}
+#mainContainer #bg-exit {
+	cursor: pointer;
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index:12;
+}
+/* Frame 1 */
+#mainContainer .logo {
+	position:absolute;
+	top:46px;
+	right:46px;
+	z-index:10;
+}
+.LogoIn {
+	animation: 1.6s 0.4s both logo-in ease;
+	-webkit-animation: 1.6s 0.4s both logo-in ease;
+}
+@keyframes logo-in {
+	 0% {top:-200px;}
+	 60% {top:56px;}
+	 100% {top:46px;}
+}
+@-webkit-keyframes logo-in {
+	 0% {top:-200px;}
+	 60% {top:56px;}
+	 100% {top:46px;}
+}
+#mainContainer .fondo {
+	position:absolute;
+	top: 0px;
+	left:0px;
+	z-index:1;
+	opacity:0;
+	transform:scale(1,1);
+}
+.FondoIn {
+	animation:1.2s both fondo-in ease;
+	-webkit-animation:1.2s both fondo-in ease;
+}
+@keyframes fondo-in {
+	 0% {opacity:0; transform:scale(3,3);}
+	 100% {opacity:1; transform:scale(1,1);}
+}
+@-webkit-keyframes fondo-in {
+	 0% {opacity:0; transform:scale(3,3);}
+	 100% {opacity:1; transform:scale(1,1);}
+}
+#mainContainer .copy {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	left:0px;
+	bottom:140px;
+	z-index:8;
+	opacity:0;
+}
+.CopyIn {
+	animation: 1.6s 0.8s both copy-in ease;
+	-webkit-animation: 1.6s 0.8s both copy-in ease;
+}
+@keyframes copy-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+@-webkit-keyframes copy-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+#mainContainer .ace {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	left:0px;
+	bottom:55px;
+	z-index:8;
+	opacity:0;
+}
+.AceIn {
+	animation: 1.6s 1.0s both ace-in ease;
+	-webkit-animation: 1.6s 1.0s both ace-in ease;
+}
+@keyframes ace-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+@-webkit-keyframes ace-in {
+	 0% {opacity:0;}
+	 100% {opacity:1;}
+}
+/* Fin Frame 1 */
