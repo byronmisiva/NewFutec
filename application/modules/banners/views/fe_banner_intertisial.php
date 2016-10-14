@@ -29,16 +29,15 @@
 
 </style>
 <div class="banner_interstisial"  >
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-lg-12">
 			<div onclick="$('.banner_interstisial').hide()" class="cerrar-btn-interstisial">Cerrar [x]</div>
 		</div>
-	</div>
+	</div>-->
 	<div class="row">
 		<div class="col-lg-12">
 			<div style="display:none !important;"
 id="flite-click-macro-c3fbb26d-91e5-4e54-b64c-0d3eea13aa31">%%CLICK_URL_UNESC%%</div>
-
 			<script>
 			    (function() {
 			        var guid = "c3fbb26d-91e5-4e54-b64c-0d3eea13aa31", o = window, r = "", m, s = "http:", e = encodeURIComponent, x = 0, f = document.createElement("script");
@@ -62,7 +61,5 @@ id="flite-click-macro-c3fbb26d-91e5-4e54-b64c-0d3eea13aa31">%%CLICK_URL_UNESC%%<
 			</noscript>
 		</div>
 	</div>	
-	
-
 </div>
 
