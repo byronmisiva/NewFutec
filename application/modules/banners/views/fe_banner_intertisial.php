@@ -6,7 +6,8 @@
 <!-- Placement ID: c3fbb26d-91e5-4e54-b64c-0d3eea13aa31 -->
 <!-- Placement Size: 375x667 -->
 <!-- Ad Server: DFP -->
-<div style="display:none !important;" id="flite-click-macro-c3fbb26d-91e5-4e54-b64c-0d3eea13aa31">%%CLICK_URL_UNESC%%</div>
+<div style="display:none !important;position: fixed;z-index: 10000000;top: 0;left: 0;"
+id="flite-click-macro-c3fbb26d-91e5-4e54-b64c-0d3eea13aa31">%%CLICK_URL_UNESC%%</div>
 
 <script>
     (function() {
