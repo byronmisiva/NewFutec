@@ -144,11 +144,9 @@ ORDER BY s.created DESC ');
 				s.votes,
 				s.openseccion,
 				i.name,
-				i.thumbh50,
-				i.thumbh120,
 				i.thumbh80,
 				i.thumb300,
-				i.thumb500", FALSE);
+				", FALSE);
     	$this->db->from('stories  s', FALSE);
     	$this->db->join('images i', 's.image_id = i.id', FALSE);
     	$this->db->where('s.invisible', 0, FALSE);
@@ -172,11 +170,7 @@ ORDER BY s.created DESC ');
     	
     		}
     	}
-    	
     	return $aux;
-    	
-    	
-    	
     }
 
     function get_banner($max = 5, $exclude = '')
