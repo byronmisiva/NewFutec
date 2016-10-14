@@ -34,7 +34,7 @@
 </div>
 
 
-<div class="bannerMayor" onclick="$('.bannerMayor').hide();">
+<div class="bannerMayor" onclick="$('.bannerMayor').hide(); window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;">
 	<div class="bannerNoticiaGrande"></div>
 </div>
 
