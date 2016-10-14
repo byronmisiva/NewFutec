@@ -13,11 +13,24 @@
     height: 100%;
 }
 
+.cerrar-btn-interstisial{
+    width: 95%;
+    height: 55px;
+    z-index: 100000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 6%;
+}
+
 </style>
 <div class="banner_interstisial"  >
 	<div class="row">
 		<div class="col-lg-12">
-			<div onclick="$('.banner_interstisial').hide()" style=" width: 100px;height:55px;">Cerrar</div>
+			<div onclick="$('.banner_interstisial').hide()" class="cerrar-btn-interstisial">Cerrar [x]</div>
 		</div>
 	</div>
 	<div class="row">
