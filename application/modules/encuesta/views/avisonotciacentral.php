@@ -24,7 +24,7 @@ $link = base_url().'site/noticia/'.$this->contenido->_urlFriendly ($principal[0]
 			</div>
 		</div>	
 		<div class="row">
-			<div class="col-lg-12" style="background-color:#fff; ">
+			<div class="col-lg-12" >
 				<?php echo $loMasLeido;?>
 			</div>
 		</div>
