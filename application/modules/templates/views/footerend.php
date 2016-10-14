@@ -1,10 +1,12 @@
 <style>
 .bannerNoticiaGrande{
-	position: relative;
-    width: 600px;
+	    position: relative;
+    width: 700px;
     height: 500px;
     margin: 8% auto;
-    background-color: #fff;
+    background-color: transparent;
+    color: #fff !important;
+    padding: 10px;
 }
 
 .bannerMini{
