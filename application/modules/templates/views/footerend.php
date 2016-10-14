@@ -19,7 +19,7 @@
 }
 
 .bannerMayor{
-	position:absolute;top: 0;
+	position:fixed;top: 0;
 	left:0;width: 100%;height:100%;
 	display:none;
 	background-color: rgba(0,0,0,0.8);
@@ -33,7 +33,7 @@
 </div>
 
 
-<div class="bannerMayor" >
+<div class="bannerMayor" onclick="$(.bannerMayor).hide();">
 	<div class="bannerNoticiaGrande"></div>
 </div>
 
