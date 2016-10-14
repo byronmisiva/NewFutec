@@ -4,9 +4,10 @@
     width: 700px;
     height: 500px;
     margin: 8% auto;
-    background-color: transparent;
+    background-color: transparent !important;
     color: #fff !important;
     padding: 10px;
+    
 }
 
 .bannerMini{
