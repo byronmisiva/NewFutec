@@ -2,7 +2,7 @@
 $link = base_url().'site/noticia/'.$this->contenido->_urlFriendly ($principal[0]->title).'/'.$principal[0]->id;
 ?>
 <div class="row">
-	<div class="col-lg-6" style="background-color:#fff;height: 350px;">
+	<div class="col-lg-6" style="background-color:#fff;height: 340px;">
 		<div class="row">
 		<a href="<?php echo $link?>">
 			<div class="col-lg-12 text-center" style="padding-top: 10px">
@@ -19,8 +19,8 @@ $link = base_url().'site/noticia/'.$this->contenido->_urlFriendly ($principal[0]
 	</div>
 	<div class="col-lg-6">
 		<div class="row">
-			<div class="col-lg-12 text-center">
-				<img src="<?php echo base_url()?>imagenes/cronometro/cronometro_grande.png" />
+			<div class="col-lg-12 text-center" style="padding: 10px;">
+				<img src="<?php echo base_url()?>imagenes/cronometro/cronometro_grande.png" width="100%"/>
 			</div>
 		</div>	
 		<div class="row">
