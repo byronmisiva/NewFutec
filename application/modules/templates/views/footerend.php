@@ -72,36 +72,13 @@ function activarPbl(){
 <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
 	$(".body-principal").attr('onMouseMove','verificarLocalStorage()');
 	var anchoTotal = screen.width;
-	function verificarLocalStorage(){
-		 var x=event.clientX;
-		 var y=event.clientY;
-			console.log("X"+x+" Y:"+y);
-		 
-		 if (y <= 10){
-			 desplegarSolicitud();
-		 }else if (x <= 0){
-			desplegarSolicitud();
-		}else if (x >= anchoTotal){
-			desplegarSolicitud();
-		}
-	}	 
-
-	function desplegarSolicitud(){
-		if( parseInt(window.localStorage['estadoVisita']) == 0 ){	
-			$(".bannerMini").show();
-		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
-			$(".bannerMayor").show();
-			$(".bannerNoticiaGrande").load("<?php echo base_url().'encuesta/getNoticiamayor/'.$this->uri->segment(4)?>");
-		}
-	}
-		 
 <?php }?>
 
-	if( window.localStorage['estadoVisita'] != null) {	
-	    window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;
-	}else{
-		window.localStorage['estadoVisita'] = 0;
-	}
+if( window.localStorage['estadoVisita'] != null) {	
+    window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;
+}else{
+	window.localStorage['estadoVisita'] = 0;
+}
 	    
 </script>
 <!-- Bootstrap core JavaScript-->
