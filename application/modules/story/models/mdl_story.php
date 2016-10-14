@@ -132,7 +132,7 @@ ORDER BY s.created DESC ');
     }
     
     
-    function getultimaNoticia($max, $exclude = ''){
+    function getultimaNoticia($max, $exclude = '' , $actual){
     	//$this->db->where('s.sponsored', 0, FALSE);
     	$this->db->select("s.id as sid,
 				s.id, s.title, s.lead, s.subtitle,
@@ -156,8 +156,10 @@ ORDER BY s.created DESC ');
     	$this->db->order_by('s.created', 'desc', FALSE);
     	$this->db->limit($max);
     	//para el caso de que se tenga la noticia 6 y que esta no se muestre
-    	if ($exclude != "")
+    	if ($exclude != ""){
     		$this->db->where('s.category_id !=', $exclude);
+    		$this->db->where('s.id !=', $actual);
+    	}
     	$aux = $this->db->get()->result();
     	
     	foreach ($aux as $key => $row) {
