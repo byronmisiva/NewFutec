@@ -18,6 +18,13 @@ class Encuesta extends MY_Controller
     	//return $this->load->view("index",$data, TRUE);
     	return $this->load->view("resultado",$data, TRUE);
     }
+    
+    public function getNoticiamayor(){    	
+    	$this->load->module('story');    	
+    	$data['principal'] = $this->mdl_story->getultimaNoticia(1, 44);
+        $data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
+    	return $this->load->view("avisonotciacentral",$data, TRUE);
+    }
 
     
     public function listaNoticia($mes,$year)
