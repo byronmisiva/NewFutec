@@ -1,4 +1,5 @@
 <div class="row">
+
     <?php foreach ($noticias as $noticia) {
         $linkShort = base_url() . 'site/'.$nameSectionUrl;
         $link = $linkShort .'/' . $this->contenido->_urlFriendly ($noticia->title) . '/' . $noticia->id;
