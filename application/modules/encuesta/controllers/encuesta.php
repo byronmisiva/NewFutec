@@ -26,7 +26,7 @@ class Encuesta extends MY_Controller
     	$data['loMasLeido'] ="";
     	
         //$data['loMasLeido'] = $this->story->viewget_plus("Lo más Leído", LOMASLEIDO, "masleido");
-    	$this->load->view("avisonotciacentral",$data, TRUE);
+    	$this->load->view("avisonotciacentral",$data);
     }
 
     
