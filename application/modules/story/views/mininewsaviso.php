@@ -25,7 +25,7 @@
                       <a style="color:#000;" href="<?php echo $link ?>" class="sidebarlink"><?php echo $bodyCortado ?>... </a>
                       <?php 
                     } else {?>
-                       <a href="<?php echo $link ?>" class="sidebarlink"><?php echo strip_tags($noticia->subtitle) ?></a>
+                       <a style="color:#000;" href="<?php echo $link ?>" class="sidebarlink"><?php echo strip_tags($noticia->subtitle) ?></a>
                        <?php 
                     }?>
                 </div>
