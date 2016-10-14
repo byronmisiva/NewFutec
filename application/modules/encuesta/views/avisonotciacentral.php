@@ -14,7 +14,16 @@
 		</div>
 	</div>
 	<div class="col-lg-6">
-		<?php echo $loMasLeido;?>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<img src="<?php echo base_url()?>imagenes/cronometro/cronometro_grande.png" />
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-lg-12">
+				<?php echo $loMasLeido;?>
+			</div>
+		</div>
 	</div>
 </div>
 
