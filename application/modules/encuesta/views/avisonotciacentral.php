@@ -1,5 +1,5 @@
 <?php 
-$link = base_url.'site/noticia/'.$this->contenido->_urlFriendly ($principal[0]->title).'/'.$principal[0]->id;
+$link = base_url().'site/noticia/'.$this->contenido->_urlFriendly ($principal[0]->title).'/'.$principal[0]->id;
 ?>
 <div class="row">
 	<div class="col-lg-6">
