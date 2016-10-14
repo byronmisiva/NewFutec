@@ -31,13 +31,14 @@ class Story extends MY_Controller
         return $this->noticias->load->view('mininewssidebar', $data, TRUE);
     }
     public function viewget_simple($namesection, $idsection, $nameSectionUrl, $data = FALSE){
-    	$this->output->cache(CACHE_DEFAULT);
+    	//$this->output->cache(CACHE_DEFAULT);
     	$this->load->module('noticias');
     	$data['namesection'] = $namesection;
     	$data['nameSectionUrl'] = $nameSectionUrl;
     	$data['idsection'] = $idsection;
     	$data['noticias'] = $this->mdl_story->get_noticia_aviso();
     	return $this->noticias->load->view('mininewsaviso', $data, TRUE);
+    	
     }
     
     
