@@ -20,7 +20,8 @@
 .bannerMayor{
 	position:absolute;top: 0;
 	left:0;width: 100%;height:100%;
-	display:none;background-color: #000;
+	display:none;
+	background-color: rgba(0,0,0,0.8);
 	z-index: 10000;
 }
 
@@ -73,8 +74,10 @@ function activarPbl(){
 	function verificarLocalStorage(){
 		if ( parseInt( window.localStorage['estadoVisita'] ) == 0){	
 			$(".bannerMini").show();
+			//$(".contenedorNoticiapeque").load("<?php echo bar_url()?>encuesta/getNoticiamayor"); 
 		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
 			$(".bannerMayor").show();
+			$(".bannerNoticiaGrande").load("<?php echo bar_url()?>encuesta/getNoticiamayor");
 			}
 		console.debug("Vistia: " + window.localStorage['estadoVisita']);
 		//cargarNoticia("<?php echo $this->uri->segment(4)?>");
