@@ -484,7 +484,7 @@ ORDER BY s.created DESC ');
         return $data;
     }
     
-    function get_NoticiaAviso($num = 1, $offset = 0)
+    function get_NoticiaAviso($num = 2, $offset = 0)
     {       
          $past_days = 7;
         $last_month = date('Y-m-d', mktime(0, 0, 0, date("m"), date("d") - $past_days, date("Y")));
