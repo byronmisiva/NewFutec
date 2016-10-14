@@ -21,11 +21,12 @@
                         $str = strip_tags($noticia->body);
                         $str = substr($str, 0, $num);
                         $bodyCortado = substr($str, 0, -(strlen($str) - strrpos($str, ' ')));
-
-                        echo  '<a href="' . $link . '" class="sidebarlink">' .$bodyCortado . "..." . '</a>';
-                    } else {
-                        ?>
-                        <?php echo '<a href="' . $link .  '" class="sidebarlink">' .strip_tags($noticia->subtitle) . "</a>";
+					?>
+                      <a style="color:#000;" href="<?php echo $link ?>" class="sidebarlink"><?php echo $bodyCortado ?>... </a>
+                      <?php 
+                    } else {?>
+                       <a href="<?php echo $link ?>" class="sidebarlink"><?php echo strip_tags($noticia->subtitle) ?></a>
+                       <?php 
                     }?>
                 </div>
             </div>
