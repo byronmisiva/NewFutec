@@ -1,102 +1,45 @@
-<style>
-.bannerNoticiaGrande{
-	position: relative;
-    width: 700px;
-    height: 500px;
-    margin: 8% auto;
-    background-color: transparent !important;
-    padding: 10px;
-}
-
-.bannerMini{
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: none;
-    z-index: 10000;
-    height: 90px;
-    background-color: #11314b;
-}
-
-.bannerMayor{
-	position:fixed;top: 0;
-	left:0;width: 100%;height:100%;
-	display:none;
-	background-color: rgba(0,0,0,0.8);
-	z-index: 10000;
-	ccursor:pointer;
-}
-
-</style>
-
-<div class="bannerMini" >
-	<div class="contenedorNoticiapeque"></div>
-</div>
-
-
-<div class="bannerMayor" onclick="$('.bannerMayor').hide(); window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;">
-	<div class="bannerNoticiaGrande"></div>
-</div>
-
-<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/pichincha/edge_includes/edge.6.0.0.min.js"></script>
-    <style>
-        .edgeLoad-EDGE-28231535 { visibility:hidden; }        
-        #pbl-coke{        margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-        .pbl-union{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
-    </style>
-    <script>
-    AdobeEdge.loadComposition(baseUrl+'unionlayer/pichincha/union_layer', 'EDGE-28231535', {
-	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
-    </script>
-<div class="pbl-union" >
+<link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
+<link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
+  <style>
+    .edgeLoad-EDGE-11811655 { visibility:hidden; }                
+    #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
+    .pbl-union{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
+  </style>
+   <script>
+    AdobeEdge.loadComposition(baseUrl+'unionlayer/panini/600x600', 'EDGE-11811655', {
+	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+   </script>
+  <div class="pbl-union" >
     <div id="pbl-coke">
-    	<div id="Stage" class="EDGE-28231535"></div>
-    	<!-- /1022247/FE_NEW_UNIONLAYER -->
-		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+    	<div id="Stage" class="EDGE-28231535"></div>    	
+		  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
 			<script type='text/javascript'>
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
 			</script>
 		</div>
     </div>
 </div>
-<script type="text/javascript"> 
-function activarPbl(){
-	$("#div-gpt-ad-1450734059657-0").hide();
-	$("#div-gpt-ad-1450734059657-1").hide();
-	$(".pbl-union").fadeIn();
-	$(".Stage_boton_abre_id").click();	
-    setTimeout(function(){    	
-        document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
-    }, 1500);
-}	
-
-<?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
-	$(".body-principal").attr('onMouseMove','verificarLocalStorage()');
-	var anchoTotal = screen.width;
-<?php }?>
-
-if( window.localStorage['estadoVisita'] != null) {	
-    window.localStorage['estadoVisita'] =  parseInt( window.localStorage['estadoVisita']) + 1 ;
-}else{
-	window.localStorage['estadoVisita'] = 0;
-}
-	    
+<script type="text/javascript">
+	function activarPbl(){
+		$("#div-gpt-ad-1450734059657-0").hide();
+		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".pbl-union").fadeIn();
+		$(".stage_9_start_id").click();
+	    setTimeout(function(){    	
+	        document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
+	    }, 1500);
+	}	
 </script>
-<!-- Bootstrap core JavaScript-->
-
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
-<!-- FlexSlider -->
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-
 <script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=13') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/notificacion.js') ?>"></script>
-
-	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
-
-	<!-- Optional FlexSlider Additions -->
+<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
+	
 	<script src="<?php echo base_url('assets/js/jquery.easing.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/jquery.mousewheel.js') ?>"></script>
 
@@ -109,12 +52,10 @@ if( window.localStorage['estadoVisita'] != null) {
 	<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>	
 
 	<?php 
-		if($verMobile == "1"){ ?>
-			<!-- <script src="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.js') ?>"></script>-->
-			<script src="<?php echo base_url('assets/js/jquery.smartbanner.js') ?>"></script>
+	if($verMobile == "1"){ ?>
+		<!-- <script src="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.js') ?>"></script>-->
+		<script src="<?php echo base_url('assets/js/jquery.smartbanner.js') ?>"></script>
 	<?php }?>
-
-
 <script type="text/javascript">
     $(document).ready(function () {
         $('.hidden-menu').css('display', 'none');
@@ -130,37 +71,28 @@ if( window.localStorage['estadoVisita'] != null) {
         $('.image-item > a').lightbox();
     });
 </script>
-
 <?php
 if (isset($fe_splash))
     echo $fe_splash;
-?>
 
-<?php
 if (isset($fe_scritp_footer)){
-echo "<!-- <div>Hola Jairo </div>-->";
     echo $fe_scritp_footer;
 }?>
-
 <!-- Taboola  tracking add 20151023-->
 <script type="text/javascript">
     window._taboola = window._taboola || [];
     _taboola.push({flush: true});
 </script>
-<!-- End Taboola  tracking add 20151023-->
-
-
 <!-- Start Alexa Certify Javascript -->
 <script type="text/javascript" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script>
 <script type="text/javascript">_atrk_opts = {atrk_acct: "A9Dnf1aUOO00Gi", domain: "futbolecuador.com"};
-    atrk();</script>
+    atrk();
+</script>
 <noscript>
     <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=A9Dnf1aUOO00Gi" style="display: none" height="1"
          width="1" alt=""/>
 </noscript>
 <!-- End Alexa Certify Javascript -->
-
-
 <!-- Alexa.com -->
 <div style='display: none;'>
     <a href="http://www.alexa.com/siteinfo/www.futbolecuador.com">
@@ -206,11 +138,7 @@ echo "<!-- <div>Hola Jairo </div>-->";
 			  $("#smartbanner").hide();
 		  }
 		});
-
-
 	</script>
-
 <?php }?>
-
 </body>
 </html>
