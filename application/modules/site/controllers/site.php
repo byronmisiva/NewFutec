@@ -80,7 +80,6 @@ class Site extends MY_Controller
 
     public function index()
     {
-
         if ($this->campeonatoCopa() == true) {
             if ($this->verificarDispositivo() == "1")
                 redirect('site/movil/');
@@ -154,22 +153,17 @@ class Site extends MY_Controller
             $query = $query->result();
             $dpasportslive = $query[0]->valor;
             if ($dpasportslive == 1)
-                $marcadorenvivo = $this->banners->dpasportslivemovil();
+                $marcadorenvivo = $this->banners->dpasportslivemovil();            
             else
                 $marcadorenvivo = $this->contenido->marcadorVivo();
         } else {
             $marcadorenvivo = $this->contenido->marcadorVivo();
         }
-
-
         $data['top2'] = "";
-
         //Resultados tabla de posiciones
         $this->load->module('scoreboards');
         $tablaposiciones = $this->scoreboards->tablaposiciones(CHAMP_DEFAULT, CHAMP_DEFAULT_TIPOTABLA);
-
         //$fe_loading_movil = $this->banners->fe_loading_movil();
-
         $outbrain = '<script type="text/javascript" src="https://www.imusicaradios.com.br/go_ccfm/ccfm_embed.js"
 onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
@@ -982,13 +976,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function tabladeposiciones($serie = CHAMP_DEFAULT)
     {
-	if ($serie == "63")
+		if ($serie == "63")
     		$serie = "59";
 
         if ($this->uri->segment(2) == 'tabladeposiciones') {
             $id = $this->uri->segment(3);
             $tipotabla = $this->uri->segment(4);
         }
+        
         if ($this->uri->segment(1) == 'tabla-de-posiciones') {
             $id = $this->uri->segment(2);
             $tipotabla = $this->uri->segment(3);
@@ -997,6 +992,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if ($id) {
             $serie = $id;
         }
+        
+        
         if (!$tipotabla) {
             $tipotabla = "acumulada";
         }
@@ -1004,7 +1001,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         if (($tipotabla != 'simple') and ($tipotabla != 'acumulada')) {
             $tipotabla = "acumulada";
         }
-
+        
+        if ($serie == "58")
+        	$tipotabla = "simple";
         //para el caso eliminatorias
         if ($id == ELIMINATORIAS) $tipotabla = ELIMINATORIAS_TIPOTABLA;
 
