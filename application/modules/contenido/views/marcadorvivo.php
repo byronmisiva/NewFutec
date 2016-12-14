@@ -1,4 +1,4 @@
-<div id="carousel-marcadorenvivo" class="carousel slide marcadorenvivofondo" data-ride="carousel">
+<div id="carousel-marcadorenvivo" class="carousel slide marcadorenvivofondo" data-ride="carousel" style="display: none;">
     <div class="carousel-inner">
         <?php
         $active = " active";
