@@ -25,9 +25,9 @@
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
 		$(".pbl-union").fadeIn();
-		$(".stage_9_start_id").click();
+		$(".Stage_start_id").click();
 	    setTimeout(function(){    	
-	        document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
+	        //document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
 	    }, 1500);
 	}	
 </script>
