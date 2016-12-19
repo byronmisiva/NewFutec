@@ -1,13 +1,11 @@
 <link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
 <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
 <?php if($verMobile == "0"){?>
-<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/samsung/edge_includes/edge.6.0.0.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
   <style>
    .edgeLoad-EDGE-11811655,.edgeLoad-EDGE-11811650  { visibility:hidden; }                
     #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-   .pbl-union{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
-   .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
+   .pbl-union, .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
   <!-- declaracion del script de carga para la animacion edge -->
   <script>
@@ -26,7 +24,7 @@
 	</div>
 	<!-- declaracion del script de carga para la animacion edge -->
 	<script>
-    AdobeEdge.loadComposition(baseUrl+'unionlayer/panini/600x600', 'EDGE-11811650', {
+    AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
 	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
    </script>
 	<div class="pbl-union2" >
@@ -39,6 +37,9 @@
 			</div>
 	    </div>
 	</div>
+	
+	<!-- screspo@yapacorp.com
+	Screspo@yapa.com-->
 <script type="text/javascript">
 	/*function que muestran union layer*/
 	/*primero union layer*/
