@@ -1,74 +1,36 @@
-<?php 
-echo $verMobile;
-die;
-
-
 <link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
 <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
-
-
-<?php 
-echo $verMobile;
-die;
-
-if($verMobile == "0"){?>
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
   <style>
-   .edgeLoad-EDGE-11811655,.edgeLoad-EDGE-11811650  { visibility:hidden; }                
+    .edgeLoad-EDGE-11811655 { visibility:hidden; }                
     #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-   .pbl-union, .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
+    .pbl-union{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
-  <!-- declaracion del script de carga para la animacion edge -->
-  <script>
+   <script>
     AdobeEdge.loadComposition(baseUrl+'unionlayer/panini/600x600', 'EDGE-11811655', {
 	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
    </script>
-   <div class="pbl-union" >
-	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811655"></div>    	
-			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-				</script>
-			</div>
-	    </div>
-	</div>
-	<!-- declaracion del script de carga para la animacion edge -->
-	<script>
-    //AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
-	//scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
-   </script>
-	<!-- <div class="pbl-union2" >
-	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811650"></div>    	
-			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-				</script>
-			</div>
-	    </div>
-	</div>-->
-	<!-- screspo@yapacorp.com
-	Screspo@yapa.com-->
+  <div class="pbl-union" >
+    <div id="pbl-coke">
+    	<div id="Stage" class="EDGE-11811655"></div>    	
+		  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+			<script type='text/javascript'>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+			</script>
+		</div>
+    </div>
+</div>
 <script type="text/javascript">
-	/*function que muestran union layer*/
-	/*primero union layer*/
 	function activarPbl(){
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
 		$(".pbl-union").fadeIn();
 		$(".Stage_start_id").click();
-	}
-	/*segundo union layer*/
-	/*function activarPbl2(){
-		$("#div-gpt-ad-1450734059657-0").hide();
-		$("#div-gpt-ad-1450734059657-1").hide();
-		$(".pbl-union2").fadeIn();
-		$(".Stage_start_id").click();
-	}	*/
+	    setTimeout(function(){    	
+	        //document.getElementById('Stage_contenedor_Rectangle').appendChild(div);
+	    }, 1500);
+	}	
 </script>
-<?php }?>  
-  
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
