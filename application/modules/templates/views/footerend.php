@@ -1,5 +1,61 @@
 <link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
 <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
+<?php if($verMobile == "0"){ ?>
+	<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
+	<style>
+    .edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650 { visibility:hidden; }                
+     #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
+    .pbl-union, .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
+  </style>
+  <script>
+    AdobeEdge.loadComposition(baseUrl+'unionlayer/panini/600x600', 'EDGE-11811655', {
+	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+  </script>
+  <div class="pbl-union" >
+	    <div id="pbl-coke">
+	    	<div id="Stage" class="EDGE-11811655"></div>    	
+			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+				</script>
+			</div>
+	    </div>
+	</div>
+	
+	<script>
+    AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
+	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+  </script>
+  <div class="pbl-union" >
+	    <div id="pbl-coke">
+	    	<div id="Stage" class="EDGE-11811650"></div>    	
+			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+				</script>
+			</div>
+	    </div>
+	</div>
+	<script type="text/javascript">
+	function activarPbl(){
+		$("#div-gpt-ad-1450734059657-0").hide();
+		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".pbl-union").fadeIn();
+		$(".Stage_start_id").click();
+	}
+	function activarPbl2(){
+		$("#div-gpt-ad-1450734059657-0").hide();
+		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".pbl-union").fadeIn();
+		$(".Stage_start_id").click();
+	}	
+</script>	
+<?php }?>
+
+
+  
+   
+  
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
@@ -13,13 +69,13 @@
 	<script src="<?php echo base_url('assets/js/jquery.easing.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/jquery.mousewheel.js') ?>"></script>
 
-	<script src="<?php echo base_url() ?>assets/js/jquery.easing.js"></script>
-	<script src="<?php echo base_url() ?>assets/js/jquery.liquid-slider.min.js"></script>
-	<script src="<?php echo base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/jquery.easing.js"></script>
+	<script src="<?= base_url() ?>assets/js/jquery.liquid-slider.min.js"></script>
+	<script src="<?= base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
 	<!-- Third, add the GalleryView Javascript and CSS files -->
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.lazyload.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-scrollto.js"></script>	
+	<script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.lazyload.min.js"></script>
+	<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>	
 
 	<?php 
 	if($verMobile == "1"){ ?>
@@ -29,12 +85,14 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.hidden-menu').css('display', 'none');
+        // inicializa menu
         $(document).on('click', '.fhmm .dropdown-menu', function (e) {
             e.stopPropagation()
         })
         // Menu drop down effect
         $('.dropdown-toggle').dropdownHover().dropdown();
         $(".fhmm").fitVids();
+
         // Initiate Lightbox
         $('.image-item > a').lightbox();
     });
@@ -98,9 +156,11 @@ if (isset($fe_scritp_footer)){
 		  iOSUniversalApp: true, // If the iOS App is a universal app for both iPad and iPhone, display Smart Banner to iPad users, too.      
 		  appendToSelector: '.separador10-xs', //Append the banner to a specific selector
 		  onInstall: function() {
+		     //alert('Click install');
 			  $("#smartbanner").hide();
 		  },
 		  onClose: function() {
+		     //alert('Click close');
 			  $("#smartbanner").hide();
 		  }
 		});
