@@ -13,13 +13,13 @@
 	<script src="<?php echo base_url('assets/js/jquery.easing.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/jquery.mousewheel.js') ?>"></script>
 
-	<script src="<?= base_url() ?>assets/js/jquery.easing.js"></script>
-	<script src="<?= base_url() ?>assets/js/jquery.liquid-slider.min.js"></script>
-	<script src="<?= base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.easing.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.liquid-slider.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.touchSwipe.min.js"></script>
 	<!-- Third, add the GalleryView Javascript and CSS files -->
-	<script type="text/javascript" src="<?= base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
-	<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery.lazyload.min.js"></script>
-	<script type="text/javascript" src="<?= base_url() ?>assets/js/jquery-scrollto.js"></script>	
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jcarousellite_1.0.1.js"></script>
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.lazyload.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-scrollto.js"></script>	
 
 	<?php 
 	if($verMobile == "1"){ ?>
@@ -29,14 +29,12 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.hidden-menu').css('display', 'none');
-        // inicializa menu
         $(document).on('click', '.fhmm .dropdown-menu', function (e) {
             e.stopPropagation()
         })
         // Menu drop down effect
         $('.dropdown-toggle').dropdownHover().dropdown();
         $(".fhmm").fitVids();
-
         // Initiate Lightbox
         $('.image-item > a').lightbox();
     });
@@ -100,11 +98,9 @@ if (isset($fe_scritp_footer)){
 		  iOSUniversalApp: true, // If the iOS App is a universal app for both iPad and iPhone, display Smart Banner to iPad users, too.      
 		  appendToSelector: '.separador10-xs', //Append the banner to a specific selector
 		  onInstall: function() {
-		     //alert('Click install');
 			  $("#smartbanner").hide();
 		  },
 		  onClose: function() {
-		     //alert('Click close');
 			  $("#smartbanner").hide();
 		  }
 		});
