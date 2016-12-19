@@ -1,6 +1,12 @@
 <link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
 <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
-<?php if($verMobile == "0"){?>
+
+
+<?php 
+echo $verMobile;
+die;
+
+if($verMobile == "0"){?>
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
   <style>
    .edgeLoad-EDGE-11811655,.edgeLoad-EDGE-11811650  { visibility:hidden; }                
@@ -24,10 +30,10 @@
 	</div>
 	<!-- declaracion del script de carga para la animacion edge -->
 	<script>
-    AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
-	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+    //AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
+	//scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
    </script>
-	<div class="pbl-union2" >
+	<!-- <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
 			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
@@ -36,8 +42,7 @@
 				</script>
 			</div>
 	    </div>
-	</div>
-	
+	</div>-->
 	<!-- screspo@yapacorp.com
 	Screspo@yapa.com-->
 <script type="text/javascript">
@@ -50,21 +55,14 @@
 		$(".Stage_start_id").click();
 	}
 	/*segundo union layer*/
-	function activarPbl2(){
+	/*function activarPbl2(){
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
 		$(".pbl-union2").fadeIn();
 		$(".Stage_start_id").click();
-	}	
+	}	*/
 </script>
-
-
-
-
-<?php }?>
-
-
-   
+<?php }?>  
   
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
