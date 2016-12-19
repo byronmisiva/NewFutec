@@ -31,16 +31,15 @@
 
     <meta name="twitter:app:id:iphone" content="1008177383">
     <meta name="twitter:app:id:ipad" content="1008177383">
-    <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">    
+    <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
+    
 
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
 
     <meta name="twitter:description" content="<?php echo (isset($description)) ? $description : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>" />
 
-    <!--<meta name="apple-itunes-app" content="app-id=1008177383, app-argument=//www.futbolecuador.com">-->
-    <meta name="apple-itunes-app" content="app-id=1131081518, app-argument=//www.futbolecuador.com">
-    
+	<meta name="apple-itunes-app" content="app-id=1131081518, app-argument=//www.futbolecuador.com">
     <meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
 
     <!--TAGS com.misiva.futbolecuadorpush 1008177383-->
@@ -73,6 +72,7 @@
     <link rel="apple-touch-icon" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
     <link rel="icon" href="<?= base_url('assets/img/favicon.ico') ?>">
     <!--Facebook TAGS-->
+    
     <meta property='og:title' content="<?php echo $pageTitle ?>"/>
     <meta property="og:description"
           content="<?php echo (isset($description)) ? $description . "," . $tags : 'Futbol Ecuador'; ?>"/>
@@ -92,7 +92,7 @@
  
 <meta property="fb:admins" content="100000125463918"/>
 <meta property="fb:admins" content="1394074937285849"/>
-
+<meta property="fb:pages" content="10154913937591728" />
     <!--SEO TAGS-->
     <meta name="keywords"
           content="<?= $tags ?> futbolecuador, www.futbolecuador.com, futbol ecuador, futbol ecuador lo mejor del futbol ecuatoriano, ecuagol, emelec, futbolecuador, futbol, liga de quito,fef,campeonato ecuatoriano de futbol 2014, futbol ecuatoriano,tabla de posiciones, ldu,Barcelona,radio la red,aucas,campeonato ecuatoriano de futbol,deportivo quito,jefferson montero,la red,club deportivo el nacional,deportes ecuador,deportivo cuenca,antonio valencia,ecuador futbol,futbol de ecuador,futbolecuador.com, campeonato ecuatoriano de futbol 2014 serie b,futbol ecuador en vivo,joao rojas,fut,seleccion de ecuador , ecuatorianos en el exterior"/>
@@ -101,7 +101,8 @@
     <title><?php echo $pageTitle ?></title>
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
-    
+    <link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
     <!-- Lightbox stylesheet -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery.lightbox.min.css') ?>"/>
     <!-- Input slider -->
@@ -111,11 +112,13 @@
     <!-- habilitar para desarrollar -->
      <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet">--> 
     <!-- habilitar para produccion--> 
-    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=6" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=7" rel="stylesheet">
     
     <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css"
           media="screen">
+
+
     <link href="<?php echo base_url('assets/css/add2home.css') ?>" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
@@ -135,12 +138,13 @@
 
     <!-- Modernizr -->
     <script src="<?php echo base_url('assets/js/modernizr.js') ?>"></script>
-
+    <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <?php
     if ($verMobile == "1") {
         ?>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=109198533032839133083">
         </script>
@@ -189,6 +193,8 @@
 		text-shadow: none;
 		box-shadow: none;
 		}
+	
+	
     </style>    
     <?php
     } else {
@@ -220,19 +226,19 @@
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "636c7935-082e-4d18-ac85-13cafa7345da", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	<!-- fin share this -->
-	    <?php
-	    
+	    <?php 
+
     //echo $this->uri->segment(1);
-	    
+    
  	//carga de css auspicion
     if ($this->uri->segment(3) == 63){?>
     	<!--<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>-->
     <?php }elseif(($this->uri->segment(1) == "copa-america") || ($this->uri->segment(2) =="partido")){?>
     	<!--<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>-->
     <?php }?>
-	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
+	
 </head>
-<body onload="verificarInstlacion();cargarSplash();" class="body-principal">
+<body onload="verificarInstlacion();cargarSplash();">
 
 
 <script type='text/javascript'>
@@ -368,33 +374,6 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         googletag.enableServices();
     });
     // fin espacios copa america
-    
-    
-    <?php  if(($this->uri->segment(1) == "site") && ($this->uri->segment(2) == "noticia")){ ?>
-	
-	function verificarLocalStorage(){
-		 var x=event.clientX;
-		 var y=event.clientY;
-		 if (y <= 10){
-			 desplegarSolicitud();
-		 }else if (x <= 0){
-			desplegarSolicitud();
-		}else if (x >= anchoTotal){
-			desplegarSolicitud();
-		}
-	}	 
-
-	function desplegarSolicitud(){
-		if( parseInt(window.localStorage['estadoVisita']) == 0 ){	
-			$(".bannerMini").show();
-		}else if ( (parseInt( window.localStorage['estadoVisita'] ) % 2 ) == 1) {
-			$(".bannerMayor").show();
-			$(".bannerNoticiaGrande").load("<?php echo base_url().'encuesta/getNoticiamayor/'.$this->uri->segment(4)?>");
-		}
-	}
-		 
-<?php }?>
-    
 </script>
 
 <!-- Tag Netsonic-->
