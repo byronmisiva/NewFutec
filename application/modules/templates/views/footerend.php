@@ -1,3 +1,8 @@
+<?php 
+echo $verMobile;
+die;
+
+
 <link href="<?php echo base_url('assets/css/fhmm.css') ?>" rel="stylesheet">
 <link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
 
