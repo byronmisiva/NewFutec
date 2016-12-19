@@ -11,9 +11,11 @@
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-3'); });
     </script>
 </div>-->
-
-<!-- FB_ENTRE_NOTICIAS--> 
- <script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<?php
+$idtipo = $this->uri->segment(2);
+$tipo = array("movil");
+if (in_array($idtipo, $tipo)) {?>
+<script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
     <div style="display:none; position: relative;">    
       <iframe style="display:none;"></iframe>    
       <script type="text/javascript">    
@@ -34,3 +36,7 @@
       </script>    
       <script type="text/javascript" src="https://connect.facebook.net/en_US/fbadnw.js" async></script>    
     </div>
+
+<?php }?>
+<!-- FB_ENTRE_NOTICIAS--> 
+ 
