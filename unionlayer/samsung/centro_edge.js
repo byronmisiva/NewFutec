@@ -36,7 +36,7 @@
                             opacity: '0'
                         },
                         {
-                            id: 'start',
+                            id: 'start_samsung',
                             type: 'rect',
                             rect: ['277px', '488px', '88px', '90px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0.00)"],
@@ -45,13 +45,15 @@
                         {
                             id: 'fondo',
                             type: 'image',
-                            rect: ['0', '0', '160px', '600px', 'auto', 'auto'],
+                            rect: ['0px', '0', '160px', '600px', 'auto', 'auto'],
+                            opacity: '1',
                             fill: ["rgba(0,0,0,0)",im+"fondo.jpg",'0px','0px']
                         },
                         {
                             id: 'fondo2',
                             type: 'image',
-                            rect: ['652px', '0', '413px', '600px', 'auto', 'auto'],
+                            rect: ['1170px', '0', '413px', '600px', 'auto', 'auto'],
+                            opacity: '1',
                             fill: ["rgba(0,0,0,0)",im+"fondo.jpg",'0px','0px']
                         },
                         {
@@ -177,12 +179,33 @@
                     }
                 },
                 timeline: {
-                    duration: 1309.7075406095,
+                    duration: 2031,
                     autoPlay: true,
                     labels: {
-                        "inicio": 32
+                        "inicio": 32,
+                        "sale": 1407
                     },
                     data: [
+                        [
+                            "eid158",
+                            "opacity",
+                            2000,
+                            31,
+                            "easeOutQuad",
+                            "${fondo2}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid157",
+                            "opacity",
+                            2000,
+                            31,
+                            "easeOutQuad",
+                            "${fondo}",
+                            '1',
+                            '0'
+                        ],
                         [
                             "eid97",
                             "left",
@@ -194,24 +217,54 @@
                             '265px'
                         ],
                         [
-                            "eid105",
-                            "opacity",
-                            32,
-                            141,
+                            "eid137",
+                            "left",
+                            1750,
+                            250,
                             "easeOutQuad",
-                            "${logoCopy}",
+                            "${fondo}",
+                            '265px',
+                            '0px'
+                        ],
+                        [
+                            "eid134",
+                            "opacity",
+                            942,
+                            256,
+                            "easeOutQuad",
+                            "${cta_desplegado}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid154",
+                            "opacity",
+                            1500,
+                            205,
+                            "easeOutQuad",
+                            "${cta_desplegado}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid102",
+                            "eid120",
                             "opacity",
-                            345,
-                            253,
+                            669,
+                            273,
                             "easeOutQuad",
-                            "${fondo_union}",
+                            "${eq_blanco_desp}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid153",
+                            "opacity",
+                            1474,
+                            205,
+                            "easeOutQuad",
+                            "${eq_blanco_desp}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid118",
@@ -224,12 +277,22 @@
                             '1'
                         ],
                         [
-                            "eid112",
+                            "eid155",
                             "opacity",
-                            173,
+                            1443,
+                            205,
+                            "easeOutQuad",
+                            "${eq_negro_desp}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid106",
+                            "opacity",
+                            32,
                             141,
                             "easeOutQuad",
-                            "${ctaCopy}",
+                            "${logo}",
                             '1',
                             '0'
                         ],
@@ -254,12 +317,22 @@
                             '400px'
                         ],
                         [
-                            "eid103",
+                            "eid138",
+                            "width",
+                            1750,
+                            250,
+                            "easeOutQuad",
+                            "${fondo}",
+                            '400px',
+                            '160px'
+                        ],
+                        [
+                            "eid108",
                             "opacity",
-                            173,
+                            109,
                             141,
                             "easeOutQuad",
-                            "${cta}",
+                            "${ondaCopy}",
                             '1',
                             '0'
                         ],
@@ -274,24 +347,34 @@
                             '1074px'
                         ],
                         [
-                            "eid104",
+                            "eid105",
                             "opacity",
-                            146,
+                            32,
                             141,
                             "easeOutQuad",
-                            "${equipoCopy}",
+                            "${logoCopy}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid120",
+                            "eid102",
                             "opacity",
-                            669,
-                            273,
+                            345,
+                            253,
                             "easeOutQuad",
-                            "${eq_blanco_desp}",
+                            "${fondo_union}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid156",
+                            "opacity",
+                            1648,
+                            155,
+                            "easeOutQuad",
+                            "${fondo_union}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid122",
@@ -304,14 +387,24 @@
                             '1'
                         ],
                         [
-                            "eid109",
+                            "eid151",
                             "opacity",
-                            109,
-                            141,
+                            1407,
+                            205,
                             "easeOutQuad",
-                            "${onda}",
+                            "${texto_desplegado}",
                             '1',
                             '0'
+                        ],
+                        [
+                            "eid114",
+                            "width",
+                            345,
+                            253,
+                            "easeOutQuad",
+                            "${fondo_union}",
+                            '960px',
+                            '800px'
                         ],
                         [
                             "eid99",
@@ -322,6 +415,16 @@
                             "${fondo2}",
                             '1170px',
                             '652px'
+                        ],
+                        [
+                            "eid140",
+                            "left",
+                            1750,
+                            250,
+                            "easeOutQuad",
+                            "${fondo2}",
+                            '652px',
+                            '1170px'
                         ],
                         [
                             "eid136",
@@ -344,14 +447,24 @@
                             '0'
                         ],
                         [
-                            "eid114",
+                            "eid100",
                             "width",
-                            345,
-                            253,
+                            250,
+                            268,
                             "easeOutQuad",
-                            "${fondo_union}",
-                            '960px',
-                            '800px'
+                            "${fondo2}",
+                            '160px',
+                            '413px'
+                        ],
+                        [
+                            "eid139",
+                            "width",
+                            1750,
+                            250,
+                            "easeOutQuad",
+                            "${fondo2}",
+                            '413px',
+                            '160px'
                         ],
                         [
                             "eid111",
@@ -360,6 +473,36 @@
                             141,
                             "easeOutQuad",
                             "${txt}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid110",
+                            "opacity",
+                            146,
+                            141,
+                            "easeOutQuad",
+                            "${equipo}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid116",
+                            "left",
+                            345,
+                            253,
+                            "easeOutQuad",
+                            "${fondo_union}",
+                            '185px',
+                            '265px'
+                        ],
+                        [
+                            "eid109",
+                            "opacity",
+                            109,
+                            141,
+                            "easeOutQuad",
+                            "${onda}",
                             '1',
                             '0'
                         ],
@@ -374,36 +517,6 @@
                             '1'
                         ],
                         [
-                            "eid116",
-                            "left",
-                            345,
-                            253,
-                            "easeOutQuad",
-                            "${fondo_union}",
-                            '185px',
-                            '265px'
-                        ],
-                        [
-                            "eid110",
-                            "opacity",
-                            146,
-                            141,
-                            "easeOutQuad",
-                            "${equipo}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid100",
-                            "width",
-                            250,
-                            268,
-                            "easeOutQuad",
-                            "${fondo2}",
-                            '160px',
-                            '413px'
-                        ],
-                        [
                             "eid132",
                             "opacity",
                             942,
@@ -414,22 +527,32 @@
                             '1'
                         ],
                         [
-                            "eid108",
+                            "eid152",
                             "opacity",
-                            109,
-                            141,
+                            1545,
+                            205,
                             "easeOutQuad",
-                            "${ondaCopy}",
+                            "${abja}",
                             '1',
                             '0'
                         ],
                         [
-                            "eid106",
+                            "eid103",
                             "opacity",
-                            32,
+                            173,
                             141,
                             "easeOutQuad",
-                            "${logo}",
+                            "${cta}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid112",
+                            "opacity",
+                            173,
+                            141,
+                            "easeOutQuad",
+                            "${ctaCopy}",
                             '1',
                             '0'
                         ],
@@ -444,14 +567,14 @@
                             '164px'
                         ],
                         [
-                            "eid134",
+                            "eid104",
                             "opacity",
-                            942,
-                            256,
+                            146,
+                            141,
                             "easeOutQuad",
-                            "${cta_desplegado}",
-                            '0',
-                            '1'
+                            "${equipoCopy}",
+                            '1',
+                            '0'
                         ]
                     ]
                 }
@@ -468,23 +591,23 @@
                         {
                             rect: ['0px', '0px', '32px', '32px', 'auto', 'auto'],
                             borderRadius: ['50%', '50%', '50%', '50%'],
-                            opacity: '1',
-                            id: 'cerrar',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                            id: 'cerrar',
+                            opacity: '1',
                             type: 'ellipse',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
-                            transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                             rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
+                            transform: [[], ['45'], [0, 0, 0], [1, 1, 1]],
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
-                            transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
                             rect: ['15px', '7px', '3px', '18px', 'auto', 'auto'],
+                            transform: [[], ['-45'], [0, 0, 0], [1, 1, 1]],
                             id: 'Rectangle2Copy',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
                             type: 'rect',
