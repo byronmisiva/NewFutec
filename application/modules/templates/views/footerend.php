@@ -26,7 +26,7 @@
     AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
 	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
   </script>
-  <div class="pbl-union" >
+  <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
 			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
