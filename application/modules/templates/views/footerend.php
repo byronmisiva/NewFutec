@@ -5,6 +5,7 @@
 	<style>
     .edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650 { visibility:hidden; }                
      #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
+     .pbl-coke2{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
     .pbl-union, .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
   <script>
@@ -13,12 +14,7 @@
   </script>
   <div class="pbl-union" >
 	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811655"></div>    	
-			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-				</script>
-			</div>
+	    	<div id="Stage" class="EDGE-11811655"></div>
 	    </div>
 	</div>
 	
@@ -30,13 +26,23 @@
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
 	    	<!-- /1022247/FE_NEW_UNIONLAYER-2 -->
-			  <div id='div-gpt-ad-1482271821509-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;' >
+			<!--   <div id='div-gpt-ad-1482271821509-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;' >
 				<script>
 					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1482271821509-0'); });
 				</script>
-			</div>
+			</div> -->
 	    </div>
 	</div>
+	<div class="pbl-coke2">
+		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+			<script type='text/javascript'>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+			</script>
+		</div>
+		<div style="position:absolute;top:0;left:0;width:100px;height:15px;background-color: #000;color:#fff;font-size:12px;"
+		onclick="$('.pbl-union').fadeOut();$('.pbl-union2').fadeOut();"
+		>Cerrar</div>
+	</div>		
 	<script type="text/javascript">
 	function activarPbl(){
 		$("#div-gpt-ad-1450734059657-0").hide();
