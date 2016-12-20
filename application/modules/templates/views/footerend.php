@@ -27,7 +27,7 @@
 	    </div>
 	</div>
 	<div id="pbl-coke" >
-		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;border:1px solid red;'>
 			<script type='text/javascript'>
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
 			</script>
