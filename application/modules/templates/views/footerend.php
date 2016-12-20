@@ -47,7 +47,7 @@
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
 		$(".pbl-union2").fadeIn();
-		$(".Stage_start_samsung").click();
+		$("#Stage_start_samsung").click();
 	}	
 </script>	
 <?php }?>
