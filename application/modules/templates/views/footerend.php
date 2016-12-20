@@ -29,7 +29,7 @@
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
-			  <div id='div-gpt-ad-1482271821509-0' style='height:600px; width:800px;' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+			  <div id='div-gpt-ad-1482271821509-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;' >
 				<script>
 					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1482271821509-0'); });
 				</script>
