@@ -5,14 +5,6 @@
 	<style>
     .edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650 { visibility:hidden; }                
      #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-     .contenedor-unionlayer{
-        margin: 160px auto !important;
-    	position: relative !important;
-    	width: 780px !important;
-        height: 600px !important;
-    	background-color: transparent!important;
-    	border:1px solid red !important;
-     }
     .pbl-union, .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
   <script>
@@ -21,7 +13,12 @@
   </script>
   <div class="pbl-union" >
 	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811655"></div>
+	    	<div id="Stage" class="EDGE-11811655"></div>    	
+			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+				</script>
+			</div>
 	    </div>
 	</div>
 	
@@ -31,17 +28,20 @@
   </script>
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811650"></div>
+	    	<div id="Stage" class="EDGE-11811650"></div>    	
+			  <!-- <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+				 <script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+				</script>
+			</div>-->
+			<div data-glade data-ad-unit-path="/1022247/FE_NEW_UNIONLAYER-2" height="600" width="800" style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'></div>
+			<script async='async' src='https://securepubads.g.doubleclick.net/static/glade.js'></script>
 	    </div>
+	    
+	    
+
+	    
 	</div>
-	<div id="pbl-coke" class="contenedor-unionlayer" >
-		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;border:1px solid red;'>
-			<script type='text/javascript'>
-				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-			</script>
-		</div>
-	 </div>
-	
 	<script type="text/javascript">
 	function activarPbl(){
 		$("#div-gpt-ad-1450734059657-0").hide();
