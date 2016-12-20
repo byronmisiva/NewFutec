@@ -6,12 +6,12 @@
     .edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650 { visibility:hidden; }                
      #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
      .contenedor-unionlayer{
-        margin: 160px auto;
-    	position: relative;
-    	width: 780px;
-        height: 600px;
+        margin: 160px auto !important;
+    	position: relative !important;
+    	width: 780px !important;
+        height: 600px !important;
     	background-color: transparent!important;
-    	border:1px solid red;
+    	border:1px solid red !important;
      }
     .pbl-union, .pbl-union2{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
@@ -34,7 +34,7 @@
 	    	<div id="Stage" class="EDGE-11811650"></div>
 	    </div>
 	</div>
-	<div id="pbl-coke contenedor-unionlayer" class="contenedor-unionlayer" >
+	<div id="pbl-coke" class="contenedor-unionlayer" >
 		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;border:1px solid red;'>
 			<script type='text/javascript'>
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
