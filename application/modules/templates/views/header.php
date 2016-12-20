@@ -286,6 +286,7 @@
         googletag.defineSlot('/1022247/FE_NEW_CINTA_AUSPICIO_COPA_AMERICA', [980, 50], 'div-gpt-ad-1464883876542-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_SQUAREBANNER_AUSPICIO_COPA_AMERICA', [300, 250], 'div-gpt-ad-1464883629839-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NOTICIA_PATROCINADA', [300, 250], 'div-gpt-ad-1465241512633-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_NEW_UNIONLAYER-2', [800, 600], 'div-gpt-ad-1482271821509-0').addService(googletag.pubads());
 googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466776607930-0').addService(googletag.pubads());
         // publicidades en mobil
         googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
