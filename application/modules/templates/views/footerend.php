@@ -29,6 +29,7 @@
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
+	    	<!-- /1022247/FE_NEW_UNIONLAYER-2 -->
 			  <div id='div-gpt-ad-1482271821509-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;' >
 				<script>
 					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1482271821509-0'); });
@@ -49,17 +50,8 @@
 		$(".pbl-union2").fadeIn();
 		$("#Stage_start_samsung").click();
 	}	
-
-	
-
 </script>	
 <?php }?>
-
-
-  
-   
-  
-
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
@@ -171,3 +163,7 @@ if (isset($fe_scritp_footer)){
 <?php }?>
 </body>
 </html>
+
+
+
+
