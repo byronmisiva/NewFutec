@@ -13,12 +13,7 @@
   </script>
   <div class="pbl-union" >
 	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811655"></div>    	
-			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-				</script>
-			</div>
+	    	<div id="Stage" class="EDGE-11811655"></div>
 	    </div>
 	</div>
 	
@@ -28,14 +23,17 @@
   </script>
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811650"></div>    	
-			  <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-				</script>
-			</div>
+	    	<div id="Stage" class="EDGE-11811650"></div>
 	    </div>
 	</div>
+	<div id="pbl-coke" >
+		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+			<script type='text/javascript'>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+			</script>
+		</div>
+	 </div>
+	
 	<script type="text/javascript">
 	function activarPbl(){
 		$("#div-gpt-ad-1450734059657-0").hide();
@@ -49,6 +47,9 @@
 		$(".pbl-union2").fadeIn();
 		$("#Stage_start_samsung").click();
 	}	
+
+	
+
 </script>	
 <?php }?>
 
