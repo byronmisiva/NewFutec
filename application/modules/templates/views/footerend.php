@@ -29,18 +29,12 @@
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
-			  <!-- <div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				 <script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+			  <div id='div-gpt-ad-1482271821509-0' style='height:600px; width:800px;' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+				<script>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1482271821509-0'); });
 				</script>
-			</div>-->
-			<div data-glade data-ad-unit-path="/1022247/FE_NEW_UNIONLAYER-2" height="600" width="800" style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'></div>
-			<script async='async' src='https://securepubads.g.doubleclick.net/static/glade.js'></script>
+			</div>
 	    </div>
-	    
-	    
-
-	    
 	</div>
 	<script type="text/javascript">
 	function activarPbl(){
