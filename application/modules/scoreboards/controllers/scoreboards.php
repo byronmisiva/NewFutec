@@ -70,7 +70,6 @@ class Scoreboards extends MY_Controller
 			
             if ($round != false) {
                 $active_group = current($this->mdl_teams_position->get_by_round($round));
-                var_dump($active_group);
                 $data['teams'] = $this->mdl_teams_position->get_teams($champ);
                 $data['tabla'] = $this->mdl_teams_position->get_table($active_group->id, $round);
                 return $this->load->view($leaderboard, $data, true);
