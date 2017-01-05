@@ -70,9 +70,11 @@ class Scoreboards extends MY_Controller
             $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
                 base_url() . 'imagenes/icons/igual.png',
                 base_url() . 'imagenes/icons/flecha_abajo.png');
-
+			echo "<pre>";
+			var_dump($round);	
             if ($round != false) {
                 $active_group = current($this->mdl_teams_position->get_by_round($round));
+                var_dump($active_group);
                 $data['teams'] = $this->mdl_teams_position->get_teams($champ);
                 $data['tabla'] = $this->mdl_teams_position->get_table($active_group->id, $round);
                 return $this->load->view($leaderboard, $data, true);
@@ -101,7 +103,7 @@ class Scoreboards extends MY_Controller
                 //recuperamos los resultados de cada grupo
                 foreach ($grupoActivo as $grupo) {
                     //$data['tabla'] = array_merge($data['tabla'], $this->mdl_teams_position->get_table($grupo->id));
-                    $data['tabla'] = $this->mdl_teams_position->get_table($grupo->id);
+                    $data['tabla'] = $this->mdl_teams_position->get_table($grupo->id, $round);
 
                     //return $this->load->view($leaderboard, $data, true);
 
