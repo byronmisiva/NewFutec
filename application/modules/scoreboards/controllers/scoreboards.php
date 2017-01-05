@@ -64,6 +64,11 @@ class Scoreboards extends MY_Controller
     public function leaderboard($champ, $leaderboard = 'leaderboard', $tipoCampeonato = 'acumulada')
     {
         $data['tipoCampeonato'] = $tipoCampeonato;
+        echo "<pre>";
+        echo "id campeonato";
+        var_dump($champ);
+        echo "Tipo campeonato";
+        var_dump($tipoCampeonato);
         $round = $this->mdl_teams_position->get_active_round($champ);
 	// $round = 227;
         if ($tipoCampeonato == 'acumulada') {
@@ -71,6 +76,7 @@ class Scoreboards extends MY_Controller
                 base_url() . 'imagenes/icons/igual.png',
                 base_url() . 'imagenes/icons/flecha_abajo.png');
 			echo "<pre>";
+			echo "id ronda";
 			var_dump($round);	
             if ($round != false) {
                 $active_group = current($this->mdl_teams_position->get_by_round($round));
