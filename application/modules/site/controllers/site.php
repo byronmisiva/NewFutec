@@ -31,6 +31,8 @@ class Site extends MY_Controller
         parent::__construct();
         //Futbolecuador
         $consulta = $this->db->query("select id from championships where  active_championship = 1 limit 1")->result();
+		echo "<pre>";
+        var_dump($consulta);
 		
         if (count($consulta) > 0) {
 
@@ -49,7 +51,7 @@ class Site extends MY_Controller
             }
 
         } else {
-            define('CHAMP_DEFAULT', 59);
+            define('CHAMP_DEFAULT', 65);
             define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
         }
     }
