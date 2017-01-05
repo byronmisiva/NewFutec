@@ -324,7 +324,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         echo $this->matches->getMatch($idEquipo, $bannerBottom);
     }
 
-
+    
     public function noticia()
     {
        // para la final se comentan la llamada a las secciones.
