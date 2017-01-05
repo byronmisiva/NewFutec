@@ -33,7 +33,7 @@ class Site extends MY_Controller
         $consulta = $this->db->query("select id from championships where  active_championship = 1 limit 1")->result();
 		echo "<pre>";
         var_dump($consulta);
-		
+		die;
         if (count($consulta) > 0) {
 
             define('CHAMP_DEFAULT', $consulta[0]->id);
