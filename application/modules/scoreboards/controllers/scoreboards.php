@@ -48,10 +48,7 @@ class Scoreboards extends MY_Controller
                                     "mini_shield": "imagenes\/teams\/shield\/Ecuador.png",
                                     "sid": "26"
                                    }';
-
-
             $seleccionNacional = json_decode($seleccionNacional);
-
             array_unshift($datatabla,$seleccionNacional) ;
             return $datatabla;
         } else {
@@ -63,21 +60,14 @@ class Scoreboards extends MY_Controller
 // Tabla de Posiciones
     public function leaderboard($champ, $leaderboard = 'leaderboard', $tipoCampeonato = 'acumulada')
     {
-        $data['tipoCampeonato'] = $tipoCampeonato;
-        echo "<pre>";
-        echo "id campeonato";
-        var_dump($champ);
-        echo "Tipo campeonato";
-        var_dump($tipoCampeonato);
+        $data['tipoCampeonato'] = $tipoCampeonato;        
         $round = $this->mdl_teams_position->get_active_round($champ);
 	// $round = 227;
         if ($tipoCampeonato == 'acumulada') {
             $data['change'] = array(base_url() . 'imagenes/icons/flecha_arriba.png',
                 base_url() . 'imagenes/icons/igual.png',
                 base_url() . 'imagenes/icons/flecha_abajo.png');
-			echo "<pre>";
-			echo "id ronda";
-			var_dump($round);	
+			
             if ($round != false) {
                 $active_group = current($this->mdl_teams_position->get_by_round($round));
                 var_dump($active_group);
@@ -98,10 +88,8 @@ class Scoreboards extends MY_Controller
                  * al momebto de comentar nos devolvera todas las tablas de la competencia. 
                  * **/
             if ($round != false) {
-
                 //todo caso copa america
                 if ($champ == AMERICA) $round = 227;
-
                 $grupoActivo = $this->mdl_teams_position->get_by_round($round);
                 $data['tabla'] = array();
                 $tablas = "";
@@ -110,9 +98,7 @@ class Scoreboards extends MY_Controller
                 foreach ($grupoActivo as $grupo) {
                     //$data['tabla'] = array_merge($data['tabla'], $this->mdl_teams_position->get_table($grupo->id));
                     $data['tabla'] = $this->mdl_teams_position->get_table($grupo->id, $round);
-
                     //return $this->load->view($leaderboard, $data, true);
-
                     $tablas = $tablas . $this->load->view($leaderboard, $data, true);
                 }
                 return $tablas;
@@ -121,28 +107,21 @@ class Scoreboards extends MY_Controller
             }
         }
     }
-
 //Fin Tabla de Posiciones
-
     public
     function matches_today()
     {
-
         $data['title'] = "Partidos de Hoy";
         $data['scores'] = $this->mdl_scoreboards->today_matches();
         if ($data['scores'] == false) {
             $data['scores'] = $this->match_calendary->last_matches();
             $data['title'] = "Ultima Fecha";
         }
-
         $this->load->view('scoreboards/scoreboards_live', $data);
-
     }
-
 
     function list_played_matches()
     {
-
         $champ = $this->uri->segment(3);
         $data['champ'] = $champ;
         $data['partidos'] = $this->match_calendary->matches_last_next(FALSE, FALSE);
