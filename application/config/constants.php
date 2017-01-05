@@ -60,16 +60,18 @@ define('SECTION_AMERICA',71);
 define('SECTION_ELIMINATORIAS',71);
 
 //Campeonatos
-define('SERIE_A',59);
+//define('SERIE_A',59);
+define('SERIE_A',65);
 define('SERIE_A_TIPOTABLA',"acumulada");
 
-define('SERIE_B',61);
+//define('SERIE_B',61);
+define('SERIE_B',66);
 define('SERIE_B_TIPOTABLA',"acumulada");
 
 define('MUNDIAL',43);
 define('MUNDIAL_TIPOTABLA',"simple");
 
-define('LIBERTADORES',62);
+define('LIBERTADORES',67);
 define('LIBERTADORES_TIPOTABLA',"simple");
 
 define('SUDAMERICANA',57);
@@ -78,7 +80,6 @@ define('SUDAMERICANA_TIPOTABLA',"simple");
 define('ELIMINATORIAS',58);
 define('ELIMINATORIAS_TIPOTABLA',"simple");
 
-//todo actualizar copa america
 define('AMERICA',56);
 define('AMERICA_TIPOTABLA',"simple");
 
@@ -117,7 +118,8 @@ define('ZONACOPASUDAMERICANAPOS',null);
 define('ZONAELIMINATORIAS',71);
 define('ZONAELIMINATORIASPOS',null);
 
-define('ZONACOPAAMERICA'   ,76);
+//todo actualizar copa america
+define('ZONACOPAAMERICA'   ,71);
 define('ZONACOPAAMERICAPOS',null);
 
 //todo actualizar seccion futbol internacion
