@@ -3,10 +3,11 @@
 <?php if($verMobile == "0"){ ?>
 	<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
 	<style>
-    .edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650 { visibility:hidden; }                
-     #pbl-coke{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-     .pbl-coke2{margin: 160px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-    .pbl-union, .pbl-union2, .pbl-union3{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
+    .edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650, .edgeLoad-EDGE-11811645 { visibility:hidden; }                
+     #pbl-coke{margin: 25px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
+     .pbl-coke2{position: absolute;top: 0;left: 264px;width: 60px;height: 15px;background-color: #000;color: #fff;font-size: 12px;padding-left: 10px;}
+    .pbl-union, .pbl-union2, .pbl-union3, 
+    .pbl-union4, .pbl-union5{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
   <script>
     AdobeEdge.loadComposition(baseUrl+'unionlayer/panini/600x600', 'EDGE-11811655', {
@@ -25,28 +26,52 @@
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
-	    	<!-- /1022247/FE_NEW_UNIONLAYER-2 -->
-			<!--   <div id='div-gpt-ad-1482271821509-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;' >
-				<script>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1482271821509-0'); });
-				</script>
-			</div> -->
 	    </div>
 	</div>
+	<script>
+	    AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/uno/centro_new', 'EDGE-11811645', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+    </script>
+	  <div class="pbl-union4" >
+	    <div id="pbl-coke">
+	    	<div id="Stage" class="EDGE-11811645"></div>
+	    </div>
+	</div>
+	<script>
+	    AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/promo/centro_new', 'EDGE-11811615', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+    </script>
+	  <div class="pbl-union5" >
+	    <div id="pbl-coke">
+	    	<div id="Stage" class="EDGE-11811615"></div>
+	    </div>
+	</div>
+		
 	<div class="pbl-union3" >
-		<div id="pbl-coke">
-			<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
-				<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
-				</script>
-			</div>
-			<div style="position:absolute;top:0;left:0;width:100px;height:15px;background-color: #000;color:#fff;font-size:12px;"
-			onclick="$('.pbl-union').fadeOut();$('.pbl-union2').fadeOut();$('.pbl-union3').fadeOut();"
-			>Cerrar</div>
+	<div id="pbl-coke">
+		<div id='div-gpt-ad-1464046739579-0' style='height: 600px;width: 800px;position: absolute;top: 0;left: 264px;'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1464046739579-0'); });
+		</script>
 		</div>
+	<div style="position: absolute;	top: 0;	right: 274px;width: 64px;height: 15px;background-color: #000;color: #fff;font-size: 12px;
+		text-align: center;cursor: pointer;" onclick="cerrarPblgeneral()">
+		Cerrar
+	</div>
+	</div>
 	</div>
 			
 	<script type="text/javascript">
+	function cerrarPblgeneral(){
+		$('.pbl-union').fadeOut();
+		$('.pbl-union2').fadeOut();
+		$('.pbl-union3').fadeOut();
+		$('.pbl-union4').fadeOut();
+		$('.pbl-union5').fadeOut();
+		$('#div-gpt-ad-1450734059657-0').show();
+		$('#div-gpt-ad-1450734059657-1').show();
+	}
+	
 	function activarPbl(){
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
@@ -61,13 +86,34 @@
 		$(".pbl-union3").fadeIn();
 		$("#Stage_start_samsung").click();
 	}	
+	/*patioTuerca1*/
+	function activarPbl3(){
+		$("#div-gpt-ad-1450734059657-0").hide();
+		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".pbl-union4").fadeIn();
+		$(".pbl-union3").fadeIn();
+		$("#Stage_start_patiotuercav2").click();
+	}
+
+	/*patioTuerca2*/
+	function activarPbl4(){
+		$("#div-gpt-ad-1450734059657-0").hide();
+		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".pbl-union5").fadeIn();
+		$(".pbl-union3").fadeIn();
+		$("#Stage_start_patiotuercapromo").click();
+	}
 </script>	
-<?php }?>
+	
+<?php 
+	$this->load->module('banners');
+	echo $this->banners->fe_corner_banner();
+}?>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/fitdivs.js') ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=13') ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js?a=17') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/notificacion.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.lightbox.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/slider.min.js') ?>"></script>
@@ -138,7 +184,7 @@ if (isset($fe_scritp_footer)){
 	if($verMobile == "1"){ ?>	
 	<script>
 	$.smartbanner({
-		  title: "Alertas Futbolecuador", // What the title of the app should be in the banner (defaults to <title>)
+		  title: "Futbolecuador.com", // What the title of the app should be in the banner (defaults to <title>)
 		  author: "futbolecuador.com", // What the author of the app should be in the banner (defaults to <meta name="author"> or hostname)
 		  price: 'Gratis', // Price of the app
 		  appStoreLanguage: 'us', // Language code for App Store
@@ -147,7 +193,7 @@ if (isset($fe_scritp_footer)){
 		  inAmazonAppStore: 'In the Amazon Appstore',
 		  inWindowsStore: null, // Text of price for Windows
 		  GooglePlayParams: null, // Aditional parameters for the market
-		  icon: "http://www.futbolecuador.com/imagenes/app/icono.png", // The URL of the icon (defaults to <meta name="apple-touch-icon">)
+		  icon: "http://www.futbolecuador.com/imagenes/app/app-futbolecuador.png", // The URL of the icon (defaults to <meta name="apple-touch-icon">)
 		  iconGloss: null, // Force gloss effect for iOS even for precomposed
 		  url: null, // The URL for the button. Keep null if you want the button to link to the app store.
 		  button: 'Instalar', // Text for the install button
@@ -171,7 +217,16 @@ if (isset($fe_scritp_footer)){
 		  }
 		});
 	</script>
-<?php }?>
+<?php }else{ ?>
+	<script>
+	setTimeout(function () {
+		    cargarSplash();
+	}, 4000);
+	setTimeout(function(){    	
+		verificarInstlacion();
+	    }, 3000);
+	</script>
+<?php } ?>
 </body>
 </html>
 
