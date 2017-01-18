@@ -54,6 +54,11 @@ class Banners extends MY_Controller
     	return $this->load->view('fe_noticia_patrocinada', $data, TRUE);
     }
     
+    public function fe_corner_banner($data = FALSE)
+    {
+    	return $this->load->view('fe_corner_banner', $data, TRUE);
+    }
+    
 	public function fe_cinta_copa($data = FALSE)
     {
     	return $this->load->view('fe_cinta_copa', $data, TRUE);
@@ -73,7 +78,6 @@ class Banners extends MY_Controller
     public function fe_desplegable_movil_tap_tap($data = FALSE)
     {
     	return $this->load->view('fe_tap__tap_home', $data, TRUE);
-    	//return $this->load->view('fe_banner_intertisial', $data, TRUE);
     }
 
     public function FE_Bigboxnews2($data = FALSE)
