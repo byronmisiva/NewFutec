@@ -78,6 +78,7 @@
 		$('.pbl-union3').fadeOut();
 		$('.pbl-union4').fadeOut();
 		$('.pbl-union5').fadeOut();
+		$('.pbl-union6').fadeOut();
 		$('#div-gpt-ad-1450734059657-0').show();
 		$('#div-gpt-ad-1450734059657-1').show();
 	}
