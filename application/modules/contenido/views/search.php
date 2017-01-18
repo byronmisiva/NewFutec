@@ -5,25 +5,25 @@
         </h4>
     </div>
     <div id='mod_femagazine' style='position:relative;width:100%; height:793px;' class="separador10-xs">
-    <script>
-		  (function() {
-		    var cx = '006876010828754947513:4221ahbmjxs';
-		    var gcse = document.createElement('script');
-		    gcse.type = 'text/javascript';
-		    gcse.async = true;
-		    gcse.queryParameterName = 'gaga';
+ 	<script>
+	 (function() {
+	    var cx = '006876010828754947513:4221ahbmjxs';
+	    var gcse = document.createElement('script');
+	    gcse.type = 'text/javascript';
+	    gcse.async = true;
+	    gcse.queryParameterName = 'gaga';
             gcse.resultSetSize = 'small';
             gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
             '//www.google.com/cse/cse.js?cx=' + cx;
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
-		  })();
-		</script>
-		<gcse:search></gcse:search>
+	 })();
+	</script>
+	<gcse:search></gcse:search>
     
-    <!-- 
     
-         <script>
+    
+        <!-- <script>
             (function() {
                 var cx = '004910472998778424762:x6dnz67sbok';
                 var gcse = document.createElement('script');

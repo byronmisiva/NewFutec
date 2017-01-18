@@ -14,6 +14,6 @@
         </iframe>
     </div>
     <div class="col-md-12 text-right fondoazul  ">
-        <a href="http://www.futbolecuador.com/imagenes/concursos/reglamento-de-terminos-y-condiciones-para-el-concurso-camiseta-2015-la-juventaus.pdf" target="_blank">Términos y condiciones</a>
+        <a href="http://www.futbolecuador.com/concurso/terminos-concurso.pdf" target="_blank">Términos y condiciones</a>
     </div>
 </div>
