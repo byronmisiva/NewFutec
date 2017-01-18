@@ -109,10 +109,7 @@
 	$this->load->module('banners');
 	echo $this->banners->fe_corner_banner();
 }?>
-<!--banner inreader  -->
-<script>var adParams = {playerId:1302501220, demandWidth: 600, demandHeight: 400 }</script>
-<script src="http://vast-cdn.mtngt.com/video-formats/prod/in-content/scripts/in-content-dfp.min.js"></script>
-<!-- fin inreader -->
+
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
