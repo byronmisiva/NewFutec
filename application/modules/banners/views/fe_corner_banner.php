@@ -14,3 +14,8 @@
 </div>
 </div>
 
+<!--banner inreader  -->
+<script>var adParams = {playerId:"div-gpt-ad-1484773297502-0", demandWidth: 600, demandHeight: 400 }</script>
+<script src="http://vast-cdn.mtngt.com/video-formats/prod/in-content/scripts/in-content-dfp.min.js"></script>
+<!-- fin inreader -->
+
