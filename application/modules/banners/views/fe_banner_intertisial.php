@@ -39,7 +39,7 @@
 			<div style="display:none !important;"
 id="flite-click-macro-c3fbb26d-91e5-4e54-b64c-0d3eea13aa31">%%CLICK_URL_UNESC%%</div>
 			<script>
-			    (function() {
+			    /*(function() {
 			        var guid = "c3fbb26d-91e5-4e54-b64c-0d3eea13aa31", o = window, r = "", m, s = "http:", e = encodeURIComponent, x = 0, f = document.createElement("script");
 			        o.FLITE=o.FLITE || {};
 			        o.FLITE.config = o.FLITE.config || {};
@@ -52,7 +52,7 @@ id="flite-click-macro-c3fbb26d-91e5-4e54-b64c-0d3eea13aa31">%%CLICK_URL_UNESC%%<
 			        try{ var fm = document.getElementById("flite-click-macro-" + guid); var c = (fm && (fm.innerText || fm.textContent || fm.innerHTML)) || ""; c = c.replace(/^\s+|\s+$/g, ""); o.FLITE.config[guid].ct = c; } catch(err) {x+=8}
 			        f.src = [s,"//r.flite.com/syndication/uscript.js?i=",e(guid),"&v=3","","&x=us",x,"&cb=",o.FLITE.config[guid].cb,"&d=",e((m && m[0]) || r), "&tz=", (new Date()).getTimezoneOffset()].join("");
 			        document.write(f.outerHTML);
-			        })();
+			        })();*/
 			</script>
 			<noscript>
 			    <a style="text-decoration:none;display:block;border:0;" href="//r.flite.com/syndication/backuplink/i/c3fbb26d-91e5-4e54-b64c-0d3eea13aa31?ct=%%CLICK_URL_ESC%%" target="_blank">

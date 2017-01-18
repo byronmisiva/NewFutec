@@ -1,6 +1,6 @@
 <!-- script g13 publicidad -->
-  <script data-cfasync="false" type="text/javascript">
-    (function (document, window) {
+<!--  <script data-cfasync="false" type="text/javascript">
+    /*(function (document, window) {
         var c = document.createElement("script");
         c.type = "text/javascript";
         c.async = !0;
@@ -13,5 +13,5 @@
         }
         a || ( a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
         a.parentNode.insertBefore(c, a);
- 	})(document, window);
-  </script>
+ 	})(document, window);*/
+  </script>-->

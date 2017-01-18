@@ -88,10 +88,10 @@ $url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
 <a href="<?php echo $url[$turno] ?>" target="_blank" class="col-md-12 fondo-anuncio">
     <div class="contenedor-anuncio">
             <div class="col-md-4 img-alertas">
-                <img src="<?php echo base_url() ?>imagenes/anuncio/alertas.png">
+                <img src="<?php echo base_url() ?>imagenes/anuncio/app-futbolecuador.png">
             </div>
             <div class="col-md-8 txt-alertas">
-                <h2>#AlertasFutbolecuador</h2>
+                <h2>Futbolecuador.com</h2>
                 <p>Se el primero en leer las noticias de tu equipo favorito.</p>
                 <p>Disponible para iOS y Android. Descárgala gratis aquí.</p>
             </div>
