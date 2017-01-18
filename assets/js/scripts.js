@@ -34,13 +34,13 @@ function cargarSplash() {
         } else {
             $('#div-gpt-ad-1383593619381-0').show();
             if (verMobile == 1){
-            	/*este caso es para desplegar pabbers de 320x80 version mas usada*/
-                	$('.separador10-xs').css('margin-top', '65px');                	
+            	/*este caso es para desplegar banners de 320x80 version mas usada*/
+                	$(".separador10-xs").css("margin-top", "95px");                	
                 /*fin caso para */
                 /*este caso es para desplegar pabbers de 320x50*/
-                	var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
+                	/*var contenedorheader= $("#div-gpt-ad-1383593619381-0");    
                 	var iframeHeader=contenedorheader[0].lastChild["childNodes"][0];
-                	$(iframeHeader).attr("height","50px");
+                	$(iframeHeader).attr("height","50px");*/
                 	/*este caso modifica el iframe que carga el banner*/
                 /*fin caso*/
             }
@@ -67,21 +67,16 @@ function cargarSplash() {
             }
         }
     }
-
-
     // amazon asociates
-
     if ($('#div-gpt-ad-1445466832316-0 ').length > 0) {
         if ($('#div-gpt-ad-1445466832316-0 iframe').contents().find("body").html().length == 0) {
             $('#div-gpt-ad-1445466832316-0').hide();
             $('#div-gpt-ad-1445466832316-0').css("height", "0p");
-
         } else {
             $('#div-gpt-ad-1445466832316-0').show();
             $('#div-gpt-ad-1445466832316-0').css("height", "370px");
         }
-    }
-    
+    }    
 
     if (verMobile == 1) {
         // caso movil
@@ -104,13 +99,13 @@ function cargarSplash() {
                         cargarSplashFE();
             }
         }
+                
     } else {
         // caso desktop
-
         if ($("#div-gpt-ad-1425424774921-0").length > 0) {
             if ($("#div-gpt-ad-1425424774921-0 iframe").contents().find("body").html().length > 0) {
-                $('#darkLayer').show();
-                $('#FE_LOADING').show();
+                $("#darkLayer").show();
+                $("#FE_LOADING").show();
                 //funcion enviar encuesta
                 $(".closeBanner").click(function () {
                     $('#darkLayer').hide();
@@ -307,7 +302,7 @@ jQuery(document).ready(function () {
         var res = link.split("/");
         //reemplazar el penultimo
         for (i = 0; i < res.length; i++) {
-            console.log(res)
+            //console.log(res)
             if (res[i] == 'resultados') {
                 res1 = res[i + 1];
                 link = link.replace(res1, $(this).attr("data-info"));
@@ -440,10 +435,10 @@ if (machDetail.length > 0) {
                         visitantescore = marcador [2];
 
                         if (localscore != localscoreOld) {
-                            console.log("gol local")
+                            //console.log("gol local")
                         }
                         if (localscore != localscoreOld) {
-                            console.log("gol vistante ")
+                            //console.log("gol vistante ")
                         }
 
                     }
