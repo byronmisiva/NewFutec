@@ -1,208 +1,152 @@
-  <style>
-.cancha{
-		background-image: url('<?php echo base_url()?>formacion/cancha.jpg?refresh=654321');
-		width:550px;
-		height:780px;
-		background-position: center;
-		margin: 0 auto;
-	}
-	.opcion{
-		padding: 5px;
-	    color: #fff;
-	    font-size: 12px;
-	    line-height:10px;
-	    font-weight: bold;
-	}
-	
-	.opcion > img{
-		text-align: center;
-		cursor:pointer;
-	}
-	
-	.arquero{
-	padding-top: 25px;
-	margin-bottom: 80px;
-	}
-	
-	.defensa, .medio, .delantero{
-	margin-top: 90px;
-	margin-bottom: 110px;
-	margin-left: 15px;
-	margin-right: 15px;
-	}
-	
-	.jugador {
-		list-style:none;
-		color:#666;
-		text-align: left;
-		cursor:pointer;
-		margin-top: 0;
-		margin-bottom: 0;
-		height: 35px;
-		line-height: 15px;
-		font-size: 15px;
-		padding-top:10px;
-	}
-	
-	.jugador:hover{
-		color:#000;
-	}
-	
-	.btn-carga-lista{
-	display: none;
-	}
-	
-	.btn-success{
-		display:none;
-	}
-	
-	.modal-dialog { 
-	    width: 260px;
-	}
-	
-	ul{ 
-	  padding-left: 10px;
-	}
-	
-	@media (max-width: 600px){	
 
-	.modal-dialog {
-	    margin: 25% auto;
-	}
-		
-		.cancha {
-		    background-position: center top;
-		    background-repeat: no-repeat;
-		    background-size: 100% auto;
-		    height: 560px;
-		    margin: 0 auto;
-		    width: 100%;
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/sweetalert.css">    
+    <style>
+		.cancha{background-image:url('<?php echo base_url()?>formacion/cancha.jpg?refresh=654321');width:550px;height:780px;background-position:center;margin:0 auto}.opcion{padding:5px;color:#fff;font-size:12px;line-height:10px;font-weight:700}.opcion>img{text-align:center;cursor:pointer}.arquero{padding-top:25px;margin-bottom:80px}.defensa,.delantero,.medio{margin:80px 15px 80px}.jugador{list-style:none;color:#666;text-align:left;cursor:pointer;margin-top:0;margin-bottom:0;height:35px;line-height:15px;font-size:15px;padding-top:10px}.jugador:hover{color:#000}.btn-carga-lista,.btn-success{display:none; margin:0 auto;}.modal-dialog{width:260px}ul{padding-left:10px}@media (max-width:600px){.modal-dialog{margin:25% auto}.cancha{background-position:center top;background-repeat:no-repeat;background-size:100% auto;height:560px;margin:0 auto;width:100%}.arquero{margin-bottom:10px;padding-top:10px}.opcion>img{width:40px;margin:0 auto}.defensa,.delantero,.medio{margin:50px 15px}}@media (max-width:321px){.opcion>img{width:35px}.cancha{height:480px}.defensa,.delantero,.medio{margin:40px 15px}}
+				
+		.formularioRegistro, .formularioLogin{		
+			display:none;	
+			width: 300px;
+			margin: 15% auto;
+			background-color: rgba(255,255,255,0.9);
+			border-radius:10px;
+			padding: 10px;
+    		width: 300px;
+    		z-index: 10000;		 
 		}
 		
-		.arquero {
-		    margin-bottom: 10px;
-		    padding-top: 10px;
+		.espera{
+			 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+		    height: 100%;
+		    position: absolute;
+		    width: 98%;
+		    z-index: 10000;	
+		    display: none;
 		}
 		
-		.opcion > img {
-		    width: 40px;
-		    margin: 0 auto;
+		.cargando{
+			height: 45px;
+		    margin: 30% auto;
+		    width: 45px;
 		}
 		
-		.defensa, .medio, .delantero {
-		    margin: 65px 15px;
-		}
-	}
-	
-	@media (max-width: 321px){
-	.opcion > img {
-		    width: 35px;
-		}
-		
-		.cancha {		    
-		    height: 480px;
+		.formularioLogin {
+		    height: 130px;
 		    }
-	
-	.defensa, .medio, .delantero {
-		    margin: 45px 15px;
-		}
-	}
-
-
-</style>
-		<div class="row">
-			<div class="col-xs-12 col-md-12 col-lg-12">
-				<div class="cancha">
-					<div class="row arquero">
-						<div class="col-xs-12 col-md-12 col-lg-12 text-center opcion" id="0" ref="ARQ" sel="0">
-							<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-					</div>
-					<div class="row defensa">
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="1" ref="DEF" sel="0">
-							<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="2" ref="DEF" sel="0">
-							<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="3" ref="DEF" sel="0">
-							<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="4" ref="DEF" sel="0">
-							<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-					</div>
-					<div class="row medio">
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="5" ref="VOL" sel="0">
-							<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="6" ref="VOL" sel="0">
-						<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="7" ref="VOL" sel="0">
-						<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-3 col-md-3 col-lg-3 text-center opcion" id="8" ref="VOL" sel="0">
-						<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-					</div>
-					<div class="row delantero">
-						<div class="col-xs-6 col-md-6 col-lg-6 text-center opcion" id="9" ref="DEL" sel="0">
-						<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>
-						<div class="col-xs-6 col-md-6 col-lg-6 text-center opcion" id="10" ref="DEL" sel="0">
-						<img src="<?php echo base_url()?>formacion/jugadores/normal.png" />
-						</div>						
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-md-12 col-lg-12 text-center btn-enviar" >
-							<button type="button" class="btn btn-success">Enviar</button>
-						</div>
-					</div>>
+		    
+		    .formularioRegistro {
+		    height: 280px;
+		    }
+	</style>
+</head>
+<body>
+	<!-- --------------- -->  
+	<div class="row">
+		<div class="col-xs-12 col-md-12 col-lg-12">
+			<div class="espera">
+				<div class="cargando">
+					<img src="<?php echo base_url()?>formacion/carga.gif" />
 				</div>
-			<!-- Button trigger modal -->
-					<button type="button" class="btn btn-carga-lista" data-toggle="modal" data-target="#myModal" ></button>					
-					<!-- Modal -->
-					<div class="modal" id="myModal" tabindex="-1" role="dialog"
-					     aria-labelledby="myModalLabel1" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					        <h4 class="modal-title" id="myModalLabel1">Seleccionar Jugador</h4>
-					      </div>
-					      <div class="modal-body"></div>
-					    </div>
-					  </div>
+				<div class="formularioLogin">
+					<div class="row">
+					<div class="col-md-12">
+						<form id="formVerificar" action="#">
+							<div class="form-group">
+							  <label >Email</label>
+							  <input type="text" name="mailUser" id="mailUser" class="form-control" placeholder="Email"  required>
+							</div>				
+							<div class="form-group"> 
+							   <div class="col-sm-offset-1 col-sm-5 col-xs-5 col-md-5">
+							     <button type="button" class="btn btn-default btn-verificar">Verificar</button>
+							   </div>
+							   <div class="col-sm-offset-1 col-sm-5 col-xs-5 col-md-5">
+							     <button type="button" class="btn btn-default btn-ir-registro">Regístrate</button>
+							   </div>
+							</div>
+						</form>
+						</div>
 					</div>
-			</diV>
-			</div>		        
-  <script type="text/javascript" >	
+			</div>	
+			<div class="formularioRegistro">						
+				<form id="formRegistro" action="#" onsubmit="return false;"> 
+					<div class="form-group">
+					  <label >Nombres</label>
+					  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombres" required>
+					</div>
+					<div class="form-group">
+					  <label >Email</label>
+					  <input type="email" name="mail" id="mail" class="form-control" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+					  <label >Teléfono</label>
+					  <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Teléfono" required>
+					</div>
+					<div class="form-group"> 
+					   <div class="col-sm-12 text-center">
+					     <button type="button" class="btn btn-default btn-ejecutar-registro">Enviar</button>
+					   </div>
+					</div> 
+				</form>
+			</div>
+			</div>
+			
+			<div class="cancha"></div>
+		    <button type="button" class="btn btn-carga-lista" data-toggle="modal" data-target="#myModal" ></button>					
+		
+		</diV>
+	</div>	
+		<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			   <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			        <h4 class="modal-title" id="myModalLabel1">Seleccionar Jugador</h4>
+			      </div>
+			      <div class="modal-body"></div>
+			    </div>
+			  </div>
+		</div>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/sweetalert.min.js"></script>     
+  <script type="text/javascript" >
+    var setFormacion = "<?php echo $configuracion->formacion?>";
+	var setTeam = "<?php echo $configuracion->id_team?>";
+	var setEncuesta = "<?php echo $configuracion->id?>";  
 	var formacion;
 	var elementos = [];
 	var posicionFormacion;
+	var usuario;
 	var lista;
-	setTimeout(function(){ 
-		  $.getJSON( "http://www.futbolecuador.com/encuesta/consulta", function( data ) {
-				formacion = data;				 
-			}); 
-	}, 2000);
-		
+		function verificarUser(){
+			if(window.localStorage['userConcurso'] == null || window.localStorage['userConcurso'] == 0) {
+				window.localStorage['userConcurso'] = 0;
+				$(".cargando").hide();
+				$(".formularioLogin").show();
+			}else{
+				usuario = JSON.parse(window.localStorage['userConcurso']);
+				var texto = "Hola,"+usuario.nombre+" acabas de ingresar tu once ideal y automáticamente estás participando por el premio futbolecuador.com";
+				swal("Registro Autentificado", texto, "success");
+				$(".espera").hide();
+			}
+		}
+	
+	
 	function verificarJugador(elem){
 		var pos ;
 		if ($("#"+posicionFormacion).attr("sel") == "0" ){
-			elementos.push (elem.attr("ref"));
 			for(var l=0; l<formacion.length; l++){
 				if ( formacion[l].id == elem.attr("ref")){
 					pos = l;
 					formacion[l].checked ="TRUE";
+					elementos.push (elem.attr("ref"));
 					l = formacion.length;
-					
 				}
 			}	
-			$("#"+posicionFormacion).html("<img src='"+formacion[pos].imagen+"' />");
+			
+				formacion[pos].imagen ="http://www.futbolecuador.com/formacion/jugadores/generica.png";			
+			
+			$("#"+posicionFormacion).html("<img src='"+formacion[pos].imagen+"' /><br>"+formacion[pos].first_name+" "+formacion[pos].last_name);
 			$("#"+posicionFormacion).attr("sel",elem.attr("ref"));
 		}else{
 			for(var e=0; e<elementos.length; e++){
@@ -227,9 +171,13 @@
 					l = formacion.length;
 				}
 			}	
-			$("#"+posicionFormacion).html("<img src='"+formacion[pos].imagen+"' />");	
+			formacion[pos].imagen ="http://www.futbolecuador.com/formacion/jugadores/generica.png";
+			$("#"+posicionFormacion).html("<img src='"+formacion[pos].imagen+"' /><br>"+formacion[pos].first_name+" "+formacion[pos].last_name);	
 			$("#"+posicionFormacion).attr("sel",elem.attr("ref"));		
 		}
+		
+		$(".btn-success").show();
+		
 		if (elementos.length == 11){
 			$(".btn-success").show();
 		}else{
@@ -237,64 +185,56 @@
 		}
 	};
 	
-	$(document).ready(function () {
-		$(".btn-success").click(function(){
-			$.ajax({  
-				  type: "POST",  
-				  url: "http://www.futbolecuador.com/encuesta/pushVotos",  
-				  data: {datos:JSON.stringify(elementos)},
-				  success: function( result ) {
-					  lista = JSON.parse(result);					  
-					  var contador = 0;
-					  var imagen = "<img src='"+lista["arquero"][0].imagen+"' /> <br> "+lista["arquero"][0].first_name+" "+lista["arquero"][0].last_name+" <br>"+lista["arquero"][0].voto;
-					  	$("#"+contador).html(imagen);
-					  contador = contador + 1;
-					  for (var i=0 ; i<4; i++){
-						var imagen = "<img src='"+lista["defensa"][i].imagen+"' /> <br> "+lista["defensa"][i].first_name+" "+lista["defensa"][i].last_name+" <br>"+lista["defensa"][i].voto;						
-						$("#"+contador).html(imagen);
-						contador = contador + 1;
-					 }
-
-					 for (var i=0 ; i<4; i++){
-						var imagen = "<img src='"+lista["volante"][i].imagen+"' /> <br> "+lista["volante"][i].first_name+" "+lista["volante"][i].last_name+" <br>"+lista["volante"][i].voto;
-						$("#"+contador).html(imagen);
-						contador++;
-					 }
-
-					 for (var i=0 ; i<2; i++){
-					    var imagen = "<img src='"+lista["delantero"][i].imagen+"' /> <br> "+lista["delantero"][i].first_name+" "+lista["delantero"][i].last_name+" <br>"+lista["delantero"][i].voto;
-						$("#"+contador).html(imagen);
-						contador++;
-					 }
-
-					 $(".btn-enviar").html("");
-					 $(".btn-enviar").hide();					 
-					 elementos= [];
-					 formacion = [];
-		    		} 
-			});
-		});		
-		
-		$(".opcion").click(function(){			
-			var posicion = $(this).attr("ref");
-			posicionFormacion = $(this).attr("id");
-			var htmlLista;
-			htmlLista ="<ul>";
-			for(var x=0; x<formacion.length; x++){
-				if ( formacion[x].posicion == posicion){
-					 if (formacion[x].checked == "FALSE"){
-						 htmlLista = htmlLista+
-						"<li class='jugador ' data-dismiss='modal' ref='"+formacion[x].id+"' fil='"+formacion[x].posicion+"' pos='"+x+"' ver='"+formacion[x].checked+"' onclick='verificarJugador($(this))'>"+
-							formacion[x].first_name+" "+formacion[x].last_name+
-						"</li>";	 
-					 }			 
-				}				 
-			}
-			htmlLista = htmlLista+"<ul>";
-			$(".modal-body").html("");
-			$(".modal-body").html(htmlLista);
-			$(".btn-carga-lista").click();
+	$(document).ready(function () {		
+		$(".btn-ejecutar-registro").click(function(){
+			$.post( "http://www.futbolecuador.com/encuesta/registro",{
+			encuesta: setEncuesta,				
+			nombre: $("#nombre").val(),
+			mail: $("#mail").val(),
+			telefono: $("#telefono").val()
+			 },	function(respuesta){
+				 $(".espera").hide();
+				 window.localStorage['userConcurso'] = respuesta;
+				 usuario = JSON.parse(respuesta);
+				 var texto = "Hola,"+usuario.nombre+" acabas de ingresar tu once ideal y automáticamente estás participando por el premio futbolecuador.com";
+				 swal("Registro Autentificado", texto, "success");
+				 $(".espera").hide();
+				 //swal({title: "<div class='fb-like' data-href='http://www.futbolecuador.com/site/noticia/gana-dos-entradas-para-el-ecuador-vs-venezuela/72696' data-send='false' data-action='like' data-layout='button' data-share='false' data-width='90' data-show-faces='true' data-font='arial'></div> ",   text: "No te olvides de Compartir",   html: true });
+				 
+				 envioRespuesta();		    			
+		    });	
 		});
+		
+		$(".btn-verificar").click(function(){
+			$.post( "http://www.futbolecuador.com/encuesta/verificar",{
+				mail: $("#mailUser").val() }, 
+			    	function(respuesta){
+			    	if (respuesta == "null"){
+			    		$(".formularioLogin").hide();
+						$(".formularioRegistro").show();
+				    }else{
+				    	$(".espera").hide();
+				    	window.localStorage['userConcurso'] = respuesta;
+				    	var texto = "Hola,"+usuario.nombre+" acabas de ingresar tu once ideal y automáticamente estás participando por el premio futbolecuador.com";
+						swal("Registro Autentificado", texto, "success");
+			    	}
+		    	});
+		});
+		
+		$(".btn-ir-registro").click(function(){
+			$(".formularioLogin").hide();
+			$(".formularioRegistro").show();
+		});	 
+		
 	});	
-  </script>
+
+	setTimeout(function(){ 
+	  $.getJSON( "http://www.futbolecuador.com/encuesta/consulta/"+setEncuesta, function( data ) {
+		  formacion = data;				 
+		}); 
+	  $(".cancha").load("<?php echo base_url()?>encuesta/getSistemaFormacion/"+setFormacion);
+	  $(".espera").hide();
+	}, 2000);
+  </script>  
+
 
