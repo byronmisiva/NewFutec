@@ -1,3 +1,6 @@
+<?php 
+echo $this->uri->segment(1);
+if(($this->uri->segment(1) == "noticia")){ ?>
 <div style="position: absolute;width: 1px;height: 1px;border: 1px solid red;right:0;top:0;z-index: 100000000;">
 <!-- /1022247/CornerVideo -->
 <div id='div-gpt-ad-1484776299682-0'>
@@ -22,4 +25,5 @@
 <script src="http://vast-cdn.mtngt.com/video-formats/prod/in-content/scripts/in-content-dfp.min.js"></script>
 <!-- fin inreader -->
 </div>
+<?php }?>
 
