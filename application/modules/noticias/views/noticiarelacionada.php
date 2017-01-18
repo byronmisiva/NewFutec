@@ -5,7 +5,7 @@
 } else {
     $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($story->title) . '/' . $story->id;
 }?>
-<a  href="<?php echo $link ?>" onclick="ga('send', 'event', 'Relacionadas', 'click', 'noticia');">
+<a  onclick="ga('send', 'event', 'relacionadas', 'click', 'noticia');" href="<?php echo $link ?>" >
 <div class="col-xs-4 col-md-12 img-relacionada" >
 <img src="http://www.futbolecuador.com/<?php echo $story->thumbh120; ?>"
     alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>" />
