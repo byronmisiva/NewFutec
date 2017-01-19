@@ -1,5 +1,4 @@
-<?php 
-echo "<script>alert('".$this->uri->segment(1)."');</script>";
+<?php
 if(($this->uri->segment(2) == "noticia")){ ?>
 <div style="position: absolute;width: 1px;height: 1px;border: 1px solid red;right:0;top:0;z-index: 100000000;">
 <!-- /1022247/CornerVideo -->
