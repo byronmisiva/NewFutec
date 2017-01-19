@@ -1,5 +1,5 @@
 <?php 
-echo $this->uri->segment(1);
+echo "<script>alert('".$this->uri->segment(1)."');</script>";
 if(($this->uri->segment(1) == "noticia")){ ?>
 <div style="position: absolute;width: 1px;height: 1px;border: 1px solid red;right:0;top:0;z-index: 100000000;">
 <!-- /1022247/CornerVideo -->
@@ -26,4 +26,6 @@ if(($this->uri->segment(1) == "noticia")){ ?>
 <!-- fin inreader -->
 </div>
 <?php }?>
+
+
 
