@@ -1,6 +1,6 @@
 <?php 
 echo "<script>alert('".$this->uri->segment(1)."');</script>";
-if(($this->uri->segment(1) == "noticia")){ ?>
+if(($this->uri->segment(2) == "noticia")){ ?>
 <div style="position: absolute;width: 1px;height: 1px;border: 1px solid red;right:0;top:0;z-index: 100000000;">
 <!-- /1022247/CornerVideo -->
 <div id='div-gpt-ad-1484776299682-0'>
