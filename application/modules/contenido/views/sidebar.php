@@ -36,7 +36,7 @@
     </div>
     <div class="col-md-3 col-xs-3  ">
     <span class="social-pos">
-        <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fuser-13413667&color=orange_white&size=64" style="width: 64px; height: 64px;"></iframe>
+		<a href="https://soundcloud.com/user-13413667" target="_blank"><img title="Soundcloud (Buttons by NiftyButtons.com)" src="http://www.niftybuttons.com/soundcloud/white_orange_64.png"></a>
     </div>
     
     
