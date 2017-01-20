@@ -35,7 +35,8 @@
     </span>
     </div>
     <div class="col-md-3 col-xs-3  ">    
-		<a href="https://soundcloud.com/user-13413667" target="_blank"><img title="SoundCloud (Buttons by NiftyButtons.com)" src="http://www.niftybuttons.com/soundcloud/soundcloud1.png"></a>
+		<a href="https://soundcloud.com/user-13413667" target="_blank">
+		<img title="SoundCloud (Buttons by NiftyButtons.com)" src="http://www.niftybuttons.com/soundcloud/soundcloud1.png"></a>
     </div>    
 </div>
 
