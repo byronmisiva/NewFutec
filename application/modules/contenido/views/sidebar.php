@@ -34,12 +34,9 @@
                         }(document, "script"));</script>
     </span>
     </div>
-    <div class="col-md-3 col-xs-3  ">
-    <span class="social-pos">
-		<a href="https://soundcloud.com/user-13413667" target="_blank"><img title="Soundcloud (Buttons by NiftyButtons.com)" src="http://www.niftybuttons.com/soundcloud/white_orange_64.png"></a>
-    </div>
-    
-    
+    <div class="col-md-3 col-xs-3  ">    
+		<a href="https://soundcloud.com/user-13413667" target="_blank"><img title="SoundCloud (Buttons by NiftyButtons.com)" src="http://www.niftybuttons.com/soundcloud/soundcloud1.png"></a>
+    </div>    
 </div>
 
 <div class="col-md-12 col-xs-12 separador10 pull-right margen0">
