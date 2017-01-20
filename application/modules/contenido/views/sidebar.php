@@ -1,5 +1,5 @@
 <!-- social y buscar -->
-<div class="col-md-8 col-xs-8 separador10  margen0">
+<div class="col-md-12 col-xs-12 separador10  margen0">
     <div class="col-md-4 col-xs-4  ">
     <span class="social-pos">
         <script>!function (d, s, id) {
@@ -36,7 +36,7 @@
     </div>
 </div>
 
-<div class="col-md-4 col-xs-4 separador10 pull-right margen0">
+<div class="col-md-12 col-xs-12 separador10 pull-right margen0">
     <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cx" value="004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cof" value="FORID:11">
