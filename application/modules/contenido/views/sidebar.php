@@ -1,6 +1,6 @@
 <!-- social y buscar -->
 <div class="col-md-12 col-xs-12 separador10  margen0">
-    <div class="col-md-4 col-xs-4  ">
+    <div class="col-md-3 col-lg-3  ">
     <span class="social-pos">
         <script>!function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -16,14 +16,14 @@
            data-show-screen-name="false">Seguir a @futbolecuador</a>
     </span>
     </div>
-    <div class="col-md-4 col-xs-4  ">
+    <div class="col-md-3 col-lg-3  ">
     <span class="social-pos">
         <iframe
             src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Ffutbolecuador&amp;locale=es_ES&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true&amp;appId=1396413573964675"
             style="border:none; overflow:hidden; width:60px; height:35px; border:0"></iframe>
     </span>
     </div>
-    <div class="col-md-4 col-xs-4  ">
+    <div class="col-md-3 col-xs-3  ">
     <span class="social-pos">
         <span class="ig-follow" data-id="a83ed5" data-handle="futbolecuadorcom" data-count="false" data-size="small"
               data-username="false"></span>
@@ -34,6 +34,12 @@
                         }(document, "script"));</script>
     </span>
     </div>
+    <div class="col-md-3 col-xs-3  ">
+    <span class="social-pos">
+        <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fuser-13413667&color=orange_white&size=64" style="width: 64px; height: 64px;"></iframe>
+    </div>
+    
+    
 </div>
 
 <div class="col-md-12 col-xs-12 separador10 pull-right margen0">
