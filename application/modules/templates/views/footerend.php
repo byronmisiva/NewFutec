@@ -3,16 +3,18 @@
 <?php if($verMobile == "0"){ ?>
 	<script type="text/javascript" charset="utf-8" src="<?php echo base_url()?>unionlayer/panini/edge_includes/edge.6.0.0.min.js"></script>
 	<style>
-    .edgeLoad-EDGE-5186378205,.edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650, 
+    .edgeLoad-EDGE-518637820,.edgeLoad-EDGE-11811655, .edgeLoad-EDGE-11811650, 
     .edgeLoad-EDGE-11811645, .EDGE-61983072 { visibility:hidden; }                
      #pbl-coke{margin: 25px auto;position: relative;width: 1341px;height: auto;background-color: transparent !important;}
-     .pbl-coke2{position: absolute;top: 0;left: 264px;width: 60px;height: 15px;background-color: #000;color: #fff;font-size: 12px;padding-left: 10px;}
+    .pbl-coke2{position: absolute;top: 0;left: 264px;width: 60px;height: 15px;background-color: #000;color: #fff;font-size: 12px;padding-left: 10px;}
     .pbl-union, .pbl-union2, .pbl-union3, 
     .pbl-union4, .pbl-union5, .pbl-union6{height: 100%;left: 0;position: fixed;top: 0;
-    	width: 100%;z-index: 100000000;display:none;}
+    	width: 100%;z-index: 100000000;display:none;
+    }
+    	 
   </style>
   <script>
-  	AdobeEdge.loadComposition(baseUrl+'unionlayer/kia3/index', 'EDGE-518637820', {
+  	AdobeEdge.loadComposition('http://www.futbolecuador.com/unionlayer/kia3/index', 'EDGE-518637820', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",
 	    width: "1330px",
 	    height: "600px"},
@@ -20,7 +22,7 @@
   </script>
     <div class="pbl-union" >
 	   <div id="pbl-coke">
-	   	<div id="Stage" class="EDGE-5186378205"></div>
+	   	<div id="Stage" class="EDGE-518637820"></div>
 	    </div>
 	</div>
 	<script>
@@ -28,7 +30,7 @@
     scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",
     width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});*/	
   </script>
-  <!--  --><div class="pbl-union2" >
+  <div class="pbl-union2" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811650"></div>    	
 	    </div>
@@ -51,7 +53,6 @@
 	    	<div id="Stage" class="EDGE-11811615"></div>
 	    </div>
 	</div>
-
 	<script>
 	    AdobeEdge.loadComposition(baseUrl+'unionlayer/kia/kia', 'EDGE-61983072', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
@@ -92,6 +93,7 @@
 	function activarPbl(){
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".EDGE-518637820").css("visibility","visible");
 		$(".pbl-union").fadeIn();
 		$(".pbl-union3").fadeIn();
 		$("#Stage_arranca").click();
