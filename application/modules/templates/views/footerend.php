@@ -10,18 +10,19 @@
     .pbl-union4, .pbl-union5, .pbl-union6{height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100000000;display:none;}
   </style>
   <script>
-    AdobeEdge.loadComposition(baseUrl+'unionlayer/panini/600x600', 'EDGE-11811655', {
-	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+  	AdobeEdge.loadComposition(baseUrl+'unionlayer/kia3/index', 'EDGE-518637820', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",
+	    width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});
   </script>
-  <div class="pbl-union" >
-	    <div id="pbl-coke">
-	    	<div id="Stage" class="EDGE-11811655"></div>
+    <div class="pbl-union" >
+	   <div id="pbl-coke">
+	   	<div id="Stage" class="EDGE-5186378205"></div>
 	    </div>
 	</div>
 	
 	<script>
-    AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
-	scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+    //AdobeEdge.loadComposition(baseUrl+'unionlayer/samsung/centro', 'EDGE-11811650', {
+    //scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
   </script>
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
@@ -32,7 +33,7 @@
 	    AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/uno/centro_new', 'EDGE-11811645', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
     </script>
-	<div class="pbl-union4" >
+	  <div class="pbl-union4" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811645"></div>
 	    </div>
@@ -41,14 +42,14 @@
 	    AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/promo/centro_new', 'EDGE-11811615', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
     </script>
-	<div class="pbl-union5" >
+	  <div class="pbl-union5" >
 	    <div id="pbl-coke">
 	    	<div id="Stage" class="EDGE-11811615"></div>
 	    </div>
 	</div>
-	
+
 	<script>
-	    AdobeEdge.loadComposition(baseUrl+'unionlayer/kia/800x600_quiero_un_kia', 'EDGE-61983072', {
+	    AdobeEdge.loadComposition(baseUrl+'unionlayer/kia/kia', 'EDGE-61983072', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
     </script>
 	<div class="pbl-union6" >
@@ -79,6 +80,7 @@
 		$('.pbl-union4').fadeOut();
 		$('.pbl-union5').fadeOut();
 		$('.pbl-union6').fadeOut();
+		$(".EDGE-61983072").css("visibility","hidden");
 		$('#div-gpt-ad-1450734059657-0').show();
 		$('#div-gpt-ad-1450734059657-1').show();
 	}
@@ -88,7 +90,7 @@
 		$("#div-gpt-ad-1450734059657-1").hide();
 		$(".pbl-union").fadeIn();
 		$(".pbl-union3").fadeIn();
-		$(".Stage_start_id").click();
+		$("#Stage_arranca").click();
 	}
 	function activarPbl2(){
 		$("#div-gpt-ad-1450734059657-0").hide();
@@ -114,21 +116,17 @@
 		$(".pbl-union3").fadeIn();
 		$("#Stage_start_patiotuercapromo").click();
 	}
-
+	/*kia*/
 	function activarPbl5(){
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
+		$(".EDGE-61983072").css("visibility","visible");
 		$(".pbl-union6").fadeIn();
 		$(".pbl-union3").fadeIn();
 		$("#Stage_start_kia").click();
 	}
 </script>	
-	
-<?php 
-	$this->load->module('banners');
-	echo $this->banners->fe_corner_banner();
-}?>
-
+<?php }?>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap-hover-dropdown.js') ?>"></script>
 <script defer src="<?php echo base_url('assets/js/jquery.flexslider-min.js') ?>"></script>
@@ -247,6 +245,8 @@ if (isset($fe_scritp_footer)){
 	    }, 3000);
 	</script>
 <?php } ?>
+
+
 </body>
 </html>
 
