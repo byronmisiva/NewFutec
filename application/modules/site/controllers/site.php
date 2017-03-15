@@ -143,9 +143,8 @@ class Site extends MY_Controller
 		$bannerTapTap =$this->banners->fe_desplegable_movil_tap_tap();
         $bannerBottom = $this->banners->fe_smart_bottom();
         $bannerTop = $this->banners->fe_smart_top();
-        $bannerIntertisial =$this->banners->fe_mobile_intertisial();
         $dataHeader2['FE_Bigboxbanner'] = "";
-        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop. $bannerIntertisial;
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
         // recuperar codigo dpa-sportslive
         $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'");
 
@@ -175,7 +174,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $publicidadSeccion ="";
         
         //$fe_loading_movil.
-        $data['content'] = $marcadorenvivo . $publicidadFlotante.$publicidadSeccion . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . "</div>";
+        $bannerIntertisial =$this->banners->fe_mobile_intertisial();
+        $data['content'] = $marcadorenvivo . $publicidadFlotante.$publicidadSeccion . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . $bannerIntertisial. "</div>";
         $data['sidebar'] = "";
 		
         $data['footer'] = ''.$bannerTapTap;
