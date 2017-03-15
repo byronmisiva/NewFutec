@@ -281,7 +281,7 @@
         googletag.defineSlot('/1022247/FE_NOTICIA_PATROCINADA', [300, 250], 'div-gpt-ad-1465241512633-0').addService(googletag.pubads());
 googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466776607930-0').addService(googletag.pubads());
 		//2017
-		googletag.defineOutOfPageSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', 'div-gpt-ad-1489613603020-0').addService(googletag.pubads());
+		googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
         // publicidades en mobil
         googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
