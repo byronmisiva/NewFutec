@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-EC">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="content-language" content="es"/>
@@ -23,22 +23,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
           href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
-   
     <meta name="twitter:widgets:csp" content="on">
-
     <!--twitter TAGS-->
     <meta name="twitter:card" content="app">
-
     <meta name="twitter:app:id:iphone" content="1008177383">
     <meta name="twitter:app:id:ipad" content="1008177383">
     <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
-    
-
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
-
     <meta name="twitter:description" content="<?php echo (isset($description)) ? $description : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>" />
-
 	<meta name="apple-itunes-app" content="app-id=1131081518, app-argument=//www.futbolecuador.com">
     <meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
 
@@ -287,8 +280,8 @@
         googletag.defineSlot('/1022247/FE_NEW_SQUAREBANNER_AUSPICIO_COPA_AMERICA', [300, 250], 'div-gpt-ad-1464883629839-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NOTICIA_PATROCINADA', [300, 250], 'div-gpt-ad-1465241512633-0').addService(googletag.pubads());
 googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466776607930-0').addService(googletag.pubads());
-		//new 2017
-		googletag.defineOutOfPageSlot('/1022247/InRead_600x400',[600, 400], 'div-gpt-ad-1484773297502-0').addService(googletag.pubads());
+		//2017
+		googletag.defineOutOfPageSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', 'div-gpt-ad-1489613603020-0').addService(googletag.pubads());
         // publicidades en mobil
         googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
@@ -296,7 +289,9 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_LOADING', [800, 600], 'div-gpt-ad-1425424774921-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
+        //googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
+//2017
+        googletag.defineOutOfPageSlot('/1022247/FE_SMART_SPLASH', 'div-gpt-ad-1488552546892-0').addService(googletag.pubads());
         //netsonic
         googletag.defineSlot('/25992948/EC_futbolecuador.com_1x1', [1, 1], 'div-gpt-ad-1438988612575-0').addService(googletag.pubads());
         //amazon
