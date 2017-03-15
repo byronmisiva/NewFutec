@@ -2,7 +2,6 @@
 
 class Banners extends MY_Controller
 {
-
     public $model = 'mdl_banners';
 
     public function __construct()
@@ -104,9 +103,7 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxnews6', $data, TRUE);
     }
-
     //banner sidebar
-
     public function FE_BigboxSidebar1($data = FALSE)
     {
         return $this->load->view('fe_bigboxsidebar1', $data, TRUE);
@@ -136,9 +133,7 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxsidebar6', $data, TRUE);
     }
-
     //fin banners sidebar
-
     public function FE_overlaybanner($data = FALSE)
     {
         return $this->load->view('fe_overlaybanner', $data, TRUE);
@@ -147,6 +142,11 @@ class Banners extends MY_Controller
     public function FE_interstitial($data = FALSE)
     {
         return $this->load->view('fe_interstitial', $data, TRUE);
+    }
+    
+    public function fe_mobile_intertisial($data = FALSE)
+    {
+        return $this->load->view('fe_banner_intertisial', $data, TRUE);
     }
 
     public function FE_Skyscraper1($data = FALSE)
