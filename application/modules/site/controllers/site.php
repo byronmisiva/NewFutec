@@ -143,8 +143,9 @@ class Site extends MY_Controller
 		$bannerTapTap =$this->banners->fe_desplegable_movil_tap_tap();
         $bannerBottom = $this->banners->fe_smart_bottom();
         $bannerTop = $this->banners->fe_smart_top();
+        $bannerIntertisial =$this->banners->fe_mobile_intertisial();
         $dataHeader2['FE_Bigboxbanner'] = "";
-        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop;
+        $data['header2'] = $this->contenido->header2mobile($dataHeader2) . $bannerTop. $bannerIntertisial;
         // recuperar codigo dpa-sportslive
         $query = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'dpa-sportslive'");
 
