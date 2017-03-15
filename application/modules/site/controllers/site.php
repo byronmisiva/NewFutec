@@ -25,7 +25,7 @@ class Site extends MY_Controller
     public $data = array();
 
     public $og_image = '';
-
+    
     public function __construct()
     {
         parent::__construct();
@@ -137,7 +137,7 @@ class Site extends MY_Controller
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
-
+        
         $data['top1'] = "";
         $data['header1'] = "";
 		$bannerTapTap =$this->banners->fe_desplegable_movil_tap_tap();
@@ -339,10 +339,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
             $fe_loading_movil = $this->banners->fe_loading_movil();
+            $fe_intertisial = $this->banners->fe_mobile_intertisial();
         } else {
             $bannerBottom = "";
             $bannerTop = "";
             $fe_loading_movil ="";
+            $fe_intertisial ="";
         }
 
 
@@ -404,7 +406,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS). $fe_loading_movil;
+        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS). $fe_loading_movil. $fe_intertisial;
         $data['sidebar'] = $this->contenido->sidebarOpenNews($patrocinada);
 
         $data['footer'] = $this->contenido->footer();
@@ -1474,10 +1476,6 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                                     "checked": "false",
                                     "id": "3",
                                     "name": "Noticias destacadas"
-                                    },{
-                                    "checked": "false",
-                                    "id": "76",
-                                    "name": "Copa América"
                                     },{
                                     "checked": "false",
                                     "id": "63",
