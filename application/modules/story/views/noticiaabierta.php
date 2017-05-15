@@ -31,7 +31,7 @@
         </div>
         <div class="margen10lados-sx fechaabierta">
             <?php setlocale(LC_ALL, "es_ES");
-            echo $noticia->origen . ", ".ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($noticia->created))));?>
+            echo $noticia->origen . ", " . ucwords(utf8_encode(strftime("%A %d %B %Y, %HH%M", strtotime($noticia->created)))); ?>
             <h2 class="h2noticiaabierta  "><?php echo $noticia->title; ?></h2>
         </div>
         <div class="margen10lados-sx">
@@ -69,7 +69,7 @@
                 
         	<div class="row separador10">
 				<div class="col-xs-2 text-center">
-					<span class='st_facebook_large' displayText='Facebook' style="z-index: -100;"></span>
+					<span class='st_facebook_large' displayText='Facebook'></span>
 				</div>	
 				<div class="col-xs-2 text-center">
 					<span class='st_twitter_large' displayText='Tweet'></span>
@@ -91,36 +91,24 @@
         <div class="margen10lados-sx  separador5">
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
         </div>
-        <div class="ebzHere"></div>
-        <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {?>
-            <!-- ubicacion para relacionadas -->
-            <?php 
-	            if ($noticia->tema == "0"){
-	            	if (strlen($tagsStorys) > 3) { ?>
-			            <div class="col-md-12 column ">
-			                <strong class="color-titular text-uppercase padding-left-2 p-l-20">Leer también</strong>  
-			            </div>
-			            <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
-			                <?php echo $tagsStorys; ?>
-			            </div>			
-	        	<?php }
-        		}?>
-        <?php }?>
-        
         <div class="videoPublicidad">
           <?php if (strlen($videoPublicidad) > 3) {
             echo $videoPublicidad; 
 			}?>
         </div>
         <div class="margen10lados-sx noticia-body">
-            <?php
-            
-            if ($noticia->tema == "1"){
-				$this->load->module('encuesta');
-				echo $this->encuesta->getFormulario();
+             <?php 
+//		echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8');
+
+           if ($noticia->tema == "1"){
+			$this->load->module('encuesta');
+			echo $this->encuesta->getFormulario();
+            }else if ($noticia->tema == "2"){
+            	$this->load->module('surveys');
+				echo $this->surveys->encuesta_formulario();
             }else{
             	echo html_entity_decode($noticia->body, ENT_COMPAT, 'UTF-8');
-            }
+            }   
             ?>
         </div>
         <div class="col-md-5  col-xs-12 margen0 hidden-md hidden-lg">
@@ -146,9 +134,7 @@
 					<span class='st_email_large' displayText='Email'></span>
 				</div>
 			 </div>
-        
-        </div>
-		            
+        </div>      
         </div>       
         <div class="banerintermedio">
             <?php  echo $banerintermedio; ?>
@@ -166,13 +152,24 @@
                    target="_blank"><?php echo $autor[0]->mail; ?></a><br/>
             <?php }
             ?>
-
+<div class="ebzHere"></div>
+        <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {?>
+            <!-- ubicacion para relacionadas -->
+        <?php 
+ 		if ($noticia->tema == "0"){
+		if (strlen($tagsStorys) > 3) { ?>
+            <div class="col-md-12 column ">
+                <strong class="color-titular text-uppercase padding-left-2 p-l-20">Leer también</strong>  
+            </div>
+            <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
+                <?php echo $tagsStorys; ?>
+            </div>			
+        	<?php } 
+		}?>
+        <?php }?>
             <a href="<?php echo base_url() . "site/noticia/" . $this->story->_urlFriendly($laVozDeLasTribunas[0]->title) . "/" . $laVozDeLasTribunas[0]->id ?>">
                 <strong>La voz de las tribunas:</strong> <?php echo $laVozDeLasTribunas[0]->title; ?></a>
-
-
             <br/>
-            
             	
         </div>
     </div>
