@@ -1,6 +1,6 @@
 <?php
-$turno = 0;
-$url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
+/*$turno = 0;
+$url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");*/
 ?>
 <style>
     /*.fondo-anuncio {
