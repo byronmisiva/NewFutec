@@ -3,7 +3,7 @@ $turno = 0;
 $url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
 ?>
 <style>
-    .fondo-anuncio {
+    /*.fondo-anuncio {
         background-color: #eaeaed;
         padding-bottom: 5px;
         margin-top: 10px;
@@ -83,9 +83,9 @@ $url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
             text-align: center;
             width: 19%;
         }
-    }
+    }*/
 </style>
-<a href="<?php echo $url[$turno] ?>" target="_blank" class="col-md-12 fondo-anuncio">
+<!-- <a href="<?php echo $url[$turno] ?>" target="_blank" class="col-md-12 fondo-anuncio">
     <div class="contenedor-anuncio">
             <div class="col-md-4 img-alertas">
                 <img src="<?php echo base_url() ?>imagenes/anuncio/app-futbolecuador.png">
@@ -96,4 +96,4 @@ $url = array("http://bit.ly/1Mpzlal", "http://bit.ly/1Y8AE15");
                 <p>Disponible para iOS y Android. Descárgala gratis aquí.</p>
             </div>
     </div>
-</a>
+</a>-->
