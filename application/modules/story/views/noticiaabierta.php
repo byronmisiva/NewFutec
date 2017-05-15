@@ -121,18 +121,19 @@
                    target="_blank"><?php echo $autor[0]->mail; ?></a><br/>
             <?php }
             ?>
-<div class="ebzHere"></div>
-        <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {?>
-            <!-- ubicacion para relacionadas -->
-        <?php 
- 		if ($noticia->tema == "0"){
+		<div class="ebzHere"></div>
+    <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
+ 	  	if ($noticia->tema == "0"){
 		if (strlen($tagsStorys) > 3) { ?>
-            <div class="col-md-12 column ">
+		<div class="row">
+			<div class="col-md-12 column ">
                 <strong class="color-titular text-uppercase padding-left-2 p-l-20">Te puede interesar</strong>  
             </div>
             <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
                 <?php echo $tagsStorys; ?>
-            </div>			
+            </div>
+		</div>
+            			
         	<?php } 
 		}?>
         <?php }?>
