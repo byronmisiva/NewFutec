@@ -38,35 +38,7 @@
             <h1 class="gris sub margen10lados-sx"><?php echo $noticia->subtitle; ?></h1>
         </div>
         <div class="col-md-5  col-xs-12 margen0">
-
-            <div class="col-md-12 col-xs-12 margen0 hidden-xs hidden-sm">
-                <!-- <div class="col-md-4 col-xs-3">
-                    <div class="fb-like"
-                         data-href="<?= 'http://www.futbolecuador.com/site/noticia/interesante/' . $noticia->id; ?>"
-                         data-send="false" 
-                         data-action="like"
-                         data-layout="button" 
-                         data-share="false"
-                         data-width="90" 
-                         data-show-faces="true"
-                         data-font="arial"></div>                         
-                </div>
-                </div>
-                <div class="col-md-4 col-xs-3 ">
-                    <a href="http://twitter.com/share" class="twitter-share-button"
-                       data-url="http://en.fut.ec/?l=<?= $noticia->id; ?>" data-text="<?= $noticia->twitter; ?>"
-                       data-count="vertical" data-via="futbolecuador" data-lang="es"
-                       data-counturl="<?= $link; ?>">Tweet</a>
-                    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-                </div>
-
-                <div class="col-md-0 col-xs-3 visible-xs-block margen0  ">
-                    <a class='ssba'
-                       data-action='share/whatsapp/share'
-                       href='whatsapp://send?text= <?= $noticia->title ?> <?php echo base_url() . $this->uri->segment(1) . '/' . $this->uri->segment(2) . '/' . $this->uri->segment(3) . '/' . $noticia->id; ?>'>
-                        <img border='0' src='<?php echo base_url() ?>imagenes/moviles/boton-whatapp2.png'/></a>
-                </div>-->
-                
+        <div class="col-md-12 col-xs-12 margen0 hidden-xs hidden-sm">                
         	<div class="row separador10">
 				<div class="col-xs-2 text-center">
 					<span class='st_facebook_large' displayText='Facebook'></span>
@@ -85,8 +57,7 @@
 					<span class='st_email_large' displayText='Email'></span>
 				</div>
 			 </div>
-        
-             </div>
+        </div>
         </div>
         <div class="margen10lados-sx  separador5">
             <?php echo html_entity_decode($noticia->lead, ENT_COMPAT, 'UTF-8'); ?>
@@ -138,10 +109,8 @@
         </div>       
         <div class="banerintermedio">
             <?php  echo $banerintermedio; ?>
-        </div>        
-		
+        </div>      		
         <div class="margen10lados-sx noticia-body separador10 col-xs-12 col-md-12 ">
-            <br/>
             <?php if (isset($autor[0]->twitter)) { ?>
                 <a href="http://www.twitter.com/<?php echo $autor[0]->twitter; ?>"
                    target="_blank">@<?php echo $autor[0]->twitter; ?></a><br/>
