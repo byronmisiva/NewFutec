@@ -159,7 +159,7 @@
  		if ($noticia->tema == "0"){
 		if (strlen($tagsStorys) > 3) { ?>
             <div class="col-md-12 column ">
-                <strong class="color-titular text-uppercase padding-left-2 p-l-20">Leer también</strong>  
+                <strong class="color-titular text-uppercase padding-left-2 p-l-20">Te puede interesar</strong>  
             </div>
             <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
                 <?php echo $tagsStorys; ?>
