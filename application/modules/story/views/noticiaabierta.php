@@ -125,7 +125,7 @@
     <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
  	  	if ($noticia->tema == "0"){
 		if (strlen($tagsStorys) > 3) { ?>
-		<div class="row">
+		<div class="row" style="margin-top: 10px;">
 			<div class="col-md-12 column ">
                 <strong class="color-titular text-uppercase padding-left-2 p-l-20">Te puede interesar</strong>  
             </div>
