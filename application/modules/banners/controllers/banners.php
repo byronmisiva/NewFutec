@@ -2,11 +2,16 @@
 
 class Banners extends MY_Controller
 {
+
     public $model = 'mdl_banners';
 
     public function __construct()
     {
         parent::__construct();
+    }
+    
+    function banner_video_der($data = FALSE){
+    	return $this->load->view('fe_video_inferior', $data, TRUE);
     }
 
     public function top1($data = FALSE)
@@ -32,6 +37,11 @@ class Banners extends MY_Controller
         return $this->load->view('fe_bigboxbanner', $data, TRUE);
     }
 
+    public function fe_mobile_intertisial($data = FALSE)
+    {
+        return $this->load->view('fe_banner_intertisial', $data, TRUE);
+    }
+
     public function FE_Megabanner($data = FALSE)
     {
         return $this->load->view('fe_megabanner', $data, TRUE);
@@ -41,7 +51,31 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxnews1', $data, TRUE);
     }
+	/*union layer*/
+    public function fe_union($data = FALSE)
+    {	
+    	return $this->load->view('union/fe_nissa', $data);
+    }
+    
+    public function fe_union2($data = FALSE)
+    {
+    	return $this->load->view('union/fe_s8', $data);
+    }
 
+    public function fe_union3($data = FALSE)
+    {
+    	return $this->load->view('union/fe_kia', $data);
+    }
+
+    public function fe_union4($data = FALSE)
+    {
+    	return $this->load->view('union/fe_kia_sport', $data);
+    }
+
+    public function fe_union_ford($data = FALSE)
+    {
+    	return $this->load->view('union/fe_ford', $data);
+    }
 
      public function anuncio_alertas($data = FALSE)
     {
@@ -51,11 +85,6 @@ class Banners extends MY_Controller
     public function fe_noticia_patrocinada($data = FALSE)
     {
     	return $this->load->view('fe_noticia_patrocinada', $data, TRUE);
-    }
-    
-    public function fe_corner_banner($data = FALSE)
-    {
-    	return $this->load->view('fe_corner_banner', $data, TRUE);
     }
     
 	public function fe_cinta_copa($data = FALSE)
@@ -103,7 +132,9 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxnews6', $data, TRUE);
     }
+
     //banner sidebar
+
     public function FE_BigboxSidebar1($data = FALSE)
     {
         return $this->load->view('fe_bigboxsidebar1', $data, TRUE);
@@ -133,7 +164,9 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxsidebar6', $data, TRUE);
     }
+
     //fin banners sidebar
+
     public function FE_overlaybanner($data = FALSE)
     {
         return $this->load->view('fe_overlaybanner', $data, TRUE);
@@ -142,11 +175,6 @@ class Banners extends MY_Controller
     public function FE_interstitial($data = FALSE)
     {
         return $this->load->view('fe_interstitial', $data, TRUE);
-    }
-    
-    public function fe_mobile_intertisial($data = FALSE)
-    {
-        return $this->load->view('fe_banner_intertisial', $data, TRUE);
     }
 
     public function FE_Skyscraper1($data = FALSE)
