@@ -10,8 +10,7 @@
         foreach ($noticia->tags as $tag) {
             $tags .= $tag->name . ", ";
         }
-    }
-    ?>
+    }?>
     <meta name="description"
           content="<?php echo (isset($description)) ? strip_tags($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
@@ -23,17 +22,25 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
           href="<?php echo base_url('assets/img/apple-touch-icon-72-precomposed.png') ?>"/>
     <link rel="apple-touch-icon-precomposed" href="<?= base_url('assets/img/apple-touch-icon-57-precomposed.png') ?>"/>
+   
     <meta name="twitter:widgets:csp" content="on">
+
     <!--twitter TAGS-->
     <meta name="twitter:card" content="app">
+
     <meta name="twitter:app:id:iphone" content="1008177383">
     <meta name="twitter:app:id:ipad" content="1008177383">
     <meta name="twitter:app:id:googleplay" content="com.misiva.futbolecuadorpush">
+    
+
     <meta name="twitter:widgets:csp" content="on">
     <meta name="twitter:app:country" content="US">
+
     <meta name="twitter:description" content="<?php echo (isset($description)) ? $description : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>" />
-	<meta name="apple-itunes-app" content="app-id=1131081518, app-argument=//www.futbolecuador.com">
-    <meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
+
+<!--	<meta name="apple-itunes-app" content="app-id=1131081518, app-argument=//www.futbolecuador.com">-->
+	<meta name="apple-itunes-app" content="app-id=1008177383, app-argument=//www.futbolecuador.com">
+	<meta name="google-play-app" content="app-id=com.misiva.futbolecuadorpush">
 
     <!--TAGS com.misiva.futbolecuadorpush 1008177383-->
     <!--TAGS com.futbolecuador.femagazine 622931242-->
@@ -105,9 +112,9 @@
     <!-- habilitar para desarrollar -->
      <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet">--> 
     <!-- habilitar para produccion--> 
-    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=7" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=8" rel="stylesheet">
     
-    <link href="<?php echo base_url('assets/css/sprites.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/css/sprites.css?version=3" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css"
           media="screen">
 
@@ -229,7 +236,25 @@
     <?php }elseif(($this->uri->segment(1) == "copa-america") || ($this->uri->segment(2) =="partido")){?>
     	<!--<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/auspicio.min.css') ?>"/>-->
     <?php }?>
-	
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '344183585977098');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=344183585977098&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 <body onload="verificarInstlacion();cargarSplash();">
 
@@ -257,14 +282,20 @@
 
 <script type='text/javascript'>
     googletag.cmd.push(function () {
-        googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1424964392222-0').addService(googletag.pubads());
+        //googletag.defineSlot('/1022247/FE_NEW_HALF', [260, 90], 'div-gpt-ad-1422631305437-0').addService(googletag.pubads());
+        //googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1424964392222-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/FE_NEW_HYPERBANNER', [980, 50], 'div-gpt-ad-1424964392222-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
         googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413318555463-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413318555463-3').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_LATERAL_4', [300, 250], 'div-gpt-ad-1413414586192-3').addService(googletag.pubads());
+//      googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads());
+	    googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+//      googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads());
+		googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+//      googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads());
+		googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+//      googletag.defineSlot('/1022247/FE_NEW_LATERAL_4', [300, 250], 'div-gpt-ad-1413414586192-3').addService(googletag.pubads());
+		googletag.defineSlot('/1022247/FE_NEW_LATERAL_4', [300, 250], 'div-gpt-ad-1413414586192-3').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+//      googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_1', [300, 250], 'div-gpt-ad-1413414586192-4').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_1', [300, 250], 'div-gpt-ad-1413414586192-4').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_2', [300, 250], 'div-gpt-ad-1413414586192-5').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1413414586192-6').addService(googletag.pubads());
@@ -272,26 +303,42 @@
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_5', [300, 250], 'div-gpt-ad-1413414586192-8').addService(googletag.pubads());
         //new 2015
         googletag.defineSlot('/1022247/NEW_FE_Video_VAST', [670, 370], 'div-gpt-ad-1457102356654-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_FILMSTRIP_BANNER', [300, 600], 'div-gpt-ad-1439997438966-0').addService(googletag.pubads());
+        //googletag.defineSlot('/1022247/FE_NEW_FILMSTRIP_BANNER', [300, 600], 'div-gpt-ad-1439997438966-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/FE_NEW_FILMSTRIP_BANNER', [300, 600], 'div-gpt-ad-1439997438966-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
         //new 2016
         googletag.defineSlot('/1022247/FE_NEW_UNIONLAYER', [800, 600], 'div-gpt-ad-1464046739579-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/SMART_TOP_EXPANDIO', [320, 200], 'div-gpt-ad-1464126935195-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_CINTA_AUSPICIO_COPA_AMERICA', [980, 50], 'div-gpt-ad-1464883876542-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_NEW_SQUAREBANNER_AUSPICIO_COPA_AMERICA', [300, 250], 'div-gpt-ad-1464883629839-0').addService(googletag.pubads());
+        //googletag.defineSlot('/1022247/SMART_TOP_EXPANDIO', [320, 200], 'div-gpt-ad-1464126935195-0').addService(googletag.pubads());
+        // googletag.defineSlot('/1022247/FE_NEW_CINTA_AUSPICIO_COPA_AMERICA', [980, 50], 'div-gpt-ad-1464883876542-0').addService(googletag.pubads());
+        // googletag.defineSlot('/1022247/FE_NEW_CINTA_AUSPICIO_COPA_AMERICA',[980, 50], 'div-gpt-ad-1464883876542-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+        // googletag.defineSlot('/1022247/FE_NEW_SQUAREBANNER_AUSPICIO_COPA_AMERICA', [300, 250], 'div-gpt-ad-1464883629839-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NOTICIA_PATROCINADA', [300, 250], 'div-gpt-ad-1465241512633-0').addService(googletag.pubads());
 googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466776607930-0').addService(googletag.pubads());
-		//2017
-		googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
         // publicidades en mobil
-        googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
+        /*ESPACIO QUE NO SE PUBLICA EN LA VERSIÓN*/
+        //googletag.defineSlot('/1022247/FE_HEADER', [320, 80], 'div-gpt-ad-1383593619381-0').addService(googletag.pubads());
+      //googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads()) 
+        googletag.defineSlot('/1022247/FE_SMART_TOP', [320, 50], 'div-gpt-ad-1383593619381-4').addService(googletag.pubads()).setCollapseEmptyDiv(true);        
+        //googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1383593619381-2').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+        
+       // googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads());
+       //googletag.defineSlot('/1022247/FE_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1383593619381-3').addService(googletag.pubads()).setCollapseEmptyDiv(true);   
+        /*BANNER SPLASH EN DESKTOP*/
         googletag.defineSlot('/1022247/FE_LOADING', [800, 600], 'div-gpt-ad-1425424774921-0').addService(googletag.pubads());
+        /*BANNER SPLASH EN MOVIL*/
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
         //googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
-//2017
-        googletag.defineOutOfPageSlot('/1022247/FE_SMART_SPLASH', 'div-gpt-ad-1488552546892-0').addService(googletag.pubads());
+	//2017
+	googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/web_mobile_medio', [320, 50], 'div-gpt-ad-1490653855570-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+	googletag.defineSlot('/1022247/netsonic', [1, 1], 'div-gpt-ad-1490820753625-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/netsonic_Secciones_Solo_USA', [1, 1], 'div-gpt-ad-1490820846662-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/LatinOn_1x1_USA', [1, 1], 'div-gpt-ad-1499696905612-0').addService(googletag.pubads());
+	//teads	
+	googletag.defineSlot('/1022247/teads_Home', [1, 1], 'div-gpt-ad-1493409384189-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/teads_Secciones', [1, 1], 'div-gpt-ad-1493409196824-0').addService(googletag.pubads());
         //netsonic
         googletag.defineSlot('/25992948/EC_futbolecuador.com_1x1', [1, 1], 'div-gpt-ad-1438988612575-0').addService(googletag.pubads());
         //amazon
@@ -299,14 +346,13 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         // si no existe contenido no muestra para el caso del header y splas
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
-    
+        
         //para el caso que no existe publicicad --MISIVA--
         googletag.pubads().collapseEmptyDivs(true);
 
         googletag.pubads().addEventListener('slotRenderEnded', function (event) {
             //para el caso de splash desktop
             if (event.slot.i == '/1022247/FE_LOADING') {
-                console.log("carga1 ");
                 if (event.isEmpty) {
                     cleanBlackLayer();
                 } else {
@@ -353,7 +399,7 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
     }
     ?>
     //espacios copa america
-    googletag.cmd.push(function () {
+    /*googletag.cmd.push(function () {
         googletag.defineSlot('/1022247/FE_BRAND_HEADER', [980, 50], 'div-gpt-ad-1432051647687-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_BRAND_HALF', [260, 90], 'div-gpt-ad-1432051647687-1').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_BRAND_SKY2', [728, 90], 'div-gpt-ad-1432051647687-2').addService(googletag.pubads());
@@ -365,11 +411,11 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/Marcador_en_vivo', [320, 80], 'div-gpt-ad-1444931286798-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/MARCADOR_EN_VIVO_SMART', [320, 50], 'div-gpt-ad-1444931286798-1').addService(googletag.pubads());
+        /*googletag.defineSlot('/1022247/Marcador_en_vivo', [320, 80], 'div-gpt-ad-1444931286798-0').addService(googletag.pubads());*/
+      /*  googletag.defineSlot('/1022247/MARCADOR_EN_VIVO_SMART', [320, 50], 'div-gpt-ad-1444931286798-1').addService(googletag.pubads());
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
-    });
+    });*/
     // fin espacios copa america
 </script>
 
@@ -409,7 +455,13 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         j.src =
             '//www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-53XBQP');
+
+	function ejecucionEvento(){
+		ga('create', 'UA-2423727-1', 'auto');
+		ga('send', 'event', 'Celtra','impresion','yaesta');
+	}
+</script>
 <!-- End Google Tag Manager -->
 
 
