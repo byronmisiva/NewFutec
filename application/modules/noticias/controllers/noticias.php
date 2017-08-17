@@ -77,7 +77,7 @@ class Noticias extends MY_Controller
             $banners[] = $this->banners->fe_expandible_noticia();
             //intercalo entre las noticias los banners.
             if ($totalMiniNews > 10) {
-            	array_splice($noticias, 2, 0, $banners[5]);
+            	array_splice($noticias, 1, 0, $banners[5]);
             	array_splice($noticias, 5, 0, $banners[0]);
                 array_splice($noticias, 10, 0, $banners[1]);
                 array_splice($noticias, 17, 0, $banners[2]);
