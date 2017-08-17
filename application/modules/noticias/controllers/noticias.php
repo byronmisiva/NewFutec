@@ -19,7 +19,6 @@ class Noticias extends MY_Controller
     {
         //$this->output->cache(CACHE_DEFAULT);
         $this->load->library('user_agent');
-
         $mobiles = array('Apple iPhone', 'Generic Mobile', 'SymbianOS');
         $isMobile = false;
         if ($this->agent->is_mobile()) {
@@ -27,8 +26,6 @@ class Noticias extends MY_Controller
             if (in_array($m, $mobiles))
                 $isMobile = true;
         }
-
-
         setlocale(LC_ALL, "es_ES");
         $this->load->module('story');
         $noticias = array();
@@ -61,9 +58,7 @@ class Noticias extends MY_Controller
         } else {
             $listRotativas = '';
         }
-        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas, $offset);
-        
-
+        $storys = $this->mdl_story->storys_by_tags("", $totalMiniNews, $listRotativas, $offset);      
         foreach ($storys as $story) {
             $dataStory['story'] = $story;
             $dataStory['isMobile'] = $isMobile;
@@ -78,9 +73,12 @@ class Noticias extends MY_Controller
             $banners[] = $this->banners->FE_Bigboxnews3();
             $banners[] = $this->banners->FE_Bigboxnews4();
             $banners[] = $this->banners->FE_Bigboxnews5();
+            /*nueva banner noticia expandible*/
+            $banners[] = $this->banners->fe_expandible_noticia();
             //intercalo entre las noticias los banners.
             if ($totalMiniNews > 10) {
-                array_splice($noticias, 5, 0, $banners[0]);
+            	array_splice($noticias, 2, 0, $banners[5]);
+            	array_splice($noticias, 5, 0, $banners[0]);
                 array_splice($noticias, 10, 0, $banners[1]);
                 array_splice($noticias, 17, 0, $banners[2]);
                 array_splice($noticias, 22, 0, $banners[3]);
@@ -109,12 +107,6 @@ class Noticias extends MY_Controller
         return $this->load->view('noticiashome', $data, TRUE);
     }
 
-    
-    public function viewLista($mes){
-    	setlocale(LC_ALL, "es_ES");
-    	$this->load->module('story');
-    	return $this->mdl_story->getNoticiaxMes($mes);
-    }
 
     public function viewNoticias($mostrarBanner = true, $totalMiniNews = RESULT_PAGE, $offset = 0, $data = FALSE)
     {
@@ -296,6 +288,12 @@ class Noticias extends MY_Controller
 
 
         return $this->load->view('noticiasrelacionadas', $data, TRUE);
+    }
+
+     public function viewLista($mes){
+    	setlocale(LC_ALL, "es_ES");
+    	$this->load->module('story');
+    	return $this->mdl_story->getNoticiaxMes($mes);
     }
 
     public function viewSeccions($namesection, $idsection, $posSection, $urlSeccion = "", $totalMiniNews = RESULT_PAGE, $offset = 0, $mostrarBanner = true, $data = FALSE, $excluded = "")
