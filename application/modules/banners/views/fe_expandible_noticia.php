@@ -10,7 +10,7 @@
 }
 
 .gwd-page-content.expanded.gwd-div-g7oi{
-	margin: 100px auto !important;
+	margin: 50px auto !important;
 	position: relative !important;
 }
 </style>
