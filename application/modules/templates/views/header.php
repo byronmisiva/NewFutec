@@ -294,11 +294,11 @@ src="https://www.facebook.com/tr?id=344183585977098&ev=PageView
         googletag.defineSlot('/1022247/FE_NEW', [728, 90], 'div-gpt-ad-1413318555463-2').addService(googletag.pubads());
         googletag.defineSlot('/1022247/FE_NEW_RECTANGLE', [300, 250], 'div-gpt-ad-1413318555463-3').addService(googletag.pubads());
 //      googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads());
-	    //googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+	    googletag.defineSlot('/1022247/FE_NEW_LATERAL_1', [300, 250], 'div-gpt-ad-1413414586192-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
 //      googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads());
-		//googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+		googletag.defineSlot('/1022247/FE_NEW_LATERAL_2', [300, 250], 'div-gpt-ad-1413414586192-1').addService(googletag.pubads()).setCollapseEmptyDiv(true);
 //      googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads());
-		//googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+		googletag.defineSlot('/1022247/FE_NEW_LATERAL_3', [300, 250], 'div-gpt-ad-1413414586192-2').addService(googletag.pubads()).setCollapseEmptyDiv(true);
 //      googletag.defineSlot('/1022247/FE_NEW_LATERAL_4', [300, 250], 'div-gpt-ad-1413414586192-3').addService(googletag.pubads());
 		googletag.defineSlot('/1022247/FE_NEW_LATERAL_4', [300, 250], 'div-gpt-ad-1413414586192-3').addService(googletag.pubads()).setCollapseEmptyDiv(true);
 //      googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_1', [300, 250], 'div-gpt-ad-1413414586192-4').addService(googletag.pubads());
@@ -336,18 +336,12 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         //googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
 	//2017
 	googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
-    googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
+        googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/web_mobile_medio', [320, 50], 'div-gpt-ad-1490653855570-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
 	googletag.defineSlot('/1022247/netsonic', [1, 1], 'div-gpt-ad-1490820753625-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/netsonic_Secciones_Solo_USA', [1, 1], 'div-gpt-ad-1490820846662-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/LatinOn_1x1_USA', [1, 1], 'div-gpt-ad-1499696905612-0').addService(googletag.pubads());
-
-    //googletag.defineSlot('/1022247/20-Noticia_Expandible',[320,340],'div-gpt-ad-1502927248158-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
-	/*espacio creado viernes*/
-    //googletag.defineSlot('/1022247/20-Noticia_Expandible', [320, 340], 'div-gpt-ad-1503088296523-0').addService(googletag.pubads());
-
-	
 	//teads	
 	googletag.defineSlot('/1022247/teads_Home', [1, 1], 'div-gpt-ad-1493409384189-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/teads_Secciones', [1, 1], 'div-gpt-ad-1493409196824-0').addService(googletag.pubads());
@@ -448,12 +442,7 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
-
     GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");
-    /*GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_LATERAL_3");
-    GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_LATERAL_2");
-    GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_LATERAL_1");*/
-    
     
 </script>
 
