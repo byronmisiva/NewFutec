@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es-EC">
 <head>
+<?php 
+  header("Cache-Control: max-age=2592000"); 
+?>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="content-language" content="es"/>
     <meta name="robots" content="follow,index,nocache"/>
@@ -10,7 +14,9 @@
         foreach ($noticia->tags as $tag) {
             $tags .= $tag->name . ", ";
         }
-    }?>
+    }
+    ?>
+
     <meta name="description"
           content="<?php echo (isset($description)) ? strip_tags($description) . "," . $tags : 'Fútbol Ecuador: Lo mejor del fútbol ecuatoriano. Noticias e información sobre campeonato ecuatoriano de fútbol, clubes, jugadores, eliminatorias mundial 2018, copa libertadores.'; ?>"/>
     <meta name="author" content="Misiva Corp"/>
@@ -112,9 +118,9 @@
     <!-- habilitar para desarrollar -->
      <!-- <link href="<?php echo base_url() ?>assets/css/style.css?a=3" rel="stylesheet">--> 
     <!-- habilitar para produccion--> 
-    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=8" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/style.min.css?a=9" rel="stylesheet">
     
-    <link href="<?php echo base_url()?>assets/css/sprites.css?version=3" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/css/sprites.css?version=9" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/js/smartbanner/jquery.smartbanner.css') ?>" type="text/css"
           media="screen">
 
@@ -329,14 +335,19 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         googletag.defineSlot('/1022247/FE_LOADING_MOVIL', [320, 350], 'div-gpt-ad-1383593884981-1').addService(googletag.pubads());
         //googletag.defineSlot('/1022247/FE_SKIN', [1800, 800], 'div-gpt-ad-1434137569309-0').addService(googletag.pubads());
 	//2017
-	   googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
-       googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
-	   googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
-	   googletag.defineSlot('/1022247/web_mobile_medio', [320, 50], 'div-gpt-ad-1490653855570-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
-	   googletag.defineSlot('/1022247/netsonic', [1, 1], 'div-gpt-ad-1490820753625-0').addService(googletag.pubads());
-	   googletag.defineSlot('/1022247/netsonic_Secciones_Solo_USA', [1, 1], 'div-gpt-ad-1490820846662-0').addService(googletag.pubads());
-	   googletag.defineSlot('/1022247/LatinOn_1x1_USA', [1, 1], 'div-gpt-ad-1499696905612-0').addService(googletag.pubads());
-	   googletag.defineSlot('/1022247/20-Noticia_Expandible', [320, 340], 'div-gpt-ad-1502927248158-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+	googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
+    googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/web_mobile_medio', [320, 50], 'div-gpt-ad-1490653855570-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+	googletag.defineSlot('/1022247/netsonic', [1, 1], 'div-gpt-ad-1490820753625-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/netsonic_Secciones_Solo_USA', [1, 1], 'div-gpt-ad-1490820846662-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/LatinOn_1x1_USA', [1, 1], 'div-gpt-ad-1499696905612-0').addService(googletag.pubads());
+
+    //googletag.defineSlot('/1022247/20-Noticia_Expandible',[320,340],'div-gpt-ad-1502927248158-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+	/*espacio creado viernes*/
+    //googletag.defineSlot('/1022247/20-Noticia_Expandible', [320, 340], 'div-gpt-ad-1503088296523-0').addService(googletag.pubads());
+
+	
 	//teads	
 	googletag.defineSlot('/1022247/teads_Home', [1, 1], 'div-gpt-ad-1493409384189-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/teads_Secciones', [1, 1], 'div-gpt-ad-1493409196824-0').addService(googletag.pubads());
@@ -437,6 +448,8 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
+
+    GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");    
 </script>
 
 <script type='text/javascript'>GA_googleFetchAds();</script>
