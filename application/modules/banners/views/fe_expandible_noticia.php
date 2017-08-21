@@ -10,8 +10,9 @@
 	}, 2500);
 </script>
 </div>-->
-
-<style>
+<!--  orde tecnomega
+2598-->
+<!-- 
 /*.gwd-pagedeck>.gwd-page {
     position: fixed;
     top: 0;
@@ -42,17 +43,9 @@
 	margin: 0 auto !important;
 	position: relative !important;
 }*/
-</style>
+ -->
 <div id='20-Noticia_Expandible' style='margin-top: 5px; width: 300px; height: 370px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
 </div>
-<script>
-	
-	/*setTimeout(function(){
-		var elem = $("#FE_NOTICIA_EXPANDIBLE");
-		var iframe = elem[0].children[1];
-		var iframe = $(iframe)[0].childNodes[0];
-		$(iframe).attr("height","370");
-	}, 2500);*/
-</script>
+
 
