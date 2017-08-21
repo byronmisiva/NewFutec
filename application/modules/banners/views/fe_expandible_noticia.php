@@ -40,7 +40,7 @@
 }
 
 .gwd-page-content.expanded.gwd-div-g7oi{
-	margin: 0 auto !important;
+	margin: 55px auto !important;
 	position: relative !important;
 }
 </style>
