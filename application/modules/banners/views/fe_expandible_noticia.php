@@ -28,7 +28,7 @@
     height: 100%;
 }*/
 
-#expanded-page{
+/*#expanded-page{
         width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
@@ -41,7 +41,7 @@
 .gwd-page-content.expanded.gwd-div-g7oi{
 	margin: 0 auto !important;
 	position: relative !important;
-}
+}*/
 </style>
 <div id='20-Noticia_Expandible' style='margin-top: 5px; width: 300px; height: 370px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
