@@ -1,3 +1,23 @@
+<style>
+#expanded-page{
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed !important;
+    z-index: 100000;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.gwd-page-content.expanded.gwd-div-g7oi{
+	margin: 100px auto !important;
+	position: relative !important;
+}
+</style>
+<div id='20-Noticia_Expandible' style='width: 320px; height: 370px;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
+    <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
+</div>
+
 <!-- /1022247/20-Noticia_Expandible 
 <div id='div-gpt-ad-1502927248158-0' style='height:380px; width:320px;'>
 <script>
@@ -12,38 +32,3 @@
 </div>-->
 <!--  orde tecnomega
 2598-->
-<style>
-/*.gwd-pagedeck>.gwd-page {
-    position: fixed;
-    top: 0;
-    left: 0; 
-    z-index: 10000;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
-}
-
-.gwd-page-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}*/
-
-#expanded-page{
-        width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    position: fixed !important;
-    z-index: 100000;
-    top: 0 !important;
-    left: 0 !important;
-}
-
-.gwd-page-content.expanded.gwd-div-g7oi{
-	margin: 55px auto !important;
-	position: relative !important;
-}
-</style>
-<div id='20-Noticia_Expandible' style='width: 320px; height: 370px;'>
-    <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
-</div>
