@@ -11,14 +11,14 @@
 </script>
 </div>-->
 <!-- /1022247/20-Noticia_Expandible -->
-<div id='div-gpt-ad-1502927248158-0' style='height:340px; width:320px;'>
+<!-- <div id='div-gpt-ad-1502927248158-0' style='height:340px; width:320px;'>
 <script>
 	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1502927248158-0'); });
 </script>
-</div>
-<!-- 
-<div id='20-Noticia_Expandible' style='margin-top: 5px; width: 300px; height: 370px;'>
+</div>-->
+
+<div id='20-Noticia_Expandible' style='width: 300px; height: 340px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
 </div>
--->
+
 
