@@ -1,4 +1,4 @@
-<!-- /1022247/20-Noticia_Expandible--> 
+<!-- /1022247/20-Noticia_Expandible 
 <div id='div-gpt-ad-1503088296523-0' style='height:380px; width:320px;'>
 <script>
 	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1503088296523-0'); });
@@ -9,7 +9,12 @@
 		$(iframe).attr("height","370");
 	}, 2500);
 </script>
-
+</div>-->
+<!-- /1022247/20-Noticia_Expandible -->
+<div id='div-gpt-ad-1502927248158-0' style='height:340px; width:320px;'>
+<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1502927248158-0'); });
+</script>
 </div>
 <!-- 
 <div id='20-Noticia_Expandible' style='margin-top: 5px; width: 300px; height: 370px;'>
