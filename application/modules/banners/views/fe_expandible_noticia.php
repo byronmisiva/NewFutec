@@ -44,6 +44,6 @@
 	position: relative !important;
 }
 </style>
-<div id='20-Noticia_Expandible' style='margin-top: 5px; width: 320px; height: 370px;'>
+<div id='20-Noticia_Expandible' style='width: 320px; height: 370px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
 </div>
