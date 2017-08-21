@@ -12,7 +12,7 @@
 </div>-->
 
 <style>
-.gwd-pagedeck>.gwd-page {
+/*.gwd-pagedeck>.gwd-page {
     position: fixed;
     top: 0;
     left: 0; 
@@ -41,7 +41,7 @@
 .gwd-page-content.expanded.gwd-div-g7oi{
 	margin: 0 auto !important;
 	position: relative !important;
-}
+}*/
 </style>
 <div id='20-Noticia_Expandible' style='margin-top: 5px; width: 300px; height: 370px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
