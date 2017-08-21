@@ -24,11 +24,11 @@
 
   </style>
   <script>
-  	AdobeEdge.loadComposition(baseUrl+'unionlayer/kia_marzo/index', 'EDGE-518637820', {
+  /*	AdobeEdge.loadComposition(baseUrl+'unionlayer/kia_marzo/index', 'EDGE-518637820', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",
 	    width: "1330px",
 	    height: "600px"},
-	     {dom: [ ]}, {dom: [ ]});
+	     {dom: [ ]}, {dom: [ ]});*/
   </script>
     <div class="pbl-union" >
 	   <div id="pbl-coke">
@@ -36,9 +36,9 @@
 	    </div>
 	</div>
 	<script>
-    AdobeEdge.loadComposition(baseUrl+'unionlayer/reto/index', 'EDGE-24483998', {
+    /*AdobeEdge.loadComposition(baseUrl+'unionlayer/reto/index', 'EDGE-24483998', {
     scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",
-    width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});
+    width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});*/
   </script>
   <div class="pbl-union2" >
 	    <div id="pbl-coke">
@@ -46,8 +46,8 @@
 	    </div>
 	</div>
 	<script>
-	    AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/uno/centro_new', 'EDGE-11811645', {
-	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+	    /*AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/uno/centro_new', 'EDGE-11811645', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});*/	
     </script>
 	  <div class="pbl-union4" >
 	    <div id="pbl-coke">
@@ -55,8 +55,9 @@
 	    </div>
 	</div>
 	<script>
-	    AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/promo/centro_new', 'EDGE-11811615', {
-	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+	    /*AdobeEdge.loadComposition(baseUrl+'unionlayer/patio_tuerca/promo/centro_new', 'EDGE-11811615', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});
+	    */	
     </script>
 	  <div class="pbl-union5" >
 	    <div id="pbl-coke">
@@ -64,8 +65,9 @@
 	    </div>
 	</div>
 	<script>
-	    AdobeEdge.loadComposition(baseUrl+'unionlayer/kia/kia', 'EDGE-61983072', {
-	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});	
+	  /*  AdobeEdge.loadComposition(baseUrl+'unionlayer/kia/kia', 'EDGE-61983072', {
+	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",width: "1330px",height: "600px"}, {dom: [ ]}, {dom: [ ]});
+	    */	
     </script>
 	<div class="pbl-union6" >
 	    <div id="pbl-coke">
