@@ -344,7 +344,7 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 	googletag.defineSlot('/1022247/LatinOn_1x1_USA', [1, 1], 'div-gpt-ad-1499696905612-0').addService(googletag.pubads());
 	//teads	
 	googletag.defineSlot('/1022247/teads_Home', [1, 1], 'div-gpt-ad-1493409384189-0').addService(googletag.pubads());
-	googletag.defineSlot('/1022247/teads_Secciones', [1, 1], 'div-gpt-ad-1493409196824-0').addService(googletag.pubads());
+	googletag.defineSlot('/1022247/teads_Secciones', [1, 1], 'div-gpt-ad-1493409196824-0').addService(googletag.pubads());    
         //netsonic
         googletag.defineSlot('/25992948/EC_futbolecuador.com_1x1', [1, 1], 'div-gpt-ad-1438988612575-0').addService(googletag.pubads());
         //amazon
@@ -390,6 +390,14 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
             }
         });
     });
+
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/1022247/20-Noticia_Expandible', [320, 340], 'div-gpt-ad-1503683104008-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().enableSyncRendering();
+    googletag.enableServices();
+  });
 </script>
 
 <script type='text/javascript'>
