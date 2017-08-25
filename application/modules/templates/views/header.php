@@ -441,9 +441,16 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 </script>
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
+    GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");
     //GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
 <script type='text/javascript'>GA_googleFetchAds();</script>
+<script type='text/javascript'>
+      GA_googleFillSlot("FE_HP_1");
+</script>
+<script type='text/javascript'>
+      GA_googleFillSlot("20-Noticia_Expandible");
+</script>
 <!-- Google Tag Manager -->
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
