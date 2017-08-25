@@ -14,16 +14,24 @@
 	position: relative !important;
 }
 </style>
+<!-- /1022247/20-Noticia_Expandible -->
+
+<div id='div-gpt-ad-1503683104008-0' style='height:340px; width:320px;'>
+
+<script>
+
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1503683104008-0'); });
+
+</script>
+
+</div>
+
 <!--<div id='20-Noticia_Expandible' style='width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
 </div>-->
 
 <!-- /1022247/20-Noticia_Expandible -->
-<div id="div-gpt-ad-1503680185877-0"  style="width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top:">
-	<script>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1503680185877-0'); });
-	</script>
-</div>
+
 
 <!-- /1022247/20-Noticia_Expandible 
 <div id='div-gpt-ad-1502927248158-0' style='height:380px; width:320px;'>
