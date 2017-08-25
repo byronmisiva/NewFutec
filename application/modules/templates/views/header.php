@@ -443,12 +443,11 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
 </script>
 <script type="text/javascript"><!--
-    google_ad_client = "ca-pub-7639897710482892";
-    google_ad_width = 300;
-    google_ad_height = 250;
+    GS_googleAddAdSenseService("ca-pub-6524814287944535");
+    GS_googleEnableAllServices();
+    GA_googleAddSlot("ca-pub-6524814287944535", "jairo");
 </script>
-<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
+
 <script type='text/javascript'>
     /*GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
     GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");*/    
