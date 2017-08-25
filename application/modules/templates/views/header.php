@@ -439,15 +439,20 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");
+    GS_googleAddAdSenseService("ca-pub-7639897710482892");
     GS_googleEnableAllServices();
 </script>
 <script type='text/javascript'>
-    //GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
-    //GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
-    GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");
-    
+    GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
+    GA_googleAddSlot("ca-pub-7639897710482892", "20-Noticia_Expandible");
 </script>
 
+<script type='text/javascript'>
+    /*GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
+    GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");*/    
+</script>
+    
+</script>
 <script type='text/javascript'>GA_googleFetchAds();</script>
 <!-- Google Tag Manager -->
 <noscript>
