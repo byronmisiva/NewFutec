@@ -436,18 +436,23 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         });
     </script>
 </div>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineOutOfPageSlot('/1022247/20-Noticia_Expandible', 'div-gpt-ad-1503680185877-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().enableSyncRendering();
+    googletag.enableServices();
+  });
+</script>
+
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");
     GS_googleEnableAllServices();
     GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");
 </script>
-<script type="text/javascript"><!--
-    GS_googleAddAdSenseService("ca-pub-6524814287944535");
-    GS_googleEnableAllServices();
-    GA_googleAddSlot("ca-pub-6524814287944535", "jairo");
-</script>
-
 <script type='text/javascript'>
     /*GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
     GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");*/    
