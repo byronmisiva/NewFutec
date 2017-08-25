@@ -14,8 +14,8 @@
 	position: relative !important;
 }
 </style>
-<div id='20-Noticia_Expandible' style='width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
-    <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
+<div id='AdX_300x250' style='width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
+    <script type='text/javascript'>GA_googleFillSlot("AdX_300x250");</script>
 </div>
 
 <!-- /1022247/20-Noticia_Expandible 
