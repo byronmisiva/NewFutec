@@ -345,15 +345,12 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 	//teads	
 	googletag.defineSlot('/1022247/teads_Home', [1, 1], 'div-gpt-ad-1493409384189-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/teads_Secciones', [1, 1], 'div-gpt-ad-1493409196824-0').addService(googletag.pubads());
-    googletag.defineOutOfPageSlot('/1022247/20-Noticia_Expandible', 'div-gpt-ad-1503680185877-0').addService(googletag.pubads());
         //netsonic
         googletag.defineSlot('/25992948/EC_futbolecuador.com_1x1', [1, 1], 'div-gpt-ad-1438988612575-0').addService(googletag.pubads());
         //amazon
         googletag.defineSlot('/1022247/Amazon_associates', [665, 370], 'div-gpt-ad-1445466832316-0').addService(googletag.pubads());
         // si no existe contenido no muestra para el caso del header y splas
         googletag.pubads().enableSingleRequest();
-        googletag.pubads().collapseEmptyDivs();
-        googletag.pubads().enableSyncRendering();
         googletag.enableServices();
         
         //para el caso que no existe publicicad --MISIVA--
