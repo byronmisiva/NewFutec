@@ -1,4 +1,4 @@
-<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+<!--<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");
     GS_googleEnableAllServices();
@@ -6,8 +6,7 @@
 <script type='text/javascript'>
     GA_googleAddSlot("ca-pub-2857298972794488", "20-Noticia_Expandible");
 </script>
-<script type='text/javascript'>GA_googleFetchAds();</script>
-
+<script type='text/javascript'>GA_googleFetchAds();</script>-->
 <style>
 #expanded-page{
 	width: 100%;
@@ -24,26 +23,6 @@
 	position: relative !important;
 }
 </style>
-
-
 <div id='20-Noticia_Expandible' style='width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
     <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
 </div>
-
-<!-- /1022247/20-Noticia_Expandible -->
-
-
-<!-- /1022247/20-Noticia_Expandible 
-<div id='div-gpt-ad-1502927248158-0' style='height:380px; width:320px;'>
-<script>
-	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1502927248158-0'); });
-	setTimeout(function(){
-		var elem = $("#div-gpt-ad-1502927248158-0");
-		var iframe = elem[0].children[1];
-		var iframe = $(iframe)[0].childNodes[0];
-		$(iframe).attr("height","370");
-	}, 2500);
-</script>
-</div>-->
-<!--  orde tecnomega
-2598-->
