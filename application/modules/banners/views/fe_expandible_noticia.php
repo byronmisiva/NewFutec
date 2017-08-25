@@ -14,8 +14,15 @@
 	position: relative !important;
 }
 </style>
-<div id='AdX_300x250' style='width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
-    <script type='text/javascript'>GA_googleFillSlot("AdX_300x250");</script>
+<!--<div id='20-Noticia_Expandible' style='width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top: -2px;'>
+    <script type='text/javascript'>GA_googleFillSlot("20-Noticia_Expandible");</script>
+</div>-->
+
+<!-- /1022247/20-Noticia_Expandible -->
+<div id="div-gpt-ad-1503680185877-0"  style="width: 320px; height: auto;margin: 0;padding: 0;line-height: 0;margin-top:">
+	<script>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1503680185877-0'); });
+	</script>
 </div>
 
 <!-- /1022247/20-Noticia_Expandible 
