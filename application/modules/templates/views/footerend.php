@@ -20,6 +20,7 @@
     .pbl_unionajax-noticia{
     	height: 100%;left: 0;position: fixed;top: 0;
     	width: 100%;z-index: 100000000;display:none;	
+    	background-color: rgba(0,0,0,0.5);
     }
     
     #Stage_arranca, #Stage_cierra{
@@ -43,7 +44,7 @@
 		    color: #fff;
 		    font-size: 20px;
 		    z-index: 10000000;
-		        background-color: rgba(0,0,0,0.5);
+		        
 	}
 </style>
 
