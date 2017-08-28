@@ -27,10 +27,6 @@
 	<div class="btn-cerrar-expandible">Cerrar</div>
 </div>
 
-<script type="text/javascript">
-	
-
-</script>
 
 <script type="text/javascript">
 /*evento click*/
@@ -38,10 +34,6 @@ $(document).ready(function () {
 	$(".btn-cerrar-expandible").click(function () {
 		$(".pbl_unionajax").hide();
         $(".pbl_unionajax").html("");
-    });
-
-    $(".js--click-lateral").click(function () {
-           window.parent.unionlayerSony();
     });
 });
 </script>
