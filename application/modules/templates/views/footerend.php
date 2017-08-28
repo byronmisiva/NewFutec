@@ -219,7 +219,7 @@
 
 	function unionlayerCoke(){
 		$(".pbl_unionajax-noticia").html("");
-		var contenidoIframe = "<div id='pbl-coke'><iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html' scrolling='no'></iframe><div class='btn-cerrar-expandible'>Cerrar</div></div>	";
+		var contenidoIframe = "<div class='contenedor-expandible'><iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html' scrolling='no'></iframe><div class='btn-cerrar-expandible'>Cerrar</div></div>	";
 		$(".pbl_unionajax-noticia").html(contenidoIframe);
 		$(".pbl_unionajax-noticia").fadeIn();
 	}
