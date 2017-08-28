@@ -226,6 +226,7 @@
 		var contenidoIframe = "<div class='contenedor-expandible'><iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html' scrolling='no' frameborder='0'></iframe><div class='btn-cerrar-expandible' onclick='cerrarNoticiaBanner()'>Cerrar</div></div>	";
 		$(".pbl_unionajax-noticia").html(contenidoIframe);
 		$(".pbl_unionajax-noticia").fadeIn();
+		ga('send', 'event', 'noticia_expandible', 'click', 'expande');
 	}
 
 function cerrarNoticiaBanner(){
