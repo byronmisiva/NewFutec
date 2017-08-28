@@ -229,8 +229,8 @@
 	}
 
 function cerrarNoticiaBanner(){
-	$('.pbl_unionajax').hide();
-	$('.pbl_unionajax').html('');
+	$('.pbl_unionajax-noticia').hide();
+	$('.pbl_unionajax-noticia').html('');
 }
 	
 </script>	
