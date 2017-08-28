@@ -379,10 +379,8 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
     }} else {
      echo "mostrarSplash = 0;";
     }
-    ?>
-  
+    ?>  
 </script>
-
 <!-- Tag Netsonic-->
 <!-- /25992948/EC_futbolecuador.com_1x1 -->
 <div id='div-gpt-ad-1438988612575-0' style='height:1px; width:1px;'>
@@ -392,7 +390,6 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         });
     </script>
 </div>
-
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
     GS_googleAddAdSenseService("ca-pub-2857298972794488");
@@ -405,19 +402,6 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 <script type='text/javascript'>
     GA_googleFetchAds();
 </script>
-
-<!-- nuevo formato 20 noticia expandible -->
-<script type='text/javascript'>
-    //GS_googleAddAdSenseService("ca-pub-2857298972794488");
-    //GS_googleEnableAllServices();
-</script>
-<script type='text/javascript'>
-   //GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_BRAND");
-</script>
-<script type='text/javascript'>
-    //GA_googleFetchAds();
-</script>
-
 <!-- Google Tag Manager -->
 <noscript>
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-53XBQP"
