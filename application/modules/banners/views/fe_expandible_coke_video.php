@@ -1,4 +1,4 @@
-<style>
+<!--<style>
 .contenedor-expandibl{
 	margin: 25px auto;
 	position: relative;
@@ -12,16 +12,12 @@
 	top: 25px;	
 }
 
-</style>
-
+</style>-->
 <div class="contenedor-expandible">
 	<iframe class="contenedor-video" width="800" height="600" src="http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html"></iframe>	
 	<div class="btn-cerrar-expandible">Cerrar</div>
 </div>
-
-
 <script type="text/javascript">
-/*evento click*/
 $(document).ready(function () {
 	$(".btn-cerrar-expandible").click(function () {
 		$(".pbl_unionajax").hide();
