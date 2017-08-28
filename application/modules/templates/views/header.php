@@ -314,6 +314,8 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
         googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/Interstitial_Fullscreen_FE-Mobile', [1, 1], 'div-gpt-ad-1489615543513-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/web_mobile_medio', [320, 50], 'div-gpt-ad-1490653855570-0').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+    //2017
+    googletag.defineSlot('/1022247/20-Noticia_Expandible', [320, 340], 'div-gpt-ad-1503683104008-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/netsonic', [1, 1], 'div-gpt-ad-1490820753625-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/netsonic_Secciones_Solo_USA', [1, 1], 'div-gpt-ad-1490820846662-0').addService(googletag.pubads());
 	googletag.defineSlot('/1022247/LatinOn_1x1_USA', [1, 1], 'div-gpt-ad-1499696905612-0').addService(googletag.pubads());
@@ -378,25 +380,7 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
      echo "mostrarSplash = 0;";
     }
     ?>
-    //espacios copa america
-    /*googletag.cmd.push(function () {
-        googletag.defineSlot('/1022247/FE_BRAND_HEADER', [980, 50], 'div-gpt-ad-1432051647687-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_BRAND_HALF', [260, 90], 'div-gpt-ad-1432051647687-1').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_BRAND_SKY2', [728, 90], 'div-gpt-ad-1432051647687-2').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_BRAND_SMART_BOTTOM', [320, 50], 'div-gpt-ad-1432051647687-3').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_BRAND_SMART_HEADER', [320, 80], 'div-gpt-ad-1432051647687-4').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_BRAND_SMART_MIDDLE', [320, 50], 'div-gpt-ad-1432051647687-5').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_BRAND_SMART_TOP', [320, 50], 'div-gpt-ad-1432051647687-6').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_HP_BRAND', [300, 250], 'div-gpt-ad-1432051647687-7').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_HP_BRAND2', [300, 250], 'div-gpt-ad-1432051647687-8').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SKYSCRAPER_DE', [160, 600], 'div-gpt-ad-1450734059657-0').addService(googletag.pubads());
-        googletag.defineSlot('/1022247/FE_SKYSCRAPER_IZ', [160, 600], 'div-gpt-ad-1450734059657-1').addService(googletag.pubads());
-        /*googletag.defineSlot('/1022247/Marcador_en_vivo', [320, 80], 'div-gpt-ad-1444931286798-0').addService(googletag.pubads());*/
-      /*  googletag.defineSlot('/1022247/MARCADOR_EN_VIVO_SMART', [320, 50], 'div-gpt-ad-1444931286798-1').addService(googletag.pubads());
-        googletag.pubads().enableSingleRequest();
-        googletag.enableServices();
-    });*/
-    // fin espacios copa america
+  
 </script>
 
 <!-- Tag Netsonic-->
@@ -411,14 +395,16 @@ googletag.defineSlot('/1022247/FE_NEW_RECTANGLE_3', [300, 250], 'div-gpt-ad-1466
 
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
 <script type='text/javascript'>
-    GS_googleAddAdSenseService("ca-pub-2857298972794488");
-    GS_googleEnableAllServices();
+    //GS_googleAddAdSenseService("ca-pub-2857298972794488");
+    //GS_googleEnableAllServices();
 </script>
 <script type='text/javascript'>
-    GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");   
+    //GA_googleAddSlot("ca-pub-2857298972794488", "FE_HP_1");   
     ////GA_googleAddSlot("ca-pub-2857298972794488", "FE_NEW_HYPERBANNER");
 </script>
-<script type='text/javascript'>GA_googleFetchAds();</script>
+<script type='text/javascript'>
+//GA_googleFetchAds();
+</script>
 
 <!-- nuevo formato 20 noticia expandible -->
 <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
