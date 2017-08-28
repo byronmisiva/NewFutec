@@ -16,12 +16,33 @@
     .pbl-union4, .pbl-union5, .pbl-union6{height: 100%;left: 0;position: fixed;top: 120px;
     	width: 100%;z-index: 100000000;display:none;
     }
+
+    .pbl_unionajax-noticia{
+    	height: 100%;left: 0;position: fixed;top: 0;
+    	width: 100%;z-index: 100000000;display:none;	
+    }
     
     #Stage_arranca, #Stage_cierra{
     display:none !important;
     }
 
   </style>
+
+<style>
+	.contenedor-expandibl{
+		margin: 25px auto;
+		position: relative;
+		width: 800px;
+		height: 600px;
+	}
+
+	.btn-cerrar-expandible{
+		position: absolute;
+		right: 45px;
+		top: 25px;	
+	}
+</style>
+
   <script>
   	AdobeEdge.loadComposition(baseUrl+'unionlayer/kia_marzo/index', 'EDGE-518637820', {
 	    scaleToFit: "none",centerStage: "none",minW: "0px",maxW: "undefined",
@@ -73,6 +94,7 @@
 	</div>
 		
 	<div class="pbl_unionajax"></div>
+	<div class="pbl_unionajax-noticia"></div>
 
 	<div class="pbl-union3" >
 	<div id="pbl-coke">
@@ -196,10 +218,10 @@
 	}
 
 	function unionlayerCoke(){
-		$(".pbl_unionajax").html("");
-		var contenidoIframe = "<iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html'></iframe>	";
-		$(".pbl_unionajax").html(contenidoIframe);
-		$(".pbl_unionajax").fadeIn();
+		$(".pbl_unionajax-noticia").html("");
+		var contenidoIframe = "<div id='pbl-coke'><iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html' scrolling='no'></iframe><div class='btn-cerrar-expandible'>Cerrar</div></div>	";
+		$(".pbl_unionajax-noticia").html(contenidoIframe);
+		$(".pbl_unionajax-noticia").fadeIn();
 	}
 </script>	
 <?php }?>
