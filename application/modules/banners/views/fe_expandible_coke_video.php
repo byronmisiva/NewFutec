@@ -13,10 +13,13 @@
 }
 
 </style>-->
-<div class="contenedor-expandible">
-	<iframe class="contenedor-video" width="800" height="600" src="http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html"></iframe>	
+
+<iframe class="contenedor-video" width="800" height="600" src="http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html"></iframe>	
+
+<!--<div class="contenedor-expandible">
+	
 	<div class="btn-cerrar-expandible">Cerrar</div>
-</div>
+</div>-->
 <script type="text/javascript">
 $(document).ready(function () {
 	$(".btn-cerrar-expandible").click(function () {
