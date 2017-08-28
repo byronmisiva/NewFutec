@@ -188,7 +188,7 @@
 	}
 
 	function unionlayerSony(){
-		$(".pbl_unionajax").load("<?php echo base_url('')?>banners/fe_sony");
+		$(".pbl_unionajax").load("<?php echo base_url()?>banners/fe_sony");
 		$("#div-gpt-ad-1450734059657-0").hide();
 		$("#div-gpt-ad-1450734059657-1").hide();
 		$(".pbl_unionajax").fadeIn();
@@ -196,7 +196,9 @@
 	}
 
 	function unionlayerCoke(){
-		$(".pbl_unionajax").load("<?php echo base_url('')?>banners/fe_expan_coke");
+		$(".pbl_unionajax").html("");
+		var contenidoIframe = "<iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html'></iframe>	";
+		$(".pbl_unionajax").html(contenidoIframe);
 		$(".pbl_unionajax").fadeIn();
 	}
 </script>	
