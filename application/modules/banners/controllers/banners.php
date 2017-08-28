@@ -18,7 +18,7 @@ class Banners extends MY_Controller
     	return $this->load->view('fe_expandible_noticia', $data, TRUE);
     }
 
-    function fe_expan_coke()($data = FALSE){
+    function fe_expan_coke($data = FALSE){
         return $this->load->view('fe_expandible_coke_video', $data, TRUE);
     }
     public function top1($data = FALSE)
