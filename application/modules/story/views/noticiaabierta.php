@@ -28,6 +28,19 @@
                     
                 <?php //echo $bannerTop; ?>
             </div>
+             <div class="row">
+                  <div class="col-xs-12">
+                    <?php 
+                        $this->load->module('site');
+                        $mobile = $this->site->verificarDispositivo();
+                        if($mobile == "1"){
+                            $this->load->module('banners');
+                            echo $this->banners->fe_smart_top();    
+                        }
+                    ?>
+                  </div>
+             </div>
+            
         </div>
         <div class="margen10lados-sx fechaabierta">
             <?php setlocale(LC_ALL, "es_ES");
@@ -106,7 +119,20 @@
 				</div>
 			 </div>
         </div>      
-        </div>       
+        </div>     
+        <div class="row">
+            <div class="col-xs-12">
+                <?php
+                    $mobile = $this->site->verificarDispositivo();
+                    if($mobile == "1"){
+                        $this->load->module('banners');
+                        echo $this->banners->FE_Bigboxnews3();    
+                    }
+                ?> 
+            </div>
+        </div>  
+  
+
         <div class="banerintermedio">
             <?php  echo $banerintermedio; ?>
         </div>      		
@@ -125,14 +151,13 @@
     <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
  	  	if ($noticia->tema == "0"){
 		if (strlen($tagsStorys) > 3) { ?>
-		<div class="row" style="margin-top: 10px;">
-			<div class="col-md-12 column ">
+			<div class="col-md-12 column " style="margin-top: 10px;">
                 <strong class="color-titular text-uppercase padding-left-2 p-l-20">Te puede interesar</strong>  
             </div>
             <div class="col-xs-12 col-md-12 margen0 tagstorys content-gris-sin-margin">
                 <?php echo $tagsStorys; ?>
             </div>
-		</div>
+		
             			
         	<?php } 
 		}?>
