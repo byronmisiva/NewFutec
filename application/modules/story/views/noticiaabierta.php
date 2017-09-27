@@ -120,19 +120,6 @@
 			 </div>
         </div>      
         </div>     
-        <div class="row">
-            <div class="col-xs-12">
-                <?php
-                    $mobile = $this->site->verificarDispositivo();
-                    if($mobile == "1"){
-                        $this->load->module('banners');
-                        echo $this->banners->FE_Bigboxnews3();    
-                    }
-                ?> 
-            </div>
-        </div>  
-  
-
         <div class="banerintermedio">
             <?php  echo $banerintermedio; ?>
         </div>      		
@@ -148,6 +135,17 @@
             <?php }
             ?>
 		<div class="ebzHere"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <?php
+                    $mobile = $this->site->verificarDispositivo();
+                    if($mobile == "1"){
+                        $this->load->module('banners');
+                        echo $this->banners->FE_Bigboxnews3();    
+                    }
+                ?> 
+            </div>
+        </div>  
     <?php if (!strpos($noticia->body, "Lee la noticia completa en")) {
  	  	if ($noticia->tema == "0"){
 		if (strlen($tagsStorys) > 3) { ?>
