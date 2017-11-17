@@ -5,8 +5,8 @@
       foreach ($rotativasData as &$rotativa) 
       {
          if ($cont == 5){?>
-            <li style="height: 348px;" >
-                 <script src="//player.performgroup.com/eplayer.js#4d26fa1551d1c3ec163748b073.1c09jd19fxf3oz6towba3lina$videoid=m59vbqazpz2i1niecgml8v0k8" async></script>
+            <li style="height: 348px;" data-thumb="http://www.futbolecuador.com/<?php echo $rotativa->thumbh80; ?>">
+                 <script src="//player.performgroup.com/eplayer.js#711e8a5ffd743a6badd37f21a2.1c09jd19fxf3oz6towba3lina" async></script>
             </li>
       <?php }
             else
