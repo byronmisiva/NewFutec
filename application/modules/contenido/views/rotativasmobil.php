@@ -4,20 +4,22 @@
          $cont = 1;
         foreach ($rotativasData as &$rotativa) 
         {
-        if ($cont == 5){?>
+        if ($cont == 5)
+        {?>
             <li style="height: 348px;position: relative;" data-thumb="http://www.futbolecuador.com/assets/img/icono-video.jpg">
                  <script src="//player.performgroup.com/eplayer.js#711e8a5ffd743a6badd37f21a2.1c09jd19fxf3oz6towba3lina" async></script>
             </li>
-      <?php }
-            else
-            {
-               $linkbody = $rotativa->subtitle;
-            if ($linkbody == "")
-                $linkbody = $rotativa->title;
+      <?php 
+        }
+        else
+        {
+           $linkbody = $rotativa->subtitle;
+           if ($linkbody == "")
+            $linkbody = $rotativa->title;
             $link = base_url() . 'site/noticia/' . $this->contenido->_urlFriendly($linkbody) . '/' . $rotativa->id;
             if (isset($rotativa->openseccion)) {
-                if ($rotativa->openseccion != '')
-                    $link = base_url() . $rotativa->openseccion;
+               if ($rotativa->openseccion != '')
+                  $link = base_url() . $rotativa->openseccion;
             }
             ?>
             <li>
@@ -35,12 +37,10 @@
                 </div>
 
             </li> 
-         <?php }
-             $cont++; 
+         <?php 
+            }
+            $cont++; 
+         } 
          ?>
-
-
-            
-        <?php } ?>
     </ul>
 </div>
