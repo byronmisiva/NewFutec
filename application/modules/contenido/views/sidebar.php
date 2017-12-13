@@ -283,7 +283,7 @@
     <? echo $bannersSidebar[0]; ?>
 </div>
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <ifrane src="http://appss.misiva.com.ec/marcador" width="100%" height="500px">
+    <iframe src="http://appss.misiva.com.ec/marcador" style="height: 500px;width: 300px;float: left;"></iframe>
 </div>
 
 <!--Tabla de Posiciones-->
