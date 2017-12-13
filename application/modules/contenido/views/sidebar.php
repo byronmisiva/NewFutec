@@ -40,6 +40,10 @@
 </div>
 
 <div class="col-md-12 col-xs-12 separador10 margen0r">
+    <? echo $bannersSidebar[0]; ?>
+</div>
+
+<div class="col-md-12 col-xs-12 separador10 margen0r">
     <iframe src="http://appss.misiva.com.ec/marcador/lduvstuni/" scrolling="no" frameborder="0" style="height: 500px;width: 300px;float: left;"></iframe>
 </div>
 
@@ -286,9 +290,9 @@
 </div>
 <!--Fin calendario -->
 
-<div class="col-md-12 col-xs-12 separador10 margen0r">
+<!--<div class="col-md-12 col-xs-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
-</div>
+</div>-->
 
 <!--Tabla de Posiciones-->
 <?php // echo $tablaposiciones; ?>
