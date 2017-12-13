@@ -35,6 +35,13 @@
     </span>
     </div>
 </div>
+<div class="col-md-12 col-xs-12 separador10 margen0r">
+    <iframe src="http://appss.misiva.com.ec/marcador" style="height: 500px;width: 300px;float: left;"></iframe>
+</div>
+
+<div class="col-md-12 col-xs-12 separador10 margen0r">
+    <iframe src="http://appss.misiva.com.ec/marcador/lduvstuni/" style="height: 500px;width: 300px;float: left;"></iframe>
+</div>
 
 <div class="col-md-4 col-xs-4 separador10 pull-right margen0">
     <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
@@ -282,12 +289,9 @@
 <div class="col-md-12 col-xs-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
 </div>
-<div class="col-md-12 col-xs-12 separador10 margen0r">
-    <iframe src="http://appss.misiva.com.ec/marcador" style="height: 500px;width: 300px;float: left;"></iframe>
-</div>
 
 <!--Tabla de Posiciones-->
-<? echo $tablaposiciones; ?>
+<?php // echo $tablaposiciones; ?>
 
 
 <!--banner lateral 2 -->
