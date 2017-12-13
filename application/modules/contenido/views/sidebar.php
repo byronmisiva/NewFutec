@@ -1,6 +1,6 @@
 <!-- social y buscar -->
-<div class="col-md-12 col-xs-12 separador10  margen0">
-    <div class="col-md-3 col-lg-3  ">
+<div class="col-md-8 col-xs-8 separador10  margen0">
+    <div class="col-md-4 col-xs-4  ">
     <span class="social-pos">
         <script>!function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -16,37 +16,27 @@
            data-show-screen-name="false">Seguir a @futbolecuador</a>
     </span>
     </div>
-    <div class="col-md-3 col-lg-3  ">
+    <div class="col-md-4 col-xs-4  ">
     <span class="social-pos">
         <iframe
             src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Ffutbolecuador&amp;locale=es_ES&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true&amp;appId=1396413573964675"
             style="border:none; overflow:hidden; width:60px; height:35px; border:0"></iframe>
     </span>
     </div>
-    <div class="col-md-3 col-xs-3  ">
-    <!-- <span class="social-pos">
+    <div class="col-md-4 col-xs-4  ">
+    <span class="social-pos">
         <span class="ig-follow" data-id="a83ed5" data-handle="futbolecuadorcom" data-count="false" data-size="small"
               data-username="false"></span>
-                    <script>(function (d, t) {
+                    <script>/*(function (d, t) {
                             var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
                             g.src = "//x.instagramfollowbutton.com/follow.js";
                             s.parentNode.insertBefore(g, s);
-                        }(document, "script"));</script>
-    </span>-->
-    
-    <style><!--
-		.ig-b- { display: inline-block; } .ig-b- img { visibility: hidden; } .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; } .ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; } @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { .ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }
---></style>
-    <a class="ig-b- ig-b-48" href="https://www.instagram.com/futbolecuadorcom/?ref=badge"><img alt="Instagram" src="//badges.instagram.com/static/images/ig-badge-48.png" /></a>
-    
+                        }(document, "script"));*/</script>
+    </span>
     </div>
-    <div class="col-md-3 col-xs-3  ">    
-		<a href="https://soundcloud.com/user-13413667" target="_blank">
-		<img title="SoundCloud (Buttons by NiftyButtons.com)" src="http://www.niftybuttons.com/soundcloud/soundcloud1.png"></a>
-    </div>    
 </div>
 
-<div class="col-md-12 col-xs-12 separador10 pull-right margen0">
+<div class="col-md-4 col-xs-4 separador10 pull-right margen0">
     <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cx" value="004910472998778424762:cfsv-n7w47w">
         <input type="hidden" name="cof" value="FORID:11">
@@ -291,6 +281,9 @@
 
 <div class="col-md-12 col-xs-12 separador10 margen0r">
     <? echo $bannersSidebar[0]; ?>
+</div>
+<div class="col-md-12 col-xs-12 separador10 margen0r">
+    <ifrane src="http://appss.misiva.com.ec/marcador" width="100%" height="500px">
 </div>
 
 <!--Tabla de Posiciones-->
