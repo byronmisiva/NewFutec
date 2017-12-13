@@ -36,11 +36,11 @@
     </div>
 </div>
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <iframe src="http://appss.misiva.com.ec/marcador" style="height: 500px;width: 300px;float: left;"></iframe>
+    <iframe src="http://appss.misiva.com.ec/marcador" scrolling=·no· style="height: 500px;width: 300px;float: left;"></iframe>
 </div>
 
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <iframe src="http://appss.misiva.com.ec/marcador/lduvstuni/" style="height: 500px;width: 300px;float: left;"></iframe>
+    <iframe src="http://appss.misiva.com.ec/marcador/lduvstuni/" scrolling=·no· style="height: 500px;width: 300px;float: left;"></iframe>
 </div>
 
 <div class="col-md-4 col-xs-4 separador10 pull-right margen0">
