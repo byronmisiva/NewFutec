@@ -48,8 +48,8 @@
                             <p><?php echo $active; ?> </p>
                         </div>-->
                         <!--<div class="col-md-5 col-sm-5 col-xs-5 h6  text-blue1">-->
-                        <div class="col-md-12 col-sm-12 col-xs-12 h6  text-blue1 text-center" style="color:#ffffff;font-size:14px;margin-bottom: 25px;">
-                            <p style="color:#ffffff;"> <?php setlocale(LC_ALL, "es_ES");
+                        <div class="col-md-12 col-sm-12 col-xs-12 h6  text-blue1 text-center" style="color:#ffffff;">
+                            <p style="color:#ffffff;font-size:14px;margin-bottom: 25px;"> <?php setlocale(LC_ALL, "es_ES");
                                 echo ucwords (utf8_encode(strftime("%B %d %Hh%M", strtotime($score->date_match))));?>
                             </p>
                             <!--<p><?php echo $active; ?>
