@@ -58,7 +58,7 @@
                                     ?></p>-->
                         </div>
 
-                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12 margen0">
                             <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" />
                         </div>
                     </div>
