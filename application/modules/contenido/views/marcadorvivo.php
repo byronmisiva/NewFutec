@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="col-md-12 col-md-offset-0 col-sm-12 col-xs-12 col-sm-offset-1 h6 text-blue1 margen0">
-                            
+                            <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" />
                         </div>
                     </div>
                 </a>
