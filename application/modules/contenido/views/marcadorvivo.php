@@ -1,5 +1,5 @@
 <div id="carousel-marcadorenvivo" class="carousel slide marcadorenvivofondo" style="padding-bottom: 0;"data-ride="carousel">
-    <div class="carousel-inner" style="background-image:url('http://www.futbolecuador.com/assets/marcador/gif_desktop.gif');background-position: center bottom;background-size: 100%;">
+    <div class="carousel-inner" style="background-image:url('http://www.futbolecuador.com/assets/marcador/gif_desktop.gif');background-position: center bottom;background-size: 100%;background-repeat: no-repeat;">
         <?php
         $active = " active";
 
@@ -57,7 +57,7 @@
                                 echo $states[$score->state];
                                     ?></p>-->
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margen0"></div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 margen0" style="height: 35px;"></div>
                     </div>
                 </a>
             </div>
