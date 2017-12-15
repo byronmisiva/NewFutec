@@ -57,10 +57,6 @@
                                 echo $states[$score->state];
                                     ?></p>-->
                         </div>
-
-                        <div class="col-md-12 col-sm-12 col-xs-12 margen0">
-                            <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" width="100%"/>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -69,7 +65,9 @@
         }
         ?>
 
-
+        <div class="col-md-12 col-sm-12 col-xs-12 margen0">
+                        <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" width="100%"/>
+          </div>
     </div>
     <a class="left carousel-control" href="#carousel-marcadorenvivo" style="margin-bottom: 0;" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
