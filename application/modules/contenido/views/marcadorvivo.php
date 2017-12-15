@@ -71,10 +71,10 @@
 
 
     </div>
-    <a class="left carousel-control" href="#carousel-marcadorenvivo" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#carousel-marcadorenvivo" style="margin-bottom: 0;" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="#carousel-marcadorenvivo" role="button" data-slide="next">
+    <a class="right carousel-control" href="#carousel-marcadorenvivo" style="margin-bottom: 0;" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right mev"></span>
     </a>
 </div>
