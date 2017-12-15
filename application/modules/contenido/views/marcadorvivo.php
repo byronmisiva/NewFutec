@@ -47,15 +47,15 @@
                         </div>-->
                         <!--<div class="col-md-5 col-sm-5 col-xs-5 h6  text-blue1">-->
                         <div class="col-md-12 col-sm-12 col-xs-12 h6  text-blue1 text-center" style="color:#ffffff;">
-                            <p style="color:#ffffff;font-size:14px;"> <?php setlocale(LC_ALL, "es_ES");
+                           <p style="color:#ffffff;font-size:14px;"> <?php setlocale(LC_ALL, "es_ES");
                                 echo ucwords (utf8_encode(strftime("%B %d %Hh%M", strtotime($score->date_match))));?>
-                            </p>
-                            <!--<p><?php echo $active; ?>
-                            <?php
-                            $states = array(0 => 'No Iniciado', 1 => 'Primer Tiempo', 2 => 'Fin del Primer Tiempo', 3 => 'Segundo Tiempo', 4 => 'Fin del Segundo Tiempo',
-                                    5 => 'Primer Extra', 6 => 'Segundo Extra', 7 => 'Penales', 8 => 'Final del Partido');
-                                echo $states[$score->state];
-                                    ?></p>-->
+                           </p>
+                           <!--<p><?php echo $active; ?>
+                           <?php
+                           $states = array(0 => 'No Iniciado', 1 => 'Primer Tiempo', 2 => 'Fin del Primer Tiempo', 3 => 'Segundo Tiempo', 4 => 'Fin del Segundo Tiempo',
+                                  5 => 'Primer Extra', 6 => 'Segundo Extra', 7 => 'Penales', 8 => 'Final del Partido');
+                            echo $states[$score->state];
+                             ?></p>-->
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 margen0" style="height: 35px;"></div>
                     </div>
