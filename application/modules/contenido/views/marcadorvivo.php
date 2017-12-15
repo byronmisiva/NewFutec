@@ -57,9 +57,7 @@
                                 echo $states[$score->state];
                                     ?></p>-->
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 margen0">
-      
-                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 margen0"></div>
                     </div>
                 </a>
             </div>
