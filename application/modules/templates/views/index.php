@@ -139,11 +139,10 @@ $this->load->view('header', $data);
     </div>
 </div>
 
-<?php
-    echo $this->uri->segment(2);
+<?php    
    if ( $this->uri->segment(2) == "partido")
   {?>
-        <div class="row separador10-xs margen0">
+        <div class="row separador10-xs margen0" style="margin-top:15px,margin-bottom:15px;">
             <div class="col-md-12 margen0">
                 <?php  
                     $this->load->module('banners');
