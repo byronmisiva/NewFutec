@@ -64,7 +64,9 @@
         <?php
         }
         ?>
-
+    <div class="col-md-12 col-sm-12 col-xs-12 margen0">
+      <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" width="100%"/>
+    </div>
         
     </div>
     <a class="left carousel-control" href="#carousel-marcadorenvivo" style="margin-bottom: 0;" role="button" data-slide="prev">
@@ -73,7 +75,5 @@
     <a class="right carousel-control" href="#carousel-marcadorenvivo" style="margin-bottom: 0;" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right mev"></span>
     </a>
-    <div class="col-md-12 col-sm-12 col-xs-12 margen0">
-             <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" width="100%"/>
-        </div>
+    
 </div>
