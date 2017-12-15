@@ -36,9 +36,7 @@
                                 </div>
                             </div>
                             <div class="col-md-1 col-sm-1 col-xs-1 col-xs-1text-center margen0">
-
-                                <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>"
-                                     alt="<?php echo $score->asname; ?>">
+                                <img src="http://www.futbolecuador.com/<?php echo $score->athumb; ?>" alt="<?php echo $score->asname; ?>">
                             </div>
                             <div class="col-md-1 col-sm-1 col-xs-1 col-xs-1text-center  margen0">
                             </div>
@@ -60,7 +58,7 @@
                                     ?></p>-->
                         </div>
 
-                        <div class="col-md-12 col-md-offset-0 col-sm-12 col-xs-12 col-sm-offset-1 h6 text-blue1 margen0">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
                             <img src="http://www.futbolecuador.com/assets/marcador/gif_desktop.gif" />
                         </div>
                     </div>
