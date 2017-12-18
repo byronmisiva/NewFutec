@@ -1,7 +1,7 @@
 <!-- FE_HEADER -->
 <!--azulmovistar-->
 <div style="position: relative;height: 90px;width: 320PX;margin: 0 auto;">
-<iframe src="http://www.futbolecuador.com/futbolecuador_html5/loteria/android/" scrolling="no" frameborder="0" style="height: 90px;width: 320PX;"
+<iframe src="http://www.futbolecuador.com/futbolecuador_html5/loteria/android/index.html" scrolling="no" frameborder="0" style="height: 90px;width: 320PX;"
 ></iframe>
 </div>
 
@@ -12,7 +12,7 @@
 </div>
 
 <script type="text/javascript">
-function ampliarSeparador(){	
+/*function ampliarSeparador(){	
   if(screen.width < 600){
 	//$(".separador10-xs").css("margin-top","66px");
 	$("#div-gpt-ad-1383593619381-0").css({"height":"50px","overflow":"hidden"});
@@ -37,6 +37,6 @@ setTimeout(function(){
 	  ampliarSeparador();	
 	}
 
- }, 3000);
+ }, 3000);*/
 
 </script>
