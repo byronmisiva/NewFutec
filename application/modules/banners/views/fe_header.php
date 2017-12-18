@@ -47,7 +47,7 @@ setTimeout(function(){
  
 
  setTimeout(function(){ 
- 	$(".row.separador10-xs").css("margin-top","96px");
+ 	$(".row.separador10-xs").css("margin-top","105px");
  }, 3000);
 
  function getMobileOperatingSystem() {
