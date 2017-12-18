@@ -1,9 +1,14 @@
 <!-- FE_HEADER -->
 <!--azulmovistar-->
 <div style="position: relative;height: 90px;width: 320PX;margin: 0 auto;">
-<iframe src="http://www.futbolecuador.com/futbolecuador_html5/loteria/android/index.html" scrolling="no" frameborder="0" style="height: 90px;width: 320PX;"
-></iframe>
+<iframe src="http://www.futbolecuador.com/futbolecuador_html5/loteria/android/index.html" scrolling="no" frameborder="0" style="height: 90px;width: 320PX;"></iframe>
 </div>
+
+<div class="fe-header" style="position: absolute;height: 90px;width: 100%;top:0;left:0;"
+	 data-ios="https://itunes.apple.com/ec/app/loter%C3%ADa-de-navidad-ecuador/id1320332765?mt=8"
+	 data-android="https://play.google.com/store/apps/details?id=com.ec.loteria.loteriadenavidad">
+	 	
+	 </div>
 
 <div id='div-gpt-ad-1383593619381-0' class="respiframe" style="width:100%;height:90px,">
     <script type='text/javascript'>
@@ -38,5 +43,39 @@ setTimeout(function(){
 	}
 
  }, 3000);*/
+
+ 
+
+ setTimeout(function(){ 
+ 	$(".row.separador10-xs").css("margin-top","96px");
+ }, 3000);
+
+ function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) ||               userAgent.match( /iPod/i ) ){
+            return 'iOS';
+        }
+        else if( userAgent.match( /Android/i ) ){
+            return 'Android';
+        }else{
+            return 'unknown';
+        }
+    };
+    
+    var $plat = getMobileOperatingSystem();
+    $( document ).ready(function() {
+	    $(".fe-header").click(function(){
+	    if ($plat == "iOS")
+	    {
+	     var url = $(this).attr("data-ios");	    		
+	     window.open(url,"blank");
+	    }
+	    else
+	    {
+	     var url = $(this).attr("data-android");
+	     window.open(url,"blank");
+	    }
+	   });
+	});
 
 </script>
