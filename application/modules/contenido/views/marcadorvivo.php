@@ -12,7 +12,7 @@ $transferencias= 1;
     background-size: cover;
     background-repeat: no-repeat;
     height: 85px;
-    margin-top: -20px;
+    
 }
 </style>
     <a href="<?php echo base_url()?>site/noticia/las-confesiones-de-enner-valencia-campeon-y-mejor-jugador-de-la-liga-mx/40000">
