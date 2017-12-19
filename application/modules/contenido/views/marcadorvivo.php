@@ -7,17 +7,17 @@ $transferencias= 1;
    if($transferencias == 1)
    {?>
 <style>
-.fondo-fichaje{
-    background-image: url('http://www.futbolecuador.com/assets/img/fichaje/imgfichajes.jpg');
-    background-repeat: no-repeat;
+.fondo-fichaje{        
+    background-image: url(http://www.futbolecuador.com/assets/img/fichaje/imgfichajes.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 85px;
+    margin-top: -20px;
 }
 </style>
-    <div id="banner" class="fondo-fichaje" style="padding-bottom: 0;">
-        <a href="<?php echo base_url()?>site/noticia/las-confesiones-de-enner-valencia-campeon-y-mejor-jugador-de-la-liga-mx/40000">
-            <h1>Fichajes 2018</h1>
-        </a>
-    </div>
+    <a href="<?php echo base_url()?>site/noticia/las-confesiones-de-enner-valencia-campeon-y-mejor-jugador-de-la-liga-mx/40000">
+    <div id="banner" class="fondo-fichaje" style="padding-bottom: 0;"></div>
+    </a>
 <?php 
     }
     else
