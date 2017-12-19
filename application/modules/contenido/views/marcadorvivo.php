@@ -6,8 +6,17 @@ $transferencias= 1;
 <?php 
    if($transferencias == 1)
    {?>
-    <div id="banner" class="" style="padding-bottom: 0;">
-        <h1>Fichajes 2018</h1>
+<style>
+.fondo-fichaje{
+    background-image: url('http://www.futbolecuador.com/assets/img/fichaje/imgfichajes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+    <div id="banner" class="fondo-fichaje" style="padding-bottom: 0;">
+        <a href="<?php echo base_url()?>site/noticia/las-confesiones-de-enner-valencia-campeon-y-mejor-jugador-de-la-liga-mx/40000">
+            <h1>Fichajes 2018</h1>
+        </a>
     </div>
 <?php 
     }
