@@ -1,3 +1,20 @@
+
+<?php 
+$transferencias= 1;
+?>
+
+<?php 
+   if($transferencias == 1)
+   {?>
+    <div id="banner" class="" style="padding-bottom: 0;">
+        <h1>Fichajes 2018</h1>
+    </div>
+<?php 
+    }
+    else
+    {
+    ?>
+
 <div id="carousel-marcadorenvivo" class="carousel slide marcadorenvivofondo" style="padding-bottom: 0;"data-ride="carousel">
     <div class="carousel-inner" style="background-image:url('http://www.futbolecuador.com/assets/marcador/gif_desktop.gif');background-position: center bottom;background-size: 100%;background-repeat: no-repeat;">
         <?php
@@ -76,3 +93,9 @@
     </a>
     
 </div>
+
+
+<?php } ?>
+
+
+
