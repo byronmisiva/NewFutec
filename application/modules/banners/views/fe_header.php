@@ -7,14 +7,13 @@
 <div class="fe-header" style="position: absolute;height: 90px;width: 100%;top:0;left:0;"
 	 data-ios="https://itunes.apple.com/ec/app/loter%C3%ADa-de-navidad-ecuador/id1320332765?mt=8"
 	 data-android="https://play.google.com/store/apps/details?id=com.ec.loteria.loteriadenavidad">
-	 	
 	 </div>
 
-<div id='div-gpt-ad-1383593619381-0' class="respiframe" style="width:100%;height:90px,">
+<!--<div id='div-gpt-ad-1383593619381-0' class="respiframe" style="width:100%;height:90px,">
     <script type='text/javascript'>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383593619381-0'); });
     </script>
-</div>
+</div>-->
 
 <script type="text/javascript">
 /*function ampliarSeparador(){	
@@ -44,19 +43,20 @@ setTimeout(function(){
 
  }, 3000);*/
 
- 
-
- setTimeout(function(){ 
- 	$(".row.separador10-xs").css("margin-top","105px");
- }, 3000);
-
  function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) ||               userAgent.match( /iPod/i ) ){
-            return 'iOS';
+            setTimeout(function(){ 
+			 	$(".row.separador10-xs").css("margin-top","105px");
+			 }, 1500);
+            return 'iOS';             
         }
         else if( userAgent.match( /Android/i ) ){
+        	setTimeout(function(){ 
+			 	$(".row.separador10-xs").css("margin-top","105px");
+			 }, 1500);
             return 'Android';
+             
         }else{
             return 'unknown';
         }
@@ -68,11 +68,17 @@ setTimeout(function(){
 	    if ($plat == "iOS")
 	    {
 	     var url = $(this).attr("data-ios");	    		
+	     ga('create', 'UA-2423727-1');
+		 ga('send', 'event', 'LoteriaNacional', 'iOS');
 	     window.open(url,"blank");
+	     
+	
 	    }
 	    else
 	    {
 	     var url = $(this).attr("data-android");
+	     ga('create', 'UA-2423727-1');
+		 ga('send', 'event', 'LoteriaNacional', 'Android');
 	     window.open(url,"blank");
 	    }
 	   });
