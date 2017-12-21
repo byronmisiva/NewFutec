@@ -223,8 +223,8 @@ class Contenido extends MY_Controller
         // todo por que se genera esto mal
         $sponsor->id = $sponsor->sid;
         if ($sponsor !== FALSE) {
-            array_pop($dataRotativas['rotativasData']);
-            array_push($dataRotativas['rotativasData'], $sponsor);
+            //array_pop($dataRotativas['rotativasData']);
+            //array_push($dataRotativas['rotativasData'], $sponsor);
         }
         //fin poner en caso de existir la ZONE FE
 
