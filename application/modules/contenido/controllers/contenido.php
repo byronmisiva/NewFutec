@@ -205,7 +205,8 @@ class Contenido extends MY_Controller
     {
         $this->load->module('story');
         if ($seccion == "") {
-            $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
+            //$dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
+            $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, "");
         } else {
             $dataRotativas['rotativasData'] = $this->mdl_story->get_banner_seccion(6, "", $seccion);
         }
@@ -233,7 +234,6 @@ class Contenido extends MY_Controller
         $bannerMedio = $this->banners->fe_smart_bottom();
         //cargamos partidos
         $this->load->module('scoreboards');
-
         //$datamarcador['title'] = "Partidos de Hoy";
         //$datamarcador['scores'] = $this->mdl_scoreboards->today_matches();
         $datamarcador['scores'] = "";
@@ -242,7 +242,6 @@ class Contenido extends MY_Controller
             //$data['title'] = "Ultima Fecha";
         }
         $data['marcadorvivo'] = "";
-
         return $this->load->view('header2', $data, TRUE);
 
     }
