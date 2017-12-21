@@ -137,7 +137,7 @@ class Site extends MY_Controller
         $data['verMobile'] = $this->verificarDispositivo();
         $data['pageTitle'] = "futbolecuador.com - Lo mejor del fútbol ecuatoriano";
         $this->load->library('user_agent');
-        
+
         $data['top1'] = "";
         $data['header1'] = "";
 		$bannerTapTap =$this->banners->fe_desplegable_movil_tap_tap();
@@ -168,20 +168,20 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 <div class="col-md-12 col-xs-12  margen0 " style="background-color: #f40009; height: 150px">
 <div style="width: 300px; margin: 0 auto; "><iframe id="ccfmPlayer" style="width: 300px; height: 15%;"></iframe></div></div>';
 
-
+        //.$contador
         $publicidadFlotante = "";
 //        $publicidadSeccion = $this->banners->fe_smart_top_copa_america();
         $publicidadSeccion ="";
-        
+        $contador = $this->contenido->contadorEquipos();
+        $eplayer = $this->contenido->eplayer();
         //$fe_loading_movil.
-        $bannerIntertisial =$this->banners->fe_mobile_intertisial();
-        $data['content'] = $marcadorenvivo . $publicidadFlotante.$publicidadSeccion . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . $bannerIntertisial. "</div>";
-        $data['sidebar'] = "";
-		
+        //$bannerIntertisial =$this->banners->fe_mobile_intertisial();
+	    $bannerIntertisial ="";
+        $data['content'] = $marcadorenvivo . $publicidadFlotante.$publicidadSeccion . $eplayer . $this->noticias->viewNoticiasHome(true, RESULT_PAGE_LITE) . $bannerBottom . $tablaposiciones . $outbrain .  $bannerTapTap . $bannerIntertisial. "</div>";
+        $data['sidebar'] = "";		
         $data['footer'] = ''.$bannerTapTap;
         $data['bottom'] = $this->contenido->bottom();
         $data['fe_splash'] = "";
-
         $data['fe_header'] = $this->banners->fe_header();
         $this->templates->_index($data);
     }
@@ -240,42 +240,31 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function contacto()
     {
-        $this->load->library('email');
-        $config['protocol'] = 'sendmail';
-        $config['charset'] = 'utf8';
-        $config['mailtype'] = 'html';
-        $config['wordwrap'] = FALSE;
+       $data['informacion'] = $_POST;
+        $mensaje = $this->load->view('email-contacto', $data, TRUE);
+        
+        $para  = 'jortiz@misiva.com.ec';
+        $título = 'Contacto Futbolecuador.com"';
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $cabeceras .= 'From: info@misiva.com.ec' . "\r\n";
+        mail($para, $título, $mensaje, $cabeceras);
 
-        $this->email->initialize($config);
-        $this->email->from('info@misiva.com.ec', 'Contacto Futbolecuador.com');
-        $this->email->to('ddelosreyes@futbolecuador.com');
-        $this->email->cc('jfchiriboga@misiva.com.ec');
-        $data['informacion'] = $_POST;
-        $body = $this->load->view('email-contacto', $data, TRUE);
-        $this->email->subject("Contacto Futbolecuador.com");
-        $this->email->message($body);
-        $this->email->send();
         echo "Mensaje Enviado";
     }
 
 
     public function publicidad()
     {
-        $this->load->library('email');
-        $config['protocol'] = 'sendmail';
-        $config['charset'] = 'utf8';
-        $config['mailtype'] = 'html';
-        $config['wordwrap'] = FALSE;
-
-        $this->email->initialize($config);
-        $this->email->from('boletin@futbolecuador.com', 'futbolecuador.com');
-        $this->email->to('ddelosreyes@futbolecuador.com');
-        $this->email->cc('jfchiriboga@misiva.com.ec');
-        $data['informacion'] = $_POST;
-        $body = $this->load->view('email-publicidad', $data, TRUE);
-        $this->email->subject("Publicidad Futbolecuador.com");
-        $this->email->message($body);
-        $this->email->send();
+         $data['informacion'] = $_POST;
+        $mensaje = $this->load->view('email-contacto', $data, TRUE);
+        
+        $para  = 'jortiz@misiva.com.ec,tatiana.leon@smgecuador.com';
+        $título = 'Publicidad Futbolecuador.com"';
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $cabeceras .= 'From: info@futbolecuador.com' . "\r\n";
+        mail($para, $título, $mensaje, $cabeceras);
         echo "Mensaje Enviado";
     }
 
@@ -340,12 +329,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             $bannerBottom = $this->banners->fe_smart_bottom_internas();
             $bannerTop = $this->banners->fe_smart_top_internas();
             $fe_loading_movil = $this->banners->fe_loading_movil();
-            $fe_intertisial = $this->banners->fe_mobile_intertisial();
+	    $fe_intertisial = $this->banners->fe_mobile_intertisial();
         } else {
             $bannerBottom = "";
             $bannerTop = "";
             $fe_loading_movil ="";
-            $fe_intertisial ="";
+	    $fe_intertisial = "";
         }
 
 
@@ -364,7 +353,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
             }
         }
         if (is_numeric($idNoticia))
-            if ($idNoticia < 39898)
+            if ($idNoticia < 32898)
                 redirect('home');
         if (($idNoticia == 'ref.outcontrol') or ($idNoticia == ''))
             redirect('home');
@@ -402,12 +391,12 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $data['idnoticia'] = $idNoticia;
         $data['ulrfriend'] = $this->_urlFriendly($aux->title);
         // fin carga la informacion de la noticia
-        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz();
+        $data['top1'] = $this->banners->top1() . $this->banners->fe_skin() . $this->banners->FE_Skyscraper_de() . $this->banners->FE_Skyscraper_iz() . $fe_intertisial;
         $data['header1'] = $this->contenido->menu();
 
         $dataHeader2['FE_Bigboxbanner'] = $this->banners->FE_Bigboxbanner();
 
-        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS). $fe_loading_movil. $fe_intertisial;
+        $data['content'] = $storia . $this->noticias->viewNoticiasHome(true, TOTALNEWSINOPENNEWS). $fe_loading_movil;
         $data['sidebar'] = $this->contenido->sidebarOpenNews($patrocinada);
 
         $data['footer'] = $this->contenido->footer();
@@ -536,7 +525,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                     echo "{";
                     echo '"id": "' . $noticia->id . '",';
                     echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->title))) . '",';
-                    echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
+		    echo '"resumen": "' . str_replace('"', '\"', ltrim(strip_tags(trim($noticia->lead)))).'",';
                     echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumbh50 . '",';
                     echo '"foto_table": "' . "http://www.futbolecuador.com/" . $noticia->thumbh120 . '",';
                     echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
@@ -556,7 +545,7 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     }
 
 
-    public function getnewsjson()
+public function getnewsjsonprueba()
     {
         header('Content-type: text/html; charset=utf-8');
 
@@ -570,13 +559,18 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         $rotativasListado = array();
         foreach ($rotativasData as $index => $noticia) {
             $rotativasListado [] = $noticia->id;
+            $resumen = strip_tags($noticia->lead);
+            $resumen = str_replace('&nbsp;', ' ',$resumen);
+            $resumen = trim($resumen);
+            $limite = (int)strlen($resumen);
+            $limite = $limite-4;
             echo "{";
-            echo '"id": "' . $noticia->id . '",';
-            echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
-            echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->lead))) . '",';
-            echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
-            echo '"foto_carrusel": "' . "http://www.futbolecuador.com/" . $noticia->thumb990 . '",';
-            echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
+            echo '"id":"'. $noticia->id.'",';
+            echo '"titulo":"' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))).'",';
+            echo '"resumen":"' . str_replace('"', '\"', substr($resumen, 0, $limite)).'",';
+            echo '"foto": "'."http://www.futbolecuador.com/" . $noticia->thumb300.'",';
+            echo '"foto_carrusel":"'."http://www.futbolecuador.com/" . $noticia->thumb990.'",';
+            echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle)."/". $noticia->id . '",';
             echo '"mostrar_carrusel": "s",';
             echo '"fecha_creacion": "' . $noticia->created . '"';
             echo "},";
@@ -586,10 +580,74 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         foreach ($data as $index => $noticia) {
             if (!in_array($noticia->id, $rotativasListado)) {
+                $resRotativa = strip_tags($noticia->lead);
+                $resRotativa = str_replace('&nbsp;', ' ', $resRotativa);
+                $resRotativa = trim($resRotativa);
+                $lim = (int)strlen($resRotativa);
+                $lim = $lim-7;
+                
+                echo "{";
+                echo '"id": "' . $noticia->id . '",';
+                echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))).'",';
+                echo '"resumen":"' . str_replace('"', '\"', substr($resumen, 0, $limite)).'",';
+                echo '"foto": "' . "http://www.futbolecuador.com/".$noticia->thumb300.'",';
+                echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
+                echo '"fecha_creacion": "' . $noticia->created . '"';
+                echo "}";
+                echo ($index < count($data) - 1) ? "," : "";
+                
+            }
+        }
+        echo "]";
+        
+    }
+
+
+    public function getnewsjson()
+    {
+        header('Content-type: text/html; charset=utf-8');
+
+        //json de consumo de don balon.
+        $this->load->module('story');
+        // recuperar codigo de don balos
+        $data = $this->db->query("SELECT valor FROM parametros WHERE nombre = 'Don Balón Json'")->result();
+        $tag = $data[0]->valor;
+        $rotativasData = $this->mdl_story->get_banner_tag(4, 44, $tag);
+        echo "[";
+        $rotativasListado = array();
+	//echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->lead))) . '",';
+        foreach ($rotativasData as $index => $noticia) {
+            $rotativasListado [] = $noticia->id;
+            $resumen = strip_tags($noticia->lead);
+            $resumen = str_replace('&nbsp;', ' ',$resumen);
+            $resumen = trim($resumen);
+            $limite = (int)strlen($resumen);
+            $limite = $limite-7;
+            echo "{";
+            echo '"id": "' . $noticia->id . '",';
+            echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';            
+            echo '"resumen":"' . str_replace('"', '\"', substr($resumen, 0, $limite)).'",';
+            echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
+            echo '"foto_carrusel": "' . "http://www.futbolecuador.com/" . $noticia->thumb990 . '",';
+            echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
+            echo '"mostrar_carrusel": "s",';
+            echo '"fecha_creacion": "' . $noticia->created . '"';
+            echo "},";
+
+        }
+        $data = $this->mdl_story->news_by_tagsList($tag, TOTALNEWSINDONBALON);
+        //echo '"resumen": "' . str_replace('"', '\"', trim(strip_tags(trim($noticia->lead)))).'",';
+        foreach ($data as $index => $noticia) {
+            if (!in_array($noticia->id, $rotativasListado)) {
+                $resRotativa = strip_tags($noticia->lead);
+                $resRotativa = str_replace('&nbsp;', ' ', $resRotativa);
+                $resRotativa = trim($resRotativa);
+                $lim = (int)strlen($resRotativa);
+                $lim = $lim-7;
                 echo "{";
                 echo '"id": "' . $noticia->id . '",';
                 echo '"titulo": "' . str_replace('"', '\"', strip_tags(trim($noticia->subtitle))) . '",';
-                echo '"resumen": "' . str_replace('"', '\"', strip_tags(trim($noticia->lead))) . '",';
+                echo '"resumen":"' . str_replace('"', '\"', substr($resRotativa, 0, $lim)).'",';
                 echo '"foto": "' . "http://www.futbolecuador.com/" . $noticia->thumb300 . '",';
                 echo '"link": "' . "http://www.futbolecuador.com/site/noticia/" . $this->story->_urlFriendly($noticia->subtitle) . "/" . $noticia->id . '",';
                 echo '"fecha_creacion": "' . $noticia->created . '"';
@@ -599,6 +657,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         }
         echo "]";
     }
+
+    
 
     public function sidebardonbalon()
     {
@@ -978,6 +1038,8 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
     public function tabladeposiciones($serie = CHAMP_DEFAULT)
     {
+    	if((int)$serie)
+    	
 		if ($serie == "63")
     		$serie = "59";
 
@@ -992,7 +1054,14 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
         }
 
         if ($id) {
-            $serie = $id;
+        	if((int)$id > 200)
+        	{
+        		$serie = CHAMP_DEFAULT;
+        	}
+        	else{
+            	$serie = $id;
+        	}
+            
         }
         
         
@@ -1146,6 +1215,11 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
     	$this->singleConten("Encuesta Formación", $cuerpo);
     }
     
+ public function encuestaAdidas(){
+    	$this->load->module('contenido');
+    	$cuerpo = $this->contenido->encuestaAdidas();
+    	$this->singleConten("Encuesta Formación", $cuerpo);
+    }
     
     public function singleConten($nameSeccion, $contenSeccion, $description = "", $serie = CHAMP_DEFAULT, $tipotabla = CHAMP_DEFAULT_TIPOTABLA)
     {
@@ -1486,6 +1560,16 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
                                     "checked": "false",
                                     "id": "30",
                                     "name": "Serie B"
+                                    },
+                                    {
+                                    "checked": "false",
+                                    "id": "66",
+                                    "name": "Internacional"
+                                    }, 
+				    {
+                                    "checked": "false",
+                                    "id": "57",
+                                    "name": "Eliminatorias"
                                     } ]';
         echo " {" . $secciones . ', "equipos": ' . $equiposJson . ' } ';
 
