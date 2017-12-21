@@ -4,7 +4,6 @@ class Contenido extends MY_Controller
 {
 
     public $model = 'mdl_contenido';
-
     public function __construct()
     {
         parent::__construct();
@@ -15,14 +14,11 @@ class Contenido extends MY_Controller
         return $this->load->view('header', $data, TRUE);
     }
 
-
     public function menu($data = FALSE)
     {
-
         //  $this->load->model('teams_position');
         //  $this->load->model('team');
         //$this->output->cache(CACHE_DEFAULT);
-
         $this->load->module('teams_position');
         $positions = $this->mdl_teams_position->get_table_by_champ(SERIE_A);
         $data['seriea'] = $this->mdl_noticias->get_by_position(1, SECTION_SERIE_A, 2);
@@ -72,6 +68,16 @@ class Contenido extends MY_Controller
     	$data['marcadorvivo'] = $this->marcadorVivoCopa();
     	return $this->load->view('marcador', $data, TRUE);
     }
+
+    public function contadorEquipos($data = FALSE){
+        return $this->load->view('contador/contadorCompetencia', $data, TRUE);
+    }
+
+    public function eplayer($data = FALSE){
+        return $this->load->view('eplayer', $data, TRUE);
+    }
+
+    
     
     public function marcadorHeader($data = FALSE){
     	$this->load->module('story');
@@ -83,7 +89,7 @@ class Contenido extends MY_Controller
     public function header2($data = FALSE)
     {
         $this->load->module('story');
-        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(5, 44);
+        $dataRotativas['rotativasData'] = $this->mdl_story->get_banner(6, 44);
         $excluded = array();
         foreach ($dataRotativas['rotativasData'] as $key => $row) {
             $excluded[] = $row->id;
@@ -92,13 +98,9 @@ class Contenido extends MY_Controller
         //ponemos en caso de existir la noticia ZONA FE
 
         //recupera  y cambia por la ultima noticia
-        $sponsor = current($this->mdl_story->get_zonaFE($excluded));
-        //$sponsor = $this->mdl_story->get_zonaFE($excluded);
+        $sponsor = current($this->mdl_story->get_zonafe($excluded));
         $sponsor->id = $sponsor->sid;
-		/*foreach ($sponsor as $row){
-			array_pop($dataRotativas['rotativasData']);
-			array_push($dataRotativas['rotativasData'], $row);
-		}*/
+
         if ($sponsor !== FALSE) {
             array_pop($dataRotativas['rotativasData']);
             array_push($dataRotativas['rotativasData'], $sponsor);
@@ -281,12 +283,12 @@ class Contenido extends MY_Controller
     {
         return $this->load->view('juventus', $data, TRUE);
     }
-    
+
     public function view_entradas($data = FALSE)
     {
     	return $this->load->view('entradas', $data, TRUE);
     }
-    
+
     public function view_fuera_de_juego($data = FALSE)
     {
         return $this->load->view('fueradejuego', $data, TRUE);
@@ -314,7 +316,7 @@ class Contenido extends MY_Controller
         $bannersSidebar = array();
         $bannersSidebar[] = $this->banners->fe_new_filmstrip_banner();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar1();
-        //$bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
+        $bannersSidebar[] = $this->banners->FE_BigboxSidebar2();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar3();
         $bannersSidebar[] = $this->banners->FE_BigboxSidebar4();
         $bannersSidebar[] = $this->banners->fe_cocafm();
@@ -713,6 +715,10 @@ class Contenido extends MY_Controller
 
         return $this->load->view('sidebaramerica', $data, TRUE);
         // todo validar si se queda
+    }
+
+   public function encuestaAdidas($data = FALSE){
+    	return $this->load->view('encuesta/encuesta_adidas', $data, TRUE);
     }
 
     public function copaamericaheader($data = FALSE)
