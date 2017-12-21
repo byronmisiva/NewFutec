@@ -219,13 +219,13 @@ class Contenido extends MY_Controller
         //ponemos en caso de existir la noticia ZONA FE
 
         //recupera  y cambia por la ultima noticia
-        $sponsor = current($this->mdl_story->get_zonafe($excluded));
+        /*$sponsor = current($this->mdl_story->get_zonafe($excluded));
         // todo por que se genera esto mal
         $sponsor->id = $sponsor->sid;
         if ($sponsor !== FALSE) {
-            //array_pop($dataRotativas['rotativasData']);
-            //array_push($dataRotativas['rotativasData'], $sponsor);
-        }
+            array_pop($dataRotativas['rotativasData']);
+            array_push($dataRotativas['rotativasData'], $sponsor);
+        }*/
         //fin poner en caso de existir la ZONE FE
 
         $dataRotativas['check'] = 0;
