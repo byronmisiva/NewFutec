@@ -63,11 +63,11 @@
         <!--<div class="col-md-12 text-right fondoazul  ">
             Más hinchas
         </div> -->
-        <div class="col-md-12 separador20 margen0">
+        <!--<div class="col-md-12 separador20 margen0">
             <a href="http://andresrodzap.wix.com/arzfotografia" target="_blank">
                 <img src="http://www.futbolecuador.com/imagenes/fuera-de-juego/fotografo.png" class="img-responsive">
             </a>
-        </div>
+        </div>-->
     </div>
 </div>
 

@@ -35,17 +35,29 @@
     </span>
     </div>
 </div>
-<div class="col-md-12 col-xs-12 separador10 margen0r">
-    <iframe src="http://appss.misiva.com.ec/marcador" scrolling="no" frameborder="0" style="height: 500px;width: 300px;float: left;"></iframe>
-</div>
+<?php 
+    $valor = rand(0, 1);
+    if ($valor == 0)
+    {?>
+        <!--<div class="col-md-12 col-xs-12 separador10 margen0r">
+            <iframe src="https://appss.misiva.com.ec/marcador/index.html?refrescar=19851903" scrolling="no" frameborder="0" style="height: 500px;width: 300px;float: left;"></iframe>
+        </div>-->
+  <?php  
+    }
+    else
+    { ?>
+        <!--<div class="col-md-12 col-xs-12 separador10 margen0r">
+            <iframe src="https://appss.misiva.com.ec/marcador/lduvstuni/index.html?refrescar=19851903" scrolling="no" frameborder="0" style="height: 500px;width: 300px;float: left;"></iframe>
+        </div>-->
+<?php } ?>
+
+
 
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <? echo $bannersSidebar[0]; ?>
+    <?php echo $bannersSidebar[0]; ?>
 </div>
 
-<div class="col-md-12 col-xs-12 separador10 margen0r">
-    <iframe src="http://appss.misiva.com.ec/marcador/lduvstuni/" scrolling="no" frameborder="0" style="height: 500px;width: 300px;float: left;"></iframe>
-</div>
+
 
 <div class="col-md-4 col-xs-4 separador10 pull-right margen0">
     <form action="<?= base_url('site/search') ?>" id="searchbox_004910472998778424762:cfsv-n7w47w">
@@ -58,7 +70,6 @@
 
 <!--Calendario-->
 <div class="col-md-12 col-xs-12 separador10  margen0r lateral">
-
     <div id="collapseTwo" class="panel-collapse collapse in">
         <div class="panel-body panel-body-clear-margin">
             <!-- Nav tabs -->
@@ -275,11 +286,7 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
         </div>
     </div>
     <div class="col-md-12 col-xs-12 text-right fondoazul separador10">
@@ -289,25 +296,19 @@
     </div>
 </div>
 <!--Fin calendario -->
-
-<!--<div class="col-md-12 col-xs-12 separador10 margen0r">
-    <? echo $bannersSidebar[0]; ?>
-</div>-->
-
 <!--Tabla de Posiciones-->
-<?php // echo $tablaposiciones; ?>
-
+<? echo $tablaposiciones; ?>
 
 <!--banner lateral 2 -->
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <? echo $bannersSidebar[1]; ?>
+    <?php echo $bannersSidebar[1]; ?>
 </div>
 
 
 <!--Goleadores-->
 
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <? echo $strikes; ?>
+    <?php echo $strikes; ?>
 </div>
 
 <!--Fin Goleadores -->
@@ -318,13 +319,12 @@
 
 <!--Lo más leído-->
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-
-    <? echo $loMasLeido; ?>
+    <?php echo $loMasLeido; ?>
 </div>
 
 <!--banner lateral 3 -->
 <div class="col-md-12 col-xs-12 separador10 margen0r">
-    <? echo $bannersSidebar[2]; ?>
+    <?php echo $bannersSidebar[2]; ?>
 </div>
 
 
@@ -334,7 +334,7 @@
 </div>
 <!--banner lateral 4 -->
 <div class="col-md-12 separador10 margen0r">
-    <? echo $bannersSidebar[4]; ?>
+    <?php echo $bannersSidebar[4]; ?>
 </div>
 
 
