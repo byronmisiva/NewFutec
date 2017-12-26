@@ -3,7 +3,7 @@
 <script type="text/javascript" language="Javascript1.1" src="http://ak1.img.e-planning.net/layers/epl-41.js"></script>
 <script type="text/javascript" language="Javascript1.1">
     <!--
-    var eplArgs = { sV:"http://ak1.img.e-planning.net/",vV:"4",sI:"14f0d",kVs:{  }};
+    /*var eplArgs = { sV:"http://ak1.img.e-planning.net/",vV:"4",sI:"14f0d",kVs:{  }};
     var eplAdsArray=new Array();
     function eplInit() {
         if (this.readyState == 'complete') {
@@ -35,7 +35,7 @@
         } else {
         eplAdsArray.push(new Array(eID, opts));
         }
-        }
+        }*/
     //--></script>
 <script>eplAD4("7fdf4725216f4d94",{t:1,timeout:0,ma:1,custF:null,wh:"320x480",sd:"14f0d!!http://ads.e-planning.net/!ev!"});</script>
 <!-- e-planning v4 - Fin espacio Futbolecuador.com _ Home _ Interstitial Mobile -->

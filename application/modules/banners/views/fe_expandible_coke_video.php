@@ -13,13 +13,27 @@
 }
 
 </style>-->
+<style>
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('http://www.futbolecuador.com/assets/fonts/HelveticaNeue.eot');
+    src: url('http://www.futbolecuador.com/assets/fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('http://www.futbolecuador.com/assets/fonts/HelveticaNeue.woff') format('woff'),
+    url('http://www.futbolecuador.com/assets/fonts/HelveticaNeue.ttf') format('truetype'),
+    url('http://www.futbolecuador.com/assets/fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+</style>
+ <div id="pbl-coke'"'>
+	<div id="Stage" class="EDGE-492515342"></div>
+</div>
 
-<iframe class="contenedor-video" width="800" height="600" src="http://www.futbolecuador.com/unionlayer/noticia-expandible/coca/expandido/index.html"></iframe>	
 
-<!--<div class="contenedor-expandible">
-	
-	<div class="btn-cerrar-expandible">Cerrar</div>
-</div>-->
+<div class='contenedor-expandible'>
+	<iframe class='contenedor-video' width='800' height='600' src='http://www.futbolecuador.com/unionlayer/	noticia-expandible/coca/expandido/index.html'></iframe>		
+	<div class='btn-cerrar-expandible'>Cerrar</div>
+</div>
 <script type="text/javascript">
 $(document).ready(function () {
 	$(".btn-cerrar-expandible").click(function () {

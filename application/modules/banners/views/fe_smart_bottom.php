@@ -54,6 +54,14 @@
     function see_fold() {
         $(".desplegable-alertas").toggle( );
     }
+
+    setTimeout(function(){ 
+        var contenedorSmartBottom= $("#div-gpt-ad-1383593619381-2");  
+        var divSmartBottom = contenedorSmartBottom[0].lastChild;        
+        $(divSmartBottom).css("width","100%");    
+        var iframeSmartBotttom= contenedorSmartBottom[0].children[0].childNodes[0];
+        $(iframeSmartBotttom).css("width","100%");    
+    }, 2000);
 </script>
 
 

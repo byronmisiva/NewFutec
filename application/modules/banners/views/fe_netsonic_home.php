@@ -1,7 +1,7 @@
 <div id="netsonic">
 </div>
 <script type='text/javascript'>
-    var cuerpoRef = document.getElementsByTagName("body")[0].innerHTML;
+   /* var cuerpoRef = document.getElementsByTagName("body")[0].innerHTML;
     $(document).ready(function () {
         if (typeof secondskin != 'undefined') {
             console.log (secondskin);
@@ -25,5 +25,5 @@
             $("#eyeDiv").remove();
             $("#ebDimmer").remove();
         }
-    })
+    })*/
 </script>

@@ -18,11 +18,11 @@ if (in_array($idtipo, $tipo)) { ?>
 	        }
 	    };
 	    
-		if(getMobileOperatingSystem()=="iOS")			
+		/*if(getMobileOperatingSystem()=="iOS")			
 			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490820846662-0'); });
 		else if(getMobileOperatingSystem()=="Android"){
 			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490820846662-0'); });
-		}
+		}*/
 	</script>
 </div>
 <!--
@@ -81,11 +81,11 @@ noticia", "nuestrosembajadores", "lavoz", "zonafe", "equipo", "masleido
 		        }
 		    };
 		    
-			if(getMobileOperatingSystem()=="iOS")			
+			/*if(getMobileOperatingSystem()=="iOS")			
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490820753625-0'); });
 			else if(getMobileOperatingSystem()=="Android"){
 				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490820753625-0'); });
-			}
+			}*/
 			
 			
 		</script>

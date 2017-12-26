@@ -9,18 +9,6 @@ class Banners extends MY_Controller
     {
         parent::__construct();
     }
-    
-    function banner_video_der($data = FALSE){
-    	return $this->load->view('fe_video_inferior', $data, TRUE);
-    }
-    
-    function fe_expandible_noticia($data = FALSE){
-    	return $this->load->view('fe_expandible_noticia', $data, TRUE);
-    }
-
-    function fe_expan_coke($data = FALSE){
-       return $this->load->view('fe_expandible_coke_video', $data, TRUE);
-    }
 
     public function top1($data = FALSE)
     {
@@ -45,6 +33,11 @@ class Banners extends MY_Controller
         return $this->load->view('fe_bigboxbanner', $data, TRUE);
     }
 
+    public function eplayer($data = FALSE)
+    {
+        return $this->load->view('eplayer', $data, TRUE);
+    }
+
     public function fe_mobile_intertisial($data = FALSE)
     {
         return $this->load->view('fe_banner_intertisial', $data, TRUE);
@@ -59,10 +52,60 @@ class Banners extends MY_Controller
     {
         return $this->load->view('fe_bigboxnews1', $data, TRUE);
     }
+
+  function fe_expandible_noticia($data = FALSE){
+    	return $this->load->view('fe_expandible_noticia', $data, TRUE);
+    }
+
+   function fe_expan_coke($data = FALSE){
+       return $this->load->view('fe_expandible_coke_video', $data, TRUE);
+    }
 	/*union layer*/
     public function fe_union($data = FALSE)
     {	
     	return $this->load->view('union/fe_nissa', $data);
+    }
+    
+    public function fe_union_kia_cerato($data = FALSE)
+    {	
+    	return $this->load->view('union/fe_kia_cerato', $data);
+    }
+
+    public function fe_union_layer_kia($tipo)
+    {   
+        $data = FALSE;
+        
+        if ($tipo == "picanto"){
+            return $this->load->view('union/fe_kia_picanto', $data);    
+        }
+        else if($tipo == "optima"){
+            return $this->load->view('union/fe_kia_optima', $data);    
+        }
+        else if($tipo == "rio"){
+            return $this->load->view('union/fe_kia_rio', $data);    
+        }
+        else if($tipo == "sorento"){
+            return $this->load->view('union/fe_kia_sorento', $data);    
+        }
+        else if($tipo == "sportage"){
+            return $this->load->view('union/fe_kia_sportage', $data);     
+        }
+    }
+
+    public function fe_union_layer($tipo)
+    {   
+        $data = FALSE;        
+        if ($tipo == "hyndai"){
+            return $this->load->view('union/fe_hyundai', $data);    
+        }else if ($tipo == "hyundai_creta"){
+            return $this->load->view('union/fe_hyundai_creta', $data);    
+        }              
+    }
+
+
+
+    function banner_video_der($data = FALSE){
+    	return $this->load->view('fe_video_inferior', $data, TRUE);
     }
     
     public function fe_union2($data = FALSE)
@@ -73,6 +116,11 @@ class Banners extends MY_Controller
     public function fe_union3($data = FALSE)
     {
     	return $this->load->view('union/fe_kia', $data);
+    }
+
+ public function fe_sony($data = FALSE)
+    {
+    	return $this->load->view('union/fe_sony', $data);
     }
 
     public function fe_union4($data = FALSE)
