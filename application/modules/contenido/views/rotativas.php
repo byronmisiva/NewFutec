@@ -4,7 +4,7 @@
       $cont = 1;
       foreach ($rotativasData as &$rotativa) 
       {
-         if ($cont == 6){?>
+         if ($cont == 7){?>
             <li style="height: 348px;position: relative;" data-thumb="http://www.futbolecuador.com/assets/img/icono-video.jpg">
                  <script src="//player.performgroup.com/eplayer.js#e962aa27b4c760ae4b3feaff6a.1c09jd19fxf3oz6towba3lina" async></script>
                  <!--<script src="//player.performgroup.com/eplayer.js#2a0f88b7644e8f95f8b6608fef.1c09jd19fxf3oz6towba3lina" async></script>-->
