@@ -223,8 +223,9 @@ onload="CocaColaEmbed(\'ec\',\'true\',10)"></script>
 
         //contenido taboola
         $taboola = $this->banners->fe_taboola();
+        $eplayer = $this->banners->eplayer();
 
-        $data['content'] = $this->noticias->viewNoticiasHome(true, RESULT_PAGE, 0, FALSE, $amazonAssociates, $taboola);
+        $data['content'] = $eplayer.$this->noticias->viewNoticiasHome(true, RESULT_PAGE, 0, FALSE, $amazonAssociates, $taboola);
 
         //
         $test = CHAMP_DEFAULT_TIPOTABLA;
