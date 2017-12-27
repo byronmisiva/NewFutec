@@ -15,7 +15,7 @@ $separador10 = "separador10-xs ";
                     <h4 class="panel-title"><?php echo $namesection; ?></h4>
                 </div>
             </div>
-    <?php}
+    <?php }
     }?>
 
 <?php if(isset($marcador)){?>
