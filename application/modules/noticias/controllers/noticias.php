@@ -71,7 +71,9 @@ class Noticias extends MY_Controller
             $banners[] = $this->banners->FE_Bigboxnews3();
             $banners[] = $this->banners->FE_Bigboxnews4();
             $banners[] = $this->banners->FE_Bigboxnews5();
-	        $banners[] = $this->banners->fe_expandible_noticia();
+	        //$banners[] = $this->banners->fe_expandible_noticia();
+            $banners[] = $this->banners->eplayer();
+            
             //intercalo entre las noticias los banners.
             if ($totalMiniNews > 10) {
 		        array_splice($noticias, 1, 0, $banners[5]);
