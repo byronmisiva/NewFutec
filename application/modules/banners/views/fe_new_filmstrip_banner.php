@@ -1,6 +1,6 @@
 <?php
 	$this->load->module('banners'); 
-	echo $this->banners->eplayer();
+	//echo $this->banners->eplayer();
 ?>
 
 <!-- /1022247/FE_NEW_FILMSTRIP_BANNER -->
