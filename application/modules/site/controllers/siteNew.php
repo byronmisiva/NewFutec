@@ -40,8 +40,7 @@ class Site extends MY_Controller
             if (CHAMP_DEFAULT == 59) {
                 define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
             } else {
-                //if ($consulta[0]->total == "5") {
-            	if ($consulta[0]->total == "1") {
+                if ($consulta[0]->total == "5") {
                     define('CHAMP_DEFAULT_TIPOTABLA', "simple");
                 } else {
                     define('CHAMP_DEFAULT_TIPOTABLA', "acumulada");
