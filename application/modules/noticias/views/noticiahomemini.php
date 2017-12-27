@@ -5,7 +5,7 @@ if ($linkbody == "")
 if (isset($tipoLink)) {
 
     if ($tipoLink == "secction") {
-        $link = base_url() . 'site/' . $urlsecction . '/' . $this->noticias->_urlFriendly($linkbody) . '/' . $story->id;
+        $link = base_url() . 'site/noticia/' . $this->noticias->_urlFriendly($linkbody) . '/' . $story->id;
     } else {
 
     }
@@ -20,6 +20,14 @@ if (isset($story->openseccion)) {
 }
 
 ?>
+
+<style>
+/*@media (max-width: 416px){
+	.margen0-xs {
+	    margin-left: 15px;
+	}
+}*/
+</style>
 <div class="margen0-xs clearfix news-detail">
     <div class="col-md-12 col-xs-12 col-sm-12  margen0 col-xs-2">
         <div class="noticia-img">
@@ -29,7 +37,7 @@ if (isset($story->openseccion)) {
                      class="img-responsive visible-xs-block"
                      alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">
                 <img data-original="http://www.futbolecuador.com/<?php echo $story->thumb300; ?>"
-                     class="img-responsive lazy hidden-xs"
+                     class="img-responsive lazy hidden-xs "
                      alt="<?php echo str_replace('"', '', "$story->title"); ?>" title="<?php echo str_replace('"', '', "$story->title"); ?>">
             </a>
         </div>

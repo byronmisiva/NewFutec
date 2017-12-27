@@ -50,6 +50,16 @@ class Mdl_Noticias extends MY_Model
         return $aux;
     }
 
+ function getNoticiaxMes($mes){
+    	$data = $this->db->query('SELECT s.id, s.category_id, (SELECT categories.name FROM categories WHERE categories.id = s.category_id) AS category, s.title, s.subtitle, s.lead, s.body, s.created, s.modified, UNIX_TIMESTAMP(s.modified) AS datem, i.thumb300, i.thumbh120, i.thumbh80, i.thumbh50
+                                    FROM stories_tags st INNER JOIN tags t ON st.tag_id = t.id
+                                    INNER JOIN stories s ON s.id = st.story_id
+                                    INNER JOIN images i ON s.image_id = i.id
+                                    WHERE month(s.created)='.$mes.' 
+                                    ORDER BY s.modified DESC ');
+    	return $data->result();
+    }
+
     function get_tag_list($id)
     {
         $this->db->where('section_id', $id);
