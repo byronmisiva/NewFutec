@@ -19,6 +19,9 @@
  *
  */
 	define('ENVIRONMENT', 'development');
+	 date_default_timezone_set("America/Bogota");
+	
+	
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
